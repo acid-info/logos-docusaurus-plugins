@@ -351,7 +351,11 @@
   --ifm-hero-text-color: var(--ifm-color-black);
 }
 
+/* sidebar */
 :root {
   --doc-sidebar-width: 16.66vw !important;
   --doc-sidebar-max-width: 320px;
+
+  --ifm-navbar-item-padding-vertical: 8px;
+  --ifm-navbar-item-padding-horizontal: 12px;
 }

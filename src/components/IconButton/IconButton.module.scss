@@ -1,0 +1,17 @@
+.root {
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background var(--ifm-transition-fast);
+
+  width: 2rem;
+  height: 2rem;
+}
+
+.root:hover {
+  background: var(--ifm-color-emphasis-200);
+}
