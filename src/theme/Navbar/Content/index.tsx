@@ -31,31 +31,47 @@ function NavbarItems({ items }: { items: NavbarItemConfig[] }): JSX.Element {
   )
 }
 
+const SidebarToggleButton: React.FC<{
+  className: string
+  onToggle: () => void
+  shown: boolean
+}> = ({ className, onToggle, shown }) => {
+  return (
+    <button
+      onClick={onToggle}
+      className={clsx(styles.sidebarButton, !shown && styles.expand, className)}
+    >
+      {shown ? <ChevronIcon /> : <HamburgerIcon />}
+    </button>
+  )
+}
+
 export default function NavbarContent(): JSX.Element {
-  const mobileSidebar = useNavbarMobileSidebar()
-
   const items = useNavbarItems()
-
-  const dispatch = globalStore.useDispatch()
-  const hiddenDesktopSidebar = globalStore.useSelector(selectHiddenSidebar)
 
   const localeDropdown = items.find((item) => item.type === 'localeDropdown')
   const links = items.filter(
     (item) => item.type === 'doc' || !!(item as any).to,
   )
 
+  const mobileSidebar = useNavbarMobileSidebar()
+
+  const dispatch = globalStore.useDispatch()
+  const hiddenDesktopSidebar = globalStore.useSelector(selectHiddenSidebar)
+
   return (
     <div className={clsx('row', styles.root)}>
       <div className="col col--2">
-        <button
-          onClick={dispatch.toggleSidebar}
-          className={clsx(
-            styles.sidebarButton,
-            hiddenDesktopSidebar && styles.expand,
-          )}
-        >
-          {!hiddenDesktopSidebar ? <ChevronIcon /> : <HamburgerIcon />}
-        </button>
+        <SidebarToggleButton
+          onToggle={mobileSidebar.toggle}
+          shown={mobileSidebar.shown}
+          className={styles.mobile}
+        />
+        <SidebarToggleButton
+          onToggle={dispatch.toggleSidebar}
+          shown={!hiddenDesktopSidebar}
+          className={styles.desktop}
+        />
       </div>
 
       <div className={clsx('col', styles.headerMiddle)}>
