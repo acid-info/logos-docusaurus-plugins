@@ -1,0 +1,24 @@
+.navbar__item.dropdown {
+  background-color: #eeeef1;
+  border-radius: 0.5rem;
+
+  & > .navbar__link {
+    &::after {
+      display: none;
+    }
+
+    & + svg {
+      margin-left: 0.75rem;
+    }
+  }
+
+  ul {
+    margin-top: 5px;
+  }
+}
+
+[data-theme='dark'] {
+  .navbar__item.dropdown {
+    background-color: var(--ifm-background-color);
+  }
+}
