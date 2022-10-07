@@ -59,7 +59,7 @@ const config = {
     ({
       docs: { sidebar: { hideable: true } },
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -71,10 +71,8 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'localeDropdown',
             position: 'right',
           },
         ],

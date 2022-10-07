@@ -29,6 +29,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* sidebar */
 :root {
   --doc-sidebar-width: 16.66vw !important;
   --doc-sidebar-max-width: 320px;

@@ -1,0 +1,112 @@
+@use '@site/src/css/utils';
+
+.root {
+  width: 100%;
+  margin: 0;
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 0;
+  }
+
+  & > div:first-child {
+    max-width: var(--doc-sidebar-max-width);
+  }
+
+  & > .headerMiddle {
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  transition: 0.2s;
+  transform: translateX(0);
+
+  &.shifted {
+    transform: translateX(
+      calc(-1 * min(var(--doc-sidebar-max-width), 16.66vw) + 64px)
+    );
+  }
+}
+
+.headerRight {
+  justify-content: flex-end;
+}
+
+.navbarLogoWrapper {
+  & > * {
+    margin: 0;
+  }
+}
+
+.menu {
+  @extend %menu-common;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebarButton {
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  @extend %menu-common;
+
+  width: 52px;
+  height: 46px;
+}
+
+%menu-common {
+  padding: 6px;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 1rem;
+}
+
+@include utils.responsive('lg', 'down') {
+  .root {
+    padding: 0 var(--ifm-spacing-horizontal);
+  }
+
+  .root > * {
+    width: auto;
+    flex: 0 0 auto !important;
+    padding: 0;
+  }
+
+  .headerLeft {
+  }
+
+  .headerMiddle {
+    margin-left: 20px;
+
+    .leftContainer.shifted {
+      transform: none;
+    }
+
+    nav {
+      display: none;
+    }
+  }
+
+  .headerRight {
+    display: none !important;
+  }
+}
+
+/*
+Hide color mode toggle in small viewports
+ */
+@media (max-width: 996px) {
+  .colorModeToggle {
+    display: none;
+  }
+}

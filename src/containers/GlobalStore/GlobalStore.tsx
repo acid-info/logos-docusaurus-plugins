@@ -6,6 +6,7 @@ export namespace GlobalStore {
   }
 
   export type Actions = {
+    toggleSidebar: () => void
     setHiddenSidebar: (payload: any) => void
   }
 
@@ -14,6 +15,9 @@ export namespace GlobalStore {
 
 export const globalStore = new GlobalStore.Store(() => {
   return {
+    toggleSidebar: (payload, state, setState, dispatch) => {
+      setState((state) => void (state.hiddenSidebar = !state.hiddenSidebar))
+    },
     setHiddenSidebar: (payload, state, setState, dispatch) => {
       setState((state) => {
         state.hiddenSidebar =
