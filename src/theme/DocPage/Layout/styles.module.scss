@@ -11,6 +11,10 @@
 
   & > aside {
     max-width: var(--doc-sidebar-max-width);
+
+    & > div {
+      width: 100%;
+    }
   }
 }
 
