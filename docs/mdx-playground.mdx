@@ -22,10 +22,13 @@ import {TeamList} from '@site/src/components/mdx/TeamList';
 ## Features
 <FeatureList>
     <FeatureCard title={"Fast erasure coding"}
+                 index={0}
                  text={"Codex uses high-performance Reed-Solomon encoding to guarantee the durabilitty of the datasets."}/>
     <FeatureCard title={"SNARK-based proof of retrivability"}
+                 index={1}
                  text={"To implement space-efficient data retrievability, Codex leverages state-of-the-art SNARK-based proofs."}/>
     <FeatureCard title={"Low-overhead lazy repair"}
+                 index={2}
                  text={"Data repairs in Codex are grouped through lazy repair to decrease network bandwith overhead."}/>
 </FeatureList>
 

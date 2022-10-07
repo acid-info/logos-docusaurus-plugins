@@ -25,10 +25,10 @@ export const TeamList = ({ children }: TProps): JSX.Element => {
                 title={member.contact.email}
               />
             </div>
-            <div className={styles.memberCardCaption}>
+            <div className={clsx('card', styles.memberCardCaption)}>
               <div>
                 <h6>{member['pref-name']}</h6>
-                <div>{member.contact.email}</div>
+                <div className={styles.memberEmail}>{member.contact.email}</div>
               </div>
               <div>
                 {member.contact.github && (

@@ -1,5 +1,4 @@
 .cardContainer {
-  background: var(--ifm-background-color);
   border-radius: var(--ifm-global-radius);
   padding: 0.6rem 1.5rem 0.9rem;
 
@@ -10,13 +9,28 @@
   transition: all var(--ifm-transition-fast) ease;
   transition-property: border, box-shadow;
 
+  box-shadow: none;
+
   &:hover {
     border-color: var(--ifm-color-primary);
+  }
+
+  .latinNumber {
+    background: var(--ifm-color-emphasis-300);
+    color: var(--ifm-color-gray-600);
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .cardTitle {
   }
 
   .cardDescription {
+    color: var(--ifm-color-gray-500);
   }
 }

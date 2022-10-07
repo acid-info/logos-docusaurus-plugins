@@ -22,7 +22,7 @@ export const Hero = (props: TProps): JSX.Element => {
         {label && <label>label</label>}
         <div>
           <h1 className={'hero__title'}>{title}</h1>
-          <p className={'hero_subtitle'}>{subtitle}</p>
+          <p className={'hero_subtitle sub4'}>{subtitle}</p>
         </div>
         {linkUrl && linkText && (
           <Link href={linkUrl}>
