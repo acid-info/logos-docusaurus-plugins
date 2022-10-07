@@ -1,8 +1,22 @@
-.card {
-  .cardHeader {
-    .latinNumber {
-    }
+.cardContainer {
+  background: var(--ifm-background-color);
+  border-radius: var(--ifm-global-radius);
+  padding: 0.6rem 1.5rem 0.9rem;
+
+  --ifm-link-color: var(--ifm-color-emphasis-800);
+  --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+  --ifm-link-hover-decoration: none;
+
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow;
+
+  &:hover {
+    border-color: var(--ifm-color-primary);
   }
-  .cardText {
+
+  .cardTitle {
+  }
+
+  .cardDescription {
   }
 }

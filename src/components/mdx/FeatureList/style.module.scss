@@ -1,2 +1,17 @@
 .FeatureList {
+  .FeatureListContainer {
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+
+    &.n_1 {
+    }
+
+    &.n_2 {
+    }
+
+    &.n_2 {
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import clsx from 'clsx'
 import styles from './style.module.scss'
 
 type TProps = {
@@ -6,5 +7,16 @@ type TProps = {
 }
 
 export const FeatureList = ({ children }: TProps): JSX.Element => {
-  return <div className={styles.FeatureList}>{children}</div>
+  return (
+    <section className={styles.FeatureList}>
+      <div
+        className={clsx(
+          styles.FeatureListContainer,
+          styles[`n_${React.Children.count(children)}`],
+        )}
+      >
+        {children}
+      </div>
+    </section>
+  )
 }

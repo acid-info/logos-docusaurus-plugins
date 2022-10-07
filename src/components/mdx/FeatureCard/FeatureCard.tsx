@@ -1,3 +1,4 @@
+import { clsx } from 'clsx'
 import React from 'react'
 import styles from './style.module.scss'
 
@@ -15,12 +16,12 @@ export const FeatureCard = (props: TProps): JSX.Element => {
   const { index, text, title, link } = props
 
   return (
-    <div className={styles.card}>
-      <div className={styles.cardHeader}>
+    <div className={clsx('card', styles.cardContainer)}>
+      <div className={clsx('card__header', styles.cardHeader)}>
         {index && <span className={styles.latinNumber}>{ln[index]}</span>}
-        <h3>{title}</h3>
+        <h3 className={styles.cardTitle}>{title}</h3>
       </div>
-      <p className={styles.cardText}>{text}</p>
+      <p className={styles.cardDescription}>{text}</p>
     </div>
   )
 }
