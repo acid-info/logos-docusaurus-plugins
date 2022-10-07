@@ -71,6 +71,19 @@
   border-radius: 1rem;
 }
 
+.headerRight {
+  & > *:not(:last-child) {
+    margin-right: 34px;
+  }
+}
+
+.divider {
+  height: 11px;
+  width: 1px;
+
+  background-color: #d9d9d9; // TODO: use infima variables
+}
+
 @include utils.responsive('lg', 'down') {
   .root {
     padding: 0 var(--ifm-spacing-horizontal);

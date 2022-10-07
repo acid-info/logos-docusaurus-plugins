@@ -80,7 +80,12 @@ export default function NavbarContent(): JSX.Element {
 
       <div className={clsx('col col--5', styles.headerRight)}>
         <NavbarColorModeToggle />
-        {localeDropdown && <NavbarItem {...localeDropdown} />}
+        {localeDropdown && (
+          <>
+            <div className={styles.divider} />
+            <NavbarItem {...localeDropdown} />
+          </>
+        )}
       </div>
     </div>
   )
