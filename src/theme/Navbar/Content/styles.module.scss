@@ -84,6 +84,14 @@
   background-color: #d9d9d9; // TODO: use infima variables
 }
 
+.shareButton {
+  svg,
+  svg * {
+    fill: currentColor;
+    stroke: currentColor;
+  }
+}
+
 @include utils.responsive('lg', 'down') {
   .root {
     padding: 0 var(--ifm-spacing-horizontal);

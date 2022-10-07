@@ -13,6 +13,7 @@ import NavbarItem, { Props as NavbarItemConfig } from '@theme/NavbarItem'
 import SearchBar from '@theme/SearchBar'
 import clsx from 'clsx'
 import React from 'react'
+import { ShareButton } from './ShareButton'
 import styles from './styles.module.scss'
 
 function useNavbarItems() {
@@ -79,6 +80,7 @@ export default function NavbarContent(): JSX.Element {
       </div>
 
       <div className={clsx('col col--5', styles.headerRight)}>
+        <ShareButton />
         <NavbarColorModeToggle />
         {localeDropdown && (
           <>
