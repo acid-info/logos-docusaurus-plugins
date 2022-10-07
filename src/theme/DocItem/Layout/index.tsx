@@ -48,7 +48,7 @@ export default function DocItemLayout({ children }: Props): JSX.Element {
         <div className={clsx(styles.docItemContainer)}>
           <div>
             <article>
-              <DocBreadcrumbs />
+              {/*<DocBreadcrumbs />*/}
               <DocVersionBadge />
               {docTOC.mobile}
               <DocItemContent>{children}</DocItemContent>

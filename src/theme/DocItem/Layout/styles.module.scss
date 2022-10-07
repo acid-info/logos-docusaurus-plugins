@@ -33,6 +33,10 @@
   margin-top: 0;
 }
 
+.docItemContainer article header:first-child {
+  display: none;
+}
+
 @include utils.responsive('lg', 'down') {
   .docItemContainer > div:first-child {
   }

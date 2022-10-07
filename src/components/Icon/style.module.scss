@@ -1,0 +1,12 @@
+.icon {
+  &.dark {
+    .fill {
+      fill: var(--ifm-color-black);
+    }
+    .stroke {
+      stroke: var(--ifm-color-white);
+    }
+  }
+  &.light {
+  }
+}
