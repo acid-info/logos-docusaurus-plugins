@@ -49,7 +49,10 @@ export default function NavbarContent(): JSX.Element {
       <div className="col col--2">
         <button
           onClick={dispatch.toggleSidebar}
-          className={styles.sidebarButton}
+          className={clsx(
+            styles.sidebarButton,
+            hiddenDesktopSidebar && styles.expand,
+          )}
         >
           {!hiddenDesktopSidebar ? <ChevronIcon /> : <HamburgerIcon />}
         </button>

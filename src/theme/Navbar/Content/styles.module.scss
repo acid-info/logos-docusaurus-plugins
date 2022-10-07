@@ -63,6 +63,20 @@
 
   width: 52px;
   height: 46px;
+
+  &.expand {
+    svg,
+    svg * {
+      fill: currentColor;
+    }
+  }
+
+  &:not(.expand) {
+    svg,
+    svg * {
+      stroke: currentColor;
+    }
+  }
 }
 
 %menu-common {
