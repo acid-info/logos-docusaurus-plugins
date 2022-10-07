@@ -1,0 +1,40 @@
+@use '@site/src/css/utils';
+
+.docMainContainer {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebarSpace {
+  width: 0;
+}
+
+@include utils.responsive('lg', 'up') {
+  .sidebarSpace {
+    transition: 0.3s;
+    flex-shrink: 0;
+    width: var(--doc-sidebar-width);
+    max-width: var(--doc-sidebar-max-width);
+  }
+}
+
+.docMainContainerEnhanced .sidebarSpace {
+  width: 0;
+}
+
+.docItemWrapper {
+  width: 100%;
+}
+
+@media (min-width: 997px) {
+  .docMainContainer {
+    flex-grow: 1;
+  }
+
+  .docMainContainerEnhanced {
+  }
+
+  .docItemWrapperEnhanced {
+  }
+}

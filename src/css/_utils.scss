@@ -1,0 +1,36 @@
+@use './vars';
+@use 'sass:map';
+@use 'sass:list';
+
+@mixin responsive($device-size, $function: 'exact') {
+  $index: index(vars.$device-sizes, $device-size);
+  $bounds: map.get(vars.$breakpoints, $device-size);
+  $min-width: list.nth($bounds, 1);
+  $max-width: list.nth($bounds, 2);
+
+  $query: '';
+
+  @if $function == 'exact' {
+    $query: '(min-width: #{$min-width}px)';
+
+    @if $max-width != null {
+      $query: $query + ' and (max-width: #{$max-width}px)';
+    }
+  } @else if $function == 'up' {
+    @if $min-width != null {
+      $query: '(min-width: #{$min-width}px)';
+    } @else {
+      $query: '(min-width: 0px)';
+    }
+  } @else if $function == 'down' {
+    @if $min-width != null {
+      $query: '(max-width: #{$min-width - 1}px)';
+    } @else {
+      $query: '(max-width: #{$max-width - 1}px)';
+    }
+  }
+
+  @media #{$query} {
+    @content;
+  }
+}
