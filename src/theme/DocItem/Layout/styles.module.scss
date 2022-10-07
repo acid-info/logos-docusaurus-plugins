@@ -1,0 +1,45 @@
+@use '@site/src/css/utils';
+
+.root {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.docItemCol {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.root > aside {
+  width: 25vw;
+  flex-basis: 25vw;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.tocDesktopWrapper {
+  width: 16.66vw;
+  flex-basis: 16.66vw;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.docItemContainer > div {
+  flex-grow: 1;
+}
+
+.docItemContainer header + *,
+.docItemContainer article > *:first-child {
+  margin-top: 0;
+}
+
+@include utils.responsive('lg', 'down') {
+  .docItemContainer > div:first-child {
+  }
+}
+
+@media (min-width: 997px) {
+  .docItemCol {
+    max-width: 75% !important;
+  }
+}

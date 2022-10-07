@@ -1,0 +1,19 @@
+.docPage {
+  width: 100%;
+  position: relative;
+
+  display: grid;
+
+  & > main,
+  & > aside {
+    grid-area: 1 / 1;
+  }
+
+  & > aside {
+    max-width: var(--doc-sidebar-max-width);
+  }
+}
+
+.docsWrapper {
+  display: flex;
+}
