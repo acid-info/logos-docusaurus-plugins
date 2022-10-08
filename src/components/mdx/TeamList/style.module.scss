@@ -3,9 +3,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    //grid-auto-rows: 600px;
     grid-column-gap: calc(0.7 * var(--ifm-global-spacing));
     grid-row-gap: calc(0.6 * var(--ifm-global-spacing));
+
+    &.withSidebarHide {
+      grid-template-columns: repeat(3, 1fr);
+      .memberCard {
+        grid-template-rows: 320px 60px;
+      }
+    }
 
     .memberCard {
       box-shadow: none;

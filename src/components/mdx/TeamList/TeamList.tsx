@@ -5,6 +5,10 @@ import { useTeam } from '@site/src/lib/team.utils'
 import { ELogosTeamNames } from '@site/src/types/team'
 import { SocialMediaItem } from '../../Icon/SocialmediaLink'
 import { ECommunityProviders } from '@site/src/types/ui.types'
+import {
+  globalStore,
+  selectHiddenSidebar,
+} from '@site/src/containers/GlobalStore'
 
 type TProps = {
   children: React.ReactNode
@@ -12,10 +16,16 @@ type TProps = {
 
 export const TeamList = (props: TProps): JSX.Element => {
   const team = useTeam('codex' as ELogosTeamNames)
+  const hiddenSidebar = globalStore.useSelector(selectHiddenSidebar)
 
   return (
     <section className={styles.TeamList}>
-      <div className={styles.TeamListContainer}>
+      <div
+        className={clsx(
+          styles.TeamListContainer,
+          hiddenSidebar ? styles.withSidebarHide : false,
+        )}
+      >
         {team.map((member, index) => (
           <div className={clsx('', styles.memberCard)} key={`mc-${index}`}>
             <div className={clsx('', styles.memberCardImage)}>

@@ -23,7 +23,7 @@ export const FeatureCard = (props: TProps): JSX.Element => {
             <span>{ln[index]}</span>
           </div>
         )}
-        <h3 className={styles.cardTitle}>{title}</h3>
+        <h4 className={styles.cardTitle}>{title}</h4>
       </div>
       <p className={clsx('sans', styles.cardDescription)}>{text}</p>
     </div>
