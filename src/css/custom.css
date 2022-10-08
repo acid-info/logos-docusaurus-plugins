@@ -77,13 +77,9 @@
   --ifm-h6-font-size: 0.85rem;
 
   /* Spacing. */
-  --ifm-global-spacing: 0.8rem;
+  --ifm-global-spacing: 0.67rem;
   --ifm-spacing-vertical: var(--ifm-global-spacing);
-
-  --ifm-heading-margin-top: 0;
-  --ifm-heading-margin-bottom: var(--ifm-spacing-vertical);
-
-  --ifm-heading-line-height: 1.25;
+  --ifm-spacing-horizontal: 0.75rem;
 
   --ifm-image-alignment-padding: 1.25rem;
   /* Leading is the distance between two baselines */
@@ -97,16 +93,12 @@
 
   /* Links. */
   --ifm-link-decoration: none;
-  --ifm-link-hover-decoration: underline;
 
   /* Paragraphs. */
   --ifm-paragraph-margin-bottom: var(--ifm-leading);
 
   /* Blockquotes. */
-  --ifm-blockquote-font-size: var(--ifm-font-size-base);
-  --ifm-blockquote-border-left-width: 2px;
-  --ifm-blockquote-padding-horizontal: var(--ifm-spacing-horizontal);
-  --ifm-blockquote-padding-vertical: 0;
+  --ifm-blockquote-border-left-width: 3px;
   --ifm-blockquote-shadow: none;
 
   /* Horizontal Rules. */
@@ -136,19 +128,21 @@
   --ifm-breadcrumb-separator-filter: none;
   --ifm-breadcrumb-separator-size: 0.5rem;
   --ifm-breadcrumb-separator-size-multiplier: 1.25;
-  --ifm-button-border-width: var(--ifm-global-border-width);
-  --ifm-button-font-weight: var(--ifm-font-weight-bold);
-  --ifm-button-padding-horizontal: 1.5rem;
-  --ifm-button-padding-vertical: 0.375rem;
+
+  --ifm-button-padding-horizontal: var(--ifm-spacing-horizontal);
+  --ifm-button-padding-vertical: 0.4rem;
+
   --ifm-button-size-multiplier: 1;
   --ifm-button-transition-duration: var(--ifm-transition-fast);
   --ifm-button-border-radius: calc(
     var(--ifm-global-radius) * var(--ifm-button-size-multiplier)
   );
   --ifm-button-group-spacing: 2px;
-  --ifm-card-border-radius: calc(var(--ifm-global-radius) * 2);
-  --ifm-card-horizontal-spacing: var(--ifm-global-spacing);
-  --ifm-card-vertical-spacing: var(--ifm-global-spacing);
+
+  --ifm-card-border-radius: var(--ifm-global-radius);
+  --ifm-card-horizontal-spacing: var(--ifm-spacing-horizontal);
+  --ifm-card-vertical-spacing: var(--ifm-spacing-vertical);
+
   --ifm-toc-padding-vertical: 0.5rem;
   --ifm-toc-padding-horizontal: 0.5rem;
   --ifm-dropdown-font-weight: var(--ifm-font-weight-semibold);
@@ -224,5 +218,19 @@
   font-size: var(--ifm-h5-font-size);
 }
 .sub6 {
+  font-size: var(--ifm-h6-font-size);
+}
+
+.markdown a {
+  text-decoration: underline;
+  text-decoration-color: var(--ifm-color-gray-300);
+  text-underline-offset: 0.3rem;
+}
+
+.card {
+  padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+}
+
+small {
   font-size: var(--ifm-h6-font-size);
 }

@@ -27,10 +27,12 @@ export const TeamList = ({ children }: TProps): JSX.Element => {
             </div>
             <div className={clsx('card', styles.memberCardCaption)}>
               <div>
-                <h6>{member['pref-name']}</h6>
-                <div className={styles.memberEmail}>{member.contact.email}</div>
+                <h5>{member['pref-name']}</h5>
+                <small className={styles.memberEmail}>
+                  {member.contact.email}
+                </small>
               </div>
-              <div>
+              <div className={styles.memberSocials}>
                 {member.contact.github && (
                   <SocialMediaItem
                     handler={member.contact.github}

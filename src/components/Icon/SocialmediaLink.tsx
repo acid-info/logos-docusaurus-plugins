@@ -30,7 +30,10 @@ export const SocialMediaItem = (props: TProps): JSX.Element => {
       )
     case 'discord':
       return (
-        <a href={`https://discord.gg/${props.handler}`} target={'_blank'}>
+        <a
+          href={`https://discordapp.com/users/${props.handler}`}
+          target={'_blank'}
+        >
           <IconDiscord />
         </a>
       )

@@ -1,8 +1,7 @@
-.button {
-}
-
 .buttonWithIconContainer {
   display: flex;
-  gap: 10px;
+  gap: 40px;
+  min-width: 110px;
   align-content: center;
+  justify-content: space-between;
 }

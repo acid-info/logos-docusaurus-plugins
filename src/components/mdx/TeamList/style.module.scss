@@ -4,12 +4,15 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     //grid-auto-rows: 600px;
+    grid-column-gap: calc(0.7 * var(--ifm-global-spacing));
+    grid-row-gap: calc(0.6 * var(--ifm-global-spacing));
 
     .memberCard {
       box-shadow: none;
       display: grid;
       grid-template-rows: 400px 60px;
-      grid-gap: 8px;
+      grid-column-gap: calc(0.7 * var(--ifm-global-spacing));
+      grid-row-gap: calc(0.6 * var(--ifm-global-spacing));
 
       .memberCardImage {
       }
@@ -19,10 +22,25 @@
         height: 100%;
         border-radius: 8px;
       }
+
       .memberCardCaption {
         border-radius: 8px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+
+        h5 {
+          margin: 0;
+        }
         .memberEmail {
           color: var(--ifm-color-gray-500);
+        }
+
+        .memberSocials {
+          display: flex;
+          align-items: center;
+          opacity: 0.3;
+          gap: calc(var(--ifm-spacing-horizontal) * 0.5);
         }
       }
     }
