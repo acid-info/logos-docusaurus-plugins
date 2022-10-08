@@ -78,7 +78,7 @@
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
 
   --ifm-h1-font-size: 4rem;
-  --ifm-h2-font-size: 3.5rem;
+  --ifm-h2-font-size: 2rem;
   --ifm-h3-font-size: 1.25rem;
   --ifm-h4-font-size: 1.15rem;
   --ifm-h5-font-size: 1rem;
@@ -211,7 +211,6 @@
 
 .sans {
   font-family: var(--lgs-font-family-secondary);
-  font-size: var(--ifm-font-size-secondary);
   line-height: var(--ifm-line-height-secondary);
 }
 
