@@ -7,17 +7,11 @@ import {
   IconStatus,
   IconTelegram,
 } from './Icon'
+import { ECommunityProviders } from '@site/src/types/ui.types'
 
 type TProps = {
   handler: string
-  provider:
-    | 'discord'
-    | 'twitter'
-    | 'linkedin'
-    | 'status'
-    | 'github'
-    | 'discourse'
-    | 'telegram'
+  provider: ECommunityProviders
 }
 
 export const SocialMediaItem = (props: TProps): JSX.Element => {
