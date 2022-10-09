@@ -1,12 +1,18 @@
-.container {
-  background: gray;
-  border-radius: var(--ifm-global-radius);
+.exref {
+  margin-bottom: var(--ifm-leading);
 
-  box-shadow: none;
+  .exrefContainer {
+    display: flex;
+    column-gap: calc(0.8 * var(--ifm-spacing-horizontal));
+    align-items: center;
 
-  transition: all var(--ifm-transition-fast) ease;
-  transition-property: border, box-shadow;
+    > *:last-child {
+      margin-left: auto;
+    }
 
-  display: flex;
-  column-gap: 10px;
+    //TODO this should go as an option for icon component
+    > *:first-child svg {
+      opacity: 0.3;
+    }
+  }
 }

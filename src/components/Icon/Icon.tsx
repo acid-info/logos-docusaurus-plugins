@@ -1,18 +1,32 @@
+import React from 'react'
 import { useColorMode } from '@docusaurus/theme-common'
 import { clsx } from 'clsx'
-import React, { HTMLProps, SVGProps } from 'react'
+
 import styles from './style.module.scss'
 
-type TProps = {
-  children: JSX.Element
+import DotSvg from '@site/static/icons/dot.svg'
+import ArrowRCircleSvg from '@site/static/icons/arrow-right-circle.svg'
+import ArrowLCircleSvg from '@site/static/icons/arrow-left-circle.svg'
+import GithubSvg from '@site/static/icons/github.svg'
+import FolderSvg from '@site/static/icons/folder.svg'
+import TwitterSvg from '@site/static/icons/twitter.svg'
+import DiscordSvg from '@site/static/icons/discord.svg'
+import LinkedinSvg from '@site/static/icons/linkedin.svg'
+import DiscourseSvg from '@site/static/icons/discourse.svg'
+import TelegramSvg from '@site/static/icons/telegram.svg'
+import StatusSvg from '@site/static/icons/status.svg'
+
+type TIconProps = {
+  size?: 's' | 'm' | 'l'
 }
 
-type TSvgProps = {
+type TProps = {
+  children?: JSX.Element
   fill?: string
-}
+} & TIconProps
 
 export const Icon = (props: TProps): JSX.Element => {
-  const { children } = props
+  const { children, size = 'm' } = props
   const { colorMode, setColorMode } = useColorMode()
 
   return (
@@ -20,6 +34,7 @@ export const Icon = (props: TProps): JSX.Element => {
       className={clsx(
         styles.icon,
         colorMode === 'dark' ? styles.dark : styles.light,
+        styles[size],
       )}
     >
       {children}
@@ -27,195 +42,74 @@ export const Icon = (props: TProps): JSX.Element => {
   )
 }
 
-export const IconArrowRightCircle = ({
-  fill = 'black',
-}: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill={'black'} />
-      <path
-        d="M9 8L11 10L9 12"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconArrowRightCircle = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <ArrowRCircleSvg />
   </Icon>
 )
 
-export const IconArrowLeftCircle = ({
-  fill = 'black',
-}: TSvgProps): JSX.Element => (
+export const IconArrowLeftCircle = (props: TIconProps): JSX.Element => (
   <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+    <ArrowLCircleSvg />
   </Icon>
 )
 
-export const IconFolder = ({ fill = 'black' }: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconFolder = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <FolderSvg />
   </Icon>
 )
 
-export const IconGithub = ({ fill = 'black' }: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconGithub = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <GithubSvg />
   </Icon>
 )
 
-export const IconDiscord = ({ fill = 'black' }: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconDiscord = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <DiscordSvg />
   </Icon>
 )
 
-export const IconStatus = ({ fill = 'black' }: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconStatus = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <StatusSvg />
   </Icon>
 )
 
-export const IconTwitter = ({ fill = 'black' }: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconTwitter = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <TwitterSvg />
   </Icon>
 )
 
-export const IconTelegram = ({ fill = 'black' }: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconTelegram = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <TelegramSvg />
   </Icon>
 )
 
-export const IconDiscourse = ({ fill = 'black' }: TSvgProps): JSX.Element => (
-  <Icon>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="20" height="20" rx="10" fill="black" />
-      <path
-        d="M11 12L9 10L11 8"
-        stroke="white"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+export const IconDiscourse = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <DiscourseSvg />
+  </Icon>
+)
+
+export const IconLinkedin = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <LinkedinSvg />
+  </Icon>
+)
+
+export const IconDot = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <DotSvg />
+  </Icon>
+)
+
+export const IconFolderFilled = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <FolderSvg />
   </Icon>
 )

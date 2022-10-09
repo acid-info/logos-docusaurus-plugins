@@ -1,7 +1,12 @@
 import { clsx } from 'clsx'
 import React from 'react'
 import { LinkButtonWithIcon } from '../../Button/LinkButtonWithIcon'
-import { IconArrowRightCircle, IconFolder } from '../../Icon'
+import {
+  IconArrowRightCircle,
+  IconFolder,
+  IconFolderFilled,
+  IconGithub,
+} from '../../Icon'
 import styles from './style.module.scss'
 
 type TProps = {
@@ -17,22 +22,22 @@ export const ExternalReferenceCard = (props: TProps): JSX.Element => {
   const icon = (() => {
     switch (referenceType) {
       case 'github':
-        return <IconArrowRightCircle />
+        return <IconGithub />
       case 'pdf':
-        return <IconArrowRightCircle />
+        return <IconFolderFilled />
       default:
         return null
     }
   })()
 
   return (
-    <div className={clsx('alert', styles.container)}>
-      <div>
+    <div className={clsx('alert', styles.exref)}>
+      <div className={styles.exrefContainer}>
         <div>{icon}</div>
         <div>{children}</div>
         <div>
           <LinkButtonWithIcon
-            icon={icon}
+            icon={<IconArrowRightCircle />}
             linkProps={{ href: linkUrl, target: '_black' }}
             className={'button--secondary'}
           >

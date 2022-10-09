@@ -1,7 +1,5 @@
 .cardContainer {
-  background: var(--ifm-background-color);
   border-radius: var(--ifm-global-radius);
-  padding: 0.6rem 1.5rem 0.9rem;
 
   --ifm-link-color: var(--ifm-color-emphasis-800);
   --ifm-link-hover-color: var(--ifm-color-emphasis-700);
@@ -10,13 +8,37 @@
   transition: all var(--ifm-transition-fast) ease;
   transition-property: border, box-shadow;
 
+  box-shadow: none;
+
+  justify-content: space-between;
+
   &:hover {
     border-color: var(--ifm-color-primary);
+  }
+
+  .cardHeader {
+    padding: 0;
+    display: flex;
+    column-gap: var(--ifm-spacing-horizontal);
+    align-items: center;
+  }
+
+  .latinNumber {
+    background: var(--ifm-color-emphasis-300);
+    color: var(--ifm-color-gray-600);
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .cardTitle {
   }
 
   .cardDescription {
+    color: var(--ifm-color-gray-500);
+    margin: 0;
   }
 }

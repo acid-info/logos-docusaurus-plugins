@@ -7,17 +7,11 @@ import {
   IconStatus,
   IconTelegram,
 } from './Icon'
+import { ECommunityProviders } from '@site/src/types/ui.types'
 
 type TProps = {
   handler: string
-  provider:
-    | 'discord'
-    | 'twitter'
-    | 'linkedin'
-    | 'status'
-    | 'github'
-    | 'discourse'
-    | 'telegram'
+  provider: ECommunityProviders
 }
 
 export const SocialMediaItem = (props: TProps): JSX.Element => {
@@ -30,7 +24,10 @@ export const SocialMediaItem = (props: TProps): JSX.Element => {
       )
     case 'discord':
       return (
-        <a href={`https://discord.gg/${props.handler}`} target={'_blank'}>
+        <a
+          href={`https://discordapp.com/users/${props.handler}`}
+          target={'_blank'}
+        >
           <IconDiscord />
         </a>
       )

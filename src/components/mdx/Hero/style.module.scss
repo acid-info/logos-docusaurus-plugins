@@ -1,8 +1,31 @@
 .Hero {
   .HeroContainer {
+    position: relative;
+    padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
     border-radius: var(--ifm-global-radius);
-    .heroTitle {
+
+    height: 320px;
+    display: flex;
+    align-items: end;
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 16px;
+      position: absolute;
+      top: 5px;
+
+      > * {
+        display: inline-flex;
+        vertical-align: middle;
+      }
     }
+
+    .heroTitle {
+      margin: 0;
+    }
+
     .heroSubtitle {
     }
   }

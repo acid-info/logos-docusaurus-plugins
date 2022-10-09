@@ -1,17 +1,9 @@
 .quoteContainer {
-  background: gray;
-  border-radius: var(--ifm-global-radius);
-
-  box-shadow: none;
-
-  transition: all var(--ifm-transition-fast) ease;
-  transition-property: border, box-shadow;
-
   display: flex;
   column-gap: 10px;
 
   .quoteMark {
-    background: black;
+    background: var(--ifm-alert-foreground-color);
     width: 3px;
     border-radius: 3px;
   }

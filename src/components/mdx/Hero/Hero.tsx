@@ -2,7 +2,7 @@ import Link from '@docusaurus/Link'
 import clsx from 'clsx'
 import React from 'react'
 import { ButtonWithIcon } from '../../Button/ButtonWithIcon'
-import { IconArrowRightCircle } from '../../Icon'
+import { IconArrowRightCircle, IconDot } from '../../Icon'
 import styles from './style.module.scss'
 
 type TProps = {
@@ -19,21 +19,30 @@ export const Hero = (props: TProps): JSX.Element => {
   return (
     <section className={styles.Hero}>
       <div className={clsx('hero', styles.HeroContainer)}>
-        {label && <label>label</label>}
-        <div>
-          <h1 className={'hero__title'}>{title}</h1>
-          <p className={'hero_subtitle'}>{subtitle}</p>
-        </div>
-        {linkUrl && linkText && (
-          <Link href={linkUrl}>
-            <ButtonWithIcon
-              className={'button--secondary'}
-              icon={<IconArrowRightCircle />}
-            >
-              {linkText}
-            </ButtonWithIcon>
-          </Link>
+        {label && (
+          <label>
+            <IconDot size={'s'} />
+            <span>{label}</span>
+          </label>
         )}
+        <div>
+          <div>
+            <h1 className={clsx('hero__title', styles.heroTitle)}>{title}</h1>
+            <p className={clsx('hero_subtitle', 'sub4', styles.heroSubtitle)}>
+              {subtitle}
+            </p>
+          </div>
+          {linkUrl && linkText && (
+            <Link href={linkUrl}>
+              <ButtonWithIcon
+                className={'button--secondary'}
+                icon={<IconArrowRightCircle />}
+              >
+                {linkText}
+              </ButtonWithIcon>
+            </Link>
+          )}
+        </div>
       </div>
     </section>
   )

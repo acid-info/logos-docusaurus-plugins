@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+
+  > div {
+    width: calc(100% - calc(2 * var(--ifm-spacing-horizontal)));
+  }
+
+  .footerContentWrapper {
+    opacity: 0.3;
+    margin: 0 !important;
+    padding: 0 var(--ifm-spacing-horizontal);
+    --footer-left: calc(
+      min(var(--doc-sidebar-width), var(--doc-sidebar-max-width)) +
+        calc(1 * var(--ifm-spacing-horizontal))
+    );
+    transform: translateX(var(--footer-left));
+
+    will-change: transform;
+    transition: transform var(--ifm-transition-fast) ease,
+      flex var(--ifm-transition-fast) ease;
+
+    &.withSidebarHide {
+      --footer-left: var(--ifm-spacing-horizontal);
+    }
+
+    .footerContent {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      .communityLinks,
+      .lockup {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .lockup {
+        display: flex;
+        align-items: center;
+      }
+
+      .footerLogoWrapper {
+        a {
+          opacity: 1 !important;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 997px) {
+  .footerContentWrapper {
+    //max-width: 75% !important;
+  }
+}
