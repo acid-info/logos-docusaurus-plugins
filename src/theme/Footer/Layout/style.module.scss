@@ -1,3 +1,5 @@
+@use '@site/src/css/utils';
+
 .footer {
   display: flex;
 
@@ -5,23 +7,26 @@
     width: calc(100% - calc(2 * var(--ifm-spacing-horizontal)));
   }
 
+  .sidebarSpace {
+    width: var(--doc-sidebar-width);
+    max-width: var(--doc-sidebar-max-width);
+    transition: var(--ifm-transition-fast) ease,
+      flex var(--ifm-transition-fast) ease;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    &.collapsed {
+      width: 0;
+    }
+  }
+
   .footerContentWrapper {
     opacity: 0.3;
     margin: 0 !important;
     padding: 0 var(--ifm-spacing-horizontal);
-    --footer-left: calc(
-      min(var(--doc-sidebar-width), var(--doc-sidebar-max-width)) +
-        calc(1 * var(--ifm-spacing-horizontal))
-    );
-    transform: translateX(var(--footer-left));
+    flex-grow: 1;
 
     will-change: transform;
-    transition: transform var(--ifm-transition-fast) ease,
-      flex var(--ifm-transition-fast) ease;
-
-    &.withSidebarHide {
-      --footer-left: var(--ifm-spacing-horizontal);
-    }
 
     .footerContent {
       display: flex;
@@ -29,6 +34,7 @@
       flex-direction: row;
       justify-content: space-between;
       flex-grow: 1;
+      flex-shrink: 1;
 
       .communityLinks,
       .lockup {
@@ -49,6 +55,12 @@
         }
       }
     }
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .sidebarSpace {
+    display: none;
   }
 }
 

@@ -27,36 +27,39 @@ export default function FooterLayout(props: Props): JSX.Element {
 
   return (
     <footer className={clsx('footer', styles.footer)}>
-      <div className={'row'}>
+      <div
+        className={clsx(
+          'row',
+          'col',
+          'col--7',
+          styles.footerContentWrapper,
+          hiddenSidebar ? styles.withSidebarHide : '',
+        )}
+      >
         <div
           className={clsx(
-            'col',
-            hiddenSidebar ? 'col--7' : 'col--5',
-            styles.footerContentWrapper,
-            hiddenSidebar ? styles.withSidebarHide : '',
+            styles.sidebarSpace,
+            hiddenSidebar && styles.collapsed,
           )}
-        >
-          <div className={styles.footerContent}>
-            {(logo || copyright) && (
-              <div className={styles.lockup}>
-                {logo && <div className={styles.footerLogoWrapper}>{logo}</div>}
-                <span className={'sub5'}>{copyright}</span>
-              </div>
-            )}
-            <div className={styles.communityLinksWrapper}>
-              <div className={styles.communityLinks}>
-                {communityLinks.map(
-                  (link: FooterLinkItem, i) =>
-                    link.href && (
-                      <SocialMediaItem
-                        handler={link.href}
-                        provider={
-                          link.label.toLowerCase() as ECommunityProviders
-                        }
-                      />
-                    ),
-                )}
-              </div>
+        ></div>
+        <div className={styles.footerContent}>
+          {(logo || copyright) && (
+            <div className={styles.lockup}>
+              {logo && <div className={styles.footerLogoWrapper}>{logo}</div>}
+              <span className={'sub5'}>{copyright}</span>
+            </div>
+          )}
+          <div className={styles.communityLinksWrapper}>
+            <div className={styles.communityLinks}>
+              {communityLinks.map(
+                (link: FooterLinkItem, i) =>
+                  link.href && (
+                    <SocialMediaItem
+                      handler={link.href}
+                      provider={link.label.toLowerCase() as ECommunityProviders}
+                    />
+                  ),
+              )}
             </div>
           </div>
         </div>
