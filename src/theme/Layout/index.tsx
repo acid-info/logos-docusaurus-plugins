@@ -8,6 +8,7 @@ export default function LayoutWrapper(props) {
 
   return (
     <globalStore.Provider store={store}>
+      <div className="background-underlay" />
       <Layout {...props} />
     </globalStore.Provider>
   )
