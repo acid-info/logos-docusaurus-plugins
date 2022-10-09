@@ -9,6 +9,11 @@
     padding-top: var(--ifm-navbar-height);
     width: var(--doc-sidebar-width);
     transition: opacity 50ms ease;
+    font-size: var(--ifm-h6-font-size);
+  }
+
+  .sidebar nav {
+    padding: 1rem 0 0.5rem var(--ifm-spacing-horizontal);
   }
 
   .sidebarWithHideableNavbar {
