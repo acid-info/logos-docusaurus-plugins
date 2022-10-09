@@ -1,3 +1,5 @@
+@use '@site/src/css/utils';
+
 .navbar-sidebar__brand {
   --ifm-navbar-padding-horizontal: 1rem;
 }
@@ -12,4 +14,10 @@
 }
 
 :root {
+}
+
+@include utils.responsive('lg', 'down') {
+  .navbar {
+    background: var(--ifm-background-surface-color);
+  }
 }

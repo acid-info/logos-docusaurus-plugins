@@ -112,6 +112,7 @@
 @include utils.responsive('lg', 'down') {
   .root {
     padding: 0 var(--ifm-spacing-horizontal);
+    overflow: hidden;
   }
 
   .root > * {
@@ -124,8 +125,6 @@
   }
 
   .headerMiddle {
-    margin-left: 20px;
-
     .leftContainer.shifted {
       transform: none;
     }
@@ -137,6 +136,55 @@
 
   .headerRight {
     display: none !important;
+  }
+
+  .searchContainer {
+    display: none;
+  }
+}
+
+.headerRightMobile {
+  visibility: visible;
+  display: flex !important;
+
+  flex: 1 1 auto !important;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  & > div {
+    display: initial;
+  }
+
+  & > div:first-child {
+    border-radius: 12px;
+    padding: 4px 12px;
+    height: 2.125rem;
+
+    a {
+      font-size: 0.875rem;
+    }
+
+    svg {
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
+
+    margin-right: 0.75rem;
+  }
+
+  .searchButton {
+    background-color: #eeeef1;
+    padding: 7px 13px;
+    border-radius: 12px;
+  }
+
+  transition: 0.7s ease-in-out;
+  transform: translateX(0%);
+
+  &.shifted {
+    transform: translateX(-100%);
+    opacity: 0%;
   }
 }
 
@@ -158,5 +206,54 @@ Hide color mode toggle in small viewports
 @include utils.responsive('lg', 'down') {
   .sidebarButton.desktop {
     display: none;
+  }
+}
+
+.root {
+  & > div:first-child,
+  .headerMiddle {
+    opacity: 1;
+    transition: 1s;
+    visibility: visible;
+  }
+}
+
+.root.activeMobileSearch {
+  & > div:first-child,
+  .headerMiddle {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.mobileSearchContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background-color: var(--ifm-background-surface-color);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+  visibility: hidden;
+
+  &.visible {
+    opacity: 1;
+    transform: translateX(0%);
+    visibility: visible;
+  }
+}
+
+.headerRightMobile {
+  display: none !important;
+  visibility: hidden;
+}
+
+@include utils.responsive('lg', 'down') {
+  .headerRightMobile {
+    display: flex !important;
+    visibility: visible;
   }
 }
