@@ -58,6 +58,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       docs: { sidebar: { hideable: true } },
+      colorMode: {
+        disableSwitch: true,
+      },
       navbar: {
         title: '',
         logo: {
@@ -69,8 +72,15 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Docs',
+            href: 'https://blog.codex.storage/',
+            label: 'Blog',
           },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   position: 'right',
+          //   className: 'header-github-link',
+          //   'aria-label': 'GitHub repository',
+          // },
           {
             type: 'localeDropdown',
             position: 'right',

@@ -58,9 +58,7 @@ export default function DocItemLayout({ children }: Props): JSX.Element {
           </div>
         </div>
       </div>
-      {windowSize !== 'mobile' && (
-        <aside className={clsx('col')}>footnotes</aside>
-      )}
+      {windowSize !== 'mobile' && <aside className={clsx('col')} />}
       {docTOC.desktop && (
         <div className={clsx(styles.tocDesktopWrapper, 'col')}>
           {docTOC.desktop}
