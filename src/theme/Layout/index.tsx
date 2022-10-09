@@ -1,19 +1,12 @@
-import { useLocation } from '@docusaurus/router'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { globalStore } from '@site/src/containers/GlobalStore'
+import { useIsVersionIndexPage } from '@site/src/lib/useIsVersionIndexPage'
 import Layout from '@theme-original/Layout'
 import React from 'react'
 import './styles.scss'
 
 export default function LayoutWrapper(props) {
-  const { pathname } = useLocation()
-  const {
-    siteConfig: { baseUrl },
-  } = useDocusaurusContext()
-
-  const store = globalStore.useCreateStore({
-    hiddenSidebar: pathname === baseUrl,
-  })
+  const isIndexPage = useIsVersionIndexPage()
+  const store = globalStore.useCreateStore({ hiddenSidebar: isIndexPage })
 
   return (
     <globalStore.Provider store={store}>
