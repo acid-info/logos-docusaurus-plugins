@@ -1,13 +1,10 @@
-import React from 'react'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { useAlternatePageUtils } from '@docusaurus/theme-common/internal'
 import { translate } from '@docusaurus/Translate'
-import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem'
-import IconLanguage from '@theme/Icon/Language'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem'
+import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem'
 import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem'
-
-import styles from './styles.module.css'
+import React from 'react'
 
 export default function LocaleDropdownNavbarItem({
   mobile,
@@ -59,7 +56,7 @@ export default function LocaleDropdownNavbarItem({
     <DropdownNavbarItem
       {...props}
       mobile={mobile}
-      label={<>{dropdownLabel}</>}
+      label={<>{currentLocale.toUpperCase()}</>}
       items={items}
     />
   )
