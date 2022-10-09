@@ -22,6 +22,10 @@
   flex-basis: 16.66vw;
   flex-grow: 0;
   flex-shrink: 0;
+  font-size: var(--ifm-h6-font-size);
+  a {
+    font-size: var(--ifm-h6-font-size);
+  }
 }
 
 .docItemContainer > div {

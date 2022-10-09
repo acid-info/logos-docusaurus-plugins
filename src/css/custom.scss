@@ -152,8 +152,10 @@
   --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 2);
   --ifm-footer-background-color: transparent;
 
-  --ifm-menu-link-padding-horizontal: 0.75rem;
+  --ifm-menu-link-padding-horizontal: var(--ifm-spacing-horizontal);
   --ifm-menu-link-padding-vertical: 0.375rem;
+  --ifm-menu-color-background-active: var(--ifm-color-gray-300);
+
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
   --ifm-menu-link-sublist-icon-filter: none;
   --ifm-navbar-height: 3.75rem;
