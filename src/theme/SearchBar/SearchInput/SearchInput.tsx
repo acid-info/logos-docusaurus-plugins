@@ -43,7 +43,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   }
 
   useWindowEventListener('keydown', (event) => {
-    if (event.ctrlKey && event.code === 'KeyK') {
+    if ((event.ctrlKey || event.metaKey) && event.code === 'KeyK') {
       event.preventDefault()
       focus()
     } else if (event.code === 'Escape') {
