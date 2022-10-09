@@ -70,17 +70,11 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
             href: 'https://blog.codex.storage/',
             label: 'Blog',
           },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   position: 'right',
-          //   className: 'header-github-link',
-          //   'aria-label': 'GitHub repository',
-          // },
           {
             type: 'localeDropdown',
             position: 'right',
