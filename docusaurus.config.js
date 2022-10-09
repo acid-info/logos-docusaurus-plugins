@@ -70,9 +70,6 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
             href: 'https://blog.codex.storage/',
             label: 'Blog',
           },

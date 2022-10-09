@@ -51,7 +51,7 @@ export default function NavbarContent(): JSX.Element {
 
   const localeDropdown = items.find((item) => item.type === 'localeDropdown')
   const links = items.filter(
-    (item) => item.type === 'doc' || !!(item as any).to,
+    (item) => item.type === 'doc' || !!(item as any).to || !!item.href,
   )
 
   const mobileSidebar = useNavbarMobileSidebar()
