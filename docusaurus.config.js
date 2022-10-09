@@ -65,6 +65,8 @@ const config = {
         logo: {
           alt: 'Codex',
           src: 'img/logo.svg',
+          height: 26,
+          width: 24,
         },
         items: [
           {
