@@ -1,3 +1,5 @@
+@use './utils';
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -15,6 +17,8 @@
   /*--ifm-light-value: 15%;*/
   /*--ifm-lighter-value: 30%;*/
   /*--ifm-lightest-value: 50%;*/
+
+  --ifm-background-color: #f8f8fa;
 
   --ifm-color-white: #fff;
   --ifm-color-black: #000;
@@ -172,9 +176,15 @@
   --ifm-tabs-padding-vertical: 1rem;
 }
 
+@include utils.responsive('lg', 'down') {
+  :root {
+    --ifm-background-color: #ffffff;
+  }
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-hero-background-color: var(--ifm-color-white);
+  --ifm-hero-background-color: #f8f8fa;
   --ifm-hero-text-color: var(--ifm-color-black);
 }
 
