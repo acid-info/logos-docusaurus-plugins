@@ -1,0 +1,13 @@
+// TODO: move styles to css/custom.scss file.
+
+.hidden-scrollbar {
+  /* Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+
+  /* Firefox, Edge and IE */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

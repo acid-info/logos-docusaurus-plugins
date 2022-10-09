@@ -1,0 +1,68 @@
+// TODO: use ifm variables
+
+.root {
+  padding: 0;
+}
+
+.divider {
+  width: 100%;
+  padding: 0 14px;
+
+  & > div {
+    height: 1px;
+    background-color: #ededed;
+  }
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+
+  span,
+  button {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #c0c0c2;
+  }
+
+  button {
+    color: #909091;
+    background: #eeeef1;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+}
+
+.noResults {
+  color: #909091;
+}
+
+.groups {
+  max-height: 500px;
+  overflow-y: auto;
+
+  .group {
+    margin: 16px 0;
+  }
+
+  .divider:last-child {
+    display: none;
+  }
+}
+
+[data-theme='dark'] {
+  .divider {
+    & > div {
+      opacity: 0.1;
+    }
+  }
+
+  .topBar {
+    button {
+      background-color: var(--ifm-button-color);
+    }
+  }
+}

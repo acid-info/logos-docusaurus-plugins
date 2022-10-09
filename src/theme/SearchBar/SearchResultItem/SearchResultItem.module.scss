@@ -1,0 +1,38 @@
+.root {
+  text-decoration: none !important;
+}
+
+.icon {
+  &.l1 {
+  }
+
+  &.l2 {
+    opacity: 0.6;
+  }
+
+  &.fill {
+    &,
+    & * {
+      fill: currentColor;
+    }
+  }
+
+  &.stroke {
+    &,
+    & * {
+      stroke: currentColor;
+    }
+  }
+}
+
+[data-theme='light'] {
+  .icon {
+    color: black; // todo: use ifm variables
+  }
+}
+
+[data-theme='dark'] {
+  .icon {
+    color: white; // TODO: use ifm variables
+  }
+}

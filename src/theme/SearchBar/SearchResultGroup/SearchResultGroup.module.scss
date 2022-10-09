@@ -1,0 +1,17 @@
+.root {
+  & > div:first-child {
+    padding: 0 14px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #828285;
+  }
+
+  ul {
+    margin-top: 16px;
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none;
+  }
+}
