@@ -85,7 +85,7 @@ export default function NavbarContent(): JSX.Element {
           <div className={styles.navbarLogoWrapper}>
             <NavbarLogo />
           </div>
-          <div>
+          <div className={styles.searchContainer}>
             <NavbarSearch>
               <SearchBar />
             </NavbarSearch>

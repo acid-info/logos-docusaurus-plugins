@@ -1,0 +1,37 @@
+// todo: use ifm variables
+
+.root {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+
+  mark {
+    color: #3165b4;
+    background: none;
+  }
+
+  & > div {
+    margin-left: 26px;
+
+    & > div {
+      color: #373738;
+      font-size: 0.875rem;
+    }
+
+    & > p {
+      color: #828285;
+      font-size: 0.625rem;
+      margin: 0;
+    }
+  }
+}
+
+[data-theme='dark'] {
+  .root {
+    & > div {
+      & > div {
+        color: var(--ifm-color-secondary);
+      }
+    }
+  }
+}

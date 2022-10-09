@@ -105,6 +105,10 @@
   }
 }
 
+.searchContainer > div {
+  padding: 0;
+}
+
 @include utils.responsive('lg', 'down') {
   .root {
     padding: 0 var(--ifm-spacing-horizontal);

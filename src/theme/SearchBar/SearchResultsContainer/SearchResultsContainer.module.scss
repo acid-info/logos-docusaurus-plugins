@@ -1,0 +1,21 @@
+.root {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 1rem;
+
+  left: 0;
+  top: 100%;
+  position: absolute;
+
+  margin-top: 16px;
+
+  width: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
