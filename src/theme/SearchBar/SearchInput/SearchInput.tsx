@@ -2,7 +2,7 @@ import { useOS } from '@site/src/lib/useOS'
 import { useWindowEventListener } from '@site/src/lib/useWindowEventListener'
 import clsx from 'clsx'
 import React from 'react'
-import {} from 'react-use'
+import { useMedia } from 'react-use'
 import styles from './SearchInput.module.scss'
 
 export type SearchInputProps = Omit<
@@ -30,6 +30,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   ...props
 }) => {
   const os = useOS()
+  const isMobile = useMedia('(max-width: 996px)')
 
   const expanded = active || value?.length > 0
 
@@ -67,7 +68,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
         ref={inputRef}
         onFocus={onFocus}
         {...inputProps}
-        placeholder={expanded ? inputProps.placeholder : ''}
+        placeholder={expanded || isMobile ? inputProps.placeholder : ''}
       />
       <div className={styles.shortcuts}>
         {active ? (

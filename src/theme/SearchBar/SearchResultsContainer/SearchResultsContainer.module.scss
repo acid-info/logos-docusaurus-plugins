@@ -1,3 +1,5 @@
+@use '@site/src/css/utils';
+
 .root {
   background-color: var(--ifm-background-surface-color);
   border-radius: 1rem;
@@ -17,5 +19,13 @@
   &.visible {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .root {
+    width: 100vw;
+    margin-top: 0;
+    border-radius: 0;
   }
 }
