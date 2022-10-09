@@ -28,7 +28,7 @@ export const Hero = (props: TProps): JSX.Element => {
         <div>
           <div>
             <h1 className={clsx('hero__title', styles.heroTitle)}>{title}</h1>
-            <p className={clsx('hero_subtitle', 'sub4', styles.heroSubtitle)}>
+            <p className={clsx('hero_subtitle', styles.heroSubtitle)}>
               {subtitle}
             </p>
           </div>

@@ -34,8 +34,8 @@ export const ExternalReferenceCard = (props: TProps): JSX.Element => {
     <div className={clsx('alert', styles.exref)}>
       <div className={styles.exrefContainer}>
         <div>{icon}</div>
-        <div>{children}</div>
-        <div>
+        <div className={styles.exrefText}>{children}</div>
+        <div className={styles.exrefButton}>
           <LinkButtonWithIcon
             icon={<IconArrowRightCircle />}
             linkProps={{ href: linkUrl, target: '_black' }}

@@ -37,6 +37,8 @@
   --ifm-color-gray-800: #1a1a1a;
   --ifm-color-gray-900: #151515;
   --ifm-color-gray-1000: var(--ifm-color-black);
+  --ifm-font-color-base-inverse: var(--ifm-color-black);
+
   /*Code block*/
   --docusaurus-highlighted-code-line-bg: var(--ifm-color-gray-100);
 
@@ -46,6 +48,8 @@
   --ifm-alert-background-color: var(--ifm-color-gray-100) !important;
   --ifm-card-background-color: var(--ifm-color-gray-100) !important;
   --ifm-alert-foreground-color: var(--ifm-color-gray-700);
+
+  --ifm-button-background-color: var(--ifm-color-white);
 
   /*spacing and details*/
   --ifm-global-border-width: 1px;
@@ -249,4 +253,35 @@ small {
 }
 .menu_src-theme-Navbar-Content-styles-module svg {
   display: none;
+}
+
+.card {
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+}
+
+@media (max-width: 576px) {
+  :root {
+    --ifm-global-spacing: 0.5rem;
+    --ifm-spacing-vertical: var(--ifm-global-spacing);
+    --ifm-spacing-horizontal: var(--ifm-global-spacing);
+
+    --ifm-button-size-multiplier: 1.25;
+
+    --ifm-button-padding-horizontal: calc(
+      var(--ifm-button-size-multiplier) * var(--ifm-spacing-horizontal)
+    );
+    --ifm-button-padding-vertical: calc(
+      var(--ifm-button-size-multiplier) * var(--ifm-spacing-vertical)
+    );
+
+    --ifm-alert-padding-horizontal: calc(2 * var(--ifm-spacing-horizontal));
+    --ifm-alert-padding-vertical: calc(2 * var(--ifm-spacing-vertical));
+  }
+
+  .markdown > h2 {
+    --ifm-h2-font-size: 1.75rem;
+  }
+  .markdown h4 {
+    --ifm-h4-font-size: 1.25rem !important;
+  }
 }
