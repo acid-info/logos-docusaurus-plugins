@@ -57,6 +57,7 @@
   .TeamListContainer {
     grid-column-gap: calc(1 * var(--ifm-spacing-horizontal)) !important;
     grid-row-gap: calc(1 * var(--ifm-spacing-vertical)) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .memberCard {
