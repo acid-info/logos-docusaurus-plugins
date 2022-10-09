@@ -9,6 +9,11 @@
     grid-area: 1 / 1;
   }
 
+  & > main {
+    width: 100%;
+    min-width: 0;
+  }
+
   & > aside {
     max-width: var(--doc-sidebar-max-width);
 
