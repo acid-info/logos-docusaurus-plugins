@@ -10,5 +10,10 @@ export const Button = (
   props: TProps & HTMLProps<HTMLButtonElement>,
 ): JSX.Element => {
   const { children, className, ...rest } = props
-  return <button className={clsx('button', className)}>{children}</button>
+
+  return (
+    <button className={clsx('button', className)} {...(rest as any)}>
+      {children}
+    </button>
+  )
 }

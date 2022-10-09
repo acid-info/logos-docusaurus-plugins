@@ -207,13 +207,17 @@ Hide color mode toggle in small viewports
   .sidebarButton.desktop {
     display: none;
   }
+
+  .root > div:first-child,
+  .headerMiddle {
+    transition: 1s;
+  }
 }
 
 .root {
   & > div:first-child,
   .headerMiddle {
     opacity: 1;
-    transition: 1s;
     visibility: visible;
   }
 }
