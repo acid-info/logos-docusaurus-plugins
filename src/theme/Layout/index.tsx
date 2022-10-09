@@ -1,10 +1,19 @@
+import { useLocation } from '@docusaurus/router'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { globalStore } from '@site/src/containers/GlobalStore'
 import Layout from '@theme-original/Layout'
 import React from 'react'
 import './styles.scss'
 
 export default function LayoutWrapper(props) {
-  const store = globalStore.useCreateStore({ hiddenSidebar: false })
+  const { pathname } = useLocation()
+  const {
+    siteConfig: { baseUrl },
+  } = useDocusaurusContext()
+
+  const store = globalStore.useCreateStore({
+    hiddenSidebar: pathname === baseUrl,
+  })
 
   return (
     <globalStore.Provider store={store}>
