@@ -16,3 +16,28 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .exrefContainer {
+    flex-direction: column;
+    align-items: flex-start !important;
+    > *:first-child {
+      width: 30px;
+    }
+    > *:first-child svg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5 !important;
+    }
+
+    .exrefText {
+      font-size: var(--ifm-h3-font-size);
+      padding-right: 40px;
+      margin-bottom: calc(2 * var(--ifm-paragraph-margin-bottom));
+    }
+
+    .exrefButton {
+      width: 100%;
+    }
+  }
+}

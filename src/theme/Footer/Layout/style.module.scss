@@ -64,8 +64,18 @@
   }
 }
 
-@media (min-width: 997px) {
+@media (max-width: 576px) {
   .footerContentWrapper {
-    //max-width: 75% !important;
+    opacity: 0.5 !important;
+  }
+  .communityLinks {
+    gap: 20px !important;
+    a {
+      width: 30px;
+    }
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
 }
