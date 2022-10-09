@@ -1,23 +1,33 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import clsx from 'clsx'
 import styles from './style.module.scss'
 import { useTeam } from '@site/src/lib/team.utils'
 import { ELogosTeamNames } from '@site/src/types/team'
-import { IconDiscord, IconGithub, IconStatus } from '../../Icon'
 import { SocialMediaItem } from '../../Icon/SocialmediaLink'
+import { ECommunityProviders } from '@site/src/types/ui.types'
+import {
+  globalStore,
+  selectHiddenSidebar,
+} from '@site/src/containers/GlobalStore'
 
 type TProps = {
   children: React.ReactNode
 }
 
-export const TeamList = ({ children }: TProps): JSX.Element => {
+export const TeamList = (props: TProps): JSX.Element => {
   const team = useTeam('codex' as ELogosTeamNames)
+  const hiddenSidebar = globalStore.useSelector(selectHiddenSidebar)
 
   return (
     <section className={styles.TeamList}>
-      <div className={styles.TeamListContainer}>
+      <div
+        className={clsx(
+          styles.TeamListContainer,
+          hiddenSidebar ? styles.withSidebarHide : false,
+        )}
+      >
         {team.map((member, index) => (
-          <div className={clsx('', styles.memberCard)}>
+          <div className={clsx('', styles.memberCard)} key={`mc-${index}`}>
             <div className={clsx('', styles.memberCardImage)}>
               <img
                 src={member['photo-path']}
@@ -25,28 +35,30 @@ export const TeamList = ({ children }: TProps): JSX.Element => {
                 title={member.contact.email}
               />
             </div>
-            <div className={styles.memberCardCaption}>
+            <div className={clsx('card', styles.memberCardCaption)}>
               <div>
-                <h6>{member['pref-name']}</h6>
-                <div>{member.contact.email}</div>
+                <h5>{member['pref-name']}</h5>
+                <small className={styles.memberEmail}>
+                  {member.contact.email}
+                </small>
               </div>
-              <div>
+              <div className={styles.memberSocials}>
                 {member.contact.github && (
                   <SocialMediaItem
                     handler={member.contact.github}
-                    provider={'github'}
+                    provider={ECommunityProviders.github}
                   />
                 )}
                 {member.contact.status && (
                   <SocialMediaItem
                     handler={member.contact.status}
-                    provider={'status'}
+                    provider={ECommunityProviders.status}
                   />
                 )}
                 {member.contact.discord && (
                   <SocialMediaItem
                     handler={member.contact.discord}
-                    provider={'discord'}
+                    provider={ECommunityProviders.discord}
                   />
                 )}
               </div>

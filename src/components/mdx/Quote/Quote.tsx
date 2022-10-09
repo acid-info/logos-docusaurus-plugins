@@ -14,7 +14,7 @@ export const Quote = (props: TProps): JSX.Element => {
       <div className={styles.quoteMark}>
         <div />
       </div>
-      <div className={styles.quoteContent}>{children}</div>
+      <div className={clsx(styles.quoteContent, 'sans')}>{children}</div>
     </div>
   )
 }

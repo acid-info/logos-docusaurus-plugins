@@ -3,15 +3,12 @@
     display: grid;
     grid-auto-rows: 200px;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
+    grid-column-gap: calc(0.7 * var(--ifm-global-spacing));
+    grid-row-gap: calc(0.6 * var(--ifm-global-spacing));
 
-    &.n_1 {
-    }
-
-    &.n_2 {
-    }
-
-    &.n_2 {
+    &.n_1 > *:nth-child(n + 1),
+    &.n_3 > *:nth-child(n + 3) {
+      grid-column: span 2;
     }
   }
 }

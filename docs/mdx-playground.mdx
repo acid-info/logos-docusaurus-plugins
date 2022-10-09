@@ -5,9 +5,10 @@ import {Quote} from '@site/src/components/mdx/Quote';
 import {ExternalReferenceCard} from '@site/src/components/mdx/ExternalReferenceCard';
 import {TeamList} from '@site/src/components/mdx/TeamList';
 
-<Hero title={"codex"}
+<Hero title={"Codex"}
       subtitle={"Codex is building a Decentralized Durability Engine"}
       linkText={"PoC0"}
+      label={"Introduction"}
       linkUrl={"https://github.com/status-im/codex-research/blob/main/Readme.md"}/>
 
 ## What is Codex?
@@ -22,10 +23,13 @@ import {TeamList} from '@site/src/components/mdx/TeamList';
 ## Features
 <FeatureList>
     <FeatureCard title={"Fast erasure coding"}
+                 index={0}
                  text={"Codex uses high-performance Reed-Solomon encoding to guarantee the durabilitty of the datasets."}/>
     <FeatureCard title={"SNARK-based proof of retrivability"}
+                 index={1}
                  text={"To implement space-efficient data retrievability, Codex leverages state-of-the-art SNARK-based proofs."}/>
     <FeatureCard title={"Low-overhead lazy repair"}
+                 index={2}
                  text={"Data repairs in Codex are grouped through lazy repair to decrease network bandwith overhead."}/>
 </FeatureList>
 

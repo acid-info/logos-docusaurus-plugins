@@ -148,3 +148,15 @@ Hide color mode toggle in small viewports
     display: none;
   }
 }
+
+@include utils.responsive('lg', 'up') {
+  .sidebarButton.mobile {
+    display: none;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .sidebarButton.desktop {
+    display: none;
+  }
+}

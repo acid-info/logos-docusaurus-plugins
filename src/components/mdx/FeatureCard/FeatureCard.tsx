@@ -18,10 +18,14 @@ export const FeatureCard = (props: TProps): JSX.Element => {
   return (
     <div className={clsx('card', styles.cardContainer)}>
       <div className={clsx('card__header', styles.cardHeader)}>
-        {index && <span className={styles.latinNumber}>{ln[index]}</span>}
-        <h3 className={styles.cardTitle}>{title}</h3>
+        {index !== null && (
+          <div className={clsx('sub6', 'sans', styles.latinNumber)}>
+            <span>{ln[index]}</span>
+          </div>
+        )}
+        <h4 className={styles.cardTitle}>{title}</h4>
       </div>
-      <p className={styles.cardDescription}>{text}</p>
+      <p className={clsx('sans', styles.cardDescription)}>{text}</p>
     </div>
   )
 }

@@ -1,9 +1,14 @@
+.navbar-sidebar__brand {
+  --ifm-navbar-padding-horizontal: 1rem;
+}
+
 .navbar {
   --ifm-navbar-height: 3.875rem;
-  --ifm-navbar-background-color: none;
   --ifm-navbar-shadow: none;
   --ifm-navbar-padding-horizontal: 0px;
-  --ifm-navbar-padding-vertical: 8px;
+  --ifm-navbar-padding-vertical: 0.5rem;
+
+  background: none;
 }
 
 :root {

@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Codex',
+  tagline: 'Codex is building a Decentralized Durability Engine',
+  url: 'https://codex.storage',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'status-im', // Usually your GitHub org/user name.
+  projectName: 'codex-nim', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -61,7 +61,7 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Codex',
           src: 'img/logo.svg',
         },
         items: [
@@ -78,49 +78,28 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        logo: {
+          alt: 'Codex',
+          src: 'img/logo.svg',
+          href: '/',
+          width: 22,
+        },
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'docusaurus',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Codex, ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
