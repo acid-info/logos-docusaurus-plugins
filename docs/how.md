@@ -14,7 +14,6 @@ sidebar_position: 2
 [![Codecov](https://codecov.io/gh/status-im/nim-codex/branch/main/graph/badge.svg?token=XFmCyPSNzW)](https://codecov.io/gh/status-im/nim-codex)
 [![Discord](https://img.shields.io/discord/895609329053474826)](https://discord.gg/CaJTh24ddQ)
 
-
 ## Build and Run
 
 For detailed instructions on preparing to build nim-codex see [*Building Codex*](BUILDING.md).
