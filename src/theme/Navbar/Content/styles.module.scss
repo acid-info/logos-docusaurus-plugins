@@ -13,6 +13,7 @@
 
   & > div:first-child {
     max-width: var(--doc-sidebar-max-width);
+    background: var(--ifm-color-white);
   }
 
   & > .headerMiddle {
@@ -65,7 +66,7 @@
   @extend %menu-common;
 
   width: 52px;
-  height: 46px;
+  height: 36px;
 
   &.expand {
     svg,
