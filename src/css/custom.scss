@@ -14,9 +14,9 @@
   /*--ifm-dark-value: 10%;*/
   /*--ifm-darker-value: 15%;*/
   /*--ifm-darkest-value: 30%;*/
-  /*--ifm-light-value: 15%;*/
-  /*--ifm-lighter-value: 30%;*/
-  /*--ifm-lightest-value: 50%;*/
+  /*--ifm-light-value: -15%;*/
+  /*--ifm-lighter-value: -30%;*/
+  /*--ifm-lightest-value: -50%;*/
 
   --ifm-background-color: #f8f8fa;
 
@@ -257,6 +257,10 @@ small {
 
 .card {
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+}
+
+.table-of-contents__left-border {
+  border: none !important;
 }
 
 @media (max-width: 576px) {

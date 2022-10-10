@@ -18,6 +18,9 @@
   & > .headerMiddle {
     justify-content: space-between;
     flex-grow: 1;
+    background: var(--ifm-color-white);
+    padding-top: var(--ifm-navbar-padding-vertical);
+    //padding-bottom: var(--ifm-navbar-padding-vertical);
   }
 }
 
