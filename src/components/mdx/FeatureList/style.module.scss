@@ -16,7 +16,7 @@
   .FeatureListContainer {
     grid-template-columns: 1fr !important;
     grid-auto-rows: calc(
-      90vw - calc(2 * var(--ifm-spacing-horizontal))
+      75vw - calc(2 * var(--ifm-spacing-horizontal))
     ) !important;
 
     > * {

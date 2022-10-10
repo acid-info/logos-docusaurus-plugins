@@ -101,7 +101,7 @@ export const BlogPosts = ({ children }: TProps): JSX.Element => {
   return (
     <section className={styles.blogpostsWrapper}>
       <div className={styles.blogposts}>
-        {posts.map((post, i) => (
+        {[...posts, ...posts].map((post, i) => (
           <BlogPost key={`p-${i}`} post={post} />
         ))}
       </div>
