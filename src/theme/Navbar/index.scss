@@ -30,10 +30,10 @@
 .theme-doc-sidebar-menu {
   li a,
   .theme-doc-sidebar-item-category a {
-    padding: 0.75rem 1.125rem;
-    border-radius: 0.75rem;
+    padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+    border-radius: var(--ifm-button-border-radius);
 
-    font-size: 0.875rem;
+    font-size: var(--ifm-font-size-base);
     color: #373738;
 
     .menu__link--active {
@@ -42,7 +42,7 @@
   }
 
   .menu__list-item-collapsible {
-    border-radius: 0.75rem;
+    border-radius: var(--ifm-button-border-radius);
 
     a::after {
       display: none;
@@ -68,6 +68,6 @@
   }
 
   li:not(:first-child) {
-    margin-top: 0.125rem;
+    margin-top: calc(var(--ifm-list-item-margin) / 2);
   }
 }

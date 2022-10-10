@@ -1,6 +1,9 @@
 .navbar__item.dropdown {
   background-color: #eeeef1;
-  border-radius: 0.5rem;
+  border-radius: var(--ifm-button-border-radius);
+  padding: var(--ifm-button-padding-vertical)
+    var(--ifm-button-padding-horizontal);
+  font-size: var(--ifm-h6-font-size);
 
   & > .navbar__link {
     &::after {
