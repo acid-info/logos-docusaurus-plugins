@@ -13,11 +13,12 @@
   background: none;
 }
 
-:root {
-}
-
 @include utils.responsive('lg', 'down') {
   .navbar {
     background: var(--ifm-background-surface-color);
   }
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
 }
