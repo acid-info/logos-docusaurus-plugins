@@ -1,3 +1,6 @@
+---
+description: Codex is building a Decentralized Durability Storage
+---
 
 # Codex Students Program
 
