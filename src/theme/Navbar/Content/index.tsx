@@ -113,7 +113,7 @@ export default function NavbarContent(): JSX.Element {
         </div>
       </div>
 
-      <div className={clsx('col col--5', styles.headerRight)}>
+      <div className={clsx('col col--4', styles.headerRight)}>
         <ShareButton />
         <NavbarColorModeToggle />
         {localeDropdown && (

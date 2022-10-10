@@ -31,7 +31,7 @@ export default function FooterLayout(props: Props): JSX.Element {
         className={clsx(
           'row',
           'col',
-          'col--7',
+          'col--8',
           styles.footerContentWrapper,
           hiddenSidebar ? styles.withSidebarHide : '',
         )}
