@@ -62,6 +62,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       docs: { sidebar: { hideable: true } },
+      metadata: [
+        { name: 'keywords', content: 'codex, storage' },
+        {
+          name: 'description',
+          content: 'Codex is building a Decentralized Durability Storage',
+        },
+        { name: 'image', content: 'img/codex-preview-image.png' },
+      ],
       colorMode: {
         disableSwitch: true,
       },

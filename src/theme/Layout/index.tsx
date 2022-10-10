@@ -5,8 +5,8 @@ import React from 'react'
 import './styles.scss'
 
 export default function LayoutWrapper(props) {
-  const isIndexPage = useIsVersionIndexPage()
-  const store = globalStore.useCreateStore({ hiddenSidebar: isIndexPage })
+  // const isIndexPage = useIsVersionIndexPage()
+  const store = globalStore.useCreateStore({ hiddenSidebar: false })
 
   return (
     <globalStore.Provider store={store}>
