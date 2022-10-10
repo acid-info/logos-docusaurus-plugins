@@ -1,5 +1,7 @@
 // TODO: use ifm variables
 
+@use '@site/src/css/utils';
+
 .root {
   width: auto;
   position: relative;
@@ -70,5 +72,29 @@
 
   .root.expanded input {
     background-color: var(--ifm-background-color);
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .shortcuts {
+    display: none;
+  }
+
+  .root {
+    width: 100%;
+  }
+
+  .root input {
+    width: 100%;
+    border-radius: 12px;
+    background: #eeeef0;
+  }
+
+  .root.expanded input {
+    width: 100%;
+  }
+
+  .label {
+    display: none;
   }
 }

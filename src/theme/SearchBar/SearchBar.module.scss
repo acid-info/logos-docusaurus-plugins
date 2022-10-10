@@ -1,3 +1,11 @@
+@use '@site/src/css/utils';
+
 .root {
   position: relative;
+}
+
+@include utils.responsive('lg', 'down') {
+  .root {
+    position: unset;
+  }
 }

@@ -1,3 +1,5 @@
+@use '@site/src/css/utils';
+
 .navbar-sidebar__brand {
   --ifm-navbar-padding-horizontal: 1rem;
 }
@@ -11,5 +13,58 @@
   background: none;
 }
 
-:root {
+@include utils.responsive('lg', 'down') {
+  .navbar {
+    background: var(--ifm-background-surface-color);
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.navbar-sidebar__item.menu,
+.theme-doc-sidebar-menu {
+  li a,
+  .theme-doc-sidebar-item-category a {
+    padding: 0.75rem 1.125rem;
+    border-radius: 0.75rem;
+
+    font-size: 0.875rem;
+    color: #373738;
+
+    .menu__link--active {
+      background-color: #eeeef0;
+    }
+  }
+
+  .menu__list-item-collapsible {
+    border-radius: 0.75rem;
+
+    a::after {
+      display: none;
+    }
+
+    .dropdown-icon {
+      position: absolute;
+      right: 1.125rem;
+    }
+  }
+
+  li.menu__list-item {
+    .dropdown-icon {
+      transform: rotate(0deg);
+      transition: transform var(--ifm-transition-fast);
+    }
+
+    &--collapsed {
+      .dropdown-icon {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  li:not(:first-child) {
+    margin-top: 0.125rem;
+  }
 }

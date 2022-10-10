@@ -1,0 +1,18 @@
+.backButton {
+  & > div {
+    flex-direction: row-reverse;
+
+    color: #373738;
+    font-size: 0.875rem;
+
+    svg {
+      * {
+        stroke: #909091;
+      }
+    }
+  }
+
+  border: 1px solid #eeeef1;
+  padding: 12px 18px;
+  margin-bottom: 8px;
+}

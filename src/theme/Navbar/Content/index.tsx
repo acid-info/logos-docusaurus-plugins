@@ -1,5 +1,10 @@
 import { useThemeConfig } from '@docusaurus/theme-common'
-import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal'
+import {
+  useNavbarMobileSidebar,
+  useSearchPage,
+} from '@docusaurus/theme-common/internal'
+import { IconSearch } from '@site/src/components/Icon'
+import { IconButton } from '@site/src/components/IconButton'
 import {
   globalStore,
   selectHiddenSidebar,
@@ -12,7 +17,9 @@ import NavbarSearch from '@theme/Navbar/Search'
 import NavbarItem, { Props as NavbarItemConfig } from '@theme/NavbarItem'
 import SearchBar from '@theme/SearchBar'
 import clsx from 'clsx'
-import React from 'react'
+import React, { useState } from 'react'
+import { useSearch } from '../../SearchBar/hooks/useSearch'
+import { MobileSearch } from './MobileSearch/MobileSearch'
 import { ShareButton } from './ShareButton'
 import styles from './styles.module.scss'
 
@@ -59,8 +66,16 @@ export default function NavbarContent(): JSX.Element {
   const dispatch = globalStore.useDispatch()
   const hiddenDesktopSidebar = globalStore.useSelector(selectHiddenSidebar)
 
+  const [mobileSearch, setMobileSearch] = useState(false)
+
   return (
-    <div className={clsx('row', styles.root)}>
+    <div
+      className={clsx(
+        'row',
+        styles.root,
+        mobileSearch && styles.activeMobileSearch,
+      )}
+    >
       <div className="col col--2">
         <SidebarToggleButton
           onToggle={mobileSidebar.toggle}
@@ -92,7 +107,7 @@ export default function NavbarContent(): JSX.Element {
           </div>
         </div>
         <div>
-          <nav className={styles.menu}>
+          <nav className={clsx(styles.menu, styles.links)}>
             <NavbarItems items={links} />
           </nav>
         </div>
@@ -107,6 +122,34 @@ export default function NavbarContent(): JSX.Element {
             <NavbarItem {...localeDropdown} />
           </>
         )}
+      </div>
+
+      <div
+        className={clsx(
+          'col',
+          styles.headerRightMobile,
+          mobileSearch && styles.shifted,
+        )}
+      >
+        {localeDropdown && <NavbarItem {...localeDropdown} />}
+        <IconButton
+          className={styles.searchButton}
+          onClick={() => setMobileSearch(true)}
+        >
+          <IconSearch />
+        </IconButton>
+      </div>
+
+      <div
+        className={clsx(
+          styles.mobileSearchContainer,
+          mobileSearch && styles.visible,
+        )}
+      >
+        <MobileSearch
+          render={mobileSearch}
+          onCancel={() => setMobileSearch(false)}
+        />
       </div>
     </div>
   )

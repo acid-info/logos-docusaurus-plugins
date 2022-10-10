@@ -23,6 +23,13 @@
   background-color: var(--ifm-background-surface-color);
 }
 
+:root {
+  &,
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
 @include utils.responsive('lg', 'down') {
   .background-underlay {
     display: none;
