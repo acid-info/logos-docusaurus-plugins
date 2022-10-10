@@ -107,7 +107,7 @@ export default function NavbarContent(): JSX.Element {
           </div>
         </div>
         <div>
-          <nav className={styles.menu}>
+          <nav className={clsx(styles.menu, styles.links)}>
             <NavbarItems items={links} />
           </nav>
         </div>
