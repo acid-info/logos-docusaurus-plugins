@@ -99,17 +99,6 @@
       "discord": "cblake#0229"
     }
   },
-  "michaelb@status.im": {
-    "pref-name": "Michael",
-    "department": "Codex",
-    "photo-path": "https://images7.bamboohr.com/66157/photos/126-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
-    "contact": {
-      "email": "michaelb@status.im",
-      "status": "michaelb.stateofus.eth",
-      "github": "michaelsbradleyjr",
-      "discord": "brainproxy#2605"
-    }
-  },
   "dustin@status.im": {
     "pref-name": "Dustin",
     "department": "Nim",

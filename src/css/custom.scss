@@ -239,6 +239,10 @@
   text-underline-offset: 0.3rem;
 }
 
+.markdown > h2 {
+  letter-spacing: -1.5px;
+}
+
 .card {
   padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
 }
