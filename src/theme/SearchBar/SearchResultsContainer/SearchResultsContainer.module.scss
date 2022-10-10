@@ -24,7 +24,7 @@
 
 @include utils.responsive('lg', 'down') {
   .root {
-    width: 100vw;
+    width: 100%;
     margin-top: 0;
     border-radius: 0;
   }

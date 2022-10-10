@@ -112,16 +112,16 @@
 @include utils.responsive('lg', 'down') {
   .root {
     padding: 0 var(--ifm-spacing-horizontal);
-    overflow: hidden;
   }
 
   .root > * {
     width: auto;
-    flex: 0 0 auto !important;
+    flex: 0 0 auto;
     padding: 0;
   }
 
-  .headerLeft {
+  .root > div:first-child {
+    flex: 0 0 auto;
   }
 
   .headerMiddle {
@@ -233,7 +233,7 @@ Hide color mode toggle in small viewports
 .mobileSearchContainer {
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   position: absolute;
 
@@ -253,6 +253,8 @@ Hide color mode toggle in small viewports
 .headerRightMobile {
   display: none !important;
   visibility: hidden;
+
+  flex-grow: 1 !important;
 }
 
 @include utils.responsive('lg', 'down') {
