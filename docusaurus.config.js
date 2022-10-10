@@ -1,5 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+require('dotenv').config()
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
@@ -13,6 +14,10 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+
+  customFields: {
+    ghostAPiKey: process.env.GHOST_API_KEY,
+  },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -70,7 +75,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://blog.codex.storage/',
+            to: 'blog',
             label: 'Blog',
           },
           {

@@ -8,20 +8,19 @@ import {FeatureCard} from '@site/src/components/mdx/FeatureCard';
 import {Quote} from '@site/src/components/mdx/Quote';
 import {ExternalReferenceCard} from '@site/src/components/mdx/ExternalReferenceCard';
 import {TeamList} from '@site/src/components/mdx/TeamList';
+import {BlogPosts} from '@site/src/components/mdx/BlogPosts';
 
 <Hero title={"Codex"}
       subtitle={"Codex is building a Decentralized Durability Engine"}
-      linkText={"PoC0"}
+      linkText={"PoC Dagger"}
       label={"Introduction"}
-      linkUrl={"https://github.com/status-im/codex-research"}/>
+      linkUrl={"https://github.com/status-im/nim-codex"}/>
 
 ## What is Codex?
 <Quote>
     <ul>
         <li>Codex is aiming to solve the fundamental issues of data durability in decentralized systems.</li>
-        <br/>
         <li>Codex is a research group working in all areas of decentralized storage.</li>
-        <br/>
         <li>Codex is a decentralized storage protocol for durable information.</li>
     </ul>
 </Quote>
@@ -31,13 +30,19 @@ import {TeamList} from '@site/src/components/mdx/TeamList';
     <FeatureCard title={"Fast erasure coding"}
                  index={0}
                  text={"Codex uses high-performance Reed-Solomon encoding to guarantee the durability of the datasets."}/>
-    <FeatureCard title={"SNARK-based proof of retrivability"}
+    <FeatureCard title={"SNARK-based proof of retrievability"}
                  index={1}
                  text={"To implement space-efficient data retrievability, Codex leverages state-of-the-art SNARK-based proofs."}/>
     <FeatureCard title={"Low-overhead lazy repair"}
                  index={2}
                  text={"Data repairs in Codex are grouped through lazy repair to decrease network bandwidth overhead."}/>
+    <FeatureCard title={"Low-overhead lazy repair"}
+                 index={2}
+                 text={"Data repairs in Codex are grouped through lazy repair to decrease network bandwidth overhead."}/>
 </FeatureList>
+
+## Blog Posts
+<BlogPosts/>
 
 ## Resources
 <ExternalReferenceCard linkUrl={"http://Linktowhitepaper"}

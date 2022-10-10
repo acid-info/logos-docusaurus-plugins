@@ -1,22 +1,23 @@
 .TeamList {
   .TeamListContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     grid-column-gap: calc(0.7 * var(--ifm-global-spacing));
     grid-row-gap: calc(0.6 * var(--ifm-global-spacing));
 
     &.withSidebarHide {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       .memberCard {
-        grid-template-rows: 320px 60px;
+        grid-template-rows: 220px 60px;
       }
     }
 
     .memberCard {
       box-shadow: none;
       display: grid;
-      grid-template-rows: 400px 60px;
+      //grid-template-rows: 400px 60px;
+      grid-template-rows: 270px 110px !important;
       grid-column-gap: calc(0.7 * var(--ifm-global-spacing));
       grid-row-gap: calc(0.6 * var(--ifm-global-spacing));
 
@@ -30,10 +31,9 @@
       }
 
       .memberCardCaption {
+        flex-direction: column;
+        gap: 10px !important;
         border-radius: 8px;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 40px;
 
         h5 {
           margin: 0;
@@ -41,11 +41,11 @@
         .memberEmail {
           color: var(--ifm-color-gray-500);
         }
-
         .memberSocials {
           display: flex;
           align-items: center;
           opacity: 0.3;
+          height: 20px;
           gap: calc(var(--ifm-spacing-horizontal) * 0.5);
         }
       }
@@ -67,11 +67,10 @@
   }
 
   .memberCardCaption {
-    flex-direction: column !important;
     gap: 10px !important;
     .memberSocials {
-      height: 30px;
-      gap: 16px !important;
+      //height: 30px;
+      //gap: 16px !important;
       opacity: 0.5 !important;
       a {
         width: 25px;
