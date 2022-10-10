@@ -16,6 +16,7 @@ type TProps = {
 
 export const TeamList = (props: TProps): JSX.Element => {
   const team = useTeam('codex' as ELogosTeamNames)
+  console.log(team)
   const hiddenSidebar = globalStore.useSelector(selectHiddenSidebar)
 
   return (
@@ -59,6 +60,12 @@ export const TeamList = (props: TProps): JSX.Element => {
                   <SocialMediaItem
                     handler={member.contact.discord}
                     provider={ECommunityProviders.discord}
+                  />
+                )}
+                {member.contact.gscholar && (
+                  <SocialMediaItem
+                    handler={member.contact.gscholar}
+                    provider={ECommunityProviders.gscholar}
                   />
                 )}
               </div>

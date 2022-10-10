@@ -6,4 +6,5 @@ export enum ECommunityProviders {
   'github' = 'github',
   'discourse' = 'discourse',
   'telegram' = 'telegram',
+  'gscholar' = 'gscholar',
 }

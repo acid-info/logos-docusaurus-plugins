@@ -6,6 +6,7 @@ import {
   IconGithub,
   IconStatus,
   IconTelegram,
+  IconGScholar,
 } from './Icon'
 import { ECommunityProviders } from '@site/src/types/ui.types'
 
@@ -60,6 +61,15 @@ export const SocialMediaItem = (props: TProps): JSX.Element => {
           target={'_blank'}
         >
           <IconDiscourse />
+        </a>
+      )
+    case ECommunityProviders.gscholar:
+      return (
+        <a
+          href={`https://scholar.google.com/citations?user=${props.handler}`}
+          target={'_blank'}
+        >
+          <IconGScholar />
         </a>
       )
     default:

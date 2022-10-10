@@ -2,6 +2,7 @@ export interface IStatusContact {
   email: string
   status?: any
   github?: any
+  gscholar?: string
   discord: string
 }
 
