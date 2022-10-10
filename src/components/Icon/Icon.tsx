@@ -16,6 +16,7 @@ import DiscourseSvg from '@site/static/icons/discourse.svg'
 import TelegramSvg from '@site/static/icons/telegram.svg'
 import StatusSvg from '@site/static/icons/status.svg'
 import SearchSvg from '@site/static/icons/search.svg'
+import DropdownSvg from '@site/static/icons/dropdown.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -118,5 +119,11 @@ export const IconFolderFilled = (props: TIconProps): JSX.Element => (
 export const IconSearch = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <SearchSvg />
+  </Icon>
+)
+
+export const IconDropdown = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <DropdownSvg />
   </Icon>
 )

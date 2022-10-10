@@ -179,7 +179,7 @@
     border-radius: 12px;
   }
 
-  transition: 0.7s ease-in-out;
+  transition: all 0.8s, opacity 0.4s;
   transform: translateX(0%);
 
   &.shifted {
