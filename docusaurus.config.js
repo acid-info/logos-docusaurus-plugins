@@ -92,11 +92,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'docusaurus',
+                href: '4qdQN5JaWW',
               },
               {
                 label: 'Twitter',
-                href: 'docusaurus',
+                href: 'codexstorage',
               },
             ],
           },
