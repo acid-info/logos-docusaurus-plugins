@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: Codex is building a Decentralized Durability Storage
+description: Codex is building a Decentralized Durability Storage Engine
 ---
 # How to use Codex
 

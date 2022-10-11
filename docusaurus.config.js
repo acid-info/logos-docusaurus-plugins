@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Codex',
-  tagline: 'Codex is building a Decentralized Durability Engine',
+  tagline: 'Codex is building a Decentralized Durability Engine Engine',
   url: 'https://codex.storage',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -66,7 +66,8 @@ const config = {
         { name: 'keywords', content: 'codex, storage' },
         {
           name: 'description',
-          content: 'Codex is building a Decentralized Durability Storage',
+          content:
+            'Codex is building a Decentralized Durability Storage Engine',
         },
         { name: 'image', content: 'img/codex-preview-image.png' },
       ],
