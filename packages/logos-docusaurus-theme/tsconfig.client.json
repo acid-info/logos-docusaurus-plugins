@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./lib/.tsbuildinfo-client",
+    "rootDir": "src",
+    "outDir": "lib",
+    "module": "esnext",
+    "target": "esnext",
+    "jsx": "react",
+    "types": [
+      "node",
+      "@docusaurus/module-type-aliases",
+      "@docusaurus/theme-classic"
+    ],
+    "baseUrl": "./",
+    "lib": ["DOM"],
+    "paths": {
+      "@logos-theme/*": ["src/client/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }]
+  },
+  "include": ["src/client", "src/*.d.ts", "src/theme.ts"],
+  "exclude": ["**/__tests__/**"]
+}

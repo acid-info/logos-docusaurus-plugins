@@ -1,0 +1,100 @@
+// TODO: use ifm variables
+
+@use '../../../css/utils';
+
+.root {
+  width: auto;
+  position: relative;
+}
+
+.root input {
+  width: 134px;
+
+  border: 0;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+
+  padding: 9px 48px 9px 16px;
+
+  transition: 0.2s;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.root.expanded input {
+  background: #eeeef0;
+  width: 334px;
+}
+
+.root.expanded .label {
+  display: none;
+}
+
+.label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #747475;
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+
+.shortcuts {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 0;
+  pointer-events: none;
+
+  & > kbd {
+    margin-left: 0.375rem;
+  }
+
+  kbd {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #bababa;
+    box-shadow: none;
+    font-size: 0.75rem;
+  }
+}
+
+[data-theme='dark'] {
+  .root input {
+    color: currentColor;
+  }
+
+  .root.expanded input {
+    background-color: var(--ifm-background-color);
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .shortcuts {
+    display: none;
+  }
+
+  .root {
+    width: 100%;
+  }
+
+  .root input {
+    width: 100%;
+    border-radius: 12px;
+    background: #eeeef0;
+  }
+
+  .root.expanded input {
+    width: 100%;
+  }
+
+  .label {
+    display: none;
+  }
+}
