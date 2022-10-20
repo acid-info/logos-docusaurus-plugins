@@ -15,7 +15,8 @@
     "watch": "yarn gulp watch",
     "build": "yarn gulp build",
     "build:client": "yarn gulp build-client && yarn gulp client-post-build",
-    "build:server": "yarn gulp build-server"
+    "build:server": "yarn gulp build-server",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "@docusaurus/core": "2.1.0",
