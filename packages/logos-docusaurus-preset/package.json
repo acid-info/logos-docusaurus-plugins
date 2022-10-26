@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-preset",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Docusaurus preset for Logos documentation websites",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",
