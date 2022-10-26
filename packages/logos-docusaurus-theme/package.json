@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-theme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Docusaurus theme for Logos documentation websites",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",
@@ -14,6 +14,7 @@
     "cleanup": "yarn cleanup",
     "watch": "yarn gulp watch",
     "build": "yarn gulp build",
+    "build:watch": "yarn gulp watch --command 'yarn build'",
     "build:client": "yarn gulp build-client && yarn gulp client-post-build",
     "build:server": "yarn gulp build-server",
     "prepublishOnly": "yarn build"

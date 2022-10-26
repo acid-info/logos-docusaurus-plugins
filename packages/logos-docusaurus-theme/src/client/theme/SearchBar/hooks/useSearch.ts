@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
+import { useProxiedGeneratedData } from './useProxiedGeneratedData'
 import { useVersionUrl } from './useVersionUrl'
 
 export const useSearch = () => {
   const win = window as any
 
+  const data = useProxiedGeneratedData()
   const versionUrl = useVersionUrl()
 
   const [loaded, setLoaded] = useState(false)
@@ -13,6 +15,7 @@ export const useSearch = () => {
     search.current = await win.createSearchInstance({
       resultsLimit: 50,
       preferredVersionPath: versionUrl,
+      searchContextByPaths: data.searchContextByPaths,
     })
 
     await search.current.init()
