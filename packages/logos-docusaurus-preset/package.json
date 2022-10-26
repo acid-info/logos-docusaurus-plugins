@@ -1,0 +1,37 @@
+{
+  "name": "@acid-info/logos-docusaurus-preset",
+  "version": "0.1.0",
+  "description": "Docusaurus preset for Logos documentation websites",
+  "main": "lib/index.js",
+  "types": "src/theme.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
+    "directory": "packages/logos-docusaurus-preset"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --build --watch",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@acid-info/logos-docusaurus-search-local": "^0.1.2",
+    "@acid-info/logos-docusaurus-theme": "^0.1.1",
+    "@docusaurus/core": "2.1.0",
+    "@docusaurus/module-type-aliases": "2.1.0",
+    "@docusaurus/preset-classic": "^2.1.0",
+    "@docusaurus/types": "2.1.0",
+    "@docusaurus/utils": "2.1.0",
+    "@docusaurus/utils-common": "2.1.0",
+    "@docusaurus/utils-validation": "2.1.0",
+    "docusaurus-plugin-sass": "^0.2.2",
+    "lodash": "^4.17.21"
+  },
+  "engines": {
+    "node": ">=16.14"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.186"
+  }
+}
