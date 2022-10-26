@@ -1,4 +1,7 @@
 const _ = require('lodash')
+const minimist = require('minimist')
+const { promisify } = require('util')
+const exec = promisify(require('child_process').exec)
 
 const gulp = require('gulp')
 const path = require('path')
@@ -99,9 +102,16 @@ const copyStaticFiles = () =>
 const transpileStyles = (cb) => gulp.series(transpileSass, copyCssFiles)(cb)
 
 const watch = async () => {
-  gulp.watch([path.join(sourceDir, '**/*.{ts,tsx,css,scss}')], (cb) => {
-    build(cb)
+  const { command } = minimist(process.argv.slice(2), {
+    string: 'command',
+    alias: ['c', 'cmd'],
   })
+
+  await exec(command)
+
+  gulp.watch([path.join(sourceDir, '**/*.{ts,tsx,css,scss}')], (cb) =>
+    exec(command).finally(cb),
+  )
 }
 
 gulp.task('build', build)
