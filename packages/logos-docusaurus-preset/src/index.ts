@@ -8,7 +8,7 @@ import { themeConfigs } from './theme-config/index'
 import { PluginOptions, ThemeNames } from './types'
 import { findDocInstances, validateDocPluginOptions } from './utils/docs.utils'
 
-const addSearchPlugin = (
+const makeSearchPluginConfig = (
   plugins: PluginConfig[],
   options: PluginOptions,
 ): PluginConfig[] => {
@@ -25,7 +25,13 @@ const addSearchPlugin = (
         indexBlog: false,
         indexPages: true,
         docsDir: docs.map((doc) => doc.path),
-        searchContextByPaths: docs.map((doc) => doc.path),
+        searchContextByPaths: docs.map(({ routeBasePath, path }) =>
+          routeBasePath === '/'
+            ? path
+            : routeBasePath.startsWith('/')
+            ? routeBasePath.slice(1)
+            : routeBasePath,
+        ),
         docsRouteBasePath: docs.map((doc) => doc.routeBasePath),
       } as Partial<SearchPluginOptions>,
     ],
@@ -56,8 +62,14 @@ export default function logosPreset(
   })
 
   plugins.push('docusaurus-plugin-sass')
+
   plugins.push(
-    ...addSearchPlugin([...context.siteConfig.plugins, ...plugins], options),
+    // changing the order of plugins passed to makeSearchPluginConfig function
+    // may cause the search plugin to skip indexing some pages.
+    ...makeSearchPluginConfig(
+      [...plugins, ...context.siteConfig.plugins],
+      options,
+    ),
   )
 
   if (options.theme?.name === ThemeNames.Default)
