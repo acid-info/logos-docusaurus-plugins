@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-search-local",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Docusaurus local search plugin",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",
@@ -22,7 +22,7 @@
     "@docusaurus/utils": "2.1.0",
     "@docusaurus/utils-common": "2.1.0",
     "@docusaurus/utils-validation": "2.1.0",
-    "@easyops-cn/docusaurus-search-local": "^0.33.2",
+    "@easyops-cn/docusaurus-search-local": "^0.33.5",
     "lodash": "^4.17.21"
   },
   "engines": {

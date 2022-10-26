@@ -2,7 +2,6 @@ import {
   SearchDocument,
   SearchDocumentType,
   SearchResult,
-  // @ts-ignore
 } from '@easyops-cn/docusaurus-search-local/dist/client/shared/interfaces'
 // @ts-ignore
 import { fetchIndexes } from '@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/fetchIndexes'
@@ -15,15 +14,44 @@ import { SearchSourceFactory } from '@easyops-cn/docusaurus-search-local/dist/cl
 // @ts-ignore
 import * as proxied from '@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGenerated'
 
-const loadIndex = async (params: { versionUrl: string }) => {
-  const { wrappedIndexes, zhDictionary } = await fetchIndexes(params.versionUrl)
+const loadIndex = async (params: {
+  versionUrl: string
+  searchContext: string
+}) => {
+  const { wrappedIndexes, zhDictionary } = await fetchIndexes(
+    params.versionUrl,
+    params.searchContext,
+  )
 
   return { wrappedIndexes, zhDictionary }
 }
 
+const findSearchContext = ({
+  versionUrl,
+  searchContextByPaths,
+}: {
+  versionUrl: string
+  searchContextByPaths: string | string[]
+}): string => {
+  const { pathname } = window.location
+
+  if (
+    searchContextByPaths === '' ||
+    !Array.isArray(searchContextByPaths) ||
+    !pathname.startsWith(versionUrl)
+  )
+    return ''
+
+  const uri = pathname.substring(versionUrl.length)
+  const paths = searchContextByPaths as string[]
+
+  return paths.find((path) => uri === path || uri.startsWith(`${path}/`)) ?? ''
+}
+
 class Search {
-  public baseUrl: string
   public loading = false
+  public baseUrl: string
+  public searchContextByPaths: string | string[]
 
   public source:
     | ((input: string, callback: (result: SearchResult[]) => void) => void)
@@ -31,6 +59,7 @@ class Search {
 
   constructor(private config: SearchConfig) {
     this.baseUrl = config.preferredVersionPath
+    this.searchContextByPaths = config.searchContextByPaths ?? ''
   }
 
   init = async () => {
@@ -38,6 +67,10 @@ class Search {
 
     const { wrappedIndexes, zhDictionary } = await loadIndex({
       versionUrl: this.baseUrl,
+      searchContext: findSearchContext({
+        versionUrl: this.baseUrl,
+        searchContextByPaths: this.searchContextByPaths,
+      }),
     })
 
     this.source = SearchSourceFactory(
@@ -100,6 +133,7 @@ export enum ResultType {
 export type SearchConfig = {
   resultsLimit: number
   preferredVersionPath: string
+  searchContextByPaths?: string | string[]
 }
 
 export const createPromise = <T = any>() => {
