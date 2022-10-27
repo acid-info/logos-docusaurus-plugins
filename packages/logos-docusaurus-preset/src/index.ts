@@ -1,4 +1,4 @@
-import { PluginOptions as SearchPluginOptions } from '@acid-info/logos-docusaurus-search-local/src'
+import { PluginOptions as SearchPluginOptions } from '@acid-info/logos-docusaurus-search-local'
 import classicPreset from '@docusaurus/preset-classic'
 import type { LoadContext, PluginConfig, Preset } from '@docusaurus/types'
 import _ from 'lodash'
@@ -6,6 +6,7 @@ import * as path from 'path'
 import { siteConfigs } from './site-config/index'
 import { themeConfigs } from './theme-config/index'
 import { PluginOptions, ThemeNames } from './types'
+import { createCommonDataDir, createTeamFile } from './utils/data.utils'
 import { findDocInstances, validateDocPluginOptions } from './utils/docs.utils'
 
 const makeSearchPluginConfig = (
@@ -53,6 +54,9 @@ export default function logosPreset(
   )
 
   context.siteConfig.themeConfig = themeConfigs[options.businessUnit]
+
+  createCommonDataDir()
+  createTeamFile(context, options)
 
   const { plugins = [], themes = [] } = classicPreset(context, {
     docs: {

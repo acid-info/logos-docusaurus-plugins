@@ -1,0 +1,1489 @@
+{
+  "emma@status.im": {
+    "pref-name": "Emma",
+    "department": "Documentation",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/330-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "emma@status.im",
+      "status": null,
+      "github": null,
+      "discord": "sammakko#4336"
+    }
+  },
+  "serhan@status.im": {
+    "pref-name": "Serhan",
+    "department": null,
+    "photo-path": "https://images7.bamboohr.com/66157/photos/209-5-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "serhan@status.im",
+      "status": "swb.eth",
+      "github": "serhanwbahar",
+      "discord": "swb.eth#1729"
+    }
+  },
+  "michele@status.im": {
+    "pref-name": "Michele",
+    "department": "Keycard",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/51-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "michele@status.im",
+      "status": "0x0405d6c38ae6f293ebba74833c5f3f6f126d5c631e088a91bb15f92a64fd7df34ab6e2b864fa1394a7517e302006ef8699b8dc7c733b29e5dc996a685f22d9d8bb",
+      "github": "bitgamma",
+      "discord": "mikkoph#6781"
+    }
+  },
+  "omarbasem@status.im": {
+    "pref-name": "Omar",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/332-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "omarbasem@status.im",
+      "status": "0x0477ec9a7b643d4bc3aef8be95d5af3b07775ec8ac30261292abf52da21701f7630250bfab0c543df672e8c7ab3e496192e41b8f4e361c8543ea3de9840daf50a3",
+      "github": "OmarBasem",
+      "discord": "Omar Basem#9059"
+    }
+  },
+  "leo@status.im": {
+    "pref-name": "Leo",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/284-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "leo@status.im",
+      "status": null,
+      "github": "leobago",
+      "discord": "leobago#8071",
+      "gscholar": "vt5qgWoAAAAJ"
+    }
+  },
+  "carl@status.im": {
+    "pref-name": "Carl",
+    "department": null,
+    "photo-path": "https://images7.bamboohr.com/66157/photos/3-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "carl@status.im",
+      "status": "0x048f349593631818cf322660652af44d381f80156d6cae488bd005325cc3c41357aecc36d3bc0c3c20bafac35b718713be7faccd0a76f0deb33f87ff1da82e2ee1",
+      "github": "carlbennetts",
+      "discord": "carlb#8048"
+    }
+  },
+  "yevheniia@status.im": {
+    "pref-name": "Yevheniia",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/77-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "yevheniia@status.im",
+      "status": "0x04db76a11758ea2cae3bcf51f4256532ec1fc62740b57b559c8129e6911d53ce46a469c4dae39b1e4f73961fbbbefa0b394f052d187b5df5afb378847ed709fa02",
+      "github": "yevh-berdnyk",
+      "discord": "Yevheniia#1170"
+    }
+  },
+  "alexandra@status.im": {
+    "pref-name": "Alexandra",
+    "department": "Desktop",
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "alexandra@status.im",
+      "status": "0x0447ec218aa867b81a26acf27183f3a63bb0f7e84118a7f832eacf232455742aff5e3b9d9e9f05b0d619e3d1f64da96cc7cd28496cafea056007ad31d320585b6a",
+      "github": "alexandraB99",
+      "discord": "alex99#7796"
+    }
+  },
+  "charlesblake@status.im": {
+    "pref-name": "Chuck",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/316-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "charlesblake@status.im",
+      "status": null,
+      "github": "c-blake",
+      "discord": "cblake#0229"
+    }
+  },
+  "dustin@status.im": {
+    "pref-name": "Dustin",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/121-2-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "dustin@status.im",
+      "status": "tersec#7909",
+      "github": "tersec",
+      "discord": "tersec#7909"
+    }
+  },
+  "pavlo@status.im": {
+    "pref-name": "Pavlo",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/261-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "pavlo@status.im",
+      "status": "0x04864569bda288a7df2e47e19932878dd27c5ab43e36f54cbc2e06902cdae6c77fa014e4dfd96bc48eec30ba43a05ab7b4b2d78cc31cc72bc56ac807ab4b0443d6",
+      "github": "pavloburykh",
+      "discord": "Pavlo#7365"
+    }
+  },
+  "mario@status.im": {
+    "pref-name": "Mario",
+    "department": "Product Design",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/286-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "mario@status.im",
+      "status": null,
+      "github": null,
+      "discord": "mario_canas#2366"
+    }
+  },
+  "jamiec@status.im": {
+    "pref-name": "Jamie",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/308-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jamiec@status.im",
+      "status": null,
+      "github": "J-Son89",
+      "discord": "JC#1666"
+    }
+  },
+  "riccardo@status.im": {
+    "pref-name": "Riccardo",
+    "department": "People Ops",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/241-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "riccardo@status.im",
+      "status": "0x04d90209e76192c5f10f8b61780b89f1c11e517e48f4a3865a6d54836cafac129a85532bee2eef0b1fa311d9feb64b30088bcee57adad73b7a159d119b3284e5f2",
+      "github": "rcc84",
+      "discord": "rick84#8554"
+    }
+  },
+  "aaryamann@status.im": {
+    "pref-name": "Aaryamann",
+    "department": "Waku Research",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/314-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "aaryamann@status.im",
+      "status": "rymnc.eth",
+      "github": "rymnc",
+      "discord": "p1ge0nh8er#5020"
+    }
+  },
+  "ludovic@status.im": {
+    "pref-name": "Ludovic",
+    "department": "Libp2p",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/283-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ludovic@status.im",
+      "status": null,
+      "github": "lchenut",
+      "discord": "lchenut#6483"
+    }
+  },
+  "tatiana@status.im": {
+    "pref-name": "Tetiana",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/56-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "tatiana@status.im",
+      "status": "tanya.stateofus.eth",
+      "github": "churik",
+      "discord": "Chu#1144"
+    }
+  },
+  "michalcieslak@status.im": {
+    "pref-name": "Micha\u0142",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/296-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "michalcieslak@status.im",
+      "status": null,
+      "github": null,
+      "discord": "michalc#0761"
+    }
+  },
+  "tanguy@status.im": {
+    "pref-name": "Tanguy",
+    "department": "Libp2p",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/212-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "tanguy@status.im",
+      "status": "tanguy.stateofus.eth",
+      "github": "Menduist",
+      "discord": "Tanguy#5799"
+    }
+  },
+  "hanno@status.im": {
+    "pref-name": "Hanno",
+    "department": "Waku Research",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/190-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "hanno@status.im",
+      "status": "0x04e525744a980fd6063da02916eefe09eb4a3c82c0c1fe654a6b91d0f85bccb6ddaf97f962de3cf7a479ed165217109894af503f90094f71e574614f773db83c74",
+      "github": "jm-clius",
+      "discord": "Hanno#4282"
+    }
+  },
+  "icaro@status.im": {
+    "pref-name": "\u00cdcaro",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/315-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "icaro@status.im",
+      "status": "0x04bd17bef15257b4a88ca7ee65e1ba003c1cef5c2e4251f2fe37ecdf16e0619de9ab762a78081376f63121fda3a980b26bb9801cf0b7405fbe2c1e4bbbefc5e7f4",
+      "github": "ilmotta",
+      "discord": "imotta#5760"
+    }
+  },
+  "kimdemey@status.im": {
+    "pref-name": "Kim",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/153-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "kimdemey@status.im",
+      "status": "0x04bdde57301c99af5b61d19a3320a3e73b28929186578cfdfbf4fd2a65e3c090336df3866c15832057f6892f4100c3d7dc6d41cad2cf52e6d66e20c9a41ef2184c",
+      "github": "kdeme",
+      "discord": "deme#1744"
+    }
+  },
+  "Lorenzo@status.im": {
+    "pref-name": "Lorenzo",
+    "department": "Waku Research",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/281-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "Lorenzo@status.im",
+      "status": null,
+      "github": "LNSD",
+      "discord": "LNSD#6090"
+    }
+  },
+  "aleksandardjenic@status.im": {
+    "pref-name": "Sale",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/217-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "aleksandardjenic@status.im",
+      "status": "0x045e098c95c96397190de56d896a2ba1232f0db6784781d7d090717b04aa27fbd6bd0874f4aa71fe020320563601323ef7b2e6b12b2791eccdf4038cf86e2e9fec",
+      "github": "saledjenic",
+      "discord": "Sale#9912"
+    }
+  },
+  "stefand@status.im": {
+    "pref-name": "Stefan",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/252-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "stefand@status.im",
+      "status": "stefand.stateofus.eth",
+      "github": "stefandunca",
+      "discord": "stefand#8734"
+    }
+  },
+  "manuchehr@status.im": {
+    "pref-name": "Manuchehr",
+    "department": "PPG",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/236-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "manuchehr@status.im",
+      "status": "0x04eac0dfbdb475e903e816f1ab9b193f0dd0c404226923c7035cee08f39d6730ffda5c4fc7c8f515a5e08ed9c31a88a1d1039defb72a3cbd2b93935f00f261b144",
+      "github": "ManuchehrEbrahimi",
+      "discord": "Manuchehr#7376"
+    }
+  },
+  "agata@status.im": {
+    "pref-name": "Agata",
+    "department": "Legal",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/239-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMjk2fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMDZ9fX1dfQ__&Signature=QaDoHjA5zK7xDZk8XgvCIw4dMp9DKyGw5N5BuAppKxgfFX~RefzJjOSLI2NkqyVhchMHy1REGZrTad-I2Plf4t8pB9xoTnY7KAHfYD5vV16CQYI1qNGXLDhkJdVSWRgaeSNkz7fnOzPffWUYArL9Muc3OT0Yrp17ZSlLc4OdBnvEy3TbGKj4q~Zcu2TT0HsMV~Z7iLX~cCWOdolTUrH6Wmw1uYAmAqsY4uWqpgXyPOta725M3FoSj11TSGkn7YvTvMryY8fIMH8x9pPnWv42l2mEXV7zQPQpeNHbtuqdt6uM3m55bK22j3AdReB86ypY~AsUQQrBV9y0kyK-MtOpKA__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "agata@status.im",
+      "status": "https://join.status.im/u/0x047a67ae385818112ab4a793929e3c03ee8e8c90418a566722c4583e53fda753a401382ffd566c24ab1f65606d91b4d419a8342021c58a9d9a89af070256b3d455",
+      "github": null,
+      "discord": "Agata#8998"
+    }
+  },
+  "jason.foote@status.im": {
+    "pref-name": "Jason",
+    "department": "Finance",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/37-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jason.foote@status.im",
+      "status": "0x043bf542bfa92fc55ef6154b4708911a2b84190e934a024bbef16f13938cec4d94e948dfced57d972b47d8cdaaf9d2a4c62ede281cf44ec59b9485f4b15eb4abf9",
+      "github": "Jas0n-F",
+      "discord": "Jason-#2580"
+    }
+  },
+  "tuanir@status.im": {
+    "pref-name": "Tuanir",
+    "department": "Blockchain",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/324-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "tuanir@status.im",
+      "status": null,
+      "github": "tuanir",
+      "discord": "TuanirFR#9744"
+    }
+  },
+  "andreaf@status.im": {
+    "pref-name": "Andrea",
+    "department": null,
+    "photo-path": "https://images7.bamboohr.com/66157/photos/85-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "andreaf@status.im",
+      "status": "gravityblast",
+      "github": "gravityblast",
+      "discord": "gravityblast#9625"
+    }
+  },
+  "guylouis@status.im": {
+    "pref-name": "Guy-Louis",
+    "department": "Keycard",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/123-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "guylouis@status.im",
+      "status": "0x044c6dc4ca944d1d13c06f88908c46812bbc17ee16bde26f66623f8c44eec3496c43ad7f56fd645081d03854c8e1df9e644a2458402d34c71d6814f6ee03144d9f",
+      "github": "guylouis",
+      "discord": "guylouis#7012"
+    }
+  },
+  "angel@status.im": {
+    "pref-name": "Angel",
+    "department": "People Ops",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/206-3-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "angel@status.im",
+      "status": "0x04c9c8a22b751082f32da537432a726047fcff984340529a722f4a57ae86154d29f1407daff9d6015dfb24922f54cacb37c0e924a92c38da55457f84d9e7bec6a6",
+      "github": "lilchichi",
+      "discord": "LilChiChi#0021"
+    }
+  },
+  "samuel@status.im": {
+    "pref-name": "Samuel",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/174-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "samuel@status.im",
+      "status": "0x04261c55675e55ff25edb50b345cfb3a3f35f60712d251cbaaab97bd50054c6ebc3cd4e22200c68daf7493e1f8da6a190a68a671e2d3977809612424c7c3888bc6",
+      "github": "Samyoul",
+      "discord": "Samuel#3459"
+    }
+  },
+  "tobias@status.im": {
+    "pref-name": "Tobias",
+    "department": null,
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "tobias@status.im",
+      "status": "tobias.statusofus.eth",
+      "github": "0kok0",
+      "discord": "Tobias Heldt#0254"
+    }
+  },
+  "jarrad@status.im": {
+    "pref-name": "Jarrad",
+    "department": null,
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "jarrad@status.im",
+      "status": "0x042df93fc30aa34022928e598d2c3b361b10922da055a5c130f84eb68b8ed977e172d7e16894ae62a1dfb7d6275b0f3867abf11a6ad175b89e10fc0b4e0ab96b0b",
+      "github": "jarradh",
+      "discord": "0xc1c4da#0862"
+    }
+  },
+  "amir@status.im": {
+    "pref-name": "Amir",
+    "department": "Comms/Marketing",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/270-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "amir@status.im",
+      "status": "0x043ded5c4927343a9c218df2922edc52baa9512ce3cf04d060d83e2fed7982f22214331accd265415b9a8991d5386120e83113a59308b4e1c8abfe20c5d9856402",
+      "github": "amirhouieh",
+      "discord": "amir_#6158"
+    }
+  },
+  "jordan@status.im": {
+    "pref-name": "Jordan",
+    "department": "Nim",
+    "photo-path": "https://statusim.bamboohr.com/photos/employee/201/secure/c6a4c3f50ebe81b5433bb4ca7cd900ce/?size=medium",
+    "contact": {
+      "email": "jordan@status.im",
+      "status": null,
+      "github": "mjfh",
+      "discord": "mjfh #6782"
+    }
+  },
+  "ihor@status.im": {
+    "pref-name": "Ihor",
+    "department": "Comms Hub",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/326-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ihor@status.im",
+      "status": "0x0454de44c70640a1dacd5ce24b9b6c021a0a4ae8370c216ea6f5f4e877d45f6c35f8f50caa4b650d3f70f86e8e7d3a2ab94bcdd75827070d23f948eb41a6fe7467",
+      "github": null,
+      "discord": "ihor#9077"
+    }
+  },
+  "julia@status.im": {
+    "pref-name": "Julia",
+    "department": "Product Design",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/301-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "julia@status.im",
+      "status": "0x0474dc84661326d1ad15223225fbdd503fce27e234be7561e6874f8e2930eed774aa43eda12eff3246c6a9c524ee4e1adaf0180768e23088e4b075d1c7ebdc5488",
+      "github": "juliaiskandarian",
+      "discord": "Julia Iskandarian#1844"
+    }
+  },
+  "michal@status.im": {
+    "pref-name": "Michal",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/257-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "michal@status.im",
+      "status": null,
+      "github": "endulab",
+      "discord": "Michal#6812"
+    }
+  },
+  "moh@status.im": {
+    "pref-name": "Moh",
+    "department": "Blockchain",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/294-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "moh@status.im",
+      "status": null,
+      "github": null,
+      "discord": "Moh-Jalal#3414"
+    }
+  },
+  "jinho@status.im": {
+    "pref-name": "Jinho",
+    "department": "Comms/Marketing",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/131-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jinho@status.im",
+      "status": "jinho",
+      "github": "jinhojang6",
+      "discord": "jinho#9641"
+    }
+  },
+  "javid@status.im": {
+    "pref-name": "Mohamed",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/298-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "javid@status.im",
+      "status": null,
+      "github": "smohamedjavid",
+      "discord": "smohamedjavid#8786"
+    }
+  },
+  "eugene.kabanov@status.im": {
+    "pref-name": "Eugene",
+    "department": "Nim",
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "eugene.kabanov@status.im",
+      "status": "0x044067d410fb72179f1d6d46d8774cbfa67da0e7d2f5b0b84243f747d2106ecd0b83b0c68cedff170dd6294f95749cb44a1fe5a77ce9d2d7cafb4e1798e51bce7f",
+      "github": "cheatfate",
+      "discord": "cheatfate#2977"
+    }
+  },
+  "danielkaiser@status.im": {
+    "pref-name": "Daniel",
+    "department": "Waku Research",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/260-2-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "danielkaiser@status.im",
+      "status": "0x04691e2018a0b27421902260231287d85a7e0f3eb97717612cf25cceb2910e4c65935e59c9679dc940364a1e9f3ef4afc2d2102df64b80fdfaf66b33001de8f678",
+      "github": "kaiserd",
+      "discord": "Ksr#0122"
+    }
+  },
+  "zahary@status.im": {
+    "pref-name": "Zahary",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/68-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "zahary@status.im",
+      "status": "0x04c7b2bf31398205b9e2693ee33c12eb6d86384048bf576707eec6875179606a01d7e0de6b3a819f464ef50d179de0abee0eb98c4e3965ac8232b6dd09dc0d7792",
+      "github": "zah",
+      "discord": "zahary#9895"
+    }
+  },
+  "ned@status.im": {
+    "pref-name": "Ned",
+    "department": "Comms Hub",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/124-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ned@status.im",
+      "status": "0xlulz.eth",
+      "github": "0xDeathCap",
+      "discord": "beachbum\u26f5#4689"
+    }
+  },
+  "nick@status.im": {
+    "pref-name": "Nicholas",
+    "department": "Comms Hub",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/319-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "nick@status.im",
+      "status": null,
+      "github": null,
+      "discord": "shmeda#3743"
+    }
+  },
+  "dianak@status.im": {
+    "pref-name": "Diana",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/183-3-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "dianak@status.im",
+      "status": "ditest.eth",
+      "github": "qoqobolo",
+      "discord": "Diana.K#1843"
+    }
+  },
+  "csaba@status.im": {
+    "pref-name": "Csaba",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/220-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "csaba@status.im",
+      "status": null,
+      "github": "cskiraly",
+      "discord": "cskiraly#5585",
+      "gscholar": "74GVAjAAAAAJ"
+    }
+  },
+  "etan@status.im": {
+    "pref-name": "Etan",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/231-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "etan@status.im",
+      "status": "0x041af07ff6d52a28f940efc5eb38470db2811a60e82c7ae0983a19aad991983b11427322442573bef5154ec008ecf2b99fcdb3198cbac127b0dec17641838e8f09",
+      "github": "etan-status",
+      "discord": "etan#9317"
+    }
+  },
+  "maya@status.im": {
+    "pref-name": "Maya",
+    "department": "People Ops",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/265-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "maya@status.im",
+      "status": "0x04d7c4b958412b599b1382086739be88027597689e84edf8fa094f9c3e99217805ee8c4e7be6ee867512f93f6c3b4d51fd319bbe023f698fc03ed657e68df0b0d3",
+      "github": "MayitaK",
+      "discord": "Mayita#2212"
+    }
+  },
+  "parvesh@status.im": {
+    "pref-name": "Parvesh",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/235-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "parvesh@status.im",
+      "status": "0x045d3b93cf2325e281925deba6950ce944c6dfa88ac0f81dc4ff2822e54ae3c8d405ecdcca113056b8bdbbbb76f73a0803f0f816009f647727d11f134380f3f7ae",
+      "github": "parveshdhull",
+      "discord": "Parvesh Monu#7827"
+    }
+  },
+  "siddarth@status.im": {
+    "pref-name": "Sid",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/276-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "siddarth@status.im",
+      "status": "0x042f0d47dc876ebc2dff227582a940f65a4461848e0518b9f8db84930e97f1661817c43c698522d7b06b0a070c0e9da32fd5075d02b837a33503c9454d9b437ec9",
+      "github": "siddarthkay",
+      "discord": "siddarthkay#3215"
+    }
+  },
+  "elina@status.im": {
+    "pref-name": "Elina",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/272-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "elina@status.im",
+      "status": "elina",
+      "github": "elina2015",
+      "discord": "Elina#4302"
+    }
+  },
+  "anthony@status.im": {
+    "pref-name": "Anthony",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/122-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "anthony@status.im",
+      "status": "0x0472c69117fa5830974e59f79ce757b89bc42f86fb2f84c0bc5b6d4f393b2aaa93332d8df6256adde87bf01c79988cd78a7922b60fcf9fd984d6e9fe7b4ce352f9",
+      "github": "alaibe",
+      "discord": "anthony #3992"
+    }
+  },
+  "john@status.im": {
+    "pref-name": "John",
+    "department": "Program Lead",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/178-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "john@status.im",
+      "status": "0x04e5c9c81f9a86956c0e7d6fab4f85bfa75c052e3eee9ba0d4f48a9fbbce4cd3d0035ff7393b68c4211db8eb2d57c1421abef96c8695ad0abf74644883006664d0",
+      "github": "john-44",
+      "discord": "John_#7788"
+    }
+  },
+  "pepper@status.im": {
+    "pref-name": "Pepper",
+    "department": "People Ops",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/169-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "pepper@status.im",
+      "status": "Faint Sour Rhea",
+      "github": "pepperlea",
+      "discord": "Pepper | Talent #5809"
+    }
+  },
+  "andri@status.im": {
+    "pref-name": "Andri",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/158-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "andri@status.im",
+      "status": "0x0429485212cab4b718103008e4e22ccf055aef1cfcf624adadaadcbb945d3f01913aa2a5902761acf993d393d1c1f253804d0779dbc76d9ec7f7dc400524631ab4",
+      "github": "jangko",
+      "discord": "jangko#4013"
+    }
+  },
+  "richard@status.im": {
+    "pref-name": "Richard",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/89-3-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "richard@status.im",
+      "status": "rramos.eth",
+      "github": "richard-ramos",
+      "discord": "rramos.eth#9855"
+    }
+  },
+  "v.lytvynenko@status.im": {
+    "pref-name": "Volodymyr",
+    "department": "Mobile",
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "v.lytvynenko@status.im",
+      "status": null,
+      "github": "https://github.com/VladimrLitvinenko",
+      "discord": "Volodymyr#4303"
+    }
+  },
+  "ruslan@status.im": {
+    "pref-name": "Ruslan",
+    "department": "Finance",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/189-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ruslan@status.im",
+      "status": "0x04a6a7072e2c0c2392b5b4eed411af5e411797be852b1ab70a72d92b3e5f902d3b35796441b7fb2c8780458618711e7958e79ec5533d9459c71eea1580b062025b",
+      "github": null,
+      "discord": "Ruslan M#3534"
+    }
+  },
+  "ericmastro@status.im": {
+    "pref-name": "Eric",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/105-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ericmastro@status.im",
+      "status": "0x04b9aeb685faa54bdc7416f38b7d50b74966cdf23e1c6a3184a0c22a265917f33094a4197b0d7a99b2f31157cfdae22f8822a10157ebc52dc66e326e841c1e8310",
+      "github": "emizzle",
+      "discord": "emizzle#4965"
+    }
+  },
+  "iuri@status.im": {
+    "pref-name": "Iuri",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/95-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "iuri@status.im",
+      "status": "0x04fef66d2f47aca7eb3198187c19c79bea2b250e8bf8432f021a5835e28aa43c7dba36e8fa8708ad0ede9fe5308bce3b9577ca0217f5340ef56fa493ccd231f977",
+      "github": "iurimatias",
+      "discord": "iurimatias#7501"
+    }
+  },
+  "hossein@status.im": {
+    "pref-name": "Hossein",
+    "department": "Comms Hub",
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "hossein@status.im",
+      "status": "0x047199b9d24194ac7f2e65502e72b11e8d5741a8227bf28db172d17b95ff54e275e66caba07182bf6804f504a818af796d7d9c9e8f12e2509783bbdf478d1a6953",
+      "github": "jeangovil",
+      "discord": "jeangovil#6593"
+    }
+  },
+  "khushboo@status.im": {
+    "pref-name": "Khushboo",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/207-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "khushboo@status.im",
+      "status": "0x046b8e3343f2b53c9746f8005040fa0b906170a0e405e4e57b4cca7f15a75d2e6ad9b6aaaaaf4c124e9369a92ae40c3146662a3d47cba510fc24cd33e7caa90b0a",
+      "github": "Khushboo-dev-cpp",
+      "discord": "Khushboo#9911"
+    }
+  },
+  "borismelnik@status.im": {
+    "pref-name": "Boris",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/205-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "borismelnik@status.im",
+      "status": "0x045688fd94cf504aa1fbd828e4085cc6f81b4b678a45515eb1d44cc9f152ef83cb38b015a29265afc9457b8a5b942310804815191566b9c5fa6f454060f0be8afc",
+      "github": "borismelnik",
+      "discord": "Boris Melnik#3184"
+    }
+  },
+  "ibrahemkhalil@status.im": {
+    "pref-name": "Ibrahem",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/299-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ibrahemkhalil@status.im",
+      "status": "0x046045d1054a4e540843684799126e9443ad4265f180b39680f7a5a6ec5bc5ea9f11af368538b95f73e81914075cbfe9823bbda4fd5ee78d4b1840c01e0dfbccac",
+      "github": "ibrkhalil",
+      "discord": "Ibrahem#0729"
+    }
+  },
+  "aqeel@status.im": {
+    "pref-name": "Aqeel",
+    "department": "Comms/Marketing",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/229-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "aqeel@status.im",
+      "status": null,
+      "github": null,
+      "discord": "Aqeel Mohammad#0265"
+    }
+  },
+  "audrius@status.im": {
+    "pref-name": "Audrius",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/271-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "audrius@status.im",
+      "status": "0x0429999edbe8494314455568459c9c4b0d1d9ecc8ba2c5ba321bf077c4e9be6e330adbbfb5d69124d9fd7f4d999153989ea9d6c655668aa3da9df795765d715d77",
+      "github": "audriu",
+      "discord": "Audrius#4527"
+    }
+  },
+  "fabiomorais@status.im": {
+    "pref-name": "Fabio",
+    "department": "Documentation",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/306-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "fabiomorais@status.im",
+      "status": null,
+      "github": null,
+      "discord": "Fabio87#2616"
+    }
+  },
+  "pablomorales@status.im": {
+    "pref-name": "Pablo",
+    "department": "Legal",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/219-2-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "pablomorales@status.im",
+      "status": "https://join.status.im/u/0x04c744d3c1c8251302b6209b9155daecfb18ac6ff13b7aac62523d6ee959b8c858dd82e67d1e4cfc3dd36476fd3e924b60944e4563c80ef8811ea2c2c7000eef0f",
+      "github": "PabloMoralesMX",
+      "discord": "PabloA #7958"
+    }
+  },
+  "frederic@status.im": {
+    "pref-name": "Fred",
+    "department": "Security",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/215-3-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "frederic@status.im",
+      "status": "0x04f93e60cd7d13009628c992a19e1f4de1fcc85faec7504e91656f2ba65d3a4efd984192ca1c6edc5aaa9aa6ff25f01a4d86dadd84a0cd14cb7f08f9376302fdf6",
+      "github": "OxFred",
+      "discord": "FRED#0652"
+    }
+  },
+  "alexander.mozeika@status.im": {
+    "pref-name": "Alexander",
+    "department": "Blockchain",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/287-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "alexander.mozeika@status.im",
+      "status": "AlexanderM#3666",
+      "github": "AMozeika",
+      "discord": "AlexanderM#3666"
+    }
+  },
+  "felicio@status.im": {
+    "pref-name": "Felicio",
+    "department": "Web",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/278-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "felicio@status.im",
+      "status": null,
+      "github": null,
+      "discord": "felicio.eth#8021"
+    }
+  },
+  "johnngei@status.im": {
+    "pref-name": "John",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/256-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "johnngei@status.im",
+      "status": "0x04a25e0a58ab97c6f93298ad87ab73aae5995365088a1ba150633ea25ff0b80cc1ddba18b122d117e477963cec1962219362a9a77226a6bf9a15d8d02c35fe8c9b",
+      "github": "jo-mut",
+      "discord": "jo_ngei#6369"
+    }
+  },
+  "eric.nguyen@status.im": {
+    "pref-name": "Eric",
+    "department": "Legal",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/312-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "eric.nguyen@status.im",
+      "status": "Knobby Jubilant Icelandgull",
+      "github": "@ericnguyen101",
+      "discord": "e.nguye101#6071"
+    }
+  },
+  "patryk@status.im": {
+    "pref-name": "Patryk",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/254-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "patryk@status.im",
+      "status": "0x04a5c43e93a5110e85c5f2cc66ce9f90caa5c00255d08958b74338986ba7f37f1784a48ef9b55067bc2fc46f2c0eac60dcaf3b8615084ac217ad59e572ae698610",
+      "github": "osmaczko",
+      "discord": "Patryk#6019"
+    }
+  },
+  "giacomo@status.im": {
+    "pref-name": "Giacomo",
+    "department": "Blockchain",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/317-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "giacomo@status.im",
+      "status": null,
+      "github": "Zeegomo",
+      "discord": "zeegomo"
+    }
+  },
+  "marcin@status.im": {
+    "pref-name": "Marcin",
+    "department": "Blockchain",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/309-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "marcin@status.im",
+      "status": null,
+      "github": "madxor",
+      "discord": "madxor#4584"
+    }
+  },
+  "jorge@status.im": {
+    "pref-name": "campo",
+    "department": "Documentation",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/248-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jorge@status.im",
+      "status": "jorgecampo.eth",
+      "github": "jorge-campo",
+      "discord": "campo#4171"
+    }
+  },
+  "corey@status.im": {
+    "pref-name": "Corey",
+    "department": "Program Lead",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/132-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "corey@status.im",
+      "status": "petty",
+      "github": "corpetty",
+      "discord": "petty#7979"
+    }
+  },
+  "andreap@status.im": {
+    "pref-name": "Andrea Maria",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/87-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "andreap@status.im",
+      "status": "0x0424a68f89ba5fcd5e0640c1e1f591d561fa4125ca4e2a43592bc4123eca10ce064e522c254bb83079ba404327f6eafc01ec90a1444331fe769d3f3a7f90b0dde1",
+      "github": "cammellos",
+      "discord": "cammellos#3567"
+    }
+  },
+  "pascal@status.im": {
+    "pref-name": "Pascal",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/142-2-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "pascal@status.im",
+      "status": "pascal",
+      "github": "PascalPrecht",
+      "discord": "r4bbit.eth#5089"
+    }
+  },
+  "pavel@status.im": {
+    "pref-name": "Pavel",
+    "department": "Web",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/268-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "pavel@status.im",
+      "status": "0x0403aeff2fdd0044b136e06afa6d69bb563bb7b3fd518bb30c0d5115a2e020840a2247966c2cc9953ed02cc391e8883b3319f63a31e5f5369d0fb72b62b23dfcbd",
+      "github": "prichodko",
+      "discord": "pvl#0912"
+    }
+  },
+  "deivids@status.im": {
+    "pref-name": "Deivids",
+    "department": "Finance",
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "deivids@status.im",
+      "status": "0x04ee56e6070538c9730544209dc0346a3d2ddb772438002e83a93af819bafedbe66717541c8dace0c90dbc686690e0f29a5195752b316653cead14b91e2c02a4d2",
+      "github": "Priedins15",
+      "discord": "Deivids15#5227"
+    }
+  },
+  "jonathanrainville@status.im": {
+    "pref-name": "Jonathan",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/104-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jonathanrainville@status.im",
+      "status": "jonathanr.stateofus..eth",
+      "github": "jrainville",
+      "discord": "Jo#6415"
+    }
+  },
+  "mamy@status.im": {
+    "pref-name": "Mamy",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/73-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "mamy@status.im",
+      "status": "0x040b120403d77718a614fcb79f6dee7b164f151692483c2fd06838ed8fba8088786ec1e7b01374b9e86deec5157f1225bb187b79db60d965082cf798d563d7ef07",
+      "github": "mratsim",
+      "discord": "mratsim#9204"
+    }
+  },
+  "emilio@status.im": {
+    "pref-name": "Emilio",
+    "department": "Security",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/331-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "emilio@status.im",
+      "status": null,
+      "github": "emilio-revelo",
+      "discord": "erevelo#3625"
+    }
+  },
+  "alrevuelta@status.im": {
+    "pref-name": "Alvaro",
+    "department": "Waku Research",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/333-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "alrevuelta@status.im",
+      "status": null,
+      "github": null,
+      "discord": "alrevuelta#1998"
+    }
+  },
+  "juandavid@status.im": {
+    "pref-name": "Juandavid",
+    "department": "Comms/Marketing",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/195-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "juandavid@status.im",
+      "status": "juandavid.eth",
+      "github": "juandavideth",
+      "discord": "juandavid#4394"
+    }
+  },
+  "mikhail@status.im": {
+    "pref-name": "Mikhail",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/280-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "mikhail@status.im",
+      "status": "MishkaRogachev",
+      "github": "MishkaRogachev",
+      "discord": "mishkarogachev#9549"
+    }
+  },
+  "franck@status.im": {
+    "pref-name": "Franck",
+    "department": "Waku Product",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/198-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "franck@status.im",
+      "status": "fryorcraken.eth",
+      "github": "fryorcraken",
+      "discord": "fryorcraken.eth#3296"
+    }
+  },
+  "dryajov@status.im": {
+    "pref-name": "Dmitriy",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/157-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "dryajov@status.im",
+      "status": "0x041bee40a44bdd2b0a5cc00a45e3626414194b05ea911c7169b9bcdfa0f8453566212ef982e4b5f9379796e28d9c8befbed26ec6ae2293ab7fcd90656db3d20e51",
+      "github": "dryajov",
+      "discord": "dryajov#2856"
+    }
+  },
+  "danielsq@status.im": {
+    "pref-name": "Daniel",
+    "department": "Blockchain",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/251-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "danielsq@status.im",
+      "status": "0x048816fd00059e103b3eceda86fd028fc5b2cd5950b645153f2a4ebc470987ace9f58d2b084f1f0d35487821e2ab1c178f0e0f30e6eb79dc4a20b0bb0627a6f4ff",
+      "github": "danielsanchezq",
+      "discord": "Netwave#1820"
+    }
+  },
+  "jessie@status.im": {
+    "pref-name": "Jessie",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/274-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jessie@status.im",
+      "status": null,
+      "github": null,
+      "discord": "Broke#2219"
+    }
+  },
+  "diego@status.im": {
+    "pref-name": "Diego",
+    "department": "Libp2p",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/307-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "diego@status.im",
+      "status": "diegomrsantos",
+      "github": "diegomrsantos",
+      "discord": "diegomrsantos#4555"
+    }
+  },
+  "noelia@status.im": {
+    "pref-name": "Noelia",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/247-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "noelia@status.im",
+      "status": "0x04b886bfd2b6e6e7abdcf3a10838dcb642319c68d4e396c12286f1f74f4746c7bfcd53b2a403908f482c4b1549a16e709ff224db51f4df0e3a35978582f37553e1",
+      "github": "noeliaSD",
+      "discord": "Noelia#8939"
+    }
+  },
+  "ricardo3@status.im": {
+    "pref-name": "3esmit",
+    "department": null,
+    "photo-path": "https://images7.bamboohr.com/66157/photos/19-2-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ricardo3@status.im",
+      "status": "3esmit.stateofus.eth",
+      "github": "3esmit",
+      "discord": "3esmit.stateofus.eth#1337"
+    }
+  },
+  "nastya@status.im": {
+    "pref-name": "Nastya",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/31-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "nastya@status.im",
+      "status": "@anastasija",
+      "github": "anastasiyaig",
+      "discord": "Anastasiya#0275"
+    }
+  },
+  "erikseppanen@status.im": {
+    "pref-name": "Erik",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/303-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "erikseppanen@status.im",
+      "status": "0x048a6773339d11ccf5fd81677b7e54daeec544a1287bd92b725047ad6faa9a9b9f8ea86ed5a226d2a994f5f46d0b43321fd8de7b7997a166e67905c8c73cd37cea",
+      "github": "erikseppanen",
+      "discord": "esep#0590"
+    }
+  },
+  "jack@status.im": {
+    "pref-name": "Jack",
+    "department": "Finance",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/311-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jack@status.im",
+      "status": null,
+      "github": null,
+      "discord": "jack_sharp#5035"
+    }
+  },
+  "andrey@status.im": {
+    "pref-name": "Andrey",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/4-2-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "andrey@status.im",
+      "status": "0x047125e73606d93ee1aa288b15b16be75bb0aa8f914651a8435452fd74501e917bc2342b8d1a393bc5770dcf4148c0a452e568ba4d8aed3ccdbb3f1d24f2f19fd2",
+      "github": "flexsurfer",
+      "discord": "Andrey#4739"
+    }
+  },
+  "jacek@status.im": {
+    "pref-name": "Jacek",
+    "department": "Program Lead",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/84-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jacek@status.im",
+      "status": "0x049bc24b377c7e97bb94ab993e48fcbfe38f96aad43a42418d7f33f5a99f6f89e2af91875bfe045205771f28c93be50380cdfe5772201fde7019d57f7ead9af9b5",
+      "github": "arnetheduck",
+      "discord": "arnetheduck#9853"
+    }
+  },
+  "harmeet@status.im": {
+    "pref-name": "Harmeet",
+    "department": "DAO",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/275-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "harmeet@status.im",
+      "status": null,
+      "github": null,
+      "discord": "Harmeet#9264"
+    }
+  },
+  "sirotin@status.im": {
+    "pref-name": "Igor",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/285-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "sirotin@status.im",
+      "status": null,
+      "github": "igor-sirotin",
+      "discord": "Igor Sirotin#2275"
+    }
+  },
+  "jakub@status.im": {
+    "pref-name": "Jacob",
+    "department": "Infrastructure Ops",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/109-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "jakub@status.im",
+      "status": "jakubgs.eth",
+      "github": "jakubgs",
+      "discord": "jakubgs#0726"
+    }
+  },
+  "catia@status.im": {
+    "pref-name": "Catia",
+    "department": "People Ops",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/243-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "catia@status.im",
+      "status": "0x045b95150ccef4986ec2297b8910cecc2a2164bcd0760f322dec22413e6c9a8ed7e1035534a43e811317d78911d38e03575a6ac42e8df81643279bf5c491cccce0",
+      "github": "catiasousa",
+      "discord": "Catia#2609"
+    }
+  },
+  "albertorendo@status.im": {
+    "pref-name": "Alberto",
+    "department": "Blockchain",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/313-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "albertorendo@status.im",
+      "status": null,
+      "github": "AlbertoSoutullo",
+      "discord": "Soutuyo#7639"
+    }
+  },
+  "mark@status.im": {
+    "pref-name": "Mark",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/181-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "mark@status.im",
+      "status": "0x04a83abc57dae5a113c028963825c9d120c203c073d1dab607ab0f44d10bcde69d0d87a8cc98ac3d53264ef4035c3802f4a8f4c4b66950220cb376a54b3396802a",
+      "github": "markspanbroek",
+      "discord": "markspanbroek#3535"
+    }
+  },
+  "adamspitz@status.im": {
+    "pref-name": "Adam",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/322-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MDk5NDcyfSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTE0ODJ9fX1dfQ__&Signature=gqiRKXA~ux3hwqQoswNXi5kFzzDfD5EtdA1nEZQMMCKnFf6UIt55FDQI79qjxeR-QDtbA4Ew-FZ7kHcja153Krpw9UDl2gL4CXAtO7EoZhltSuKbfoPbS6OTRP9e9-IwKySeqzpMBXXMayxR2eErSZE5c2NoQdY201hVgQfiGriIWBDiQgy09TDLW2TVRqfQ3B9cw9QwbTkd~pKfliIpCCXWh2KK67fZkLTDI5HKyaCYxisOaHQBa-XNKOtMh53kLaPxzAxjiNmogy1yuA-LFdxfVNypiu04WCvN5Il-RpBlIWt8TV9h6y5sTJ~lbycSXnuuueNVUlv9sAaCfkSFpg__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "adamspitz@status.im",
+      "status": "adamspitz.eth",
+      "github": "AdamSpitz",
+      "discord": "AdamSpitz#6551"
+    }
+  },
+  "konrad@status.im": {
+    "pref-name": "Konrad",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/214-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "konrad@status.im",
+      "status": "0x049c728f9dab202f932dca2b255584641ea560e4503b26850943e379472dab1e64c529480068a122bcd59e7f2a6afe7a64924965151067c2898e9ae438b20f7067",
+      "github": "KonradStaniec",
+      "discord": "konrads#1315"
+    }
+  },
+  "pstratulat@status.im": {
+    "pref-name": "Pavel",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/304-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "pstratulat@status.im",
+      "status": "pavels.stateofus.eth",
+      "github": "faust4exe",
+      "discord": "PavelS#0491"
+    }
+  },
+  "brian@status.im": {
+    "pref-name": "Brian",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/203-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "brian@status.im",
+      "status": "0x04c5a3b50c5d57f44babe068b1ca57781a1b79007e40baa90e09f24a80469aeba97fe56247f1868ebffe94efdf08b6315b4c5837bd7e766af61c117650ce76c3ae",
+      "github": "briansztamfater",
+      "discord": "Brian Sztamfater #4899"
+    }
+  },
+  "sanaz@status.im": {
+    "pref-name": "Sanaz",
+    "department": "Waku Research",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/192-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "sanaz@status.im",
+      "status": "0x043fe56ef8bad30607b7de6494b7c812e8da68b720f104293f49fa24ed2e973027fe8cfc9ec396fde750266050434a34494f7a0ab47010e1408608451b191f75a9",
+      "github": "staheri14",
+      "discord": "Sanaz#3860"
+    }
+  },
+  "pedro.et@status.im": {
+    "pref-name": "Pedro",
+    "department": "Product Design",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/253-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "pedro.et@status.im",
+      "status": "0x049e5ec282afd7f940feae29ed0198e1b2fa0c5619026354d19d9353f951c16a313c88c0f30dc155204da6d9632c2b1edd29fb2b48494589eb095cd6a2482aa954",
+      "github": "@pedro-et",
+      "discord": "pedro.et#1221"
+    }
+  },
+  "ben@status.im": {
+    "pref-name": "Ben",
+    "department": "Product Design",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/305-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ben@status.im",
+      "status": null,
+      "github": null,
+      "discord": "benj#8616"
+    }
+  },
+  "oskar@status.im": {
+    "pref-name": "oskarth",
+    "department": "Program Lead",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/25-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "oskar@status.im",
+      "status": "0x0456aec5ca60edfbb0d75457a640002f47ff7b74b7d940c53de1c4060e95ccec352ae87389106c82b75032f4b1d46b07283014d03aab5858286f97ab6f3ab5ec02",
+      "github": "oskarth",
+      "discord": "oskarth#7074"
+    }
+  },
+  "lukast@status.im": {
+    "pref-name": "Luk\u00e1\u0161",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/289-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "lukast@status.im",
+      "status": null,
+      "github": "caybro",
+      "discord": "caybro#1805"
+    }
+  },
+  "terry@status.im": {
+    "pref-name": "Terry",
+    "department": "People Ops",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/175-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "terry@status.im",
+      "status": "0x04577c856deb96bd887654ff275988bfef822cd5f104a7baa7fb620f9b481ac8c2bd4cbb0189356a7ab6489f7e7fe9b5259f05e76ee5b4d758ed537bb8ba4cc92e",
+      "github": "Terrytobin",
+      "discord": "Terry#5047"
+    }
+  },
+  "miran@status.im": {
+    "pref-name": "Miran",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/293-2-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "miran@status.im",
+      "status": null,
+      "github": "narimiran",
+      "discord": "narimiran#8418"
+    }
+  },
+  "florian@status.im": {
+    "pref-name": "Flo",
+    "department": "Comms Hub",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/321-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "florian@status.im",
+      "status": null,
+      "github": null,
+      "discord": "flohxc#9066"
+    }
+  },
+  "giuseppe@status.im": {
+    "pref-name": "Giuseppe",
+    "department": "Waku Research",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/259-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "giuseppe@status.im",
+      "status": "0x04f2a4183acd3e7cc3d243d8949bc3aafcdc5576ee19095e41181d6449603b1bea1d9eef996b4c394827f1dc39576123b342be2599418e6ae7d0722ac7124fcb6d",
+      "github": "s1fr0",
+      "discord": "s1fr0#6893"
+    }
+  },
+  "vitaliy@status.im": {
+    "pref-name": "Vitaliy",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/71-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "vitaliy@status.im",
+      "status": "0x04340cb6d7ddee1302676fb9e7a4b33de62c7f4fe90da11edec6d242d40103d1634ab9b591a8eaacd0e494ee48c742a44edda8d1d7ecfd8b999b54132e1fc5d5a4",
+      "github": "siphiuel",
+      "discord": "Vitaliy#8471"
+    }
+  },
+  "roman@status.im": {
+    "pref-name": "Roman",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/12-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "roman@status.im",
+      "status": "0x04c203bdedd18884fe80385fccf16e9f612e4b64a7fa98c7db94882ed27d1842db459566e323a5cbe6386c5fe6c78131a32faa49d8378c370cdb53a07cfe8a6626",
+      "github": "rasom",
+      "discord": "roman#7041"
+    }
+  },
+  "kaushal@status.im": {
+    "pref-name": "Kaushal",
+    "department": "Eco-System-Development",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/255-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "kaushal@status.im",
+      "status": null,
+      "github": null,
+      "discord": "liftlines#4163"
+    }
+  },
+  "johannes@status.im": {
+    "pref-name": "Johannes",
+    "department": "Finance",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/185-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "johannes@status.im",
+      "status": "0x04c69bfd656a509b5a38587b0e39b327df423ccea66aeb05226ea6817d3eda364065e0ff714b08708d405b3404eb56aa3e443419827ca81962b403b0d1ba822b5f",
+      "github": "johannesmw",
+      "discord": "JohannesW#6290"
+    }
+  },
+  "magnus@status.im": {
+    "pref-name": "Magnus",
+    "department": "Desktop",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/290-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "magnus@status.im",
+      "status": null,
+      "github": null,
+      "discord": "magnus#0124"
+    }
+  },
+  "will.whitty@status.im": {
+    "pref-name": "Will",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/310-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "will.whitty@status.im",
+      "status": null,
+      "github": "tavurth",
+      "discord": "Nalmyth#1977"
+    }
+  },
+  "rachelwilkinson@status.im": {
+    "pref-name": "Rachel",
+    "department": "Finance",
+    "photo-path": "https://resources.bamboohr.com/images/photo_person_150x150.png",
+    "contact": {
+      "email": "rachelwilkinson@status.im",
+      "status": "0x0428d402cb70eec24f510dc44ebb260337b6954eb8b0154ba8ca40634a776180db5e2996c78f1e5db2ae504b398aca0a3949d22478c4b31b359e5d182d98b0a939",
+      "github": "w-rachel",
+      "discord": "RachelW#2415"
+    }
+  },
+  "alisher@status.im": {
+    "pref-name": "Alisher",
+    "department": "Product Design",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/263-1-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "alisher@status.im",
+      "status": "sherali",
+      "github": "xAisher",
+      "discord": "Alisher#5402"
+    }
+  },
+  "aleksandra@status.im": {
+    "pref-name": "Sasha",
+    "department": "DAO",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/282-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "aleksandra@status.im",
+      "status": "0x04c3e87c880510000f3be0152905ab11c6e5c899fd580f4c76fc050a2d99cd2a9f034eafdde7385a31b2aee790bd67d7668dba17d6f282c8c5592488f4f4c4fe33",
+      "github": "sashayar13",
+      "discord": "SashaYar#5494"
+    }
+  },
+  "ivany@status.im": {
+    "pref-name": "Ivan",
+    "department": "Nim",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/269-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE4fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjh9fX1dfQ__&Signature=BQgsqyKNyP6M7EV9bShrMVAy5YEsBLCGZC6uFKthApmc52Z3VrFcI8YSe~ax10aac3Ei94cTXXE~YYWkyIREb~cByHBLvcyNLiEASPruD7eRkkswoY86dBVSTAYZ7n-ZRXZXNhRr6mj3S3DWLjqyySHcXE75eGspbwt~SA2rdnAL2dX9dQaRX~2MTpk-w-VAOj9MNB92e3ElU0nNvAesOLZXaAeSUB0oC15b7XD4ntur6StrD1nfxOyQNXO5O16vDxNIV0dRT6UnQYJGKqrwlfUMzdGD3Q0s~i91Axdvt7wwGOzW5qkJUKBAI5YOGTjecwypArJProKPJxgOGQiXqQ__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "ivany@status.im",
+      "status": "0x041ed616f32d718acc2fbf968dcfcf9e5de9dfc317c9c4896d6cd51ad4106083c7fead2affeb279ffc2d1caf2c9f0887bed955dc718e2a1798c6b561ccb2b036ff",
+      "github": "yyoncho",
+      "discord": "yyoncho#2270"
+    }
+  },
+  "rashawn@status.im": {
+    "pref-name": "Rashawn",
+    "department": "Mobile",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/318-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE5fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjl9fX1dfQ__&Signature=Rf4HNU4hc0tWAaXCXDCr3Wu18LuRxwCUpM-~sikhYTxKi-SW2-vNN~Bsnf5EkqYyv09yTkH0v-o2MIOtuwhNV2WcTnMn97EquO3pkGMeqsbJOtyZypd1XP-iOEophz~vW68BhemQTcgJXaeKABWZYG4h78Q4OK1sRVKZcPq0GmwYG8jnGDhoFIuDzf5k9NGW4n1klm9z1SiWl8QexrOQDf5ZPf7UpVd7qKxkWvOq~EOhk~~j3QdLhjQeO5~p1~cCyEgYkXidMPOecyO~UvQGCd9rjtXyKmqeKoHp9~lDca36kGRNdzj2RRtsaS7z9gqFkkz1-wyDZIPpxfR8s-BS5g__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "rashawn@status.im",
+      "status": "rashawn.eth",
+      "github": "yqrashawn",
+      "discord": "yqrashawn#4163"
+    }
+  },
+  "bulat@status.im": {
+    "pref-name": "Bulat",
+    "department": "Codex",
+    "photo-path": "https://images7.bamboohr.com/66157/photos/295-0-4.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9pbWFnZXM3LmJhbWJvb2hyLmNvbS82NjE1Ny8qIiwiQ29uZGl0aW9uIjp7IkRhdGVHcmVhdGVyVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjY1MTAwMzE5fSwiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2Njc2OTIzMjl9fX1dfQ__&Signature=Rf4HNU4hc0tWAaXCXDCr3Wu18LuRxwCUpM-~sikhYTxKi-SW2-vNN~Bsnf5EkqYyv09yTkH0v-o2MIOtuwhNV2WcTnMn97EquO3pkGMeqsbJOtyZypd1XP-iOEophz~vW68BhemQTcgJXaeKABWZYG4h78Q4OK1sRVKZcPq0GmwYG8jnGDhoFIuDzf5k9NGW4n1klm9z1SiWl8QexrOQDf5ZPf7UpVd7qKxkWvOq~EOhk~~j3QdLhjQeO5~p1~cCyEgYkXidMPOecyO~UvQGCd9rjtXyKmqeKoHp9~lDca36kGRNdzj2RRtsaS7z9gqFkkz1-wyDZIPpxfR8s-BS5g__&Key-Pair-Id=APKAIZ7QQNDH4DJY7K4Q",
+    "contact": {
+      "email": "bulat@status.im",
+      "status": null,
+      "github": "Bulat-Ziganshin",
+      "discord": "bulatz#4740"
+    }
+  }
+}

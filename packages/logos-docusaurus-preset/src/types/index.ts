@@ -5,4 +5,5 @@ export type PluginOptions = PresetConfig
 export type SiteConfig = Partial<Config>
 
 export * from './preset'
+export * from './status'
 export * from './themes'
