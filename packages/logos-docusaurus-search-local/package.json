@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "Docusaurus local search plugin",
   "main": "lib/index.js",
-  "types": "src/theme.d.ts",
+  "types": "src/plugin.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
