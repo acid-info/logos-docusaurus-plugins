@@ -20,6 +20,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
+    "@acid-info/logos-docusaurus-preset": "^0.1.2",
     "@docusaurus/core": "2.1.0",
     "@docusaurus/mdx-loader": "2.1.0",
     "@docusaurus/module-type-aliases": "2.1.0",

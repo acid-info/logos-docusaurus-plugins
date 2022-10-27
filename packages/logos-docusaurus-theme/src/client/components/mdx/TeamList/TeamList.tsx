@@ -1,21 +1,20 @@
-import React from 'react'
-import clsx from 'clsx'
-import styles from './style.module.scss'
-import { useTeam } from '@logos-theme/lib/team.utils'
-import { ELogosTeamNames } from '@logos-theme/types/team'
-import { SocialMediaItem } from '../../Icon/SocialmediaLink'
-import { ECommunityProviders } from '@logos-theme/types/ui.types'
 import {
   globalStore,
   selectHiddenSidebar,
 } from '@logos-theme/containers/GlobalStore/index'
+import { useTeam } from '@logos-theme/lib/team.utils'
+import { ECommunityProviders } from '@logos-theme/types/ui.types'
+import clsx from 'clsx'
+import React from 'react'
+import { SocialMediaItem } from '../../Icon/SocialmediaLink'
+import styles from './style.module.scss'
 
 type TProps = {
   children: React.ReactNode
 }
 
 export const TeamList = (props: TProps): JSX.Element => {
-  const team = useTeam('codex' as ELogosTeamNames)
+  const team = useTeam()
   const hiddenSidebar = globalStore.useSelector(selectHiddenSidebar)
 
   return (
@@ -30,9 +29,9 @@ export const TeamList = (props: TProps): JSX.Element => {
           <div className={clsx('', styles.memberCard)} key={`mc-${index}`}>
             <div className={clsx('', styles.memberCardImage)}>
               <img
-                src={member['photo-path']}
+                src={member['photo-path'] ?? ''}
                 alt={member['pref-name']}
-                title={member.contact.email}
+                title={member.contact.email ?? ''}
               />
             </div>
             <div className={clsx('card', styles.memberCardCaption)}>
