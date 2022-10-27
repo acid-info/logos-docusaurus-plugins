@@ -61,6 +61,7 @@ export default function logosPreset(
   const { plugins = [], themes = [] } = classicPreset(context, {
     docs: {
       routeBasePath: '/',
+      ...(options.docs ?? {}),
     },
     theme: {},
   })

@@ -1,3 +1,4 @@
+import { PluginOptions as DocPluginOptions } from '@docusaurus/plugin-content-docs'
 import { DefaultThemeOptions } from './themes'
 
 export enum ThemeNames {
@@ -11,9 +12,10 @@ export enum BusinessUnits {
 
 export type PresetConfig = {
   businessUnit: BusinessUnits
-
   theme?: {
     name: ThemeNames.Default
     options?: DefaultThemeOptions
   }
+
+  docs?: Partial<DocPluginOptions>
 }
