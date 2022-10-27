@@ -3,7 +3,7 @@ import * as fs from 'fs-extra'
 import * as path from 'path'
 import { BusinessUnits, PluginOptions, Status } from '../types'
 
-const COMMON_DATA_DIR = path.join(__dirname, '../static/common/data')
+const COMMON_DATA_DIR = path.join(__dirname, '../../static/common/data')
 
 export const createCommonDataDir = () => void fs.ensureDirSync(COMMON_DATA_DIR)
 
@@ -12,8 +12,8 @@ export const createTeamFile = (
   options: PluginOptions,
 ) => {
   const contacts: Status.Contacts.Data = require(path.join(
-    __dirname,
-    '../static/common/contacts.json',
+    COMMON_DATA_DIR,
+    '../contacts.json',
   ))
 
   const departments: string[] = (
