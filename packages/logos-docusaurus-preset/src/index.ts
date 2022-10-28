@@ -8,6 +8,7 @@ import { themeConfigs } from './theme-config/index'
 import { PluginOptions, ThemeNames } from './types'
 import { createCommonDataDir, createTeamFile } from './utils/data.utils'
 import { findDocInstances, validateDocPluginOptions } from './utils/docs.utils'
+import { defaultsDeep } from './utils/object.utils'
 
 const makeSearchPluginConfig = (
   plugins: PluginConfig[],
@@ -53,7 +54,10 @@ export default function logosPreset(
     siteConfigs[options.businessUnit],
   )
 
-  context.siteConfig.themeConfig = themeConfigs[options.businessUnit]
+  context.siteConfig.themeConfig = defaultsDeep(
+    [{}, context.siteConfig.themeConfig, themeConfigs[options.businessUnit]],
+    false,
+  )
 
   createCommonDataDir()
   createTeamFile(context, options)

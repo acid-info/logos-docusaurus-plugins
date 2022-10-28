@@ -9,16 +9,7 @@ export const wakuThemeConfig: typeof baseThemeConfig = {
       src: 'theme/image/logo.svg',
       height: 26,
     },
-    items: [
-      {
-        to: 'blog',
-        label: 'Blog',
-      },
-      {
-        type: 'localeDropdown',
-        position: 'right',
-      },
-    ],
+    items: [],
   },
   metadata: [
     { name: 'keywords', content: 'waku, web3' },
