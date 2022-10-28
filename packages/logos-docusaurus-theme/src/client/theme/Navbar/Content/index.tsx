@@ -1,3 +1,4 @@
+import { useActivePlugin } from '@docusaurus/plugin-content-docs/client'
 import { useThemeConfig } from '@docusaurus/theme-common'
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal'
 import { IconSearch } from '@logos-theme/components/Icon/index'
@@ -50,11 +51,23 @@ const SidebarToggleButton: React.FC<{
 }
 
 export default function NavbarContent(): JSX.Element {
-  const items = useNavbarItems()
+  const navbarItems = useNavbarItems()
+  const activePlugin = useActivePlugin()
 
-  const localeDropdown = items.find((item) => item.type === 'localeDropdown')
-  const links = items.filter(
-    (item) => item.type === 'doc' || !!(item as any).to || !!item.href,
+  const localeDropdown = navbarItems.find(
+    (item) => item.type === 'localeDropdown',
+  )
+  const docsVersionDropdowns = navbarItems.filter(
+    (item) =>
+      item.type === 'docsVersionDropdown' &&
+      (!activePlugin?.pluginId || activePlugin.pluginId === item.docsPluginId),
+  )
+  const items = navbarItems.filter(
+    (item) =>
+      !item.type ||
+      !['localeDropdown', 'version', 'docsVersionDropdown'].includes(
+        item.type as string,
+      ),
   )
 
   const mobileSidebar = useNavbarMobileSidebar()
@@ -104,7 +117,7 @@ export default function NavbarContent(): JSX.Element {
         </div>
         <div>
           <nav className={clsx(styles.menu, styles.links)}>
-            <NavbarItems items={links} />
+            <NavbarItems items={items} />
           </nav>
         </div>
       </div>
@@ -112,6 +125,7 @@ export default function NavbarContent(): JSX.Element {
       <div className={clsx('col col--4', styles.headerRight)}>
         <ShareButton />
         <NavbarColorModeToggle />
+        {docsVersionDropdowns && <NavbarItems items={docsVersionDropdowns} />}
         {localeDropdown && (
           <>
             <div className={styles.divider} />
