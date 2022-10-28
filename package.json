@@ -8,8 +8,9 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
-    "watch": "lerna run watch",
+    "watch": "lerna --ignore docusaurus-playground run watch",
+    "build": "lerna --ignore docusaurus-playground run build",
+    "start": "lerna --scope docusaurus-playground run start",
     "prepare": "husky install",
     "prettier": "pretty-quick",
     "prettier:staged": "pretty-quick --staged"

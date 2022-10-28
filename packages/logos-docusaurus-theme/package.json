@@ -11,13 +11,12 @@
   },
   "license": "MIT",
   "scripts": {
-    "cleanup": "yarn cleanup",
-    "watch": "yarn gulp watch",
+    "clean": "yarn clean",
     "build": "yarn gulp build",
-    "build:watch": "yarn gulp watch --command 'yarn build'",
+    "watch": "yarn gulp watch --command 'yarn build'",
     "build:client": "yarn gulp build-client && yarn gulp client-post-build",
     "build:server": "yarn gulp build-server",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn clean && yarn build"
   },
   "dependencies": {
     "@acid-info/logos-docusaurus-preset": "^0.1.6",
