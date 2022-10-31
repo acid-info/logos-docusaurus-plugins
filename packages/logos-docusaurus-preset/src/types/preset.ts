@@ -6,6 +6,7 @@ export enum ThemeNames {
 }
 
 export enum BusinessUnits {
+  Logos = 'Logos',
   Codex = 'Codex',
   Waku = 'Waku',
 }

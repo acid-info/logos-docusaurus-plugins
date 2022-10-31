@@ -4,7 +4,7 @@ import { BusinessUnits, PluginOptions, ThemeNames } from './types'
 const schema = Joi.object<PluginOptions>({
   businessUnit: Joi.string()
     .valid(...Object.values(BusinessUnits))
-    .required(),
+    .default(BusinessUnits.Logos),
 
   theme: Joi.object()
     .schema({
