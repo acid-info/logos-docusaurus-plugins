@@ -32,12 +32,12 @@ const sourceStaticDir = path.join(sourceClientDir, STATIC_DIR)
 const outClientDir = path.join(outDir, CLIENT_DIR)
 const outStaticDir = path.join(outClientDir, STATIC_DIR)
 
-const cleanup = async (cb) => {
+const clean = async (cb) => {
   rimraf(outDir, cb)
 }
 
 const build = (cb) => {
-  return gulp.series(cleanup, buildClient, clientPostBuild, buildServer)(cb)
+  return gulp.series(clean, buildClient, clientPostBuild, buildServer)(cb)
 }
 
 const buildClient = () => {
@@ -116,7 +116,7 @@ const watch = async () => {
 
 gulp.task('build', build)
 gulp.task('watch', watch)
-gulp.task('cleanup', cleanup)
+gulp.task('clean', clean)
 gulp.task('build-server', buildServer)
 gulp.task('build-client', buildClient)
 gulp.task('client-post-build', clientPostBuild)

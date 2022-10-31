@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "clean": "yarn clean",
+    "clean": "yarn gulp clean",
     "build": "yarn gulp build",
     "watch": "yarn gulp watch --command 'yarn build'",
     "build:client": "yarn gulp build-client && yarn gulp client-post-build",
