@@ -1,16 +1,13 @@
 const _ = require('lodash')
-const minimist = require('minimist')
-const { promisify } = require('util')
-const exec = promisify(require('child_process').exec)
 
 const gulp = require('gulp')
 const path = require('path')
 const merge = require('merge2')
 const rimraf = require('rimraf')
 const ts = require('gulp-typescript')
-const replace = require('gulp-replace')
+const TscWatch = require('tsc-watch/client')
 const sourcemaps = require('gulp-sourcemaps')
-const sass = require('gulp-sass')(require('sass'))
+const syncDirectory = require('sync-directory')
 const { replaceTscAliasPaths } = require('tsc-alias')
 
 const project = ts.createProject('./tsconfig.client.json', {
@@ -20,24 +17,16 @@ const project = ts.createProject('./tsconfig.client.json', {
 
 const SOURCE_DIR = project.config.compilerOptions.rootDir ?? 'src'
 const OUT_DIR = project.config.compilerOptions.outDir ?? 'lib'
-const CLIENT_DIR = 'client'
-const STATIC_DIR = 'static'
 
 const sourceDir = path.resolve('./', SOURCE_DIR)
 const outDir = path.resolve('./', OUT_DIR)
-
-const sourceClientDir = path.join(sourceDir, CLIENT_DIR)
-const sourceStaticDir = path.join(sourceClientDir, STATIC_DIR)
-
-const outClientDir = path.join(outDir, CLIENT_DIR)
-const outStaticDir = path.join(outClientDir, STATIC_DIR)
 
 const clean = async (cb) => {
   rimraf(outDir, cb)
 }
 
 const build = (cb) => {
-  return gulp.series(clean, buildClient, clientPostBuild, buildServer)(cb)
+  return gulp.series(buildClient, copyFiles, postBuild, buildServer)(cb)
 }
 
 const buildClient = () => {
@@ -48,26 +37,13 @@ const buildClient = () => {
   )
 }
 
-const clientPostBuild = (done) =>
-  gulp.series(
-    (cb) =>
-      replaceTscAliasPaths({
-        configFile: './tsconfig.client.json',
-      })
-        .then(cb)
-        .catch(cb),
-    () =>
-      gulp
-        .src(path.join(outClientDir, '/**/*.js'), { base: outClientDir })
-        .pipe(
-          replace(/import (.+?) from '([^']+)\.scss'/g, (str) =>
-            str.replace('.scss', '.css'),
-          ),
-        )
-        .pipe(gulp.dest(outClientDir)),
-    transpileStyles,
-    copyStaticFiles,
-  )(done)
+const replaceTsAliasPaths = () =>
+  replaceTscAliasPaths({
+    configFile: './tsconfig.client.json',
+  })
+
+const postBuild = (done) =>
+  gulp.series((cb) => replaceTsAliasPaths().finally(cb))(done)
 
 const buildServer = () => {
   const project = ts.createProject('./tsconfig.json', {
@@ -79,39 +55,28 @@ const buildServer = () => {
   return merge(compiled.dts, compiled.js).pipe(gulp.dest(outDir))
 }
 
-const transpileSass = () =>
-  gulp
-    .src(path.join(sourceClientDir, '**/*.scss'))
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(outClientDir))
-
-const copyCssFiles = () =>
-  gulp
-    .src(path.join(sourceClientDir, '**/*.{css,scss}'), {
-      base: sourceClientDir,
-    })
-    .pipe(gulp.dest(outClientDir))
-
-const copyStaticFiles = () =>
-  gulp
-    .src(path.join(sourceStaticDir, '**/*'), { base: sourceStaticDir })
-    .pipe(gulp.dest(outStaticDir))
-
-const transpileStyles = (cb) => gulp.series(transpileSass, copyCssFiles)(cb)
+const syncDirectories = async (watch = false) => {
+  syncDirectory.async(sourceDir, outDir, {
+    watch,
+    verbose: 1,
+    exclude: [/.*\.(ts|tsx)$/],
+  })
+}
 
 const watch = async () => {
-  const { command } = minimist(process.argv.slice(2), {
-    string: 'command',
-    alias: ['c', 'cmd'],
+  syncDirectories(true)
+
+  const watch = new TscWatch()
+
+  watch.on('success', async () => {
+    await postBuild()
   })
 
-  await exec(command)
+  watch.start('--build')
+}
 
-  gulp.watch([path.join(sourceDir, '**/*.{ts,tsx,css,scss}')], (cb) =>
-    exec(command).finally(cb),
-  )
+const copyFiles = (cb) => {
+  syncDirectories(false).finally(cb)
 }
 
 gulp.task('build', build)
@@ -119,6 +84,5 @@ gulp.task('watch', watch)
 gulp.task('clean', clean)
 gulp.task('build-server', buildServer)
 gulp.task('build-client', buildClient)
-gulp.task('client-post-build', clientPostBuild)
-gulp.task('transpile-styles', transpileStyles)
-gulp.task('copy-static-files', copyStaticFiles)
+gulp.task('post-build', postBuild)
+gulp.task('copy-files', copyFiles)

@@ -7,7 +7,7 @@ export default function logosTheme(
   options: PluginOptions,
 ): Plugin<undefined> {
   const clientModules: string[] = [
-    path.resolve(__dirname, './client/css/custom.css'),
+    path.resolve(__dirname, './client/css/custom.scss'),
   ]
 
   if (options.customCss) {

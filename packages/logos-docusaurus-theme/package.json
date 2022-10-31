@@ -12,9 +12,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "yarn gulp clean",
+    "prebuild": "yarn clean",
     "build": "yarn gulp build",
-    "watch": "yarn gulp watch --command 'yarn build'",
-    "build:client": "yarn gulp build-client && yarn gulp client-post-build",
+    "watch": "yarn gulp watch",
+    "build:client": "yarn gulp build-client",
     "build:server": "yarn gulp build-server",
     "prepublishOnly": "yarn clean && yarn build"
   },
@@ -51,7 +52,8 @@
     "@types/lodash": "^4.14.186",
     "@types/mdx-js__react": "^1.5.5",
     "sass": "^1.55.0",
-    "tsc-alias": "^1.7.0"
+    "tsc-alias": "^1.7.0",
+    "tsc-watch": "^5.0.3"
   },
   "peerDependencies": {
     "react": "^16.8.4 || ^17.0.0",

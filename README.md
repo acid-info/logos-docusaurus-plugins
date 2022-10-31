@@ -78,4 +78,4 @@ $ yarn lerna version --no-private
 
 - [ ] Automate publishing
 - [ ] Add unit testing
-- [ ] Optimize [Logos theme](./packages/logos-docusaurus-theme)'s watch command
+- [x] Optimize [Logos theme](./packages/logos-docusaurus-theme)'s watch command

@@ -23,5 +23,5 @@
     "plugins": [{ "transform": "typescript-transform-paths" }]
   },
   "include": ["src/client", "src/*.d.ts", "src/theme.ts"],
-  "exclude": ["**/__tests__/**"]
+  "exclude": ["src/index.ts", "**/__tests__/**"]
 }
