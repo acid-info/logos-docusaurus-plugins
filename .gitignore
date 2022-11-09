@@ -19,5 +19,6 @@ coverage
 .cache-loader
 
 packages/logos-*/lib/*
+packages/logos-docusaurus-preset/static/common/data/team.json
 
 lerna-debug.log

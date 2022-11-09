@@ -11,8 +11,23 @@ export enum BusinessUnits {
   Waku = 'Waku',
 }
 
+export type Contact = {
+  name: string
+  image: string
+  contact?: {
+    email: string | null
+    status: string | null
+    github: string | null
+    discord: string | null
+    gscholar: string | null
+  }
+}
+
+export type ContactInfo = Contact[]
+
 export type PresetConfig = {
   businessUnit: BusinessUnits
+  contactInfo?: string
   theme?: {
     name: ThemeNames.Default
     options?: DefaultThemeOptions

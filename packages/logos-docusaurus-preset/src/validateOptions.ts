@@ -5,7 +5,7 @@ const schema = Joi.object<PluginOptions>({
   businessUnit: Joi.string()
     .valid(...Object.values(BusinessUnits))
     .default(BusinessUnits.Logos),
-
+  contactInfo: Joi.string().optional(),
   theme: Joi.object()
     .schema({
       name: Joi.string()
