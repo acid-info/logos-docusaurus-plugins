@@ -22,7 +22,7 @@ export const wakuThemeConfig: typeof baseThemeConfig = {
   ],
   footer: {
     ...baseThemeConfig.footer,
-    copyright: `Waku, ${new Date().getFullYear()}`,
+    copyright: `Copyright © ${new Date().getFullYear()} Status Gmbh. Built with Docusaurus.`,
     logo: {
       alt: 'Waku',
       src: 'theme/image/logo.svg',
@@ -34,12 +34,16 @@ export const wakuThemeConfig: typeof baseThemeConfig = {
         title: 'Community',
         items: [
           {
+            label: 'Discourse',
+            href: 'https://forum.vac.dev/',
+          },
+          {
             label: 'Discord',
-            href: '4qdQN5JaWW',
+            href: 'j5pGbn7MHZ',
           },
           {
             label: 'Twitter',
-            href: 'codexstorage',
+            href: 'waku-org',
           },
         ],
       },
