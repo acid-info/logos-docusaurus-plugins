@@ -32,6 +32,6 @@ export type PresetConfig = {
     name: ThemeNames.Default
     options?: DefaultThemeOptions
   }
-
+  customSiteConfig?: boolean
   docs?: Partial<DocPluginOptions>
 }

@@ -1,8 +1,11 @@
-import { NavbarItem } from '@docusaurus/theme-common'
+import { NavbarItem, Footer } from '@docusaurus/theme-common'
 
 export type ThemeConfig = {
   navbar?: {
     items?: NavbarItem[]
+  }
+  footer?: {
+    links?: Footer['links']
   }
 }
 

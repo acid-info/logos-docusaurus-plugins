@@ -15,6 +15,7 @@ const schema = Joi.object<PluginOptions>({
     })
     .optional()
     .default({}),
+  customSiteConfig: Joi.boolean().optional().default(false),
 })
 
 export const validateOptions = ({
