@@ -43,21 +43,26 @@ export default function logosPreset(
   context: LoadContext,
   options: PluginOptions,
 ): Preset {
-  context.siteConfig.staticDirectories.push(
-    path.join(__dirname, '../static/common'),
-    path.join(__dirname, '../static', options.businessUnit),
-  )
-
-  context.siteConfig = defaultsDeep(
+  const siteConfig: typeof context.siteConfig = defaultsDeep(
     options.customSiteConfig
-      ? [context.siteConfig, siteConfigs[options.businessUnit]]
+      ? [{}, context.siteConfig, siteConfigs[options.businessUnit]]
       : [siteConfigs[options.businessUnit], context.siteConfig],
     false,
   )
 
-  context.siteConfig.themeConfig = defaultsDeep(
+  siteConfig.staticDirectories = [
+    ...(siteConfig.staticDirectories ?? []),
+    path.join(__dirname, '../static/common'),
+    path.join(__dirname, '../static', options.businessUnit),
+  ]
+
+  siteConfig.themeConfig = defaultsDeep(
     [{}, context.siteConfig.themeConfig, themeConfigs[options.businessUnit]],
     false,
+  )
+
+  Object.entries(siteConfig).forEach(
+    ([key, value]) => (context.siteConfig[key] = value),
   )
 
   createCommonDataDir()
