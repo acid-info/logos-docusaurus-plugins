@@ -1,7 +1,6 @@
 import { PluginOptions as SearchPluginOptions } from '@acid-info/logos-docusaurus-search-local'
 import classicPreset from '@docusaurus/preset-classic'
 import type { LoadContext, PluginConfig, Preset } from '@docusaurus/types'
-import _ from 'lodash'
 import * as path from 'path'
 import { siteConfigs } from './site-config/index'
 import { themeConfigs } from './theme-config/index'
@@ -49,21 +48,12 @@ export default function logosPreset(
     path.join(__dirname, '../static', options.businessUnit),
   )
 
-  if (!options.customSiteConfig)
-    context.siteConfig = _.merge(
-      context.siteConfig,
-      siteConfigs[options.businessUnit],
-    )
-  else {
-    context.siteConfig.customFields = defaultsDeep(
-      [
-        {},
-        context.siteConfig.customFields,
-        siteConfigs[options.businessUnit].customFields ?? {},
-      ],
-      false,
-    )
-  }
+  context.siteConfig = defaultsDeep(
+    options.customSiteConfig
+      ? [context.siteConfig, siteConfigs[options.businessUnit]]
+      : [siteConfigs[options.businessUnit], context.siteConfig],
+    false,
+  )
 
   context.siteConfig.themeConfig = defaultsDeep(
     [{}, context.siteConfig.themeConfig, themeConfigs[options.businessUnit]],
