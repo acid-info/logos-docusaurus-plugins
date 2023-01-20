@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-theme",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "A Docusaurus theme for Logos documentation websites",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",
@@ -20,7 +20,7 @@
     "prepublishOnly": "yarn clean && yarn build"
   },
   "dependencies": {
-    "@acid-info/logos-docusaurus-preset": "^0.1.11",
+    "@acid-info/logos-docusaurus-preset": "^0.2.0",
     "@docusaurus/core": "^2.2.0",
     "@docusaurus/mdx-loader": "^2.2.0",
     "@docusaurus/module-type-aliases": "^2.2.0",
