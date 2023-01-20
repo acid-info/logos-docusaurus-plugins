@@ -16,13 +16,13 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@docusaurus/core": "2.1.0",
-    "@docusaurus/module-type-aliases": "2.1.0",
-    "@docusaurus/types": "2.1.0",
-    "@docusaurus/utils": "2.1.0",
-    "@docusaurus/utils-common": "2.1.0",
-    "@docusaurus/utils-validation": "2.1.0",
-    "@easyops-cn/docusaurus-search-local": "^0.33.5",
+    "@docusaurus/core": "^2.2.0",
+    "@docusaurus/module-type-aliases": "^2.2.0",
+    "@docusaurus/types": "^2.2.0",
+    "@docusaurus/utils": "^2.2.0",
+    "@docusaurus/utils-common": "^2.2.0",
+    "@docusaurus/utils-validation": "^2.2.0",
+    "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "lodash": "^4.17.21"
   },
   "engines": {

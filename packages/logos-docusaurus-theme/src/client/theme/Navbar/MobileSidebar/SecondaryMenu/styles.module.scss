@@ -1,4 +1,7 @@
 .backButton {
+  display: block;
+  width: 100%;
+
   & > div {
     flex-direction: row-reverse;
 
