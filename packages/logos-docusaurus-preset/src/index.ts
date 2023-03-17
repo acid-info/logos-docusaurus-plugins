@@ -78,14 +78,15 @@ export default function logosPreset(
 
   plugins.push('docusaurus-plugin-sass')
 
-  plugins.push(
-    // changing the order of plugins passed to makeSearchPluginConfig function
-    // may cause the search plugin to skip indexing some pages.
-    ...makeSearchPluginConfig(
-      [...plugins, ...context.siteConfig.plugins],
-      options,
-    ),
-  )
+  if (options.theme?.name !== ThemeNames.DocusaurusDefault)
+    plugins.push(
+      // changing the order of plugins passed to makeSearchPluginConfig function
+      // may cause the search plugin to skip indexing some pages.
+      ...makeSearchPluginConfig(
+        [...plugins, ...context.siteConfig.plugins],
+        options,
+      ),
+    )
 
   if (options.theme?.name === ThemeNames.Default)
     themes.push([

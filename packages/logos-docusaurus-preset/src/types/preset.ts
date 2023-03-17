@@ -3,6 +3,7 @@ import { DefaultThemeOptions } from './themes'
 
 export enum ThemeNames {
   Default = 'default',
+  DocusaurusDefault = 'docusaurus-default',
 }
 
 export enum BusinessUnits {
@@ -28,10 +29,15 @@ export type ContactInfo = Contact[]
 export type PresetConfig = {
   businessUnit: BusinessUnits
   contactInfo?: string
-  theme?: {
-    name: ThemeNames.Default
-    options?: DefaultThemeOptions
-  }
+  theme?:
+    | {
+        name: ThemeNames.Default
+        options?: DefaultThemeOptions
+      }
+    | {
+        name: ThemeNames.DocusaurusDefault
+        options?: DefaultThemeOptions
+      }
   customSiteConfig?: boolean
   docs?: Partial<DocPluginOptions>
 }
