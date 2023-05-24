@@ -12,6 +12,7 @@
   --ifm-navbar-link-color: rgb(var(--lsd-text-primary));
   --ifm-dropdown-link-color: rgb(var(--lsd-text-secondary));
   --ifm-dropdown-hover-background-color: rgb(var(--lsd-surface-secondary));
+  --ifm-menu-color-active: rgb(var(--lsd-text-secondary));
 
   /* Colors. */
   /*--ifm-dark-value: 10%;*/
@@ -21,13 +22,13 @@
   /*--ifm-lighter-value: -30%;*/
   /*--ifm-lightest-value: -50%;*/
 
-  --ifm-background-color: #f8f8fa;
+  --ifm-background-color: rgb(var(--lsd-surface-primary));
 
   --ifm-color-white: #fff;
   --ifm-color-black: #000;
 
-  --ifm-color-primary: #000;
-  --ifm-color-secondary: #eeeef0;
+  --ifm-color-primary: rgb(var(--lsd-theme-primary));
+  --ifm-color-secondary: rgb(var(--lsd-theme-secondary));
 
   --ifm-color-gray-0: rgb(var(--lsd-surface-primary));
   --ifm-color-gray-100: #f8f8fa;
@@ -61,9 +62,7 @@
   --ifm-hover-overlay: rgba(0, 0, 0, 0.05);
 
   /* Typography. */
-  --ifm-font-family-base: system-ui, -apple-system, Helvetica, Arial, Segoe UI,
-    sans-serif, BlinkMacSystemFont, 'Segoe UI', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-base: var(--lsd-typography-generic-font-family);
   --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
   --lgs-font-family-secondary: Georgia, 'Times New Roman', serif;
@@ -187,7 +186,7 @@
 
 @include utils.responsive('lg', 'down') {
   :root {
-    --ifm-background-color: #ffffff;
+    --ifm-background-color: rgb(var(--lsd-surface-primary));
   }
 }
 
@@ -205,6 +204,10 @@ svg * {
 
 .table-of-contents__link:hover {
   color: rgb(var(--lsd-text-primary)) !important;
+}
+
+.dropdown__link--active {
+  color: rgb(var(--lsd-text-secondary)) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

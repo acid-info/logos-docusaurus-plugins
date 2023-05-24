@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import React from 'react'
 import { useMedia } from 'react-use'
 import styles from './SearchInput.module.scss'
+import { Typography } from '@acid-info/lsd-react'
 
 export type SearchInputProps = Omit<
   React.HTMLProps<HTMLDivElement>,
@@ -61,7 +62,9 @@ export const SearchInput: React.FC<SearchInputProps> = ({
       className={clsx(styles.root, expanded && styles.expanded, className)}
       {...props}
     >
-      <span className={styles.label}>Search</span>
+      <Typography component="span" color="primary">
+        Search
+      </Typography>
       <input
         value={value}
         onChange={onChange}

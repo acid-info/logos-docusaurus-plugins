@@ -24,7 +24,7 @@
 }
 
 .root.expanded input {
-  background: #eeeef0;
+  background: rgb(var(--lsd-surface-primary));
   width: 334px;
 }
 
@@ -67,11 +67,11 @@
 
 [data-theme='dark'] {
   .root input {
-    color: currentColor;
+    color: rgb(var(--lsd-text-primary));
   }
 
   .root.expanded input {
-    background-color: var(--ifm-background-color);
+    background-color: rgb(var(--lsd-surface-primary));
   }
 }
 
