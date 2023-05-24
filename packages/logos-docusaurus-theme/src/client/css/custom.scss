@@ -9,6 +9,9 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-scheme: light;
+  --ifm-navbar-link-color: rgb(var(--lsd-text-primary));
+  --ifm-dropdown-link-color: rgb(var(--lsd-text-secondary));
+  --ifm-dropdown-hover-background-color: rgb(var(--lsd-surface-secondary));
 
   /* Colors. */
   /*--ifm-dark-value: 10%;*/
@@ -26,7 +29,7 @@
   --ifm-color-primary: #000;
   --ifm-color-secondary: #eeeef0;
 
-  --ifm-color-gray-0: var(--ifm-color-white);
+  --ifm-color-gray-0: rgb(var(--lsd-surface-primary));
   --ifm-color-gray-100: #f8f8fa;
   --ifm-color-gray-200: #f7f7f8;
   --ifm-color-gray-300: #eeeef0;
@@ -44,12 +47,12 @@
 
   /*components*/
   --ifm-hero-background-color: var(--ifm-color-black);
-  --ifm-hero-text-color: var(--ifm-color-white);
+  --ifm-hero-text-color: rgb(var(--lsd-surface-primary));
   --ifm-alert-background-color: var(--ifm-color-gray-100) !important;
   --ifm-card-background-color: var(--ifm-color-gray-100) !important;
   --ifm-alert-foreground-color: var(--ifm-color-gray-700);
 
-  --ifm-button-background-color: var(--ifm-color-white);
+  --ifm-button-background-color: rgb(var(--lsd-surface-primary));
 
   /*spacing and details*/
   --ifm-global-border-width: 1px;
@@ -186,6 +189,22 @@
   :root {
     --ifm-background-color: #ffffff;
   }
+}
+
+body {
+  background-color: rgb(var(--lsd-surface-primary));
+}
+
+svg * {
+  stroke: rgb(var(--lsd-text-primary)) !important;
+}
+
+.table-of-contents__link--active {
+  color: rgb(var(--lsd-text-primary)) !important;
+}
+
+.table-of-contents__link:hover {
+  color: rgb(var(--lsd-text-primary)) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

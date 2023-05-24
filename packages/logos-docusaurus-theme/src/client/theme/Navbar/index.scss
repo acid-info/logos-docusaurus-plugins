@@ -18,7 +18,7 @@
 
 @include utils.responsive('lg', 'down') {
   .navbar {
-    background: var(--ifm-background-surface-color);
+    background: rgb(var(--lsd-surface-primary));
   }
 }
 

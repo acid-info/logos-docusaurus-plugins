@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@acid-info/logos-docusaurus-preset": "^0.3.0",
+    "@acid-info/lsd-react": "^0.1.0-alpha.6",
     "@docusaurus/core": "^2.2.0",
     "@docusaurus/mdx-loader": "^2.2.0",
     "@docusaurus/module-type-aliases": "^2.2.0",
@@ -34,6 +35,8 @@
     "@docusaurus/utils": "^2.2.0",
     "@docusaurus/utils-common": "^2.2.0",
     "@docusaurus/utils-validation": "^2.2.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@mdx-js/react": "^1.6.22",
     "@tryghost/content-api": "^1.11.4",
     "clsx": "^1.2.1",
@@ -56,8 +59,8 @@
     "tsc-watch": "^5.0.3"
   },
   "peerDependencies": {
-    "react": "^16.8.4 || ^17.0.0",
-    "react-dom": "^16.8.4 || ^17.0.0"
+    "react": "^16.8.4 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.4 || ^17.0.0 || ^18.0.0"
   },
   "engines": {
     "node": ">=16.14"

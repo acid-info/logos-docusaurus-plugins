@@ -1,7 +1,7 @@
 @use '../../../css/utils';
 
 .root {
-  background-color: var(--ifm-background-surface-color);
+  background-color: rgb(var(--lsd-surface-primary));
   border-radius: 1rem;
 
   left: 0;

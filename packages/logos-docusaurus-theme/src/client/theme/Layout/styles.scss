@@ -20,7 +20,7 @@
   left: 0;
   height: 100%;
   width: calc((8 / 12) * 100%);
-  background-color: var(--ifm-background-surface-color);
+  background-color: rgb(var(--lsd-surface-primary));
 }
 
 :root {
