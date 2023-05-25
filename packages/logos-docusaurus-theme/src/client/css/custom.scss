@@ -49,7 +49,6 @@
   /*components*/
   --ifm-hero-background-color: var(--ifm-color-black);
   --ifm-hero-text-color: rgb(var(--lsd-surface-primary));
-  --ifm-alert-background-color: var(--ifm-color-gray-100) !important;
   --ifm-card-background-color: var(--ifm-color-gray-100) !important;
   --ifm-alert-foreground-color: var(--ifm-color-gray-700);
 
@@ -183,11 +182,30 @@
   --ifm-tabs-padding-horizontal: 1rem;
   --ifm-tabs-padding-vertical: 1rem;
 
+  --ifm-alert-background-color: transparent;
+  --ifm-color-secondary-contrast-background: transparent;
+  --ifm-color-success-contrast-background: transparent;
+  --ifm-color-info-contrast-background: transparent;
+  --ifm-color-warning-contrast-background: transparent;
+  --ifm-color-danger-contrast-background: transparent;
+  --ifm-alert-border-radius: none;
+
   --note: #d4d5d8;
   --tip: #6ace4b;
   --caution: #ddaa39;
   --danger: #e46967;
   --info: #68b1d0;
+
+  --ifm-color-secondary-dark: var(--note);
+  --ifm-color-secondary-light: var(--note);
+  --ifm-color-success-dark: var(--tip);
+  --ifm-color-success-light: var(--tip);
+  --ifm-color-info-dark: var(--info);
+  --ifm-color-info-light: var(--info);
+  --ifm-color-warning-dark: var(--caution);
+  --ifm-color-warning-light: var(--caution);
+  --ifm-color-danger-dark: var(--danger);
+  --ifm-color-danger-light: var(--danger);
 }
 
 @include utils.responsive('lg', 'down') {
@@ -201,7 +219,7 @@ body {
 }
 
 svg * {
-  stroke: rgb(var(--lsd-text-primary)) !important;
+  stroke: rgb(var(--lsd-text-primary));
 }
 
 .table-of-contents__link--active {
@@ -217,6 +235,10 @@ svg * {
 }
 
 code {
+  color: rgb(var(--lsd-text-secondary));
+}
+
+a code {
   color: rgb(var(--lsd-text-secondary));
 }
 

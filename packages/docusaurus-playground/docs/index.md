@@ -52,6 +52,36 @@ const Hello = () => {
 }
 ```
 
+:::note
+
+The presets: **_ [['classic', {...}]] _** shorthand works as well.
+
+:::
+
+:::tip
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::info
+
+The presets: **_ [['classic', {...}]] _** shorthand works as well.
+
+:::
+
+:::caution
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::danger
+
+The presets: **_ [['classic', {...}]] _** shorthand works as well.
+
+:::
+
 ## Start your site
 
 Run the development server:
