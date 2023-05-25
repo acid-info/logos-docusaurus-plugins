@@ -6,7 +6,7 @@ import { useTeam } from '@logos-theme/lib/team.utils'
 import { ECommunityProviders } from '@logos-theme/types/ui.types'
 import clsx from 'clsx'
 import React from 'react'
-import { SocialMediaItem } from '../../Icon/SocialmediaLink'
+import { SocialMediaItem } from '@logos-theme/components/Icon/SocialmediaLink'
 import styles from './style.module.scss'
 
 type TProps = {

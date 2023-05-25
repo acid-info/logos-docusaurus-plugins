@@ -1,0 +1,29 @@
+.icon {
+  display: flex;
+  &.s {
+    svg {
+      width: 10px;
+    }
+  }
+  &.m {
+    svg {
+      width: 20px;
+    }
+  }
+  &.l {
+    svg {
+      width: 40px;
+    }
+  }
+
+  &.dark {
+    .fill {
+      fill: var(--ifm-color-black);
+    }
+    .stroke {
+      stroke: var(--ifm-color-white);
+    }
+  }
+  &.light {
+  }
+}

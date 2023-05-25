@@ -1,14 +1,16 @@
 import React, { useCallback, useState, useRef, useEffect } from 'react'
 import clsx from 'clsx'
-// @ts-expect-error: TODO, we need to make theme-classic have type: module
+// @ts-ignore: TODO, we need to make theme-classic have type: module
 import copy from 'copy-text-to-clipboard'
 import { translate } from '@docusaurus/Translate'
-import IconCopy from '@theme/Icon/Copy'
 import IconSuccess from '@theme/Icon/Success'
 import styles from './styles.module.css'
+import { IconCopy } from '@logos-theme/components/Icon'
+
 export default function CopyButton({ code, className }) {
   const [isCopied, setIsCopied] = useState(false)
-  const copyTimeout = useRef(undefined)
+  const copyTimeout = useRef<number | undefined>(undefined)
+
   const handleCopyCode = useCallback(() => {
     copy(code)
     setIsCopied(true)
@@ -16,7 +18,9 @@ export default function CopyButton({ code, className }) {
       setIsCopied(false)
     }, 1000)
   }, [code])
+
   useEffect(() => () => window.clearTimeout(copyTimeout.current), [])
+
   return (
     <button
       type="button"

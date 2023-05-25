@@ -6,7 +6,7 @@ import {
   IconFolder,
   IconFolderFilled,
   IconGithub,
-} from '../../Icon/index'
+} from '../../Icon/Icon'
 import styles from './style.module.scss'
 
 type TProps = {

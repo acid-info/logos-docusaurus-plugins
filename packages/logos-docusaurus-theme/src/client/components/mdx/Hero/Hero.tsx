@@ -2,7 +2,7 @@ import Link from '@docusaurus/Link'
 import clsx from 'clsx'
 import React from 'react'
 import { ButtonWithIcon } from '../../Button/ButtonWithIcon'
-import { IconArrowRightCircle, IconDot } from '../../Icon/index'
+import { IconArrowRightCircle, IconDot } from '../../Icon/Icon'
 import styles from './style.module.scss'
 
 type TProps = {

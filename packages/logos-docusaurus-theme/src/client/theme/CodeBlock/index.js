@@ -24,6 +24,7 @@ export default function CodeBlock({ children: rawChildren, ...props }) {
   const children = maybeStringifyChildren(rawChildren)
   const CodeBlockComp =
     typeof children === 'string' ? StringContent : ElementContent
+
   return (
     <CodeBlockComp key={String(isBrowser)} {...props}>
       {children}
