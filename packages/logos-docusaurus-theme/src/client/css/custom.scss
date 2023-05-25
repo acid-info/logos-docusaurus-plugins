@@ -12,7 +12,6 @@
   --ifm-navbar-link-color: rgb(var(--lsd-text-primary));
   --ifm-dropdown-link-color: rgb(var(--lsd-text-secondary));
   --ifm-dropdown-hover-background-color: rgb(var(--lsd-surface-secondary));
-  --ifm-menu-color-active: rgb(var(--lsd-text-secondary));
 
   /* Colors. */
   /*--ifm-dark-value: 10%;*/
@@ -159,7 +158,8 @@
 
   --ifm-menu-link-padding-horizontal: var(--ifm-spacing-horizontal);
   --ifm-menu-link-padding-vertical: 0.375rem;
-  --ifm-menu-color-background-active: var(--ifm-color-gray-300);
+  --ifm-menu-color: rgb(var(--lsd-text-primary), 0.6);
+  --ifm-menu-color-background-active: transparent;
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
   --ifm-menu-link-sublist-icon-filter: none;
@@ -315,6 +315,12 @@ small {
 
 .table-of-contents__left-border {
   border: none !important;
+}
+
+.menu__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 576px) {
