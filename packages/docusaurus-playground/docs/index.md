@@ -40,6 +40,25 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 The command also installs all necessary dependencies you need to run Docusaurus.
 
+```tsx title="docusaurus.config.js"
+module.exports = {
+  // ...
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
+      },
+    ],
+  ],
+}
+```
+
 ```tsx
 import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
@@ -96,3 +115,15 @@ The `cd` command changes the directory you're working with. In order to work wit
 The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
 Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+
+<details><summary>CLICK ME</summary>
+
+#### yes, even hidden code blocks!
+
+<br/>
+
+```python
+print("hello world!")
+```
+
+</details>
