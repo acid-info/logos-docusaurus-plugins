@@ -51,8 +51,11 @@ export default function CopyButton({ code, className }) {
       onClick={handleCopyCode}
     >
       <span className={styles.copyButtonIcons} aria-hidden="true">
-        <IconCopy className={styles.copyButtonIcon} />
-        <IconSuccess className={styles.copyButtonSuccessIcon} />
+        {isCopied ? (
+          <IconSuccess className={styles.copyButtonSuccessIcon} />
+        ) : (
+          <IconCopy className={styles.copyButtonIcon} />
+        )}
       </span>
     </button>
   )

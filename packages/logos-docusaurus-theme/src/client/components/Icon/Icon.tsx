@@ -40,6 +40,7 @@ export const Icon = (props: TProps): JSX.Element => {
         styles.icon,
         colorMode === 'dark' ? styles.dark : styles.light,
         styles[size],
+        props.className && props.className,
       )}
     >
       {children}

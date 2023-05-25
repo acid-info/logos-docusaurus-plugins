@@ -182,6 +182,12 @@
   --ifm-pills-spacing: 0.125rem;
   --ifm-tabs-padding-horizontal: 1rem;
   --ifm-tabs-padding-vertical: 1rem;
+
+  --note: #d4d5d8;
+  --tip: #6ace4b;
+  --caution: #ddaa39;
+  --danger: #e46967;
+  --info: #68b1d0;
 }
 
 @include utils.responsive('lg', 'down') {
@@ -208,6 +214,10 @@ svg * {
 
 .dropdown__link--active {
   color: rgb(var(--lsd-text-secondary)) !important;
+}
+
+code {
+  color: rgb(var(--lsd-text-secondary));
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

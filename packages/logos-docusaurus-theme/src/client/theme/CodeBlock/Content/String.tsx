@@ -1,6 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
-import { useThemeConfig, usePrismTheme } from '@docusaurus/theme-common'
+import { useThemeConfig } from '@docusaurus/theme-common'
 import {
   parseCodeBlockTitle,
   parseLanguage,
@@ -14,6 +14,8 @@ import CopyButton from '@theme/CodeBlock/CopyButton'
 import WordWrapButton from '@theme/CodeBlock/WordWrapButton'
 import Container from '@theme/CodeBlock/Container'
 import styles from './styles.module.css'
+import theme from './theme'
+
 export default function CodeBlockString({
   children,
   className: blockClassName = '',
@@ -25,9 +27,10 @@ export default function CodeBlockString({
   const {
     prism: { defaultLanguage, magicComments },
   } = useThemeConfig()
+
   const language =
     languageProp ?? parseLanguage(blockClassName) ?? defaultLanguage
-  const prismTheme = usePrismTheme()
+
   const wordWrap = useCodeWordWrap()
   // We still parse the metastring in case we want to support more syntax in the
   // future. Note that MDX doesn't strip quotes when parsing metastring:
@@ -53,7 +56,7 @@ export default function CodeBlockString({
       <div className={styles.codeBlockContent}>
         <Highlight
           {...defaultProps}
-          theme={prismTheme}
+          theme={theme}
           code={code}
           language={language ?? 'text'}
         >

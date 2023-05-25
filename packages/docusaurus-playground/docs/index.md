@@ -40,16 +40,16 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 The command also installs all necessary dependencies you need to run Docusaurus.
 
-```
-import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+```tsx
+import React from 'react'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
 const Hello = () => {
-const {siteConfig} = useDocusaurusContext();
-  const {title, tagline} = siteConfig;
+  const { siteConfig } = useDocusaurusContext()
+  const { title, tagline } = siteConfig
 
-  return <div>{`${title} · ${tagline}`}</div>;
-};
+  return <div>{`${title} · ${tagline}`}</div>
+}
 ```
 
 ## Start your site

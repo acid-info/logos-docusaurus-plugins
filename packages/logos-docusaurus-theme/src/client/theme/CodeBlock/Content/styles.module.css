@@ -63,10 +63,13 @@
   background: var(--prism-background-color);
   color: var(--prism-color);
   border: 1px solid rgb(var(--lsd-border-primary));
-  padding: 0.4rem;
   line-height: 0;
   transition: opacity var(--ifm-transition-fast) ease-in-out;
   opacity: 0;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .buttonGroup button:focus-visible,
