@@ -1,10 +1,9 @@
-// Converted automatically using ./tools/themeFromVsCode
 import { PrismTheme } from 'prism-react-renderer'
 
 const theme: PrismTheme = {
   plain: {
     color: '#ffffff',
-    backgroundColor: '#1E1E1E',
+    backgroundColor: 'transparent',
   },
   styles: [
     {
@@ -56,14 +55,12 @@ const theme: PrismTheme = {
       },
     },
     {
-      // Fix tag color
       types: ['tag'],
       style: {
         color: 'rgb(78, 201, 176)',
       },
     },
     {
-      // Fix tag color for HTML
       types: ['tag'],
       languages: ['markup'],
       style: {
@@ -77,7 +74,6 @@ const theme: PrismTheme = {
       },
     },
     {
-      // Fix punctuation color for HTML
       types: ['punctuation'],
       languages: ['markup'],
       style: {
@@ -104,4 +100,5 @@ const theme: PrismTheme = {
     },
   ],
 }
+
 export default theme

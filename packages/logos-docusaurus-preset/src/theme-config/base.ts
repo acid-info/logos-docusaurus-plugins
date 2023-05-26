@@ -1,7 +1,8 @@
 import { ThemeConfig } from '@docusaurus/preset-classic'
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+// const darkCodeTheme = require('prism-react-renderer/themes/vsDark')
+const darkCodeTheme = require('@acid-info/logos-docusaurus-theme/lib/client/prism/dark-theme')
 
 export const baseThemeConfig: ThemeConfig = {
   docs: {
@@ -10,6 +11,7 @@ export const baseThemeConfig: ThemeConfig = {
   metadata: [],
   colorMode: {
     disableSwitch: true,
+    defaultMode: 'dark',
   },
   navbar: {
     title: '',
@@ -37,7 +39,7 @@ export const baseThemeConfig: ThemeConfig = {
   },
   prism: {
     theme: lightCodeTheme,
-    darkTheme: darkCodeTheme,
+    darkTheme: darkCodeTheme.default,
   },
 }
 

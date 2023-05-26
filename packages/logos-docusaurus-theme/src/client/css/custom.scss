@@ -7,9 +7,15 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-scheme: light;
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+
+[data-theme='dark'] {
+  background-color: transparent !important;
+
+  --ifm-color-scheme: dark;
   --ifm-navbar-link-color: rgb(var(--lsd-text-primary));
+  --ifm-navbar-background-color: rgb(var(--lsd-surface-primary));
   --ifm-dropdown-link-color: rgb(var(--lsd-text-primary));
   --ifm-dropdown-hover-background-color: rgb(var(--lsd-surface-secondary));
 
@@ -98,6 +104,12 @@
   --ifm-list-margin: 1rem;
   --ifm-list-item-margin: 0.25rem;
   --ifm-list-paragraph-margin: 1rem;
+
+  /* Inline code */
+  --ifm-code-background: rgb(var(--lsd-text-primary)) !important;
+
+  /* CodeBlock */
+  --ifm-pre-padding: 1.125rem;
 
   /* Links. */
   --ifm-link-decoration: none;
@@ -209,6 +221,9 @@
 
   --ifm-footer-link-color: rgb(var(--lsd-text-primary));
   --ifm-color-content-secondary: rgb(var(--lsd-text-primary));
+
+  --ifm-hero-background-color: #f8f8fa;
+  --ifm-hero-text-color: var(--ifm-color-black);
 }
 
 @include utils.responsive('lg', 'down') {
@@ -243,12 +258,6 @@ code {
 
 a code {
   color: rgb(var(--lsd-text-secondary));
-}
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-hero-background-color: #f8f8fa;
-  --ifm-hero-text-color: var(--ifm-color-black);
 }
 
 /* sidebar */

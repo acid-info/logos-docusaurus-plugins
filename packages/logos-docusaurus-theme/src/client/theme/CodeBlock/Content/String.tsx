@@ -1,6 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
-import { useThemeConfig } from '@docusaurus/theme-common'
+import { useThemeConfig, usePrismTheme } from '@docusaurus/theme-common'
 import {
   parseCodeBlockTitle,
   parseLanguage,
@@ -8,13 +8,15 @@ import {
   containsLineNumbers,
   useCodeWordWrap,
 } from '@docusaurus/theme-common/internal'
-import Highlight, { defaultProps } from 'prism-react-renderer'
+import Highlight, { defaultProps, type Language } from 'prism-react-renderer'
 import Line from '@theme/CodeBlock/Line'
 import CopyButton from '@theme/CodeBlock/CopyButton'
 import WordWrapButton from '@theme/CodeBlock/WordWrapButton'
-import Container from '@theme/CodeBlock/Container'
+import Container from '@logos-theme/theme/CodeBlock/Container'
+import type { Props } from '@theme/CodeBlock/Content/String'
+
 import styles from './styles.module.css'
-import theme from './theme'
+import { Typography } from '@acid-info/lsd-react'
 
 export default function CodeBlockString({
   children,
@@ -23,25 +25,27 @@ export default function CodeBlockString({
   title: titleProp,
   showLineNumbers: showLineNumbersProp,
   language: languageProp,
-}) {
+}: Props): JSX.Element {
   const {
     prism: { defaultLanguage, magicComments },
   } = useThemeConfig()
-
   const language =
     languageProp ?? parseLanguage(blockClassName) ?? defaultLanguage
-
+  const prismTheme = usePrismTheme()
   const wordWrap = useCodeWordWrap()
+
   // We still parse the metastring in case we want to support more syntax in the
   // future. Note that MDX doesn't strip quotes when parsing metastring:
   // "title=\"xyz\"" => title: "\"xyz\""
   const title = parseCodeBlockTitle(metastring) || titleProp
+
   const { lineClassNames, code } = parseLines(children, {
     metastring,
     language,
     magicComments,
   })
   const showLineNumbers = showLineNumbersProp ?? containsLineNumbers(metastring)
+
   return (
     <Container
       as="div"
@@ -52,13 +56,17 @@ export default function CodeBlockString({
           `language-${language}`,
       )}
     >
-      {title && <div className={styles.codeBlockTitle}>{title}</div>}
+      {title && (
+        <div className={styles.codeBlockTitle}>
+          <Typography variant="subtitle1">{title}</Typography>
+        </div>
+      )}
       <div className={styles.codeBlockContent}>
         <Highlight
           {...defaultProps}
-          theme={theme}
+          theme={prismTheme}
           code={code}
-          language={language ?? 'text'}
+          language={(language ?? 'text') as Language}
         >
           {({ className, tokens, getLineProps, getTokenProps }) => (
             <pre

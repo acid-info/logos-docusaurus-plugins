@@ -1,12 +1,10 @@
 .codeBlockContent {
   position: relative;
   /* rtl:ignore */
-  direction: ltr;
-  border-radius: inherit;
 }
 
 .codeBlockTitle {
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  border-bottom: 1px solid var(--ifm-color-primary);
   font-size: var(--ifm-code-font-size);
   font-weight: 500;
   padding: 0.75rem var(--ifm-pre-padding);
@@ -78,5 +76,5 @@
 }
 
 :global(.theme-code-block:hover) .buttonGroup button {
-  opacity: 0.4;
+  opacity: 1;
 }
