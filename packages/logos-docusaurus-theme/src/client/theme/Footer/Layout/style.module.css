@@ -1,0 +1,25 @@
+.flexRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.flexRow a:not(:last-child) {
+  &:after {
+    content: '•';
+    margin-left: 8px;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+.flexRow a {
+  text-decoration: underline;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

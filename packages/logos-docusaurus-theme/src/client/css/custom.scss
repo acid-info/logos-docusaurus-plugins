@@ -310,6 +310,9 @@ small {
 
 .footer {
   border-top: 1px solid rgb(var(--lsd-text-primary));
+  width: 100vw;
+  margin-left: -32px;
+  padding: 24px 32px;
 }
 
 .footer__logo {
