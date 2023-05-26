@@ -22,6 +22,11 @@
     },
     "plugins": [{ "transform": "typescript-transform-paths" }]
   },
-  "include": ["src/client", "src/*.d.ts", "src/theme.ts"],
+  "include": [
+    "src/client",
+    "src/*.d.ts",
+    "src/theme.ts",
+    "src/client/theme/NavbarItem"
+  ],
   "exclude": ["src/index.ts", "**/__tests__/**"]
 }

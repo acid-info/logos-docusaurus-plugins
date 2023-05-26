@@ -35,12 +35,14 @@ export default function DocPageLayoutSidebar({
     }
     setHiddenSidebarContainer((value) => !value)
   }, [setHiddenSidebarContainer, hiddenSidebar])
+
   return (
     <aside
       className={clsx(
         ThemeClassNames.docs.docSidebarContainer,
         styles.docSidebarContainer,
         hiddenSidebarContainer && styles.docSidebarContainerHidden,
+        styles.sidebarGrid,
       )}
       onTransitionEnd={(e) => {
         if (

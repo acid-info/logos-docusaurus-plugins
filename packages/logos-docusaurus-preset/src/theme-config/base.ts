@@ -4,7 +4,9 @@ const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 export const baseThemeConfig: ThemeConfig = {
-  docs: { sidebar: { hideable: true } },
+  docs: {
+    sidebar: { hideable: true },
+  },
   metadata: [],
   colorMode: {
     disableSwitch: true,
@@ -13,6 +15,10 @@ export const baseThemeConfig: ThemeConfig = {
     title: '',
     logo: {},
     items: [
+      {
+        type: 'docsVersionDropdown',
+        position: 'right',
+      },
       {
         type: 'localeDropdown',
         position: 'right',

@@ -28,13 +28,19 @@ const config = {
       '@acid-info/logos-docusaurus-preset',
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
-        businessUnit: 'Codex',
+        businessUnit: 'Logos',
         theme: {
           name: 'default',
           options: {
             customCss: [require.resolve('./src/css/custom.scss')],
           },
         },
+        versions: {
+          current: {
+            label: 'current',
+          },
+        },
+        lastVersion: 'current',
       }),
     ],
   ],
