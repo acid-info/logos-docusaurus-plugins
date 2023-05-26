@@ -1,9 +1,9 @@
-import React from 'react'
-import clsx from 'clsx'
+import { Typography } from '@acid-info/lsd-react'
 import { ThemeClassNames } from '@docusaurus/theme-common'
 import Translate from '@docusaurus/Translate'
+import clsx from 'clsx'
+import React from 'react'
 import styles from './styles.module.css'
-import { Typography } from '@acid-info/lsd-react'
 
 function NoteIcon() {
   return (
@@ -220,8 +220,7 @@ export default function Admonition(props) {
     >
       <span className={styles.admonitionIcon}>{icon}</span>
       <div>
-        {/* LSD doesn't support 20px font size, so we use h6 instead */}
-        <Typography component="h6" className={styles.admonitionHeading}>
+        <Typography variant="body1" className={styles.admonitionHeading}>
           {titleLabel}
         </Typography>
         <Typography variant="body1" className={styles.admonitionContent}>
