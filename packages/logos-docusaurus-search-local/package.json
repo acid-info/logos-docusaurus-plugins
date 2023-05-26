@@ -16,12 +16,12 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.2.0",
-    "@docusaurus/module-type-aliases": "^2.2.0",
-    "@docusaurus/types": "^2.2.0",
-    "@docusaurus/utils": "^2.2.0",
-    "@docusaurus/utils-common": "^2.2.0",
-    "@docusaurus/utils-validation": "^2.2.0",
+    "@docusaurus/core": "^2.4.1",
+    "@docusaurus/module-type-aliases": "^2.4.1",
+    "@docusaurus/types": "^2.4.1",
+    "@docusaurus/utils": "^2.4.1",
+    "@docusaurus/utils-common": "^2.4.1",
+    "@docusaurus/utils-validation": "^2.4.1",
     "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "lodash": "^4.17.21"
   },
