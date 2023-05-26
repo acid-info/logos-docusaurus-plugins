@@ -8,13 +8,13 @@
 }
 
 .sidebarGrid {
-  grid-column: span 6;
+  grid-column: span 3;
 }
 
 @media (min-width: 997px) {
   .docSidebarContainer {
     display: block;
-    width: var(--doc-sidebar-width);
+    width: 100%;
     margin-top: calc(-1 * var(--ifm-navbar-height));
     will-change: width;
     transition: width var(--ifm-transition-fast) ease;

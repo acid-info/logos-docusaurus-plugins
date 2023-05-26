@@ -6,3 +6,10 @@ Hide color mode toggle in small viewports
     display: none;
   }
 }
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+}

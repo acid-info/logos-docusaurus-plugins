@@ -43,7 +43,7 @@
   --ifm-font-color-base-inverse: var(--ifm-color-black);
 
   /*Code block*/
-  --docusaurus-highlighted-code-line-bg: var(--ifm-color-gray-100);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.15);
 
   /*components*/
   --ifm-hero-background-color: var(--ifm-color-black);
@@ -163,7 +163,7 @@
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
   --ifm-menu-link-sublist-icon-filter: none;
-  --ifm-navbar-height: 3.75rem;
+  --ifm-navbar-height: 80px;
   --ifm-navbar-item-padding-horizontal: 0.75rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
   --ifm-navbar-padding-horizontal: var(--ifm-spacing-horizontal);
@@ -334,9 +334,29 @@ small {
   color: rgb(var(--lsd-text-secondary));
 }
 
-// temporary style fix for the logo
+.navbar {
+  padding-block: 24px;
+  padding-inline: 0;
+  height: 80px;
+}
+
+.row {
+  position: relative;
+}
+
+// TODO temporary style fix for the logo
 .navbar__logo img {
   filter: invert(1);
+}
+
+.theme-doc-version-banner * {
+  color: #fff;
+  text-decoration-color: #fff !important;
+}
+
+.theme-doc-version-banner:hover * {
+  color: #fff;
+  text-decoration-color: #fff !important;
 }
 
 @media (max-width: 576px) {

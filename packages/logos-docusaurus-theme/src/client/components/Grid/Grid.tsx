@@ -37,6 +37,10 @@ export const GridItem = styled.div`
     grid-column: span 8;
   }
 
+  &.w-10 {
+    grid-column: span 10;
+  }
+
   &.w-12 {
     grid-column: span 12;
   }

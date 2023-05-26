@@ -1,16 +1,17 @@
 .docMainContainer {
   display: flex;
   width: 100%;
-  grid-column: span 17 !important;
-  margin-left: 70px; /* temporary solution */
+  grid-column: span 14;
 }
 
 .docItemWrapper {
   width: 100%;
+  padding-top: 16px !important;
+  padding-bottom: 80px !important;
 }
 
 @media (min-width: 997px) {
-  .docMainContainer {
+  /* .docMainContainer {
     max-width: calc(100% - var(--doc-sidebar-width));
   }
 
@@ -22,5 +23,5 @@
     max-width: calc(
       var(--ifm-container-width) + var(--doc-sidebar-width)
     ) !important;
-  }
+  } */
 }

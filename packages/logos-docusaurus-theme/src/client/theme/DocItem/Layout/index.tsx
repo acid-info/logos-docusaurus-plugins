@@ -11,10 +11,11 @@ import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop'
 import DocItemContent from '@theme/DocItem/Content'
 import DocBreadcrumbs from '@theme/DocBreadcrumbs'
 import styles from './styles.module.css'
+
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
-function useDocTOC() {
+export function useDocTOC() {
   const { frontMatter, toc } = useDoc()
   const windowSize = useWindowSize()
   const hidden = frontMatter.hide_table_of_contents
@@ -24,6 +25,7 @@ function useDocTOC() {
     canRender && (windowSize === 'desktop' || windowSize === 'ssr') ? (
       <DocItemTOCDesktop />
     ) : undefined
+
   return {
     hidden,
     mobile,
@@ -33,9 +35,10 @@ function useDocTOC() {
 
 export default function DocItemLayout({ children }) {
   const docTOC = useDocTOC()
+
   return (
-    <div className="row">
-      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+    <div className={clsx('row', styles.docItemGrid)}>
+      <div className={clsx(!docTOC.hidden && styles.docItemCol)}>
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
           <article>
@@ -48,7 +51,10 @@ export default function DocItemLayout({ children }) {
           <DocItemPaginator />
         </div>
       </div>
-      {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
+      <div className={styles.gap1} />
+      {docTOC.desktop && (
+        <div className={clsx(styles.toc)}>{docTOC.desktop}</div>
+      )}
     </div>
   )
 }

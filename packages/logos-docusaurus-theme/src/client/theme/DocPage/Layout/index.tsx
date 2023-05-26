@@ -14,6 +14,7 @@ export default function DocPageLayout({ children }) {
     <Layout wrapperClassName={styles.docsWrapper}>
       <BackToTopButton />
       <Grid>
+        <GridItem className="w-3" />
         {sidebar && (
           <DocPageLayoutSidebar
             sidebar={sidebar.items}
@@ -21,9 +22,11 @@ export default function DocPageLayout({ children }) {
             setHiddenSidebarContainer={setHiddenSidebarContainer}
           />
         )}
+        <GridItem className="w-1" />
         <DocPageLayoutMain hiddenSidebarContainer={hiddenSidebarContainer}>
           {children}
         </DocPageLayoutMain>
+        <GridItem className="w-3" />
       </Grid>
     </Layout>
   )

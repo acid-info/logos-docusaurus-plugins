@@ -3,8 +3,26 @@
   margin-top: 0;
 }
 
+.docItemCol {
+  grid-column: span 10;
+}
+
 @media (min-width: 997px) {
-  .docItemCol {
+  /* .docItemCol {
     max-width: 75% !important;
-  }
+  } */
+}
+
+.docItemGrid {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 16px;
+}
+
+.toc {
+  grid-column: span 3;
+}
+
+.gap1 {
+  grid-column: span 1;
 }
