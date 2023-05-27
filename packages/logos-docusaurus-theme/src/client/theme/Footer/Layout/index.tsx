@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { Grid, GridItem } from '@logos-theme/components/Grid/Grid'
 import { Typography } from '@acid-info/lsd-react'
 import styles from './style.module.css'
+import styled from '@emotion/styled'
 
 export default function FooterLayout({ style, copyright }) {
   return (
@@ -11,8 +12,8 @@ export default function FooterLayout({ style, copyright }) {
         'footer--dark': style === 'dark',
       })}
     >
-      <Grid>
-        <GridItem className="w-6">
+      <CustomGrid>
+        <GridItem className={clsx('w-6', styles.footerInfo)}>
           <Typography component="div" variant="body2">
             Copyright © 2023 Logos
           </Typography>
@@ -20,7 +21,7 @@ export default function FooterLayout({ style, copyright }) {
             Built with Docusaurus.
           </Typography>
         </GridItem>
-        <GridItem className="w-1" />
+        <GridItem className={clsx('w-1', 'desktop')} />
         <GridItem className="w-6">
           <div className={styles.section}>
             <div>
@@ -104,7 +105,13 @@ export default function FooterLayout({ style, copyright }) {
           </div>
         </GridItem>
         <GridItem className="w-4" />
-      </Grid>
+      </CustomGrid>
     </footer>
   )
 }
+
+const CustomGrid = styled(Grid)`
+  @media (max-width: 997px) {
+    grid-template-columns: 1fr;
+  }
+`
