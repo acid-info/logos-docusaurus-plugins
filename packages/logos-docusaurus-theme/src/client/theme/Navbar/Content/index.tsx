@@ -54,11 +54,11 @@ export default function NavbarContent() {
       <GridItem className="w-1">
         <NavbarLogo />
       </GridItem>
-      <GridItem className="w-6" />
+      <GridItem className={clsx('w-6', 'desktop')} />
       <GridItem className="w-10">
         <NavbarItems items={leftItems} />
       </GridItem>
-      <GridItem className="w-1" />
+      <GridItem className={clsx('w-1', 'desktop')} />
       <GridItem className={clsx('w-6', styles.rightSection)}>
         <NavbarItems items={rightItems} />
         <NavbarColorModeToggle className={styles.colorModeToggle} />

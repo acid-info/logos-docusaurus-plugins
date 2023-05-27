@@ -7,17 +7,10 @@
   grid-column: span 10;
 }
 
-@media (min-width: 997px) {
-  /* .docItemCol {
-    max-width: 75% !important;
-  } */
-}
-
 .docItemGrid {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   gap: 16px;
-  padding-left: 12px; /* Temporary offset */
 }
 
 .toc {
@@ -26,4 +19,16 @@
 
 .gap1 {
   grid-column: span 1;
+}
+
+@media (max-width: 997px) {
+  .docItemGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+  }
+
+  .docItemCol {
+    grid-column: span 2;
+  }
 }

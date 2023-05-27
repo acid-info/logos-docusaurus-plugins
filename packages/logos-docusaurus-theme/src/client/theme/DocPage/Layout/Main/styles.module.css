@@ -10,18 +10,9 @@
   padding-bottom: 80px !important;
 }
 
-@media (min-width: 997px) {
-  /* .docMainContainer {
-    max-width: calc(100% - var(--doc-sidebar-width));
+@media (max-width: 997px) {
+  .docMainContainer {
+    width: 100%;
+    grid-column: span 2;
   }
-
-  .docMainContainerEnhanced {
-    max-width: calc(100% - var(--doc-sidebar-hidden-width));
-  }
-
-  .docItemWrapperEnhanced {
-    max-width: calc(
-      var(--ifm-container-width) + var(--doc-sidebar-width)
-    ) !important;
-  } */
 }

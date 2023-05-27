@@ -357,6 +357,7 @@ small {
 .breadcrumbs__item:not(:last-child):after {
   content: '/';
   opacity: 1;
+  background: none;
 }
 
 .breadcrumbs__link {
@@ -374,6 +375,7 @@ small {
 
 .row {
   position: relative;
+  margin: 0;
 }
 
 // TODO temporary style fix for the logo
@@ -430,6 +432,24 @@ div.w-10 > a:not(:last-child) {
 .table-of-contents__link--active {
   padding-left: 16px;
   border-left: 1px solid rgb(var(--lsd-border-primary));
+}
+
+@media (max-width: 997px) {
+  .navbar {
+    display: flex;
+    padding-inline: 0;
+    height: 56px;
+    padding: 12px 16px;
+  }
+
+  .footer {
+    margin-left: -16px;
+    padding: 24px 16px;
+  }
+
+  .desktop {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {

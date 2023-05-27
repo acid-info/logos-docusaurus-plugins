@@ -4,6 +4,10 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   gap: 16px;
+
+  @media (max-width: 997px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 
 export const GridItem = styled.div`
@@ -65,7 +69,7 @@ export const GridItem = styled.div`
     grid-column: span 24;
   }
 
-  @media (max-width: 768px) {
-    grid-column: span 24 !important;
+  @media (max-width: 997px) {
+    grid-column: span 1 !important;
   }
 `
