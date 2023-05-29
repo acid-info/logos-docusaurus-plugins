@@ -35,12 +35,14 @@ const config = {
             customCss: [require.resolve('./src/css/custom.scss')],
           },
         },
-        versions: {
-          current: {
-            label: 'current',
+        docs: {
+          versions: {
+            current: {
+              label: 'current',
+            },
           },
+          lastVersion: 'current',
         },
-        lastVersion: 'current',
       }),
     ],
   ],
@@ -48,7 +50,93 @@ const config = {
 
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
-    ({}),
+    ({
+      footer: {
+        copyright: 'Copyright @2023 Logos <br/> Built with Docusaurus.',
+        links: [
+          {
+            title: 'Learn',
+            items: [
+              {
+                href: '/',
+                label: 'Introduction',
+              },
+              {
+                href: '/',
+                label: 'Installation',
+              },
+              {
+                href: '/',
+                label: 'Migrate from v1 to v2',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                href: '/',
+                label: 'Blog',
+              },
+              {
+                href: '/',
+                label: 'Changelog',
+              },
+              {
+                href: '/',
+                label: 'Github',
+              },
+              {
+                href: '/',
+                label: 'Twitter',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                href: '/',
+                label: 'Stack Overflow',
+              },
+              {
+                href: '/',
+                label: 'Feature Requests',
+              },
+              {
+                href: '/',
+                label: 'Discord',
+              },
+              {
+                href: '/',
+                label: 'Help',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                href: '/',
+                label: 'Privacy',
+              },
+              {
+                href: '/',
+                label: 'Terms',
+              },
+              {
+                href: '/',
+                label: 'Data policy',
+              },
+              {
+                href: '/',
+                label: 'Cookie policy',
+              },
+            ],
+          },
+        ],
+      },
+    }),
 }
 
 module.exports = config

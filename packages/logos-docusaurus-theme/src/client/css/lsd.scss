@@ -1,0 +1,5 @@
+@mixin typography($variant) {
+  font-size: var(--lsd-#{$variant}-fontSize);
+  line-height: var(--lsd-#{$variant}-lineHeight);
+  font-family: var(--lsd-typography-generic-font-family);
+}
