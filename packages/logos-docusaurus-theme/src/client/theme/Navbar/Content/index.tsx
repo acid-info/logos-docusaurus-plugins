@@ -1,17 +1,17 @@
-import React from 'react'
-import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common'
+import { ErrorCauseBoundary, useThemeConfig } from '@docusaurus/theme-common'
 import {
   splitNavbarItems,
   useNavbarMobileSidebar,
 } from '@docusaurus/theme-common/internal'
-import NavbarItem from '@theme/NavbarItem'
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle'
-import SearchBar from '@theme/SearchBar'
-import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle'
 import NavbarLogo from '@theme/Navbar/Logo'
+import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle'
 import NavbarSearch from '@theme/Navbar/Search'
-import styles from './styles.module.css'
+import NavbarItem from '@theme/NavbarItem'
+import SearchBar from '@theme/SearchBar'
 import clsx from 'clsx'
+import React from 'react'
+import styles from './styles.module.css'
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -48,19 +48,19 @@ export default function NavbarContent() {
   const searchBarItem = items.find((item) => item.type === 'search')
 
   return (
-    <div className={clsx('grid', 'navbar__inner')}>
-      {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-      <div className={clsx('grid-item', 'w-1')}>
+    <div className="navbar__inner">
+      <div className="navbar__left">
+        {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
         <NavbarLogo />
       </div>
-      <div className={clsx('grid-item', 'w-6', 'desktop')} />
-      <div className={clsx('grid-item', 'w-10')}>
+      <div className="navbar__left-items">
         <NavbarItems items={leftItems} />
       </div>
-      <div className={clsx('grid-item', 'w-1', 'desktop')} />
-      <div className={clsx('grid-item', 'w-6', styles.rightSection)}>
+      <div className="navbar__right-items">
         <NavbarItems items={rightItems} />
-        <NavbarColorModeToggle className={styles.colorModeToggle} />
+        <NavbarColorModeToggle
+          className={clsx(styles.colorModeToggle, 'navbar__color-mode-toggle')}
+        />
         {!searchBarItem && (
           <NavbarSearch>
             <SearchBar />

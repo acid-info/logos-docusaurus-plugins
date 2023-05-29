@@ -1,3 +1,5 @@
+@use '../../../css/utils';
+
 .docItemContainer header + *,
 .docItemContainer article > *:first-child {
   margin-top: 0;
@@ -21,7 +23,29 @@
   grid-column: span 1;
 }
 
-@media (max-width: 997px) {
+.tocMobile {
+  display: none;
+
+  & > div {
+    display: block !important;
+  }
+}
+
+@include utils.responsive('xl', 'up') {
+  .tocMobile {
+    display: none;
+  }
+}
+
+@include utils.responsive('xl', 'down') {
+  .tocMobile {
+    display: block;
+  }
+
+  .toc {
+    display: none;
+  }
+
   .docItemGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

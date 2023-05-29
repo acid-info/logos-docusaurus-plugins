@@ -1,5 +1,8 @@
 .root {
-  padding-inline: 32px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 @media (max-width: 997px) {

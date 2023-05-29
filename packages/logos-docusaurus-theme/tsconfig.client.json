@@ -26,7 +26,9 @@
     "src/client",
     "src/*.d.ts",
     "src/theme.ts",
-    "src/client/theme/NavbarItem"
+    "src/client/theme/NavbarItem",
+    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx",
+    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx"
   ],
   "exclude": ["src/index.ts", "**/__tests__/**"]
 }

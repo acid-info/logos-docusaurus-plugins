@@ -10,7 +10,8 @@ import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile'
 import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop'
 import DocItemContent from '@theme/DocItem/Content'
 import DocBreadcrumbs from '@theme/DocBreadcrumbs'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
+import { useMedia } from 'react-use'
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -18,11 +19,16 @@ import styles from './styles.module.css'
 export function useDocTOC() {
   const { frontMatter, toc } = useDoc()
   const windowSize = useWindowSize()
+  const isDesktop = useMedia('(min-width: 1200px)')
   const hidden = frontMatter.hide_table_of_contents
   const canRender = !hidden && toc.length > 0
-  const mobile = canRender ? <DocItemTOCMobile /> : undefined
+  const mobile = canRender ? (
+    <div className={styles.tocMobile}>
+      <DocItemTOCMobile />
+    </div>
+  ) : undefined
   const desktop =
-    canRender && (windowSize === 'desktop' || windowSize === 'ssr') ? (
+    canRender && (isDesktop || windowSize === 'ssr') ? (
       <DocItemTOCDesktop />
     ) : undefined
 

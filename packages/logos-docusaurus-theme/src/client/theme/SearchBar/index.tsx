@@ -6,7 +6,10 @@ const SearchBarWrapper: React.FC = () => {
   const activePlugin = useActivePlugin()
   if (!activePlugin) return <></>
 
-  return typeof window === 'undefined' ? <></> : <SearchBar />
+  // temporarily disable search bar
+  return <></>
+
+  // return typeof window === 'undefined' ? <></> : <SearchBar />
 }
 
 export default SearchBarWrapper
