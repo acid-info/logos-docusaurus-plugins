@@ -559,6 +559,27 @@ div.w-10 > a:not(:last-child) {
   margin-left: 8px;
 }
 
+.pagination-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid rgb(var(--lsd-border-primary));
+  border-radius: 0;
+  padding: 10px 14px;
+}
+
+.pagination-nav__link--next {
+  justify-content: flex-end;
+}
+
+.pagination-nav__label::after {
+  display: none;
+}
+
+.pagination-nav__label::before {
+  display: none;
+}
+
 @include utils.responsive('lg', 'down') {
   .grid {
     grid-template-columns: repeat(2, 1fr);

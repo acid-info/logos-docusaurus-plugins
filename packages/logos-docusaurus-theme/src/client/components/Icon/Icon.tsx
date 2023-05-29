@@ -6,6 +6,8 @@ import styles from './style.module.scss'
 
 import ArrowLCircleSvg from '../../static/icons/arrow-left-circle.svg'
 import ArrowRCircleSvg from '../../static/icons/arrow-right-circle.svg'
+import ArrowL from '../../static/icons/arrow-left.svg'
+import ArrowR from '../../static/icons/arrow-right.svg'
 import DiscordSvg from '../../static/icons/discord.svg'
 import DiscourseSvg from '../../static/icons/discourse.svg'
 import DotSvg from '../../static/icons/dot.svg'
@@ -57,6 +59,18 @@ export const IconArrowRightCircle = (props: TIconProps): JSX.Element => (
 export const IconArrowLeftCircle = (props: TIconProps): JSX.Element => (
   <Icon>
     <ArrowLCircleSvg />
+  </Icon>
+)
+
+export const IconArrowRight = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <ArrowR />
+  </Icon>
+)
+
+export const IconArrowLeft = (props: TIconProps): JSX.Element => (
+  <Icon>
+    <ArrowL />
   </Icon>
 )
 
