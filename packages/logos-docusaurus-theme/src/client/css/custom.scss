@@ -359,11 +359,13 @@ svg * {
 }
 
 code {
-  color: rgb(var(--lsd-text-secondary));
+  color: rgb(var(--lsd-text-primary));
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 a code {
-  color: rgb(var(--lsd-text-secondary));
+  color: rgb(var(--lsd-text-primary));
 }
 
 /* sidebar */
