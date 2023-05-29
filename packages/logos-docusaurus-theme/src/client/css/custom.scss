@@ -1,4 +1,5 @@
 @use './utils';
+@use './lsd';
 
 /**
  * Any CSS included here will be global. The classic template
@@ -427,9 +428,79 @@ small {
 
 .footer {
   border-top: 1px solid rgb(var(--lsd-text-primary));
-  width: 100vw;
-  margin-left: -32px;
-  padding: 24px 32px;
+  margin-bottom: 40px;
+
+  > div {
+    max-width: unset;
+    padding: unset;
+    margin: unset;
+    width: 100% !important;
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 1rem;
+  }
+}
+
+.footer__title {
+  @include lsd.typography('label1');
+  margin-bottom: 4px;
+}
+
+.footer__links {
+  margin-bottom: 0;
+  grid-column: 8 / 25;
+  grid-row: 1 / 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;
+}
+
+.footer__col {
+  grid-template-columns: span 1;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.footer__item {
+  display: inline-block;
+
+  &,
+  a {
+    @include lsd.typography('label1');
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  &:not(:last-child) {
+    &::after {
+      content: '•';
+      margin-left: 8px;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}
+
+.footer__bottom {
+  text-align: unset;
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+
+  & > div:first-of-type {
+    display: none;
+  }
+}
+
+.footer__copyright {
+  @include lsd.typography('body2');
 }
 
 .footer__logo {
