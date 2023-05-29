@@ -43,6 +43,8 @@ export default function logosPreset(
   context: LoadContext,
   options: PluginOptions,
 ): Preset {
+  const docsEnabled = options.docs !== false
+
   const siteConfig: typeof context.siteConfig = defaultsDeep(
     options.customSiteConfig
       ? [{}, context.siteConfig, siteConfigs[options.businessUnit]]
@@ -69,10 +71,12 @@ export default function logosPreset(
   createTeamFile(context, options)
 
   const { plugins = [], themes = [] } = classicPreset(context, {
-    docs: {
-      routeBasePath: '/',
-      ...(options.docs ?? {}),
-    },
+    docs: docsEnabled
+      ? {
+          routeBasePath: '/',
+          ...(options.docs ?? {}),
+        }
+      : false,
     theme: {},
   })
 
