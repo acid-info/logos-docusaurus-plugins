@@ -35,12 +35,14 @@ const config = {
             customCss: [require.resolve('./src/css/custom.scss')],
           },
         },
-        versions: {
-          current: {
-            label: 'current',
+        docs: {
+          versions: {
+            current: {
+              label: 'current',
+            },
           },
+          lastVersion: 'current',
         },
-        lastVersion: 'current',
       }),
     ],
   ],
