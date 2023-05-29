@@ -5,7 +5,6 @@ import BackToTopButton from '@theme/BackToTopButton'
 import DocPageLayoutSidebar from '@theme/DocPage/Layout/Sidebar'
 import DocPageLayoutMain from '@theme/DocPage/Layout/Main'
 import styles from './styles.module.css'
-import { Grid, GridItem } from '@logos-theme/components/Grid/Grid'
 import clsx from 'clsx'
 
 export default function DocPageLayout({ children }) {
@@ -14,8 +13,8 @@ export default function DocPageLayout({ children }) {
   return (
     <Layout wrapperClassName={styles.docsWrapper}>
       <BackToTopButton />
-      <Grid>
-        <GridItem className={clsx('w-3', 'desktop')} />
+      <div className="grid">
+        <div className={clsx('grid-item', 'w-3', 'desktop')} />
         {sidebar && (
           <DocPageLayoutSidebar
             sidebar={sidebar.items}
@@ -23,12 +22,12 @@ export default function DocPageLayout({ children }) {
             setHiddenSidebarContainer={setHiddenSidebarContainer}
           />
         )}
-        <GridItem className={clsx('w-1', 'desktop')} />
+        <div className={clsx('grid-item', 'w-1', 'desktop')} />
         <DocPageLayoutMain hiddenSidebarContainer={hiddenSidebarContainer}>
           {children}
         </DocPageLayoutMain>
-        <GridItem className={clsx('w-3', 'desktop')} />
-      </Grid>
+        <div className={clsx('grid-item', 'w-3', 'desktop')} />
+      </div>
     </Layout>
   )
 }

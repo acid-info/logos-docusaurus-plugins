@@ -240,6 +240,112 @@ svg * {
   stroke: rgb(var(--lsd-text-primary));
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 16px;
+}
+
+.grid-item {
+  grid-column: span 4;
+
+  &.w-1 {
+    grid-column: span 1;
+  }
+
+  &.w-2 {
+    grid-column: span 2;
+  }
+
+  &.w-3 {
+    grid-column: span 3;
+  }
+
+  &.w-4 {
+    grid-column: span 4;
+  }
+
+  &.w-5 {
+    grid-column: span 4;
+  }
+
+  &.w-6 {
+    grid-column: span 6;
+  }
+
+  &.w-7 {
+    grid-column: span 7;
+  }
+
+  &.w-8 {
+    grid-column: span 8;
+  }
+
+  &.w-9 {
+    grid-column: span 8;
+  }
+
+  &.w-10 {
+    grid-column: span 10;
+  }
+
+  &.w-11 {
+    grid-column: span 10;
+  }
+
+  &.w-12 {
+    grid-column: span 12;
+  }
+
+  &.w-13 {
+    grid-column: span 12;
+  }
+
+  &.w-14 {
+    grid-column: span 14;
+  }
+
+  &.w-15 {
+    grid-column: span 14;
+  }
+
+  &.w-16 {
+    grid-column: span 16;
+  }
+
+  &.w-17 {
+    grid-column: span 17;
+  }
+
+  &.w-18 {
+    grid-column: span 18;
+  }
+
+  &.w-19 {
+    grid-column: span 18;
+  }
+
+  &.w-20 {
+    grid-column: span 18;
+  }
+
+  &.w-21 {
+    grid-column: span 18;
+  }
+
+  &.w-22 {
+    grid-column: span 18;
+  }
+
+  &.w-23 {
+    grid-column: span 18;
+  }
+
+  &.w-24 {
+    grid-column: span 24;
+  }
+}
+
 .table-of-contents__link--active {
   color: rgb(var(--lsd-text-primary)) !important;
 }
@@ -434,24 +540,6 @@ div.w-10 > a:not(:last-child) {
   border-left: 1px solid rgb(var(--lsd-border-primary));
 }
 
-@media (max-width: 997px) {
-  .navbar {
-    display: flex;
-    padding-inline: 0;
-    height: 56px;
-    padding: 12px 16px;
-  }
-
-  .footer {
-    margin-left: -16px;
-    padding: 24px 16px;
-  }
-
-  .desktop {
-    display: none;
-  }
-}
-
 @media (max-width: 576px) {
   :root {
     --ifm-global-spacing: 0.5rem;
@@ -476,5 +564,31 @@ div.w-10 > a:not(:last-child) {
   }
   .markdown h4 {
     --ifm-h4-font-size: 1.25rem !important;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    display: flex;
+    padding-inline: 0;
+    height: 56px;
+    padding: 12px 16px;
+  }
+
+  .footer {
+    margin-left: -16px;
+    padding: 24px 16px;
+  }
+
+  .desktop {
+    display: none;
   }
 }

@@ -1,9 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
-import { Grid, GridItem } from '@logos-theme/components/Grid/Grid'
 import { Typography } from '@acid-info/lsd-react'
 import styles from './style.module.css'
-import styled from '@emotion/styled'
 
 export default function FooterLayout({ style, copyright }) {
   return (
@@ -12,17 +10,17 @@ export default function FooterLayout({ style, copyright }) {
         'footer--dark': style === 'dark',
       })}
     >
-      <CustomGrid>
-        <GridItem className={clsx('w-6', styles.footerInfo)}>
+      <div className={clsx('grid', 'footer-grid')}>
+        <div className={clsx('grid-item', 'w-6', styles.footerInfo)}>
           <Typography component="div" variant="body2">
             Copyright © 2023 Logos
           </Typography>
           <Typography component="div" variant="body2">
             Built with Docusaurus.
           </Typography>
-        </GridItem>
-        <GridItem className={clsx('w-1', 'desktop')} />
-        <GridItem className="w-6">
+        </div>
+        <div className={clsx('grid-item', 'w-1', 'desktop')} />
+        <div className={clsx('grid-item', 'w-6')}>
           <div className={styles.section}>
             <div>
               <Typography component="div" variant="body2">
@@ -60,9 +58,9 @@ export default function FooterLayout({ style, copyright }) {
               </div>
             </div>
           </div>
-        </GridItem>
-        <GridItem className="w-1" />
-        <GridItem className="w-6">
+        </div>
+        <div className={clsx('grid-item', 'w-1')} />
+        <div className={clsx('grid-item', 'w-6')}>
           <div className={styles.section}>
             <div>
               <Typography component="div" variant="body2">
@@ -103,15 +101,9 @@ export default function FooterLayout({ style, copyright }) {
               </div>
             </div>
           </div>
-        </GridItem>
-        <GridItem className="w-4" />
-      </CustomGrid>
+        </div>
+        <div className={clsx('grid-item', 'w-4')} />
+      </div>
     </footer>
   )
 }
-
-const CustomGrid = styled(Grid)`
-  @media (max-width: 997px) {
-    grid-template-columns: 1fr;
-  }
-`
