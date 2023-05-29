@@ -1,6 +1,5 @@
 import React from 'react'
 import clsx from 'clsx'
-import { Grid, GridItem } from '@logos-theme/components/Grid/Grid'
 import { Typography } from '@acid-info/lsd-react'
 import styles from './style.module.css'
 
@@ -11,17 +10,17 @@ export default function FooterLayout({ style, copyright }) {
         'footer--dark': style === 'dark',
       })}
     >
-      <Grid>
-        <GridItem className="w-6">
+      <div className={clsx('grid', 'footer-grid')}>
+        <div className={clsx('grid-item', 'w-6', styles.footerInfo)}>
           <Typography component="div" variant="body2">
             Copyright © 2023 Logos
           </Typography>
           <Typography component="div" variant="body2">
             Built with Docusaurus.
           </Typography>
-        </GridItem>
-        <GridItem className="w-1" />
-        <GridItem className="w-6">
+        </div>
+        <div className={clsx('grid-item', 'w-1', 'desktop')} />
+        <div className={clsx('grid-item', 'w-6')}>
           <div className={styles.section}>
             <div>
               <Typography component="div" variant="body2">
@@ -59,9 +58,9 @@ export default function FooterLayout({ style, copyright }) {
               </div>
             </div>
           </div>
-        </GridItem>
-        <GridItem className="w-1" />
-        <GridItem className="w-6">
+        </div>
+        <div className={clsx('grid-item', 'w-1')} />
+        <div className={clsx('grid-item', 'w-6')}>
           <div className={styles.section}>
             <div>
               <Typography component="div" variant="body2">
@@ -102,9 +101,9 @@ export default function FooterLayout({ style, copyright }) {
               </div>
             </div>
           </div>
-        </GridItem>
-        <GridItem className="w-4" />
-      </Grid>
+        </div>
+        <div className={clsx('grid-item', 'w-4')} />
+      </div>
     </footer>
   )
 }

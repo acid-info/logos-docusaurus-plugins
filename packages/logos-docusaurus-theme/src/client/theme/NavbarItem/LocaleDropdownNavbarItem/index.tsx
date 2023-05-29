@@ -4,8 +4,7 @@ import { useAlternatePageUtils } from '@docusaurus/theme-common/internal'
 import { translate } from '@docusaurus/Translate'
 import { useLocation } from '@docusaurus/router'
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem'
-import IconLanguage from '@theme/Icon/Language'
-import styles from './styles.module.css'
+
 export default function LocaleDropdownNavbarItem({
   mobile,
   dropdownItemsBefore,
@@ -50,7 +49,8 @@ export default function LocaleDropdownNavbarItem({
         id: 'theme.navbar.mobileLanguageDropdown.label',
         description: 'The label for the mobile language switcher dropdown',
       })
-    : localeConfigs[currentLocale]?.label
+    : localeConfigs[currentLocale]?.label.substring(0, 2).toUpperCase()
+
   return (
     <DropdownNavbarItem
       {...props}

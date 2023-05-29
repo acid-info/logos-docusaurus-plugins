@@ -11,7 +11,6 @@ import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle'
 import NavbarLogo from '@theme/Navbar/Logo'
 import NavbarSearch from '@theme/Navbar/Search'
 import styles from './styles.module.css'
-import { Grid, GridItem } from '@logos-theme/components/Grid/Grid'
 import clsx from 'clsx'
 
 function useNavbarItems() {
@@ -49,17 +48,17 @@ export default function NavbarContent() {
   const searchBarItem = items.find((item) => item.type === 'search')
 
   return (
-    <Grid className="navbar__inner">
+    <div className={clsx('grid', 'navbar__inner')}>
       {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-      <GridItem className="w-1">
+      <div className={clsx('grid-item', 'w-1')}>
         <NavbarLogo />
-      </GridItem>
-      <GridItem className="w-6" />
-      <GridItem className="w-10">
+      </div>
+      <div className={clsx('grid-item', 'w-6', 'desktop')} />
+      <div className={clsx('grid-item', 'w-10')}>
         <NavbarItems items={leftItems} />
-      </GridItem>
-      <GridItem className="w-1" />
-      <GridItem className={clsx('w-6', styles.rightSection)}>
+      </div>
+      <div className={clsx('grid-item', 'w-1', 'desktop')} />
+      <div className={clsx('grid-item', 'w-6', styles.rightSection)}>
         <NavbarItems items={rightItems} />
         <NavbarColorModeToggle className={styles.colorModeToggle} />
         {!searchBarItem && (
@@ -67,7 +66,7 @@ export default function NavbarContent() {
             <SearchBar />
           </NavbarSearch>
         )}
-      </GridItem>
-    </Grid>
+      </div>
+    </div>
   )
 }
