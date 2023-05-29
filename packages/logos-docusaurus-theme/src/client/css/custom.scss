@@ -237,7 +237,7 @@ body {
 }
 
 svg * {
-  stroke: rgb(var(--lsd-text-primary));
+  fill: rgb(var(--lsd-text-primary));
 }
 
 .grid {
@@ -540,31 +540,21 @@ div.w-10 > a:not(:last-child) {
   border-left: 1px solid rgb(var(--lsd-border-primary));
 }
 
-@media (max-width: 576px) {
-  :root {
-    --ifm-global-spacing: 0.5rem;
-    --ifm-spacing-vertical: var(--ifm-global-spacing);
-    --ifm-spacing-horizontal: var(--ifm-global-spacing);
+.cursor-pointer {
+  cursor: pointer;
+}
 
-    --ifm-button-size-multiplier: 1.25;
+.navbar__item {
+  display: inline-flex;
+  align-items: center;
+}
 
-    --ifm-button-padding-horizontal: calc(
-      var(--ifm-button-size-multiplier) * var(--ifm-spacing-horizontal)
-    );
-    --ifm-button-padding-vertical: calc(
-      var(--ifm-button-size-multiplier) * var(--ifm-spacing-vertical)
-    );
+.dropdown > .navbar__link:after {
+  display: none;
+}
 
-    --ifm-alert-padding-horizontal: calc(2 * var(--ifm-spacing-horizontal));
-    --ifm-alert-padding-vertical: calc(2 * var(--ifm-spacing-vertical));
-  }
-
-  .markdown > h2 {
-    --ifm-h2-font-size: 1.75rem;
-  }
-  .markdown h4 {
-    --ifm-h4-font-size: 1.25rem !important;
-  }
+.margin-left-8 {
+  margin-left: 8px;
 }
 
 @include utils.responsive('lg', 'down') {
@@ -590,5 +580,32 @@ div.w-10 > a:not(:last-child) {
 
   .desktop {
     display: none;
+  }
+}
+
+@include utils.responsive('sm', 'down') {
+  :root {
+    --ifm-global-spacing: 0.5rem;
+    --ifm-spacing-vertical: var(--ifm-global-spacing);
+    --ifm-spacing-horizontal: var(--ifm-global-spacing);
+
+    --ifm-button-size-multiplier: 1.25;
+
+    --ifm-button-padding-horizontal: calc(
+      var(--ifm-button-size-multiplier) * var(--ifm-spacing-horizontal)
+    );
+    --ifm-button-padding-vertical: calc(
+      var(--ifm-button-size-multiplier) * var(--ifm-spacing-vertical)
+    );
+
+    --ifm-alert-padding-horizontal: calc(2 * var(--ifm-spacing-horizontal));
+    --ifm-alert-padding-vertical: calc(2 * var(--ifm-spacing-vertical));
+  }
+
+  .markdown > h2 {
+    --ifm-h2-font-size: 1.75rem;
+  }
+  .markdown h4 {
+    --ifm-h4-font-size: 1.25rem !important;
   }
 }

@@ -7,7 +7,6 @@ import {
 } from '@docusaurus/theme-common/internal'
 import Link from '@docusaurus/Link'
 import { translate } from '@docusaurus/Translate'
-import HomeBreadcrumbItem from '@theme/DocBreadcrumbs/Items/Home'
 import styles from './styles.module.css'
 import { Typography } from '@acid-info/lsd-react'
 
@@ -87,7 +86,16 @@ export default function DocBreadcrumbs() {
         itemScope
         itemType="https://schema.org/BreadcrumbList"
       >
-        {homePageRoute && <HomeBreadcrumbItem />}
+        {homePageRoute && (
+          <Typography
+            className={clsx('breadcrumbs__item')}
+            variant="body3"
+            component="a"
+            href="/"
+          >
+            Home
+          </Typography>
+        )}
         {breadcrumbs.map((item, idx) => {
           const isLast = idx === breadcrumbs.length - 1
           return (
