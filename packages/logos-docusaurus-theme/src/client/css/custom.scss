@@ -648,6 +648,12 @@ div.w-10 > a:not(:last-child) {
 
 .main-wrapper {
   // website pages
+
+  > .container {
+    margin-top: 0 !important;
+    margin-bottom: 80px !important;
+  }
+
   & > main {
     padding: 0;
 

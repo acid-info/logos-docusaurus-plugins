@@ -36,6 +36,7 @@ const config = {
           },
         },
         docs: {
+          routeBasePath: '/docs',
           versions: {
             current: {
               label: 'current',
@@ -51,6 +52,22 @@ const config = {
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({
+      navbar: {
+        items: [
+          {
+            label: 'Docs',
+            href: '/docs',
+          },
+          {
+            label: 'Features',
+            href: '#features',
+          },
+          {
+            label: 'Showcase',
+            href: '#showcase',
+          },
+        ],
+      },
       footer: {
         copyright: 'Copyright @2023 Logos <br/> Built with Docusaurus.',
         links: [

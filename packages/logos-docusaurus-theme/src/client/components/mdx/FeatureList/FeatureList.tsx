@@ -1,22 +1,66 @@
-import React from 'react'
+import { Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
-import styles from './style.module.scss'
+import React from 'react'
+import './FeatureList.scss'
 
-type TProps = {
-  children: React.ReactNode
+export type Feature = {
+  title: React.ReactNode
+  description: React.ReactNode
 }
 
-export const FeatureList = ({ children }: TProps): JSX.Element => {
+export type FeatureListProps = Omit<
+  React.HTMLAttributes<HTMLDivElement>,
+  'title'
+> & {
+  title?: React.ReactNode
+  features?: Feature[]
+}
+
+export const FeatureList: React.FC<FeatureListProps> = ({
+  title = 'Features',
+  features = [],
+  className,
+  children,
+  ...props
+}) => {
   return (
-    <section className={styles.FeatureList}>
-      <div
-        className={clsx(
-          styles.FeatureListContainer,
-          styles[`n_${React.Children.count(children)}`],
-        )}
+    <div className={clsx(className, 'mdx-feature-list')} {...props}>
+      <Typography
+        variant="h6"
+        component="div"
+        className="mdx-feature-list__title"
       >
-        {children}
+        {title}
+      </Typography>
+      <div className="mdx-feature-list__list">
+        {features.map((feature, index) => (
+          <div key={index} className={clsx('mdx-feature-list__feature')}>
+            <div className="mdx-feature-list__feature-inner">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                className="mdx-feature-list__feature-index"
+              >
+                {index + 1}
+              </Typography>
+              <Typography
+                variant="h3"
+                component="div"
+                className="mdx-feature-list__feature-title"
+              >
+                {feature.title}
+              </Typography>
+              <Typography
+                variant="h6"
+                component="div"
+                className="mdx-feature-list__feature-description"
+              >
+                {feature.description}
+              </Typography>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   )
 }
