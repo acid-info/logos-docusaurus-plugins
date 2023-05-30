@@ -1,17 +1,16 @@
-import { useThemeConfig } from '@docusaurus/theme-common'
-import type { Props } from '@theme/DocSidebar/Desktop'
-import Content from '@theme/DocSidebar/Desktop/Content'
-import Logo from '@theme/Logo'
-import clsx from 'clsx'
 import React from 'react'
+import clsx from 'clsx'
+import { useThemeConfig } from '@docusaurus/theme-common'
+import Logo from '@theme/Logo'
+import Content from '@theme/DocSidebar/Desktop/Content'
 import styles from './styles.module.css'
-
-function DocSidebarDesktop({ path, sidebar, onCollapse, isHidden }: Props) {
+function DocSidebarDesktop({ path, sidebar, onCollapse, isHidden }) {
   const {
     navbar: { hideOnScroll },
-    docs: {},
+    docs: {
+      sidebar: { hideable },
+    },
   } = useThemeConfig()
-
   return (
     <div
       className={clsx(
@@ -25,5 +24,4 @@ function DocSidebarDesktop({ path, sidebar, onCollapse, isHidden }: Props) {
     </div>
   )
 }
-
 export default React.memo(DocSidebarDesktop)

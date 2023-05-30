@@ -1,0 +1,13 @@
+.mdx-hero {
+  position: relative;
+  border-top: 1px solid rgb(var(--lsd-surface-secondary));
+
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.mdx-hero--large {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: none;
+}

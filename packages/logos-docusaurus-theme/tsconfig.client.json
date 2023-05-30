@@ -7,7 +7,7 @@
     "tsBuildInfoFile": "./lib/.tsbuildinfo-client",
     "rootDir": "src",
     "outDir": "lib",
-    "module": "esnext",
+    "module": "CommonJS",
     "target": "esnext",
     "jsx": "react",
     "types": [
@@ -22,6 +22,13 @@
     },
     "plugins": [{ "transform": "typescript-transform-paths" }]
   },
-  "include": ["src/client", "src/*.d.ts", "src/theme.ts"],
+  "include": [
+    "src/client",
+    "src/*.d.ts",
+    "src/theme.ts",
+    "src/client/theme/NavbarItem",
+    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx",
+    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx"
+  ],
   "exclude": ["src/index.ts", "**/__tests__/**"]
 }

@@ -1,0 +1,52 @@
+@use '../../../css/utils';
+
+.mdx-cta-section {
+  display: grid;
+  margin-top: 260px;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+}
+
+.mdx-cta-section__title {
+}
+
+.mdx-cta-section__description {
+}
+
+.mdx-cta-section__link {
+  margin-top: 2rem;
+
+  button,
+  button span {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+  }
+}
+
+.mdx-cta-section--with-description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  .mdx-cta-section__title {
+    grid-column: 1 / 2;
+  }
+
+  .mdx-cta-section__description {
+    grid-column: 2 / 3;
+  }
+
+  .mdx-cta-section__link {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+@include utils.responsive('md', 'up') {
+  .mdx-cta-section:not(.mdx-cta-section--with-description) {
+    .mdx-cta-section__title {
+      max-width: 65%;
+    }
+  }
+}

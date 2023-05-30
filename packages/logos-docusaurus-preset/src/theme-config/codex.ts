@@ -12,11 +12,11 @@ export const codexThemeConfig: typeof baseThemeConfig = {
     },
     items: [
       {
-        to: 'blog',
-        label: 'Blog',
+        type: 'localeDropdown',
+        position: 'right',
       },
       {
-        type: 'localeDropdown',
+        type: 'docsVersionDropdown',
         position: 'right',
       },
     ],

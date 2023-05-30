@@ -1,0 +1,27 @@
+.mdx-showcase {
+  padding-top: 8.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.mdx-showcase__item {
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+}
+
+.mdx-showcase__item-inner {
+  padding: 24px 8px;
+}
+
+.mdx-showcase__item-logo {
+}
+
+.mdx-showcase__item-name {
+  margin-top: 1rem;
+}
+
+.mdx-showcase__item-description {
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+  margin-top: 24px;
+  padding-top: 16px;
+}

@@ -1,0 +1,33 @@
+:global(.theme-code-block:hover) .copyButtonCopied {
+  opacity: 1 !important;
+}
+
+.copyButtonIcons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyButtonIcon,
+.copyButtonSuccessIcon {
+  fill: currentColor;
+  opacity: inherit;
+  width: 14px;
+  height: 14px;
+  transition: all var(--ifm-transition-fast) ease;
+}
+
+.copyButtonSuccessIcon {
+  opacity: 0;
+  color: #00d600;
+}
+
+.copyButtonCopied .copyButtonIcon {
+  opacity: 0;
+}
+
+.copyButtonCopied .copyButtonSuccessIcon {
+  opacity: 1;
+  transition-delay: 0.075s;
+}

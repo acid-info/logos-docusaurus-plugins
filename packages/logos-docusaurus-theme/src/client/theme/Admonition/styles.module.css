@@ -1,0 +1,44 @@
+.admonition {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 1em;
+  border: 1px solid var(--ifm-alert-border-color);
+  padding: 18px;
+}
+
+.admonitionHeading {
+  font-weight: 400;
+  font-size: 1.25rem !important;
+  line-height: 1.5rem !important;
+  text-transform: capitalize;
+  margin-bottom: 0.3rem;
+}
+
+.admonitionHeading code {
+  text-transform: none;
+}
+
+.admonitionIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.admonitionIcon svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.admonitionIcon svg * {
+  stroke: none !important;
+  fill: var(--ifm-alert-border-color);
+}
+
+.admonitionContent {
+  display: block;
+  margin-top: 12px;
+}
+
+.admonitionContent > :last-child {
+  margin-bottom: 0;
+}

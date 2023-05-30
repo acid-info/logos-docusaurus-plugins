@@ -1,30 +1,31 @@
+import React from 'react'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { useAlternatePageUtils } from '@docusaurus/theme-common/internal'
 import { translate } from '@docusaurus/Translate'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem'
+import { useLocation } from '@docusaurus/router'
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem'
-import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem'
-import React from 'react'
 
 export default function LocaleDropdownNavbarItem({
   mobile,
   dropdownItemsBefore,
   dropdownItemsAfter,
   ...props
-}: Props): JSX.Element {
+}) {
   const {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext()
   const alternatePageUtils = useAlternatePageUtils()
-
-  const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
-    const to = `pathname://${alternatePageUtils.createUrl({
+  const { search, hash } = useLocation()
+  const localeItems = locales.map((locale) => {
+    const baseTo = `pathname://${alternatePageUtils.createUrl({
       locale,
       fullyQualified: false,
     })}`
+    // preserve ?search#hash suffix on locale switches
+    const to = `${baseTo}${search}${hash}`
     return {
-      label: localeConfigs[locale]!.label,
-      lang: localeConfigs[locale]!.htmlLang,
+      label: localeConfigs[locale]?.label,
+      lang: localeConfigs[locale]?.htmlLang,
       to,
       target: '_self',
       autoAddBaseUrl: false,
@@ -40,9 +41,7 @@ export default function LocaleDropdownNavbarItem({
           : '',
     }
   })
-
   const items = [...dropdownItemsBefore, ...localeItems, ...dropdownItemsAfter]
-
   // Mobile is handled a bit differently
   const dropdownLabel = mobile
     ? translate({
@@ -50,13 +49,13 @@ export default function LocaleDropdownNavbarItem({
         id: 'theme.navbar.mobileLanguageDropdown.label',
         description: 'The label for the mobile language switcher dropdown',
       })
-    : localeConfigs[currentLocale]!.label
+    : localeConfigs[currentLocale]?.label.substring(0, 2).toUpperCase()
 
   return (
     <DropdownNavbarItem
       {...props}
       mobile={mobile}
-      label={<>{currentLocale.toUpperCase()}</>}
+      label={<>{dropdownLabel}</>}
       items={items}
     />
   )

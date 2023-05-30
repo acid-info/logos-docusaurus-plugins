@@ -1,53 +1,58 @@
 @use '../../../css/utils';
 
-.root {
-  width: 100%;
-  margin: 0 !important;
-}
-
-.docItemCol {
-  flex-grow: 1;
-  min-width: 0;
-}
-
-.root > aside {
-  width: calc(2 / 12 * 100vw);
-  flex-basis: calc(2 / 12 * 100vw);
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-.tocDesktopWrapper {
-  width: 16.66vw;
-  flex-basis: 16.66vw;
-  flex-grow: 0;
-  flex-shrink: 0;
-  font-size: var(--ifm-h6-font-size);
-  a {
-    font-size: var(--ifm-h6-font-size);
-  }
-}
-
-.docItemContainer > div {
-  flex-grow: 1;
-}
-
 .docItemContainer header + *,
 .docItemContainer article > *:first-child {
   margin-top: 0;
 }
 
-.docItemContainer article header:first-child {
-  display: none;
+.docItemCol {
+  grid-column: span 10;
 }
 
-@include utils.responsive('lg', 'down') {
-  .docItemContainer > div:first-child {
+.docItemGrid {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 16px;
+}
+
+.toc {
+  grid-column: span 3;
+}
+
+.gap1 {
+  grid-column: span 1;
+}
+
+.tocMobile {
+  display: none;
+
+  & > div {
+    display: block !important;
   }
 }
 
-@media (min-width: 997px) {
+@include utils.responsive('xl', 'up') {
+  .tocMobile {
+    display: none;
+  }
+}
+
+@include utils.responsive('xl', 'down') {
+  .tocMobile {
+    display: block;
+  }
+
+  .toc {
+    display: none;
+  }
+
+  .docItemGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+  }
+
   .docItemCol {
-    max-width: 75% !important;
+    grid-column: span 2;
   }
 }

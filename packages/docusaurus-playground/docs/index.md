@@ -1,30 +1,7 @@
 ---
-title: Intro
+title: Introduction
 sidebar_position: 1
 ---
-
-# Tutorial Intro
-
-Let's discover **Docusaurus in less than 5 minutes**.
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
 ## Generate a new site
 
@@ -40,6 +17,67 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 The command also installs all necessary dependencies you need to run Docusaurus.
 
+```tsx title="docusaurus.config.js"
+module.exports = {
+  // ...
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
+      },
+    ],
+  ],
+}
+```
+
+```tsx
+import React from 'react'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+
+const Hello = () => {
+  const { siteConfig } = useDocusaurusContext()
+  const { title, tagline } = siteConfig
+
+  return <div>{`${title} · ${tagline}`}</div>
+}
+```
+
+:::note
+
+The presets: **_ [['classic', {...}]] _** shorthand works as well.
+
+:::
+
+:::tip
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::info
+
+The presets: **_ [['classic', {...}]] _** shorthand works as well.
+
+:::
+
+:::caution
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::danger
+
+The presets: **_ [['classic', {...}]] _** shorthand works as well.
+
+:::
+
 ## Start your site
 
 Run the development server:
@@ -54,3 +92,15 @@ The `cd` command changes the directory you're working with. In order to work wit
 The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
 Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+
+<details><summary>CLICK ME</summary>
+
+#### yes, even hidden code blocks!
+
+<br/>
+
+```python
+print("hello world!")
+```
+
+</details>

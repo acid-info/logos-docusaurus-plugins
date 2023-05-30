@@ -7,18 +7,10 @@ import {
 } from '@docusaurus/theme-common'
 import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal'
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink'
-import NavbarItem, { LinkLikeNavbarItemProps } from '@theme/NavbarItem'
-import type {
-  DesktopOrMobileNavBarItemProps,
-  Props,
-} from '@theme/NavbarItem/DropdownNavbarItem'
-import './DropdownNavbarItem.scss'
-import DropdownIcon from '../../static/icons/dropdown.svg'
+import NavbarItem from '@theme/NavbarItem'
+import { ArrowDownIcon, ArrowUpIcon } from '@acid-info/lsd-react'
 
-function isItemActive(
-  item: LinkLikeNavbarItemProps,
-  localPathname: string,
-): boolean {
+function isItemActive(item, localPathname) {
   if (isSamePath(item.to, localPathname)) {
     return true
   }
@@ -31,10 +23,7 @@ function isItemActive(
   return false
 }
 
-function containsActiveItems(
-  items: readonly LinkLikeNavbarItemProps[],
-  localPathname: string,
-): boolean {
+function containsActiveItems(items, localPathname) {
   return items.some((item) => isItemActive(item, localPathname))
 }
 
@@ -44,27 +33,24 @@ function DropdownNavbarItemDesktop({
   className,
   onClick,
   ...props
-}: DesktopOrMobileNavBarItemProps) {
+}) {
   const dropdownRef = useRef<HTMLDivElement>(null)
   const [showDropdown, setShowDropdown] = useState(false)
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
-      if (
-        !dropdownRef.current ||
-        dropdownRef.current.contains(event.target as Node)
-      ) {
+    const handleClickOutside = (event) => {
+      if (!dropdownRef.current || dropdownRef.current.contains(event.target)) {
         return
       }
       setShowDropdown(false)
     }
-
     document.addEventListener('mousedown', handleClickOutside)
     document.addEventListener('touchstart', handleClickOutside)
-
+    document.addEventListener('focusin', handleClickOutside)
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
       document.removeEventListener('touchstart', handleClickOutside)
+      document.removeEventListener('focusin', handleClickOutside)
     }
   }, [dropdownRef])
 
@@ -93,27 +79,11 @@ function DropdownNavbarItemDesktop({
       >
         {props.children ?? props.label}
       </NavbarNavLink>
-      <DropdownIcon />
+      <ArrowDownIcon className={clsx('margin-left-8', 'cursor-pointer')} />
       <ul className="dropdown__menu">
         {items.map((childItemProps, i) => (
           <NavbarItem
             isDropdownItem
-            onKeyDown={(e) => {
-              if (i === items.length - 1 && e.key === 'Tab') {
-                e.preventDefault()
-                setShowDropdown(false)
-                const nextNavbarItem = dropdownRef.current!.nextElementSibling
-                if (nextNavbarItem) {
-                  const targetItem =
-                    nextNavbarItem instanceof HTMLAnchorElement
-                      ? nextNavbarItem
-                      : // Next item is another dropdown; focus on the inner
-                        // anchor element instead so there's outline
-                        nextNavbarItem.querySelector('a')!
-                  targetItem.focus()
-                }
-              }
-            }}
             activeClassName="dropdown__link--active"
             {...childItemProps}
             key={i}
@@ -130,10 +100,9 @@ function DropdownNavbarItemMobile({
   position, // Need to destructure position from props so that it doesn't get passed on.
   onClick,
   ...props
-}: DesktopOrMobileNavBarItemProps) {
+}) {
   const localPathname = useLocalPathname()
   const containsActive = containsActiveItems(items, localPathname)
-
   const { collapsed, toggleCollapsed, setCollapsed } = useCollapsible({
     initialState: () => !containsActive,
   })
@@ -144,7 +113,6 @@ function DropdownNavbarItemMobile({
       setCollapsed(!containsActive)
     }
   }, [localPathname, containsActive, setCollapsed])
-
   return (
     <li
       className={clsx('menu__list-item', {
@@ -180,11 +148,8 @@ function DropdownNavbarItemMobile({
     </li>
   )
 }
-
-export default function DropdownNavbarItem({
-  mobile = false,
-  ...props
-}: Props): JSX.Element {
+export default function DropdownNavbarItem({ mobile = false, ...props }) {
   const Comp = mobile ? DropdownNavbarItemMobile : DropdownNavbarItemDesktop
+  //@ts-ignore
   return <Comp {...props} />
 }

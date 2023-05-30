@@ -1,31 +1,34 @@
+import React from 'react'
+import clsx from 'clsx'
 import { useWindowSize } from '@docusaurus/theme-common'
 import { useDoc } from '@docusaurus/theme-common/internal'
-import DocItemContent from '@theme/DocItem/Content'
-import DocItemFooter from '@theme/DocItem/Footer'
-import { Props } from '@theme/DocItem/Layout'
 import DocItemPaginator from '@theme/DocItem/Paginator'
-import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop'
-import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile'
-import DocVersionBadge from '@theme/DocVersionBadge'
 import DocVersionBanner from '@theme/DocVersionBanner'
-import clsx from 'clsx'
-import React from 'react'
+import DocVersionBadge from '@theme/DocVersionBadge'
+import DocItemFooter from '@theme/DocItem/Footer'
+import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile'
+import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop'
+import DocItemContent from '@theme/DocItem/Content'
+import DocBreadcrumbs from '@theme/DocBreadcrumbs'
 import styles from './styles.module.scss'
+import { useMedia } from 'react-use'
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
-function useDocTOC() {
+export function useDocTOC() {
   const { frontMatter, toc } = useDoc()
   const windowSize = useWindowSize()
-
+  const isDesktop = useMedia('(min-width: 1200px)')
   const hidden = frontMatter.hide_table_of_contents
   const canRender = !hidden && toc.length > 0
-
-  const mobile = canRender ? <DocItemTOCMobile /> : undefined
-
+  const mobile = canRender ? (
+    <div className={styles.tocMobile}>
+      <DocItemTOCMobile />
+    </div>
+  ) : undefined
   const desktop =
-    canRender && (windowSize === 'desktop' || windowSize === 'ssr') ? (
+    canRender && (isDesktop || windowSize === 'ssr') ? (
       <DocItemTOCDesktop />
     ) : undefined
 
@@ -36,31 +39,28 @@ function useDocTOC() {
   }
 }
 
-export default function DocItemLayout({ children }: Props): JSX.Element {
+export default function DocItemLayout({ children }) {
   const docTOC = useDocTOC()
-  const windowSize = useWindowSize()
 
   return (
-    <div className={clsx(styles.root, 'row')}>
-      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+    <div className={clsx('row', styles.docItemGrid)}>
+      <div className={clsx(!docTOC.hidden && styles.docItemCol)}>
         <DocVersionBanner />
-        <div className={clsx(styles.docItemContainer)}>
-          <div>
-            <article>
-              {/*<DocBreadcrumbs />*/}
-              <DocVersionBadge />
-              {docTOC.mobile}
-              <DocItemContent>{children}</DocItemContent>
-              <DocItemFooter />
-            </article>
-            <DocItemPaginator />
-          </div>
+        <div className={styles.docItemContainer}>
+          <article>
+            <DocBreadcrumbs />
+            <DocVersionBadge />
+            {docTOC.mobile}
+            <DocItemContent>{children}</DocItemContent>
+            <DocItemFooter />
+          </article>
+          <DocItemPaginator />
         </div>
       </div>
-      {windowSize !== 'mobile' && <aside className={clsx('col')} />}
-      <div className={clsx(styles.tocDesktopWrapper, 'col')}>
-        {docTOC.desktop}
-      </div>
+      <div className={styles.gap1} />
+      {docTOC.desktop && (
+        <div className={clsx(styles.toc)}>{docTOC.desktop}</div>
+      )}
     </div>
   )
 }
