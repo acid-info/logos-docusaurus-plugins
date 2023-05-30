@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v0.3.0...v1.0.0-alpha.0) (2023-05-30)
+
+### Bug Fixes
+
+- add support for disabled docs plugin ([056796d](https://github.com/acid-info/logos-docusaurus-plugins/commit/056796d03f6ac8f6aba67c9c23c5b624237409e9))
+
 # [0.3.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v0.2.0...v0.3.0) (2023-03-17)
 
 ### Features
