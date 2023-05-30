@@ -23,9 +23,9 @@
     background-image: linear-gradient(
       179.61deg,
       rgba(0, 0, 0, 0) 0.34%,
-      #000000 114.92%
+      #000000 70%
     );
-    opacity: 0.3;
+    opacity: 1;
   }
 }
 
@@ -57,12 +57,13 @@
     &,
     * {
       border: none !important;
+      font-family: monospace;
     }
 
     tr {
-      text-align: center;
-      font-size: 12px;
-      letter-spacing: 1px;
+      //text-align: center;
+      //font-size: 12px;
+      //letter-spacing: 1px;
     }
   }
 }
