@@ -489,6 +489,14 @@ small {
   display: none;
 }
 
+.footer {
+  position: relative;
+}
+
+.theme-back-to-top-button {
+  display: none !important;
+}
+
 .footer__link-item {
   display: inline-block;
 }
@@ -561,6 +569,10 @@ small {
 
   .theme-admonition {
     display: block !important;
+  }
+
+  .footer {
+    padding-bottom: 0px !important;
   }
 }
 
@@ -707,7 +719,7 @@ small {
 }
 
 .footer {
-  margin-bottom: 40px;
+  margin-bottom: 18px;
   width: 100% !important;
   padding-inline: 0;
 
