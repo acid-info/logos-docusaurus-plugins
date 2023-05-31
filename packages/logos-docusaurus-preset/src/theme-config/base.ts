@@ -1,7 +1,6 @@
 import { ThemeConfig } from '@docusaurus/preset-classic'
 
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-// const darkCodeTheme = require('prism-react-renderer/themes/vsDark')
+const lightCodeTheme = require('@acid-info/logos-docusaurus-theme/lib/client/prism/light-theme')
 const darkCodeTheme = require('@acid-info/logos-docusaurus-theme/lib/client/prism/dark-theme')
 
 export const baseThemeConfig: ThemeConfig = {
@@ -23,7 +22,7 @@ export const baseThemeConfig: ThemeConfig = {
     copyright: `Logos, ${new Date().getFullYear()}`,
   },
   prism: {
-    theme: lightCodeTheme,
+    theme: lightCodeTheme.default,
     darkTheme: darkCodeTheme.default,
   },
 }
