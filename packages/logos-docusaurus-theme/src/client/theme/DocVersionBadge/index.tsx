@@ -4,6 +4,7 @@ import Translate from '@docusaurus/Translate'
 import { ThemeClassNames } from '@docusaurus/theme-common'
 import { useDocsVersion } from '@docusaurus/theme-common/internal'
 import styles from './style.module.scss'
+import { Typography } from '@acid-info/lsd-react'
 
 export default function DocVersionBadge({ className }) {
   const versionMetadata = useDocsVersion()
@@ -17,12 +18,14 @@ export default function DocVersionBadge({ className }) {
           styles.badge,
         )}
       >
-        <Translate
-          id="theme.docs.versionBadge.label"
-          values={{ versionLabel: versionMetadata.label }}
-        >
-          {'Version: {versionLabel}'}
-        </Translate>
+        <Typography variant="body3">
+          <Translate
+            id="theme.docs.versionBadge.label"
+            values={{ versionLabel: versionMetadata.label }}
+          >
+            {'Version: {versionLabel}'}
+          </Translate>
+        </Typography>
       </span>
     )
   }

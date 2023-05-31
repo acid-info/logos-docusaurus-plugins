@@ -52,19 +52,27 @@ const config = {
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+      },
       navbar: {
         items: [
           {
-            label: 'Docs',
+            label: 'About',
             href: '/docs',
           },
           {
-            label: 'Features',
-            href: '#features',
+            label: 'Blog',
+            href: '/',
           },
           {
-            label: 'Showcase',
-            href: '#showcase',
+            label: 'Github',
+            href: '/',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },

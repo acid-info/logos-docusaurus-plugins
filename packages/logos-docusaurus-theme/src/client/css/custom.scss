@@ -371,6 +371,7 @@ small {
 
 .navbar__inner {
   align-items: center;
+  padding-inline: 0 !important;
 }
 
 .row {
@@ -443,6 +444,10 @@ div.w-10 > a:not(:last-child) {
   align-items: center;
 }
 
+.navbar__left-items > .navbar__item:first-of-type {
+  padding-left: 0;
+}
+
 .dropdown > .navbar__link:after {
   display: none;
 }
@@ -484,6 +489,19 @@ div.w-10 > a:not(:last-child) {
   padding: 24px;
 }
 
+.theme-doc-version-badge {
+  padding: 4px 8px;
+  background: transparent;
+  color: rgb(var(--lsd-text-primary));
+  border: 1px solid rgb(var(--lsd-border-primary));
+  margin-bottom: 16px;
+}
+
+.navbar__right-items {
+  display: flex;
+  align-items: center;
+}
+
 @include utils.responsive('lg', 'down') {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -495,9 +513,26 @@ div.w-10 > a:not(:last-child) {
 
   .navbar {
     display: flex;
-    padding-inline: 0;
+    padding-inline: 0 !important;
     height: 56px;
     padding: 12px 16px;
+  }
+
+  .navbar__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 1px solid rgb(var(--lsd-border-primary));
+    border-left: none;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   .footer {
@@ -554,10 +589,6 @@ div.w-10 > a:not(:last-child) {
     padding-inline: 0 !important;
   }
 
-  .navbar__inner {
-    padding-inline: 0 !important;
-  }
-
   .navbar__left {
     display: flex;
   }
@@ -573,6 +604,7 @@ div.w-10 > a:not(:last-child) {
 
     main > .container {
       padding-inline: 0 !important;
+      padding-bottom: 200px !important;
     }
 
     & > div {
@@ -593,6 +625,22 @@ div.w-10 > a:not(:last-child) {
       }
     }
   }
+
+  .navbar__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .navbar__left {
+    flex-grow: 0;
+    flex-basis: calc(1 / 12 * 100%);
+  }
+
+  .navbar__left-items {
+    flex: 1 0;
+    margin: auto;
+  }
 }
 
 @include utils.responsive('xl', 'up') {
@@ -603,7 +651,6 @@ div.w-10 > a:not(:last-child) {
       display: grid;
       grid-template-columns: repeat(24, 1fr);
       gap: 1rem;
-      padding-inline: 0;
 
       aside {
         width: auto;
@@ -726,7 +773,7 @@ div.w-10 > a:not(:last-child) {
 }
 
 .navbar {
-  padding: 12px 0;
+  padding: 12px 16px;
 }
 
 .navbar__inner {
@@ -734,55 +781,36 @@ div.w-10 > a:not(:last-child) {
   padding: 0 var(--content-padding);
 }
 
-@include utils.responsive('lg', 'up') {
-  .navbar__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .navbar__left {
-    flex-grow: 0;
-    flex-basis: calc(1 / 12 * 100%);
-  }
-
-  .navbar__left-items {
-    flex: 1 0;
-  }
-}
-
 @include utils.responsive('xl', 'up') {
   .navbar__inner {
     display: grid;
     gap: 16px;
-    grid-template-columns: repeat(18, 1fr);
-    padding: 0 var(--content-padding);
+    grid-template-columns: repeat(24, 1fr);
+    padding: 0;
   }
 
   .navbar__left {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
   .navbar__left-items {
-    grid-column: 5 / 14;
+    grid-column: 6 / 20;
   }
 
   .navbar__right-items {
-    grid-column: 14 / 19;
-    display: flex;
+    grid-column: 20 / 25;
     flex-direction: row;
     justify-content: flex-end;
+    gap: 16px;
   }
 }
 
 @include utils.responsive('lg', 'down') {
   .main-wrapper > div {
     display: block;
-    > main {
-    }
   }
 
   .main-wrapper {

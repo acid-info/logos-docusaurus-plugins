@@ -9,18 +9,6 @@ export const logosThemeConfig: typeof baseThemeConfig = {
       src: 'theme/image/logo.svg',
       height: 26,
     },
-    items: [
-      { to: 'docs', label: 'Docs', position: 'left' },
-      { to: 'https://logos.co/', label: 'Community', position: 'left' },
-      {
-        type: 'docsVersionDropdown',
-        position: 'right',
-      },
-      {
-        type: 'localeDropdown',
-        position: 'right',
-      },
-    ],
   },
   metadata: [
     { name: 'keywords', content: 'Logos' },
