@@ -59,6 +59,9 @@ const config = {
       navbar: {
         items: [
           {
+            type: 'search',
+          },
+          {
             label: 'About',
             to: '/docs',
           },

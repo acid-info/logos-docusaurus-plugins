@@ -1,3 +1,4 @@
+import { IconButtonGroup } from '@acid-info/lsd-react'
 import { ErrorCauseBoundary, useThemeConfig } from '@docusaurus/theme-common'
 import {
   splitNavbarItems,
@@ -6,12 +7,11 @@ import {
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle'
 import NavbarLogo from '@theme/Navbar/Logo'
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle'
-import NavbarSearch from '@theme/Navbar/Search'
 import NavbarItem from '@theme/NavbarItem'
 import SearchBar from '@theme/SearchBar'
 import clsx from 'clsx'
 import React from 'react'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -43,9 +43,11 @@ ${JSON.stringify(item, null, 2)}`,
 
 export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar()
-  const items = useNavbarItems()
-  const [leftItems, rightItems] = splitNavbarItems(items)
-  const searchBarItem = items.find((item) => item.type === 'search')
+  const allItems = useNavbarItems()
+  const [leftItems, rightItems] = splitNavbarItems(
+    allItems.filter((item) => !['search'].includes(item.type ?? '')),
+  )
+  const searchBarItem = allItems.find((item) => item.type === 'search')
 
   return (
     <div className="navbar__inner">
@@ -57,15 +59,17 @@ export default function NavbarContent() {
       </div>
       <div className="navbar__right-items">
         <NavbarItems items={rightItems} />
-        <NavbarColorModeToggle
-          className={clsx(styles.colorModeToggle, 'navbar__color-mode-toggle')}
-        />
-        {!searchBarItem && (
-          <NavbarSearch>
-            <SearchBar />
-          </NavbarSearch>
-        )}
-        {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+
+        <IconButtonGroup className={styles.iconButtonGroup} size="medium">
+          <NavbarColorModeToggle
+            className={clsx(
+              styles.colorModeToggle,
+              'navbar__color-mode-toggle',
+            )}
+          />
+          {searchBarItem && <SearchBar />}
+          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+        </IconButtonGroup>
       </div>
     </div>
   )

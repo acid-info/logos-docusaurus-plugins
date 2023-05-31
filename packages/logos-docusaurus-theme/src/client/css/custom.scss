@@ -244,6 +244,10 @@
   :root {
     --ifm-background-color: rgb(var(--lsd-surface-primary));
   }
+
+  .navbar__color-mode-toggle {
+    display: none !important;
+  }
 }
 
 body {

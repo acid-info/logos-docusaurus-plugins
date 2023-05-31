@@ -13,3 +13,12 @@ Hide color mode toggle in small viewports
   justify-content: flex-end;
   white-space: nowrap;
 }
+
+.iconButtonGroup {
+  :global {
+    button:not(:last-child) {
+      margin-right: -1px !important;
+      border-right: 1px solid !important;
+    }
+  }
+}
