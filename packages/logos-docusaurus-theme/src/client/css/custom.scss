@@ -572,6 +572,18 @@ div.w-10 > a:not(:last-child) {
   display: none;
 }
 
+.footer__link-item {
+  display: inline-block;
+}
+
+.footer__item {
+  white-space: nowrap;
+}
+
+.lsd-collapse__content {
+  padding: 24px;
+}
+
 @include utils.responsive('lg', 'down') {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -589,7 +601,6 @@ div.w-10 > a:not(:last-child) {
   }
 
   .footer {
-    margin-left: -16px;
     padding: 24px 16px;
   }
 
@@ -623,10 +634,41 @@ div.w-10 > a:not(:last-child) {
   .markdown h4 {
     --ifm-h4-font-size: 1.25rem !important;
   }
+
+  .footer {
+    > div {
+      display: flex !important;
+      flex-direction: column-reverse;
+      gap: 72px !important;
+    }
+  }
+
+  .footer__links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .col.footer__col {
+    margin-bottom: 0 !important;
+    padding-inline: 0 !important;
+  }
+
+  .navbar__inner {
+    padding-inline: 0 !important;
+  }
+
+  .navbar__left {
+    display: flex;
+  }
+
+  .navbar__left-items {
+    display: none;
+  }
 }
 
 .main-wrapper {
-  padding: 0 var(--content-padding);
+  padding: 0;
 
   & > div {
     display: grid;
@@ -709,6 +751,7 @@ div.w-10 > a:not(:last-child) {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .footer__item {
@@ -751,7 +794,12 @@ div.w-10 > a:not(:last-child) {
   margin: 0 !important;
 }
 
+.navbar {
+  padding: 12px 0;
+}
+
 .navbar__inner {
+  flex-direction: row;
   padding: 0 var(--content-padding);
 }
 
