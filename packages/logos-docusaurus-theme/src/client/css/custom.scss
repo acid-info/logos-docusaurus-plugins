@@ -580,6 +580,10 @@ div.w-10 > a:not(:last-child) {
   white-space: nowrap;
 }
 
+.lsd-collapse__content {
+  padding: 24px;
+}
+
 @include utils.responsive('lg', 'down') {
   .grid {
     grid-template-columns: repeat(2, 1fr);
