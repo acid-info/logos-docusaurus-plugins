@@ -58,9 +58,8 @@ export default function logosPreset(
     path.join(__dirname, '../static', options.businessUnit),
   ]
 
-  siteConfig.themeConfig = defaultsDeep(
-    [{}, context.siteConfig.themeConfig, themeConfigs[options.businessUnit]],
-    false,
+  siteConfig.themeConfig = themeConfigs[options.businessUnit](
+    context.siteConfig.themeConfig,
   )
 
   Object.entries(siteConfig).forEach(
