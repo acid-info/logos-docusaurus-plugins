@@ -226,14 +226,6 @@
 
   --ifm-hero-background-color: #f8f8fa;
   --ifm-hero-text-color: var(--ifm-color-black);
-
-  .navbar {
-    box-shadow: none;
-  }
-
-  .dropdown__link--active {
-    background-color: transparent;
-  }
 }
 
 [data-theme='dark'] {
@@ -387,6 +379,15 @@ small {
 .navbar {
   padding-inline: 0;
   height: 64px;
+  box-shadow: none;
+}
+
+.navbar__logo {
+  height: 26px;
+}
+
+.dropdown__link--active {
+  background-color: transparent;
 }
 
 .navbar__inner {
