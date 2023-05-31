@@ -5,9 +5,11 @@ import React from 'react'
 import styles from './style.module.scss'
 
 import ArrowLCircleSvg from '../../static/icons/arrow-left-circle.svg'
-import ArrowRCircleSvg from '../../static/icons/arrow-right-circle.svg'
 import ArrowL from '../../static/icons/arrow-left.svg'
+import ArrowRCircleSvg from '../../static/icons/arrow-right-circle.svg'
 import ArrowR from '../../static/icons/arrow-right.svg'
+import CloseSvg from '../../static/icons/close.svg'
+import CopySvg from '../../static/icons/copy.svg'
 import DiscordSvg from '../../static/icons/discord.svg'
 import DiscourseSvg from '../../static/icons/discourse.svg'
 import DotSvg from '../../static/icons/dot.svg'
@@ -15,12 +17,12 @@ import DropdownSvg from '../../static/icons/dropdown.svg'
 import FolderSvg from '../../static/icons/folder.svg'
 import GithubSvg from '../../static/icons/github.svg'
 import GScholarSvg from '../../static/icons/gscholar.svg'
+import HistorySvg from '../../static/icons/history.svg'
 import LinkedinSvg from '../../static/icons/linkedin.svg'
 import SearchSvg from '../../static/icons/search.svg'
 import StatusSvg from '../../static/icons/status.svg'
 import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
-import CopySvg from '../../static/icons/copy.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -155,5 +157,17 @@ export const IconGScholar = (props: TIconProps): JSX.Element => (
 export const IconCopy = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <CopySvg />
+  </Icon>
+)
+
+export const IconHistory = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <HistorySvg />
+  </Icon>
+)
+
+export const IconClose = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <CloseSvg />
   </Icon>
 )

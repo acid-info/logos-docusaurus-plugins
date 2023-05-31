@@ -1,3 +1,4 @@
+import { Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
 import styles from './SearchResultItemBase.module.scss'
@@ -19,8 +20,13 @@ export const SearchResultItemBase: React.FC<SearchResultItemBaseProps> = ({
     <li className={clsx(styles.root, className)} {...props}>
       <span>{icon}</span>
       <div>
-        {title && <div dangerouslySetInnerHTML={{ __html: title }} />}
-        {content && <p dangerouslySetInnerHTML={{ __html: content }} />}
+        {title && (
+          <Typography
+            variant="subtitle2"
+            component="span"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        )}
       </div>
     </li>
   )

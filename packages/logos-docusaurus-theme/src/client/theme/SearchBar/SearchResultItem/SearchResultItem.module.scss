@@ -3,11 +3,13 @@
 }
 
 .icon {
+  width: 16px;
+  height: auto;
+
   &.l1 {
   }
 
   &.l2 {
-    opacity: 0.6;
   }
 
   &.fill {

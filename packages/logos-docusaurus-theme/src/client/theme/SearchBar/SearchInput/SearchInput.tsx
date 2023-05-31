@@ -1,57 +1,38 @@
-import { useOS } from '@logos-theme/lib/useOS'
-import { useWindowEventListener } from '@logos-theme/lib/useWindowEventListener'
+import { SearchIcon, TextField } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
 import { useMedia } from 'react-use'
 import styles from './SearchInput.module.scss'
-import { Typography } from '@acid-info/lsd-react'
 
 export type SearchInputProps = Omit<
   React.HTMLProps<HTMLDivElement>,
   'value' | 'onChange'
 > &
   Pick<React.HTMLProps<HTMLInputElement>, 'onChange'> & {
-    inputProps?: Omit<React.HTMLProps<HTMLInputElement>, 'ref'> & {
-      ref: React.RefObject<HTMLInputElement>
-    }
+    inputProps?: React.HTMLProps<HTMLInputElement>
+    containerRef?: React.RefObject<HTMLDivElement>
     value?: string
     active?: boolean
     onFocus?: () => void
     onCancel?: () => void
+    onClear?: () => void
   }
 
 export const SearchInput: React.FC<SearchInputProps> = ({
   value = '',
   active,
   onChange,
+  onClear,
   onFocus: onFocusCallback,
   onCancel,
   className,
   inputProps: { ref: inputRef, ...inputProps } = { placeholder: '' },
+  containerRef,
   ...props
 }) => {
-  const os = useOS()
   const isMobile = useMedia('(max-width: 996px)')
 
   const expanded = active || value?.length > 0
-
-  const focus = () => {
-    inputRef?.current && inputRef.current.focus()
-  }
-
-  const blur = () => {
-    inputRef?.current && inputRef.current.blur()
-    onCancel && onCancel()
-  }
-
-  useWindowEventListener('keydown', (event) => {
-    if ((event.ctrlKey || event.metaKey) && event.code === 'KeyK') {
-      event.preventDefault()
-      focus()
-    } else if (event.code === 'Escape') {
-      blur()
-    }
-  })
 
   const onFocus = (event: React.FocusEvent<HTMLInputElement>) => {
     onFocusCallback && onFocusCallback()
@@ -59,30 +40,26 @@ export const SearchInput: React.FC<SearchInputProps> = ({
 
   return (
     <div
+      ref={containerRef}
       className={clsx(styles.root, expanded && styles.expanded, className)}
+      onKeyDown={(e) => {
+        if (e.code === 'Escape' && value.length > 0) {
+          e.stopPropagation()
+          onClear && onClear()
+        }
+      }}
       {...props}
     >
-      <Typography component="span" color="primary">
-        Search
-      </Typography>
-      <input
+      <TextField
+        className={styles.textField}
         value={value}
-        onChange={onChange}
-        ref={inputRef}
-        onFocus={onFocus}
-        {...inputProps}
         placeholder={expanded || isMobile ? inputProps.placeholder : ''}
+        onChange={onChange}
+        onFocus={onFocus}
+        clearButton
+        icon={<SearchIcon color="primary" />}
+        {...(inputProps as any)}
       />
-      <div className={styles.shortcuts}>
-        {active ? (
-          <kbd>esc</kbd>
-        ) : (
-          <>
-            <kbd>{os === 'mac' ? '⌘' : 'ctrl'}</kbd>
-            <kbd>k</kbd>
-          </>
-        )}
-      </div>
     </div>
   )
 }

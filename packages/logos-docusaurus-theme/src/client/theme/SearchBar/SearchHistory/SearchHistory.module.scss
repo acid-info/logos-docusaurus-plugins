@@ -1,0 +1,45 @@
+@use '../../../css/utils';
+
+.root {
+  padding: 24px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.root.empty {
+  padding: 0;
+}
+
+.title {
+  font-size: 0.75rem !important;
+}
+
+.item {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .itemTitle {
+    flex-grow: 1;
+    padding-left: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    mark {
+      background: none;
+      color: inherit;
+    }
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .root {
+    overflow: auto;
+    height: 100%;
+    max-height: 100%;
+    padding: 24px 24px;
+    padding-bottom: 64px;
+  }
+}

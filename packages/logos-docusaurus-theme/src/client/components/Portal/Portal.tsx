@@ -18,5 +18,7 @@ export const Portal: React.FC<React.PropsWithChildren<PortalProps>> = ({
 
   const portalElement = usePortal({ parentId: containerId })
 
-  return createPortal(children, portalElement, id)
+  const portal = createPortal(children, portalElement, id)
+
+  return portal
 }
