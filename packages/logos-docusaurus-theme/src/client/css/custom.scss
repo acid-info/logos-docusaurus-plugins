@@ -649,10 +649,22 @@ div.w-10 > a:not(:last-child) {
     margin-bottom: 0 !important;
     padding-inline: 0 !important;
   }
+
+  .navbar__inner {
+    padding-inline: 0 !important;
+  }
+
+  .navbar__left {
+    display: flex;
+  }
+
+  .navbar__left-items {
+    display: none;
+  }
 }
 
 .main-wrapper {
-  padding: 0 var(--content-padding);
+  padding: 0;
 
   & > div {
     display: grid;
@@ -778,7 +790,12 @@ div.w-10 > a:not(:last-child) {
   margin: 0 !important;
 }
 
+.navbar {
+  padding: 12px 0;
+}
+
 .navbar__inner {
+  flex-direction: row;
   padding: 0 var(--content-padding);
 }
 
