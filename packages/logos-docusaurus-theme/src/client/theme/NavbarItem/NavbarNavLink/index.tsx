@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import isInternalUrl from '@docusaurus/isInternalUrl'
 import { isRegexpStringMatch } from '@docusaurus/theme-common'
-import { PickIcon } from '@acid-info/lsd-react'
+import { PickIcon, Typography } from '@acid-info/lsd-react'
 import styles from './styles.module.css'
 
 export default function NavbarNavLink({
@@ -29,10 +29,14 @@ export default function NavbarNavLink({
     ? { dangerouslySetInnerHTML: { __html: html } }
     : {
         children: (
-          <div className={styles.linkContent}>
+          <Typography
+            component="div"
+            variant="body2"
+            className={styles.linkContent}
+          >
             {label}
             {isExternalLink && <PickIcon color="primary" />}
-          </div>
+          </Typography>
         ),
       }
 

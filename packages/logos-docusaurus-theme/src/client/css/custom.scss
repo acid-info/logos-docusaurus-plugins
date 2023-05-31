@@ -11,16 +11,23 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 
-[data-theme='dark'] {
+:root {
   background-color: transparent !important;
 
+  --ifm-menu-color-background-active: transparent;
   --content-padding: 32px;
-
-  --ifm-color-scheme: dark;
   --ifm-navbar-link-color: rgb(var(--lsd-text-primary));
   --ifm-navbar-background-color: rgb(var(--lsd-surface-primary));
   --ifm-dropdown-link-color: rgb(var(--lsd-text-primary));
   --ifm-dropdown-hover-background-color: rgb(var(--lsd-surface-secondary));
+  --ifm-background-color: rgb(var(--lsd-surface-primary));
+
+  --ifm-color-white: #fff;
+  --ifm-color-black: #000;
+
+  --ifm-color-primary: rgb(var(--lsd-theme-primary));
+  --ifm-color-secondary: rgb(var(--lsd-theme-secondary));
+  --prism-background-color: rgb(var(--lsd-theme-primary));
 
   /* Colors. */
   /*--ifm-dark-value: 10%;*/
@@ -29,14 +36,6 @@
   /*--ifm-light-value: -15%;*/
   /*--ifm-lighter-value: -30%;*/
   /*--ifm-lightest-value: -50%;*/
-
-  --ifm-background-color: rgb(var(--lsd-surface-primary));
-
-  --ifm-color-white: #fff;
-  --ifm-color-black: #000;
-
-  --ifm-color-primary: rgb(var(--lsd-theme-primary));
-  --ifm-color-secondary: rgb(var(--lsd-theme-secondary));
 
   --ifm-color-gray-0: rgb(var(--lsd-surface-primary));
   --ifm-color-gray-100: #f8f8fa;
@@ -227,6 +226,26 @@
 
   --ifm-hero-background-color: #f8f8fa;
   --ifm-hero-text-color: var(--ifm-color-black);
+
+  .navbar {
+    box-shadow: none;
+  }
+
+  .dropdown__link--active {
+    background-color: transparent;
+  }
+}
+
+[data-theme='dark'] {
+  --ifm-color-scheme: dark;
+
+  .navbar__logo img {
+    filter: invert(1);
+  }
+}
+
+[data-theme='light'] {
+  --ifm-color-scheme: light;
 }
 
 @include utils.responsive('lg', 'down') {
@@ -362,11 +381,12 @@ small {
 
 .breadcrumbs__link {
   padding: 0;
+  background: transparent !important;
 }
 
 .navbar {
   padding-inline: 0;
-  height: 80px;
+  height: 64px;
 }
 
 .navbar__inner {
@@ -379,11 +399,6 @@ small {
   margin: 0;
 }
 
-// TODO temporary style fix for the logo
-.navbar__logo img {
-  filter: invert(1);
-}
-
 .theme-doc-version-banner * {
   color: #fff;
   text-decoration-color: #fff !important;
@@ -394,7 +409,7 @@ small {
   text-decoration-color: #fff !important;
 }
 
-.navbar__left-items > a:not(:last-child)[aria-current='page'] {
+.navbar__left-items > a:not(:last-child)[href^='/'] {
   &:after {
     content: '•';
     margin-left: 16px;
@@ -524,7 +539,7 @@ small {
     justify-content: center;
     margin: 0;
     border: 1px solid rgb(var(--lsd-border-primary));
-    border-left: none;
+    // border-left: none;
     width: 32px;
     height: 32px;
     box-sizing: border-box;

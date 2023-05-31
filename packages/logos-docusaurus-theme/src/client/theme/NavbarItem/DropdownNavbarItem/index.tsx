@@ -9,7 +9,7 @@ import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal'
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink'
 import NavbarItem from '@theme/NavbarItem'
 import { ArrowDownIcon } from '@acid-info/lsd-react'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
 function isItemActive(item, localPathname) {
   if (isSamePath(item.to, localPathname)) {

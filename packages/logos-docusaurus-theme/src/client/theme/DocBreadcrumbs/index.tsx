@@ -9,6 +9,7 @@ import Link from '@docusaurus/Link'
 import { translate } from '@docusaurus/Translate'
 import styles from './styles.module.css'
 import { Typography } from '@acid-info/lsd-react'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
 // TODO move to design system folder
 function BreadcrumbsItemLink({ children, href, isLast }) {
@@ -65,9 +66,14 @@ function BreadcrumbsItem({ children, active, index, addMicrodata }) {
 export default function DocBreadcrumbs() {
   const breadcrumbs = useSidebarBreadcrumbs()
   const homePageRoute = useHomePageRoute()
+  const { siteConfig } = useDocusaurusContext()
+
   if (!breadcrumbs) {
     return null
   }
+
+  //@ts-ignore
+  const routeBasePath = siteConfig.presets[0][1].docs.routeBasePath
 
   return (
     <nav
@@ -91,7 +97,7 @@ export default function DocBreadcrumbs() {
             className={clsx('breadcrumbs__item')}
             variant="body3"
             component="a"
-            href="/"
+            href={routeBasePath}
           >
             Home
           </Typography>
