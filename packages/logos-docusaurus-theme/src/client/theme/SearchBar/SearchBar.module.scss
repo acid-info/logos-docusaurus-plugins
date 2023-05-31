@@ -1,11 +1,32 @@
 @use '../../css/utils';
 
-.root {
-  position: relative;
+.modal {
+  > div > div:first-child {
+    padding: 0;
+  }
+
+  .closeButton {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
 }
 
 @include utils.responsive('lg', 'down') {
-  .root {
-    position: unset;
+  .modal {
+    .header {
+      padding: 12px 16px;
+    }
+
+    .closeButton {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }

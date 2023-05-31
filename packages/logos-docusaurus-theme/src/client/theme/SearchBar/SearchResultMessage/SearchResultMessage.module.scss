@@ -1,0 +1,12 @@
+@use '../../../css/utils';
+
+.root {
+  text-align: center;
+  padding: 32px;
+}
+
+@include utils.responsive('lg', 'down') {
+  .root {
+    padding: 40px 24px;
+  }
+}

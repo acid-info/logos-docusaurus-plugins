@@ -1,51 +1,22 @@
+@use '../../../css/utils';
 // TODO: use ifm variables
 
 .root {
-  padding: 0;
-}
-
-.divider {
-  width: 100%;
-  padding: 0 14px;
-
-  & > div {
-    height: 1px;
-    background-color: #ededed;
-  }
-}
-
-.topBar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px;
-
-  span,
-  button {
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #c0c0c2;
-  }
-
-  button {
-    color: #909091;
-    background: #eeeef1;
-    padding: 4px 12px;
-    border-radius: 8px;
-  }
+  padding: 24px 0;
 }
 
 .noResults {
-  color: #909091;
+  padding: 0;
 }
 
 .groups {
-  max-height: 500px;
+  max-height: 60vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
   .group {
-    margin: 16px 0;
   }
 
   .divider:last-child {
@@ -64,5 +35,20 @@
     button {
       background-color: var(--ifm-button-color);
     }
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .groups {
+    max-height: unset;
+    overflow: auto;
+  }
+
+  .root {
+    overflow: auto;
+    height: 100%;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 64px;
   }
 }

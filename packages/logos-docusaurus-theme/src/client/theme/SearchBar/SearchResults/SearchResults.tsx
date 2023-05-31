@@ -1,46 +1,32 @@
 import clsx from 'clsx'
-import React, { MutableRefObject, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import { SearchResultGroup } from '../SearchResultGroup'
 import { SearchResultItem } from '../SearchResultItem'
-import { SearchResult } from '../types'
+import { SearchResultMessage } from '../SearchResultMessage/SearchResultMessage'
+import { SearchResult, SearchResultGroupItem } from '../types'
 import { groupSearchResult } from '../utils/groupSearchResult'
 import styles from './SearchResults.module.scss'
-
-const divider = (
-  <div className={styles.divider}>
-    <div />
-  </div>
-)
 
 export type SearchResultsProps = Omit<
   React.HTMLProps<HTMLInputElement>,
   'results'
 > & {
-  inputRef?: MutableRefObject<HTMLInputElement>
   results: SearchResult[]
-  onClear: () => void
+  onNavigate?: (e: React.MouseEvent<any>, item: SearchResultGroupItem) => void
 }
 
 export const SearchResults: React.FC<SearchResultsProps> = ({
   results,
-  onClear,
   className,
+  onNavigate,
   ...props
 }) => {
   const total = results.length
   const grouped = useMemo(() => groupSearchResult(results), [results])
 
   return (
-    <div className={styles.root}>
-      <div className={styles.topBar}>
-        <span>{total} results</span>
-        <button className={clsx('clean-btn')} onClick={onClear}>
-          Clear
-        </button>
-      </div>
-
-      {divider}
-
+    <div className={clsx(styles.root, total === 0 && styles.noResults)}>
+      {total === 0 && <SearchResultMessage>No result.</SearchResultMessage>}
       <div className={clsx(styles.groups, 'hidden-scrollbar')}>
         {grouped.map(([category, items], index) => (
           <React.Fragment key={index}>
@@ -52,11 +38,12 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
                   href={item.href}
                   title={item.title}
                   content={item.content}
+                  linkProps={
+                    onNavigate ? { onClick: (e) => onNavigate(e, item) } : {}
+                  }
                 />
               ))}
             </SearchResultGroup>
-
-            {divider}
           </React.Fragment>
         ))}
       </div>
