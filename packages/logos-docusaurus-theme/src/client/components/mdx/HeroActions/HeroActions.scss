@@ -4,4 +4,7 @@
   flex-direction: row;
   gap: 0 1rem;
   align-items: center;
+
+  position: relative;
+  z-index: 98;
 }
