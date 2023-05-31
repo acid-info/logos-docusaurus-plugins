@@ -394,12 +394,7 @@ small {
   text-decoration-color: #fff !important;
 }
 
-div.w-10 > a {
-  padding-left: 0;
-  padding-right: 16px;
-}
-
-div.w-10 > a:not(:last-child) {
+.navbar__left-items > a:not(:last-child)[aria-current='page'] {
   &:after {
     content: '•';
     margin-left: 16px;
@@ -442,6 +437,7 @@ div.w-10 > a:not(:last-child) {
 .navbar__item {
   display: inline-flex;
   align-items: center;
+  padding: 0 8px;
 }
 
 .navbar__left-items > .navbar__item:first-of-type {
@@ -503,6 +499,10 @@ div.w-10 > a:not(:last-child) {
 }
 
 @include utils.responsive('lg', 'down') {
+  main > .container {
+    padding-bottom: 84px !important;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -535,12 +535,20 @@ div.w-10 > a:not(:last-child) {
     }
   }
 
+  .navbar__left-items {
+    display: none;
+  }
+
   .footer {
     padding: 24px 16px;
   }
 
   .desktop {
     display: none;
+  }
+
+  .theme-admonition {
+    display: block !important;
   }
 }
 
@@ -592,10 +600,6 @@ div.w-10 > a:not(:last-child) {
   .navbar__left {
     display: flex;
   }
-
-  .navbar__left-items {
-    display: none;
-  }
 }
 
 @include utils.responsive('lg', 'up') {
@@ -609,7 +613,7 @@ div.w-10 > a:not(:last-child) {
 
     & > div {
       display: grid;
-      grid-template-columns: repeat(16, 1fr);
+      grid-template-columns: repeat(16, 42px);
       gap: 1rem;
       padding-inline: 16px;
 
@@ -808,16 +812,26 @@ div.w-10 > a:not(:last-child) {
   }
 }
 
-@include utils.responsive('lg', 'down') {
-  .main-wrapper > div {
+@include utils.responsive('xl', 'down') {
+  #__docusaurus_skipToContent_fallback {
     display: block;
+    max-width: 912px;
+    margin: auto;
   }
 
   .main-wrapper {
-    // website pages
-
-    main > .container {
-      padding-inline: 0 !important;
+    & > div {
+      padding-inline: 0;
     }
+  }
+
+  .container {
+    padding-inline: 0;
+  }
+
+  .navbar {
+    max-width: 912px;
+    margin: auto;
+    padding-inline: 0;
   }
 }

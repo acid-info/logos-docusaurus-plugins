@@ -3,7 +3,9 @@ import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import isInternalUrl from '@docusaurus/isInternalUrl'
 import { isRegexpStringMatch } from '@docusaurus/theme-common'
-import IconExternalLink from '@theme/Icon/ExternalLink'
+import { PickIcon } from '@acid-info/lsd-react'
+import styles from './styles.module.css'
+
 export default function NavbarNavLink({
   activeBasePath,
   activeBaseRegex,
@@ -21,21 +23,19 @@ export default function NavbarNavLink({
   const activeBaseUrl = useBaseUrl(activeBasePath)
   const normalizedHref = useBaseUrl(href, { forcePrependBaseUrl: true })
   const isExternalLink = label && href && !isInternalUrl(href)
+
   // Link content is set through html XOR label
   const linkContentProps = html
     ? { dangerouslySetInnerHTML: { __html: html } }
     : {
         children: (
-          <>
+          <div className={styles.linkContent}>
             {label}
-            {isExternalLink && (
-              <IconExternalLink
-                {...(isDropdownLink && { width: 12, height: 12 })}
-              />
-            )}
-          </>
+            {isExternalLink && <PickIcon color="primary" />}
+          </div>
         ),
       }
+
   if (href) {
     return (
       <Link
@@ -45,6 +45,7 @@ export default function NavbarNavLink({
       />
     )
   }
+
   return (
     <Link
       to={toUrl}

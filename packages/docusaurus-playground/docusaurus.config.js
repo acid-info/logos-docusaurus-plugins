@@ -60,15 +60,15 @@ const config = {
         items: [
           {
             label: 'About',
-            href: '/docs',
+            to: '/docs',
           },
           {
             label: 'Blog',
-            href: '/',
+            href: 'https://vac.dev/research',
           },
           {
             label: 'Github',
-            href: '/',
+            href: 'https://github.com/waku-org',
           },
           {
             type: 'localeDropdown',
