@@ -13,7 +13,7 @@
 }
 
 .codeBlock {
-  --ifm-pre-background: transparent;
+  --ifm-pre-background: var(--prism-background-color);
   margin: 0;
   padding: 0;
 }
@@ -58,7 +58,7 @@
 .buttonGroup button {
   display: flex;
   align-items: center;
-  background: transparent;
+  background: var(--prism-background-color);
   color: var(--prism-color);
   border: 1px solid rgb(var(--lsd-border-primary));
   line-height: 0;
