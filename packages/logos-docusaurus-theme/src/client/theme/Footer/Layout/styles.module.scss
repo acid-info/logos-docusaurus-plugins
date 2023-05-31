@@ -21,9 +21,13 @@
 }
 
 @include utils.responsive('lg', 'down') {
+  :global {
+    .footer {
+      --ifm-footer-padding-horizontal: var(--content-padding);
+    }
+  }
+
   .firstRow {
-    width: 100vw;
-    margin-left: -16px !important;
   }
 
   .backToTop {
@@ -31,5 +35,21 @@
     position: relative;
     bottom: 16px;
     left: 16px;
+  }
+}
+
+@include utils.responsive('sm', 'down') {
+  :global {
+    .footer {
+      --ifm-footer-padding-horizontal: 0;
+    }
+  }
+
+  .firstRow {
+    padding-inline: var(--content-padding) !important;
+  }
+
+  .secondRow {
+    margin-inline: var(--content-padding) !important;
   }
 }
