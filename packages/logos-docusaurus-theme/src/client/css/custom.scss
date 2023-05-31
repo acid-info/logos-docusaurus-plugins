@@ -572,6 +572,14 @@ div.w-10 > a:not(:last-child) {
   display: none;
 }
 
+.footer__link-item {
+  display: inline-block;
+}
+
+.footer__item {
+  white-space: nowrap;
+}
+
 @include utils.responsive('lg', 'down') {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -589,7 +597,6 @@ div.w-10 > a:not(:last-child) {
   }
 
   .footer {
-    margin-left: -16px;
     padding: 24px 16px;
   }
 
@@ -622,6 +629,25 @@ div.w-10 > a:not(:last-child) {
   }
   .markdown h4 {
     --ifm-h4-font-size: 1.25rem !important;
+  }
+
+  .footer {
+    > div {
+      display: flex !important;
+      flex-direction: column-reverse;
+      gap: 72px !important;
+    }
+  }
+
+  .footer__links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .col.footer__col {
+    margin-bottom: 0 !important;
+    padding-inline: 0 !important;
   }
 }
 
@@ -709,6 +735,7 @@ div.w-10 > a:not(:last-child) {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .footer__item {
