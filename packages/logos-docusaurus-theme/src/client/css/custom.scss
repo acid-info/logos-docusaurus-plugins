@@ -502,6 +502,12 @@ small {
 
 .footer__item {
   white-space: nowrap;
+
+  a {
+    svg {
+      display: none;
+    }
+  }
 }
 
 .lsd-collapse__content {
