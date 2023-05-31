@@ -8,7 +8,8 @@ import {
 import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal'
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink'
 import NavbarItem from '@theme/NavbarItem'
-import { ArrowDownIcon, ArrowUpIcon } from '@acid-info/lsd-react'
+import { ArrowDownIcon } from '@acid-info/lsd-react'
+import styles from './styles.module.scss'
 
 function isItemActive(item, localPathname) {
   if (isSamePath(item.to, localPathname)) {
@@ -57,10 +58,16 @@ function DropdownNavbarItemDesktop({
   return (
     <div
       ref={dropdownRef}
-      className={clsx('navbar__item', 'dropdown', 'dropdown--hoverable', {
-        'dropdown--right': position === 'right',
-        'dropdown--show': showDropdown,
-      })}
+      className={clsx(
+        'navbar__item',
+        styles.dropdownNavbarItem,
+        'dropdown',
+        'dropdown--hoverable',
+        {
+          'dropdown--right': position === 'right',
+          'dropdown--show': showDropdown,
+        },
+      )}
     >
       <NavbarNavLink
         aria-haspopup="true"

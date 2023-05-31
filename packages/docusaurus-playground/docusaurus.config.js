@@ -52,73 +52,38 @@ const config = {
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+      },
       navbar: {
         items: [
           {
-            label: 'Docs',
-            href: '/docs',
+            label: 'About',
+            to: '/docs',
           },
           {
-            label: 'Features',
-            href: '#features',
+            label: 'Blog',
+            href: 'https://logos.co/',
           },
           {
-            label: 'Showcase',
-            href: '#showcase',
+            label: 'Github',
+            href: 'https://github.com/logos-co',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },
       footer: {
-        copyright: 'Copyright @2023 Logos <br/> Built with Docusaurus.',
+        copyright: 'Logos @2023<br/>All Rights Reserved.',
         links: [
           {
-            title: 'Learn',
             items: [
-              {
-                href: '/',
-                label: 'Introduction',
-              },
-              {
-                href: '/',
-                label: 'Installation',
-              },
-              {
-                href: '/',
-                label: 'Migrate from v1 to v2',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                href: '/',
-                label: 'Blog',
-              },
-              {
-                href: '/',
-                label: 'Changelog',
-              },
-              {
-                href: '/',
-                label: 'Github',
-              },
               {
                 href: '/',
                 label: 'Twitter',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                href: '/',
-                label: 'Stack Overflow',
-              },
-              {
-                href: '/',
-                label: 'Feature Requests',
               },
               {
                 href: '/',
@@ -126,28 +91,96 @@ const config = {
               },
               {
                 href: '/',
-                label: 'Help',
+                label: 'Docs',
+              },
+              {
+                href: '/',
+                label: 'Github',
               },
             ],
           },
           {
-            title: 'Legal',
             items: [
               {
                 href: '/',
-                label: 'Privacy',
+                label: 'Contact us',
               },
               {
                 href: '/',
-                label: 'Terms',
+                label: 'Work with us',
               },
               {
                 href: '/',
-                label: 'Data policy',
+                label: 'Privacy policy',
               },
               {
                 href: '/',
-                label: 'Cookie policy',
+                label: 'Temrs & conditions',
+              },
+            ],
+          },
+          {
+            title: 'Research',
+            items: [
+              {
+                href: '/',
+                label: 'VacP2P',
+              },
+              {
+                href: '/',
+                label: 'AFAIK',
+              },
+            ],
+          },
+          {
+            title: 'Infrastructure',
+            items: [
+              {
+                href: '/',
+                label: 'Waku',
+              },
+              {
+                href: '/',
+                label: 'Nimbus',
+              },
+              {
+                href: '/',
+                label: 'Codex',
+              },
+              {
+                href: '/',
+                label: 'Nomos',
+              },
+            ],
+          },
+          {
+            title: 'Creative Studio',
+            items: [
+              {
+                href: '/',
+                label: 'Acid.info',
+              },
+            ],
+          },
+          {
+            title: 'Movement',
+            items: [
+              {
+                href: '/',
+                label: 'Logos',
+              },
+            ],
+          },
+          {
+            title: 'User-facing products',
+            items: [
+              {
+                href: '/',
+                label: 'Status',
+              },
+              {
+                href: '/',
+                label: 'Keycard',
               },
             ],
           },

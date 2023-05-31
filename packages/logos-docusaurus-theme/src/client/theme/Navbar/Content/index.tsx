@@ -50,7 +50,6 @@ export default function NavbarContent() {
   return (
     <div className="navbar__inner">
       <div className="navbar__left">
-        {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
         <NavbarLogo />
       </div>
       <div className="navbar__left-items">
@@ -66,6 +65,7 @@ export default function NavbarContent() {
             <SearchBar />
           </NavbarSearch>
         )}
+        {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
       </div>
     </div>
   )

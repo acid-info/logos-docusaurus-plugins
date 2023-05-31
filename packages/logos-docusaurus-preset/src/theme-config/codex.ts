@@ -10,16 +10,6 @@ export const codexThemeConfig: typeof baseThemeConfig = {
       width: 24,
       height: 26,
     },
-    items: [
-      {
-        type: 'localeDropdown',
-        position: 'right',
-      },
-      {
-        type: 'docsVersionDropdown',
-        position: 'right',
-      },
-    ],
   },
   metadata: [
     { name: 'keywords', content: 'codex, storage' },

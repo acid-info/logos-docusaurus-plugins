@@ -11,6 +11,7 @@
     "watch": "lerna --ignore docusaurus-playground run watch",
     "build": "lerna --ignore docusaurus-playground run build",
     "start": "lerna --scope docusaurus-playground run start",
+    "serve": "lerna --scope docusaurus-playground run serve",
     "prepare": "husky install",
     "prettier": "pretty-quick",
     "prettier:staged": "pretty-quick --staged"

@@ -1,0 +1,35 @@
+@use '../../../css/utils';
+
+.firstRow {
+  border-top: 1px solid rgb(var(--lsd-text-primary));
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 96px !important;
+}
+
+.secondRow {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+}
+
+.backToTop {
+  width: fit-content;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+@include utils.responsive('lg', 'down') {
+  .firstRow {
+    width: 100vw;
+    margin-left: -16px !important;
+  }
+
+  .backToTop {
+    margin-top: 76px !important;
+    position: relative;
+    bottom: 16px;
+    left: 16px;
+  }
+}

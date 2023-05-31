@@ -1,0 +1,14 @@
+@use '../../../css/utils';
+
+.dropdownNavbarItem {
+  border: 1px solid rgb(var(--lsd-border-primary));
+  padding: 6px 14px;
+  box-sizing: border-box;
+  height: 32px;
+}
+
+@include utils.responsive('lg', 'down') {
+  .dropdownNavbarItem {
+    display: none;
+  }
+}

@@ -10,31 +10,16 @@ export const baseThemeConfig: ThemeConfig = {
   },
   metadata: [],
   colorMode: {
-    disableSwitch: true,
+    disableSwitch: false,
     defaultMode: 'dark',
   },
   navbar: {
     title: '',
     logo: {},
-    items: [
-      {
-        type: 'docsVersionDropdown',
-        position: 'right',
-      },
-      {
-        type: 'localeDropdown',
-        position: 'right',
-      },
-    ],
   },
   footer: {
     logo: {},
-    links: [
-      {
-        title: 'Community',
-        items: [],
-      },
-    ],
+    links: [],
     copyright: `Logos, ${new Date().getFullYear()}`,
   },
   prism: {
