@@ -5,45 +5,53 @@
   margin-top: 0;
 }
 
-.docItemCol {
-  grid-column: span 10;
-}
-
 .docItemGrid {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   gap: 16px;
 }
 
-.toc {
-  grid-column: span 3;
-}
-
 .gap1 {
   grid-column: span 1;
 }
 
-.tocMobile {
-  display: none;
+.toc {
+  grid-column: span 4;
+}
 
+.tocMobile {
   & > div {
     display: block !important;
   }
 }
 
-@include utils.responsive('xl', 'up') {
-  .tocMobile {
-    display: none;
+@include utils.responsive('lg', 'up') {
+  .docItemGrid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 16px;
+  }
+
+  .docItemCol {
+    grid-column: span 11;
   }
 }
 
-@include utils.responsive('xl', 'down') {
-  .tocMobile {
-    display: block;
+@include utils.responsive('xl', 'up') {
+  .docItemGrid {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    gap: 16px;
   }
 
-  .toc {
-    display: none;
+  .docItemCol {
+    grid-column: span 14;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .tocMobile {
+    display: block;
   }
 
   .docItemGrid {
@@ -54,5 +62,17 @@
 
   .docItemCol {
     grid-column: span 2;
+  }
+}
+
+@include utils.responsive('xl', 'up') {
+  .tocMobile {
+    display: none;
+  }
+}
+
+@include utils.responsive('xl', 'down') {
+  .toc {
+    display: none;
   }
 }
