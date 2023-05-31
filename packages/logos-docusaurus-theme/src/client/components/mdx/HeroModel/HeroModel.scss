@@ -5,6 +5,7 @@
   );
   position: absolute;
   top: calc(var(--logos-hero-info-height) - 10px);
+  z-index: -1;
 
   .mdx-hero-model--inner {
     position: relative;
