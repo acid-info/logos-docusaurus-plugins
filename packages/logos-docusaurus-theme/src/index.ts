@@ -19,6 +19,11 @@ export default function logosTheme(
     else clientModules.push(...options.customCss)
   }
 
+  context.siteConfig.staticDirectories = [
+    ...(context.siteConfig.staticDirectories ?? []),
+    path.join(__dirname, './client/static/'),
+  ]
+
   context.siteConfig.customFields = {
     ...(context.siteConfig.customFields ?? {}),
     'logos-docusaurus-theme': {

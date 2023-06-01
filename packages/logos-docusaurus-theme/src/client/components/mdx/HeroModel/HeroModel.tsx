@@ -1,25 +1,24 @@
-import React, { Suspense, useEffect, useMemo, useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
+import { Canvas, useFrame } from '@react-three/fiber'
 import clsx from 'clsx'
+import React, { Suspense, useEffect, useMemo, useRef } from 'react'
 
+import {
+  AsciiConfigs,
+  LookPresetItem,
+  LookPresetItemValues,
+} from '../../../types/ui.types'
 import {
   defaultPresets,
   OBJECTS_PRESETS,
   RESIZE_SPEED_FACTOR,
   ROTATE_SPEED,
 } from './HeroModel.configs'
-import {
-  AsciiConfigs,
-  LookPresetItem,
-  LookPresetItemValues,
-} from '../../../types/ui.types'
 
-import './HeroModel.scss'
+import { calcScrollThreshold, mapFloat } from '../../../lib/ui.utils'
 import { AsciiRenderer } from './Ascii'
 import { Controls } from './Controls'
-import { calcScrollThreshold, isMobile, mapFloat } from '../../../lib/ui.utils'
-import { useScrollY } from '../../../lib/useScrollY'
+import './HeroModel.scss'
 
 export type HeroModelProps = React.HTMLAttributes<HTMLDivElement> & {
   modelId?: string
@@ -141,7 +140,7 @@ export const HeroModel = (props: HeroModelProps) => {
 
 function Model({ url, onMount = () => {}, ...props }) {
   // useGLTF suspends the component, it literally stops processing
-  const { scene } = useGLTF(url) as any
+  const { scene } = useGLTF(url, '/scripts/draco-1.4.3/') as any
   useEffect(() => {
     onMount()
   }, [])
