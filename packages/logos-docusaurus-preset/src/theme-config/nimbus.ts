@@ -41,8 +41,8 @@ export const nimbusThemeConfig: typeof baseThemeConfig = {
             href: 'https://twitter.com/ethnimbus',
           },
           {
-            href: 'Discord',
-            label: 'https://discord.gg/XRxWahP',
+            label: 'Discord',
+            href: 'https://discord.gg/XRxWahP',
           },
           {
             label: 'Status',
