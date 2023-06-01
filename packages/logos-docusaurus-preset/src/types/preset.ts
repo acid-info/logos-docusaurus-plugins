@@ -11,6 +11,7 @@ export enum BusinessUnits {
   Codex = 'Codex',
   Waku = 'Waku',
   Nimbus = 'Nimbus',
+  Nomos = 'Nomos',
 }
 
 export type Contact = {

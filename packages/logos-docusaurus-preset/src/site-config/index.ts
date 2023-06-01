@@ -2,6 +2,7 @@ import { BusinessUnits, SiteConfig } from '../types/index'
 import { codexSiteConfig } from './codex'
 import logosSiteConfig from './logos'
 import nimbusSiteConfig from './nimbus'
+import nomosSiteConfig from './nomos'
 import wakuSiteConfig from './waku'
 
 export const siteConfigs: Record<BusinessUnits, SiteConfig> = {
@@ -9,4 +10,5 @@ export const siteConfigs: Record<BusinessUnits, SiteConfig> = {
   [BusinessUnits.Codex]: codexSiteConfig,
   [BusinessUnits.Waku]: wakuSiteConfig,
   [BusinessUnits.Nimbus]: nimbusSiteConfig,
+  [BusinessUnits.Nomos]: nomosSiteConfig,
 }
