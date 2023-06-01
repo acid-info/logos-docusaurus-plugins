@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.1](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.0...v1.0.0-alpha.1) (2023-06-01)
+
+### Features
+
+- add light prism theme for code blocks ([889e563](https://github.com/acid-info/logos-docusaurus-plugins/commit/889e5633f88bda80009d9e9a20d1b6fc3e64f50e))
+- inject logos collective footer links into theme config ([75f76a8](https://github.com/acid-info/logos-docusaurus-plugins/commit/75f76a830a4acd20ab4c613e8fe596698880ab7f))
+
 # [1.0.0-alpha.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v0.3.0...v1.0.0-alpha.0) (2023-05-30)
 
 ### Bug Fixes

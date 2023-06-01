@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.1](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.0...v1.0.0-alpha.1) (2023-06-01)
+
+### Bug Fixes
+
+- fix invisible inline codes in TOC ([d2e3cc9](https://github.com/acid-info/logos-docusaurus-plugins/commit/d2e3cc91cba7cb1d19bab14f2373b5ed8e1e6a92))
+- fix order of hero elements ([bb653e4](https://github.com/acid-info/logos-docusaurus-plugins/commit/bb653e447d9bd4f8865da4cb8d9ccd56b4bd755d))
+- fix playground deps ([2d32950](https://github.com/acid-info/logos-docusaurus-plugins/commit/2d32950737e95b43c78e3b7a2a3177231614b6dc))
+- hide external link icon in footer ([ea68109](https://github.com/acid-info/logos-docusaurus-plugins/commit/ea68109dd151185a6fd230389f4e988ce8635b10))
+- use css vars for global spacing and padding, fix footer width overflow on mobile ([0ec93e6](https://github.com/acid-info/logos-docusaurus-plugins/commit/0ec93e6b8c5b45b7b10628e5ae899e5525b0a8ad))
+- use prism css variables in code blocks ([45701ad](https://github.com/acid-info/logos-docusaurus-plugins/commit/45701adbf885ad8808d62f56a1a5601ec01ddcc8))
+
+### Features
+
+- add light prism theme for code blocks ([889e563](https://github.com/acid-info/logos-docusaurus-plugins/commit/889e5633f88bda80009d9e9a20d1b6fc3e64f50e))
+- implement search component ([f6565f3](https://github.com/acid-info/logos-docusaurus-plugins/commit/f6565f321fdae20686043c2c5b9c6a2c16672b5f))
+- inject logos collective footer links into theme config ([75f76a8](https://github.com/acid-info/logos-docusaurus-plugins/commit/75f76a830a4acd20ab4c613e8fe596698880ab7f))
+
 # [1.0.0-alpha.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v0.3.0...v1.0.0-alpha.0) (2023-05-30)
 
 ### Bug Fixes
