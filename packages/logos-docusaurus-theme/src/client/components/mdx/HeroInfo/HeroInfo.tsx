@@ -12,7 +12,7 @@ export type HeroInfoProps = PropsWithChildren<
 }
 
 const calcMaxOffsetY = () => {
-  return window.innerHeight * 0.33
+  return window.innerHeight * 0.1
 }
 export const HeroInfo: React.FC<HeroInfoProps> = ({
   size: sizeProp,

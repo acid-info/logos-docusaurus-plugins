@@ -56,6 +56,13 @@ const config = {
         defaultMode: 'dark',
         disableSwitch: false,
       },
+      navbar: {
+        // items: [
+        //   {
+        //     type: 'search',
+        //   }
+        // ]
+      },
     }),
 }
 
