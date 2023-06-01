@@ -122,7 +122,7 @@ const config = {
               },
               {
                 href: '/',
-                label: 'Temrs & conditions',
+                label: 'Terms & conditions',
               },
             ],
           },
