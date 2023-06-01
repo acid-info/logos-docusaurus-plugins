@@ -433,7 +433,7 @@ small {
 }
 
 .menu__list-item .menu__link {
-  font-size: var(--lsd-body2-fontSize);
+  @include lsd.typography('body2');
 }
 
 .menu__link--active {

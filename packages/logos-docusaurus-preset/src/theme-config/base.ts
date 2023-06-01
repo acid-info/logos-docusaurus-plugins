@@ -15,6 +15,7 @@ export const baseThemeConfig: ThemeConfig = {
   navbar: {
     title: '',
     logo: {},
+    hideOnScroll: true,
   },
   footer: {
     logo: {},

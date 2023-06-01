@@ -70,7 +70,6 @@ const config = {
             href: 'https://github.com/status-im',
           },
         ],
-        hideOnScroll: true,
       },
       footer: {
         copyright: 'Nimbus @2023<br/>All Rights Reserved.',
