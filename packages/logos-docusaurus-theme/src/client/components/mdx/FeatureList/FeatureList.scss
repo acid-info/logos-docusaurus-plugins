@@ -48,8 +48,18 @@
   margin-top: 8.625rem;
 }
 
+.mdx-feature-list__extra {
+  margin-top: 3.5rem;
+  padding: 0 1rem;
+}
+
 @include utils.responsive('lg', 'down') {
   .mdx-feature-list {
+  }
+
+  .mdx-feature-list__extra {
+    margin-top: 2rem;
+    padding: 0;
   }
 
   .mdx-feature-list__title {

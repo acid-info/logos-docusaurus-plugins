@@ -1,6 +1,7 @@
 import { Button, Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
+import { CallToActionButton } from '../index'
 import './CallToActionSection.scss'
 
 export type CallToActionSectionProps = Omit<
@@ -52,17 +53,9 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
           {description}
         </Typography>
       )}
-      <Typography
-        className="mdx-cta-section__link"
-        variant="body1"
-        component="a"
-        href={href}
-        target="_blank"
-      >
-        <Button size="large" variant="filled">
-          {label}
-        </Button>
-      </Typography>
+      <CallToActionButton href={href} className="mdx-cta-section__link">
+        {label}
+      </CallToActionButton>
     </div>
   )
 }

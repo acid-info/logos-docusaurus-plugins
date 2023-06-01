@@ -1,4 +1,5 @@
 export * from './Box'
+export * from './CallToActionButton'
 export * from './CallToActionSection'
 export * from './FeatureList'
 export * from './Hero'
