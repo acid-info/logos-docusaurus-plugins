@@ -17,7 +17,7 @@ import Link from '@docusaurus/Link'
 import { translate } from '@docusaurus/Translate'
 import useIsBrowser from '@docusaurus/useIsBrowser'
 import DocSidebarItems from '@theme/DocSidebarItems'
-import { ArrowDownIcon, ArrowUpIcon } from '@acid-info/lsd-react'
+import { ArrowDownIcon, ArrowUpIcon, Typography } from '@acid-info/lsd-react'
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -165,7 +165,9 @@ export default function DocSidebarItemCategory({
           href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
           {...props}
         >
-          {label}
+          <Typography variant="body2" color="primary">
+            {label}
+          </Typography>
           {collapsed ? <ArrowUpIcon /> : <ArrowDownIcon />}
         </Link>
         {href && collapsible && (
