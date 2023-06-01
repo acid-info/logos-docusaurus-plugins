@@ -1,6 +1,6 @@
-import React, { Suspense, useEffect, useMemo, useRef, useState } from 'react'
+import React, { Suspense, useEffect, useMemo, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useGLTF, useProgress } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import clsx from 'clsx'
 
 import {
@@ -9,18 +9,19 @@ import {
   RESIZE_SPEED_FACTOR,
   ROTATE_SPEED,
 } from './HeroModel.configs'
-import { AsciiConfigs, LookPresetItemValues } from '../../../types/ui.types'
+import {
+  AsciiConfigs,
+  LookPresetItem,
+  LookPresetItemValues,
+} from '../../../types/ui.types'
 
 import './HeroModel.scss'
 import { AsciiRenderer } from './Ascii'
 import { Controls } from './Controls'
 import { calcScrollThreshold, isMobile, mapFloat } from '../../../lib/ui.utils'
 import { useScrollY } from '../../../lib/useScrollY'
-import { useWindowSize } from 'react-use'
 
 export type HeroModelProps = React.HTMLAttributes<HTMLDivElement> & {
-  modelUrlHi: string
-  modelUrlLow: string
   modelId?: string
   preset?: LookPresetItemValues
   mode?: 'simple' | 'abstract'
@@ -36,12 +37,12 @@ const useLookPreset = (
   mode: 'abstract' | 'simple',
   preset?: LookPresetItemValues,
   modelId?: string,
-): LookPresetItemValues => {
+): LookPresetItem => {
   return useMemo(() => {
-    if (preset) return preset
-    if (!modelId) return defaultPresets[mode]
+    if (preset) return { ...defaultPresets, [mode]: preset }
+    if (!modelId) return defaultPresets
     const existingPreset = OBJECTS_PRESETS.find((p) => p.modelId === modelId)
-    return existingPreset ? existingPreset[mode] : defaultPresets[mode]
+    return existingPreset ? existingPreset : defaultPresets
   }, [preset, modelId])
 }
 
@@ -51,8 +52,6 @@ const getInitialY = (mode: 'abstract' | 'simple'): number => {
 
 export const HeroModel = (props: HeroModelProps) => {
   const {
-    modelUrlHi,
-    modelUrlLow,
     modelId,
     preset: presetProp,
     mode = 'simple',
@@ -67,9 +66,9 @@ export const HeroModel = (props: HeroModelProps) => {
   } = props
 
   const preset = useLookPreset(mode, presetProp, modelId)
-  // const index = 1;
-  // const preset = OBJECTS_PRESETS[1]? OBJECTS_PRESETS[index][mode] : defaultPresets[mode];
-  const scrollY = useScrollY()
+  // const index = 0;
+  // const preset = OBJECTS_PRESETS[index] ? OBJECTS_PRESETS[index] : defaultPresets;
+  // const scrollY = useScrollY()
 
   return (
     <div
@@ -101,8 +100,8 @@ export const HeroModel = (props: HeroModelProps) => {
             }}
             camera={{
               fov: 50,
-              position: preset.cameraPos,
-              rotation: preset.cameraRot,
+              position: preset[mode].cameraPos,
+              rotation: preset[mode].cameraRot,
             }}
           >
             <directionalLight position={[-10, 10, 0]} intensity={1.5} />
@@ -111,11 +110,13 @@ export const HeroModel = (props: HeroModelProps) => {
             <directionalLight position={[100, -10, 0]} intensity={0.25} />
             <Controls
               rotateSpeed={rotateSpeed}
-              preset={preset}
+              preset={preset[mode]}
               enableZoom={mode !== 'simple'}
             >
-              <Suspense fallback={<Model url={modelUrlLow} />}>
-                <Model url={modelUrlHi} />
+              <Suspense
+                fallback={<Model url={`/hero/${preset.modelId}/lo.glb`} />}
+              >
+                <Model url={`/hero/${preset.modelId}/hi.glb`} />
                 <AsciiRenderer {...asciiConfig} />
               </Suspense>
             </Controls>

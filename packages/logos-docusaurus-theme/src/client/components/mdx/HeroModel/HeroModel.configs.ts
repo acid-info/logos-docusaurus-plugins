@@ -1,14 +1,8 @@
-import { LookPresetItem, LookPresetItemValues } from '../../../types/ui.types'
+import { LookPresetItem } from '../../../types/ui.types'
 
 export let ROTATE_SPEED = 0.1
 export const MIN_ROTATE_SPEED = 0
 export const MAX_ROTATE_SPEED = 1
-export const MAX_Z = 20 * 1.4 // or another value that suits your needs
-export const MIN_Z = 0.2 * 1.4
-export const MIN_Y = -0.25
-export const MAX_Y = 0.25
-export const MIN_X = -0.25
-export const MAX_X = 0.25
 export const MIN_ZOOM = 0.22
 export const RESIZE_SPEED_FACTOR = 0.9
 export const INITIAL_ZOOM = 3
@@ -24,10 +18,8 @@ export const defaultAsciiConfigs = {
   textShadowSize: 15,
 }
 
-export const defaultPresets: {
-  simple: LookPresetItemValues
-  abstract: LookPresetItemValues
-} = {
+export const defaultPresets: LookPresetItem = {
+  modelId: 'default',
   simple: {
     cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
     cameraRot: [-2.733342169570335, 1.127956558492365, 2.7690180385429666],
@@ -41,27 +33,8 @@ export const defaultPresets: {
     controlsTarget: [-0.3236695017538898, 3.8072918272567, -0.6236093222013962],
   },
 }
-
 export const OBJECTS_PRESETS: LookPresetItem[] = [
-  {
-    modelId: 'bust',
-    simple: {
-      cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
-      cameraRot: [-2.733342169570335, 1.127956558492365, 2.7690180385429666],
-      controlsTarget: [
-        -0.2185887974027981, 3.4320197290105474, -0.08409377618890646,
-      ],
-    },
-    abstract: {
-      cameraPos: [-1.4826176635786852, 4.021180061821954, -1.5929058418153597],
-      cameraRot: [
-        -2.9244096935808908, -0.8625529112689497, -2.9755407843387185,
-      ],
-      controlsTarget: [
-        -0.3236695017538898, 3.8072918272567, -0.6236093222013962,
-      ],
-    },
-  },
+  defaultPresets,
   {
     modelId: 'architecture01',
     simple: {
