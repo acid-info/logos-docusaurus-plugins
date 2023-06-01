@@ -56,6 +56,10 @@ const config = {
         defaultMode: 'dark',
         disableSwitch: false,
       },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
       navbar: {
         items: [
           {
@@ -118,7 +122,7 @@ const config = {
               },
               {
                 href: '/',
-                label: 'Temrs & conditions',
+                label: 'Terms & conditions',
               },
             ],
           },
