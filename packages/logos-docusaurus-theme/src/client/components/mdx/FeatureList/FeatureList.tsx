@@ -27,7 +27,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
     <div className={clsx(className, 'mdx-feature-list')} {...props}>
       <Typography
         variant="h6"
-        component="div"
+        component="h1"
         className="mdx-feature-list__title"
       >
         {title}
@@ -45,14 +45,14 @@ export const FeatureList: React.FC<FeatureListProps> = ({
               </Typography>
               <Typography
                 variant="h3"
-                component="div"
+                component="h2"
                 className="mdx-feature-list__feature-title"
               >
                 {feature.title}
               </Typography>
               <Typography
                 variant="h6"
-                component="div"
+                component="h3"
                 className="mdx-feature-list__feature-description"
               >
                 {feature.description}
@@ -61,6 +61,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
           </div>
         ))}
       </div>
+      <div className="mdx-feature-list__extra">{children}</div>
     </div>
   )
 }

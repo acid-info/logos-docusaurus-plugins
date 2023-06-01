@@ -1,4 +1,4 @@
-@use '../../../css/lsd';
+@use '../../../css/utils';
 
 .mdx-hero-action {
 }
@@ -6,5 +6,13 @@
 .mdx-hero-action--large {
   button {
     padding: 10px 64px;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-hero-action {
+    button {
+      padding: 6px 12px !important;
+    }
   }
 }

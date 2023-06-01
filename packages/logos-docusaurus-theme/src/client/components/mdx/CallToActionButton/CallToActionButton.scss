@@ -1,0 +1,30 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-cta-button {
+  margin-top: 2rem;
+
+  &:hover {
+    &,
+    * {
+      text-decoration: none !important;
+    }
+  }
+
+  button,
+  button span {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-cta-button {
+    @include lsd.typography('label2');
+
+    button {
+      padding: 6px 12px;
+    }
+  }
+}

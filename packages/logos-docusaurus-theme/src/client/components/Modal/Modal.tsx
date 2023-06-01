@@ -1,4 +1,3 @@
-import { useLockBodyScroll } from '@docusaurus/theme-common/internal'
 import clsx from 'clsx'
 import React from 'react'
 import { useKeyPressEvent } from 'react-use'
@@ -26,7 +25,6 @@ export const Modal: React.FC<ModalProps> = ({
     onClose && onClose()
   }
 
-  useLockBodyScroll(open)
   useKeyPressEvent(
     (key) => key.code === 'Escape',
     (event) => {
