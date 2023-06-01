@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.5](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2023-06-01)
+
+### Bug Fixes
+
+- add description for Nomos website ([60270a2](https://github.com/acid-info/logos-docusaurus-plugins/commit/60270a22ec340870f127d4ca73a2fad1482e90dc))
+- adjust mdx components style ([478aa96](https://github.com/acid-info/logos-docusaurus-plugins/commit/478aa9618b01401c84bfcd5afe561d6598c7274d))
+- avoid locking body scroll in active search modal ([fd2cdd5](https://github.com/acid-info/logos-docusaurus-plugins/commit/fd2cdd567007cdd6d493fd1139877234367591ae))
+- fix layout spacing in main pages ([e757aa9](https://github.com/acid-info/logos-docusaurus-plugins/commit/e757aa938e7c0344ea47e867f01e2533526a1e8d))
+- fix search button bug ([d16af2c](https://github.com/acid-info/logos-docusaurus-plugins/commit/d16af2c9b4b1c44558356dff8355de85534929d9))
+- use css !important to override lsd typography styles ([3a8747e](https://github.com/acid-info/logos-docusaurus-plugins/commit/3a8747ee88e215d75a52dbb15abfcce6053f6eee))
+
+### Features
+
+- add a theme option for hiding doc plugin sidebar ([2b04b55](https://github.com/acid-info/logos-docusaurus-plugins/commit/2b04b55741df5b7a2213efdec2ef22356c4a3591))
+- add cta button to feature list ([4b2a2ee](https://github.com/acid-info/logos-docusaurus-plugins/commit/4b2a2eedfd45e1100183a4c240f900fe12611ae1))
+- CTA section new variants ([f33ef07](https://github.com/acid-info/logos-docusaurus-plugins/commit/f33ef0742f36059c575adb994f11acf7630e5cba))
+
 # [1.0.0-alpha.4](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-06-01)
 
 ### Bug Fixes
