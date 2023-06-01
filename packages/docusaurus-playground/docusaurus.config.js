@@ -28,7 +28,7 @@ const config = {
       '@acid-info/logos-docusaurus-preset',
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
-        businessUnit: 'Logos',
+        businessUnit: 'Nimbus',
         theme: {
           name: 'default',
           options: {
@@ -55,78 +55,6 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
-      },
-      tableOfContents: {
-        minHeadingLevel: 2,
-        maxHeadingLevel: 5,
-      },
-      navbar: {
-        items: [
-          {
-            type: 'search',
-          },
-          {
-            label: 'About',
-            to: '/docs',
-          },
-          {
-            label: 'Blog',
-            href: 'https://logos.co/',
-          },
-          {
-            label: 'Github',
-            href: 'https://github.com/logos-co',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        copyright: 'Logos @2023<br/>All Rights Reserved.',
-        links: [
-          {
-            items: [
-              {
-                href: '/',
-                label: 'Twitter',
-              },
-              {
-                href: '/',
-                label: 'Discord',
-              },
-              {
-                href: '/',
-                label: 'Docs',
-              },
-              {
-                href: '/',
-                label: 'Github',
-              },
-            ],
-          },
-          {
-            items: [
-              {
-                href: '/',
-                label: 'Contact us',
-              },
-              {
-                href: '/',
-                label: 'Work with us',
-              },
-              {
-                href: '/',
-                label: 'Privacy policy',
-              },
-              {
-                href: '/',
-                label: 'Terms & conditions',
-              },
-            ],
-          },
-        ],
       },
     }),
 }

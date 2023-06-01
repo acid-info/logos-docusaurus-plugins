@@ -6,7 +6,8 @@ export const codexThemeConfig: typeof baseThemeConfig = {
     ...baseThemeConfig.navbar,
     logo: {
       alt: 'Codex',
-      src: 'theme/image/logo.svg',
+      src: 'theme/image/logo-black.svg',
+      srcDark: 'theme/image/logo.svg',
       width: 24,
       height: 26,
     },

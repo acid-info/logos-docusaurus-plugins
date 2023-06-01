@@ -6,7 +6,8 @@ export const wakuThemeConfig: typeof baseThemeConfig = {
     ...baseThemeConfig.navbar,
     logo: {
       alt: 'Waku',
-      src: 'theme/image/logo.svg',
+      src: 'theme/image/logo-black.svg',
+      srcDark: 'theme/image/logo.svg',
       height: 26,
     },
     items: [],
