@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.2](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2023-06-01)
+
+### Bug Fixes
+
+- fix logo size ([4c2a7cd](https://github.com/acid-info/logos-docusaurus-plugins/commit/4c2a7cd565a16f96ba14f40ac817c8beec4c48e2))
+- remove logo image filter ([8db79db](https://github.com/acid-info/logos-docusaurus-plugins/commit/8db79db9008910daebc4c577b4cd8db6385b0aa9))
+
 # [1.0.0-alpha.1](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.0...v1.0.0-alpha.1) (2023-06-01)
 
 ### Bug Fixes
