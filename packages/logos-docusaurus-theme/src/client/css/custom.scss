@@ -913,6 +913,62 @@ a[class^='sidebarLogo_'] {
     padding-inline: 0;
   }
 
+  .navbar-sidebar:has(.navbar-sidebar__items--show-secondary)
+    .navbar-sidebar__brand {
+    button:first-of-type {
+      display: none;
+    }
+
+    button.lsd-icon-button {
+      margin-left: auto;
+    }
+  }
+
+  .navbar-sidebar:not(:has(.navbar-sidebar__items--show-secondary)) {
+    .navbar-sidebar__items {
+      height: 180px;
+    }
+
+    .navbar-sidebar__item {
+      padding-block: var(--content-padding);
+    }
+
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .menu__link {
+      padding-left: 0;
+      border-left: none;
+
+      > div {
+        font-size: var(--lsd-body1-fontSize) !important;
+      }
+    }
+
+    .footer > div {
+      gap: 32px !important;
+    }
+
+    .footer > button {
+      display: none;
+    }
+
+    .footer .container.container-fluid {
+      margin-bottom: 16px !important;
+
+      > .footer__links {
+        gap: 0 !important;
+      }
+    }
+
+    .footer .footer__links {
+      gap: 16px !important;
+    }
+  }
+
   .navbar-sidebar__brand {
     height: 60px;
     padding-block: 0;

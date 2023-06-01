@@ -20,6 +20,7 @@ function SecondaryMenuBackButton(props) {
     </button>
   )
 }
+
 // The secondary menu slides from the right and shows contextual information
 // such as the docs sidebar
 export default function NavbarMobileSidebarSecondaryMenu() {
