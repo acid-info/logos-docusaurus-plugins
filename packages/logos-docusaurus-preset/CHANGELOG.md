@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.3](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2023-06-01)
+
+### Bug Fixes
+
+- fix nimbus discord link ([6219112](https://github.com/acid-info/logos-docusaurus-plugins/commit/62191127acb252428ce3b63142e334e7d5de767d))
+- update marks & add Nomos BU ([acc4adf](https://github.com/acid-info/logos-docusaurus-plugins/commit/acc4adf8eb6adaa895ed973f2b410caa724518c2))
+
 # [1.0.0-alpha.2](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2023-06-01)
 
 ### Bug Fixes
