@@ -9,6 +9,7 @@ export type CallToActionSectionProps = Omit<
 > & {
   title?: React.ReactNode
   description?: React.ReactNode
+  columns?: 1 | 2
   href?: string
   label?: string
 }
@@ -17,11 +18,14 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
   label,
   href,
   title = '',
+  columns = 1,
   description,
   className,
   children,
   ...props
 }) => {
+  const singleCol = columns === 1
+
   return (
     <div
       variant="h1"
@@ -29,12 +33,13 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
       className={clsx(
         className,
         'mdx-cta-section',
+        `mdx-cta-section--cols-${columns}`,
         description && 'mdx-cta-section--with-description',
       )}
       {...(props as any)}
     >
       <Typography
-        variant={description ? 'h6' : 'h1'}
+        variant={singleCol && !description ? 'h1' : 'h6'}
         component="span"
         className="mdx-cta-section__title"
       >
@@ -42,7 +47,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
       </Typography>
       {description && (
         <Typography
-          variant="h4"
+          variant={singleCol ? 'h2' : 'h4'}
           component="span"
           className="mdx-cta-section__description"
         >

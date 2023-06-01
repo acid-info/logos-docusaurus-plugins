@@ -2,15 +2,16 @@
 
 .mdx-cta-section {
   display: grid;
-  margin-top: 260px;
-  padding-top: 1.5rem;
+  margin-top: 216px;
   border-top: 1px solid rgb(var(--lsd-border-primary));
 }
 
 .mdx-cta-section__title {
+  margin-top: 1.5rem;
 }
 
 .mdx-cta-section__description {
+  margin-top: 2rem;
 }
 
 .mdx-cta-section__link {
@@ -25,16 +26,22 @@
 }
 
 .mdx-cta-section--with-description {
+}
+
+.mdx-cta-section--cols-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  padding-top: 1.5rem;
 
   .mdx-cta-section__title {
     grid-column: 1 / 2;
+    margin-top: 0;
   }
 
   .mdx-cta-section__description {
     grid-column: 2 / 3;
+    margin-top: 0;
   }
 
   .mdx-cta-section__link {
