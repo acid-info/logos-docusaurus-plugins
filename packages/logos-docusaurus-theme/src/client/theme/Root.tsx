@@ -4,10 +4,15 @@ import {
   useColorMode,
 } from '@docusaurus/theme-common/internal'
 import React from 'react'
+import { useDocThemeOptions } from '../lib/useThemeOptions'
 import styles from './style.module.css'
 
 const Content = ({ children }) => {
   const colorMode = useColorMode()
+
+  const options = useDocThemeOptions()
+  const hideDocSidebar = options?.sidebar?.hide
+
   return (
     <ThemeProvider
       theme={
@@ -16,7 +21,9 @@ const Content = ({ children }) => {
           : defaultThemes.light
       }
     >
-      <div className={styles.root}>{children}</div>
+      <div className={styles.root} data-hidden-doc-sidebar={hideDocSidebar}>
+        {children}
+      </div>
     </ThemeProvider>
   )
 }

@@ -8,9 +8,7 @@ const config = {
   url: 'https://url',
   baseUrl: '/',
 
-  customFields: {
-    ghostAPiKey: process.env.GHOST_API_KEY,
-  },
+  customFields: {},
   markdown: {
     mermaid: true,
   },
@@ -33,6 +31,13 @@ const config = {
           name: 'default',
           options: {
             customCss: [require.resolve('./src/css/custom.scss')],
+            docs: {
+              default: {
+                sidebar: {
+                  hide: true,
+                },
+              },
+            },
           },
         },
         docs: {

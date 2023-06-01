@@ -871,3 +871,9 @@ small {
     padding-inline: 0;
   }
 }
+
+[data-hidden-doc-sidebar='true'] {
+  .theme-doc-sidebar-container {
+    display: none;
+  }
+}
