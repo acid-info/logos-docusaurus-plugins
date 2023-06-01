@@ -11,6 +11,7 @@ import NavbarItem from '@theme/NavbarItem'
 import SearchBar from '@theme/SearchBar'
 import clsx from 'clsx'
 import React from 'react'
+import { useHydrated } from '../../../lib/useHydrated'
 import styles from './styles.module.scss'
 
 function useNavbarItems() {
@@ -42,6 +43,7 @@ ${JSON.stringify(item, null, 2)}`,
 }
 
 export default function NavbarContent() {
+  const hydrated = useHydrated()
   const mobileSidebar = useNavbarMobileSidebar()
   const allItems = useNavbarItems()
   const [leftItems, rightItems] = splitNavbarItems(
@@ -62,13 +64,20 @@ export default function NavbarContent() {
 
         <IconButtonGroup className={styles.iconButtonGroup} size="medium">
           <NavbarColorModeToggle
+            key="color-toggle"
             className={clsx(
               styles.colorModeToggle,
               'navbar__color-mode-toggle',
             )}
           />
-          {searchBarItem && <SearchBar />}
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+          {hydrated && (
+            <React.Fragment key="search">
+              {searchBarItem && <SearchBar />}
+            </React.Fragment>
+          )}
+          <React.Fragment key="mobile-sidebar-toggle">
+            {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+          </React.Fragment>
         </IconButtonGroup>
       </div>
     </div>

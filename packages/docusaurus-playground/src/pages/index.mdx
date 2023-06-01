@@ -5,10 +5,12 @@ import {
   HeroActions,
   HeroAction,
   CallToActionSection,
+  CallToActionButton,
   FeatureList,
   Showcase,
   HeroModel,
   HeroInfo,
+  Box,
 } from '../components/mdx'
 
 <Hero size="large">
@@ -32,14 +34,13 @@ import {
     </HeroActions>
   </HeroInfo>
   <HeroModel
-    modelUrl="/hero/bulanding-generic-hand-01.glb"
-    layout="floating"
-    renderer="ascii"
-    initialX={-0.9831336272264352}
-    initialY={-0.14592188008227222}
-    rotateSpeed={0.1}
+    modelUrlHi="/hero/bust-hi.glb"
+    modelUrlLow="/hero/bust-lo-draco.glb"
+    modelId={'bust'}
+    mode={'simple'}
+    rotateSpeed={0.04}
     asciiConfig={{
-      characters: ' .,:;ox%#  ||| ||| waku @',
+      characters: '  w . a . k . u . & * ',
     }}
   />
 </Hero>
@@ -68,41 +69,77 @@ import {
         "Waku's native incentivization mechanisms ensure a wide node distribution, making it highly secure and strengthening its privacy assurances.",
     },
   ]}
-/>
+>
+  <CallToActionButton variant="outlined" href="https://docs.waku.org">
+    Decentralize your DApp
+  </CallToActionButton>
+</FeatureList>
 
-<CallToActionSection
-  title="User adoptions"
-  description="Waku has brought private, censorship-resistant communications to several notable web3 DApps, decentralizing their messaging components:"
-  label="Decentralize your DApp"
-  href="/join"
-/>
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Team"
+    columns={1}
+    description="Waku is built and maintained by a global team of experienced and driven software developers and researchers that share a passion for privacy and decentralized technologies. "
+    label="Read more"
+    href="/about/team"
+  />
+</Box>
 
-<Showcase
-  id="showcase"
-  items={[
-    {
-      name: 'XMTP',
-      logo: '/showcase/xmtp-mark-white.svg',
-      description:
-        "Inter-blockchain account messaging protocol XMTP uses Waku's Go implementation to facilitate communication between nodes in its currently permissioned network.",
-    },
-    {
-      name: 'Status',
-      logo: '/showcase/status-mark-white.svg',
-      description:
-        "Waku powers many of the Status super app's features, including its private messaging.",
-    },
-    {
-      name: 'Railgun',
-      logo: '/showcase/railgun-mark-white.svg',
-      description:
-        'The privacy-focused DeFi protocol Railgun anonymizes Ethereum transactions with Waku. ',
-    },
-  ]}
-/>
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Used by"
+    columns={2}
+    description="Waku has brought private, censorship-resistant communications to several notable web3 DApps, decentralizing their messaging components:"
+    label="Decentrialize your DApp"
+    href="https://docs.waku.org"
+  />
+</Box>
 
-<CallToActionSection
-  title="Join the community to discover what Waku can bring to your DApp"
-  label="Decentralize your DApp"
-  href="/join"
-/>
+<Box top={{ xs: 64, lg: 100 }}>
+  <Showcase
+    id="showcase"
+    items={[
+      {
+        name: 'XMTP',
+        logo: '/showcase/xmtp-mark-white.svg',
+        description:
+          "Inter-blockchain account messaging protocol XMTP uses Waku's Go implementation to facilitate communication between nodes in its currently permissioned network.",
+      },
+      {
+        name: 'TheGraph',
+        logo: '/showcase/the-graph-mark-white.svg',
+        description:
+          'Waku powers the Graphcast SDK, enabling the development of gossip-powered applications within The Graph ecosystem.',
+      },
+      {
+        name: 'Status',
+        logo: '/showcase/status-mark-white.svg',
+        description:
+          "Waku powers many of the Status super app's features, including its private messaging.",
+      },
+      {
+        name: 'Railgun',
+        logo: '/showcase/railgun-mark-white.svg',
+        description:
+          'The privacy-focused DeFi protocol Railgun anonymizes Ethereum transactions with Waku. ',
+      },
+    ]}
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Development roadmap"
+    description="Waku has the ambitious goal of attracting and supporting millions of simultaneous users, truly serving as the communications standard across web3. Our development roadmap focuses on achieving secure scalability before implementing incentivization mechanisms to sustain Waku."
+    label="Read more"
+    href="/about/development-roadmap"
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 336 }} bottom={{ lg: 16, xs: 64 }}>
+  <CallToActionSection
+    title="Join the community to discover what Waku can bring to your DApp"
+    label="Decentralize your DApp"
+    href="/join"
+  />
+</Box>

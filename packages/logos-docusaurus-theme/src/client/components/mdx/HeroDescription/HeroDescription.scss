@@ -1,5 +1,11 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
 .mdx-hero-description {
+  // we need position relative because we need the z-index to work in order to keep it under the hero model
+  position: relative;
   z-index: -2;
+  font-weight: 100 !important;
 }
 
 .mdx-hero-description--small {
@@ -7,6 +13,16 @@
 }
 
 .mdx-hero-description--large {
-  font-size: 5.0625rem !important;
-  line-height: 5.5rem !important;
+  // font-size: 5.0625rem !important;
+  // line-height: 5.5rem !important;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-hero-description {
+    @include lsd.typography('h3');
+  }
+
+  .mdx-hero-description--large {
+    font-size: 1.875rem !important;
+  }
 }

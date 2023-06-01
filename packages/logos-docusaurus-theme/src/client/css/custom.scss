@@ -708,17 +708,17 @@ a[class^='sidebarLogo_'] {
     margin-top: 0 !important;
     margin-bottom: 80px !important;
   }
-
   & > main {
     padding: 0;
 
     &,
     > .row,
     & > .row > .col {
+      --ifm-spacing-horizontal: var(--content-padding);
+
       width: 100% !important;
       flex-basis: 100% !important;
       max-width: unset;
-      padding: 0;
       margin: 0;
       flex: unset;
     }
@@ -994,5 +994,11 @@ a[class^='sidebarLogo_'] {
     align-items: center;
     justify-content: center;
     margin-left: unset;
+  }
+}
+
+[data-hidden-doc-sidebar='true'] {
+  .theme-doc-sidebar-container {
+    display: none;
   }
 }

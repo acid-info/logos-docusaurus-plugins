@@ -19,3 +19,15 @@ export const isTouchDevice = () => {
     (navigator.msMaxTouchPoints && navigator.msMaxTouchPoints > 0)
   )
 }
+
+export const generateTextShadow = (steps: number): string => {
+  let shadows = ''
+  for (let i = 0; i < steps; i++) {
+    let colorValue = Math.floor((i / (steps - 1)) * 255) // Generate a value between 0 and 255
+    let shadow = `${-i * 5}px ${
+      -i * 5
+    }px 0px rgb(${colorValue}, ${colorValue}, ${colorValue})`
+    shadows += (i === 0 ? '' : ', ') + shadow
+  }
+  return shadows
+}

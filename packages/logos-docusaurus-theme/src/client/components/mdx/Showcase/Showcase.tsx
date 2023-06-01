@@ -34,7 +34,7 @@ export const Showcase: React.FC<ShowcaseProps> = ({
             />
             <Typography
               variant="h3"
-              component="div"
+              component="h2"
               className="mdx-showcase__item-name"
             >
               {item.name}

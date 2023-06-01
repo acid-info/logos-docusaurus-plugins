@@ -8,9 +8,7 @@ const config = {
   url: 'https://url',
   baseUrl: '/',
 
-  customFields: {
-    ghostAPiKey: process.env.GHOST_API_KEY,
-  },
+  customFields: {},
   markdown: {
     mermaid: true,
   },
@@ -28,11 +26,18 @@ const config = {
       '@acid-info/logos-docusaurus-preset',
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
-        businessUnit: 'Nimbus',
+        businessUnit: 'Waku',
         theme: {
           name: 'default',
           options: {
             customCss: [require.resolve('./src/css/custom.scss')],
+            docs: {
+              default: {
+                sidebar: {
+                  hide: true,
+                },
+              },
+            },
           },
         },
         docs: {
@@ -52,10 +57,6 @@ const config = {
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-      },
       navbar: {
         items: [
           {

@@ -1,0 +1,32 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-box {
+  padding-top: var(--mdx-box-top);
+  padding-bottom: var(--mdx-box-bottom);
+
+  @include utils.responsive('xs', 'up') {
+    --mdx-box-top: var(--mdx-box-top-xs);
+    --mdx-box-bottom: var(--mdx-box-bottom-xs);
+  }
+
+  @include utils.responsive('sm', 'up') {
+    --mdx-box-top: var(--mdx-box-top-sm);
+    --mdx-box-bottom: var(--mdx-box-bottom-sm);
+  }
+
+  @include utils.responsive('md', 'up') {
+    --mdx-box-top: var(--mdx-box-top-md);
+    --mdx-box-bottom: var(--mdx-box-bottom-md);
+  }
+
+  @include utils.responsive('lg', 'up') {
+    --mdx-box-top: var(--mdx-box-top-lg);
+    --mdx-box-bottom: var(--mdx-box-bottom-lg);
+  }
+
+  @include utils.responsive('xl', 'up') {
+    --mdx-box-top: var(--mdx-box-top-xl);
+    --mdx-box-bottom: var(--mdx-box-bottom-xl);
+  }
+}
