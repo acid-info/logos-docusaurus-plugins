@@ -13,16 +13,23 @@
 }
 
 .mdx-hero-description--large {
-  // font-size: 5.0625rem !important;
-  // line-height: 5.5rem !important;
+  font-size: 5.0625rem !important;
+  line-height: 5.5rem !important;
+  text-transform: uppercase;
 }
 
 @include utils.responsive('lg', 'down') {
   .mdx-hero-description {
-    @include lsd.typography('h3');
+    @include lsd.typography('subtitle1');
   }
 
   .mdx-hero-description--large {
     font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+    text-transform: uppercase;
+  }
+
+  .mdx-hero-description--medium {
+    @include lsd.typography('h4');
   }
 }

@@ -1,3 +1,5 @@
+@use '../../../css/utils';
+
 .mdx-hero-info {
   padding: var(--logos-hero-info-padding-bottom) 0
     var(--logos-hero-info-padding-bottom) 0;
@@ -14,4 +16,10 @@
 }
 
 .mdx-hero-info--large {
+}
+
+@include utils.responsive('lg', 'down') {
+  :root {
+    --logos-hero-info-height: 340px;
+  }
 }

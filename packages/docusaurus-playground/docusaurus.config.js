@@ -34,7 +34,7 @@ const config = {
             docs: {
               default: {
                 sidebar: {
-                  hide: true,
+                  hide: false,
                 },
               },
             },

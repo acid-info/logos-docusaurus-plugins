@@ -1,7 +1,16 @@
+@use '../../../css/utils';
+
 .mdx-hero-model {
+  --mdx-hero-model-wrapper-scale: 1;
+
   width: 100vw;
   transform: translateX(
-    calc(-1 * calc(calc(100vw - 1440px + calc(var(--content-padding)) * 2) / 2))
+    calc(
+      -1 * calc(calc(
+              100vw - var(--container-max-width) + calc(var(--content-padding)) *
+                4
+            ) / 2)
+    )
   );
   position: absolute;
   top: calc(var(--logos-hero-info-height) - 10px);
@@ -50,4 +59,23 @@
   );
   bottom: -0;
   left: 0;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-hero-model--simple {
+    --mdx-hero-model-wrapper-scale: 0.8;
+  }
+  .mdx-hero-model {
+    transform: unset;
+  }
+  .mdx-hero-model--abstract {
+    transform: translate(-20px, 0px);
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 992px) {
+  .mdx-hero-model {
+    width: calc(100vw + var(--content-padding));
+    transform: translateX(calc(-3 * calc(var(--content-padding) + 0px)));
+  }
 }

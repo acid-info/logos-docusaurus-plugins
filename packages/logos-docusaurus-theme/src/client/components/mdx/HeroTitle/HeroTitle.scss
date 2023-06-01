@@ -17,7 +17,8 @@
 
 @include utils.responsive('lg', 'down') {
   .mdx-hero-title {
-    @include lsd.typography('h3');
+    @include lsd.typography('h4');
+    text-transform: uppercase;
   }
 
   .mdx-hero-title--large {

@@ -255,6 +255,12 @@ body {
   background-color: rgb(var(--lsd-surface-primary));
 }
 
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 svg * {
   fill: rgb(var(--lsd-text-primary));
 }

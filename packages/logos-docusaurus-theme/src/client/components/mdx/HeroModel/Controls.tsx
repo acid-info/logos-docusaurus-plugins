@@ -5,6 +5,7 @@ import { useScrollY } from '../../../lib/useScrollY'
 import { useFrame, useThree } from '@react-three/fiber'
 import { calcRotateSpeed } from './HeroModel.utils'
 import { OrbitControls } from '@react-three/drei'
+import { isTouchDevice } from '../../../lib/ui.utils'
 
 class Vector3 {
   x: number
@@ -91,6 +92,15 @@ export const Controls = ({
   }, [camera])
 
   useEffect(() => {
+    if (isTouchDevice()) {
+      controls.current.minPolarAngle = Math.PI / 2
+      controls.current.maxPolarAngle = Math.PI / 2
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!enableZoom) return
+
     const [deltaX, deltaY, deltaZ] = calculateCameraPosition(scrollY)
 
     // Add the deltas to the initial positions

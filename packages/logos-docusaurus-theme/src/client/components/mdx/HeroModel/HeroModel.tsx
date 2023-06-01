@@ -1,6 +1,6 @@
-import React, { Suspense, useMemo, useRef } from 'react'
+import React, { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, useProgress } from '@react-three/drei'
 import clsx from 'clsx'
 
 import {
@@ -14,8 +14,9 @@ import { AsciiConfigs, LookPresetItemValues } from '../../../types/ui.types'
 import './HeroModel.scss'
 import { AsciiRenderer } from './Ascii'
 import { Controls } from './Controls'
-import { calcScrollThreshold, mapFloat } from '../../../lib/ui.utils'
+import { calcScrollThreshold, isMobile, mapFloat } from '../../../lib/ui.utils'
 import { useScrollY } from '../../../lib/useScrollY'
+import { useWindowSize } from 'react-use'
 
 export type HeroModelProps = React.HTMLAttributes<HTMLDivElement> & {
   modelUrlHi: string
@@ -45,7 +46,7 @@ const useLookPreset = (
 }
 
 const getInitialY = (mode: 'abstract' | 'simple'): number => {
-  return mode === 'abstract' ? 0 : -200
+  return mode === 'abstract' ? 0 : window.innerWidth > 997 ? -200 : -140
 }
 
 export const HeroModel = (props: HeroModelProps) => {
@@ -85,7 +86,9 @@ export const HeroModel = (props: HeroModelProps) => {
         style={{
           ...(withParallelEffect
             ? {
-                transform: `translateY(${getInitialY(mode) + scrollY * 0.1}px)`,
+                transform: `translateY(${
+                  getInitialY(mode) + scrollY * 0.1
+                }px) scale(var(--mdx-hero-model-wrapper-scale))`,
               }
             : {}),
         }}
@@ -106,7 +109,11 @@ export const HeroModel = (props: HeroModelProps) => {
             <directionalLight position={[-10, 10, 5]} intensity={0.3} />
             <directionalLight position={[-10, 20, 0]} intensity={1.5} />
             <directionalLight position={[100, -10, 0]} intensity={0.25} />
-            <Controls rotateSpeed={rotateSpeed} preset={preset}>
+            <Controls
+              rotateSpeed={rotateSpeed}
+              preset={preset}
+              enableZoom={mode !== 'simple'}
+            >
               <Suspense fallback={<Model url={modelUrlLow} />}>
                 <Model url={modelUrlHi} />
                 <AsciiRenderer {...asciiConfig} />
@@ -131,9 +138,12 @@ export const HeroModel = (props: HeroModelProps) => {
   )
 }
 
-function Model({ url, ...props }) {
+function Model({ url, onMount = () => {}, ...props }) {
   // useGLTF suspends the component, it literally stops processing
   const { scene } = useGLTF(url) as any
+  useEffect(() => {
+    onMount()
+  }, [])
   // By the time we're here the model is gueranteed to be available
   return <primitive object={scene} {...props} />
 }

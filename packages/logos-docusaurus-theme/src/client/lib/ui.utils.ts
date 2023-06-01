@@ -31,3 +31,8 @@ export const generateTextShadow = (steps: number): string => {
   }
   return shadows
 }
+
+export const isMobile = () => {
+  if (typeof window === 'undefined') return false
+  return window.innerWidth < 997
+}
