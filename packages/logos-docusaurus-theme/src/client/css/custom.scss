@@ -540,6 +540,14 @@ small {
   align-items: center;
 }
 
+a[class^='sidebarLogo_'] {
+  margin: 0;
+
+  img {
+    height: 48px;
+  }
+}
+
 @include utils.responsive('sm', 'down') {
   :root {
     --ifm-global-spacing: 0.5rem;
