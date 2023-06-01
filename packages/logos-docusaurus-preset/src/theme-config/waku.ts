@@ -23,7 +23,7 @@ export const wakuThemeConfig: typeof baseThemeConfig = {
   ],
   footer: {
     ...baseThemeConfig.footer,
-    copyright: `Copyright © ${new Date().getFullYear()} Status Gmbh. Built with Docusaurus.`,
+    copyright: `Waku © ${new Date().getFullYear()}<br/>All rights reserved.`,
     logo: {
       alt: 'Waku',
       src: 'theme/image/logo.svg',

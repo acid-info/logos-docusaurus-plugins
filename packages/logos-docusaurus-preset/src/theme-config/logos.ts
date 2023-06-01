@@ -22,7 +22,7 @@ export const logosThemeConfig: typeof baseThemeConfig = {
   ],
   footer: {
     ...baseThemeConfig.footer,
-    copyright: `Logos, ${new Date().getFullYear()}`,
+    copyright: `Logos © ${new Date().getFullYear()}<br/>All rights reserved.`,
     logo: {
       alt: 'Logos',
       src: 'theme/image/logo.svg',

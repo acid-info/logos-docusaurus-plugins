@@ -22,7 +22,7 @@ export const codexThemeConfig: typeof baseThemeConfig = {
   ],
   footer: {
     ...baseThemeConfig.footer,
-    copyright: `Codex, ${new Date().getFullYear()}`,
+    copyright: `Codex © ${new Date().getFullYear()}<br/>All rights reserved.`,
     logo: {
       alt: 'Codex',
       src: 'theme/image/logo.svg',
