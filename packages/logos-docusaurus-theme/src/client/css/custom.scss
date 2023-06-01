@@ -235,10 +235,6 @@
 
 [data-theme='dark'] {
   --ifm-color-scheme: dark;
-
-  .navbar__logo img {
-    filter: invert(1);
-  }
 }
 
 [data-theme='light'] {
