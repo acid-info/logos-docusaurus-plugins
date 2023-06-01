@@ -1,3 +1,6 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
 .mdx-feature-list {
   border-top: 1px solid rgb(var(--lsd-surface-secondary));
   position: relative;
@@ -43,4 +46,49 @@
 
 .mdx-feature-list__feature-description {
   margin-top: 8.625rem;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-feature-list {
+  }
+
+  .mdx-feature-list__title {
+    @include lsd.typography('subtitle1');
+    padding: 1rem 0;
+  }
+
+  .mdx-feature-list__list {
+    grid-template-columns: 1fr;
+  }
+
+  .mdx-feature-list__feature {
+    border: none;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgb(var(--lsd-border-primary));
+
+    .mdx-feature-list__feature-index {
+      @include lsd.typography('subtitle2');
+      width: 1.625rem;
+      height: 1.625rem;
+    }
+
+    .mdx-feature-list__feature-title {
+      @include lsd.typography('h5');
+      margin-top: 1rem;
+    }
+
+    .mdx-feature-list__feature-description {
+      @include lsd.typography('subtitle1');
+      margin-top: 3rem;
+    }
+
+    .mdx-feature-list__feature-inner {
+    }
+
+    &:nth-child(odd) {
+      .mdx-feature-list__feature-inner {
+        border: none;
+      }
+    }
+  }
 }

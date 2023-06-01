@@ -1,3 +1,5 @@
+@use '../../../css/utils';
+
 .mdx-hero-actions {
   margin-top: 2rem;
   display: flex;
@@ -7,4 +9,21 @@
 
   position: relative;
   z-index: 98;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-hero-actions {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+
+    > a,
+    > a > button {
+      display: block;
+      width: 100%;
+    }
+  }
 }

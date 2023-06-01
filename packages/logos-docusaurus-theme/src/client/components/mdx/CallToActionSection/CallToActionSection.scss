@@ -1,8 +1,8 @@
 @use '../../../css/utils';
+@use '../../../css/lsd';
 
 .mdx-cta-section {
   display: grid;
-  margin-top: 216px;
   border-top: 1px solid rgb(var(--lsd-border-primary));
 }
 
@@ -54,6 +54,39 @@
   .mdx-cta-section:not(.mdx-cta-section--with-description) {
     .mdx-cta-section__title {
       max-width: 65%;
+    }
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mdx-cta-section__title {
+    @include lsd.typography('subtitle1');
+    margin-top: 1rem;
+  }
+
+  .mdx-cta-section__description {
+    @include lsd.typography('h5');
+    margin-top: 1.5rem !important;
+  }
+
+  .mdx-cta-section__link {
+    @include lsd.typography('label2');
+    margin-top: 2rem;
+
+    button {
+      padding: 6px 12px;
+    }
+  }
+
+  .mdx-cta-section:not(.mdx-cta-section--with-description) {
+    .mdx-cta-section__title {
+      @include lsd.typography('h5');
     }
   }
 }

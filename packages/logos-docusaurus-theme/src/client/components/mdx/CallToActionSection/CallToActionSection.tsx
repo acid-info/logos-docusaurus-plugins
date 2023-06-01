@@ -28,8 +28,6 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
 
   return (
     <div
-      variant="h1"
-      component="h1"
       className={clsx(
         className,
         'mdx-cta-section',
@@ -40,7 +38,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
     >
       <Typography
         variant={singleCol && !description ? 'h1' : 'h6'}
-        component="span"
+        component="h2"
         className="mdx-cta-section__title"
       >
         {title}
@@ -48,7 +46,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
       {description && (
         <Typography
           variant={singleCol ? 'h2' : 'h4'}
-          component="span"
+          component="h3"
           className="mdx-cta-section__description"
         >
           {description}
