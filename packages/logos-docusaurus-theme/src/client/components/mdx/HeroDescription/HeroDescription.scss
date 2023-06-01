@@ -2,7 +2,10 @@
 @use '../../../css/lsd';
 
 .mdx-hero-description {
+  // we need position relative because we need the z-index to work in order to keep it under the hero model
+  position: relative;
   z-index: -2;
+  font-weight: 100 !important;
 }
 
 .mdx-hero-description--small {
