@@ -16,7 +16,8 @@ export const nomosThemeConfig: typeof baseThemeConfig = {
     { name: 'keywords', content: 'Nomos' },
     {
       name: 'description',
-      content: '',
+      content:
+        "Nomos supports the demands of aspiring network states, defending self-determination at the network level for humanity's underserved.",
     },
     { name: 'image', content: 'theme/image/preview-image.png' },
   ],
