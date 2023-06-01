@@ -432,6 +432,10 @@ small {
   }
 }
 
+.menu__list-item .menu__link {
+  font-size: var(--lsd-body2-fontSize);
+}
+
 .menu__link--active {
   border-left: 1px solid rgb(var(--lsd-border-primary));
   border-radius: 0;
@@ -659,6 +663,10 @@ a[class^='sidebarLogo_'] {
     flex: 1 0;
     margin: auto;
   }
+
+  nav.menu {
+    padding-top: 0;
+  }
 }
 
 @include utils.responsive('xl', 'up') {
@@ -681,6 +689,10 @@ a[class^='sidebarLogo_'] {
         max-width: none;
       }
     }
+  }
+
+  .theme-doc-toc-desktop {
+    top: calc(var(--ifm-navbar-height)) !important;
   }
 }
 
@@ -926,9 +938,5 @@ a[class^='sidebarLogo_'] {
     align-items: center;
     justify-content: center;
     margin-left: unset;
-  }
-
-  .menu__list-item .menu__link {
-    font-size: var(--lsd-body2-fontSize);
   }
 }
