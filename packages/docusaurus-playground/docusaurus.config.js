@@ -37,7 +37,6 @@ const config = {
         },
         docs: {
           routeBasePath: '/docs',
-          breadcrumbs: false,
           versions: {
             current: {
               label: 'current',
