@@ -4,6 +4,7 @@ import { defaultsDeep } from '../utils/object.utils'
 import baseThemeConfig from './base'
 import codexThemeConfig from './codex'
 import logosThemeConfig from './logos'
+import nimbusThemeConfig from './nimbus'
 import wakuThemeConfig from './waku'
 
 const merge =
@@ -29,4 +30,5 @@ export const themeConfigs: Record<BusinessUnits, ReturnType<typeof merge>> = {
   [BusinessUnits.Logos]: merge(logosThemeConfig),
   [BusinessUnits.Codex]: merge(codexThemeConfig),
   [BusinessUnits.Waku]: merge(wakuThemeConfig),
+  [BusinessUnits.Nimbus]: merge(nimbusThemeConfig),
 }
