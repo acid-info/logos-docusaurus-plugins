@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.4](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-06-01)
+
+### Bug Fixes
+
+- add description for Nomos website ([59d5d7b](https://github.com/acid-info/logos-docusaurus-plugins/commit/59d5d7b653fef51adfe090fe62bd1ccb29305d93))
+
 # [1.0.0-alpha.3](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2023-06-01)
 
 ### Bug Fixes
