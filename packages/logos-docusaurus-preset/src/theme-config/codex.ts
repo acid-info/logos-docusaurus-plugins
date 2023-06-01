@@ -8,7 +8,6 @@ export const codexThemeConfig: typeof baseThemeConfig = {
       alt: 'Codex',
       src: 'theme/image/logo-black.svg',
       srcDark: 'theme/image/logo.svg',
-      width: 24,
       height: 26,
     },
   },

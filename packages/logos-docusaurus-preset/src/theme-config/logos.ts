@@ -6,7 +6,7 @@ export const logosThemeConfig: typeof baseThemeConfig = {
     ...baseThemeConfig.navbar,
     logo: {
       alt: 'Logos',
-      src: 'theme/image/logo-dark.svg',
+      src: 'theme/image/logo-black.svg',
       srcDark: 'theme/image/logo.svg',
       height: 26,
     },
