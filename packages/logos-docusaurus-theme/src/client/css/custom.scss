@@ -713,6 +713,7 @@ small {
 .footer__title {
   @include lsd.typography('label1');
   margin-bottom: 4px;
+  font-weight: var(--ifm-font-weight-normal);
 }
 
 .footer > div:nth-child(1) > .footer__links {

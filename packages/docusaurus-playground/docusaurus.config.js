@@ -36,7 +36,7 @@ const config = {
           },
         },
         docs: {
-          routeBasePath: '/docs',
+          routeBasePath: '/about',
           versions: {
             current: {
               label: 'current',
@@ -55,6 +55,66 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
+      },
+      navbar: {
+        items: [
+          {
+            type: 'search',
+          },
+          {
+            label: 'About',
+            to: '/about',
+          },
+          {
+            label: 'Github',
+            href: 'https://github.com/status-im',
+          },
+        ],
+      },
+      footer: {
+        copyright: 'Nimbus @2023<br/>All Rights Reserved.',
+        links: [
+          {
+            items: [
+              {
+                href: 'https://twitter.com/ethnimbus',
+                label: 'Twitter',
+              },
+              {
+                href: 'https://discord.gg/EP8DZnXu9y',
+                label: 'Discord',
+              },
+              {
+                href: '/',
+                label: 'Docs',
+              },
+              {
+                href: '/',
+                label: 'Github',
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                href: '/',
+                label: 'Contact us',
+              },
+              {
+                href: 'https://jobs.status.im/',
+                label: 'Work with us',
+              },
+              {
+                href: '/',
+                label: 'Privacy policy',
+              },
+              {
+                href: '/',
+                label: 'Temrs & conditions',
+              },
+            ],
+          },
+        ],
       },
     }),
 }
