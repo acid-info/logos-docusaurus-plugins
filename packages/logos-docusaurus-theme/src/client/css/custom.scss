@@ -185,7 +185,7 @@
   --ifm-navbar-padding-vertical: calc(var(--ifm-spacing-vertical) * 0.5);
   --ifm-navbar-shadow: var(--ifm-global-shadow-lw);
   --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
-  --ifm-navbar-sidebar-width: 83vw;
+  --ifm-navbar-sidebar-width: 100vw;
   --ifm-pagination-border-radius: var(--ifm-global-radius);
   --ifm-pagination-font-size: 1rem;
   --ifm-pagination-item-active-background: var(--ifm-hover-overlay);
@@ -548,6 +548,27 @@ a[class^='sidebarLogo_'] {
   }
 }
 
+.navbar-sidebar__item {
+  padding-inline: var(--content-padding);
+  padding-block: 0;
+}
+
+.navbar-sidebar__back {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100% !important;
+  margin: 0 !important;
+  gap: 16px;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  padding-left: var(--content-padding);
+  padding-right: 0;
+}
+
 @include utils.responsive('sm', 'down') {
   :root {
     --ifm-global-spacing: 0.5rem;
@@ -878,5 +899,36 @@ a[class^='sidebarLogo_'] {
 
   .main-wrapper {
     padding-inline: 0;
+  }
+
+  .navbar-sidebar__brand {
+    height: 60px;
+    padding-block: 0;
+  }
+
+  .navbar-sidebar__brand > button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar-sidebar__brand > button:first-of-type {
+    margin-right: 0 !important;
+    margin-left: auto;
+  }
+
+  .navbar-sidebar__brand > button:not(:last-of-type) {
+    border-right: none;
+  }
+
+  .navbar-sidebar__close {
+    border: 1px solid rgb(var(--lsd-border-primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: unset;
+  }
+
+  .menu__list-item .menu__link {
+    font-size: var(--lsd-body2-fontSize);
   }
 }
