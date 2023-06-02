@@ -630,8 +630,6 @@ a[class^='sidebarLogo_'] {
 
 @include utils.responsive('lg', 'up') {
   .main-wrapper {
-    padding: 0;
-
     main > .container {
       padding-bottom: 200px !important;
     }
@@ -645,6 +643,7 @@ a[class^='sidebarLogo_'] {
         width: auto;
         grid-column: 1 / 5;
         border: none;
+        padding-left: var(--content-padding);
       }
 
       main {
@@ -677,8 +676,6 @@ a[class^='sidebarLogo_'] {
 
 @include utils.responsive('xl', 'up') {
   .main-wrapper {
-    padding: 0;
-
     & > div {
       display: grid;
       grid-template-columns: repeat(24, 1fr);
@@ -708,8 +705,6 @@ a[class^='sidebarLogo_'] {
 
 .main-wrapper {
   // website pages
-  padding-inline: var(--content-padding);
-
   > .container {
     margin-top: 0 !important;
     margin-bottom: 80px !important;
@@ -915,10 +910,6 @@ a[class^='sidebarLogo_'] {
     padding-bottom: 0px !important;
   }
 
-  .main-wrapper {
-    padding-inline: 0;
-  }
-
   .navbar-sidebar:has(.navbar-sidebar__items--show-secondary)
     .navbar-sidebar__brand {
     button:first-of-type {
@@ -955,6 +946,8 @@ a[class^='sidebarLogo_'] {
     }
 
     .footer > div {
+      display: flex !important;
+      flex-direction: column !important;
       gap: 32px !important;
     }
 

@@ -4,6 +4,7 @@ import { useHero } from '../Hero/Hero.context'
 import './HeroInfo.scss'
 import { useScrollY } from '../../../lib/useScrollY'
 import { calcScrollThreshold, mapFloat } from '../../../lib/ui.utils'
+import { ScrollToBottom } from '@logos-theme/components/Button/ScrollToBottom'
 
 export type HeroInfoProps = PropsWithChildren<
   React.HTMLAttributes<HTMLDivElement>
@@ -47,15 +48,18 @@ export const HeroInfo: React.FC<HeroInfoProps> = ({
   }, [])
 
   return (
-    <div
-      className={clsx(className, 'mdx-hero-info', `mdx-hero-info--${size}`)}
-      style={{
-        ...(initialMarginBottom ? { marginBottom: getMarginBottom() } : {}),
-      }}
-      ref={ref}
-      {...(props as any)}
-    >
-      {children}
-    </div>
+    <>
+      <div
+        className={clsx(className, 'mdx-hero-info', `mdx-hero-info--${size}`)}
+        style={{
+          ...(initialMarginBottom ? { marginBottom: getMarginBottom() } : {}),
+        }}
+        ref={ref}
+        {...(props as any)}
+      >
+        {children}
+      </div>
+      <ScrollToBottom bottom={getMarginBottom()} />
+    </>
   )
 }
