@@ -1,0 +1,7 @@
+@use '../../../css/utils';
+
+.scrollToBottom {
+  z-index: 100;
+  position: absolute;
+  background: rgb(var(--lsd-surface-primary)) !important;
+}
