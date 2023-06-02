@@ -27,7 +27,7 @@
 }
 
 .mdx-hero-model--top {
-  top: 0;
+  top: 300px;
 }
 
 .mdx-hero-model--bottom {
@@ -46,6 +46,7 @@
 
 .mdx-hero-model--ascii {
   filter: grayscale(100%);
+  opacity: 0.65;
   table {
     &,
     * {

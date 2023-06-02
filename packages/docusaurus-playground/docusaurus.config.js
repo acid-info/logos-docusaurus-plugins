@@ -26,7 +26,7 @@ const config = {
       '@acid-info/logos-docusaurus-preset',
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
-        businessUnit: 'Nimbus',
+        businessUnit: 'Nomos',
         theme: {
           name: 'default',
           options: {
@@ -65,6 +65,14 @@ const config = {
           {
             label: 'About',
             to: '/about',
+          },
+          {
+            label: 'Features',
+            href: '/#features',
+          },
+          {
+            label: 'Usecases',
+            href: '/#usecases',
           },
           {
             label: 'Github',

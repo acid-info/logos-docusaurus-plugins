@@ -48,7 +48,7 @@ const useLookPreset = (
 }
 
 const getInitialY = (mode: 'abstract' | 'simple'): number => {
-  return mode === 'abstract' ? 0 : window.innerWidth > 997 ? -100 : 0
+  return mode === 'abstract' ? 0 : window.innerWidth > 997 ? 0 : 0
 }
 
 export const HeroModel = (props: HeroModelProps) => {
@@ -89,7 +89,8 @@ export const HeroModel = (props: HeroModelProps) => {
           ...(withParallelEffect
             ? {
                 transform: `translateY(${
-                  getInitialY(mode) + scrollY * 0.1
+                  0
+                  // getInitialY(mode) + scrollY * 0.1
                 }px) scale(var(--mdx-hero-model-wrapper-scale))`,
               }
             : {}),
@@ -134,7 +135,7 @@ export const HeroModel = (props: HeroModelProps) => {
             scrollY,
             0,
             calcScrollThreshold() * RESIZE_SPEED_FACTOR,
-            1,
+            0,
             1,
           ),
         }}

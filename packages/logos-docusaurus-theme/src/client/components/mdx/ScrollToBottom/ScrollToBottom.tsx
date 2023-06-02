@@ -2,6 +2,7 @@ import { ArrowDownIcon, IconButton } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React, { HTMLProps } from 'react'
 import styles from './styles.module.scss'
+import { useScrollY } from '../../../lib/useScrollY'
 
 type TProps = {}
 
@@ -9,7 +10,7 @@ export const ScrollToBottom = (
   props: TProps & HTMLProps<HTMLButtonElement>,
 ): JSX.Element => {
   const { children, className, ...rest } = props
-
+  const scrollY = useScrollY()
   const handleScrollToBottom = () => {
     const article = document.querySelector('.main-wrapper article')
     const secondElement = article?.children?.[1]
@@ -28,7 +29,11 @@ export const ScrollToBottom = (
     <IconButton
       onClick={handleScrollToBottom}
       size="small"
-      className={clsx(styles.scrollToBottom, className)}
+      className={clsx(
+        styles.scrollToBottom,
+        className,
+        scrollY > 20 ? styles.hide : '',
+      )}
       {...(rest as any)}
     >
       <ArrowDownIcon color="primary" />
