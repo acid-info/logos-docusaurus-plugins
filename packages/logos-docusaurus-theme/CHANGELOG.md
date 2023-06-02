@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.8](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.7...v1.0.0-alpha.8) (2023-06-02)
+
+### Bug Fixes
+
+- fix layout padding ([72c39fc](https://github.com/acid-info/logos-docusaurus-plugins/commit/72c39fc6816d1e3b46fd6c9b4634b664f3e68eeb))
+
 # [1.0.0-alpha.7](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2023-06-01)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
