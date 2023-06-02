@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.11](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.10...v1.0.0-alpha.11) (2023-06-02)
+
+### Features
+
+- add support for custom target prop value in cta link ([9bcbaab](https://github.com/acid-info/logos-docusaurus-plugins/commit/9bcbaab1f94a9ebdb282bfa78db15bcc92e57732))
+
 # [1.0.0-alpha.10](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.9...v1.0.0-alpha.10) (2023-06-02)
 
 ### Bug Fixes
