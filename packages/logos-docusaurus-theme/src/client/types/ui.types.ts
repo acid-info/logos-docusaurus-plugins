@@ -21,6 +21,7 @@ export type LookPresetItem = {
   modelId: string
   simple: LookPresetItemValues
   abstract: LookPresetItemValues
+  targetLook?: LookPresetItemValues
 }
 
 export type MovementProps = {
@@ -28,6 +29,7 @@ export type MovementProps = {
   enableZoom?: boolean
   enableRotateOnScroll?: boolean
   preset: LookPresetItemValues
+  targetPreset?: LookPresetItemValues
 } & GroupProps
 
 export type AsciiConfigs = {

@@ -1,62 +1,53 @@
 import { ROTATE_SPEED } from './HeroModel.configs'
-import { MovementProps } from '../../../types/ui.types'
+import { LookPresetItemValues, MovementProps } from '../../../types/ui.types'
 import React, { useEffect, useRef } from 'react'
 import { useScrollY } from '../../../lib/useScrollY'
 import { useFrame, useThree } from '@react-three/fiber'
 import { calcRotateSpeed } from './HeroModel.utils'
 import { OrbitControls } from '@react-three/drei'
-import { isTouchDevice } from '../../../lib/ui.utils'
-
-class Vector3 {
-  x: number
-  y: number
-  z: number
-
-  constructor(x: number, y: number, z: number) {
-    this.x = x
-    this.y = y
-    this.z = z
-  }
-
-  subtract(v: Vector3) {
-    return new Vector3(this.x - v.x, this.y - v.y, this.z - v.z)
-  }
-
-  add(v: Vector3) {
-    return new Vector3(this.x + v.x, this.y + v.y, this.z + v.z)
-  }
-
-  multiplyScalar(s: number) {
-    return new Vector3(this.x * s, this.y * s, this.z * s)
-  }
-
-  clone() {
-    return new Vector3(this.x, this.y, this.z)
-  }
-
-  toArray() {
-    return [this.x, this.y, this.z]
-  }
-}
+import { isMobile, isTouchDevice } from '../../../lib/ui.utils'
 
 const lerp = (a: number, b: number, t: number) => (1 - t) * a + t * b
 let targetPos: [number, number, number] = [0, 0, 0]
 
-function calculateCameraPosition(scrollY: number): [number, number, number] {
-  const baseXZ = -1.6 // Base x and z component at scrollY = 0
-  const baseY = 4.04 // Base y component at scrollY = 0
-  const rateXZ = -0.01 // Rate of change for x and z components
-  const rateY = 0.00185 // Rate of change for y component
-  const deltaX = baseXZ + rateXZ * scrollY - baseXZ
-  const deltaY = baseY + rateY * scrollY - baseY
-  const deltaZ = baseXZ + rateXZ * scrollY - baseXZ
-  return [deltaX, deltaY, deltaZ]
+// function calculateCameraPosition(scrollY: number): [number, number, number] {
+//   const baseXZ = -1.6 // Base x and z component at scrollY = 0
+//   const baseY = 4.04 // Base y component at scrollY = 0
+//   const rateXZ = -0.01 // Rate of change for x and z components
+//   const rateY = 0.00185 // Rate of change for y component
+//   const deltaX = baseXZ + rateXZ * scrollY - baseXZ
+//   const deltaY = baseY + rateY * scrollY - baseY
+//   const deltaZ = baseXZ + rateXZ * scrollY - baseXZ
+//   return [deltaX, deltaY, deltaZ]
+// }
+
+const MAX_SCROLL = 400
+
+function calculateVector(
+  scrollY: number,
+  scrollYMax: number,
+  preset: number[],
+  target: number[],
+): [number, number, number] {
+  // Calculate the lerp factor based on the scroll position
+  const t = scrollY / scrollYMax
+
+  const newVector = [0, 0, 0]
+  for (let i = 0; i < 3; i++) {
+    // Perform a lerp between the preset and target for each component
+    // @ts-ignore
+    newVector[i] = lerp(preset[i], target[i], t)
+  }
+
+  return newVector as [number, number, number]
 }
+
 export const Controls = ({
   rotateSpeed = ROTATE_SPEED,
   enableZoom = true,
   enableRotateOnScroll = true,
   preset,
+  targetPreset,
   children,
   ...props
 }: MovementProps) => {
@@ -64,12 +55,14 @@ export const Controls = ({
   const scrollY = useScrollY()
   const { camera, size } = useThree()
   const controls = useRef<any>()
+  const [lockOrbit, setLockOrbit] = React.useState(false)
 
   useFrame((state, delta) => {
     const speed = enableRotateOnScroll
       ? calcRotateSpeed(scrollY, rotateSpeed)
       : rotateSpeed
-    ref.current.rotation.y += delta * speed
+
+    ref.current.rotation.y += delta * (isMobile() ? 0.1 * speed : speed)
   })
 
   useEffect(() => {
@@ -95,26 +88,53 @@ export const Controls = ({
     if (isTouchDevice()) {
       controls.current.minPolarAngle = Math.PI / 2
       controls.current.maxPolarAngle = Math.PI / 2
+      setTimeout(() => {
+        setLockOrbit(true)
+      }, 1000)
     }
   }, [])
 
+  // useEffect(() => {
+  //   if (!enableZoom) return
+  //   const [deltaX, deltaY, deltaZ] = calculateCameraPosition(scrollY)
+  //
+  //   // Add the deltas to the initial positions
+  //   const newPositionX = preset.cameraPos[0] + deltaX
+  //   const newPositionY = preset.cameraPos[1] + deltaY
+  //   const newPositionZ = preset.cameraPos[2] + deltaZ
+  //
+  //   camera.position.set(newPositionX, newPositionY, newPositionZ)
+  //   camera.updateProjectionMatrix()
+  // }, [scrollY, camera])
+
   useEffect(() => {
     if (!enableZoom) return
+    if (!targetPreset) return
+    // we only apply zoom effect if targetPreset is defined
 
-    const [deltaX, deltaY, deltaZ] = calculateCameraPosition(scrollY)
+    const newPos = calculateVector(
+      scrollY,
+      MAX_SCROLL,
+      preset.cameraPos,
+      targetPreset.cameraPos,
+    )
+    const newRot = calculateVector(
+      scrollY,
+      MAX_SCROLL,
+      preset.cameraRot,
+      targetPreset.cameraRot,
+    )
+    const newTarget = calculateVector(
+      scrollY,
+      MAX_SCROLL,
+      preset.controlsTarget,
+      targetPreset.controlsTarget,
+    )
 
-    // Add the deltas to the initial positions
-    const newPositionX = preset.cameraPos[0] + deltaX
-    const newPositionY = preset.cameraPos[1] + deltaY
-    const newPositionZ = preset.cameraPos[2] + deltaZ
-
-    camera.position.set(newPositionX, newPositionY, newPositionZ)
+    camera.position.set(...newPos)
+    camera.rotation.set(...newRot)
+    controls.current.target.set(...newTarget)
     camera.updateProjectionMatrix()
-
-    // const scale = mapFloat(scrollY, 0, calcScrollThreshold(), 1, 0.5);
-    // const initialPosition = ref.current.position.clone();
-    // ref.current.scale.set(scale, scale, scale);
-    // ref.current.position.y += 0.0001 * scale;
   }, [scrollY, camera])
 
   return (
@@ -123,7 +143,10 @@ export const Controls = ({
       <OrbitControls
         ref={controls}
         enableZoom={false}
-        target={preset.controlsTarget}
+        target={
+          controls.current ? controls.current.target : preset.controlsTarget
+        }
+        enabled={!lockOrbit}
       />
     </group>
   )

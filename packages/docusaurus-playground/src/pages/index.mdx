@@ -13,17 +13,18 @@ import {
   Box,
 } from '../components/mdx'
 
-<Hero size="large">
+<Hero size="medium">
   <HeroInfo>
-    <HeroTitle>The web3 managing standard.</HeroTitle>
+    <HeroTitle>Durable, decentralized data storage</HeroTitle>
     {/*
-        <HeroDescription>
+        <HeroDescription className={"long"}>
             Waku is a decentralized communications network that enables private, censorship-resistant messaging for web3
             applications.
         </HeroDescription>
-        * */}
-    <HeroDescription>
-      Waku is a decentralized communications network
+            * */}
+    <HeroDescription className={'short'}>
+      Codex provides immutable, censorship-resistant data storage via a
+      censorship-resistant, permissionless and incentivized p2p network
     </HeroDescription>
     <HeroActions>
       <HeroAction href="https://docs.waku.org" target="_blank">
@@ -35,11 +36,12 @@ import {
     </HeroActions>
   </HeroInfo>
   <HeroModel
-    modelId={'bust'}
+    modelId={'architecture04'}
     mode={'abstract'}
     rotateSpeed={0.04}
+    startY={'top'}
     asciiConfig={{
-      characters: '  w . a . k . u . & * ',
+      characters: ' + ^ ^%%%0 -a @@@ ###',
     }}
   />
 </Hero>

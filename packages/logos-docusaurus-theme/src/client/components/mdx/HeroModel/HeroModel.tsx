@@ -19,6 +19,7 @@ import { calcScrollThreshold, mapFloat } from '../../../lib/ui.utils'
 import { AsciiRenderer } from './Ascii'
 import { Controls } from './Controls'
 import './HeroModel.scss'
+import { useScrollY } from '../../../lib/useScrollY'
 
 export type HeroModelProps = React.HTMLAttributes<HTMLDivElement> & {
   modelId?: string
@@ -26,6 +27,7 @@ export type HeroModelProps = React.HTMLAttributes<HTMLDivElement> & {
   mode?: 'simple' | 'abstract'
   asciiConfig?: AsciiConfigs
   rotateSpeed?: number
+  startY?: 'top' | 'bottom'
 
   enableZoom?: boolean
   enableRotateOnScroll?: boolean
@@ -46,7 +48,7 @@ const useLookPreset = (
 }
 
 const getInitialY = (mode: 'abstract' | 'simple'): number => {
-  return mode === 'abstract' ? 0 : window.innerWidth > 997 ? -200 : -140
+  return mode === 'abstract' ? 0 : window.innerWidth > 997 ? -100 : 0
 }
 
 export const HeroModel = (props: HeroModelProps) => {
@@ -61,13 +63,14 @@ export const HeroModel = (props: HeroModelProps) => {
     enableZoom,
     enableRotateOnScroll,
     withParallelEffect = true,
+    startY = 'bottom',
     ...divProps
   } = props
 
   const preset = useLookPreset(mode, presetProp, modelId)
-  // const index = 0;
+  // const index = 4;
   // const preset = OBJECTS_PRESETS[index] ? OBJECTS_PRESETS[index] : defaultPresets;
-  // const scrollY = useScrollY()
+  const scrollY = useScrollY()
 
   return (
     <div
@@ -76,6 +79,7 @@ export const HeroModel = (props: HeroModelProps) => {
         'mdx-hero-model',
         'mdx-hero-model--ascii',
         `mdx-hero-model--${mode}`,
+        `mdx-hero-model--${startY}`,
       )}
       {...divProps}
     >
@@ -110,6 +114,7 @@ export const HeroModel = (props: HeroModelProps) => {
             <Controls
               rotateSpeed={rotateSpeed}
               preset={preset[mode]}
+              targetPreset={preset.targetLook}
               enableZoom={mode !== 'simple'}
             >
               <Suspense
@@ -129,7 +134,7 @@ export const HeroModel = (props: HeroModelProps) => {
             scrollY,
             0,
             calcScrollThreshold() * RESIZE_SPEED_FACTOR,
-            0.2,
+            1,
             1,
           ),
         }}

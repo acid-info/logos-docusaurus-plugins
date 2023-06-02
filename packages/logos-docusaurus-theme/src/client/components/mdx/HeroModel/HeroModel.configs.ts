@@ -38,7 +38,7 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'architecture01',
     simple: {
-      cameraPos: [0, 0, 0],
+      cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
       cameraRot: [0, 0, 0],
       controlsTarget: [0, 0, 0],
     },
@@ -51,7 +51,7 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'architecture02',
     simple: {
-      cameraPos: [0, 0, 0],
+      cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
       cameraRot: [0, 0, 0],
       controlsTarget: [0, 0, 0],
     },
@@ -64,7 +64,7 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'architecture03',
     simple: {
-      cameraPos: [0, 0, 0],
+      cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
       cameraRot: [0, 0, 0],
       controlsTarget: [0, 0, 0],
     },
@@ -77,33 +77,50 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'architecture04',
     simple: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [2.263701079468784, 0.6448855513810133, -1.1446840846564066],
+      cameraRot: [-2.3314571674867457, 0.984733935216302, 2.422537357648925],
+      controlsTarget: [
+        0.6593539926170827, -0.1266335925222026, -0.4104215479626598,
+      ],
     },
     abstract: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [2.299135943394893, 0.8656851576290204, -0.7027825038010787],
+      cameraRot: [-1.916700195994318, 1.0755068798100078, 1.959565308882676],
+      controlsTarget: [
+        0.6048467950344667, 0.0046384989689828805, -0.3924669053385349,
+      ],
+    },
+    targetLook: {
+      cameraPos: [1.2775067913826557, 1.3342390202957728, -3.123518037652026],
+      cameraRot: [-2.6905895797482686, 0.32826936260575107, 2.9867046984290964],
+      controlsTarget: [
+        0.27965301570358253, 0.05724884619536415, -0.48670374558576035,
+      ],
     },
   },
   {
     modelId: 'architecture05',
     simple: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [2.783916402572475, 0.8560027544276005, 2.7596737879252995],
+      cameraRot: [
+        -0.16075199314229247, 0.8310730403125255, 0.11920589473418516,
+      ],
+      controlsTarget: [
+        -0.13283501637059433, 0.4299574965789378, 0.13221598116033606,
+      ],
     },
     abstract: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [1.1470783184950044, 0.23878712525763962, 1.4621079231748313],
+      cameraRot: [0.0781563760261837, 0.753617521461716, -0.05353888616056665],
+      controlsTarget: [
+        -0.10475467093508074, 0.34294485241818873, 0.1321388746243302,
+      ],
     },
   },
   {
     modelId: 'architecture06',
     simple: {
-      cameraPos: [0, 0, 0],
+      cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
       cameraRot: [0, 0, 0],
       controlsTarget: [0, 0, 0],
     },
@@ -116,7 +133,7 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'architecture07',
     simple: {
-      cameraPos: [0, 0, 0],
+      cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
       cameraRot: [0, 0, 0],
       controlsTarget: [0, 0, 0],
     },
@@ -129,22 +146,34 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'atlas',
     simple: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [-0.05747471409961126, 1.1561369169508278, 0.2934743027588207],
+      cameraRot: [
+        0.13523803197626882, -0.45004875426349367, 0.05912213357583956,
+      ],
+      controlsTarget: [
+        -0.03052411570622545, 1.1636581998026059, 0.23819862568800665,
+      ],
     },
     abstract: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [-0.05747471409961126, 1.1561369169508278, 0.2934743027588207],
+      cameraRot: [
+        0.13523803197626882, -0.45004875426349367, 0.05912213357583956,
+      ],
+      controlsTarget: [
+        -0.03052411570622545, 1.1636581998026059, 0.23819862568800665,
+      ],
     },
   },
   {
     modelId: 'bust01',
     simple: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [-0.6865425525854476, 0.9101267370893742, 0.6192780523604176],
+      cameraRot: [
+        -0.39660492694232563, -0.962317303218196, -0.3309893133032883,
+      ],
+      controlsTarget: [
+        0.008888669206507317, 0.7229784900626205, 0.17240700391361993,
+      ],
     },
     abstract: {
       cameraPos: [0, 0, 0],
@@ -155,20 +184,29 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'bust02',
     simple: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [-1.4566842350476759, 1.3228318382357354, 0.3529107224325513],
+      cameraRot: [-0.7212161402570414, -1.161345100016008, -0.6787189972933454],
+      controlsTarget: [
+        0.13759890903780844, 0.8659810364239205, -0.1666973840261623,
+      ],
     },
+    // TODO add option for scale on scroll
     abstract: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [
+        -0.3488062269042841, 1.3111379960412364, 0.033354968216059155,
+      ],
+      cameraRot: [
+        -0.7212161402570405, -1.1613451000160089, -0.6787189972933446,
+      ],
+      controlsTarget: [
+        0.2227218365835886, 1.147363414950647, -0.15291722311874764,
+      ],
     },
   },
   {
     modelId: 'bust03',
     simple: {
-      cameraPos: [0, 0, 0],
+      cameraPos: [6.898858137575106, 4.772099506970454, -3.1821660872368627],
       cameraRot: [0, 0, 0],
       controlsTarget: [0, 0, 0],
     },
@@ -181,9 +219,13 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'discobolus',
     simple: {
-      cameraPos: [0, 0, 0],
-      cameraRot: [0, 0, 0],
-      controlsTarget: [0, 0, 0],
+      cameraPos: [0.9321278495515372, 1.1243517299151449, 1.0437243089401456],
+      cameraRot: [
+        -0.05449607597993083, 0.5948614803388417, 0.030560026854436973,
+      ],
+      controlsTarget: [
+        0.17851738112859908, 1.0636847191934362, -0.06840974825492452,
+      ],
     },
     abstract: {
       cameraPos: [0, 0, 0],
@@ -220,7 +262,26 @@ export const OBJECTS_PRESETS: LookPresetItem[] = [
   {
     modelId: 'venus',
     simple: {
-      cameraPos: [0, 0, 0],
+      cameraPos: [-0.33960257176056113, 1.3731114512210183, 0.5843851218219973],
+      cameraRot: [
+        0.19165735697369993, -0.4160172409280952, 0.07825504508386714,
+      ],
+      controlsTarget: [
+        0.1766806722765915, 1.595709756901872, -0.5627979418735829,
+      ],
+    },
+    abstract: {
+      cameraPos: [-0.2543046264127692, 1.591894996466899, 0.21161310295797725],
+      cameraRot: [0.17078534527374745, -0.637502107706861, 0.10229142114685894],
+      controlsTarget: [
+        0.2766995177502174, 1.7137410300309837, -0.49488235116491014,
+      ],
+    },
+  },
+  {
+    modelId: 'flower',
+    simple: {
+      cameraPos: [-0.33960257176056113, 1.3731114512210183, 0.5843851218219973],
       cameraRot: [0, 0, 0],
       controlsTarget: [0, 0, 0],
     },
