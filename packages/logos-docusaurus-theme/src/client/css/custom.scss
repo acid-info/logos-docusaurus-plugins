@@ -630,8 +630,6 @@ a[class^='sidebarLogo_'] {
 
 @include utils.responsive('lg', 'up') {
   .main-wrapper {
-    padding: 0;
-
     main > .container {
       padding-bottom: 200px !important;
     }
@@ -677,8 +675,6 @@ a[class^='sidebarLogo_'] {
 
 @include utils.responsive('xl', 'up') {
   .main-wrapper {
-    padding: 0;
-
     & > div {
       display: grid;
       grid-template-columns: repeat(24, 1fr);
@@ -913,10 +909,6 @@ a[class^='sidebarLogo_'] {
 
   .footer {
     padding-bottom: 0px !important;
-  }
-
-  .main-wrapper {
-    padding-inline: 0;
   }
 
   .navbar-sidebar:has(.navbar-sidebar__items--show-secondary)
