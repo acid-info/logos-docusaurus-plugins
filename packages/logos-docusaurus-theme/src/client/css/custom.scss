@@ -643,6 +643,7 @@ a[class^='sidebarLogo_'] {
         width: auto;
         grid-column: 1 / 5;
         border: none;
+        padding-left: var(--content-padding);
       }
 
       main {
@@ -704,8 +705,6 @@ a[class^='sidebarLogo_'] {
 
 .main-wrapper {
   // website pages
-  padding-inline: var(--content-padding);
-
   > .container {
     margin-top: 0 !important;
     margin-bottom: 80px !important;
