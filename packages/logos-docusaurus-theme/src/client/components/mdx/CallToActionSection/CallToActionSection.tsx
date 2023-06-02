@@ -13,6 +13,7 @@ export type CallToActionSectionProps = Omit<
   columns?: 1 | 2
   href?: string
   label?: string
+  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target']
 }
 
 export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
@@ -21,6 +22,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
   title = '',
   columns = 1,
   description,
+  target,
   className,
   children,
   ...props
@@ -53,7 +55,11 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
           {description}
         </Typography>
       )}
-      <CallToActionButton href={href} className="mdx-cta-section__link">
+      <CallToActionButton
+        target={target}
+        href={href}
+        className="mdx-cta-section__link"
+      >
         {label}
       </CallToActionButton>
     </div>

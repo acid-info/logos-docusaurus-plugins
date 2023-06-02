@@ -1,16 +1,23 @@
-import { Button, ButtonProps, Typography } from '@acid-info/lsd-react'
+import {
+  Button,
+  ButtonProps,
+  Typography,
+  TypographyProps,
+} from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
 import './CallToActionButton.scss'
 
 export type CallToActionButtonProps = Omit<
-  React.HTMLAttributes<HTMLDivElement>,
+  React.AnchorHTMLAttributes<HTMLAnchorElement>,
   'title'
 > & {
   href?: string
   size?: ButtonProps['size']
   variant?: ButtonProps['variant']
 }
+
+const LinkElement = Typography as React.FC<TypographyProps & { component: 'a' }>
 
 export const CallToActionButton: React.FC<CallToActionButtonProps> = ({
   href,
@@ -21,16 +28,17 @@ export const CallToActionButton: React.FC<CallToActionButtonProps> = ({
   ...props
 }) => {
   return (
-    <Typography
+    <LinkElement
       className={clsx('mdx-cta-button', className)}
       variant="body1"
       component="a"
       href={href}
-      target="_blank"
+      target={'_blank'}
+      {...(props as any)}
     >
       <Button size={size} variant={variant}>
         {children}
       </Button>
-    </Typography>
+    </LinkElement>
   )
 }
