@@ -37,7 +37,7 @@ export const HeroInfo: React.FC<HeroInfoProps> = ({
       0,
       calcMaxOffsetY(),
     )
-    return initialMarginBottom ? initialMarginBottom - offsetY : 0
+    return initialMarginBottom ? Math.max(initialMarginBottom - offsetY, 0) : 0
   }
 
   useEffect(() => {
