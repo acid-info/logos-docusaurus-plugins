@@ -947,6 +947,8 @@ a[class^='sidebarLogo_'] {
     }
 
     .footer > div {
+      display: flex !important;
+      flex-direction: column !important;
       gap: 32px !important;
     }
 
