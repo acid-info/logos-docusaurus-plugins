@@ -55,13 +55,15 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
           {description}
         </Typography>
       )}
-      <CallToActionButton
-        target={target}
-        href={href}
-        className="mdx-cta-section__link"
-      >
-        {label}
-      </CallToActionButton>
+      {href && (
+        <CallToActionButton
+          target={target}
+          href={href}
+          className="mdx-cta-section__link"
+        >
+          {label}
+        </CallToActionButton>
+      )}
     </div>
   )
 }
