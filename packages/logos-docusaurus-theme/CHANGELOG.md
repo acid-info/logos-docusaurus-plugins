@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.12](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.11...v1.0.0-alpha.12) (2023-06-02)
+
+### Bug Fixes
+
+- fix cta sections with no link ([7bda975](https://github.com/acid-info/logos-docusaurus-plugins/commit/7bda97503bc71f7e158eb7f12eab4c3530087972))
+
 # [1.0.0-alpha.11](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.10...v1.0.0-alpha.11) (2023-06-02)
 
 ### Features
