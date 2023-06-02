@@ -3,20 +3,25 @@ import clsx from 'clsx'
 import React, { HTMLProps } from 'react'
 import styles from './styles.module.scss'
 
-type TProps = {
-  bottom: number
-}
+type TProps = {}
 
 export const ScrollToBottom = (
   props: TProps & HTMLProps<HTMLButtonElement>,
 ): JSX.Element => {
-  const { children, className, bottom, ...rest } = props
+  const { children, className, ...rest } = props
 
   const handleScrollToBottom = () => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth',
-    })
+    const article = document.querySelector('.main-wrapper article')
+    const secondElement = article?.children?.[1]
+
+    if (!secondElement)
+      return void window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth',
+      })
+    ;(secondElement as HTMLElement)?.scrollIntoView?.({ behavior: 'smooth' })
+
+    return
   }
 
   return (
@@ -24,7 +29,6 @@ export const ScrollToBottom = (
       onClick={handleScrollToBottom}
       size="small"
       className={clsx(styles.scrollToBottom, className)}
-      style={{ bottom: -(bottom - 16) }}
       {...(rest as any)}
     >
       <ArrowDownIcon color="primary" />
