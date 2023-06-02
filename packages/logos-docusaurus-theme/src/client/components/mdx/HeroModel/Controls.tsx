@@ -30,7 +30,7 @@ function calculateVector(
   target: number[],
 ): [number, number, number] {
   // Calculate the lerp factor based on the scroll position
-  const t = scrollY / scrollYMax
+  const t = Math.min(scrollY, scrollYMax) / scrollYMax
 
   const newVector = [0, 0, 0]
   for (let i = 0; i < 3; i++) {
@@ -58,11 +58,8 @@ export const Controls = ({
   const [lockOrbit, setLockOrbit] = React.useState(false)
 
   useFrame((state, delta) => {
-    const speed = enableRotateOnScroll
-      ? calcRotateSpeed(scrollY, rotateSpeed)
-      : rotateSpeed
-
-    ref.current.rotation.y += delta * (isMobile() ? 0.1 * speed : speed)
+    ref.current.rotation.y -=
+      delta * (isMobile() ? 0.1 * rotateSpeed : rotateSpeed)
   })
 
   useEffect(() => {

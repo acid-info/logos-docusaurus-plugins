@@ -4,6 +4,14 @@
   z-index: 100;
   position: absolute;
   background: rgb(var(--lsd-surface-primary)) !important;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+
+  &.hide {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 
   bottom: calc(
     var(--ifm-navbar-height) + var(--logos-hero-info-height) - 100vh + 16px

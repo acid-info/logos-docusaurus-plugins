@@ -22,7 +22,7 @@ export const HeroModel: React.FC<HeroModelProps> = (props) => {
   return (
     <div
       style={{
-        transform: `translateY(${offsetY}px)`,
+        // transform: `translateY(${-1*offsetY}px)`,
         position: 'absolute',
         top: 0,
         left: 0,
