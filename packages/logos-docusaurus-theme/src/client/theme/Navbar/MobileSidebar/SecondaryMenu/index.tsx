@@ -1,9 +1,9 @@
-import React from 'react'
+import { Typography } from '@acid-info/lsd-react'
 import { useThemeConfig } from '@docusaurus/theme-common'
 import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal'
 import Translate from '@docusaurus/Translate'
-import { Typography } from '@acid-info/lsd-react'
 import { IconArrowLeft } from '@logos-theme/components/Icon'
+import React from 'react'
 
 function SecondaryMenuBackButton(props) {
   return (
@@ -24,14 +24,10 @@ function SecondaryMenuBackButton(props) {
 // The secondary menu slides from the right and shows contextual information
 // such as the docs sidebar
 export default function NavbarMobileSidebarSecondaryMenu() {
-  const isPrimaryMenuEmpty = useThemeConfig().navbar.items.length === 0
   const secondaryMenu = useNavbarSecondaryMenu()
   return (
     <>
-      {/* edge-case: prevent returning to the primaryMenu when it's empty */}
-      {!isPrimaryMenuEmpty && (
-        <SecondaryMenuBackButton onClick={() => secondaryMenu.hide()} />
-      )}
+      <SecondaryMenuBackButton onClick={() => secondaryMenu.hide()} />
       {secondaryMenu.content}
     </>
   )
