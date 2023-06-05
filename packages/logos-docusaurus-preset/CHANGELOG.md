@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.18](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.17...v1.0.0-alpha.18) (2023-06-05)
+
+### Features
+
+- add support for searching across all docs instances ([b85c3f7](https://github.com/acid-info/logos-docusaurus-plugins/commit/b85c3f7711a7838c1eb6ea607e8e34ac36c231f7))
+
 # [1.0.0-alpha.17](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.16...v1.0.0-alpha.17) (2023-06-05)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
