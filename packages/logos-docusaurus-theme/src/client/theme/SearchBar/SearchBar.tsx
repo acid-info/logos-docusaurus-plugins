@@ -14,6 +14,7 @@ export const SearchBar: React.FC<{}> = ({}) => {
   const history = usePersistedHistory<SearchResultGroupItem>('search', {
     unique: true,
     equals: (a, b) => a.title === b.title && a.href === b.href,
+    maxItems: 10,
   })
   const search = useSearch()
   const ref = useRef<HTMLDivElement>(null)

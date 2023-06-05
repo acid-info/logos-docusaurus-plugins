@@ -1,21 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
-import { useProxiedGeneratedData } from './useProxiedGeneratedData'
-import { useVersionUrl } from './useVersionUrl'
+import { useSearchContextPath } from './useSearchContextPath'
 
 export const useSearch = () => {
-  const win = window as any
+  const { createSearchInstance } = window as any
 
-  const data = useProxiedGeneratedData()
-  const versionUrl = useVersionUrl()
+  const searchContextPath = useSearchContextPath()
 
   const [loaded, setLoaded] = useState(false)
   const search = useRef<any>(null)
 
   const init = async () => {
-    search.current = await win.createSearchInstance({
+    search.current = await createSearchInstance({
       resultsLimit: 50,
-      preferredVersionPath: versionUrl,
-      searchContextByPaths: data.searchContextByPaths,
+      preferredVersionPath: searchContextPath[0],
+      searchContextByPaths: searchContextPath[1],
     })
 
     await search.current.init()
@@ -27,7 +25,7 @@ export const useSearch = () => {
     setLoaded(false)
 
     init()
-  }, [versionUrl])
+  }, [searchContextPath[0], searchContextPath[1]])
 
   return {
     loaded,

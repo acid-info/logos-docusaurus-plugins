@@ -5,10 +5,12 @@ export const usePersistedHistory = <T = any>(
   options?: {
     equals?: (a: T, b: T) => boolean
     unique?: boolean
+    maxItems?: number
   },
 ) => {
   const unique = options?.unique ?? false
   const equals = options?.equals ?? ((a, b) => a === b)
+  const maxItems = options?.maxItems ?? null
 
   const [history, setHistory] = useLocalStorage<T[]>(
     'logos-docusaurus-theme-' + key,
@@ -17,10 +19,11 @@ export const usePersistedHistory = <T = any>(
 
   const add = (value: T) => {
     const arr = history ?? []
-    setHistory([
+    const newHistory = [
       value,
       ...(unique ? arr.filter((item) => !equals(item, value)) : arr),
-    ])
+    ]
+    setHistory(maxItems ? newHistory.slice(0, maxItems) : newHistory)
   }
 
   const remove = (rm: (item: T, index: number) => boolean) => {

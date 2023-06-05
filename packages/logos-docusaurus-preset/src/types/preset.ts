@@ -28,6 +28,10 @@ export type Contact = {
 
 export type ContactInfo = Contact[]
 
+export type LocalSearchConfig = {
+  singleIndex?: boolean
+}
+
 export type PresetConfig = {
   businessUnit: BusinessUnits
   contactInfo?: string
@@ -42,4 +46,5 @@ export type PresetConfig = {
       }
   customSiteConfig?: boolean
   docs?: Partial<DocPluginOptions>
+  localSearch?: LocalSearchConfig
 }

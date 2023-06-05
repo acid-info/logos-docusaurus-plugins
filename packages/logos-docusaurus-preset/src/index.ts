@@ -13,30 +13,32 @@ const makeSearchPluginConfig = (
   plugins: PluginConfig[],
   options: PluginOptions,
 ): PluginConfig[] => {
+  const singleIndex = options.localSearch?.singleIndex ?? true
+
   const docs = findDocInstances(plugins).map((plugin) =>
     validateDocPluginOptions(plugin![1]),
   )
 
-  return [
-    [
-      '@acid-info/logos-docusaurus-search-local',
-      {
-        hashed: true,
-        indexDocs: true,
-        indexBlog: false,
-        indexPages: true,
-        docsDir: docs.map((doc) => doc.path),
-        searchContextByPaths: docs.map(({ routeBasePath, path }) =>
-          routeBasePath === '/'
-            ? path
-            : routeBasePath.startsWith('/')
-            ? routeBasePath.slice(1)
-            : routeBasePath,
-        ),
-        docsRouteBasePath: docs.map((doc) => doc.routeBasePath),
-      } as Partial<SearchPluginOptions>,
-    ],
-  ]
+  const config = {
+    hashed: true,
+    indexDocs: true,
+    indexBlog: false,
+    indexPages: true,
+    docsDir: docs.map((doc) => doc.path),
+    docsRouteBasePath: docs.map((doc) => doc.routeBasePath),
+  } as Partial<SearchPluginOptions>
+
+  if (!singleIndex) {
+    config.searchContextByPaths = docs.map(({ routeBasePath, path }) =>
+      routeBasePath === '/'
+        ? path
+        : routeBasePath.startsWith('/')
+        ? routeBasePath.slice(1)
+        : routeBasePath,
+    )
+  }
+
+  return [['@acid-info/logos-docusaurus-search-local', config]]
 }
 
 export default function logosPreset(

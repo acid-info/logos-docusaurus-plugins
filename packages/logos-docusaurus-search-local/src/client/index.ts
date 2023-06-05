@@ -33,13 +33,10 @@ const findSearchContext = ({
   versionUrl: string
   searchContextByPaths: string | string[]
 }): string => {
-  const { pathname } = window.location
+  let pathname = window.location.pathname
+  pathname = pathname.endsWith('/') ? pathname : pathname + '/'
 
-  if (
-    searchContextByPaths === '' ||
-    !Array.isArray(searchContextByPaths) ||
-    !pathname.startsWith(versionUrl)
-  )
+  if (!Array.isArray(searchContextByPaths) || !pathname.startsWith(versionUrl))
     return ''
 
   const uri = pathname.substring(versionUrl.length)
