@@ -6,6 +6,7 @@ import {
 import React from 'react'
 import { useDocThemeOptions } from '../lib/useThemeOptions'
 import styles from './style.module.css'
+import { lightTheme, darkTheme } from '../lib/themes'
 
 const Content = ({ children }) => {
   const colorMode = useColorMode()
@@ -15,11 +16,7 @@ const Content = ({ children }) => {
 
   return (
     <ThemeProvider
-      theme={
-        colorMode.colorMode === 'dark'
-          ? defaultThemes.dark
-          : defaultThemes.light
-      }
+      theme={colorMode.colorMode === 'dark' ? darkTheme : lightTheme}
     >
       <div className={styles.root} data-hidden-doc-sidebar={hideDocSidebar}>
         {children}
