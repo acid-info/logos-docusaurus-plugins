@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.17](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.16...v1.0.0-alpha.17) (2023-06-05)
+
+### Bug Fixes
+
+- fix the initial displaying state of dropdown menu ([c6a627d](https://github.com/acid-info/logos-docusaurus-plugins/commit/c6a627dfb69c45869ca575e848bc10d0dc4026d7))
+
 # [1.0.0-alpha.16](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.15...v1.0.0-alpha.16) (2023-06-05)
 
 ### Bug Fixes
