@@ -19,6 +19,7 @@
 }
 
 .mdx-hero-description--large {
+  @include lsd.typography('h4');
 }
 
 .mdx-hero-description--medium {

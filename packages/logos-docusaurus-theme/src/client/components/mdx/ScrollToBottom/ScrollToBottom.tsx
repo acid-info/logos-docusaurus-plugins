@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import React, { HTMLProps } from 'react'
 import styles from './styles.module.scss'
 import { useScrollY } from '../../../lib/useScrollY'
+import { calcHeroInfoMb, isMobile } from '../../../lib/ui.utils'
 
 type TProps = {}
 
@@ -20,8 +21,12 @@ export const ScrollToBottom = (
         top: document.body.scrollHeight,
         behavior: 'smooth',
       })
-    ;(secondElement as HTMLElement)?.scrollIntoView?.({ behavior: 'smooth' })
 
+    if (isMobile()) {
+      window.scrollTo(0, secondElement.getBoundingClientRect().top - 200)
+    } else {
+      ;(secondElement as HTMLElement)?.scrollIntoView?.({ behavior: 'smooth' })
+    }
     return
   }
 

@@ -36,3 +36,7 @@ export const isMobile = () => {
   if (typeof window === 'undefined') return false
   return window.innerWidth < 997
 }
+
+export const calcHeroInfoMb = (sy) => {
+  return mapFloat(scrollY, 0, calcScrollThreshold(), 0, 100)
+}

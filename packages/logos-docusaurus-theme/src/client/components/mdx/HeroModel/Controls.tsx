@@ -1,11 +1,15 @@
 import { ROTATE_SPEED } from './HeroModel.configs'
-import { LookPresetItemValues, MovementProps } from '../../../types/ui.types'
+import { MovementProps } from '../../../types/ui.types'
 import React, { useEffect, useRef } from 'react'
 import { useScrollY } from '../../../lib/useScrollY'
 import { useFrame, useThree } from '@react-three/fiber'
-import { calcRotateSpeed } from './HeroModel.utils'
 import { OrbitControls } from '@react-three/drei'
-import { isMobile, isTouchDevice } from '../../../lib/ui.utils'
+import {
+  calcScrollThreshold,
+  isMobile,
+  isTouchDevice,
+  mapFloat,
+} from '../../../lib/ui.utils'
 
 const lerp = (a: number, b: number, t: number) => (1 - t) * a + t * b
 let targetPos: [number, number, number] = [0, 0, 0]
@@ -56,10 +60,12 @@ export const Controls = ({
   const { camera, size } = useThree()
   const controls = useRef<any>()
   const [lockOrbit, setLockOrbit] = React.useState(false)
+  const [scale, setScale] = React.useState(1)
+  const [posY, setPosY] = React.useState(0)
 
   useFrame((state, delta) => {
     ref.current.rotation.y -=
-      delta * (isMobile() ? 0.1 * rotateSpeed : rotateSpeed)
+      delta * (isMobile() ? 0.6 * rotateSpeed : rotateSpeed)
   })
 
   useEffect(() => {
@@ -91,18 +97,13 @@ export const Controls = ({
     }
   }, [])
 
-  // useEffect(() => {
-  //   if (!enableZoom) return
-  //   const [deltaX, deltaY, deltaZ] = calculateCameraPosition(scrollY)
-  //
-  //   // Add the deltas to the initial positions
-  //   const newPositionX = preset.cameraPos[0] + deltaX
-  //   const newPositionY = preset.cameraPos[1] + deltaY
-  //   const newPositionZ = preset.cameraPos[2] + deltaZ
-  //
-  //   camera.position.set(newPositionX, newPositionY, newPositionZ)
-  //   camera.updateProjectionMatrix()
-  // }, [scrollY, camera])
+  useEffect(() => {
+    if (isMobile()) {
+      setScale(mapFloat(scrollY, 0, calcScrollThreshold(), 1, 0.65))
+
+      setPosY(mapFloat(scrollY, 0, calcScrollThreshold(), 0, 0.35))
+    }
+  }, [scrollY])
 
   useEffect(() => {
     if (!enableZoom) return
@@ -135,7 +136,7 @@ export const Controls = ({
   }, [scrollY, camera])
 
   return (
-    <group ref={ref} {...props}>
+    <group ref={ref} {...props} scale={scale} position-y={posY}>
       {children}
       <OrbitControls
         ref={controls}

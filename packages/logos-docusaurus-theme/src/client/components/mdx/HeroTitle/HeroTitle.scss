@@ -9,8 +9,9 @@
 }
 
 .mdx-hero-title--large {
-  font-size: 5.0625rem !important;
-  line-height: 5rem !important;
+  @include lsd.typography('h1');
+  //font-size: 5.0625rem !important;
+  //line-height: 5rem !important;
 }
 
 .mdx-hero-title--medium {
@@ -31,7 +32,9 @@
   }
 
   .mdx-hero-title--large {
-    font-size: 1.875rem !important;
-    line-height: 2.1rem !important;
+    //font-size: 1.875rem !important;
+    //line-height: 2.1rem !important;
+    font-size: 2.175rem !important;
+    line-height: 2.475rem !important;
   }
 }
