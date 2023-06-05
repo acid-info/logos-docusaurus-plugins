@@ -78,6 +78,10 @@ const config = {
             label: 'Github',
             href: 'https://github.com/status-im',
           },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
         ],
       },
       footer: {

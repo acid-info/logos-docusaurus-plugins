@@ -1,14 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react'
-import clsx from 'clsx'
+import { ArrowDownIcon, Dropdown, Typography } from '@acid-info/lsd-react'
 import {
+  Collapsible,
   isRegexpStringMatch,
   useCollapsible,
-  Collapsible,
 } from '@docusaurus/theme-common'
 import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal'
-import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink'
 import NavbarItem from '@theme/NavbarItem'
-import { ArrowDownIcon } from '@acid-info/lsd-react'
+import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink'
+import clsx from 'clsx'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './styles.module.scss'
 
 function isItemActive(item, localPathname) {
@@ -36,7 +36,7 @@ function DropdownNavbarItemDesktop({
   ...props
 }) {
   const dropdownRef = useRef<HTMLDivElement>(null)
-  const [showDropdown, setShowDropdown] = useState(false)
+  const [showDropdown, setShowDropdown] = useState(true)
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -138,7 +138,7 @@ function DropdownNavbarItemMobile({
           toggleCollapsed()
         }}
       >
-        {props.children ?? props.label}
+        <Typography variant="body1">{props.children ?? props.label}</Typography>
       </NavbarNavLink>
       <Collapsible lazy as="ul" className="menu__list" collapsed={collapsed}>
         {items.map((childItemProps, i) => (
@@ -157,6 +157,7 @@ function DropdownNavbarItemMobile({
 }
 export default function DropdownNavbarItem({ mobile = false, ...props }) {
   const Comp = mobile ? DropdownNavbarItemMobile : DropdownNavbarItemDesktop
+
   //@ts-ignore
   return <Comp {...props} />
 }

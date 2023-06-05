@@ -486,6 +486,33 @@ small {
   display: none;
 }
 
+.dropdown__menu {
+  padding: 0;
+  border-radius: 0;
+  border: 1px solid rgb(var(--lsd-border-primary));
+  background: rgb(var(--lsd-surface-primary));
+  transition-duration: 0ms;
+  margin-right: -1px;
+  margin-top: 6px;
+}
+
+.dropdown__link {
+  background-color: transparent;
+  margin: 0;
+  border-radius: 0;
+  text-decoration: none;
+  padding: 5px 11px;
+
+  * {
+    text-decoration: inherit !important;
+  }
+}
+
+.dropdown__link:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .margin-left-8 {
   margin-left: 8px;
 }
