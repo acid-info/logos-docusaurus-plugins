@@ -606,6 +606,10 @@ a[class^='sidebarLogo_'] {
   padding-right: 0;
 }
 
+.menu__caret {
+  display: none;
+}
+
 @include utils.responsive('sm', 'down') {
   :root {
     --ifm-global-spacing: 0.5rem;
