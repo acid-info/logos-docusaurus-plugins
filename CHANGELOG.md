@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.25](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.24...v1.0.0-alpha.25) (2023-06-06)
+
+### Bug Fixes
+
+- fix VacResearch logo url ([5bc5593](https://github.com/acid-info/logos-docusaurus-plugins/commit/5bc5593a8055a5491e71e57b02fce3cbf92facdf))
+
 # [1.0.0-alpha.24](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.23...v1.0.0-alpha.24) (2023-06-06)
 
 ### Bug Fixes
