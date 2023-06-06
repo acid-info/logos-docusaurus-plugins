@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.29](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.28...v1.0.0-alpha.29) (2023-06-06)
+
+### Features
+
+- auto generated author page ([090813f](https://github.com/acid-info/logos-docusaurus-plugins/commit/090813fdeab8a8f08f863ce3da876ee488ae1970))
+
 # [1.0.0-alpha.28](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.27...v1.0.0-alpha.28) (2023-06-06)
 
 ### Bug Fixes
