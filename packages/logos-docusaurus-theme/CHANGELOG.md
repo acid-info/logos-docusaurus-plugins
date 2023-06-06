@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.22](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.21...v1.0.0-alpha.22) (2023-06-06)
+
+### Bug Fixes
+
+- adjust powered by component spacing ([808773c](https://github.com/acid-info/logos-docusaurus-plugins/commit/808773cf23efd856d271cd11fcf081c0b9ad260a))
+
 # [1.0.0-alpha.21](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.20...v1.0.0-alpha.21) (2023-06-06)
 
 ### Features
