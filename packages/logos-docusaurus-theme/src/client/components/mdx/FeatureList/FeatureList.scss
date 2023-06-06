@@ -32,8 +32,6 @@
   border-top: 1px solid rgb(var(--lsd-border-primary));
 
   &:nth-child(odd) {
-    padding-right: 0;
-
     .mdx-feature-list__feature-inner {
       border-right: 1px solid rgb(var(--lsd-border-primary));
     }
@@ -51,6 +49,21 @@
 .mdx-feature-list__extra {
   margin-top: 3.5rem;
   padding: 0 1rem;
+}
+
+@include utils.responsive('lg', 'up') {
+  .mdx-feature-list__feature {
+    &:nth-child(even) {
+      & > div {
+        padding-left: 1rem;
+      }
+    }
+
+    &:nth-child(odd) {
+      padding-right: 0;
+      padding-left: 0.5rem;
+    }
+  }
 }
 
 @include utils.responsive('lg', 'down') {
