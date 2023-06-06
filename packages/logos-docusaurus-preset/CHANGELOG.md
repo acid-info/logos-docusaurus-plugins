@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.23](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.22...v1.0.0-alpha.23) (2023-06-06)
+
+### Bug Fixes
+
+- fix Nomos website link in Logos collective footer ([66aa97f](https://github.com/acid-info/logos-docusaurus-plugins/commit/66aa97f2dbe5039818324fff340544d7de4b11a7))
+
 # [1.0.0-alpha.22](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.21...v1.0.0-alpha.22) (2023-06-06)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
