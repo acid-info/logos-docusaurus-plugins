@@ -6,7 +6,7 @@ export const vacResearchThemeConfig: typeof baseThemeConfig = {
     ...baseThemeConfig.navbar,
     logo: {
       alt: 'Vac Research',
-      src: 'theme/image/logo-black.svg',
+      src: 'theme/image/logo.svg',
       height: 26,
     },
     items: [],
