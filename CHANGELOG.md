@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.24](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.23...v1.0.0-alpha.24) (2023-06-06)
+
+### Bug Fixes
+
+- adjust spacing in FeatureList mdx component ([3c1cd1a](https://github.com/acid-info/logos-docusaurus-plugins/commit/3c1cd1a93f67593a2aaf4e67fcf91a2b7437957d))
+
+### Features
+
+- add "VacResearch" business unit ([74f4d66](https://github.com/acid-info/logos-docusaurus-plugins/commit/74f4d66de953cfd50d81628fd0d463d645749625))
+
 # [1.0.0-alpha.23](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.22...v1.0.0-alpha.23) (2023-06-06)
 
 ### Bug Fixes
