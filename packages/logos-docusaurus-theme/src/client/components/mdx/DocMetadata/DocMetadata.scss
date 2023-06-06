@@ -1,0 +1,25 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-doc-metadata {
+  display: flex;
+  flex-direction: row;
+  line-height: 0;
+
+  & > span:not(:last-child) {
+    &::after {
+      content: '•';
+      display: inline-block;
+      margin-inline: 0.75rem;
+    }
+  }
+}
+
+.markdown {
+  h1 + .mdx-doc-metadata,
+  header + .mdx-doc-metadata {
+    margin-top: calc(
+      -1 * var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading) + 1rem
+    );
+  }
+}

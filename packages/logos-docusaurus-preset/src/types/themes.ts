@@ -5,4 +5,4 @@ export type ThemeConfig = {
   footer?: Footer
 }
 
-export type { PluginOptions as DefaultThemeOptions } from '@acid-info/logos-docusaurus-theme'
+export type { ThemeOptions as DefaultThemeOptions } from '@acid-info/logos-docusaurus-theme'

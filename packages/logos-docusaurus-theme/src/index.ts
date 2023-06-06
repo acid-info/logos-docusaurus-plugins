@@ -1,14 +1,11 @@
-import type { PluginOptions as DefaultPluginOptions } from '@docusaurus/theme-classic'
 import type { LoadContext, Plugin } from '@docusaurus/types'
 import _ from 'lodash'
 import path from 'path'
 import type { ThemeOptions } from './client/types/theme.types'
 
-export type PluginOptions = DefaultPluginOptions & ThemeOptions
-
 export default function logosTheme(
   context: LoadContext,
-  options: PluginOptions,
+  options: ThemeOptions,
 ): Plugin<undefined> {
   const clientModules: string[] = [
     path.resolve(__dirname, './client/css/custom.scss'),
@@ -47,3 +44,6 @@ export default function logosTheme(
     getClientModules: () => clientModules,
   }
 }
+
+export type { ThemeOptions }
+export { validateOptions } from './server/utils/validateOptions'

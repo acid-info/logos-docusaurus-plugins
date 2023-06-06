@@ -22,13 +22,6 @@
     },
     "plugins": [{ "transform": "typescript-transform-paths" }]
   },
-  "include": [
-    "src/client",
-    "src/*.d.ts",
-    "src/theme.ts",
-    "src/client/theme/NavbarItem",
-    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx",
-    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx"
-  ],
+  "include": ["src/client", "src/server", "src/*.d.ts", "src/theme.ts"],
   "exclude": ["src/index.ts", "**/__tests__/**"]
 }

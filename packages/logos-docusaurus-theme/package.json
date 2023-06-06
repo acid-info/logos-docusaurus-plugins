@@ -43,6 +43,7 @@
     "clsx": "^1.2.1",
     "copy-text-to-clipboard": "^3.0.1",
     "copy-to-clipboard": "^3.3.2",
+    "date-fns": "^2.30.0",
     "docusaurus-plugin-sass": "^0.2.3",
     "dotenv": "^16.0.3",
     "lodash": "^4.17.21",
