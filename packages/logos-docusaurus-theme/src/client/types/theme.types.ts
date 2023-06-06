@@ -8,8 +8,13 @@ export type Author = {
   website?: string
 }
 
+export type AuthorPageConfig = {
+  sidebar?: string
+}
+
 export type DocContent = {
   authors?: Author[]
+  authorPage?: AuthorPageConfig | boolean
 }
 
 export type DocSidebarConfig = {

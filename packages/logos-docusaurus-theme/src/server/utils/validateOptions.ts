@@ -1,6 +1,7 @@
 import { Joi } from '@docusaurus/utils-validation'
 import {
   Author,
+  AuthorPageConfig,
   DocConfig,
   DocContent,
   DocSidebarConfig,
@@ -16,6 +17,12 @@ const schema = Joi.object<ThemeOptions>({
           hide: Joi.bool().default(true),
         }).default({}),
         content: Joi.object<DocContent>({
+          authorPage: Joi.alternatives(
+            Joi.boolean(),
+            Joi.object<AuthorPageConfig>({
+              sidebar: Joi.string().optional(),
+            }),
+          ).default({}),
           authors: Joi.array()
             .items(
               Joi.object<Author>({

@@ -1,0 +1,50 @@
+@use '../../css/utils';
+
+.root {
+  max-width: 80%;
+}
+
+.links {
+  padding-top: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+
+  & > a:not(:last-child) {
+    &::after {
+      content: '•';
+      display: inline-block;
+      margin-inline: 0.75rem;
+    }
+  }
+}
+
+.docs {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.date {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.title {
+  display: block;
+  text-decoration: underline;
+}
+
+.description {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+@include utils.responsive('lg', 'down') {
+  .root {
+    max-width: unset;
+  }
+}

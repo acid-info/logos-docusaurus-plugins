@@ -2,11 +2,12 @@ import type { LoadContext, Plugin } from '@docusaurus/types'
 import _ from 'lodash'
 import path from 'path'
 import type { ThemeOptions } from './client/types/theme.types'
+import { createAuthorRoutes } from './server/utils/author.utils'
 
 export default function logosTheme(
   context: LoadContext,
   options: ThemeOptions,
-): Plugin<undefined> {
+): Plugin<any> {
   const clientModules: string[] = [
     path.resolve(__dirname, './client/css/custom.scss'),
   ]
@@ -42,8 +43,12 @@ export default function logosTheme(
       path.resolve(__dirname, '../src/client/theme'),
 
     getClientModules: () => clientModules,
+
+    async contentLoaded(args) {
+      await createAuthorRoutes(context, args)
+    },
   }
 }
 
-export type { ThemeOptions }
 export { validateOptions } from './server/utils/validateOptions'
+export type { ThemeOptions }

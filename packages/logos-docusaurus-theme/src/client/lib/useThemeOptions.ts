@@ -13,5 +13,7 @@ export const useThemeOptions = (): ThemeOptions => {
 export const useDocThemeOptions = (): DocConfig => {
   const activePlugin = useActivePlugin()
   const themeOptions = useThemeOptions()
-  return activePlugin ? themeOptions?.docs?.[activePlugin?.pluginId] ?? {} : {}
+  return (
+    activePlugin ? themeOptions?.docs?.[activePlugin?.pluginId] ?? {} : {}
+  ) as DocConfig
 }
