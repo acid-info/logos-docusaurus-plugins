@@ -49,7 +49,7 @@ export const baseThemeConfig: ThemeConfig = {
             label: 'Codex',
           },
           {
-            href: '#',
+            href: 'https://nomos.tech',
             label: 'Nomos',
           },
         ],
