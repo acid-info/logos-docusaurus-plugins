@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.28](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.27...v1.0.0-alpha.28) (2023-06-06)
+
+### Bug Fixes
+
+- adjust DocMetadata mdx component spacing ([e0e2af9](https://github.com/acid-info/logos-docusaurus-plugins/commit/e0e2af9c0275b3ee231f4937726065a7013eda42))
+
 # [1.0.0-alpha.27](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.26...v1.0.0-alpha.27) (2023-06-06)
 
 ### Features
