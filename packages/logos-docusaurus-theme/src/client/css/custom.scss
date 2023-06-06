@@ -178,7 +178,7 @@
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
   --ifm-menu-link-sublist-icon-filter: none;
-  --ifm-navbar-height: 80px;
+  --ifm-navbar-height: 64px;
   --ifm-navbar-item-padding-horizontal: 0.75rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
   --ifm-navbar-padding-horizontal: var(--content-padding);
@@ -301,7 +301,7 @@ a code {
   --ifm-navbar-item-padding-vertical: 8px;
   --ifm-navbar-item-padding-horizontal: 12px;
 
-  --logos-navbar-height: 64px;
+  --logos-navbar-height: var(--ifm-navbar-height);
   --logos-hero-info-height: 420px;
   --logos-hero-info-padding-top: 32px;
   --logos-hero-info-padding-bottom: 32px;
@@ -398,7 +398,7 @@ small {
 }
 
 .navbar {
-  height: 64px;
+  height: var(--ifm-navbar-height);
   box-shadow: none;
 }
 
@@ -697,7 +697,7 @@ a[class^='sidebarLogo_'] {
   }
 
   nav.menu {
-    padding-top: 0;
+    padding-top: 16px;
   }
 }
 
