@@ -12,6 +12,7 @@ export enum BusinessUnits {
   Waku = 'Waku',
   Nimbus = 'Nimbus',
   Nomos = 'Nomos',
+  VacResearch = 'VacResearch',
 }
 
 export type Contact = {
