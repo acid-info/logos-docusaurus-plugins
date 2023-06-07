@@ -953,8 +953,11 @@ a[class^='sidebarLogo_'] {
   }
 
   .navbar-sidebar:not(:has(.navbar-sidebar__items--show-secondary)) {
+    .menu {
+      padding-inline: 0;
+    }
+
     .navbar-sidebar__items {
-      height: 180px;
     }
 
     .navbar-sidebar__item {
@@ -965,6 +968,7 @@ a[class^='sidebarLogo_'] {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      padding-inline: var(--content-padding);
     }
 
     .menu__link {
@@ -972,8 +976,14 @@ a[class^='sidebarLogo_'] {
       border-left: none;
 
       > div {
-        font-size: var(--lsd-body1-fontSize) !important;
+        @include lsd.typography('subtitle2');
+        text-decoration: none;
       }
+    }
+
+    .footer {
+      margin-top: 3rem;
+      padding: 0 !important;
     }
 
     .footer > div {
