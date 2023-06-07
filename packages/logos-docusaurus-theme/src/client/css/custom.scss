@@ -961,14 +961,13 @@ a[class^='sidebarLogo_'] {
     }
 
     .navbar-sidebar__item {
-      padding-block: var(--content-padding);
     }
 
     .menu__list {
       display: flex;
       flex-direction: column;
       gap: 8px;
-      padding-inline: var(--content-padding);
+      padding: var(--content-padding);
     }
 
     .menu__link {
