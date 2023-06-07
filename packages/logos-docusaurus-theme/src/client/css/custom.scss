@@ -941,18 +941,17 @@ a[class^='sidebarLogo_'] {
     padding-bottom: 0px !important;
   }
 
-  .navbar-sidebar:has(.navbar-sidebar__items--show-secondary)
+  .navbar-sidebar:not(.navbar-sidebar--show-secondary) {
     .navbar-sidebar__brand {
-    button:first-of-type {
-      display: none;
+      button:first-of-type {
+        display: none;
+      }
+
+      button.lsd-icon-button {
+        margin-left: auto;
+      }
     }
 
-    button.lsd-icon-button {
-      margin-left: auto;
-    }
-  }
-
-  .navbar-sidebar:not(:has(.navbar-sidebar__items--show-secondary)) {
     .menu {
       padding-inline: 0;
     }
