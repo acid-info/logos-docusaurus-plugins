@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.31](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.30...v1.0.0-alpha.31) (2023-06-07)
+
+### Bug Fixes
+
+- mobile sidebar spacing ([12c8c37](https://github.com/acid-info/logos-docusaurus-plugins/commit/12c8c3785aefe08f51441421ec25e26b0bc9bb63))
+
 # [1.0.0-alpha.30](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.29...v1.0.0-alpha.30) (2023-06-07)
 
 ### Bug Fixes
