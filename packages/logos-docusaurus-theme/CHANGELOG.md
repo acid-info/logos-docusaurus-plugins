@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.32](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.31...v1.0.0-alpha.32) (2023-06-07)
+
+### Bug Fixes
+
+- remove css :has in mobile sidebar to support all browsers ([2d5179c](https://github.com/acid-info/logos-docusaurus-plugins/commit/2d5179c261d972e06eda937314c30c6cc66ce4d5))
+
 # [1.0.0-alpha.31](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.30...v1.0.0-alpha.31) (2023-06-07)
 
 ### Bug Fixes
