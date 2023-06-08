@@ -23,6 +23,7 @@ import SearchSvg from '../../static/icons/search.svg'
 import StatusSvg from '../../static/icons/status.svg'
 import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
+import EditSvg from '../../static/icons/edit.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -169,5 +170,11 @@ export const IconHistory = (props: TIconProps): JSX.Element => (
 export const IconClose = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <CloseSvg />
+  </Icon>
+)
+
+export const IconEdit = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <EditSvg />
   </Icon>
 )
