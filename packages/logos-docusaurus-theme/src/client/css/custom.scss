@@ -86,12 +86,12 @@
   --ifm-font-weight-bold: 600;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
 
-  --ifm-h1-font-size: 4rem;
-  --ifm-h2-font-size: 2rem;
-  --ifm-h3-font-size: 1.25rem;
-  --ifm-h4-font-size: 1.15rem;
-  --ifm-h5-font-size: 1rem;
-  --ifm-h6-font-size: 0.85rem;
+  --ifm-h1-font-size: var(--lsd-h1-fontSize);
+  --ifm-h2-font-size: var(--lsd-h2-fontSize);
+  --ifm-h3-font-size: var(--lsd-h3-fontSize);
+  --ifm-h4-font-size: var(--lsd-h4-fontSize);
+  --ifm-h5-font-size: var(--lsd-h5-fontSize);
+  --ifm-h6-font-size: var(--lsd-h6-fontSize);
 
   /* Spacing. */
   --ifm-global-spacing: 0.67rem;
@@ -283,7 +283,24 @@ svg * {
   color: rgb(var(--lsd-text-secondary)) !important;
 }
 
+h1 {
+  @include lsd.typography('h1');
+}
+
+h2 {
+  @include lsd.typography('h2');
+}
+
+h3 {
+  @include lsd.typography('h3');
+}
+
+h4 {
+  @include lsd.typography('h4');
+}
+
 code {
+  @include lsd.typography('body1');
   color: rgb(var(--lsd-text-primary));
   border-radius: 0;
   background: rgba(255, 255, 255, 0.15);
@@ -374,6 +391,16 @@ small {
   align-items: center;
 }
 
+.theme-edit-this-page {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.external-link {
+  @include lsd.typography('body2');
+}
+
 .dropdown__link:hover {
   color: rgb(var(--lsd-text-secondary));
 }
@@ -449,6 +476,10 @@ small {
 
 .menu__list-item-collapsible > a {
   border: none !important;
+
+  span {
+    color: rgb(var(--lsd-text-primary), 0.6);
+  }
 }
 
 .table-of-contents__link--active code {
@@ -777,6 +808,7 @@ a[class^='sidebarLogo_'] {
   text-align: unset;
   grid-column: 1 / 12;
   grid-row: 1 / 1;
+  @include lsd.typography('body2');
 
   & > div:first-of-type {
     display: none;
