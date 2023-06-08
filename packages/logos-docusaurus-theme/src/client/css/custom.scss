@@ -918,7 +918,26 @@ a[class^='sidebarLogo_'] {
   }
 }
 
+@include utils.responsive('xl', 'down') {
+  header > h1:first-child {
+    display: none;
+  }
+
+  .theme-doc-markdown > h1:first-child {
+    display: none;
+  }
+
+  div[class^='tocCollapsible_'] {
+    margin-top: 24px !important;
+    margin-bottom: 40px !important;
+  }
+}
+
 @include utils.responsive('lg', 'down') {
+  div[class^='tocCollapsible_'] {
+    margin-bottom: 32px !important;
+  }
+
   main > .container {
     padding-bottom: 84px !important;
   }
@@ -986,12 +1005,6 @@ a[class^='sidebarLogo_'] {
 
     .menu {
       padding-inline: 0;
-    }
-
-    .navbar-sidebar__items {
-    }
-
-    .navbar-sidebar__item {
     }
 
     .menu__list {
