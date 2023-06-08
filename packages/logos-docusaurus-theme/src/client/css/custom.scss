@@ -974,24 +974,8 @@ a[class^='sidebarLogo_'] {
   }
 
   .navbar-sidebar:not(.navbar-sidebar--show-secondary) {
-    .navbar-sidebar__brand {
-      button:first-of-type {
-        display: none;
-      }
-
-      button.lsd-icon-button {
-        margin-left: auto;
-      }
-    }
-
     .menu {
       padding-inline: 0;
-    }
-
-    .navbar-sidebar__items {
-    }
-
-    .navbar-sidebar__item {
     }
 
     .menu__list {
