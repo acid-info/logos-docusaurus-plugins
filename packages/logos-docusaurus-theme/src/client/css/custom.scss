@@ -228,6 +228,9 @@
   --ifm-hero-background-color: #f8f8fa;
   --ifm-hero-text-color: var(--ifm-color-black);
 
+  --ifm-table-background: transparent !important;
+  --ifm-table-stripe-background: transparent !important;
+
   @include utils.responsive('xl', 'down') {
     --container-max-width: 912px;
   }
@@ -613,6 +616,28 @@ a[class^='sidebarLogo_'] {
 
   img {
     height: 48px;
+  }
+}
+
+table {
+  @include lsd.typography('body2');
+  thead > tr {
+    border: 1px solid rgb(var(--lsd-border-primary));
+  }
+
+  th {
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    border: 1px solid rgb(var(--lsd-border-primary));
+    text-align: left;
+  }
+
+  td {
+    border: 1px solid rgb(var(--lsd-border-primary));
+    strong {
+      text-transform: uppercase;
+      font-weight: 400 !important;
+    }
   }
 }
 
