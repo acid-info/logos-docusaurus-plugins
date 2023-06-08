@@ -616,6 +616,26 @@ a[class^='sidebarLogo_'] {
   }
 }
 
+.theme-doc-footer {
+  margin-bottom: 96px;
+}
+
+.theme-doc-footer-edit-meta-row {
+  div[class*='lastUpdated_'] {
+    @include lsd.typography('body2');
+    font-style: normal;
+    opacity: 0.7;
+
+    small {
+      display: none;
+    }
+
+    b {
+      font-weight: 400 !important;
+    }
+  }
+}
+
 .navbar-sidebar__item {
   padding-inline: var(--content-padding);
   padding-block: 0;
