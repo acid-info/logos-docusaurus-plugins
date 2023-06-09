@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.33](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.32...v1.0.0-alpha.33) (2023-06-09)
+
+### Bug Fixes
+
+- render mobile toc after page title ([88cc89f](https://github.com/acid-info/logos-docusaurus-plugins/commit/88cc89fceea0cd4401750fe49238c40108248da6))
+- update search result icons ([bee5df3](https://github.com/acid-info/logos-docusaurus-plugins/commit/bee5df33fbb664d48f3d65dfa14e56694031041a))
+
 # [1.0.0-alpha.32](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.31...v1.0.0-alpha.32) (2023-06-07)
 
 ### Bug Fixes
