@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.34](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.33...v1.0.0-alpha.34) (2023-06-09)
+
+### Bug Fixes
+
+- set text-decoration of TOCCollapsible links to none ([7922783](https://github.com/acid-info/logos-docusaurus-plugins/commit/792278395192e3dcef7c9157a313e2b48025b02b))
+
 # [1.0.0-alpha.33](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.32...v1.0.0-alpha.33) (2023-06-09)
 
 ### Bug Fixes
