@@ -4,6 +4,7 @@ import { ThemeClassNames } from '@docusaurus/theme-common'
 import { useDoc } from '@docusaurus/theme-common/internal'
 import Heading from '@theme/Heading'
 import MDXContent from '@theme/MDXContent'
+import MDXHeading from '@theme/MDXComponents/Heading'
 /**
  Title can be declared inside md content or declared through
  front matter and added manually. To make both cases consistent,
@@ -29,7 +30,7 @@ export default function DocItemContent({ children }) {
     <div className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
       {syntheticTitle && (
         <header>
-          <Heading as="h1">{syntheticTitle}</Heading>
+          <MDXHeading as="h1">{syntheticTitle}</MDXHeading>
         </header>
       )}
       <MDXContent>{children}</MDXContent>

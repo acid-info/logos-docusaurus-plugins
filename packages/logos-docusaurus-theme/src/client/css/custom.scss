@@ -1,5 +1,5 @@
-@use './utils';
-@use './lsd';
+@use "./utils";
+@use "./lsd";
 
 /**
  * Any CSS included here will be global. The classic template
@@ -71,8 +71,8 @@
   /* Typography. */
   --ifm-font-family-base: var(--lsd-typography-generic-font-family);
   --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
-  --lgs-font-family-secondary: Georgia, 'Times New Roman', serif;
+    "Liberation Mono", "Courier New", monospace;
+  --lgs-font-family-secondary: Georgia, "Times New Roman", serif;
 
   --ifm-font-size-base: 100%;
   --ifm-line-height-base: 1.625;
@@ -231,20 +231,20 @@
   --ifm-table-background: transparent !important;
   --ifm-table-stripe-background: transparent !important;
 
-  @include utils.responsive('xl', 'down') {
+  @include utils.responsive("xl", "down") {
     --container-max-width: 912px;
   }
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-scheme: dark;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   --ifm-color-scheme: light;
 }
 
-@include utils.responsive('lg', 'down') {
+@include utils.responsive("lg", "down") {
   :root {
     --ifm-background-color: rgb(var(--lsd-surface-primary));
   }
@@ -287,23 +287,23 @@ svg * {
 }
 
 h1 {
-  @include lsd.typography('h1');
+  @include lsd.typography("h1");
 }
 
 h2 {
-  @include lsd.typography('h2');
+  @include lsd.typography("h2");
 }
 
 h3 {
-  @include lsd.typography('h3');
+  @include lsd.typography("h3");
 }
 
 h4 {
-  @include lsd.typography('h4');
+  @include lsd.typography("h4");
 }
 
 code {
-  @include lsd.typography('body1');
+  @include lsd.typography("body1");
   color: rgb(var(--lsd-text-primary));
   border-radius: 0;
   background: rgba(255, 255, 255, 0.15);
@@ -401,7 +401,7 @@ small {
 }
 
 .external-link {
-  @include lsd.typography('body2');
+  @include lsd.typography("body2");
 }
 
 .dropdown__link:hover {
@@ -417,7 +417,7 @@ small {
 }
 
 .breadcrumbs__item:not(:last-child):after {
-  content: '/';
+  content: "/";
   opacity: 1;
   background: none;
 }
@@ -459,9 +459,9 @@ small {
   text-decoration-color: #fff !important;
 }
 
-.navbar__left-items > a:not(:last-child)[href^='/'] {
+.navbar__left-items > a:not(:last-child)[href^="/"] {
   &:after {
-    content: '•';
+    content: "•";
     margin-left: 16px;
     text-decoration: none;
     display: inline-block;
@@ -469,7 +469,7 @@ small {
 }
 
 .menu__list-item .menu__link {
-  @include lsd.typography('body2');
+  @include lsd.typography("body2");
 }
 
 .menu__link--active {
@@ -611,7 +611,7 @@ small {
   align-items: center;
 }
 
-a[class^='sidebarLogo_'] {
+a[class^="sidebarLogo_"] {
   margin: 0;
 
   img {
@@ -620,7 +620,7 @@ a[class^='sidebarLogo_'] {
 }
 
 table {
-  @include lsd.typography('body2');
+  @include lsd.typography("body2");
   thead > tr {
     border: 1px solid rgb(var(--lsd-border-primary));
   }
@@ -636,6 +636,26 @@ table {
     border: 1px solid rgb(var(--lsd-border-primary));
     strong {
       text-transform: uppercase;
+      font-weight: 400 !important;
+    }
+  }
+}
+
+.theme-doc-footer {
+  margin-bottom: 96px;
+}
+
+.theme-doc-footer-edit-meta-row {
+  div[class*="lastUpdated_"] {
+    @include lsd.typography("body2");
+    font-style: normal;
+    opacity: 0.7;
+
+    small {
+      display: none;
+    }
+
+    b {
       font-weight: 400 !important;
     }
   }
@@ -666,7 +686,7 @@ table {
   display: none;
 }
 
-@include utils.responsive('sm', 'down') {
+@include utils.responsive("sm", "down") {
   :root {
     --ifm-global-spacing: 0.5rem;
     --ifm-spacing-vertical: var(--ifm-global-spacing);
@@ -715,7 +735,7 @@ table {
   }
 }
 
-@include utils.responsive('lg', 'up') {
+@include utils.responsive("lg", "up") {
   .main-wrapper {
     main > .container {
       padding-bottom: 200px !important;
@@ -761,7 +781,7 @@ table {
   }
 }
 
-@include utils.responsive('xl', 'up') {
+@include utils.responsive("xl", "up") {
   .main-wrapper {
     & > div {
       display: grid;
@@ -833,7 +853,7 @@ table {
   text-align: unset;
   grid-column: 1 / 12;
   grid-row: 1 / 1;
-  @include lsd.typography('body2');
+  @include lsd.typography("body2");
 
   & > div:first-of-type {
     display: none;
@@ -841,7 +861,7 @@ table {
 }
 
 .footer__title {
-  @include lsd.typography('label1');
+  @include lsd.typography("label1");
   margin-bottom: 4px;
   font-weight: var(--ifm-font-weight-normal);
 }
@@ -884,7 +904,7 @@ table {
 
   &,
   a {
-    @include lsd.typography('label1');
+    @include lsd.typography("label1");
   }
 
   a {
@@ -893,7 +913,7 @@ table {
 
   &:not(:last-child) {
     &::after {
-      content: '•';
+      content: "•";
       margin-left: 8px;
       text-decoration: none;
       display: inline-block;
@@ -902,7 +922,7 @@ table {
 }
 
 .footer__copyright {
-  @include lsd.typography('body2');
+  @include lsd.typography("body2");
 }
 
 .footer__logo {
@@ -916,7 +936,7 @@ table {
   flex-direction: row;
 }
 
-@include utils.responsive('xl', 'up') {
+@include utils.responsive("xl", "up") {
   .navbar__inner {
     display: grid;
     gap: 16px;
@@ -943,7 +963,7 @@ table {
   }
 }
 
-@include utils.responsive('lg', 'down') {
+@include utils.responsive("lg", "down") {
   main > .container {
     padding-bottom: 84px !important;
   }
@@ -1031,7 +1051,7 @@ table {
       border-left: none;
 
       > div {
-        @include lsd.typography('subtitle2');
+        @include lsd.typography("subtitle2");
         text-decoration: none;
       }
     }
@@ -1092,7 +1112,7 @@ table {
   }
 }
 
-[data-hidden-doc-sidebar='true'] {
+[data-hidden-doc-sidebar="true"] {
   .theme-doc-sidebar-container {
     display: none;
   }
