@@ -228,6 +228,10 @@
   --ifm-hero-background-color: #f8f8fa;
   --ifm-hero-text-color: var(--ifm-color-black);
 
+  --desktop-footer-gap: 200px;
+  --mobile-footer-gap: 144px;
+  --doc-grid-gap: 16px;
+  
   --ifm-table-background: transparent !important;
   --ifm-table-stripe-background: transparent !important;
 
@@ -262,6 +266,10 @@ html,
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: calc(100vh - var(--ifm-navbar-height) - var(--content-padding));
 }
 
 svg * {
@@ -750,8 +758,10 @@ table {
 
 @include utils.responsive('lg', 'up') {
   .main-wrapper {
-    main > .container {
-      padding-bottom: 200px !important;
+    .container {
+      padding-bottom: calc(
+        var(--desktop-footer-gap) - var(--ifm-footer-padding-vertical)
+      ) !important;
     }
 
     & > div {
@@ -816,6 +826,17 @@ table {
 
   .theme-doc-toc-desktop {
     top: calc(var(--ifm-navbar-height)) !important;
+  }
+}
+
+@include utils.responsive('xl', 'down') {
+  .main-wrapper {
+    main > .container {
+      padding-bottom: calc(
+        var(--desktop-footer-gap) - var(--ifm-footer-padding-vertical) -
+          var(--doc-grid-gap)
+      ) !important;
+    }
   }
 }
 
@@ -977,8 +998,13 @@ table {
 }
 
 @include utils.responsive('lg', 'down') {
-  main > .container {
-    padding-bottom: 84px !important;
+  .main-wrapper {
+    main > .container {
+      padding-bottom: calc(
+        var(--mobile-footer-gap) - var(--ifm-footer-padding-vertical) -
+          var(--doc-grid-gap)
+      ) !important;
+    }
   }
 
   .grid {

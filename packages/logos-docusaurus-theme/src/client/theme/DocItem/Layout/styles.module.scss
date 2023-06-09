@@ -39,7 +39,7 @@
   .docItemGrid {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    gap: 16px;
+    gap: var(--doc-grid-gap);
   }
 
   .docItemCol {
@@ -51,7 +51,7 @@
   .docItemGrid {
     display: grid;
     grid-template-columns: repeat(19, 1fr);
-    gap: 16px;
+    gap: var(--doc-grid-gap);
   }
 
   .docItemCol {
