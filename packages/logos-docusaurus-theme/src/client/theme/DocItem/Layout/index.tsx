@@ -1,17 +1,19 @@
-import React from 'react'
-import clsx from 'clsx'
 import { useWindowSize } from '@docusaurus/theme-common'
 import { useDoc } from '@docusaurus/theme-common/internal'
-import DocItemPaginator from '@theme/DocItem/Paginator'
-import DocVersionBanner from '@theme/DocVersionBanner'
-import DocVersionBadge from '@theme/DocVersionBadge'
-import DocItemFooter from '@theme/DocItem/Footer'
-import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile'
-import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop'
-import DocItemContent from '@theme/DocItem/Content'
 import DocBreadcrumbs from '@theme/DocBreadcrumbs'
-import styles from './styles.module.scss'
+import DocItemContent from '@theme/DocItem/Content'
+import DocItemFooter from '@theme/DocItem/Footer'
+import DocItemPaginator from '@theme/DocItem/Paginator'
+import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop'
+import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile'
+import DocVersionBadge from '@theme/DocVersionBadge'
+import DocVersionBanner from '@theme/DocVersionBanner'
+import { Props as HeadingProps } from '@theme/Heading'
+import clsx from 'clsx'
+import React from 'react'
 import { useMedia } from 'react-use'
+import { MDXEnhancementContext } from '../../../containers/MDXEnhacement/MDXEnhancement.context'
+import styles from './styles.module.scss'
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -44,14 +46,26 @@ export default function DocItemLayout({ children }) {
 
   return (
     <div className={clsx('row', styles.docItemGrid)}>
-      <div className={clsx(!docTOC.hidden && styles.docItemCol)}>
+      <div className={clsx(styles.docItemCol)}>
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
           <article>
             <DocBreadcrumbs />
             <DocVersionBadge />
-            {docTOC.mobile}
-            <DocItemContent>{children}</DocItemContent>
+            <MDXEnhancementContext.Provider
+              value={{
+                items: [
+                  {
+                    component: 'heading',
+                    position: 'after',
+                    render: (props: HeadingProps) =>
+                      props.as === 'h1' && docTOC.mobile,
+                  },
+                ],
+              }}
+            >
+              <DocItemContent>{children}</DocItemContent>
+            </MDXEnhancementContext.Provider>
             <DocItemFooter />
           </article>
           <DocItemPaginator />

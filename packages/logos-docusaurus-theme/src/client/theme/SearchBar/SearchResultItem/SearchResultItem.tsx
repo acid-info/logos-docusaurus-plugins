@@ -9,7 +9,7 @@ import styles from './SearchResultItem.module.scss'
 
 const icons: Record<SearchDocumentType, React.ReactElement> = {
   [SearchDocumentType.Title]: (
-    <DocumentIcon className={clsx(styles.icon, styles.l1, styles.stroke)} />
+    <DocumentIcon className={clsx(styles.icon, styles.l1, styles.fill)} />
   ),
   [SearchDocumentType.Heading]: (
     <BlockIcon className={clsx(styles.icon, styles.l2, styles.fill)} />
