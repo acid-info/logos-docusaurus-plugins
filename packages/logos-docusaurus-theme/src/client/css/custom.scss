@@ -472,6 +472,19 @@ small {
   @include lsd.typography('body2');
 }
 
+.menu__link--sublist-caret:after {
+  content: url(/icons/chevron-up.svg);
+  background: none;
+  filter: unset;
+  min-width: unset;
+  width: unset;
+  height: unset;
+}
+
+.menu__list-item--collapsed > .menu__link--sublist-caret:after {
+  transform: rotateZ(0deg) !important;
+}
+
 .menu__link--active {
   border-left: 1px solid rgb(var(--lsd-border-primary));
   border-radius: 0;
@@ -1019,24 +1032,8 @@ table {
   }
 
   .navbar-sidebar:not(.navbar-sidebar--show-secondary) {
-    .navbar-sidebar__brand {
-      button:first-of-type {
-        display: none;
-      }
-
-      button.lsd-icon-button {
-        margin-left: auto;
-      }
-    }
-
     .menu {
       padding-inline: 0;
-    }
-
-    .navbar-sidebar__items {
-    }
-
-    .navbar-sidebar__item {
     }
 
     .menu__list {
@@ -1073,10 +1070,15 @@ table {
 
     .footer .container.container-fluid {
       margin-bottom: 16px !important;
+      padding-inline: var(--content-padding);
 
       > .footer__links {
         gap: 0 !important;
       }
+    }
+
+    .footer > div[class*='secondRow'] {
+      margin: var(--content-padding);
     }
 
     .footer .footer__links {
