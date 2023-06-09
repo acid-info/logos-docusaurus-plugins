@@ -18,6 +18,7 @@
 
 .tocCollapsibleContent a {
   display: block;
+  text-decoration: var(--ifm-link-text-decoration);
 }
 
 .tocCollapsibleExpanded {
