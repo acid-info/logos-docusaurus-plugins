@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.40](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.39...v1.0.0-alpha.40) (2023-06-12)
+
+### Bug Fixes
+
+- fix Acid.info favicon ([05ecab8](https://github.com/acid-info/logos-docusaurus-plugins/commit/05ecab874c1dfbfb3c48a49875afe2768d3fa5f6))
+
 # [1.0.0-alpha.39](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.38...v1.0.0-alpha.39) (2023-06-12)
 
 ### Bug Fixes
