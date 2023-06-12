@@ -71,7 +71,7 @@ export const darkTheme = createTheme(
     palette: {},
     typography,
     typographyGlobal: {},
-    name: 'logos-docusaurus-theme-light',
+    name: 'logos-docusaurus-theme-dark',
   },
   defaultThemes.dark,
 )
