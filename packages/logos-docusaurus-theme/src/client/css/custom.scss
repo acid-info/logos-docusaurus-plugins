@@ -231,7 +231,7 @@
   --desktop-footer-gap: 200px;
   --mobile-footer-gap: 144px;
   --doc-grid-gap: 16px;
-  
+
   --ifm-table-background: transparent !important;
   --ifm-table-stripe-background: transparent !important;
 
@@ -705,6 +705,14 @@ table {
 
 .menu__caret {
   display: none;
+}
+
+.menu__list-item-collapsible > a[aria-expanded='false'] > svg {
+  transform: rotate(90deg);
+}
+
+.menu__list-item-collapsible > a[aria-expanded='true'] > svg {
+  transform: rotate(180deg);
 }
 
 @include utils.responsive('sm', 'down') {
