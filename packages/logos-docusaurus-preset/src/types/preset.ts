@@ -13,6 +13,7 @@ export enum BusinessUnits {
   Nimbus = 'Nimbus',
   Nomos = 'Nomos',
   VacResearch = 'VacResearch',
+  AcidInfo = 'Acid.info',
 }
 
 export type Contact = {

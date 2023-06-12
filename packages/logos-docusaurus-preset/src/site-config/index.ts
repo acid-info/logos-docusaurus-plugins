@@ -1,4 +1,5 @@
 import { BusinessUnits, SiteConfig } from '../types/index'
+import acidInfoSiteConfig from './acid-info'
 import { codexSiteConfig } from './codex'
 import logosSiteConfig from './logos'
 import nimbusSiteConfig from './nimbus'
@@ -13,4 +14,5 @@ export const siteConfigs: Record<BusinessUnits, SiteConfig> = {
   [BusinessUnits.Nimbus]: nimbusSiteConfig,
   [BusinessUnits.Nomos]: nomosSiteConfig,
   [BusinessUnits.VacResearch]: vacResearchSiteConfig,
+  [BusinessUnits.AcidInfo]: acidInfoSiteConfig,
 }

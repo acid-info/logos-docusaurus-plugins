@@ -1,6 +1,7 @@
 import { ThemeConfig } from '@docusaurus/preset-classic'
 import { BusinessUnits } from '../types'
 import { defaultsDeep } from '../utils/object.utils'
+import acidInfoThemeConfig from './acid-info'
 import baseThemeConfig from './base'
 import codexThemeConfig from './codex'
 import logosThemeConfig from './logos'
@@ -35,4 +36,5 @@ export const themeConfigs: Record<BusinessUnits, ReturnType<typeof merge>> = {
   [BusinessUnits.Nimbus]: merge(nimbusThemeConfig),
   [BusinessUnits.Nomos]: merge(nomosThemeConfig),
   [BusinessUnits.VacResearch]: merge(vacResearchThemeConfig),
+  [BusinessUnits.AcidInfo]: merge(acidInfoThemeConfig),
 }
