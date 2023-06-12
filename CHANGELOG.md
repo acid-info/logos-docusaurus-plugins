@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.36](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.35...v1.0.0-alpha.36) (2023-06-12)
+
+### Bug Fixes
+
+- prevent screen flash by loading css vars for both dark and light theme in initial load ([f4f4e93](https://github.com/acid-info/logos-docusaurus-plugins/commit/f4f4e93217c5bd1701615897d79c3c57789b9346))
+
 # [1.0.0-alpha.35](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.34...v1.0.0-alpha.35) (2023-06-12)
 
 ### Bug Fixes
