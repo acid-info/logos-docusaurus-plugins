@@ -231,7 +231,7 @@
   --desktop-footer-gap: 200px;
   --mobile-footer-gap: 144px;
   --doc-grid-gap: 16px;
-  
+
   --ifm-table-background: transparent !important;
   --ifm-table-stripe-background: transparent !important;
 
@@ -374,6 +374,7 @@ a code {
   text-decoration: underline;
   text-decoration-color: inherit;
   text-underline-offset: 0.3rem;
+  text-decoration-color: rgba(var(--lsd-text-primary), 0.6);
 }
 
 .markdown > h2 {
