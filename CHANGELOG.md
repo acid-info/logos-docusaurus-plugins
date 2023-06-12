@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.37](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.36...v1.0.0-alpha.37) (2023-06-12)
+
+### Bug Fixes
+
+- fix LSD theme names ([a2c7025](https://github.com/acid-info/logos-docusaurus-plugins/commit/a2c7025f3b9ad3c23542b4c7ac3dd1882ec59623))
+
 # [1.0.0-alpha.36](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.35...v1.0.0-alpha.36) (2023-06-12)
 
 ### Bug Fixes
