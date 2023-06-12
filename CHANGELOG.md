@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.35](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.34...v1.0.0-alpha.35) (2023-06-12)
+
+### Bug Fixes
+
+- keep the DocItem layout as is when toc is hidden ([baadbfa](https://github.com/acid-info/logos-docusaurus-plugins/commit/baadbfa77976095b472c645093935ab22c79ce5c))
+- prevent screen flash by loading css vars for both dark and light theme in initial load ([e9308bd](https://github.com/acid-info/logos-docusaurus-plugins/commit/e9308bd9f6e58a245523f451b2e150a3eaba8528))
+
 # [1.0.0-alpha.34](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.33...v1.0.0-alpha.34) (2023-06-09)
 
 ### Bug Fixes
