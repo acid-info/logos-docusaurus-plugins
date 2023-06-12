@@ -2,7 +2,12 @@ import {
   createTheme,
   CreateThemeProps,
   defaultThemes,
+  Theme,
 } from '@acid-info/lsd-react'
+import { useActivePlugin } from '@docusaurus/plugin-content-docs/lib/client/index.js'
+import { useColorMode } from '@docusaurus/theme-common'
+import { css } from '@emotion/react'
+import { useMemo } from 'react'
 
 const typography: CreateThemeProps['typography'] = {
   h1: {
@@ -75,3 +80,34 @@ export const darkTheme = createTheme(
   },
   defaultThemes.dark,
 )
+
+const docThemes = {
+  light: lightTheme,
+  dark: darkTheme,
+}
+
+const useThemeCssVars = (theme: Theme, colorMode: string) =>
+  useMemo(
+    () => css`
+      [data-theme=${colorMode}] {
+        ${theme.cssVars}
+      }
+    `,
+    [theme],
+  )
+
+export const useTheme = () => {
+  const colorMode = useColorMode()
+  const activePlugin = useActivePlugin()
+
+  const themes = activePlugin ? docThemes : defaultThemes
+
+  return {
+    dark: themes.dark,
+    light: themes.light,
+    current: themes[colorMode.colorMode],
+    colorMode: colorMode.colorMode,
+    lightCssVars: useThemeCssVars(themes.light, 'light'),
+    darkCssVars: useThemeCssVars(themes.dark, 'dark'),
+  }
+}
