@@ -1159,3 +1159,10 @@ table {
     display: none;
   }
 }
+
+.navbar .lsd-icon-button--medium {
+  @include utils.responsive('lg', 'up') {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
