@@ -20,7 +20,7 @@
     "prepublishOnly": "yarn clean && yarn build"
   },
   "dependencies": {
-    "@acid-info/lsd-react": "^0.1.0-alpha.13",
+    "@acid-info/lsd-react": "^0.1.0-alpha.15",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/mdx-loader": "^2.4.1",
     "@docusaurus/module-type-aliases": "^2.4.1",
