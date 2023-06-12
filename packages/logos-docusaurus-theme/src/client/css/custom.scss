@@ -17,6 +17,7 @@
   --ifm-menu-color-background-active: transparent;
   --content-padding: 16px;
   --container-max-width: 1440px;
+  --pagination-nav-margin-top: 96px;
   --ifm-navbar-link-color: rgb(var(--lsd-text-primary));
   --ifm-navbar-background-color: rgb(var(--lsd-surface-primary));
   --ifm-dropdown-link-color: rgb(var(--lsd-text-primary));
@@ -231,7 +232,7 @@
   --desktop-footer-gap: 200px;
   --mobile-footer-gap: 144px;
   --doc-grid-gap: 16px;
-  
+
   --ifm-table-background: transparent !important;
   --ifm-table-stripe-background: transparent !important;
 
@@ -570,6 +571,10 @@ small {
 
 .margin-left-8 {
   margin-left: 8px;
+}
+
+.pagination-nav {
+  margin-top: var(--pagination-nav-margin-top) !important;
 }
 
 .pagination-nav__link {
