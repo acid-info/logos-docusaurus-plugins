@@ -713,6 +713,14 @@ table {
   display: none;
 }
 
+.menu__list-item-collapsible > a[aria-expanded='false'] > svg {
+  transform: rotate(90deg);
+}
+
+.menu__list-item-collapsible > a[aria-expanded='true'] > svg {
+  transform: rotate(180deg);
+}
+
 @include utils.responsive('sm', 'down') {
   :root {
     --ifm-global-spacing: 0.5rem;

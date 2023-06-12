@@ -168,7 +168,7 @@ export default function DocSidebarItemCategory({
           <Typography variant="body2" color="primary">
             {label}
           </Typography>
-          {collapsed ? <ArrowUpIcon /> : <ArrowDownIcon />}
+          {collapsible && <ArrowUpIcon />}
         </Link>
         {href && collapsible && (
           <CollapseButton
