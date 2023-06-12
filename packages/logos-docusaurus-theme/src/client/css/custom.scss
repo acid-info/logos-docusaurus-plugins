@@ -375,6 +375,7 @@ a code {
   text-decoration: underline;
   text-decoration-color: inherit;
   text-underline-offset: 0.3rem;
+  text-decoration-color: rgba(var(--lsd-text-primary), 0.6);
 }
 
 .markdown > h2 {
