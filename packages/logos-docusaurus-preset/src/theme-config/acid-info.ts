@@ -6,7 +6,8 @@ export const acidInfoThemeConfig: typeof baseThemeConfig = {
     ...baseThemeConfig.navbar,
     logo: {
       alt: 'Acid.info',
-      src: 'theme/image/logo.svg',
+      src: 'theme/image/logo-black.svg',
+      srcDark: 'theme/image/logo.svg',
       height: 26,
     },
     items: [],
