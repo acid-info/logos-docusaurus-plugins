@@ -36,7 +36,7 @@ const useTheme = () => {
 const useThemeCssVars = (theme: Theme, light: boolean = false) =>
   useMemo(
     () => css`
-      [data-theme='${light ? 'light' : 'dark'}'] {
+      [data-theme=${light ? 'light' : 'dark'}] {
         ${theme.cssVars}
       }
     `,
