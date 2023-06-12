@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.38](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.37...v1.0.0-alpha.38) (2023-06-12)
+
+### Features
+
+- add Acid.info business unit ([8a4c151](https://github.com/acid-info/logos-docusaurus-plugins/commit/8a4c1513d31af99bb9328d9fbb380f64888b2ff9))
+
 # [1.0.0-alpha.37](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.36...v1.0.0-alpha.37) (2023-06-12)
 
 ### Bug Fixes
