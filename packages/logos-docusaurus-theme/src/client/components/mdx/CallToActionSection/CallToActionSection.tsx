@@ -1,4 +1,4 @@
-import { Button, Typography } from '@acid-info/lsd-react'
+import { ButtonProps, Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
 import { CallToActionButton } from '../index'
@@ -14,6 +14,7 @@ export type CallToActionSectionProps = Omit<
   href?: string
   label?: string
   target?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target']
+  variant?: ButtonProps['variant']
 }
 
 export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
@@ -25,6 +26,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
   target,
   className,
   children,
+  variant = 'outlined',
   ...props
 }) => {
   const singleCol = columns === 1
@@ -60,6 +62,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
           target={target}
           href={href}
           className="mdx-cta-section__link"
+          variant={variant}
         >
           {label}
         </CallToActionButton>
