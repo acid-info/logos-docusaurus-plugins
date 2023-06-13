@@ -1,0 +1,45 @@
+@use '../../../../css/lsd';
+
+.container {
+  margin-bottom: 24px !important;
+  @include lsd.typography('body2');
+}
+
+.container > div {
+  display: inline-block;
+}
+
+.container > *:not(:last-child)::after {
+  content: '•';
+  display: inline-block;
+  margin-inline: 0.75rem;
+  font-size: 10px;
+}
+
+.authors {
+  display: inline-block;
+}
+
+.authors > div {
+  display: inline-flex;
+  max-width: unset;
+  width: auto;
+  padding: 0;
+
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.authors > div :global(.avatar) {
+  margin: 0 !important;
+}
+
+.authors > div:not(:last-child)::after {
+  content: ',';
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.authors :global(.avatar__name) {
+  line-height: 0;
+}

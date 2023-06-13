@@ -1,0 +1,7 @@
+.blogPostFooterDetailsFull {
+  flex-direction: column;
+}
+
+.readMoreLink span {
+  color: rgb(var(--lsd-text-secondary)) !important;
+}

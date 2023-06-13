@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tags {
+  display: inline;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-left: 1rem !important;
+}
+
+.tag {
+  display: inline-block;
+}
+
+.tag:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.tag a {
+  margin: 0 !important;
+  padding: 0 !important;
+}

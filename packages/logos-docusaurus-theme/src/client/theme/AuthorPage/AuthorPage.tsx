@@ -7,7 +7,7 @@ import styles from './AuthorPage.module.scss'
 
 export type AuthorPageProps = {
   data: {
-    author: Author
+    authors: Author
     docs: {
       id: string
       title: string
