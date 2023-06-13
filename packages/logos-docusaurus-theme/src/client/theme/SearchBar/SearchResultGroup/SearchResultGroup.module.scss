@@ -17,4 +17,8 @@
     list-style: none;
     margin-top: 1rem;
   }
+
+  ul a[href*='#'] li {
+    padding-left: 56px;
+  }
 }
