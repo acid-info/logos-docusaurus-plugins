@@ -17,7 +17,6 @@ export default function BlogPostItemHeaderAuthor({
   className,
 }: Props): JSX.Element {
   const { name, title, url, imageURL, email } = author
-  console.log(author)
   const link = url || (email && `mailto:${email}`) || undefined
   return (
     <div className={clsx('avatar margin-bottom--sm', className)}>
