@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.42](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.41...v1.0.0-alpha.42) (2023-06-13)
+
+### Bug Fixes
+
+- adjust navbar logo size ([31905b6](https://github.com/acid-info/logos-docusaurus-plugins/commit/31905b6f245ad62a1106932aa1f465b219768304))
+- change the size of icon buttons in the desktop navbar to small ([5c70db8](https://github.com/acid-info/logos-docusaurus-plugins/commit/5c70db88dfea5c40138cc19cff1e72c9785c5304))
+
+### Features
+
+- blog theme ([c3edece](https://github.com/acid-info/logos-docusaurus-plugins/commit/c3edece3f66bb3ca8f9179544c7be24bbfd8a4d0))
+
 # [1.0.0-alpha.41](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.40...v1.0.0-alpha.41) (2023-06-12)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
