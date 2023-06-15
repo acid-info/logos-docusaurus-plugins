@@ -402,6 +402,10 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  span {
+    color: rgba(var(--lsd-text-primary), 0.6);
+  }
 }
 
 .theme-edit-this-page {
@@ -498,13 +502,8 @@ small {
 .menu__link--active {
   border-left: 1px solid rgb(var(--lsd-border-primary));
   border-radius: 0;
-}
-
-.menu__list-item-collapsible > a {
-  border: none !important;
-
   span {
-    color: rgb(var(--lsd-text-primary), 0.6);
+    color: rgb(var(--lsd-text-primary));
   }
 }
 

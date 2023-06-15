@@ -150,7 +150,7 @@ export default function DocSidebarItemCategory({
               ? (e) => {
                   onItemClick?.(item)
                   if (href) {
-                    updateCollapsed(false)
+                    updateCollapsed()
                   } else {
                     e.preventDefault()
                     updateCollapsed()
