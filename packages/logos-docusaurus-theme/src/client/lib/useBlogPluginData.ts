@@ -13,15 +13,11 @@ export const useBlogPluginData = () => {
       ].includes(plugin[0] as string),
   )
 
-  if (plugins.length === 0)
-    return {
-      routeBasePath: '/blog',
-    } as Partial<PluginOptions>
-
   const plugin = plugins.find((plugin) =>
-    window.location.pathname.startsWith(
-      (plugin as [string, PluginOptions])[1].routeBasePath,
-    ),
+    (typeof window !== 'undefined'
+      ? window.location.pathname
+      : '/blog'
+    ).startsWith((plugin as [string, PluginOptions])[1].routeBasePath),
   )
 
   if (!plugin)
