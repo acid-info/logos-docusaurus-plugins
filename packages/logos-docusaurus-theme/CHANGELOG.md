@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.45](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.44...v1.0.0-alpha.45) (2023-06-15)
+
+### Bug Fixes
+
+- fix bug with breadcrumb home ([10f3b94](https://github.com/acid-info/logos-docusaurus-plugins/commit/10f3b9462d34a2e16d999678302806073cd66fcf))
+- remove console.log ([9229d60](https://github.com/acid-info/logos-docusaurus-plugins/commit/9229d6018c7b0de41fcb002a8b50a42e1078ef17))
+
+### Features
+
+- show breadcrumbs on blog post pages ([c5d75b3](https://github.com/acid-info/logos-docusaurus-plugins/commit/c5d75b35758826807f5c6a09e835aa2e31d68938))
+
 # [1.0.0-alpha.44](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.43...v1.0.0-alpha.44) (2023-06-13)
 
 ### Bug Fixes
