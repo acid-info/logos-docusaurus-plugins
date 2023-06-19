@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.47](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.46...v1.0.0-alpha.47) (2023-06-19)
+
+### Bug Fixes
+
+- fix dependencies ([0a4fc19](https://github.com/acid-info/logos-docusaurus-plugins/commit/0a4fc19b95879c9c4f440167bbe9afd9877758bd))
+
+### Features
+
+- auto generate opengraph images ([c442f5d](https://github.com/acid-info/logos-docusaurus-plugins/commit/c442f5d46836b0bcb3cb250af27d17a081683d38))
+- implement image lightbox ([344d9f9](https://github.com/acid-info/logos-docusaurus-plugins/commit/344d9f9c5954eb4bbe74666d9f8c835f803ab29d))
+
 # [1.0.0-alpha.46](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.45...v1.0.0-alpha.46) (2023-06-15)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
