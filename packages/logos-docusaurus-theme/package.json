@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@acid-info/lsd-react": "^0.1.0-alpha.15",
+    "@acid-info/docusaurus-og": "^1.0.0-alpha.44",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/mdx-loader": "^2.4.1",
     "@docusaurus/module-type-aliases": "^2.4.1",
@@ -51,6 +52,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-use": "^17.4.0",
+    "sharp": "^0.32.1",
     "three": "^0.152.2",
     "three-stdlib": "^2.23.4",
     "utility-types": "^3.10.0"

@@ -94,11 +94,33 @@ export default function logosPreset(
       ),
     )
 
-  if (options.theme?.name === ThemeNames.Default)
+  if (options.theme?.name === ThemeNames.Default) {
     themes.push([
       '@acid-info/logos-docusaurus-theme',
       options.theme?.options ?? {},
     ])
+
+    if (options.og) {
+      const imageRenderer = require('@acid-info/logos-docusaurus-theme/lib/client/components/OGImageRenderer/index.js')
+
+      context.siteConfig.plugins = [
+        ...(context.siteConfig.plugins ?? []),
+
+        [
+          '@acid-info/docusaurus-og',
+          /** @type {import('@acid-info/docusaurus-og').PluginOptions} */
+          {
+            path: options.og.path || '_og',
+            imageRenderers: {
+              'docusaurus-plugin-content-docs': imageRenderer.default.docs,
+              'docusaurus-plugin-content-blog': imageRenderer.default.blog,
+              'docusaurus-plugin-content-pages': imageRenderer.default.pages,
+            },
+          },
+        ],
+      ]
+    }
+  }
 
   return {
     plugins,

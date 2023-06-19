@@ -18,6 +18,7 @@
   "dependencies": {
     "@acid-info/logos-docusaurus-search-local": "^1.0.0-alpha.19",
     "@acid-info/logos-docusaurus-theme": "^1.0.0-alpha.46",
+    "@acid-info/docusaurus-og": "^1.0.0-alpha.44",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/module-type-aliases": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.1",
