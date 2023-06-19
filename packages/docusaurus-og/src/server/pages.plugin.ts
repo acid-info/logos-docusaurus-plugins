@@ -41,6 +41,8 @@ export class PagesPlugin {
     const content = plugin.content as LoadedContent
     const options = plugin.options as PagesPluginOptions
 
+    if (!Array.isArray(content)) return
+
     for (const metadata of content) {
       const doc = new Document(this.getHtmlPath(metadata.permalink))
       await doc.load()
