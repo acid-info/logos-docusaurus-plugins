@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.50](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.49...v1.0.0-alpha.50) (2023-06-19)
+
+### Bug Fixes
+
+- render version label in og image only if version.badge is set to true ([be12865](https://github.com/acid-info/logos-docusaurus-plugins/commit/be1286529caa8f7e3b495783742b5fcce4f968df))
+
 # [1.0.0-alpha.49](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.48...v1.0.0-alpha.49) (2023-06-19)
 
 ### Bug Fixes
