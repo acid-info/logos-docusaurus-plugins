@@ -1,0 +1,69 @@
+@use '../../css/utils';
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(var(--lsd-surface-primary));
+  z-index: 201;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--ifm-navbar-height);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--ifm-navbar-padding-vertical)
+    var(--ifm-navbar-padding-horizontal);
+}
+
+.wrapper {
+  position: relative;
+
+  .fullscreenButton {
+    display: none;
+  }
+
+  &:not(.active) {
+    .fullscreenButton {
+      display: block;
+      transition: 0.3s;
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgb(var(--lsd-surface-primary));
+    }
+
+    @include utils.responsive('lg', 'up') {
+      .fullscreenButton {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        background: rgb(var(--lsd-surface-primary));
+      }
+
+      &:hover {
+        .fullscreenButton {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -82,6 +82,7 @@ export default function logosPreset(
   })
 
   plugins.push('docusaurus-plugin-sass')
+  themes.push('@docusaurus/theme-mermaid')
 
   if (options.theme?.name !== ThemeNames.DocusaurusDefault)
     plugins.push(

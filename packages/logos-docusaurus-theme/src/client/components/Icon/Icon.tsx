@@ -24,6 +24,8 @@ import StatusSvg from '../../static/icons/status.svg'
 import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
 import EditSvg from '../../static/icons/edit.svg'
+import FullscreenSvg from '../../static/icons/fullscreen.svg'
+import FullscreenExitSvg from '../../static/icons/fullscreen-exit.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -176,5 +178,17 @@ export const IconClose = (props: TIconProps): JSX.Element => (
 export const IconEdit = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <EditSvg />
+  </Icon>
+)
+
+export const IconFullscreen = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <FullscreenSvg />
+  </Icon>
+)
+
+export const IconFullscreenExit = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <FullscreenExitSvg />
   </Icon>
 )
