@@ -110,7 +110,9 @@ const docsImageRenderer = imageRendererFactory(
           <span style={{ textTransform: 'capitalize' }}>
             {doc.plugin.id === 'default' ? 'Docs' : doc.plugin.id}
           </span>,
-          doc.version.label && <span>{doc.version.label}</span>,
+          doc.version.badge && doc.version.label && (
+            <span>{doc.version.label}</span>
+          ),
         ]}
         logo={<img src={logo.src} style={{ height: 120 }} />}
       />,
