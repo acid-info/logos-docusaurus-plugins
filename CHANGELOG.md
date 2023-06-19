@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.48](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.47...v1.0.0-alpha.48) (2023-06-19)
+
+### Bug Fixes
+
+- **docusaurus-og:** fix TypeError 'content is not iterable' in pages plugin ([f3c5e5c](https://github.com/acid-info/logos-docusaurus-plugins/commit/f3c5e5c1b4269ed2ccb1a6286718601402f65495))
+
 # [1.0.0-alpha.47](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.46...v1.0.0-alpha.47) (2023-06-19)
 
 ### Bug Fixes

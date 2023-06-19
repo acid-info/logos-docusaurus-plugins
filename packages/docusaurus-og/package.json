@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/docusaurus-og",
-  "version": "1.0.0-alpha.47",
+  "version": "1.0.0-alpha.48",
   "description": "Docusaurus local search plugin",
   "main": "lib/index.js",
   "types": "src/plugin.d.ts",
