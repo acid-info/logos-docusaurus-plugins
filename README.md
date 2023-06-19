@@ -71,6 +71,8 @@ $ yarn lerna version --no-private
 
   - [Logos Search Local](./packages/logos-docusaurus-search-local) [![Npm Version](https://img.shields.io/npm/v/@acid-info/logos-docusaurus-search-local)](https://www.npmjs.com/package/@acid-info/logos-docusaurus-search-local)
 
+  - [Docusaurus OG](./packages/docusaurus-og) [![Npm Version](https://img.shields.io/npm/v/@acid-info/docusaurus-og)](https://www.npmjs.com/package/@acid-info/docusaurus-og)
+
 - **Themes**
   - [Logos Theme](./packages/logos-docusaurus-theme) [![Npm Version](https://img.shields.io/npm/v/@acid-info/logos-docusaurus-theme)](https://www.npmjs.com/package/@acid-info/logos-docusaurus-theme)
 
