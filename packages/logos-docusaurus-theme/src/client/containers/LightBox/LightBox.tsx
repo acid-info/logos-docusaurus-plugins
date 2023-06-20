@@ -161,7 +161,6 @@ export const LightBoxWrapper: React.FC<React.PropsWithChildren<{}>> = ({
   const { getStyle, display, isActiveElement } = useLightBox()
 
   const isMobile = useIsMobile()
-  console.log(isMobile)
 
   const onUpdate = useCallback(({ x, y, scale }) => {
     const { current: img } = childRef
