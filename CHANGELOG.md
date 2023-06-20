@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.51](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.50...v1.0.0-alpha.51) (2023-06-20)
+
+### Bug Fixes
+
+- fix indentation of search results, refs [#58](https://github.com/acid-info/logos-docusaurus-plugins/issues/58) ([0b7ad00](https://github.com/acid-info/logos-docusaurus-plugins/commit/0b7ad009e02bcb98f30447d884c90f80fca2a944))
+- remove the mermaid theme from playground's configuration ([07359f6](https://github.com/acid-info/logos-docusaurus-plugins/commit/07359f675d6bd5715ff79d7029bd214c7fdfed25))
+
+### Features
+
+- add support for custom global generic font family as a theme option closes [#67](https://github.com/acid-info/logos-docusaurus-plugins/issues/67) ([1523be9](https://github.com/acid-info/logos-docusaurus-plugins/commit/1523be91447d64b1da854f6cd0c05a95c36ed27a))
+- enable image/diagram pinch zoom on mobile devices ([1e3375f](https://github.com/acid-info/logos-docusaurus-plugins/commit/1e3375f061ce01ad1a0dcac5d15c81094299bf13))
+
 # [1.0.0-alpha.50](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.49...v1.0.0-alpha.50) (2023-06-19)
 
 ### Bug Fixes
