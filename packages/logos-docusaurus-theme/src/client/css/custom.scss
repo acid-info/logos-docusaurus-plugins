@@ -720,6 +720,19 @@ table {
   transform: rotate(180deg);
 }
 
+main[itemtype*='Blog'] {
+  margin-left: 0;
+
+  .theme-doc-breadcrumbs {
+    margin-bottom: 40px;
+  }
+
+  .blog-divider {
+    margin-block: 40px;
+    background: rgb(var(--lsd-theme-primary));
+  }
+}
+
 @include utils.responsive('sm', 'down') {
   :root {
     --ifm-global-spacing: 0.5rem;

@@ -36,6 +36,7 @@ export default function BlogPostItemHeader(): JSX.Element {
       )}
       <BlogPostItemHeaderTitle />
       <BlogPostItemHeaderInfo />
+      <hr className="blog-divider" />
     </header>
   )
 }

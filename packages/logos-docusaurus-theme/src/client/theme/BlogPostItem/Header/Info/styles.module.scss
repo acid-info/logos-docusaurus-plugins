@@ -1,7 +1,8 @@
 @use '../../../../css/lsd';
 
 .container {
-  margin-bottom: 24px !important;
+  margin-bottom: 0 !important;
+  margin-top: 32px !important;
   @include lsd.typography('body2');
 }
 
