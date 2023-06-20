@@ -9,13 +9,13 @@ import styles from './SearchResultItem.module.scss'
 
 const icons: Record<SearchDocumentType, React.ReactElement> = {
   [SearchDocumentType.Title]: (
-    <DocumentIcon className={clsx(styles.icon, styles.l1, styles.fill)} />
+    <DocumentIcon className={clsx(styles.icon, styles.fill)} />
   ),
   [SearchDocumentType.Heading]: (
-    <BlockIcon className={clsx(styles.icon, styles.l2, styles.fill)} />
+    <BlockIcon className={clsx(styles.icon, styles.fill)} />
   ),
   [SearchDocumentType.Paragraph]: (
-    <BlockIcon className={clsx(styles.icon, styles.l2, styles.fill)} />
+    <BlockIcon className={clsx(styles.icon, styles.fill)} />
   ),
 }
 
@@ -24,11 +24,13 @@ export type SearchResultItemProps = React.HTMLProps<HTMLLIElement> & {
   title: string
   href: string
   content?: string
+  level?: number
   linkProps?: LinkProps
 }
 
 export const SearchResultItem: React.FC<SearchResultItemProps> = ({
   type,
+  level = 0,
   href,
   title,
   content,
@@ -41,7 +43,7 @@ export const SearchResultItem: React.FC<SearchResultItemProps> = ({
   return (
     <Link
       href={href}
-      className={clsx(styles.root, linkClassName)}
+      className={clsx(styles.root, styles[`level${level}`], linkClassName)}
       {...linkProps}
     >
       <SearchResultItemBase

@@ -46,6 +46,7 @@ export interface MatchMetadata {
 
 export type SearchResultGroupItem = {
   type: SearchResult['type']
+  level: 0 | 1 | 2
   url: string
   hash: string
   href: string

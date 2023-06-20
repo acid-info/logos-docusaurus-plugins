@@ -2,15 +2,14 @@
   text-decoration: none !important;
 }
 
+.root.level1 {
+  opacity: 0.1;
+  padding-left: 32px;
+}
+
 .icon {
   width: 16px;
   height: auto;
-
-  &.l1 {
-  }
-
-  &.l2 {
-  }
 
   &.fill {
     &,

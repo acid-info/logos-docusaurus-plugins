@@ -35,6 +35,7 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
                 <SearchResultItem
                   key={itemIndex}
                   type={item.type}
+                  level={item.level}
                   href={item.href}
                   title={item.title}
                   content={item.content}
