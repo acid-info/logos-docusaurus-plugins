@@ -1,3 +1,4 @@
+import { GlobalTypographyStyles } from '@acid-info/lsd-react'
 import type { PluginOptions as DefaultPluginOptions } from '@docusaurus/theme-classic'
 
 export type Author = {
@@ -28,4 +29,5 @@ export type DocConfig = {
 
 export type ThemeOptions = DefaultPluginOptions & {
   docs?: Record<string, DocConfig>
+  typography?: GlobalTypographyStyles
 }

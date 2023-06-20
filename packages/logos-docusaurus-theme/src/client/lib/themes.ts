@@ -8,6 +8,7 @@ import { useActivePlugin } from '@docusaurus/plugin-content-docs/lib/client/inde
 import { useColorMode } from '@docusaurus/theme-common'
 import { css } from '@emotion/react'
 import { useMemo } from 'react'
+import { useThemeOptions } from './useThemeOptions'
 
 const typography: CreateThemeProps['typography'] = {
   h1: {
@@ -99,8 +100,26 @@ const useThemeCssVars = (theme: Theme, colorMode: string) =>
 export const useTheme = () => {
   const colorMode = useColorMode()
   const activePlugin = useActivePlugin()
+  const { typography } = useThemeOptions()
+  const genericFontFamily = typography?.genericFontFamily ?? 'sans-serif'
 
-  const themes = activePlugin ? docThemes : defaultThemes
+  const baseThemes = activePlugin ? docThemes : defaultThemes
+
+  const themes = useMemo(() => {
+    const options = {
+      breakpoints: {},
+      palette: {},
+      typography: {},
+      typographyGlobal: {
+        genericFontFamily,
+      },
+    }
+
+    return {
+      light: createTheme(options, baseThemes.light),
+      dark: createTheme(options, baseThemes.dark),
+    }
+  }, [baseThemes, genericFontFamily])
 
   return {
     dark: themes.dark,
