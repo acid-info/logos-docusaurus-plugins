@@ -1,6 +1,6 @@
 @use '../../css/utils';
 
-.nav {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,12 +12,25 @@
   visibility: hidden;
 }
 
-.visible {
-  opacity: 1 !important;
-  visibility: visible !important;
+.navWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: transparent;
+  z-index: 203;
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  & > * {
+    pointer-events: initial;
+  }
 }
 
-.nav > nav {
+.nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,6 +40,12 @@
   margin: 0 auto;
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
+  background: rgb(var(--lsd-surface-primary));
+}
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .wrapper {
@@ -65,5 +84,11 @@
         }
       }
     }
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .wrapper > div {
+    overflow: visible !important;
   }
 }

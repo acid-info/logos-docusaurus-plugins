@@ -1171,4 +1171,8 @@ table {
   --ifm-hero-text-color: rgb(var(--lsd-text-primary));
 }
 
+body {
+  height: auto !important;
+}
+
 @import './blog.scss';

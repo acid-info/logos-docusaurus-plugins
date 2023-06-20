@@ -3,16 +3,19 @@ import NavbarLogo from '@theme/Navbar/Logo'
 import clsx from 'clsx'
 import React, {
   CSSProperties,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
   useRef,
   useState,
 } from 'react'
+import QuickPinchZoom, { make3dTransformValue } from 'react-quick-pinch-zoom'
 import { useWindowScroll } from 'react-use'
 import { IconFullscreen, IconFullscreenExit } from '../../components/Icon/Icon'
 import { Portal } from '../../components/Portal/Portal'
 import { useHydrated } from '../../lib/useHydrated'
+import { useIsMobile } from '../../lib/useIsMobile'
 import styles from './styles.module.scss'
 
 export const LightBoxProvider: React.FC<React.PropsWithChildren<{}>> = ({
@@ -24,6 +27,8 @@ export const LightBoxProvider: React.FC<React.PropsWithChildren<{}>> = ({
   const [activeStyle, setActiveStyle] = useState<CSSProperties>({
     opacity: '0.5',
   })
+
+  const isMobile = useIsMobile()
 
   const style: React.CSSProperties = useMemo(() => {
     return {
@@ -37,7 +42,7 @@ export const LightBoxProvider: React.FC<React.PropsWithChildren<{}>> = ({
     setActive(element)
 
     const vw = document.body.clientWidth
-    const vh = document.body.clientHeight
+    const vh = window.innerHeight
 
     const maxWidth = window.innerWidth > 768 ? vw * 0.9375 : vw - 32
     const maxHeight = vh - 128
@@ -73,6 +78,16 @@ export const LightBoxProvider: React.FC<React.PropsWithChildren<{}>> = ({
     if (active && window.innerWidth > 768) close()
   }, [scroll])
 
+  useEffect(() => {
+    if (isMobile && active) {
+      const html = document.querySelector('html')!
+      html.style.overflow = 'hidden'
+    } else {
+      const html = document.querySelector('html')!
+      html.style.overflow = 'initial'
+    }
+  }, [isMobile, active])
+
   return (
     <LightBoxContext.Provider
       value={{ active, style, activeStyle, display, close, toggle }}
@@ -80,14 +95,19 @@ export const LightBoxProvider: React.FC<React.PropsWithChildren<{}>> = ({
       {children}
       {hydrated && (
         <Portal containerId="lsd-presentation">
-          <div className={clsx(styles.nav, active && styles.visible)}>
-            <nav>
-              <NavbarLogo />
-              <IconButton size="medium" onClick={close}>
-                <IconFullscreenExit />
-              </IconButton>
-            </nav>
-          </div>
+          <>
+            <div
+              className={clsx(styles.backdrop, active && styles.visible)}
+            ></div>
+            <div className={clsx(styles.navWrapper, active && styles.visible)}>
+              <nav className={clsx(styles.nav, active && styles.visible)}>
+                <NavbarLogo />
+                <IconButton size="medium" onClick={close}>
+                  <IconFullscreenExit />
+                </IconButton>
+              </nav>
+            </div>
+          </>
         </Portal>
       )}
     </LightBoxContext.Provider>
@@ -137,25 +157,57 @@ export const LightBoxWrapper: React.FC<React.PropsWithChildren<{}>> = ({
   children,
 }) => {
   const ref = useRef<HTMLDivElement>(null)
+  const childRef = useRef<HTMLDivElement>(null)
   const { getStyle, display, isActiveElement } = useLightBox()
 
-  return (
-    <div
-      className={clsx(
-        styles.wrapper,
-        isActiveElement(ref.current!) && styles.active,
-      )}
-      ref={ref}
-      style={ref.current ? getStyle(ref.current) : {}}
-    >
-      {children}
-      <IconButton
-        className={styles.fullscreenButton}
-        size="medium"
-        onClick={() => ref.current && display(ref.current)}
+  const isMobile = useIsMobile()
+  console.log(isMobile)
+
+  const onUpdate = useCallback(({ x, y, scale }) => {
+    const { current: img } = childRef
+
+    if (img) {
+      const value = make3dTransformValue({ x, y, scale })
+
+      img.style.setProperty('transform', value)
+    }
+  }, [])
+
+  const content =
+    isMobile && ref.current && isActiveElement(ref.current!) ? (
+      <QuickPinchZoom
+        onUpdate={onUpdate}
+        doubleTapZoomOutOnMaxScale
+        maxZoom={3}
       >
-        <IconFullscreen />
-      </IconButton>
-    </div>
+        <div ref={childRef}>{children}</div>
+      </QuickPinchZoom>
+    ) : (
+      <>
+        {children}
+
+        <IconButton
+          className={styles.fullscreenButton}
+          size="medium"
+          onClick={() => ref.current && display(ref.current)}
+        >
+          <IconFullscreen />
+        </IconButton>
+      </>
+    )
+
+  return (
+    <>
+      <div
+        className={clsx(
+          styles.wrapper,
+          isActiveElement(ref.current!) && styles.active,
+        )}
+        ref={ref}
+        style={ref.current ? getStyle(ref.current) : {}}
+      >
+        {content}
+      </div>
+    </>
   )
 }
