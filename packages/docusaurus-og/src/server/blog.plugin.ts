@@ -62,6 +62,7 @@ export class BlogPlugin {
 
     if (content.blogTagsListPath) {
       const filePath = this.getHtmlPath(content.blogTagsListPath)
+
       fs.existsSync(filePath) &&
         this.pages.push({
           pageType: 'tags',
@@ -74,12 +75,18 @@ export class BlogPlugin {
     }
 
     if (options.archiveBasePath) {
-      this.pages.push({
-        plugin: options,
-        pageType: 'archive',
-        data: { permalink: options.archiveBasePath },
-        permalink: options.archiveBasePath,
-      })
+      const filePath = this.getHtmlPath(
+        options.archiveBasePath,
+        options.routeBasePath,
+      )
+
+      fs.existsSync(filePath) &&
+        this.pages.push({
+          plugin: options,
+          pageType: 'archive',
+          data: { permalink: options.archiveBasePath },
+          permalink: options.archiveBasePath,
+        })
     }
 
     {
@@ -120,6 +127,10 @@ export class BlogPlugin {
     }
   }
 
-  getHtmlPath = (permalink: string) =>
-    path.join(this.context.outDir, permalink, 'index.html')
+  getHtmlPath = (permalink: string, baseUrl?: string) =>
+    path.join(
+      this.context.outDir,
+      !baseUrl ? permalink : path.join('/', baseUrl, permalink),
+      'index.html',
+    )
 }
