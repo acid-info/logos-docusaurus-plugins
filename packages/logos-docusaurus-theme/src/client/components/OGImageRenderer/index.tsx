@@ -47,6 +47,10 @@ const options: ImageGeneratorOptions = {
   ],
 }
 
+const SIDE_IMAGE_WIDTH = options.width / 2
+const SIDE_IMAGE_HEIGHT = options.height
+const LOGO_HEIGHT = 80
+
 const Layout: React.FC<{
   logo?: React.ReactNode
   image?: React.ReactNode
@@ -106,9 +110,7 @@ const Layout: React.FC<{
             overflow: 'hidden',
           }}
         >
-          <div style={{ display: 'flex', height: '120px', overflow: 'hidden' }}>
-            {logo}
-          </div>
+          <div style={{ display: 'flex', overflow: 'hidden' }}>{logo}</div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ fontSize: '54px', display: 'flex' }}>{title}</div>
             {footerItems.length > 0 && (
@@ -156,9 +158,7 @@ const Layout: React.FC<{
         justifyContent: 'space-between',
       }}
     >
-      <div style={{ display: 'flex', height: '120px', overflow: 'hidden' }}>
-        {logo}
-      </div>
+      <div style={{ display: 'flex', overflow: 'hidden' }}>{logo}</div>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <div style={{ fontSize: '72px', display: 'flex' }}>{title}</div>
         <div
@@ -202,7 +202,9 @@ const docsImageRenderer = imageRendererFactory(
             <span>{doc.version.label}</span>
           ),
         ]}
-        logo={logo && <img src={logo.src as any} style={{ height: 120 }} />}
+        logo={
+          logo && <img src={logo.src as any} style={{ height: logo.height }} />
+        }
         image={
           image && (
             <img
@@ -250,7 +252,9 @@ const blogImageRenderer = imageRendererFactory(
               .map((author) => author.name)
               .join(', ')}`,
         ]}
-        logo={logo && <img src={logo.src as any} style={{ height: 120 }} />}
+        logo={
+          logo && <img src={logo.src as any} style={{ height: logo.height }} />
+        }
         image={
           image && (
             <img
@@ -281,7 +285,9 @@ const pagesImageRenderer = imageRendererFactory(
       <Layout
         title={metadata.title}
         footer={url.host}
-        logo={logo && <img src={logo.src as any} style={{ height: 120 }} />}
+        logo={
+          logo && <img src={logo.src as any} style={{ height: logo.height }} />
+        }
         image={
           image && (
             <img
@@ -297,11 +303,8 @@ const pagesImageRenderer = imageRendererFactory(
   },
 )
 
-const getLogo = async (siteConfig: DocusaurusConfig, outDir: string) => {
-  const logo: any = (siteConfig.themeConfig as any).navbar.logo
-
-  return await loadImage(outDir, logo.src, { height: 120 })
-}
+const getLogo = async (siteConfig: DocusaurusConfig, outDir: string) =>
+  await loadImage(outDir, '/theme/image/logo-og.svg', { height: LOGO_HEIGHT })
 
 const getPageImage = async (
   type: 'docs' | 'blog' | 'page',
@@ -324,8 +327,8 @@ const getPageImage = async (
 
   if (typeof image === 'string' && image.length > 0)
     return await loadImage(outDir, image, {
-      width: options.width / 2,
-      height: options.height,
+      width: SIDE_IMAGE_WIDTH,
+      height: SIDE_IMAGE_HEIGHT,
       fit: 'cover',
     })
 
