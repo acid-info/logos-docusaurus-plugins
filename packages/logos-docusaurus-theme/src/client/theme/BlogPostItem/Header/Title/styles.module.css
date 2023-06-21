@@ -2,7 +2,11 @@
   font-size: 3rem;
 }
 
-.description {
+.blogDescription {
+  margin-top: 16px;
+}
+
+.blogPostDescription {
   margin-top: 12px;
 }
 

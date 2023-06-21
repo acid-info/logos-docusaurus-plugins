@@ -6,6 +6,10 @@
   @include lsd.typography('body2');
 }
 
+.blogContainer {
+  margin-top: 8px !important;
+}
+
 .container > div {
   display: inline-block;
 }
