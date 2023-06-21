@@ -1,12 +1,35 @@
 import {
+  BlogPageData,
+  DocsPageData,
   ImageGeneratorOptions,
   imageRendererFactory,
+  PageData,
 } from '@acid-info/docusaurus-og'
+import { BlogPostFrontMatter } from '@docusaurus/plugin-content-blog'
+import { DocFrontMatter } from '@docusaurus/plugin-content-docs'
+import { MDXPageMetadata } from '@docusaurus/plugin-content-pages'
 import { DocusaurusConfig } from '@docusaurus/types'
+import axios from 'axios'
+import { boolean } from 'boolean'
 import { readFileSync } from 'fs'
+import * as fsp from 'fs/promises'
+import _ from 'lodash'
+import hashObject from 'object-hash'
 import path from 'path'
 import React from 'react'
-import sharp from 'sharp'
+import sharp, { ResizeOptions } from 'sharp'
+
+const shouldSkip = (
+  frontMatter:
+    | DocFrontMatter
+    | BlogPostFrontMatter
+    | MDXPageMetadata['frontMatter']
+    | undefined
+    | null,
+) =>
+  frontMatter &&
+  typeof frontMatter['og:generate_image'] !== 'undefined' &&
+  !boolean(frontMatter['og:generate_image'])
 
 const options: ImageGeneratorOptions = {
   width: 1200,
@@ -26,9 +49,10 @@ const options: ImageGeneratorOptions = {
 
 const Layout: React.FC<{
   logo?: React.ReactNode
+  image?: React.ReactNode
   title: React.ReactNode
   footer: React.ReactNode | Array<React.ReactNode | undefined | false>
-}> = ({ title, footer, logo }) => {
+}> = ({ title, footer, logo, image }) => {
   const dot = (
     <div
       style={{
@@ -54,6 +78,69 @@ const Layout: React.FC<{
   const footerItems = Array.isArray(footer)
     ? footer.filter((item) => !!item)
     : [footer]
+
+  if (image) {
+    return (
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          color: 'white',
+          background: 'black',
+          display: 'flex',
+          flexDirection: 'row',
+        }}
+      >
+        <div
+          style={{
+            width: '50%',
+            height: '100%',
+            color: 'white',
+            background: 'black',
+            display: 'flex',
+            flexDirection: 'column',
+            padding: '48px 40px',
+            gap: '16px',
+            justifyContent: 'space-between',
+            flexBasis: '50%',
+            overflow: 'hidden',
+          }}
+        >
+          <div style={{ display: 'flex', height: '120px', overflow: 'hidden' }}>
+            {logo}
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div style={{ fontSize: '54px', display: 'flex' }}>{title}</div>
+            {footerItems.length > 0 && (
+              <div
+                style={{
+                  marginTop: '24px',
+                  fontSize: '32px',
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: '0 24px',
+                }}
+              >
+                <div style={{ display: 'flex' }}>{footerItems[0]}</div>
+              </div>
+            )}
+          </div>
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            width: '50%',
+            height: '100%',
+            flexBasis: '50%',
+            overflow: 'hidden',
+          }}
+        >
+          {image}
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div
@@ -99,9 +186,10 @@ const Layout: React.FC<{
 const docsImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-docs',
   async (doc, { outDir, siteConfig }) => {
-    if (doc.metadata.frontMatter.image) return
+    if (shouldSkip(doc.metadata.frontMatter)) return
 
     const logo = await getLogo(siteConfig, outDir)
+    const image = await getPageImage('docs', outDir, doc)
 
     return [
       <Layout
@@ -114,7 +202,16 @@ const docsImageRenderer = imageRendererFactory(
             <span>{doc.version.label}</span>
           ),
         ]}
-        logo={<img src={logo.src} style={{ height: 120 }} />}
+        logo={logo && <img src={logo.src as any} style={{ height: 120 }} />}
+        image={
+          image && (
+            <img
+              src={image.src as any}
+              width={image.width}
+              height={image.height}
+            />
+          )
+        }
       />,
       options,
     ]
@@ -124,12 +221,12 @@ const docsImageRenderer = imageRendererFactory(
 const blogImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-blog',
   async (page, { outDir, siteConfig }) => {
-    if (page.pageType === 'post' && !!page.data.metadata.frontMatter.image)
+    const { pageType, data } = page
+    if (pageType === 'post' && shouldSkip(page.data.metadata.frontMatter))
       return
 
-    const { pageType, data } = page
-
     const logo = await getLogo(siteConfig, outDir)
+    const image = await getPageImage('blog', outDir, page)
 
     return [
       <Layout
@@ -153,7 +250,16 @@ const blogImageRenderer = imageRendererFactory(
               .map((author) => author.name)
               .join(', ')}`,
         ]}
-        logo={<img src={logo.src} style={{ height: 120 }} />}
+        logo={logo && <img src={logo.src as any} style={{ height: 120 }} />}
+        image={
+          image && (
+            <img
+              src={image.src as any}
+              width={image.width}
+              height={image.height}
+            />
+          )
+        }
       />,
       options,
     ]
@@ -164,43 +270,110 @@ const pagesImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-pages',
   async (page, { outDir, siteConfig }) => {
     const { metadata, plugin } = page
+    if (shouldSkip(_.get(metadata, 'frontMatter'))) return
+
     const url = new URL(siteConfig.url)
 
     const logo = await getLogo(siteConfig, outDir)
+    const image = await getPageImage('page', outDir, page)
 
     return [
       <Layout
         title={metadata.title}
         footer={url.host}
-        logo={<img src={logo.src} style={{ height: 120 }} />}
+        logo={logo && <img src={logo.src as any} style={{ height: 120 }} />}
+        image={
+          image && (
+            <img
+              src={image.src as any}
+              width={image.width}
+              height={image.height}
+            />
+          )
+        }
       />,
       options,
     ]
   },
 )
 
-const getLogo = (() => {
-  const cache: Record<string, any> = {}
+const getLogo = async (siteConfig: DocusaurusConfig, outDir: string) => {
+  const logo: any = (siteConfig.themeConfig as any).navbar.logo
 
-  return async (
-    siteConfig: DocusaurusConfig,
-    outDir: string,
-  ): Promise<{ src: any }> => {
-    const logo: any = (siteConfig.themeConfig as any).navbar.logo
+  return await loadImage(outDir, logo.src, { height: 120 })
+}
 
-    if (cache[logo.src]) return cache[logo.src]
+const getPageImage = async (
+  type: 'docs' | 'blog' | 'page',
+  outDir: string,
+  page: DocsPageData | BlogPageData | PageData,
+) => {
+  const frontMatter:
+    | DocFrontMatter
+    | BlogPostFrontMatter
+    | MDXPageMetadata['frontMatter']
+    | null
+    | undefined =
+    type === 'docs'
+      ? (page as DocsPageData).metadata.frontMatter
+      : type === 'blog'
+      ? _.get(page, 'data.metadata.frontMatter')
+      : _.get(page, 'metadata.frontMatter')
 
-    const isUrl = logo.src.startsWith('http')
+  const image = frontMatter?.image
 
-    if (isUrl) return { src: logo.src }
+  if (typeof image === 'string' && image.length > 0)
+    return await loadImage(outDir, image, {
+      width: options.width / 2,
+      height: options.height,
+      fit: 'cover',
+    })
 
-    const logoPath = path.join(outDir, logo.src)
+  return null
+}
 
-    const img = sharp(logoPath)
-    const buffer = await img.resize({ height: 120 }).toBuffer()
+type LoadedImage = {
+  src: string | ArrayBuffer
+  width: number | undefined
+  height: number | undefined
+}
 
-    cache[logo.src] = { src: buffer.buffer }
-    return cache[logo.src]
+const loadImage = (() => {
+  const cache: Record<string, LoadedImage> = {}
+
+  const download = async (url: string) =>
+    axios
+      .get(url, {
+        responseType: 'arraybuffer',
+      })
+      .then((response) => Buffer.from(response.data, 'binary'))
+
+  return async (outDir: string, url: string, resize?: ResizeOptions) => {
+    const cacheKey = hashObject({ url, resize })
+
+    if (cache[cacheKey]) return cache[cacheKey]
+
+    const buffer: Buffer = url.startsWith('data:')
+      ? Buffer.from(url, 'base64')
+      : url.startsWith('http:')
+      ? await download(url)
+      : await fsp.readFile(path.join(outDir, url))
+
+    let img = sharp(buffer)
+    if (resize) img = img.resize({ ...resize })
+
+    const output = await img.toBuffer()
+    const outputImage = sharp(output)
+    const outputMetadata = await outputImage.metadata()
+    const arrayBuffer = output.buffer
+
+    const loadedImage: LoadedImage = (cache[cacheKey] = {
+      src: arrayBuffer,
+      width: outputMetadata.width,
+      height: outputMetadata.height,
+    })
+
+    return loadedImage
   }
 })()
 
