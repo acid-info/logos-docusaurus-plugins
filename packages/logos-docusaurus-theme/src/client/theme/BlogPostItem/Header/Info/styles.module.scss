@@ -1,4 +1,5 @@
 @use '../../../../css/lsd';
+@use '../../../../css/utils';
 
 .container {
   margin-bottom: 0 !important;
@@ -47,4 +48,14 @@
 
 .authors :global(.avatar__name) {
   line-height: 0;
+}
+
+@include utils.responsive('lg', 'down') {
+  .container {
+    margin-top: 24px !important;
+  }
+
+  .blogContainer {
+    margin-top: 8px !important;
+  }
 }

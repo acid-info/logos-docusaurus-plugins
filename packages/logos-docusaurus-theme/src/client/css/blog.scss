@@ -68,7 +68,6 @@
 
 .blog-wrapper article {
   header {
-    h1,
     h2 {
       @include lsd.typography('h3');
     }
@@ -79,7 +78,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2rem !important;
+    margin-top: 24px !important;
   }
 }
 
@@ -142,7 +141,7 @@
     align-items: flex-start;
 
     .read-more-link {
-      margin-top: 2rem;
+      margin-top: 24px;
 
       &,
       button {

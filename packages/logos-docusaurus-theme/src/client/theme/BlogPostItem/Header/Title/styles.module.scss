@@ -1,0 +1,22 @@
+@use '../../../../css/utils';
+@use '../../../../css/lsd';
+
+.blogDescription {
+  margin-top: 16px;
+  @include lsd.typography('body2');
+}
+
+.blogPostDescription {
+  margin-top: 12px;
+}
+
+@include utils.responsive('lg', 'down') {
+  .blogPostTitle {
+    @include lsd.typography('h3');
+  }
+
+  .blogPostDescription {
+    margin-top: 4px;
+    @include lsd.typography('body1');
+  }
+}

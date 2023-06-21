@@ -6,7 +6,7 @@ import React from 'react'
 import { useBlogPluginData } from '../../../lib/useBlogPluginData'
 import { BreadcrumbsBase } from '../../DocBreadcrumbs/index'
 import { Typography } from '@acid-info/lsd-react'
-import styles from './Title/styles.module.css'
+import styles from './Title/styles.module.scss'
 import clsx from 'clsx'
 
 export default function BlogPostItemHeader(): JSX.Element {

@@ -1164,6 +1164,10 @@ main[itemtype*='Blog'] {
     justify-content: center;
     margin-left: unset;
   }
+
+  .blog-divider {
+    margin-block: 32px !important;
+  }
 }
 
 [data-hidden-doc-sidebar='true'] {
