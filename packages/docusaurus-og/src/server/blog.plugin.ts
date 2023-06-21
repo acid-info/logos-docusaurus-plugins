@@ -75,17 +75,18 @@ export class BlogPlugin {
     }
 
     if (options.archiveBasePath) {
-      const filePath = this.getHtmlPath(
-        options.archiveBasePath,
+      const permalink = path.join(
+        '/',
         options.routeBasePath,
+        options.archiveBasePath,
       )
 
-      fs.existsSync(filePath) &&
+      fs.existsSync(this.getHtmlPath(permalink)) &&
         this.pages.push({
           plugin: options,
           pageType: 'archive',
-          data: { permalink: options.archiveBasePath },
-          permalink: options.archiveBasePath,
+          data: { permalink: permalink },
+          permalink,
         })
     }
 
@@ -128,9 +129,5 @@ export class BlogPlugin {
   }
 
   getHtmlPath = (permalink: string, baseUrl?: string) =>
-    path.join(
-      this.context.outDir,
-      !baseUrl ? permalink : path.join('/', baseUrl, permalink),
-      'index.html',
-    )
+    path.join(this.context.outDir, permalink, 'index.html')
 }
