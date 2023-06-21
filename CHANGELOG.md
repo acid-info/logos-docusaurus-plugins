@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.53](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.52...v1.0.0-alpha.53) (2023-06-21)
+
+### Bug Fixes
+
+- fix navbar size in the image modal ([964bf92](https://github.com/acid-info/logos-docusaurus-plugins/commit/964bf92263cf6eb61527c92c83c73ab6ba74e36d))
+
 # [1.0.0-alpha.52](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.51...v1.0.0-alpha.52) (2023-06-20)
 
 ### Bug Fixes
