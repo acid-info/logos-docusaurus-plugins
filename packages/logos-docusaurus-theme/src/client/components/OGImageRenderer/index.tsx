@@ -37,9 +37,9 @@ const options: ImageGeneratorOptions = {
 
   fonts: [
     {
-      name: 'Roboto',
+      name: 'Inter',
       data: readFileSync(
-        path.resolve(__dirname, '../../static/fonts/roboto/Roboto-Regular.ttf'),
+        path.resolve(__dirname, '../../static/fonts/Inter/Inter-Regular.ttf'),
       ),
       weight: 400,
       style: 'normal',
