@@ -63,6 +63,8 @@ const config = {
         routeBasePath: '/rlog',
         path: 'rlog',
         blogTitle: 'Rlog - Vac Research Log',
+        blogDescription:
+          'Vac builds public good protocols for the decentralized web.',
         blogSidebarCount: 0,
         authorsMapPath: 'authors.yml',
       }),
