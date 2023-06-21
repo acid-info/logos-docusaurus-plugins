@@ -16,7 +16,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background: transparent;
   z-index: 203;
@@ -90,5 +90,9 @@
 @include utils.responsive('lg', 'down') {
   .wrapper > div {
     overflow: visible !important;
+  }
+
+  .nav {
+    height: 56px;
   }
 }

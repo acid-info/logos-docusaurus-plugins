@@ -100,7 +100,9 @@ export const LightBoxProvider: React.FC<React.PropsWithChildren<{}>> = ({
               className={clsx(styles.backdrop, active && styles.visible)}
             ></div>
             <div className={clsx(styles.navWrapper, active && styles.visible)}>
-              <nav className={clsx(styles.nav, active && styles.visible)}>
+              <nav
+                className={clsx(styles.nav, 'navbar', active && styles.visible)}
+              >
                 <NavbarLogo />
                 <IconButton size="medium" onClick={close}>
                   <IconFullscreenExit />
