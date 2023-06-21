@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.54](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.53...v1.0.0-alpha.54) (2023-06-21)
+
+### Features
+
+- use new marks for og image generator ([0f3a588](https://github.com/acid-info/logos-docusaurus-plugins/commit/0f3a588cb89ff20ddb032cc056cdc17436902c26))
+
 # [1.0.0-alpha.53](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.52...v1.0.0-alpha.53) (2023-06-21)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
