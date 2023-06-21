@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.55](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.54...v1.0.0-alpha.55) (2023-06-21)
+
+### Bug Fixes
+
+- change code blocks font to monospace ([10e09bd](https://github.com/acid-info/logos-docusaurus-plugins/commit/10e09bd9de3fb82ae07be173d2ca4ce4c46cd5f7))
+
 # [1.0.0-alpha.54](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.53...v1.0.0-alpha.54) (2023-06-21)
 
 ### Bug Fixes
