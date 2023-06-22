@@ -1,8 +1,15 @@
 @use '../../../../css/lsd';
+@use '../../../../css/utils';
 
 .container {
-  margin-bottom: 24px !important;
+  margin-bottom: 0 !important;
+  margin-top: 32px !important;
   @include lsd.typography('body2');
+}
+
+.blogContainer {
+  margin-top: 8px !important;
+  margin-bottom: 16px !important;
 }
 
 .container > div {
@@ -42,4 +49,14 @@
 
 .authors :global(.avatar__name) {
   line-height: 0;
+}
+
+@include utils.responsive('lg', 'down') {
+  .container {
+    margin-top: 24px !important;
+  }
+
+  .blogContainer {
+    margin-top: 8px !important;
+  }
 }

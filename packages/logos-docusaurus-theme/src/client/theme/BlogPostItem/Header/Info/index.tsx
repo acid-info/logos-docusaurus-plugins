@@ -50,11 +50,18 @@ function Date({
 export default function BlogPostItemHeaderInfo({
   className,
 }: Props): JSX.Element {
-  const { metadata } = useBlogPost()
+  const { metadata, isBlogPostPage } = useBlogPost()
   const { date, formattedDate, readingTime } = metadata
 
   return (
-    <div className={clsx(styles.container, 'margin-vert--md', className)}>
+    <div
+      className={clsx(
+        styles.container,
+        'margin-vert--md',
+        !isBlogPostPage && styles.blogContainer,
+        className,
+      )}
+    >
       <Date date={date} formattedDate={formattedDate} />
       <BlogPostItemHeaderAuthors className={styles.authors} />
       {typeof readingTime !== 'undefined' && (

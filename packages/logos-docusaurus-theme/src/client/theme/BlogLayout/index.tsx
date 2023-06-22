@@ -1,40 +1,49 @@
 import clsx from 'clsx'
 import React from 'react'
-
-import BlogLayout from '@docusaurus/theme-classic/lib/theme/BlogLayout'
 import { Props } from '@theme/BlogLayout'
-import { ensureTrailingSlash } from '../../lib/string.utils'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import Layout from '@theme/Layout'
+import BlogSidebar from '@theme/BlogSidebar'
+import { useBlogPageData } from './BlogPage.context'
+import { BlogHeader } from '../BlogHeader'
 
-const useIsIndexPage = (props: Props) => {
-  if (typeof window === 'undefined') return false
-
-  const ctx = useDocusaurusContext()
-  const activePlugin = ctx.siteConfig.plugins.find(
-    (plugin) =>
-      plugin === '"@docusaurus/plugin-content-blog"' ||
-      plugin?.[0] === '@docusaurus/plugin-content-blog',
-  )
-
-  const routeBasePath = activePlugin?.[1]?.routeBasePath ?? '/blog'
-
-  return (
-    ensureTrailingSlash(routeBasePath) ===
-    ensureTrailingSlash(window.location.pathname)
-  )
-}
-
-export default function BlogLayoutWrapper(props: Props): JSX.Element {
+export default function BlogLayout(props: Props): JSX.Element {
   const { sidebar, toc, children, ...layoutProps } = props
-  const isIndexPage = useIsIndexPage(props)
+  const { type, props: blogPageProps } = useBlogPageData()
+  const isIndexPage = type === 'list'
+  const hasSidebar = sidebar && sidebar.items.length > 0
+  const metadata = blogPageProps?.metadata
 
   return (
-    <BlogLayout
-      {...props}
+    <Layout
+      {...layoutProps}
       wrapperClassName={clsx(
         'blog-wrapper',
         isIndexPage && 'blog-wrapper--index',
       )}
-    />
+    >
+      {isIndexPage && (
+        <BlogHeader
+          title={metadata?.blogTitle}
+          description={metadata?.blogDescription}
+        />
+      )}
+
+      <div className="container margin-vert--lg">
+        <div className="row">
+          <BlogSidebar sidebar={sidebar} />
+          <main
+            className={clsx('col', {
+              'col--7': hasSidebar,
+              'col--9 col--offset-1': !hasSidebar,
+            })}
+            itemScope
+            itemType="http://schema.org/Blog"
+          >
+            {children}
+          </main>
+          {toc && <div className="col col--2">{toc}</div>}
+        </div>
+      </div>
+    </Layout>
   )
 }

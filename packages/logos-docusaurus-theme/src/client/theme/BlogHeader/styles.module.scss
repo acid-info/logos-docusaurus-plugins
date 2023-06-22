@@ -1,0 +1,29 @@
+@use '../../css/utils';
+@use '../../css/lsd';
+
+.blogHeader {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  gap: 8px !important;
+
+  padding-top: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(var(--lsd-border-primary));
+  margin-bottom: 40px;
+  margin-inline: var(--content-padding);
+}
+
+.blogTitle {
+  grid-column: span 24;
+}
+
+.blogDescription {
+  grid-column: span 24;
+}
+
+@include utils.responsive('lg', 'down') {
+  .blogHeader {
+    padding-inline: var(--content-padding);
+  }
+}
