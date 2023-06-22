@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   left: 0;
-  gap: 8px;
+  gap: 8px !important;
 
   width: 100%;
   max-width: var(--container-max-width);
@@ -22,4 +22,10 @@
 
 .blogDescription {
   grid-column: span 24;
+}
+
+@include utils.responsive('lg', 'down') {
+  .blogHeader {
+    padding-inline: var(--content-padding);
+  }
 }

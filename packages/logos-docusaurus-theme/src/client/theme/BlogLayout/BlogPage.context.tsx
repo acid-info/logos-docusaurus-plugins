@@ -1,15 +1,15 @@
-import React, { useContext } from 'react'
+import { createContext, useContext } from 'react'
+
+import type { Props as BlogListPageProps } from '@theme/BlogListPage'
 
 export type BlogPageContextType = {
-  type?: 'list' | 'page'
-  blogTitle?: string
-  blogDescription?: string
+  type: 'list' | null
+  props: BlogListPageProps
 }
 
-export const BlogPage = React.createContext<BlogPageContextType>({
-  type: 'list',
-  blogTitle: '',
-  blogDescription: '',
+export const BlogPageContext = createContext<BlogPageContextType>({
+  type: null as any,
+  props: null as any,
 })
 
-export const useBlogPage = () => useContext(BlogPage)
+export const useBlogPageData = () => useContext(BlogPageContext)
