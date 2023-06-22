@@ -150,6 +150,10 @@
       }
     }
   }
+
+  .blog-post-title {
+    @include lsd.typography('h3');
+  }
 }
 
 .blog-archive-page {

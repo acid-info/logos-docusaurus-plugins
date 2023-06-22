@@ -2,7 +2,6 @@ import React from 'react'
 import clsx from 'clsx'
 import Link from '@docusaurus/Link'
 import { useBlogPost } from '@docusaurus/theme-common/internal'
-import styles from './styles.module.scss'
 
 export default function BlogPostItemHeaderTitle({ className }) {
   const { metadata, isBlogPostPage } = useBlogPost()
@@ -11,7 +10,7 @@ export default function BlogPostItemHeaderTitle({ className }) {
 
   return (
     <TitleHeading
-      className={clsx(isBlogPostPage && styles.blogPostTitle, className)}
+      className={clsx(isBlogPostPage && 'blog-post-title', className)}
       itemProp="headline"
     >
       {isBlogPostPage ? (

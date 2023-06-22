@@ -1,8 +1,0 @@
-@use '../../../../css/utils';
-@use '../../../../css/lsd';
-
-@include utils.responsive('lg', 'down') {
-  .blogPostTitle {
-    @include lsd.typography('h3');
-  }
-}
