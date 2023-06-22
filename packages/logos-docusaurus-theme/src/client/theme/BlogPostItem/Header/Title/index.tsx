@@ -1,25 +1,10 @@
 import React from 'react'
-import clsx from 'clsx'
-import Link from '@docusaurus/Link'
-import { useBlogPost } from '@docusaurus/theme-common/internal'
+import Title from '@docusaurus/theme-classic/lib/theme/BlogPostItem/Header/Title'
 
-export default function BlogPostItemHeaderTitle({ className }) {
-  const { metadata, isBlogPostPage } = useBlogPost()
-  const { permalink, title } = metadata
-  const TitleHeading = isBlogPostPage ? 'h1' : 'h6'
-
+export default function TitleWrapper(props) {
   return (
-    <TitleHeading
-      className={clsx(isBlogPostPage && 'blog-post-title', className)}
-      itemProp="headline"
-    >
-      {isBlogPostPage ? (
-        title
-      ) : (
-        <Link itemProp="url" to={permalink}>
-          {title}
-        </Link>
-      )}
-    </TitleHeading>
+    <>
+      <Title {...props} />
+    </>
   )
 }

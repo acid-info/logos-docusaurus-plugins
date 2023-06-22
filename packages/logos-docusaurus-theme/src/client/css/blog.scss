@@ -61,6 +61,10 @@
   }
 }
 
+.blog-wrapper--index h2[itemprop='headline'] {
+  @include lsd.typography('h6');
+}
+
 .blog-wrapper > .container > .row > main {
   margin-top: 16px;
   max-width: unset;
@@ -149,10 +153,6 @@
         flex-basis: 100%;
       }
     }
-  }
-
-  .blog-post-title {
-    @include lsd.typography('h3');
   }
 }
 
