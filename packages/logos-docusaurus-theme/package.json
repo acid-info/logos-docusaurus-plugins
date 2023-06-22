@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-theme",
-  "version": "1.0.0-alpha.58",
+  "version": "1.0.0-alpha.59",
   "description": "A Docusaurus theme for Logos documentation websites",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",

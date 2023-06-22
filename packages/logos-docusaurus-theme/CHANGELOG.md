@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.59](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.58...v1.0.0-alpha.59) (2023-06-22)
+
+### Bug Fixes
+
+- link underline should only appear in hover state closes [#75](https://github.com/acid-info/logos-docusaurus-plugins/issues/75) ([00701b7](https://github.com/acid-info/logos-docusaurus-plugins/commit/00701b7b42c4cc063ecdb59e7dd9e2c9eee7d743))
+- use ThemedImage for marks in the Showcase mdx component, closes [#79](https://github.com/acid-info/logos-docusaurus-plugins/issues/79) ([80c9b36](https://github.com/acid-info/logos-docusaurus-plugins/commit/80c9b36b8986499abf6f9be928aed6a36e403266))
+
 # [1.0.0-alpha.58](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.57...v1.0.0-alpha.58) (2023-06-22)
 
 ### Bug Fixes
