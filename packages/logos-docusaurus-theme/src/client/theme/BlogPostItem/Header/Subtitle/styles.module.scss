@@ -1,0 +1,13 @@
+@use '../../../../css/utils';
+@use '../../../../css/lsd';
+
+.blogPostSubtitle {
+  margin-top: 12px;
+}
+
+@include utils.responsive('lg', 'down') {
+  .blogPostSubtitle {
+    margin-top: 4px;
+    @include lsd.typography('body1');
+  }
+}

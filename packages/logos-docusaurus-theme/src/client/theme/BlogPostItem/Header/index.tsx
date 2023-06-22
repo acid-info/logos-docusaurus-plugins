@@ -8,6 +8,7 @@ import { BreadcrumbsBase } from '../../DocBreadcrumbs/index'
 import { Typography } from '@acid-info/lsd-react'
 import styles from './Title/styles.module.scss'
 import clsx from 'clsx'
+import { Subtitle } from './Subtitle'
 
 export default function BlogPostItemHeader(): JSX.Element {
   const {
@@ -18,17 +19,6 @@ export default function BlogPostItemHeader(): JSX.Element {
 
   const plugin = useBlogPluginData()
   const routeBasePath = plugin.routeBasePath ?? '/blog'
-
-  const _description = (
-    <Typography
-      variant="h6"
-      className={clsx(
-        isBlogPostPage ? styles.blogPostDescription : styles.blogDescription,
-      )}
-    >
-      {frontMatter.description}
-    </Typography>
-  )
 
   return (
     <header>
@@ -49,9 +39,10 @@ export default function BlogPostItemHeader(): JSX.Element {
         />
       )}
       <BlogPostItemHeaderTitle />
-      {frontMatter?.description && isBlogPostPage && _description}
+      {(frontMatter?.subtitle as string) && isBlogPostPage && (
+        <Subtitle content={frontMatter?.subtitle as string} />
+      )}
       <BlogPostItemHeaderInfo />
-      {frontMatter?.description && !isBlogPostPage && _description}
       {isBlogPostPage && <hr className="blog-divider" />}
     </header>
   )
