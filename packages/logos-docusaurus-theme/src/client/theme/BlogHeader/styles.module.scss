@@ -7,13 +7,11 @@
   left: 0;
   gap: 8px !important;
 
-  width: 100%;
-  max-width: var(--container-max-width);
-
   padding-top: 16px;
   padding-bottom: 24px;
   border-bottom: 1px solid rgb(var(--lsd-border-primary));
   margin-bottom: 40px;
+  margin-inline: var(--content-padding);
 }
 
 .blogTitle {

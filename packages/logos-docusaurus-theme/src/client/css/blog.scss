@@ -154,6 +154,10 @@
       }
     }
   }
+
+  .blog-wrapper h1[itemprop='headline'] {
+    @include lsd.typography('h3');
+  }
 }
 
 .blog-archive-page {
