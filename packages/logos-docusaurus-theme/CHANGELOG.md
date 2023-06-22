@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.57](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.56...v1.0.0-alpha.57) (2023-06-22)
+
+### Bug Fixes
+
+- fix the jump issue with navbar ([1301f90](https://github.com/acid-info/logos-docusaurus-plugins/commit/1301f90efd339db99a3b8ce056e080df5ebbd5a4))
+- refactor blog header with context ([d06094e](https://github.com/acid-info/logos-docusaurus-plugins/commit/d06094ee119cfa41fe6ed2c56273676146cecacb))
+- search input's clear button overflow ([88f0557](https://github.com/acid-info/logos-docusaurus-plugins/commit/88f0557a7ca7be893543f3137ba8ed7ad45b9a67))
+
+### Features
+
+- add blog title and description ([6c4c50e](https://github.com/acid-info/logos-docusaurus-plugins/commit/6c4c50ea59021da25fa2888e616456a0d59fc956))
+- update blog post item ([c008b98](https://github.com/acid-info/logos-docusaurus-plugins/commit/c008b98cfe95e22582f1ba2626ea47aa60237f82))
+
 # [1.0.0-alpha.56](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.55...v1.0.0-alpha.56) (2023-06-22)
 
 ### Bug Fixes
