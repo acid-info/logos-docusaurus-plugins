@@ -1,5 +1,5 @@
 import { Typography } from '@acid-info/lsd-react'
-import { useColorMode } from '@docusaurus/theme-common'
+import ThemedImage from '@theme/ThemedImage'
 import clsx from 'clsx'
 import React from 'react'
 import './Showcase.scss'
@@ -24,18 +24,17 @@ export const Showcase: React.FC<ShowcaseProps> = ({
   children,
   ...props
 }) => {
-  const { isDarkTheme } = useColorMode()
-
   return (
     <div className={clsx(className, 'mdx-showcase')} {...props}>
       {items.map((item, index) => {
-        const logoSrc = item.logo ?? item.logoDark
-
         return (
           <div key={index} className="mdx-showcase__item">
             <div key={index} className="mdx-showcase__item-inner">
-              <img
-                src={(isDarkTheme ? item.logoDark : item.logo) ?? logoSrc}
+              <ThemedImage
+                sources={{
+                  dark: item.logoDark,
+                  light: item.logo,
+                }}
                 alt={typeof item.name === 'string' ? item.name : 'image'}
                 className="mdx-showcase__item-logo"
               />
