@@ -1,20 +1,18 @@
 import clsx from 'clsx'
 import React from 'react'
 import { Props } from '@theme/BlogLayout'
-
-import { Typography } from '@acid-info/lsd-react'
-import styles from './styles.module.scss'
 import Layout from '@theme/Layout'
 import BlogSidebar from '@theme/BlogSidebar'
 import { useBlogPageData } from './BlogPage.context'
+import { BlogHeader } from '../BlogHeader'
 
-export default function BlogLayoutWrapper(props: Props): JSX.Element {
+export default function BlogLayout(props: Props): JSX.Element {
   const { sidebar, toc, children, ...layoutProps } = props
   const { type, props: blogPageProps } = useBlogPageData()
   const isIndexPage = type === 'list'
   const hasSidebar = sidebar && sidebar.items.length > 0
-  const metadata = blogPageProps?.metadata // desstructing blogTitle & blogDescription raises an error
-  console.log('isIndexPage', isIndexPage)
+  const metadata = blogPageProps?.metadata
+
   return (
     <Layout
       {...layoutProps}
@@ -24,21 +22,10 @@ export default function BlogLayoutWrapper(props: Props): JSX.Element {
       )}
     >
       {isIndexPage && (
-        <div className={clsx(styles.blogHeader)}>
-          {metadata?.blogTitle && (
-            <Typography variant="h3" className={clsx(styles.blogTitle)}>
-              {metadata?.blogTitle}
-            </Typography>
-          )}
-          {metadata?.blogDescription && (
-            <Typography
-              variant="body2"
-              className={clsx(styles.blogDescription)}
-            >
-              {metadata?.blogDescription}
-            </Typography>
-          )}
-        </div>
+        <BlogHeader
+          title={metadata?.blogTitle}
+          description={metadata?.blogDescription}
+        />
       )}
 
       <div className="container margin-vert--lg">
