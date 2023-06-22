@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.56](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.55...v1.0.0-alpha.56) (2023-06-22)
+
+### Bug Fixes
+
+- search results broken style ([c20e8c8](https://github.com/acid-info/logos-docusaurus-plugins/commit/c20e8c8785661baa845543eb6217c97dd2a16785))
+
 # [1.0.0-alpha.55](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.54...v1.0.0-alpha.55) (2023-06-21)
 
 ### Bug Fixes
