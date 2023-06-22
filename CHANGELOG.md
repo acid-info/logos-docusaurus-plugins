@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.58](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.57...v1.0.0-alpha.58) (2023-06-22)
+
+### Bug Fixes
+
+- search input's clear button overflow ([fcd4ebf](https://github.com/acid-info/logos-docusaurus-plugins/commit/fcd4ebfc7273c4ea8327480c4e69883482c1f656))
+
 # [1.0.0-alpha.57](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.56...v1.0.0-alpha.57) (2023-06-22)
 
 ### Bug Fixes
