@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
+}
+
+.linkContent:hover {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
   text-decoration-color: rgba(var(--lsd-text-primary), 0.6);
