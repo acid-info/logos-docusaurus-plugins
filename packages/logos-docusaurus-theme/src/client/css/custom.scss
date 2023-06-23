@@ -235,6 +235,7 @@
 
   --ifm-table-background: transparent !important;
   --ifm-table-stripe-background: transparent !important;
+  --ifm-pre-border-radius: 0 !important;
 
   @include utils.responsive('xl', 'down') {
     --container-max-width: 912px;
@@ -1198,6 +1199,11 @@ pre code {
 
 .docusaurus-mermaid-container {
   margin-block: 40px;
+}
+
+code {
+  --lsd-typography-generic-font-family: monospace;
+  background: rgba(var(--lsd-theme-primary), 0.1);
 }
 
 @import './blog.scss';

@@ -4,6 +4,7 @@
 }
 
 .codeBlockTitle {
+  background: rgba(var(--lsd-theme-primary), 0.08);
   border-bottom: 1px solid var(--ifm-color-primary);
   font-size: var(--ifm-code-font-size);
   font-weight: 500;
