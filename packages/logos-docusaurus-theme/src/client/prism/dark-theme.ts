@@ -5,7 +5,7 @@ const theme: PrismTheme = {
   ...dracula,
   plain: {
     ...dracula.plain,
-    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+    backgroundColor: 'rgba(var(--lsd-surface-secondary), 0.08)',
   },
 }
 

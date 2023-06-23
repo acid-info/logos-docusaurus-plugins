@@ -5,7 +5,7 @@ const theme: PrismTheme = {
   ...vsLight,
   plain: {
     ...vsLight.plain,
-    backgroundColor: 'rgba(0, 0, 0, 0.08)',
+    backgroundColor: 'rgba(var(--lsd-surface-secondary), 0.08)',
   },
 }
 
