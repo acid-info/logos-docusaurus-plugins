@@ -4,6 +4,7 @@
 }
 
 .codeBlockTitle {
+  background: var(--prism-background-color);
   border-bottom: 1px solid var(--ifm-color-primary);
   font-size: var(--ifm-code-font-size);
   font-weight: 500;

@@ -2,6 +2,5 @@
   background: transparent;
   color: var(--prism-color);
   margin-bottom: var(--ifm-leading);
-  border: 1px solid rgb(var(--lsd-border-primary));
   border-radius: 0;
 }
