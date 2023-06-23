@@ -103,7 +103,7 @@
   /* Leading is the distance between two baselines */
   /* TODO: add appropriate mobile leading */
   --ifm-leading-desktop: 1.25;
-  --ifm-leading: calc(var(--ifm-leading-desktop) * 1rem);
+  --ifm-leading: 24px;
   --ifm-list-left-padding: 2rem;
   --ifm-list-margin: 1rem;
   --ifm-list-item-margin: 0.25rem;
@@ -647,12 +647,16 @@ a[class^='sidebarLogo_'] {
 }
 
 table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
   @include lsd.typography('body2');
   thead > tr {
     border: 1px solid rgb(var(--lsd-border-primary));
   }
 
   th {
+    // width: 100%;
     text-transform: uppercase;
     font-weight: 400 !important;
     border: 1px solid rgb(var(--lsd-border-primary));
