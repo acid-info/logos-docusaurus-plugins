@@ -1196,4 +1196,8 @@ pre code {
   --lsd-typography-generic-font-family: monospace;
 }
 
+.docusaurus-mermaid-container {
+  margin-block: 40px;
+}
+
 @import './blog.scss';
