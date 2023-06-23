@@ -1206,4 +1206,8 @@ code {
   background: rgba(var(--lsd-theme-primary), 0.1);
 }
 
+.theme-admonition {
+  overflow: auto;
+}
+
 @import './blog.scss';
