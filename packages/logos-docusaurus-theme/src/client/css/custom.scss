@@ -95,7 +95,7 @@
   --ifm-h6-font-size: var(--lsd-h6-fontSize);
 
   /* Spacing. */
-  --ifm-global-spacing: 0.67rem;
+  --ifm-global-spacing: 24px;
   --ifm-spacing-vertical: var(--ifm-global-spacing);
   --ifm-spacing-horizontal: 0.75rem;
 
@@ -103,7 +103,7 @@
   /* Leading is the distance between two baselines */
   /* TODO: add appropriate mobile leading */
   --ifm-leading-desktop: 1.25;
-  --ifm-leading: calc(var(--ifm-leading-desktop) * 1rem);
+  --ifm-leading: 24px;
   --ifm-list-left-padding: 2rem;
   --ifm-list-margin: 1rem;
   --ifm-list-item-margin: 0.25rem;
@@ -237,6 +237,8 @@
   --ifm-table-stripe-background: transparent !important;
   --ifm-pre-border-radius: 0 !important;
 
+  --ifm-code-font-size: 100% !important;
+
   @include utils.responsive('xl', 'down') {
     --container-max-width: 912px;
   }
@@ -313,10 +315,13 @@ h4 {
 }
 
 code {
-  @include lsd.typography('body1');
   color: rgb(var(--lsd-text-primary));
   border-radius: 0;
   background: rgba(255, 255, 255, 0.15);
+}
+
+pre code {
+  @include lsd.typography('body1');
 }
 
 a code {
@@ -647,12 +652,16 @@ a[class^='sidebarLogo_'] {
 }
 
 table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
   @include lsd.typography('body2');
   thead > tr {
     border: 1px solid rgb(var(--lsd-border-primary));
   }
 
   th {
+    // width: 100%;
     text-transform: uppercase;
     font-weight: 400 !important;
     border: 1px solid rgb(var(--lsd-border-primary));
@@ -736,7 +745,6 @@ main[itemtype*='Blog'] {
 
 @include utils.responsive('sm', 'down') {
   :root {
-    --ifm-global-spacing: 0.5rem;
     --ifm-spacing-vertical: var(--ifm-global-spacing);
     --ifm-spacing-horizontal: var(--ifm-global-spacing);
 

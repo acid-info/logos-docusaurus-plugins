@@ -33,6 +33,18 @@
   .tocMobile:not(:first-of-type) {
     display: none;
   }
+
+  h1 {
+    margin-bottom: 40px !important;
+  }
+
+  h2 {
+    margin-top: 32px !important;
+  }
+
+  h3 {
+    margin-top: 32px !important;
+  }
 }
 
 @include utils.responsive('lg', 'up') {
