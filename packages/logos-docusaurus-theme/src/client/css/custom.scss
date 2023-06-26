@@ -95,7 +95,7 @@
   --ifm-h6-font-size: var(--lsd-h6-fontSize);
 
   /* Spacing. */
-  --ifm-global-spacing: 0.67rem;
+  --ifm-global-spacing: 24px;
   --ifm-spacing-vertical: var(--ifm-global-spacing);
   --ifm-spacing-horizontal: 0.75rem;
 
@@ -745,7 +745,6 @@ main[itemtype*='Blog'] {
 
 @include utils.responsive('sm', 'down') {
   :root {
-    --ifm-global-spacing: 0.5rem;
     --ifm-spacing-vertical: var(--ifm-global-spacing);
     --ifm-spacing-horizontal: var(--ifm-global-spacing);
 
