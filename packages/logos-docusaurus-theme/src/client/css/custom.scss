@@ -298,18 +298,34 @@ svg * {
 
 h1 {
   @include lsd.typography('h1');
+
+  code {
+    @include lsd.typography('h1');
+  }
 }
 
 h2 {
   @include lsd.typography('h2');
+
+  code {
+    @include lsd.typography('h2');
+  }
 }
 
 h3 {
   @include lsd.typography('h3');
+
+  code {
+    @include lsd.typography('h3');
+  }
 }
 
 h4 {
   @include lsd.typography('h4');
+
+  code {
+    @include lsd.typography('h4');
+  }
 }
 
 code {
