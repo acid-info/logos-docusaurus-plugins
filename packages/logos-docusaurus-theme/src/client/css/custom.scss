@@ -237,6 +237,8 @@
   --ifm-table-stripe-background: transparent !important;
   --ifm-pre-border-radius: 0 !important;
 
+  --ifm-code-font-size: 100% !important;
+
   @include utils.responsive('xl', 'down') {
     --container-max-width: 912px;
   }
@@ -298,41 +300,28 @@ svg * {
 
 h1 {
   @include lsd.typography('h1');
-
-  code {
-    @include lsd.typography('h1');
-  }
 }
 
 h2 {
   @include lsd.typography('h2');
-
-  code {
-    @include lsd.typography('h2');
-  }
 }
 
 h3 {
   @include lsd.typography('h3');
-
-  code {
-    @include lsd.typography('h3');
-  }
 }
 
 h4 {
   @include lsd.typography('h4');
-
-  code {
-    @include lsd.typography('h4');
-  }
 }
 
 code {
-  @include lsd.typography('body1');
   color: rgb(var(--lsd-text-primary));
   border-radius: 0;
   background: rgba(255, 255, 255, 0.15);
+}
+
+pre code {
+  @include lsd.typography('body1');
 }
 
 a code {
