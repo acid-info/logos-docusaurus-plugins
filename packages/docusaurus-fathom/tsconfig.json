@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [{ "path": "./tsconfig.client.json" }],
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": true,
+    "tsBuildInfoFile": "./lib/.tsbuildinfo",
+    "rootDir": "src",
+    "outDir": "lib",
+    "lib": ["DOM"]
+  },
+  "include": ["src"],
+  "exclude": ["src/theme", "**/__tests__/**"]
+}

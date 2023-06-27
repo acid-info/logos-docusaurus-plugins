@@ -45,6 +45,7 @@ export default function logosPreset(
   context: LoadContext,
   options: PluginOptions,
 ): Preset {
+  //@ts-ignore
   const docsEnabled = options.docs !== false
 
   const siteConfig: typeof context.siteConfig = defaultsDeep(

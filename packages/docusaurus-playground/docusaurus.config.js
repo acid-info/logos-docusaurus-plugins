@@ -54,6 +54,8 @@ const config = {
     ],
   ],
 
+  // clientModules: ['./src/fathom.ts'],
+
   plugins: [
     [
       '@docusaurus/plugin-content-blog',
@@ -68,6 +70,13 @@ const config = {
         blogSidebarCount: 0,
         authorsMapPath: 'authors.yml',
       }),
+    ],
+    [
+      '@acid-info/docusaurus-fathom',
+      {
+        siteId: 'SIDE_ID_2',
+        scriptUrl: 'SCRIPT_URL_2',
+      },
     ],
   ],
 
