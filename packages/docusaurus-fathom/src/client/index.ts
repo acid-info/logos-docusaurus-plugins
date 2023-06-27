@@ -2,6 +2,7 @@ import {
   SITE_ID,
   SCRIPT_URL,
 } from '@generated/docusaurus-fathom/default/options'
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 declare global {
   interface Window {
@@ -9,26 +10,34 @@ declare global {
   }
 }
 
-;(function (f: any, a: Window, t: string, h: string) {
-  a[h] =
-    a[h] ||
-    function () {
-      ;(a[h].q = a[h].q || []).push(arguments)
+let onRouteDidUpdate
+
+if (ExecutionEnvironment.canUseDOM) {
+  ;(function (f: any, a: any, t: string, h: string) {
+    a[h] =
+      a[h] ||
+      function () {
+        ;(a[h].q = a[h].q || []).push(arguments)
+      }
+    const o = f.createElement('script')
+    const m = f.getElementsByTagName('script')[0]
+    o.async = 1
+    o.src = t
+    o.id = 'fathom-script'
+    m.parentNode.insertBefore(o, m)
+  })(document, window, SCRIPT_URL, 'fathom')
+
+  const { fathom } = window as any
+  fathom('set', 'siteId', SITE_ID)
+  fathom('trackPageview')
+
+  function onRouteDidUpdateFnc({ location, previousLocation }) {
+    if (location.pathname !== previousLocation?.pathname) {
+      fathom('trackPageview')
     }
-  const o = f.createElement('script')
-  const m = f.getElementsByTagName('script')[0]
-  o.async = 1
-  o.src = t
-  o.id = 'fathom-script'
-  m.parentNode.insertBefore(o, m)
-})(document, window, SCRIPT_URL, 'fathom')
-
-const { fathom } = window as any
-fathom('set', 'siteId', SITE_ID)
-fathom('trackPageview')
-
-export function onRouteDidUpdate({ location, previousLocation }) {
-  if (location.pathname !== previousLocation?.pathname) {
-    fathom('trackPageview')
   }
+
+  onRouteDidUpdate = onRouteDidUpdateFnc
 }
+
+export { onRouteDidUpdate }
