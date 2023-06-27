@@ -74,8 +74,8 @@ const config = {
     [
       '@acid-info/docusaurus-fathom',
       {
-        siteId: 'SIDE_ID_2',
-        scriptUrl: 'SCRIPT_URL_2',
+        siteId: 'FUTMI',
+        scriptUrl: '//fathom.status.im/tracker.js',
       },
     ],
   ],

@@ -1,4 +1,7 @@
-import { SITE_ID, SCRIPT_URL } from './options'
+import {
+  SITE_ID,
+  SCRIPT_URL,
+} from '@generated/docusaurus-fathom/default/options'
 
 declare global {
   interface Window {
@@ -23,8 +26,6 @@ declare global {
 const { fathom } = window as any
 fathom('set', 'siteId', SITE_ID)
 fathom('trackPageview')
-
-console.log('PLUGIN_SITE_ID', SITE_ID)
 
 export function onRouteDidUpdate({ location, previousLocation }) {
   if (location.pathname !== previousLocation?.pathname) {

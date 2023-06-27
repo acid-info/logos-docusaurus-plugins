@@ -13,7 +13,7 @@ export default function fathomPlugin(
 
   fs.writeFileSync(
     path.join(dir, 'options.ts'),
-    `export const SITE_ID = '${siteId}'\nexport const SCRIPT_URL = '${scriptUrl}'`,
+    `export const SITE_ID = "${siteId}"\nexport const SCRIPT_URL = "${scriptUrl}"`,
   )
 
   return {
