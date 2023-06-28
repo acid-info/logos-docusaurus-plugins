@@ -1,9 +1,10 @@
 import { ArrowDownIcon, IconButton } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React, { HTMLProps } from 'react'
-import styles from './styles.module.scss'
+import { useHydrated } from '../../../lib/useHydrated'
+import { useIsMobile } from '../../../lib/useIsMobile'
 import { useScrollY } from '../../../lib/useScrollY'
-import { calcHeroInfoMb, isMobile } from '../../../lib/ui.utils'
+import styles from './styles.module.scss'
 
 type TProps = {}
 
@@ -11,7 +12,10 @@ export const ScrollToBottom = (
   props: TProps & HTMLProps<HTMLButtonElement>,
 ): JSX.Element => {
   const { children, className, ...rest } = props
+  const isHydrated = useHydrated()
   const scrollY = useScrollY()
+  const isMobile = useIsMobile()
+
   const handleScrollToBottom = () => {
     const article = document.querySelector('.main-wrapper article')
     const secondElement = article?.children?.[1]
@@ -22,22 +26,21 @@ export const ScrollToBottom = (
         behavior: 'smooth',
       })
 
-    if (isMobile()) {
-      window.scrollTo(0, secondElement.getBoundingClientRect().top - 200)
-    } else {
-      ;(secondElement as HTMLElement)?.scrollIntoView?.({ behavior: 'smooth' })
-    }
-    return
+    return window.scrollTo({
+      left: 0,
+      top: secondElement.getBoundingClientRect().top - (isMobile ? 200 : 0),
+      behavior: 'smooth',
+    })
   }
 
   return (
     <IconButton
       onClick={handleScrollToBottom}
-      size="small"
+      size={isMobile ? 'small' : 'large'}
       className={clsx(
         styles.scrollToBottom,
         className,
-        scrollY > 20 ? styles.hide : '',
+        (scrollY > 20 || !isHydrated) && styles.hide,
       )}
       {...(rest as any)}
     >

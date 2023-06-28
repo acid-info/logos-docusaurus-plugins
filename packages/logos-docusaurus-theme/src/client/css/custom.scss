@@ -299,19 +299,19 @@ svg * {
 }
 
 h1 {
-  @include lsd.typography('h1');
+  @include lsd.typography('h1', false);
 }
 
 h2 {
-  @include lsd.typography('h2');
+  @include lsd.typography('h2', false);
 }
 
 h3 {
-  @include lsd.typography('h3');
+  @include lsd.typography('h3', false);
 }
 
 h4 {
-  @include lsd.typography('h4');
+  @include lsd.typography('h4', false);
 }
 
 code {
@@ -335,11 +335,6 @@ a code {
 
   --ifm-navbar-item-padding-vertical: 8px;
   --ifm-navbar-item-padding-horizontal: 12px;
-
-  --logos-navbar-height: var(--ifm-navbar-height);
-  --logos-hero-info-height: 420px;
-  --logos-hero-info-padding-top: 32px;
-  --logos-hero-info-padding-bottom: 32px;
 }
 
 .card,
@@ -1216,6 +1211,10 @@ code {
 
 .theme-admonition {
   overflow: auto;
+}
+
+#__docusaurus {
+  overflow: hidden;
 }
 
 @import './blog.scss';

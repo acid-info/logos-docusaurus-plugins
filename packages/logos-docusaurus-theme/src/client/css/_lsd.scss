@@ -1,6 +1,13 @@
-@mixin typography($variant) {
-  font-size: var(--lsd-#{$variant}-fontSize) !important;
-  line-height: var(--lsd-#{$variant}-lineHeight) !important;
-  font-family: var(--lsd-typography-generic-font-family) !important;
-  font-weight: 400 !important;
+@mixin typography($variant, $important: true) {
+  @if $important == true {
+    font-size: var(--lsd-#{$variant}-fontSize) !important;
+    line-height: var(--lsd-#{$variant}-lineHeight) !important;
+    font-family: var(--lsd-typography-generic-font-family) !important;
+    font-weight: 400 !important;
+  } @else {
+    font-size: var(--lsd-#{$variant}-fontSize);
+    line-height: var(--lsd-#{$variant}-lineHeight);
+    font-family: var(--lsd-typography-generic-font-family);
+    font-weight: 400;
+  }
 }

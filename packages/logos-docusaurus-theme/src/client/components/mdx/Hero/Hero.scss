@@ -1,5 +1,8 @@
 .mdx-hero {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--ifm-navbar-height) - 8px);
 }
 
 .mdx-hero--large {

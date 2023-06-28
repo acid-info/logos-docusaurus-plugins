@@ -21,7 +21,7 @@ export const HeroDescription: React.FC<HeroDescriptionProps> = ({
 
   return (
     <Typography
-      variant={size === 'small' ? 'h5' : 'h2'}
+      variant={'h5'}
       className={clsx(
         className,
         'mdx-hero-description',

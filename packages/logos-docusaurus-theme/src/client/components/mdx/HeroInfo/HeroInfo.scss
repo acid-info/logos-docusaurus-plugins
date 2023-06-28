@@ -1,17 +1,13 @@
 @use '../../../css/utils';
 
 .mdx-hero-info {
-  padding: var(--logos-hero-info-padding-bottom) 0
-    var(--logos-hero-info-padding-bottom) 0;
-  height: var(--logos-hero-info-height);
+  padding: 32px 0;
 
   display: flex;
   flex-direction: column;
   justify-content: end;
 
   border-bottom: 1px solid rgb(var(--lsd-surface-secondary));
-  margin-bottom: calc(100vh - var(--logos-hero-info-height));
-
   transition: margin-bottom 0.05s ease-in-out;
 }
 
@@ -19,7 +15,7 @@
 }
 
 @include utils.responsive('lg', 'down') {
-  :root {
-    //--logos-hero-info-height: 340px;
+  .mdx-hero-info {
+    padding: 24px 0;
   }
 }

@@ -19,6 +19,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: stretch;
+    z-index: 0;
+
+    & > * {
+      flex-basis: 50%;
+    }
 
     > a,
     > a > button {

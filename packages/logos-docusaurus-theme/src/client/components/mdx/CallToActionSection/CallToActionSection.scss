@@ -50,11 +50,9 @@
   }
 }
 
-@include utils.responsive('md', 'up') {
-  .mdx-cta-section:not(.mdx-cta-section--with-description) {
-    .mdx-cta-section__title {
-      max-width: 65%;
-    }
+.mdx-cta-section:not(.mdx-cta-section--with-description) {
+  .mdx-cta-section__title {
+    max-width: 886px;
   }
 }
 
