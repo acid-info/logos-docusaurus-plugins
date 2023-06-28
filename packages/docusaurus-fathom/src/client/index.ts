@@ -3,14 +3,13 @@ import {
   SCRIPT_URL,
 } from '@generated/docusaurus-fathom/default/options'
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
+import { ClientModule } from '@docusaurus/types/src/clientModule'
 
 declare global {
   interface Window {
     fathom: any
   }
 }
-
-let onRouteDidUpdate
 
 if (ExecutionEnvironment.canUseDOM) {
   ;(function (f: any, a: any, t: string, h: string) {
@@ -30,14 +29,13 @@ if (ExecutionEnvironment.canUseDOM) {
   const { fathom } = window as any
   fathom('set', 'siteId', SITE_ID)
   fathom('trackPageview')
-
-  function onRouteDidUpdateFnc({ location, previousLocation }) {
-    if (location.pathname !== previousLocation?.pathname) {
-      fathom('trackPageview')
-    }
-  }
-
-  onRouteDidUpdate = onRouteDidUpdateFnc
 }
 
-export { onRouteDidUpdate }
+export const onRouteDidUpdate: ClientModule['onRouteDidUpdate'] = ({
+  location,
+  previousLocation,
+}) => {
+  if (location.pathname !== previousLocation?.pathname) {
+    window.fathom('trackPageview')
+  }
+}
