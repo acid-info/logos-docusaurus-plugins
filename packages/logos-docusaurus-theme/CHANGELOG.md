@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.62](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.61...v1.0.0-alpha.62) (2023-06-28)
+
+### Features
+
+- landing page redesign ([c6eb842](https://github.com/acid-info/logos-docusaurus-plugins/commit/c6eb842638b613594696a8f80c179069ace35a07))
+
 # [1.0.0-alpha.60](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.59...v1.0.0-alpha.60) (2023-06-26)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
