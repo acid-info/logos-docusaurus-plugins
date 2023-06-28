@@ -73,6 +73,8 @@ $ yarn lerna version --no-private
 
   - [Docusaurus OG](./packages/docusaurus-og) [![Npm Version](https://img.shields.io/npm/v/@acid-info/docusaurus-og)](https://www.npmjs.com/package/@acid-info/docusaurus-og)
 
+  - [Docusaurus Fathom](./packages/docusaurus-fathom) [![Npm Version](https://img.shields.io/npm/v/@acid-info/docusaurus-fathom)](https://www.npmjs.com/package/@acid-info/docusaurus-fathom)
+
 - **Themes**
   - [Logos Theme](./packages/logos-docusaurus-theme) [![Npm Version](https://img.shields.io/npm/v/@acid-info/logos-docusaurus-theme)](https://www.npmjs.com/package/@acid-info/logos-docusaurus-theme)
 
