@@ -69,6 +69,13 @@ const config = {
         authorsMapPath: 'authors.yml',
       }),
     ],
+    [
+      '@acid-info/docusaurus-fathom',
+      {
+        siteId: 'FUTMI',
+        scriptUrl: 'https://fathom.status.im/tracker.js',
+      },
+    ],
   ],
 
   themeConfig:
