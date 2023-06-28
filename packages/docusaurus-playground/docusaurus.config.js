@@ -54,8 +54,6 @@ const config = {
     ],
   ],
 
-  // clientModules: ['./src/fathom.ts'],
-
   plugins: [
     [
       '@docusaurus/plugin-content-blog',
@@ -75,7 +73,7 @@ const config = {
       '@acid-info/docusaurus-fathom',
       {
         siteId: 'FUTMI',
-        scriptUrl: '//fathom.status.im/tracker.js',
+        scriptUrl: 'https://fathom.status.im/tracker.js',
       },
     ],
   ],
