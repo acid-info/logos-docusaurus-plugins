@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.65](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.64...v1.0.0-alpha.65) (2023-07-04)
+
+### Bug Fixes
+
+- update theme config ([f4f34dc](https://github.com/acid-info/logos-docusaurus-plugins/commit/f4f34dc17539cd15392746e3f11cc5689cb25519))
+
 # [1.0.0-alpha.64](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.63...v1.0.0-alpha.64) (2023-07-04)
 
 ### Bug Fixes
