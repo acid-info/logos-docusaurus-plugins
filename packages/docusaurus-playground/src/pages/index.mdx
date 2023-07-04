@@ -2,25 +2,95 @@ import {
   Hero,
   HeroTitle,
   HeroDescription,
+  HeroVideo,
   HeroActions,
   HeroAction,
   CallToActionSection,
   CallToActionButton,
   FeatureList,
   Showcase,
-  HeroModel,
   HeroInfo,
   Box,
 } from '../components/mdx'
 
-{' '}
+<Hero size="large">
+  <HeroInfo>
+    <HeroTitle>{'Defend Against Data Censorship With Codex'}</HeroTitle>
+    <HeroDescription>
+      {
+        'Codex is a durable, decentralized data storage protocol, created so the world community can preserve its most important knowledge without risk of censorship.'
+      }
+    </HeroDescription>
+    <HeroActions>
+      <HeroAction href="https://twitter.com/Codex_storage" target="_blank">
+        Follow Codex
+      </HeroAction>
+    </HeroActions>
+  </HeroInfo>
+  <HeroVideo placeholderSrc="/hero/atlas02-1080x1080-placeholder.png">
+    <source
+      src="/hero/atlas02-2048x2048-24fps-1M.mov"
+      type='video/mp4; codecs="hvc1"'
+    />
+    <source src="/hero/atlas02-2048x2048-24fps-1M.webm" type="video/webm" />
+  </HeroVideo>
+</Hero>
 
-<HeroModel
-  modelId={'bust01'}
-  mode={'abstract'}
-  rotateSpeed={0.04}
-  startY={'bottom'}
-  asciiConfig={{
-    characters: ' + ^ ^%%%0 -a @@@ ###',
-  }}
-/>
+<FeatureList
+  id="features"
+  features={[
+    {
+      title: 'Durable',
+      description:
+        'Codex implements advanced erasure coding techniques to ensure data stored is always retrievable without relying on inefficient full replication methods.',
+    },
+    {
+      title: 'Accessible',
+      description:
+        'Participating in the Codex network is highly accessible thanks to its permissionless nature, and bandwidth usage optimizations like its "lazy repair" system and lightweight ZK-based remote auditing system.',
+    },
+    {
+      title: 'Decentralized',
+      description:
+        "The network's native marketplace incentivizes wide participation, ensuring robust resistance to censorship and external attack.",
+    },
+    {
+      title: 'Low-cost',
+      description:
+        "Codex's design slashes the costs associated with traditional cloud storage providers while democratizing opportunities to contribute excess system resources to the network.",
+    },
+  ]}
+>
+  <CallToActionButton variant="outlined" href="/about">
+    Read more
+  </CallToActionButton>
+</FeatureList>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Used by"
+    columns={2}
+    description="Codex is still under development as part of the Logos Collective's tech stack. Logos builds shared public infrastructure to provide trust-minimized, corruption-resistant governing services and social institutions to underserved citizens."
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Contributors"
+    columns={1}
+    description="The contributors building Codex draw on decades of collective software development experience with household names from within the traditional technology and blockchain sectors."
+    label="Read more"
+    href="/about/team"
+    target="_self"
+  />
+</Box>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Development roadmap"
+    description="Codex currently exists as a proof-of-concept network and aims to release its beta version, codenamed Katana, by the end of Q4, 2023. To get there, the team will deliver a second and third PoC client, each of which will introduce progressively more advanced features."
+    label="Read more"
+    href="/about/roadmap"
+    target="_self"
+  />
+</Box>
