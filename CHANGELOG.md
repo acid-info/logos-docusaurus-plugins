@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.64](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.63...v1.0.0-alpha.64) (2023-07-04)
+
+### Bug Fixes
+
+- restore sticky position of sidebar and table of contents ([de2d435](https://github.com/acid-info/logos-docusaurus-plugins/commit/de2d435e653a5abbf5c3abd51162dd5b688f65c9))
+
 # [1.0.0-alpha.63](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.62...v1.0.0-alpha.63) (2023-07-04)
 
 ### Bug Fixes
