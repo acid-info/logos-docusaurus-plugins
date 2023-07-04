@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.63](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.62...v1.0.0-alpha.63) (2023-07-04)
+
+### Bug Fixes
+
+- fix broken hero video options ([39c0988](https://github.com/acid-info/logos-docusaurus-plugins/commit/39c09883b8f98280f653497ba25e23e7c46485b9))
+
 # [1.0.0-alpha.62](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.61...v1.0.0-alpha.62) (2023-06-28)
 
 ### Features
