@@ -43,9 +43,20 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
     await play()
   }
 
-  const onEnded = async () => {
-    await play()
-  }
+  const onEnded = () => play()
+
+  const onLoadedMetadata = () => play()
+
+  useEffect(() => {
+    const root = document.querySelector<HTMLDivElement>('#__docusaurus')
+    if (!root) return
+
+    root.classList.add('overflow-hidden')
+
+    return () => {
+      root.classList.remove('overflow-hidden')
+    }
+  }, [])
 
   return (
     <>
@@ -75,6 +86,7 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
             autoPlay
             onEnded={onEnded}
             onCanPlay={onCanPlay}
+            onLoadedMetadata={onLoadedMetadata}
             ref={ref}
           >
             {children}
