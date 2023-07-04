@@ -1,8 +1,10 @@
-import { Footer, Navbar } from '@docusaurus/theme-common'
+import {
+  ThemeConfig as DocusaurusThemeConfig,
+  Footer,
+} from '@docusaurus/theme-common'
 
-export type ThemeConfig = {
-  navbar?: Navbar
-  footer?: Footer
+export type ThemeConfig = Omit<DocusaurusThemeConfig, 'footer'> & {
+  footer?: Omit<Footer, 'style'>
 }
 
 export type { ThemeOptions as DefaultThemeOptions } from '@acid-info/logos-docusaurus-theme'
