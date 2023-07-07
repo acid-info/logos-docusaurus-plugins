@@ -6,8 +6,8 @@ import './Showcase.scss'
 
 export type ShowcaseItem = {
   name: React.ReactNode
-  logo: string
-  logoDark: string
+  logo?: string
+  logoDark?: string
   description: React.ReactNode
 }
 
@@ -30,14 +30,16 @@ export const Showcase: React.FC<ShowcaseProps> = ({
         return (
           <div key={index} className="mdx-showcase__item">
             <div key={index} className="mdx-showcase__item-inner">
-              <ThemedImage
-                sources={{
-                  dark: item.logoDark,
-                  light: item.logo,
-                }}
-                alt={typeof item.name === 'string' ? item.name : 'image'}
-                className="mdx-showcase__item-logo"
-              />
+              {item?.logo && item?.logoDark && (
+                <ThemedImage
+                  sources={{
+                    dark: item.logoDark,
+                    light: item.logo,
+                  }}
+                  alt={typeof item.name === 'string' ? item.name : 'image'}
+                  className="mdx-showcase__item-logo"
+                />
+              )}
               <Typography
                 variant="h3"
                 component="h2"
