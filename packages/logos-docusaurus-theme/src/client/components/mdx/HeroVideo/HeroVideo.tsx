@@ -48,7 +48,7 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
   const onLoadedMetadata = () => play()
 
   useEffect(() => {
-    const root = document.querySelector<HTMLDivElement>('#__docusaurus')
+    const root = document.querySelector<HTMLDivElement>('.col > article')
     if (!root) return
 
     root.classList.add('overflow-hidden')
