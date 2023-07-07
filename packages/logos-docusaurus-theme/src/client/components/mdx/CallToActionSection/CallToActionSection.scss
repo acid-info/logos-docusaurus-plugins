@@ -4,87 +4,161 @@
 .mdx-cta-section {
   display: grid;
   border-top: 1px solid rgb(var(--lsd-border-primary));
-}
 
-.mdx-cta-section__title {
-  margin-top: 1.5rem;
-}
+  padding: 24px 0 0 0;
 
-.mdx-cta-section__description {
-  margin-top: 2rem;
-}
-
-.mdx-cta-section__link {
-  margin-top: 2rem;
-
-  button,
-  button span {
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: inherit;
-  }
-}
-
-.mdx-cta-section--with-description {
-}
-
-.mdx-cta-section--cols-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding-top: 1.5rem;
-
-  .mdx-cta-section__title {
-    grid-column: 1 / 2;
-    margin-top: 0;
-  }
-
-  .mdx-cta-section__description {
-    grid-column: 2 / 3;
-    margin-top: 0;
+  @include utils.responsive('lg', 'down') {
+    padding: 16px 0 0 0;
   }
 
   .mdx-cta-section__link {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    display: block;
   }
 }
 
-.mdx-cta-section:not(.mdx-cta-section--with-description) {
+.mdx-cta-section--title-only {
   .mdx-cta-section__title {
+    @include lsd.typography('h1', false);
+
     max-width: 886px;
+  }
+
+  @include utils.responsive('lg', 'down') {
+    .mdx-cta-section__title {
+      font-size: 1.5rem !important;
+      line-height: 2rem !important;
+    }
+  }
+}
+
+.mdx-cta-section--full-width {
+  .mdx-cta-section__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
+  }
+
+  .mdx-cta-section__title {
+    @include lsd.typography('h6', false);
+  }
+
+  .mdx-cta-section__description {
+    @include lsd.typography('h4', false);
+  }
+
+  .mdx-cta-section__link {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  @include utils.responsive('lg', 'down') {
+    .mdx-cta-section__container {
+      display: block;
+    }
+
+    .mdx-cta-section__description {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.mdx-cta-section--simple {
+  .mdx-cta-section__title {
+    @include lsd.typography('h6', false);
+  }
+
+  .mdx-cta-section__description {
+    @include lsd.typography('h2', false);
+
+    margin-top: 2rem;
+  }
+
+  @include utils.responsive('lg', 'down') {
+    .mdx-cta-section__description {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.mdx-cta-section--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+
+  .mdx-cta-section__container {
+    grid-column: 1 / 2;
+  }
+
+  .mdx-cta-section__title {
+    @include lsd.typography('h6', false);
+  }
+
+  .mdx-cta-section__description {
+    @include lsd.typography('h2', false);
+
+    margin-top: 2rem;
+  }
+
+  .mdx-cta-section__list {
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+
+    > div {
+      &:not(:first-child) {
+        border-top: 1px solid rgb(var(--lsd-border-primary));
+      }
+
+      > div {
+        margin-top: 1.5rem;
+        padding: 3px 11px;
+        display: inline-block;
+        border-radius: 1rem;
+        color: rgb(var(--lsd-text-secondary));
+        background-color: rgb(var(--lsd-surface-secondary));
+      }
+
+      & > p {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .mdx-cta-section__link {
+  }
+
+  @include utils.responsive('lg', 'down') {
+    display: block;
+
+    .mdx-cta-section__list {
+      margin-top: 4rem;
+
+      & > div {
+        border-top: 1px solid rgb(var(--lsd-border-primary));
+
+        & > div {
+          font-size: 0.875rem !important;
+          line-height: 1.25rem !important;
+        }
+
+        & > p {
+          font-size: 1.5rem !important;
+          line-height: 2rem !important;
+        }
+      }
+    }
   }
 }
 
 @include utils.responsive('lg', 'down') {
-  .mdx-cta-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .mdx-cta-section__title {
-    @include lsd.typography('subtitle1');
-    margin-top: 1rem;
+    font-size: 1rem !important;
+    line-height: 100% !important;
   }
 
   .mdx-cta-section__description {
-    @include lsd.typography('h5');
-    margin-top: 1.5rem !important;
-  }
-
-  .mdx-cta-section__link {
-    @include lsd.typography('label2');
-    margin-top: 2rem;
-
-    button {
-      padding: 6px 12px;
-    }
-  }
-
-  .mdx-cta-section:not(.mdx-cta-section--with-description) {
-    .mdx-cta-section__title {
-      @include lsd.typography('h5');
-    }
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
 }
