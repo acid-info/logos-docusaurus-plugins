@@ -4,6 +4,8 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
+  position: relative;
+  flex-grow: 1;
 
   pointer-events: none;
 
@@ -22,9 +24,11 @@
 
     transform: translateY(var(--hero-video-offset-y));
 
-    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    width: auto;
   }
 
   .mdx-hero-video__placeholder {
@@ -34,11 +38,12 @@
 
   img,
   video {
-    width: 100%;
-    height: auto;
     transform: scale(var(--hero-video-scale));
-    margin-left: calc((var(--hero-video-scale) - 100%) * -1);
-    transform-origin: top left;
+    transform-origin: top center;
+    object-position: top;
+
+    height: 100%;
+    max-width: var(--container-max-width);
   }
 }
 
@@ -64,7 +69,6 @@
     video {
       width: 100%;
       transform: scale(var(--hero-video-scale-mobile));
-      margin-left: calc((var(--hero-video-scale-mobile) - 100%) * -1);
     }
   }
 }

@@ -69,9 +69,9 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
         style={makeStyle(
           { ...style },
           {
-            'hero-video-scale': desktop?.scale ?? '58%',
-            'hero-video-offset-y': desktop?.offsetY ?? '-10%',
-            'hero-video-scale-mobile': mobile?.scale ?? '117.8%',
+            'hero-video-scale': desktop?.scale ?? '151.5%',
+            'hero-video-offset-y': desktop?.offsetY ?? '-120px',
+            'hero-video-scale-mobile': mobile?.scale ?? '140%',
             'hero-video-offset-y-mobile': mobile?.offsetY ?? '-10%',
           },
         )}
