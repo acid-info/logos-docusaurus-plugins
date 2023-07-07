@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.66](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.65...v1.0.0-alpha.66) (2023-07-07)
+
+### Bug Fixes
+
+- adjust the height of hero video to fit in its container; fixes [#91](https://github.com/acid-info/logos-docusaurus-plugins/issues/91) ([207c983](https://github.com/acid-info/logos-docusaurus-plugins/commit/207c983275da19abfb871d9a1971035acc9c7300))
+- remove the fathom plugin from playground ([cb200cc](https://github.com/acid-info/logos-docusaurus-plugins/commit/cb200cc7e3d145016b539451d214dbe8aeebfca7))
+- restore sticky position of the navbar in the landing page; fixes [#95](https://github.com/acid-info/logos-docusaurus-plugins/issues/95) ([182c583](https://github.com/acid-info/logos-docusaurus-plugins/commit/182c5837203f3444923f3052feb9a11e566cae39))
+- update navbar spacing; fixes [#92](https://github.com/acid-info/logos-docusaurus-plugins/issues/92) ([f3eca17](https://github.com/acid-info/logos-docusaurus-plugins/commit/f3eca17482557653553e336f041651f975239859))
+- use LSD default themes in all pages ([8f0a0d3](https://github.com/acid-info/logos-docusaurus-plugins/commit/8f0a0d3b1a93c6df84b812e941a7a3e58b7f7636))
+
+### Features
+
+- optional logo props for Showcase ([0ed10ca](https://github.com/acid-info/logos-docusaurus-plugins/commit/0ed10ca9b7542f43a87b9fbde83b6c92caf603e2))
+- refactor CTA component and implement list variant; fixes [#93](https://github.com/acid-info/logos-docusaurus-plugins/issues/93) ([92d9824](https://github.com/acid-info/logos-docusaurus-plugins/commit/92d9824ad9b0bf04acb079db43db208870936707))
+
 # [1.0.0-alpha.65](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.64...v1.0.0-alpha.65) (2023-07-04)
 
 ### Bug Fixes
