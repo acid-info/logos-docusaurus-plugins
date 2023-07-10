@@ -2,6 +2,7 @@ import { Typography } from '@acid-info/lsd-react'
 import ThemedImage from '@theme/ThemedImage'
 import clsx from 'clsx'
 import React from 'react'
+import { makeStyle } from '../../../lib/makeStyle'
 import './Showcase.scss'
 
 export type ShowcaseItem = {
@@ -16,16 +17,23 @@ export type ShowcaseProps = Omit<
   'title'
 > & {
   items: ShowcaseItem[]
+  columns?: number
 }
 
 export const Showcase: React.FC<ShowcaseProps> = ({
   items = [],
+  columns = 4,
+  style = {},
   className,
   children,
   ...props
 }) => {
   return (
-    <div className={clsx(className, 'mdx-showcase')} {...props}>
+    <div
+      className={clsx(className, 'mdx-showcase')}
+      style={makeStyle({ ...style }, { columns })}
+      {...props}
+    >
       {items.map((item, index) => {
         return (
           <div key={index} className="mdx-showcase__item">
