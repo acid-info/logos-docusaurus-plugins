@@ -58,6 +58,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
                 {feature.description}
               </Typography>
             </div>
+            <div className="mdx-feature-list__feature-border"></div>
           </div>
         ))}
       </div>
