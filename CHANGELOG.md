@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.68](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.67...v1.0.0-alpha.68) (2023-07-10)
+
+### Bug Fixes
+
+- hero video max-width ([ada7b05](https://github.com/acid-info/logos-docusaurus-plugins/commit/ada7b05abdfa6f0ce103de5df7fd57c5ae20d067))
+
 # [1.0.0-alpha.67](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.66...v1.0.0-alpha.67) (2023-07-10)
 
 ### Features
