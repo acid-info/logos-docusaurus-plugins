@@ -1,6 +1,6 @@
 import { useColorMode } from '@docusaurus/theme-common'
 import { clsx } from 'clsx'
-import React from 'react'
+import React, { CSSProperties } from 'react'
 
 import styles from './style.module.scss'
 
@@ -14,7 +14,11 @@ import DiscordSvg from '../../static/icons/discord.svg'
 import DiscourseSvg from '../../static/icons/discourse.svg'
 import DotSvg from '../../static/icons/dot.svg'
 import DropdownSvg from '../../static/icons/dropdown.svg'
+import EditSvg from '../../static/icons/edit.svg'
+import ExternalLinkSvg from '../../static/icons/external-link.svg'
 import FolderSvg from '../../static/icons/folder.svg'
+import FullscreenExitSvg from '../../static/icons/fullscreen-exit.svg'
+import FullscreenSvg from '../../static/icons/fullscreen.svg'
 import GithubSvg from '../../static/icons/github.svg'
 import GScholarSvg from '../../static/icons/gscholar.svg'
 import HistorySvg from '../../static/icons/history.svg'
@@ -23,9 +27,6 @@ import SearchSvg from '../../static/icons/search.svg'
 import StatusSvg from '../../static/icons/status.svg'
 import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
-import EditSvg from '../../static/icons/edit.svg'
-import FullscreenSvg from '../../static/icons/fullscreen.svg'
-import FullscreenExitSvg from '../../static/icons/fullscreen-exit.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -190,5 +191,11 @@ export const IconFullscreen = (props: TIconProps): JSX.Element => (
 export const IconFullscreenExit = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <FullscreenExitSvg />
+  </Icon>
+)
+
+export const IconExternalLink = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <ExternalLinkSvg />
   </Icon>
 )

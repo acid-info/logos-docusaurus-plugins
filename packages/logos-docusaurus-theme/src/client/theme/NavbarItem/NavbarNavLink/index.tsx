@@ -1,9 +1,10 @@
-import React from 'react'
-import Link from '@docusaurus/Link'
-import useBaseUrl from '@docusaurus/useBaseUrl'
+import { Typography } from '@acid-info/lsd-react'
 import isInternalUrl from '@docusaurus/isInternalUrl'
+import Link from '@docusaurus/Link'
 import { isRegexpStringMatch } from '@docusaurus/theme-common'
-import { PickIcon, Typography } from '@acid-info/lsd-react'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import React from 'react'
+import { IconExternalLink } from '../../../components/Icon/Icon'
 import styles from './styles.module.css'
 
 export default function NavbarNavLink({
@@ -35,7 +36,9 @@ export default function NavbarNavLink({
             className={styles.linkContent}
           >
             {label}
-            {isExternalLink && <PickIcon color="primary" />}
+            {isExternalLink && (
+              <IconExternalLink className={styles.externalLinkIcon} />
+            )}
           </Typography>
         ),
       }

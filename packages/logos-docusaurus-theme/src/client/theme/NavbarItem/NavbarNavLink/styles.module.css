@@ -10,3 +10,12 @@
   text-underline-offset: 0.3rem;
   text-decoration-color: rgba(var(--lsd-text-primary), 0.6);
 }
+
+.externalLinkIcon {
+  width: 8px;
+}
+
+.externalLinkIcon svg {
+  width: 100%;
+  height: auto;
+}
