@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.69](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.68...v1.0.0-alpha.69) (2023-07-10)
+
+### Bug Fixes
+
+- fix the position of the hero placeholder ([7fd9269](https://github.com/acid-info/logos-docusaurus-plugins/commit/7fd926945a1e09e77981c6ad915690a7e30c86aa))
+
 # [1.0.0-alpha.68](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.67...v1.0.0-alpha.68) (2023-07-10)
 
 ### Bug Fixes
