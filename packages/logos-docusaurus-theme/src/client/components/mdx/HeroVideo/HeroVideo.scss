@@ -36,6 +36,10 @@
     visibility: hidden;
   }
 
+  img {
+    object-fit: contain;
+  }
+
   img,
   video {
     transform: scale(var(--hero-video-scale));
