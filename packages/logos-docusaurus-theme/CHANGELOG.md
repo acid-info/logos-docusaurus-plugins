@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.67](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.66...v1.0.0-alpha.67) (2023-07-10)
+
+### Features
+
+- implement the Roadmap mdx component; refs [#90](https://github.com/acid-info/logos-docusaurus-plugins/issues/90) ([4ecf45f](https://github.com/acid-info/logos-docusaurus-plugins/commit/4ecf45f55d773be09fbbef927a4b83907b75bc03))
+
 # [1.0.0-alpha.66](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.65...v1.0.0-alpha.66) (2023-07-07)
 
 ### Bug Fixes
