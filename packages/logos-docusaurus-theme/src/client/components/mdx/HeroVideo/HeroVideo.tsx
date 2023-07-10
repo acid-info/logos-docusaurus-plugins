@@ -8,6 +8,8 @@ import './HeroVideo.scss'
 
 export type HeroVideoStyle = {
   scale?: string
+  height?: string
+  minHeight?: string
   offsetY?: string
 }
 
@@ -71,10 +73,14 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
         style={makeStyle(
           { ...style },
           {
-            'hero-video-scale': desktop?.scale ?? '1.515',
-            'hero-video-offset-y': desktop?.offsetY ?? '-120px',
-            'hero-video-scale-mobile': mobile?.scale ?? '1.40',
-            'hero-video-offset-y-mobile': mobile?.offsetY ?? '-10%',
+            'hero-video-scale': desktop?.scale ?? '1.70951586',
+            'hero-video-offset-y': desktop?.offsetY ?? '-150px',
+            'hero-video-height': desktop?.height ?? '120%',
+            'hero-video-min-height': desktop?.minHeight ?? '100vh',
+            'hero-video-scale-mobile': mobile?.scale ?? '1.70951586',
+            'hero-video-offset-y-mobile': mobile?.offsetY ?? '-50px',
+            'hero-video-height-mobile': mobile?.height ?? '120%',
+            'hero-video-min-height-mobile': mobile?.minHeight ?? '100vh',
           },
         )}
         {...(props as any)}
