@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.73](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.72...v1.0.0-alpha.73) (2023-07-10)
+
+### Features
+
+- set max-height for hero section ([90870a3](https://github.com/acid-info/logos-docusaurus-plugins/commit/90870a3c038ac7aec9366063847de6f58d3b83d7))
+
 # [1.0.0-alpha.72](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.71...v1.0.0-alpha.72) (2023-07-10)
 
 ### Features
