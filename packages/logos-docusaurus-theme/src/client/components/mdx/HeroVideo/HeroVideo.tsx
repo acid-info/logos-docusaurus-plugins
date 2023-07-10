@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import React, { PropsWithChildren, useEffect, useRef, useState } from 'react'
 import { makeStyle } from '../../../lib/makeStyle'
 import { settle } from '../../../lib/settle'
+import { useHydrated } from '../../../lib/useHydrated'
 import { useHero } from '../Hero/Hero.context'
 import './HeroVideo.scss'
 
@@ -28,6 +29,7 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
   ...props
 }) => {
   const ctx = useHero()
+  const hydrated = useHydrated()
   const ref = useRef<HTMLVideoElement>(null)
   const [loading, setLoading] = useState(true)
 
@@ -81,16 +83,18 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
           <img src={placeholderSrc} alt="" />
         </div>
         <div className="mdx-hero-video__video">
-          <video
-            muted
-            autoPlay
-            onEnded={onEnded}
-            onCanPlay={onCanPlay}
-            onLoadedMetadata={onLoadedMetadata}
-            ref={ref}
-          >
-            {children}
-          </video>
+          {hydrated && (
+            <video
+              muted
+              autoPlay
+              onEnded={onEnded}
+              onCanPlay={onCanPlay}
+              onLoadedMetadata={onLoadedMetadata}
+              ref={ref}
+            >
+              {children}
+            </video>
+          )}
         </div>
       </div>
     </>
