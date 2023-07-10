@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.71](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.70...v1.0.0-alpha.71) (2023-07-10)
+
+### Bug Fixes
+
+- render video after client rehydration; refs [#89](https://github.com/acid-info/logos-docusaurus-plugins/issues/89) ([8bd4415](https://github.com/acid-info/logos-docusaurus-plugins/commit/8bd44157b4935ab3a084e86387a7faf08f00ba67))
+
 # [1.0.0-alpha.70](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.69...v1.0.0-alpha.70) (2023-07-10)
 
 ### Bug Fixes
