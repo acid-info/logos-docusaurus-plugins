@@ -55,7 +55,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
                 component="h3"
                 className="mdx-feature-list__feature-description"
               >
-                {feature.description}
+                <span>{feature.description}</span>
               </Typography>
             </div>
             <div className="mdx-feature-list__feature-border"></div>

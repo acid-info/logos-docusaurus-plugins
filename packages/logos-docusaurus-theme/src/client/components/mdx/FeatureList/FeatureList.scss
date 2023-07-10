@@ -29,6 +29,12 @@
 
 .mdx-feature-list__feature {
   border-top: 1px solid rgb(var(--lsd-border-primary));
+  min-height: 332px;
+}
+
+.mdx-feature-list__feature-inner {
+  display: flex;
+  flex-direction: column;
 }
 
 .mdx-feature-list__feature-title {
@@ -36,7 +42,10 @@
 }
 
 .mdx-feature-list__feature-description {
-  margin-top: 8.625rem;
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .mdx-feature-list__extra {
