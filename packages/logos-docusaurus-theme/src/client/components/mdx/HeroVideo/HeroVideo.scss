@@ -43,7 +43,7 @@
     object-position: top;
 
     height: 100%;
-    max-width: var(--container-max-width);
+    max-width: calc(var(--container-max-width) / var(--hero-video-scale));
   }
 }
 
@@ -69,6 +69,9 @@
     video {
       width: 100%;
       transform: scale(var(--hero-video-scale-mobile));
+      max-width: calc(
+        var(--container-max-width) / var(--hero-video-scale-mobile)
+      );
     }
   }
 }
