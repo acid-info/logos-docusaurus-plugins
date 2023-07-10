@@ -75,8 +75,9 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
           {
             'hero-video-scale': desktop?.scale ?? '1.70951586',
             'hero-video-offset-y': desktop?.offsetY ?? '-150px',
-            'hero-video-height': desktop?.height ?? '120%',
-            'hero-video-min-height': desktop?.minHeight ?? '100vh',
+            'hero-video-height': desktop?.height ?? '100%',
+            'hero-video-min-height':
+              desktop?.minHeight ?? 'min(100vh, var(--hero-max-height))',
             'hero-video-scale-mobile': mobile?.scale ?? '1.70951586',
             'hero-video-offset-y-mobile': mobile?.offsetY ?? '-50px',
             'hero-video-height-mobile': mobile?.height ?? '120%',

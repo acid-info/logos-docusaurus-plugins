@@ -1,8 +1,11 @@
 .mdx-hero {
+  --hero-max-height: 1080px;
+
   position: relative;
   display: flex;
   flex-direction: column;
   height: calc(100vh - var(--ifm-navbar-height) - 8px);
+  max-height: var(--hero-max-height);
 }
 
 .mdx-hero--large {
