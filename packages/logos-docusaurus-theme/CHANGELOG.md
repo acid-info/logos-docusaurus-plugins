@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.74](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.73...v1.0.0-alpha.74) (2023-07-10)
+
+### Bug Fixes
+
+- adjust the size of hero subheader ([6019e0d](https://github.com/acid-info/logos-docusaurus-plugins/commit/6019e0d2782d9b85446035afe84cf8576b02bdb8))
+- fix FeatureList layout ([4e2f413](https://github.com/acid-info/logos-docusaurus-plugins/commit/4e2f4135ab64c1d098deac5ce2f1f6ad453a28e3))
+- update the external link icon ([3eab172](https://github.com/acid-info/logos-docusaurus-plugins/commit/3eab172a0bdc2382c51d41d538c4cfdfb961cfe0))
+
 # [1.0.0-alpha.73](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.72...v1.0.0-alpha.73) (2023-07-10)
 
 ### Features
