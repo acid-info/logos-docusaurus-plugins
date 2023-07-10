@@ -17,14 +17,21 @@
     line-height: inherit;
     font-weight: inherit;
   }
+
+  .lsd-button--large {
+    padding: 9px 39px;
+  }
+
+  .lsd-button--small {
+    padding: 5px 11px;
+  }
 }
 
 @include utils.responsive('lg', 'down') {
   .mdx-cta-button {
-    @include lsd.typography('label2');
-
-    button {
-      padding: 6px 12px;
+    .lsd-button--large {
+      @include lsd.typography('label2');
+      padding: 5px 11px;
     }
   }
 }

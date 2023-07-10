@@ -1,0 +1,115 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-roadmap {
+  width: 100%;
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+  padding-top: 24px;
+}
+
+.mdx-roadmap__header {
+  display: flex;
+  flex-direction: row;
+
+  gap: 1rem;
+
+  > * {
+    flex-basis: 50%;
+  }
+}
+
+.mdx-roadmap__actions {
+  margin-top: 7.25rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0 1rem;
+}
+
+.mdx-roadmap__timeline {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0 1rem;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.mdx-roadmap__timeline-item {
+  width: 236px;
+  min-height: 308px;
+  gap: 1rem;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgb(var(--lsd-border-primary));
+  scroll-snap-align: start !important;
+}
+
+.mdx-roadmap__timeline-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.mdx-roadmap__timeline-period-container {
+  width: 100%;
+  position: relative;
+}
+
+.mdx-roadmap__timeline-border {
+  top: 0;
+  left: 0;
+  width: calc(100% + 1rem);
+  height: 50%;
+  position: absolute;
+  border-bottom: 1px solid rgb(var(--lsd-border-primary));
+  z-index: -1;
+}
+
+.mdx-roadmap__timeline-border--dashed {
+  border-bottom-style: dashed;
+}
+
+.mdx-roadmap__timeline-period {
+  padding: 3px 12px;
+  display: inline-block;
+  border-radius: 10rem;
+  color: rgb(var(--lsd-text-secondary)) !important;
+  background-color: rgb(var(--lsd-surface-secondary));
+}
+
+.mdx-roadmap__timeline-item:last-child {
+  .mdx-roadmap__timeline-border {
+    display: none;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-roadmap__header {
+    flex-direction: column;
+
+    h2 {
+      @include lsd.typography('body1');
+    }
+  }
+
+  .mdx-roadmap__actions {
+    margin-top: 4rem;
+  }
+
+  .mdx-roadmap__timeline-item {
+    width: 204px;
+    min-height: 306px;
+  }
+}
+
+@include utils.responsive('sm', 'down') {
+  .mdx-roadmap__scroll {
+    display: none;
+  }
+}

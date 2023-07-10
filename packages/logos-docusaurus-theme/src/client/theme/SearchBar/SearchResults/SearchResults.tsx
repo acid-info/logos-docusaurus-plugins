@@ -27,7 +27,7 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
   return (
     <div className={clsx(styles.root, total === 0 && styles.noResults)}>
       {total === 0 && <SearchResultMessage>No result.</SearchResultMessage>}
-      <div className={clsx(styles.groups, 'hidden-scrollbar')}>
+      <div className={clsx(styles.groups)}>
         {grouped.map(([category, items], index) => (
           <React.Fragment key={index}>
             <SearchResultGroup className={styles.group} title={category}>

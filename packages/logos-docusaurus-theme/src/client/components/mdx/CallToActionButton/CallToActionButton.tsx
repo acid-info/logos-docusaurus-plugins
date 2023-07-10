@@ -30,7 +30,7 @@ export const CallToActionButton: React.FC<CallToActionButtonProps> = ({
   return (
     <LinkElement
       className={clsx('mdx-cta-button', className)}
-      variant="body1"
+      variant={size === 'large' ? 'label1' : 'label2'}
       component="a"
       href={href}
       target={'_blank'}
