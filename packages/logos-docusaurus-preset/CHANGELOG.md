@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.77](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.76...v1.0.0-alpha.77) (2023-07-11)
+
+### Bug Fixes
+
+- disable the color mode switch ([8d8f14b](https://github.com/acid-info/logos-docusaurus-plugins/commit/8d8f14bf57b4bd51bfa10d4a44a852ecddcfcb1d))
+
 # [1.0.0-alpha.76](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.75...v1.0.0-alpha.76) (2023-07-11)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
