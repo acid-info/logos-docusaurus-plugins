@@ -1,6 +1,12 @@
 import * as fsp from 'fs/promises'
 import { HTMLElement, parse as parseHTML } from 'node-html-parser'
 
+const IMAGE_META_ELEMENTS: Array<[string, string]> = [
+  ['name', 'image'],
+  ['property', 'og:image'],
+  ['name', 'twitter:image'],
+]
+
 export class Document {
   root: HTMLElement
   loaded = false
@@ -18,12 +24,11 @@ export class Document {
   }
 
   setImage = async (url: string) => {
-    this.updateMeta('property', 'og:image', {
-      content: url,
-    })
-    this.updateMeta('property', 'image', {
-      content: url,
-    })
+    IMAGE_META_ELEMENTS.forEach(([attr, value]) =>
+      this.updateMeta(attr, value, {
+        content: url,
+      }),
+    )
   }
 
   get head() {
