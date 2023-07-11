@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.76](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.75...v1.0.0-alpha.76) (2023-07-11)
+
+### Bug Fixes
+
+- **docusaurus-og:** fix image meta elements selectors; closes [#97](https://github.com/acid-info/logos-docusaurus-plugins/issues/97) ([7a2701f](https://github.com/acid-info/logos-docusaurus-plugins/commit/7a2701f11f2c23fbaef1a274da9a8f0567130ee5))
+
 # [1.0.0-alpha.64](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.63...v1.0.0-alpha.64) (2023-07-04)
 
 **Note:** Version bump only for package @acid-info/docusaurus-og
