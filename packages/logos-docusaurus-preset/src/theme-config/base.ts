@@ -9,7 +9,7 @@ export const baseThemeConfig: ThemeConfig = {
   },
   metadata: [],
   colorMode: {
-    disableSwitch: false,
+    disableSwitch: true,
     defaultMode: 'dark',
   },
   navbar: {
