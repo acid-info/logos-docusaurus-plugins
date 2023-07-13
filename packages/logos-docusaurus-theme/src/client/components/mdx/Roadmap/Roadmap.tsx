@@ -22,11 +22,13 @@ export type RoadmapProps = Omit<
   title: React.ReactNode
   description?: React.ReactNode
   timeline?: TimelineItem[]
+  alignment?: 'top' | 'bottom'
 }
 
 export const Roadmap: React.FC<RoadmapProps> = ({
   title,
   description,
+  alignment = 'bottom',
   timeline = [],
   className,
   children,
@@ -48,7 +50,14 @@ export const Roadmap: React.FC<RoadmapProps> = ({
   }
 
   return (
-    <div className={clsx(className, 'mdx-roadmap')} {...props}>
+    <div
+      className={clsx(
+        className,
+        'mdx-roadmap',
+        `mdx-roadmap--${alignment}-aligned`,
+      )}
+      {...props}
+    >
       <div className="mdx-roadmap__header">
         <Typography component="h2" variant="h6">
           {title}

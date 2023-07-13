@@ -38,12 +38,10 @@
 
 .mdx-roadmap__timeline-item {
   width: 236px;
-  min-height: 308px;
   gap: 1rem;
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-bottom: 23px;
   border-bottom: 1px solid rgb(var(--lsd-border-primary));
   scroll-snap-align: start !important;
@@ -89,6 +87,16 @@
   }
 }
 
+.mdx-roadmap--top-aligned {
+}
+
+.mdx-roadmap--bottom-aligned {
+  .mdx-roadmap__timeline-item {
+    min-height: 308px;
+    justify-content: space-between;
+  }
+}
+
 @include utils.responsive('lg', 'down') {
   .mdx-roadmap__header {
     flex-direction: column;
@@ -104,7 +112,6 @@
 
   .mdx-roadmap__timeline-item {
     width: 204px;
-    min-height: 306px;
   }
 }
 

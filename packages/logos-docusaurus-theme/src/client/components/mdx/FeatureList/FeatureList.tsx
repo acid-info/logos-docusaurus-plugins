@@ -14,17 +14,26 @@ export type FeatureListProps = Omit<
 > & {
   title?: React.ReactNode
   features?: Feature[]
+  alignment?: 'bottom' | 'top'
 }
 
 export const FeatureList: React.FC<FeatureListProps> = ({
   title = 'Features',
+  alignment = 'bottom',
   features = [],
   className,
   children,
   ...props
 }) => {
   return (
-    <div className={clsx(className, 'mdx-feature-list')} {...props}>
+    <div
+      className={clsx(
+        className,
+        'mdx-feature-list',
+        `mdx-feature-list--${alignment}-aligned`,
+      )}
+      {...props}
+    >
       <Typography
         variant="h6"
         component="h1"
