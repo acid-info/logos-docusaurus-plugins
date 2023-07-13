@@ -35,21 +35,18 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
   const ref = useRef<HTMLVideoElement>(null)
   const [loading, setLoading] = useState(true)
 
-  const play = async () => {
+  const onPlay = async () => {
     const el = ref.current
     if (!el) return
 
-    await settle(() => el.play())
+    el.muted = true
+    el.defaultMuted = true
+
+    const [res, err] = await settle(() => el.play())
+    if (err) return
+
+    setLoading(false)
   }
-
-  const onCanPlay = async () => {
-    loading && setLoading(false)
-    await play()
-  }
-
-  const onEnded = () => play()
-
-  const onLoadedMetadata = () => play()
 
   useEffect(() => {
     const root = document.querySelector<HTMLDivElement>('.col > article')
@@ -92,12 +89,13 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
         <div className="mdx-hero-video__video">
           {hydrated && (
             <video
+              ref={ref}
+              loop
               muted
               autoPlay
-              onEnded={onEnded}
-              onCanPlay={onCanPlay}
-              onLoadedMetadata={onLoadedMetadata}
-              ref={ref}
+              playsInline
+              onCanPlay={onPlay}
+              onLoadedMetadata={onPlay}
             >
               {children}
             </video>
