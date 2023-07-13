@@ -21,7 +21,11 @@ export const HeroAction: React.FC<HeroActionProps> = ({
       {...props}
     >
       <Button variant={variant} size={size}>
-        <Typography variant="label1" style={{ color: 'inherit' }}>
+        <Typography
+          component="span"
+          variant="label1"
+          style={{ color: 'inherit' }}
+        >
           {children}
         </Typography>
       </Button>
