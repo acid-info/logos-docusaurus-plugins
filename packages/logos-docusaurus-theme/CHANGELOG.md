@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.78](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.77...v1.0.0-alpha.78) (2023-07-13)
+
+### Features
+
+- add alignment options for feature list and roadmap components ([4053a0b](https://github.com/acid-info/logos-docusaurus-plugins/commit/4053a0b7ba45cd97348e7defee114bede0ac315f))
+
 # [1.0.0-alpha.76](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.75...v1.0.0-alpha.76) (2023-07-11)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
