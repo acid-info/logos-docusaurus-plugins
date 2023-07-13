@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.79](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.78...v1.0.0-alpha.79) (2023-07-13)
+
+### Bug Fixes
+
+- fix link decoration styles on mdx pages ([8715a4f](https://github.com/acid-info/logos-docusaurus-plugins/commit/8715a4f0dd7933f11c13aa4ed3418115aedaaf4a))
+
 # [1.0.0-alpha.78](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.77...v1.0.0-alpha.78) (2023-07-13)
 
 ### Features
