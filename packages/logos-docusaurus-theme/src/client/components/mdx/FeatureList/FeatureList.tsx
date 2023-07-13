@@ -71,7 +71,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
           </div>
         ))}
       </div>
-      <div className="mdx-feature-list__extra">{children}</div>
+      {children && <div className="mdx-feature-list__extra">{children}</div>}
     </div>
   )
 }
