@@ -280,6 +280,9 @@ svg * {
   fill: rgb(var(--lsd-text-primary));
 }
 
+.markdown-link {
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
@@ -372,11 +375,15 @@ a code {
   font-size: var(--ifm-h6-font-size);
 }
 
-.markdown a {
-  text-decoration: underline;
-  text-decoration-color: inherit;
-  text-underline-offset: 0.3rem;
-  text-decoration-color: rgba(var(--lsd-text-primary), 0.6);
+.markdown a,
+article a {
+  &,
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: rgba(var(--lsd-text-primary), 0.6);
+  }
 }
 
 .markdown > h2 {
