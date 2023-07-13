@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.80](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.79...v1.0.0-alpha.80) (2023-07-13)
+
+### Bug Fixes
+
+- adjust FeatureList spacing ([8a472e9](https://github.com/acid-info/logos-docusaurus-plugins/commit/8a472e94c50d75b8c225b2819256a401b741a258))
+- update HeroAction text decoration styles ([e3d20dd](https://github.com/acid-info/logos-docusaurus-plugins/commit/e3d20dda0b6fe7bf76d65ae6d13ca5d1305423b8))
+
 # [1.0.0-alpha.79](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.78...v1.0.0-alpha.79) (2023-07-13)
 
 ### Bug Fixes
