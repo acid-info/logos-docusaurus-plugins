@@ -1,0 +1,24 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem !important;
+
+  > div {
+    width: 100%;
+    max-width: 796px !important;
+  }
+
+  > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 !important;
+  }
+
+  a {
+    margin-top: 2.5rem;
+  }
+}
