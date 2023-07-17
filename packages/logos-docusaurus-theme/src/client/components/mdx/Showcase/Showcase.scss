@@ -22,14 +22,12 @@
 
 .mdx-showcase__item-name {
   margin-top: 1rem;
-  font-weight: 100 !important;
 }
 
 .mdx-showcase__item-description {
   border-top: 1px solid rgb(var(--lsd-border-primary));
   margin-top: 24px;
   padding-top: 16px;
-  font-weight: 100 !important;
 }
 
 @include utils.responsive('lg', 'down') {
@@ -40,7 +38,6 @@
 
   .mdx-showcase__item-name {
     @include lsd.typography('h6');
-    font-weight: 100 !important;
   }
 
   .mdx-showcase__item-description {

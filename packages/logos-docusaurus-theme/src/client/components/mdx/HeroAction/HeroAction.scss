@@ -1,10 +1,6 @@
 @use '../../../css/utils';
 
 .mdx-hero-action {
-  span {
-    font-weight: 100 !important;
-  }
-
   &:hover,
   button:hover {
     &,

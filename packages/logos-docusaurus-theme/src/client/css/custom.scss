@@ -1235,4 +1235,14 @@ code {
   scrollbar-width: none;
 }
 
+*[class^='mdx-'] {
+  --lsd-h1-fontWeight: 100;
+  --lsd-h2-fontWeight: 300;
+  --lsd-h3-fontWeight: 300;
+  --lsd-h4-fontWeight: 300;
+  --lsd-h5-fontWeight: 300;
+  --lsd-h6-fontWeight: 300;
+  --lsd-subtitle1-fontWeight: 300;
+}
+
 @import './blog.scss';

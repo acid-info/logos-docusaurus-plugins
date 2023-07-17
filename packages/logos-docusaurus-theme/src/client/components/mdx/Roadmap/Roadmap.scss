@@ -15,7 +15,6 @@
 
   > * {
     flex-basis: 50%;
-    font-weight: 100 !important;
   }
 }
 
@@ -98,19 +97,12 @@
   }
 }
 
-.mdx-roadmap__timeline-period,
-.mdx-roadmap__timeline-index,
-.mdx-roadmap__timeline-description {
-  font-weight: 100 !important;
-}
-
 @include utils.responsive('lg', 'down') {
   .mdx-roadmap__header {
     flex-direction: column;
 
     h2 {
       @include lsd.typography('body1');
-      font-weight: 100 !important;
     }
   }
 
