@@ -283,7 +283,9 @@ const pagesImageRenderer = imageRendererFactory(
 
     return [
       <Layout
-        title={metadata.title}
+        title={
+          (metadata as MDXPageMetadata).frontMatter?.title || metadata.title
+        }
         footer={url.host}
         logo={
           logo && <img src={logo.src as any} style={{ height: logo.height }} />
