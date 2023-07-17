@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.85](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.84...v1.0.0-alpha.85) (2023-07-17)
+
+### Features
+
+- upgrade @acid-info/lsd-react & update typography styles ([f795bf1](https://github.com/acid-info/logos-docusaurus-plugins/commit/f795bf141eabb960e61fbf762ca43657019e8435))
+
 # [1.0.0-alpha.84](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.83...v1.0.0-alpha.84) (2023-07-17)
 
 ### Bug Fixes
