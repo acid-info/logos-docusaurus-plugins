@@ -153,6 +153,12 @@
       margin-top: 3rem;
     }
 
+    .mdx-feature-list__feature-title,
+    .mdx-feature-list__feature-index,
+    .mdx-feature-list__feature-description {
+      font-weight: 100 !important;
+    }
+
     .mdx-feature-list__feature-inner {
     }
 
@@ -161,5 +167,9 @@
         border: none;
       }
     }
+  }
+
+  .mdx-feature-list__title {
+    font-weight: 100 !important;
   }
 }

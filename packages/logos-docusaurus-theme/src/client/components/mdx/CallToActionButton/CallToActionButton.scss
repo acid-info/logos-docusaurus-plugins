@@ -32,6 +32,7 @@
   .mdx-cta-button {
     .lsd-button--large {
       @include lsd.typography('label2');
+      font-weight: 100 !important;
       padding: 5px 11px;
     }
   }

@@ -110,6 +110,7 @@
 
     h2 {
       @include lsd.typography('body1');
+      font-weight: 100 !important;
     }
   }
 
