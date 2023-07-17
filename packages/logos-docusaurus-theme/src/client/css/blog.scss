@@ -63,6 +63,14 @@
 
 .blog-wrapper--index h2[itemprop='headline'] {
   @include lsd.typography('h6');
+
+  > a {
+    text-decoration: none;
+  }
+}
+
+.blog-wrapper .breadcrumbs__item {
+  text-decoration: none;
 }
 
 .blog-wrapper > .container > .row > main {
