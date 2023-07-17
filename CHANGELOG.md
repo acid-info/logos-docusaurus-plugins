@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.82](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.81...v1.0.0-alpha.82) (2023-07-17)
+
+### Bug Fixes
+
+- set the font-weight of the mdx components to 100 ([a64d011](https://github.com/acid-info/logos-docusaurus-plugins/commit/a64d0113dc6bfbb320d73e0aca455bc48ca3a610))
+
 # [1.0.0-alpha.81](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.80...v1.0.0-alpha.81) (2023-07-13)
 
 ### Bug Fixes
