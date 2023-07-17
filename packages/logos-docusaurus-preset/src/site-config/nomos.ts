@@ -6,7 +6,7 @@ export const nomosSiteConfig: SiteConfig = {
   ...baseSiteConfig,
   title: 'Nomos',
   tagline: '',
-  url: 'https://nomos.co',
+  url: 'https://nomos.tech',
   customFields: {
     businessUnits: BusinessUnits.Nomos,
   },
