@@ -17,6 +17,13 @@
   }
 }
 
+.mdx-cta-section__title,
+.mdx-cta-section__description,
+.mdx-cta-section__link .mdx-cta-section__list div,
+.mdx-cta-section__link .mdx-cta-section__list p {
+  font-weight: 100 !important;
+}
+
 .mdx-cta-section--title-only {
   .mdx-cta-section__title {
     @include lsd.typography('h1', false);
