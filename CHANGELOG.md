@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.87](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.86...v1.0.0-alpha.87) (2023-07-17)
+
+### Features
+
+- custom 404 page, refs [#98](https://github.com/acid-info/logos-docusaurus-plugins/issues/98) ([cad8edc](https://github.com/acid-info/logos-docusaurus-plugins/commit/cad8edc3955fd633786627b12bf6a4aef8339476))
+
 # [1.0.0-alpha.86](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.85...v1.0.0-alpha.86) (2023-07-17)
 
 ### Bug Fixes
