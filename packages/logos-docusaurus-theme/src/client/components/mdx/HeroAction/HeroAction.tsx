@@ -1,9 +1,10 @@
 import { Button, ButtonProps, Typography } from '@acid-info/lsd-react'
+import Link, { Props } from '@docusaurus/Link'
 import clsx from 'clsx'
 import React from 'react'
 import './HeroAction.scss'
 
-export type HeroActionProps = React.HTMLAttributes<HTMLAnchorElement> & {
+export type HeroActionProps = Props & {
   variant?: ButtonProps['variant']
   size?: 'medium' | 'large'
 }
@@ -16,7 +17,7 @@ export const HeroAction: React.FC<HeroActionProps> = ({
   ...props
 }) => {
   return (
-    <a
+    <Link
       className={clsx(className, 'mdx-hero-action', `mdx-hero-action--${size}`)}
       {...props}
     >
@@ -29,6 +30,6 @@ export const HeroAction: React.FC<HeroActionProps> = ({
           {children}
         </Typography>
       </Button>
-    </a>
+    </Link>
   )
 }

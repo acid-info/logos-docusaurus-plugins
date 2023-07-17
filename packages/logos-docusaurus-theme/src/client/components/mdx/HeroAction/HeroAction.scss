@@ -18,6 +18,8 @@
 
 @include utils.responsive('lg', 'down') {
   .mdx-hero-action {
+    text-decoration: none !important;
+
     button {
       padding: 6px 12px !important;
     }

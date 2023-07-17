@@ -1,26 +1,16 @@
-import {
-  Button,
-  ButtonProps,
-  Typography,
-  TypographyProps,
-} from '@acid-info/lsd-react'
+import { Button, ButtonProps, Typography } from '@acid-info/lsd-react'
+import Link, { Props } from '@docusaurus/Link'
 import clsx from 'clsx'
 import React from 'react'
 import './CallToActionButton.scss'
 
-export type CallToActionButtonProps = Omit<
-  React.AnchorHTMLAttributes<HTMLAnchorElement>,
-  'title'
-> & {
+export type CallToActionButtonProps = Props & {
   href?: string
   size?: ButtonProps['size']
   variant?: ButtonProps['variant']
 }
 
-const LinkElement = Typography as React.FC<TypographyProps & { component: 'a' }>
-
 export const CallToActionButton: React.FC<CallToActionButtonProps> = ({
-  href,
   className,
   variant = 'filled',
   size = 'large',
@@ -28,17 +18,15 @@ export const CallToActionButton: React.FC<CallToActionButtonProps> = ({
   ...props
 }) => {
   return (
-    <LinkElement
-      className={clsx('mdx-cta-button', className)}
-      variant={size === 'large' ? 'label1' : 'label2'}
-      component="a"
-      href={href}
-      target={'_blank'}
-      {...(props as any)}
-    >
-      <Button size={size} variant={variant}>
-        {children}
-      </Button>
-    </LinkElement>
+    <Link className={clsx('mdx-cta-button', className)} {...(props as any)}>
+      <Typography
+        component="span"
+        variant={size === 'large' ? 'label1' : 'label2'}
+      >
+        <Button size={size} variant={variant}>
+          {children}
+        </Button>
+      </Typography>
+    </Link>
   )
 }
