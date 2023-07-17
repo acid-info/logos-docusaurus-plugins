@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.86](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.85...v1.0.0-alpha.86) (2023-07-17)
+
+### Bug Fixes
+
+- adjust CTA section typography styles ([075f3e5](https://github.com/acid-info/logos-docusaurus-plugins/commit/075f3e5c927fba7fb8bb873a0e4c6b65658aa661))
+
 # [1.0.0-alpha.85](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.84...v1.0.0-alpha.85) (2023-07-17)
 
 ### Features
