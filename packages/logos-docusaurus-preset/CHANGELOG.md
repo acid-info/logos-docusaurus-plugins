@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.90](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.89...v1.0.0-alpha.90) (2023-07-17)
+
+### Bug Fixes
+
+- **logos-docusaurus-preset:** fix Nomos website url ([112f066](https://github.com/acid-info/logos-docusaurus-plugins/commit/112f0663f8f9cdae9fb8f61bc73c882b1056576c))
+
 # [1.0.0-alpha.89](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.88...v1.0.0-alpha.89) (2023-07-17)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
