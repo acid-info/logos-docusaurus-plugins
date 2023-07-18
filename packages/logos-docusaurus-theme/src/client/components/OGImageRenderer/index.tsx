@@ -193,7 +193,7 @@ const docsImageRenderer = imageRendererFactory(
 
     return [
       <Layout
-        title={doc.metadata.title}
+        title={doc.metadata.title || siteConfig.title}
         footer={[
           <span style={{ textTransform: 'capitalize' }}>
             {doc.plugin.id === 'default' ? 'Docs' : doc.plugin.id}
