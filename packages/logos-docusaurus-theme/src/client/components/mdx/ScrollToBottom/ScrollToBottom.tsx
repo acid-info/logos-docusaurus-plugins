@@ -1,6 +1,8 @@
 import { ArrowDownIcon, IconButton } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React, { HTMLProps } from 'react'
+import { useWindowSize } from 'react-use'
+import { makeStyle } from '../../../lib/makeStyle'
 import { useHydrated } from '../../../lib/useHydrated'
 import { useIsMobile } from '../../../lib/useIsMobile'
 import { useScrollY } from '../../../lib/useScrollY'
@@ -11,10 +13,11 @@ type TProps = {}
 export const ScrollToBottom = (
   props: TProps & HTMLProps<HTMLButtonElement>,
 ): JSX.Element => {
-  const { children, className, ...rest } = props
+  const { children, className, style, ...rest } = props
   const isHydrated = useHydrated()
   const scrollY = useScrollY()
   const isMobile = useIsMobile()
+  const ws = useWindowSize()
 
   const handleScrollToBottom = () => {
     const article = document.querySelector('.main-wrapper article')
@@ -42,6 +45,7 @@ export const ScrollToBottom = (
         className,
         (scrollY > 20 || !isHydrated) && styles.hide,
       )}
+      style={makeStyle({ ...(style ?? {}) }, { vh: ws.height / 100 + 'px' })}
       {...(rest as any)}
     >
       <ArrowDownIcon color="primary" />

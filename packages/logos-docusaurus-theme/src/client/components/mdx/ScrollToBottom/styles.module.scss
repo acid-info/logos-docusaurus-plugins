@@ -5,13 +5,14 @@
   position: absolute;
   background: rgb(var(--lsd-surface-primary)) !important;
   transition: all 0.2s ease-in-out;
-  transform: translateY(0);
+  transform: translateY(-2rem);
   opacity: 1;
 
   &.hide {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(calc(-100% - 2.625rem));
   }
 
-  bottom: 2rem;
+  top: calc(100 * var(--vh) - var(--ifm-navbar-height));
+  transform: translateY(calc(-100% - 2rem));
 }
