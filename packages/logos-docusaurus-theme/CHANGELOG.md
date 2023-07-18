@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.93](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.92...v1.0.0-alpha.93) (2023-07-18)
+
+### Bug Fixes
+
+- fix the position of mdx scroll to bottom button on mobile ([975f769](https://github.com/acid-info/logos-docusaurus-plugins/commit/975f769b48a96f4c5e6574a3a3ee6f05953d5035))
+
 # [1.0.0-alpha.92](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.91...v1.0.0-alpha.92) (2023-07-18)
 
 ### Bug Fixes
