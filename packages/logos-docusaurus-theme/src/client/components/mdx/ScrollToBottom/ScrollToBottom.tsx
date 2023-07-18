@@ -3,7 +3,6 @@ import clsx from 'clsx'
 import React, { HTMLProps } from 'react'
 import { useWindowSize } from 'react-use'
 import { makeStyle } from '../../../lib/makeStyle'
-import { useHydrated } from '../../../lib/useHydrated'
 import { useIsMobile } from '../../../lib/useIsMobile'
 import { useScrollY } from '../../../lib/useScrollY'
 import styles from './styles.module.scss'
@@ -14,7 +13,6 @@ export const ScrollToBottom = (
   props: TProps & HTMLProps<HTMLButtonElement>,
 ): JSX.Element => {
   const { children, className, style, ...rest } = props
-  const isHydrated = useHydrated()
   const scrollY = useScrollY()
   const isMobile = useIsMobile()
   const ws = useWindowSize()
@@ -43,7 +41,7 @@ export const ScrollToBottom = (
       className={clsx(
         styles.scrollToBottom,
         className,
-        (scrollY > 20 || !isHydrated) && styles.hide,
+        scrollY > 20 && styles.hide,
       )}
       style={makeStyle({ ...(style ?? {}) }, { vh: ws.height / 100 + 'px' })}
       {...(rest as any)}
