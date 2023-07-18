@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.92](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.91...v1.0.0-alpha.92) (2023-07-18)
+
+### Bug Fixes
+
+- use website title if page title is empty on the og images ([962ad41](https://github.com/acid-info/logos-docusaurus-plugins/commit/962ad417ca63e00c1f614627d7f8abda2454c887))
+
 # [1.0.0-alpha.91](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.90...v1.0.0-alpha.91) (2023-07-17)
 
 ### Bug Fixes
