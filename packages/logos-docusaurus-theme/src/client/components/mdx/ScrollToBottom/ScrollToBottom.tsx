@@ -1,6 +1,6 @@
 import { ArrowDownIcon, IconButton } from '@acid-info/lsd-react'
 import clsx from 'clsx'
-import React, { HTMLProps } from 'react'
+import React, { HTMLProps, useMemo } from 'react'
 import { useWindowSize } from 'react-use'
 import { makeStyle } from '../../../lib/makeStyle'
 import { useIsMobile } from '../../../lib/useIsMobile'
@@ -34,6 +34,13 @@ export const ScrollToBottom = (
     })
   }
 
+  const maxTop = useMemo(
+    () =>
+      (document.querySelector('.mdx-hero')?.getBoundingClientRect()?.bottom ??
+        0) + window.scrollY,
+    [ws.height],
+  )
+
   return (
     <IconButton
       onClick={handleScrollToBottom}
@@ -43,7 +50,10 @@ export const ScrollToBottom = (
         className,
         scrollY > 20 && styles.hide,
       )}
-      style={makeStyle({ ...(style ?? {}) }, { vh: ws.height / 100 + 'px' })}
+      style={makeStyle(
+        { ...(style ?? {}) },
+        { vh: ws.height / 100 + 'px', maxTop: maxTop + 'px' },
+      )}
       {...(rest as any)}
     >
       <ArrowDownIcon color="primary" />

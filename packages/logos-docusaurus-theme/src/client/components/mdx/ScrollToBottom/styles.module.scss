@@ -1,6 +1,8 @@
 @use '../../../css/utils';
 
 .scrollToBottom {
+  --offset-y: -2rem;
+
   z-index: 100;
   position: absolute;
   background: rgb(var(--lsd-surface-primary)) !important;
@@ -10,9 +12,18 @@
 
   &.hide {
     opacity: 0;
-    transform: translateY(calc(-100% - 2.625rem));
+    transform: translateY(calc(-100% + var(--offset-y) - 0.625rem));
   }
 
-  top: calc(100 * var(--vh) - var(--ifm-navbar-height));
-  transform: translateY(calc(-100% - 2rem));
+  top: min(
+    calc(100 * var(--vh) - var(--ifm-navbar-height)),
+    calc(var(--maxTop) - var(--ifm-navbar-height))
+  );
+  transform: translateY(calc(-100% + var(--offset-y)));
+}
+
+@include utils.responsive('lg', 'down') {
+  .scrollToBottom {
+    --offset-y: -1rem;
+  }
 }
