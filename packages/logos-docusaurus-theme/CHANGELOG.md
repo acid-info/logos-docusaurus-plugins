@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.95](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.94...v1.0.0-alpha.95) (2023-07-19)
+
+### Bug Fixes
+
+- hide ‘Back to main menu’ button when the main menu is empty ([f950f25](https://github.com/acid-info/logos-docusaurus-plugins/commit/f950f2508a9fd4a5be0ca47dcdbd5d0c53142a4b))
+
 # [1.0.0-alpha.94](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.93...v1.0.0-alpha.94) (2023-07-18)
 
 ### Bug Fixes
