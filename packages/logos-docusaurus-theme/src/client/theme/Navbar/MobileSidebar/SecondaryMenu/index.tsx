@@ -24,10 +24,13 @@ function SecondaryMenuBackButton(props) {
 // The secondary menu slides from the right and shows contextual information
 // such as the docs sidebar
 export default function NavbarMobileSidebarSecondaryMenu() {
+  const isPrimaryMenuEmpty = useThemeConfig().navbar.items.length === 0
   const secondaryMenu = useNavbarSecondaryMenu()
   return (
     <>
-      <SecondaryMenuBackButton onClick={() => secondaryMenu.hide()} />
+      {!isPrimaryMenuEmpty && (
+        <SecondaryMenuBackButton onClick={() => secondaryMenu.hide()} />
+      )}
       {secondaryMenu.content}
     </>
   )
