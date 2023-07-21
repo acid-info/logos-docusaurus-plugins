@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.96](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.95...v1.0.0-alpha.96) (2023-07-21)
+
+### Bug Fixes
+
+- ensure the mdx scroll button sticks to the bottom of the hero section ([e0e6904](https://github.com/acid-info/logos-docusaurus-plugins/commit/e0e6904ac3b55546a7dd4e400d5652493724193d))
+
 # [1.0.0-alpha.95](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.94...v1.0.0-alpha.95) (2023-07-19)
 
 ### Bug Fixes
