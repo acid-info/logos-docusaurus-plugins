@@ -15,6 +15,7 @@ export enum BusinessUnits {
   Nomos = 'Nomos',
   VacResearch = 'VacResearch',
   AcidInfo = 'Acid.info',
+  AFAIKInstitute = 'AFAIK Institute',
 }
 
 export type Contact = {
