@@ -731,6 +731,14 @@ table {
   transform: rotate(180deg);
 }
 
+.menu__list-item-collapsible--active > :not(a[href='#']) {
+  box-shadow: inset 1px 0px 0px rgb(var(--lsd-border-primary));
+}
+
+.menu__list-item-collapsible > a {
+  box-shadow: none;
+}
+
 main[itemtype*='Blog'] {
   margin-left: 0;
 
