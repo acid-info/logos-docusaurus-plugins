@@ -27,6 +27,9 @@ import SearchSvg from '../../static/icons/search.svg'
 import StatusSvg from '../../static/icons/status.svg'
 import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
+import DiscordWhiteSvg from '../../static/icons/discord-white.svg'
+import TelegramWhiteSvg from '../../static/icons/telegram-white.svg'
+import XSvg from '../../static/icons/x.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -197,5 +200,23 @@ export const IconFullscreenExit = (props: TIconProps): JSX.Element => (
 export const IconExternalLink = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <ExternalLinkSvg />
+  </Icon>
+)
+
+export const IconDiscordWhite = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <DiscordWhiteSvg />
+  </Icon>
+)
+
+export const IconTelegramWhite = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <TelegramWhiteSvg />
+  </Icon>
+)
+
+export const IconX = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <XSvg />
   </Icon>
 )
