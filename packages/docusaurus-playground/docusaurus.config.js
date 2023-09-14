@@ -92,12 +92,10 @@ const config = {
             href: '/#usecases',
           },
           {
-            label: 'Github',
-            href: 'https://github.com/status-im',
-          },
-          {
-            type: 'localeDropdown',
+            href: 'https://github.com/waku-org',
             position: 'right',
+            className: 'header-github-link',
+            title: 'Waku GitHub repository',
           },
         ],
       },
