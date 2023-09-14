@@ -563,6 +563,10 @@ html[data-theme='dark'] .header-github-link:before {
   padding-left: 0;
 }
 
+.navbar__link--active {
+  border-bottom: 1px solid rgb(var(--lsd-border-primary));
+}
+
 .dropdown > .navbar__link:after {
   display: none;
 }
