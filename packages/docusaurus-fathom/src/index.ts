@@ -7,7 +7,8 @@ export default function fathomPlugin(
   context: LoadContext,
   options: PluginOptions,
 ): Plugin<undefined> {
-  const { siteId, scriptUrl } = options
+  const { siteId, scriptUrl, disabled = false } = options
+
   const dir = path.join(context.generatedFilesDir, 'docusaurus-fathom/default')
   fs.ensureDirSync(dir)
 
@@ -18,7 +19,8 @@ export default function fathomPlugin(
 
   return {
     name: 'docusaurus-fathom',
-    getClientModules: () => [path.resolve(__dirname, './client/index.js')],
+    getClientModules: () =>
+      disabled ? [] : [path.resolve(__dirname, './client/index.js')],
   }
 }
 
