@@ -1,6 +1,8 @@
-import { PluginOptions as DocPluginOptions } from '@docusaurus/plugin-content-docs'
-import { DefaultThemeOptions } from './themes'
 import { PluginOptions as OpenGraphPluginOptions } from '@acid-info/docusaurus-og'
+import { PluginOptions as BlogPluginOptions } from '@docusaurus/plugin-content-blog'
+import { PluginOptions as DocPluginOptions } from '@docusaurus/plugin-content-docs'
+import { PluginOptions as PagesPluginOptions } from '@docusaurus/plugin-content-pages'
+import { DefaultThemeOptions } from './themes'
 
 export enum ThemeNames {
   Default = 'default',
@@ -48,7 +50,9 @@ export type PresetConfig = {
         options?: DefaultThemeOptions
       }
   customSiteConfig?: boolean
-  docs?: Partial<DocPluginOptions>
+  docs?: Partial<DocPluginOptions> | false
+  blog?: Partial<BlogPluginOptions> | false
+  pages?: Partial<PagesPluginOptions> | false
   localSearch?: LocalSearchConfig
   og?: Partial<Omit<OpenGraphPluginOptions, 'imageRenderers'>> | false
 }

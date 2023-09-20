@@ -78,6 +78,8 @@ export default function logosPreset(
           ...(options.docs ?? {}),
         }
       : false,
+    blog: options.blog,
+    pages: options.pages,
     theme: {},
   })
 
