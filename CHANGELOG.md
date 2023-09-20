@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.99](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.98...v1.0.0-alpha.99) (2023-09-20)
+
+### Features
+
+- implement community component ([5c8b0e2](https://github.com/acid-info/logos-docusaurus-plugins/commit/5c8b0e2aa03efe8078f8ad3e8daadfc0d5b88454))
+
 # [1.0.0-alpha.98](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.97...v1.0.0-alpha.98) (2023-09-14)
 
 **Note:** Version bump only for package root
