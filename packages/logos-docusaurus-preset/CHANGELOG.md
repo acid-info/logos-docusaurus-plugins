@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.100](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.99...v1.0.0-alpha.100) (2023-09-20)
+
+### Features
+
+- allow overriding of default pages and blog plugin options ([37ca5ee](https://github.com/acid-info/logos-docusaurus-plugins/commit/37ca5ee584c7c053ed37fe7b7c14e956d4360d88))
+
 # [1.0.0-alpha.99](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.98...v1.0.0-alpha.99) (2023-09-20)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
