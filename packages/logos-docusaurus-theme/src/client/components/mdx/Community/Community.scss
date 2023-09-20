@@ -1,0 +1,57 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-community {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-block: 56px;
+}
+
+.mdx-community__link {
+  text-decoration: none !important;
+  height: fit-content;
+}
+
+.mdx-community__link:hover {
+  text-decoration: underline !important;
+}
+
+.mdx-community__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid rgb(var(--lsd-border-primary));
+  min-height: 144px;
+}
+
+.mdx-community__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mdx-community__logo {
+  width: 40px !important;
+  height: 40px !important;
+
+  svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+.mdx-community__external-link {
+}
+
+.mdx-community__label {
+  text-align: center;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-community {
+    grid-template-columns: 1fr;
+  }
+}
