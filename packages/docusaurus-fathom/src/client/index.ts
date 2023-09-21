@@ -1,6 +1,7 @@
 import {
   SITE_ID,
   SCRIPT_URL,
+  HOSTNAMES,
 } from '@generated/docusaurus-fathom/default/options'
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 import { ClientModule } from '@docusaurus/types/src/clientModule'
@@ -35,6 +36,10 @@ export const onRouteDidUpdate: ClientModule['onRouteDidUpdate'] = ({
   location,
   previousLocation,
 }) => {
+  if (HOSTNAMES.length > 0 && !HOSTNAMES.includes(window.location.hostname))
+    return
+  if (window.location.hostname === 'localhost') return
+
   if (location.pathname !== previousLocation?.pathname) {
     window.fathom('trackPageview')
   }
