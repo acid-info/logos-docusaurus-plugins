@@ -7,13 +7,16 @@ export default function fathomPlugin(
   context: LoadContext,
   options: PluginOptions,
 ): Plugin<undefined> {
-  const { siteId, scriptUrl } = options
+  const { siteId, scriptUrl, hostnames = [] } = options
+
   const dir = path.join(context.generatedFilesDir, 'docusaurus-fathom/default')
   fs.ensureDirSync(dir)
 
   fs.writeFileSync(
     path.join(dir, 'options.ts'),
-    `export const SITE_ID = "${siteId}"\nexport const SCRIPT_URL = "${scriptUrl}"`,
+    `export const SITE_ID = "${siteId}"\nexport const SCRIPT_URL = "${scriptUrl}"\nexport const HOSTNAMES = ${JSON.stringify(
+      hostnames,
+    )}`,
   )
 
   return {
