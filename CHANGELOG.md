@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.101](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.100...v1.0.0-alpha.101) (2023-09-22)
+
+### Bug Fixes
+
+- fix exceptional cases with docusaurus-fathom ([91d60ae](https://github.com/acid-info/logos-docusaurus-plugins/commit/91d60aed3ae0bf7365b692d39ebd16d0e5deee61))
+
+### Features
+
+- add disable prop to docusaurus-fathom ([096ddcf](https://github.com/acid-info/logos-docusaurus-plugins/commit/096ddcf54d446c8dab31b5a662711be90a80ecc9))
+- add valid hostnames to dcosaurus-fathom ([88f9158](https://github.com/acid-info/logos-docusaurus-plugins/commit/88f91589fb10981547d322347deb87c4cfda6a6e))
+
 # [1.0.0-alpha.100](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.99...v1.0.0-alpha.100) (2023-09-20)
 
 ### Features
