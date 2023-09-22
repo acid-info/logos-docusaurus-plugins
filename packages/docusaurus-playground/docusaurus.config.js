@@ -75,7 +75,7 @@ const config = {
         siteId: 'TEST',
         scriptUrl: 'https://fathom.status.im/tracker.js',
         disabled: true,
-        hostnames: ['waku.org'],
+        hostnames: ['localhost', 'waku.org'],
       },
     ],
   ],
