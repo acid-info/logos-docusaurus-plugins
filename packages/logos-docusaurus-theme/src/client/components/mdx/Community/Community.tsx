@@ -7,11 +7,13 @@ import {
   IconDiscordWhite,
   IconTelegramWhite,
   IconExternalLink,
+  IconGithub,
 } from '../../Icon' // '@logos-theme/components/Icon' doesn't work
 
 export enum CommunityType {
   X = 'x',
   Discord = 'discord',
+  Github = 'github',
   Telegram = 'telegram',
   CUSTOM = 'custom',
 }
@@ -42,6 +44,8 @@ export const Community: React.FC<CommunityProps> = ({
         return <IconDiscordWhite className="mdx-community__logo" />
       case CommunityType.Telegram:
         return <IconTelegramWhite className="mdx-community__logo" />
+      case CommunityType.Github:
+        return <IconGithub className="mdx-community__logo" />
       default:
         return null
     }
