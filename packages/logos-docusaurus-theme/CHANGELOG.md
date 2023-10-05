@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.102](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.101...v1.0.0-alpha.102) (2023-10-05)
+
+### Features
+
+- add Github to Community ([36d1688](https://github.com/acid-info/logos-docusaurus-plugins/commit/36d168810567101c8e62c9e7d321e3d6e2b5cc80))
+- add profile cards components ([56fa77b](https://github.com/acid-info/logos-docusaurus-plugins/commit/56fa77be212ce8d728db4410a432af5d4dc56e0e))
+
 # [1.0.0-alpha.99](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.98...v1.0.0-alpha.99) (2023-09-20)
 
 ### Features
