@@ -129,13 +129,13 @@ jobs:
             const type = "${{ steps.release_type.outputs.value }}";
             const head = "${{ steps.release_commit.outputs.head }}";
             const title = "${{ steps.release_commit.outputs.message }}";
-            let body = '';
+            const body = `This PR will bump the following packages:\n\`\`\`\n${changes}\n\`\`\`\n\nPlease review and test the code, before merging this PR. You can also check the changelog for more details on what has changed.\n\n**Warning**: Once you merge this PR, the changes will be published to the npm registry and cannot be undone. Please make sure you are confident about the quality and stability of the code before publishing.`;
 
-            body += `This PR will bump the following packages:\n`
-            body += `\`\`\`\n${changes}\n\`\`\``;
-            body += `\n\n`;
-            body += `Please review and test the code, before merging this PR. You can also check the changelog for more details on what has changed.\n\n`
-            body += `**Warning**: Once you merge this PR, the changes will be published to the npm registry and cannot be undone. Please make sure you are confident about the quality and stability of the code before publishing.`
+            console.log(changes);
+            console.log(type);
+            console.log(head);
+            console.log(title);
+            console.log(body);
 
             const res = await github.rest.pulls.create({
               body,
