@@ -78,8 +78,3 @@ $ yarn lerna version --no-private
 - **Themes**
   - [Logos Theme](./packages/logos-docusaurus-theme) [![Npm Version](https://img.shields.io/npm/v/@acid-info/logos-docusaurus-theme)](https://www.npmjs.com/package/@acid-info/logos-docusaurus-theme)
 
-# TODO
-
-- [ ] Automate publishing
-- [ ] Add unit testing
-- [x] Optimize [Logos theme](./packages/logos-docusaurus-theme)'s watch command
