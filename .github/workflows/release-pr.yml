@@ -122,20 +122,15 @@ jobs:
 
       - uses: actions/github-script@v6
         id: pr
+        env: 
+            CHANGES: ${{ steps.bump.outputs.changes }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const changes = "${{ steps.bump.outputs.changes }}";
             const type = "${{ steps.release_type.outputs.value }}";
             const head = "${{ steps.release_commit.outputs.head }}";
             const title = "${{ steps.release_commit.outputs.message }}";
-            const body = `This PR will bump the following packages:\n\`\`\`\n${changes}\n\`\`\`\n\nPlease review and test the code, before merging this PR. You can also check the changelog for more details on what has changed.\n\n**Warning**: Once you merge this PR, the changes will be published to the npm registry and cannot be undone. Please make sure you are confident about the quality and stability of the code before publishing.`;
-
-            console.log(changes);
-            console.log(type);
-            console.log(head);
-            console.log(title);
-            console.log(body);
+            const body = `This PR will bump the following packages:\n\`\`\`\n${process.env.CHANGES}\n\`\`\`\n\nPlease review and test the code, before merging this PR. You can also check the changelog for more details on what has changed.\n\n**Warning**: Once you merge this PR, the changes will be published to the npm registry and cannot be undone. Please make sure you are confident about the quality and stability of the code before publishing.`;
 
             const res = await github.rest.pulls.create({
               body,
@@ -144,14 +139,4 @@ jobs:
               base: "main",
               repo: context.repo.repo,
               owner: context.repo.owner,
-            });
-
-            const { number } = res.data;
-            core.setOutput('number', number);
-
-            await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: number,
-              labels: [`${type}-release`],
             });
