@@ -7,14 +7,7 @@
   --mobile-height: 176px;
 }
 
-.mdx-profile-cards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-  margin-block: 80px;
-}
-
-.mdx-profile-card__card {
+.mdx-profile-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,17 +91,7 @@
 }
 
 @include utils.responsive('md', 'down') {
-  .mdx-profile-cards {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    gap: 1rem;
-    scroll-snap-type: x mandatory;
-    margin-block: 40px;
-  }
-
-  .mdx-profile-card__card {
+  .mdx-profile-card {
     flex: 0 0 var(--mobile-width);
     width: var(--mobile-width);
     height: var(--mobile-height);

@@ -1,0 +1,37 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-social-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid rgb(var(--lsd-border-primary));
+  min-height: 144px;
+
+  text-decoration: none !important;
+}
+
+.mdx-social-card:hover {
+  text-decoration: underline !important;
+}
+
+.mdx-social-card__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mdx-social-card__logo {
+  width: 40px !important;
+  height: 40px !important;
+
+  svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+.mdx-social-card__description {
+}

@@ -2,41 +2,48 @@
 title: Join the community
 ---
 
-import { Community } from '../../logos-docusaurus-theme/src/client/components/mdx'
+import { SocialCard, Grid, Box } from '@site/src/components/mdx'
 
 # Join the community
 
 Welcome to the Waku community! Whether you are interested in building with Waku, contributing to the network, expanding your knowledge, or staying abreast of our progress, we have something for everyone.
 
-<Community
-  items={[
-    {
-      type: 'x',
-      link: 'https://discord.gg/2NXGrsqmDq',
-      linkLabel: 'Follow us on X',
-    },
-    {
-      type: 'discord',
-      logoSrcDark: '/icons/discord.svg',
-      link: 'https://discord.gg/2NXGrsqmDq',
-      linkLabel: 'Join the community on Discord',
-    },
-    {
-      type: 'telegram',
-      logoSrcDark: '/icons/discord.svg',
-      link: 'https://discord.gg/2NXGrsqmDq',
-      linkLabel: 'Jump in the conversation on Telegram',
-    },
-    {
-      logoSrcDark: '/icons/discord.svg',
-      link: 'https://discord.gg/2NXGrsqmDq',
-      linkLabel:
-        'Share your thoughts on the latest research on the Vac research forum',
-    },
-    {
-      type: 'github',
-      link: 'https://discord.gg/2NXGrsqmDq',
-      linkLabel: 'Contribute to Github',
-    },
-  ]}
-/>
+<Box top={56} bottom={56}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+      <SocialCard
+        logoSrcDark="/icons/x.svg"
+        href="https://discord.gg/2NXGrsqmDq"
+        description="Follow us on X"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        logoSrcDark="/icons/discord-white.svg"
+        href="https://discord.gg/2NXGrsqmDq"
+        description="Join the community on Discord"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        logoSrcDark="/icons/telegram-white.svg"
+        href="https://discord.gg/2NXGrsqmDq"
+        description="Jump in the conversation on Telegram"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        logoSrcDark="/icons/discord.svg"
+        href="https://discord.gg/2NXGrsqmDq"
+        description="Share your thoughts on the latest research on the Vac research forum"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        logoSrcDark="/icons/github.svg"
+        href="https://discord.gg/2NXGrsqmDq"
+        description="Contribute to Github"
+      />
+    </Grid.Item>
+  </Grid>
+</Box>

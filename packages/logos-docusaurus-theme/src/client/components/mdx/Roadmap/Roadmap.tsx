@@ -1,19 +1,9 @@
-import {
-  IconButton,
-  IconButtonGroup,
-  NavigateBeforeIcon,
-  NavigateNextIcon,
-  Typography,
-} from '@acid-info/lsd-react'
+import { Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
-import React, { useRef } from 'react'
+import React from 'react'
+import { Grid } from '..'
+import { TimelineItem, TimelineItemProps } from '../TimelineItem'
 import './Roadmap.scss'
-
-export type TimelineItem = {
-  period: string
-  description: string
-  borderStyle?: 'solid' | 'dashed'
-}
 
 export type RoadmapProps = Omit<
   React.HTMLAttributes<HTMLDivElement>,
@@ -21,8 +11,8 @@ export type RoadmapProps = Omit<
 > & {
   title: React.ReactNode
   description?: React.ReactNode
-  timeline?: TimelineItem[]
   alignment?: 'top' | 'bottom'
+  timeline?: Partial<TimelineItemProps>[]
 }
 
 export const Roadmap: React.FC<RoadmapProps> = ({
@@ -34,21 +24,6 @@ export const Roadmap: React.FC<RoadmapProps> = ({
   children,
   ...props
 }) => {
-  const timelineRef = useRef<HTMLDivElement>(null)
-
-  const scroll = (direction: -1 | 1) => {
-    const el = timelineRef.current
-    if (!el) return
-
-    const itemWidth = el.children[0]?.getBoundingClientRect?.()?.width ?? 236
-    el.scrollTo({
-      behavior: 'smooth',
-      left:
-        el.scrollLeft +
-        (el.getBoundingClientRect()?.width - itemWidth) * direction,
-    })
-  }
-
   return (
     <div
       className={clsx(
@@ -69,60 +44,25 @@ export const Roadmap: React.FC<RoadmapProps> = ({
           </Typography>
         )}
       </div>
-      <div className="mdx-roadmap__actions">
-        {children && <div className="mdx-roadmap__cta">{children}</div>}
-        <div className="mdx-roadmap__scroll">
-          <IconButtonGroup size="small" color="primary">
-            <IconButton size="small" onClick={scroll.bind(null, -1)}>
-              <NavigateBeforeIcon />
-            </IconButton>
-            <IconButton size="small" onClick={scroll.bind(null, 1)}>
-              <NavigateNextIcon />
-            </IconButton>
-          </IconButtonGroup>
-        </div>
-      </div>
       {timeline.length > 0 && (
-        <div
-          ref={timelineRef}
-          className="mdx-roadmap__timeline hidden-scrollbar"
+        <Grid
+          className="mdx-roadmap__timeline"
+          xs={{ cols: 6, wrap: false, gap: '0 1rem' }}
         >
           {timeline.map((item, index) => (
-            <div key={index} className="mdx-roadmap__timeline-item">
-              <div className="mdx-roadmap__timeline-header">
-                <div className="mdx-roadmap__timeline-period-container">
-                  <div
-                    className={clsx(
-                      'mdx-roadmap__timeline-border',
-                      item.borderStyle === 'dashed' &&
-                        'mdx-roadmap__timeline-border--dashed',
-                    )}
-                  />
-                  <Typography
-                    variant="subtitle1"
-                    component="span"
-                    className="mdx-roadmap__timeline-period"
-                  >
-                    {item.period}
-                  </Typography>
-                </div>
-                <Typography
-                  variant="h3"
-                  component="span"
-                  className="mdx-roadmap__timeline-index"
-                >
-                  {`${index < 9 ? '0' : ''}${index + 1}`}
-                </Typography>
-              </div>
-              <Typography
-                variant="h6"
-                component="p"
-                className="mdx-roadmap__timeline-description"
-                dangerouslySetInnerHTML={{ __html: item.description }}
+            <Grid.Item key={index} xs={1}>
+              <TimelineItem
+                {...item}
+                index={item.index ?? index + 1}
+                period={item.period}
+                description={item.description}
+                alignment={alignment}
+                borderStyle={item.borderStyle}
+                className={clsx('mdx-roadmap__timeline-item', item.className)}
               />
-            </div>
+            </Grid.Item>
           ))}
-        </div>
+        </Grid>
       )}
     </div>
   )

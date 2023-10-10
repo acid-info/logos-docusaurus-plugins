@@ -11,7 +11,13 @@ import {
   Showcase,
   HeroInfo,
   Box,
+  Grid,
+  ProfileCard,
   ProfileCards,
+  Roadmap,
+  SectionHeader,
+  TimelineItem,
+  ShowcaseCard,
 } from '../components/mdx'
 
 <Hero size="large">
@@ -89,80 +95,248 @@ import {
     href="/about/team"
     target="_self"
   />
-  <ProfileCards
-    items={[
-      {
-        name: 'Jeremy',
-        githubUsername: 'jeremyjeremyjeremy',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'jeremyjeremyjeremy#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Dimitriy',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=297aeedfad6fed82ed60a93a9d850762',
-        githubUsername: 'dimitriy',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'dimitriy#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Slava',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=c9028ddcd6da2b7b0aaaf6fabbad7b31',
-        githubUsername: 'slava',
-        githubLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Eric',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=a620c567ee3da938757bb0a43eda4ec9',
-        discordUsername: 'eric#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Tomas',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=8f6066f7e4b7517702c86d85f3ad828d',
-      },
-      {
-        name: 'Adam',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=5edf032c2d62576d36090cf09b5939e5',
-        githubUsername: 'adam',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'adam#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Ben',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=406fd339da77e69aeef5f357ece3ff3d',
-        githubUsername: 'ben',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'ben#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Leo',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2',
-        githubUsername: 'leo',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'leo#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-    ]}
+  <Box top={{ xs: 40, md: 80 }} bottom={{ xs: 40, md: 80 }}>
+    <Grid
+      xs={{ cols: 3, gap: '1rem', wrap: false }}
+      md={{ cols: 4, gap: '1rem', wrap: true }}
+    >
+      <Grid.Item>
+        <ProfileCard
+          name="Jeremy"
+          githubUsername="jeremyjeremyjeremy"
+          githubLink="https://github.com/acid-info"
+          discordUsername="jeremyjeremyjeremy#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ProfileCard
+          name="Dimitriy"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=297aeedfad6fed82ed60a93a9d850762"
+          githubUsername="dimitriy"
+          githubLink="https://github.com/acid-info"
+          discordUsername="dimitriy#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ProfileCard
+          name="Slava"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=c9028ddcd6da2b7b0aaaf6fabbad7b31"
+          githubUsername="slava"
+          githubLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ProfileCard
+          name="Eric"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=a620c567ee3da938757bb0a43eda4ec9"
+          discordUsername="eric#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ProfileCard
+          name="Tomas"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=8f6066f7e4b7517702c86d85f3ad828d"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ProfileCard
+          name="Adam"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=5edf032c2d62576d36090cf09b5939e5"
+          githubUsername="adam"
+          githubLink="https://github.com/acid-info"
+          discordUsername="adam#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ProfileCard
+          name="Ben"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=406fd339da77e69aeef5f357ece3ff3d"
+          githubUsername="ben"
+          githubLink="https://github.com/acid-info"
+          discordUsername="ben#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ProfileCard
+          name="Leo"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2"
+          githubUsername="leo"
+          githubLink="https://github.com/acid-info"
+          discordUsername="leo#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+    </Grid>
+  </Box>
+</Box>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <SectionHeader
+    title="Development Roadmap"
+    description="Codex is currently in its first proof-of-concept iteration and aims to release its beta version, Katana, before the end of Q4 2023."
+    bottom={{ xs: '4rem', lg: '7.25rem' }}
   />
+  <Grid xs={{ cols: 6, wrap: false, gap: '0 1rem' }}>
+    <Grid.Item>
+      <TimelineItem
+        period="2021"
+        borderStyle="dashed"
+        description="Codex project begins"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2022"
+        borderStyle="solid"
+        description=" PoC-1 “Dagger” demos"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2022"
+        borderStyle="dashed"
+        description="Marketplace redesign, zk-proofs research"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2023"
+        borderStyle="solid"
+        description="PoC-2 “Scimitar” demos"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2023 Q3"
+        borderStyle="solid"
+        description="PoC-3 demo scheduled"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2023 Q4"
+        borderStyle="dashed"
+        description="V1 “Katana” release scheduled"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2024"
+        borderStyle="solid"
+        description="L2 aggregator node development"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2024"
+        borderStyle="dashed"
+        description="Payment channels/bandwidth incentives"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2025"
+        borderStyle="solid"
+        description="V2 with improved incentives and repair"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2025"
+        description="Public mainnet release"
+        borderStyle="none"
+      />
+    </Grid.Item>
+  </Grid>
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
   <CallToActionSection
-    title="Development roadmap"
-    description="Codex currently exists as a proof-of-concept network and aims to release its beta version, codenamed Katana, by the end of Q4, 2023. To get there, the team will deliver a second and third PoC client, each of which will introduce progressively more advanced features."
-    label="Read more"
-    href="/about/roadmap"
-    target="_self"
+    title="User Endorsements"
   />
+</Box>
+<Box top={{ xs: 64, lg: 100 }}>
+  <Showcase
+    id="showcase"
+    items={[
+      {
+        name: 'Status',
+        logo: '/showcase/status-mark-black.svg',
+        logoDark: '/showcase/status-mark-white.svg',
+        description:
+          `"Waku v2 has been instrumental in helping us scale the Status application securely while maintaining the decentralised nature of our network. The Waku team has been invaluable in providing practical solutions during the development of the Waku v2 protocol, enabling us to deliver essential Status Communities features.”`,
+      },
+      {
+        name: 'Railgun',
+        logo: '/showcase/railgun-mark-black.svg',
+        logoDark: '/showcase/railgun-mark-white.svg',
+        description:
+          <>"RAILGUN contributors selected Waku to run its relayer network as an early-stage but promising product of the privacy-centric <a href="https://status.im" target="_blank">status.im</a> ecosystem. We have not been disappointed. The developers are extremely professional and responsive, and continue to strive to understand and meet our needs as a communication layer for relaying private transactions."</>,
+      },
+      {
+        name: 'The Graph',
+        logo: '/showcase/the-graph-mark-black.svg',
+        logoDark: '/showcase/the-graph-mark-white.svg',
+        description:
+          `"Our experience with Waku has been transformative, proving to be a valuable tool that reveals the potential of peer-to-peer communication technologies. We are excited to continue using Waku's advanced features and contribute to the growth of Graphcast and the broader Graph ecosystem."`,
+      }
+    ]}
+  />
+
+  <CallToActionButton href="https://docs.waku.org/" variant="outlined">Build on Waku</CallToActionButton>
+</Box>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection title="User Endorsements" />
+</Box>
+<Box top={{ xs: 64, lg: 100 }}>
+  <Grid
+    xs={{ cols: 2, wrap: true, gap: '1.5rem 1em' }}
+    lg={{ cols: 3, gap: '1rem' }}
+  >
+    <Grid.Item xs={1}>
+      <ShowcaseCard
+        name="Status"
+        logoSrc="/showcase/status-mark-black.svg"
+        logoSrcDark="/showcase/status-mark-white.svg"
+        description={`"Waku v2 has been instrumental in helping us scale the Status application securely while maintaining the decentralised nature of our network. The Waku team has been invaluable in providing practical solutions during the development of the Waku v2 protocol, enabling us to deliver essential Status Communities features.”`}
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <ShowcaseCard
+        name="Railgun"
+        logoSrc="/showcase/railgun-mark-black.svg"
+        logoSrcDark="/showcase/railgun-mark-white.svg"
+        description={
+          <>
+            "RAILGUN contributors selected Waku to run its relayer network as an
+            early-stage but promising product of the privacy-centric{' '}
+            <a href="https://status.im" target="_blank">
+              status.im
+            </a>{' '}
+            ecosystem. We have not been disappointed. The developers are
+            extremely professional and responsive, and continue to strive to
+            understand and meet our needs as a communication layer for relaying
+            private transactions."
+          </>
+        }
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <ShowcaseCard
+        name="The Graph"
+        logoSrc="/showcase/the-graph-mark-black.svg"
+        logoSrcDark="/showcase/the-graph-mark-white.svg"
+        description={`"Our experience with Waku has been transformative, proving to be a valuable tool that reveals the potential of peer-to-peer communication technologies. We are excited to continue using Waku's advanced features and contribute to the growth of Graphcast and the broader Graph ecosystem."`}
+      />
+    </Grid.Item>
+  </Grid>
+  <CallToActionButton href="https://docs.waku.org/" variant="outlined">
+    Build on Waku
+  </CallToActionButton>
 </Box>
