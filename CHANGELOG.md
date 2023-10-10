@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.106](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.105...v1.0.0-alpha.106) (2023-10-10)
+
+### Bug Fixes
+
+- fix Grid spacing ([866b982](https://github.com/acid-info/logos-docusaurus-plugins/commit/866b98233e489ac1414b86220b36c48f48589955))
+
 # [1.0.0-alpha.105](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.104...v1.0.0-alpha.105) (2023-10-10)
 
 ### Bug Fixes
