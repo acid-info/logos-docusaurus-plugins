@@ -1,0 +1,43 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-showcase-card {
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+}
+
+.mdx-showcase-card__inner {
+  padding: 24px 8px;
+}
+
+.mdx-showcase-card__logo {
+}
+
+.mdx-showcase-card__name {
+  margin-top: 1rem;
+}
+
+.mdx-showcase-card__description {
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+  margin-top: 24px;
+  padding-top: 16px;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-showcase {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .mdx-showcase-card__name {
+    @include lsd.typography('h6');
+  }
+
+  .mdx-showcase-card__description {
+    margin-top: 1rem;
+  }
+
+  .mdx-showcase-card__logo {
+    width: 34px;
+    height: auto;
+  }
+}

@@ -17,6 +17,7 @@ import {
   Roadmap,
   SectionHeader,
   TimelineItem,
+  ShowcaseCard,
 } from '../components/mdx'
 
 <Hero size="large">
@@ -252,4 +253,90 @@ import {
       />
     </Grid.Item>
   </Grid>
+</Box>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="User Endorsements"
+  />
+</Box>
+<Box top={{ xs: 64, lg: 100 }}>
+  <Showcase
+    id="showcase"
+    items={[
+      {
+        name: 'Status',
+        logo: '/showcase/status-mark-black.svg',
+        logoDark: '/showcase/status-mark-white.svg',
+        description:
+          `"Waku v2 has been instrumental in helping us scale the Status application securely while maintaining the decentralised nature of our network. The Waku team has been invaluable in providing practical solutions during the development of the Waku v2 protocol, enabling us to deliver essential Status Communities features.”`,
+      },
+      {
+        name: 'Railgun',
+        logo: '/showcase/railgun-mark-black.svg',
+        logoDark: '/showcase/railgun-mark-white.svg',
+        description:
+          <>"RAILGUN contributors selected Waku to run its relayer network as an early-stage but promising product of the privacy-centric <a href="https://status.im" target="_blank">status.im</a> ecosystem. We have not been disappointed. The developers are extremely professional and responsive, and continue to strive to understand and meet our needs as a communication layer for relaying private transactions."</>,
+      },
+      {
+        name: 'The Graph',
+        logo: '/showcase/the-graph-mark-black.svg',
+        logoDark: '/showcase/the-graph-mark-white.svg',
+        description:
+          `"Our experience with Waku has been transformative, proving to be a valuable tool that reveals the potential of peer-to-peer communication technologies. We are excited to continue using Waku's advanced features and contribute to the growth of Graphcast and the broader Graph ecosystem."`,
+      }
+    ]}
+  />
+
+  <CallToActionButton href="https://docs.waku.org/" variant="outlined">Build on Waku</CallToActionButton>
+</Box>
+
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection title="User Endorsements" />
+</Box>
+<Box top={{ xs: 64, lg: 100 }}>
+  <Grid
+    xs={{ cols: 2, wrap: true, gap: '1.5rem 1em' }}
+    lg={{ cols: 3, gap: '1rem' }}
+  >
+    <Grid.Item xs={1}>
+      <ShowcaseCard
+        name="Status"
+        logoSrc="/showcase/status-mark-black.svg"
+        logoSrcDark="/showcase/status-mark-white.svg"
+        description={`"Waku v2 has been instrumental in helping us scale the Status application securely while maintaining the decentralised nature of our network. The Waku team has been invaluable in providing practical solutions during the development of the Waku v2 protocol, enabling us to deliver essential Status Communities features.”`}
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <ShowcaseCard
+        name="Railgun"
+        logoSrc="/showcase/railgun-mark-black.svg"
+        logoSrcDark="/showcase/railgun-mark-white.svg"
+        description={
+          <>
+            "RAILGUN contributors selected Waku to run its relayer network as an
+            early-stage but promising product of the privacy-centric{' '}
+            <a href="https://status.im" target="_blank">
+              status.im
+            </a>{' '}
+            ecosystem. We have not been disappointed. The developers are
+            extremely professional and responsive, and continue to strive to
+            understand and meet our needs as a communication layer for relaying
+            private transactions."
+          </>
+        }
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <ShowcaseCard
+        name="The Graph"
+        logoSrc="/showcase/the-graph-mark-black.svg"
+        logoSrcDark="/showcase/the-graph-mark-white.svg"
+        description={`"Our experience with Waku has been transformative, proving to be a valuable tool that reveals the potential of peer-to-peer communication technologies. We are excited to continue using Waku's advanced features and contribute to the growth of Graphcast and the broader Graph ecosystem."`}
+      />
+    </Grid.Item>
+  </Grid>
+  <CallToActionButton href="https://docs.waku.org/" variant="outlined">
+    Build on Waku
+  </CallToActionButton>
 </Box>
