@@ -1,3 +1,4 @@
+export * from './AppCard'
 export * from './Box'
 export * from './CallToActionButton'
 export * from './CallToActionSection'
