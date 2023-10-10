@@ -93,7 +93,10 @@ const GridRoot = styled.div<{
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
   }
 
   ${(props) =>
