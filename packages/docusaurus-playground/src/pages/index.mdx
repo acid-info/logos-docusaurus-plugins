@@ -14,6 +14,9 @@ import {
   Grid,
   ProfileCard,
   ProfileCards,
+  Roadmap,
+  SectionHeader,
+  TimelineItem,
 } from '../components/mdx'
 
 <Hero size="large">
@@ -96,7 +99,7 @@ import {
       xs={{ cols: 3, gap: '1rem', wrap: false }}
       md={{ cols: 4, gap: '1rem', wrap: true }}
     >
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Jeremy"
           githubUsername="jeremyjeremyjeremy"
@@ -105,7 +108,7 @@ import {
           discordLink="https://discord.gg/2NXGrsqmDq"
         />
       </Grid.Item>
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Dimitriy"
           imgSrc="https://statusim.bamboohr.com/employees/photos/?h=297aeedfad6fed82ed60a93a9d850762"
@@ -115,7 +118,7 @@ import {
           discordLink="https://discord.gg/2NXGrsqmDq"
         />
       </Grid.Item>
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Slava"
           imgSrc="https://statusim.bamboohr.com/employees/photos/?h=c9028ddcd6da2b7b0aaaf6fabbad7b31"
@@ -123,7 +126,7 @@ import {
           githubLink="https://discord.gg/2NXGrsqmDq"
         />
       </Grid.Item>
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Eric"
           imgSrc="https://statusim.bamboohr.com/employees/photos/?h=a620c567ee3da938757bb0a43eda4ec9"
@@ -131,13 +134,13 @@ import {
           discordLink="https://discord.gg/2NXGrsqmDq"
         />
       </Grid.Item>
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Tomas"
           imgSrc="https://statusim.bamboohr.com/employees/photos/?h=8f6066f7e4b7517702c86d85f3ad828d"
         />
       </Grid.Item>
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Adam"
           imgSrc="https://statusim.bamboohr.com/employees/photos/?h=5edf032c2d62576d36090cf09b5939e5"
@@ -147,7 +150,7 @@ import {
           discordLink="https://discord.gg/2NXGrsqmDq"
         />
       </Grid.Item>
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Ben"
           imgSrc="https://statusim.bamboohr.com/employees/photos/?h=406fd339da77e69aeef5f357ece3ff3d"
@@ -157,7 +160,7 @@ import {
           discordLink="https://discord.gg/2NXGrsqmDq"
         />
       </Grid.Item>
-      <Grid.Item sm={1}>
+      <Grid.Item>
         <ProfileCard
           name="Leo"
           imgSrc="https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2"
@@ -172,11 +175,81 @@ import {
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
-  <CallToActionSection
-    title="Development roadmap"
-    description="Codex currently exists as a proof-of-concept network and aims to release its beta version, codenamed Katana, by the end of Q4, 2023. To get there, the team will deliver a second and third PoC client, each of which will introduce progressively more advanced features."
-    label="Read more"
-    href="/about/roadmap"
-    target="_self"
+  <SectionHeader
+    title="Development Roadmap"
+    description="Codex is currently in its first proof-of-concept iteration and aims to release its beta version, Katana, before the end of Q4 2023."
+    bottom={{ xs: '4rem', lg: '7.25rem' }}
   />
+  <Grid xs={{ cols: 6, wrap: false, gap: '0 1rem' }}>
+    <Grid.Item>
+      <TimelineItem
+        period="2021"
+        borderStyle="dashed"
+        description="Codex project begins"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2022"
+        borderStyle="solid"
+        description=" PoC-1 “Dagger” demos"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2022"
+        borderStyle="dashed"
+        description="Marketplace redesign, zk-proofs research"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2023"
+        borderStyle="solid"
+        description="PoC-2 “Scimitar” demos"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2023 Q3"
+        borderStyle="solid"
+        description="PoC-3 demo scheduled"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2023 Q4"
+        borderStyle="dashed"
+        description="V1 “Katana” release scheduled"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2024"
+        borderStyle="solid"
+        description="L2 aggregator node development"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2024"
+        borderStyle="dashed"
+        description="Payment channels/bandwidth incentives"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2025"
+        borderStyle="solid"
+        description="V2 with improved incentives and repair"
+      />
+    </Grid.Item>
+    <Grid.Item>
+      <TimelineItem
+        period="2025"
+        description="Public mainnet release"
+        borderStyle="none"
+      />
+    </Grid.Item>
+  </Grid>
 </Box>

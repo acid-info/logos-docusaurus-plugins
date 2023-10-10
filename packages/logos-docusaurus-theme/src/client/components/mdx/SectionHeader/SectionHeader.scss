@@ -1,0 +1,26 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-section-header {
+  width: 100%;
+  padding-top: 24px;
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  > * {
+    flex-basis: 50%;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-section-header {
+    flex-direction: column;
+
+    &__title {
+      @include lsd.typography('body1');
+    }
+  }
+}
