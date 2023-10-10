@@ -11,6 +11,8 @@ import {
   Showcase,
   HeroInfo,
   Box,
+  Grid,
+  ProfileCard,
   ProfileCards,
 } from '../components/mdx'
 
@@ -89,72 +91,84 @@ import {
     href="/about/team"
     target="_self"
   />
-  <ProfileCards
-    items={[
-      {
-        name: 'Jeremy',
-        githubUsername: 'jeremyjeremyjeremy',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'jeremyjeremyjeremy#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Dimitriy',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=297aeedfad6fed82ed60a93a9d850762',
-        githubUsername: 'dimitriy',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'dimitriy#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Slava',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=c9028ddcd6da2b7b0aaaf6fabbad7b31',
-        githubUsername: 'slava',
-        githubLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Eric',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=a620c567ee3da938757bb0a43eda4ec9',
-        discordUsername: 'eric#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Tomas',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=8f6066f7e4b7517702c86d85f3ad828d',
-      },
-      {
-        name: 'Adam',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=5edf032c2d62576d36090cf09b5939e5',
-        githubUsername: 'adam',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'adam#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Ben',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=406fd339da77e69aeef5f357ece3ff3d',
-        githubUsername: 'ben',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'ben#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-      {
-        name: 'Leo',
-        imgSrc:
-          'https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2',
-        githubUsername: 'leo',
-        githubLink: 'https://github.com/acid-info',
-        discordUsername: 'leo#0001',
-        discordLink: 'https://discord.gg/2NXGrsqmDq',
-      },
-    ]}
-  />
+  <Box top={{ xs: 40, md: 80 }} bottom={{ xs: 40, md: 80 }}>
+    <Grid
+      xs={{ cols: 3, gap: '1rem', wrap: false }}
+      md={{ cols: 4, gap: '1rem', wrap: true }}
+    >
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Jeremy"
+          githubUsername="jeremyjeremyjeremy"
+          githubLink="https://github.com/acid-info"
+          discordUsername="jeremyjeremyjeremy#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Dimitriy"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=297aeedfad6fed82ed60a93a9d850762"
+          githubUsername="dimitriy"
+          githubLink="https://github.com/acid-info"
+          discordUsername="dimitriy#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Slava"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=c9028ddcd6da2b7b0aaaf6fabbad7b31"
+          githubUsername="slava"
+          githubLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Eric"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=a620c567ee3da938757bb0a43eda4ec9"
+          discordUsername="eric#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Tomas"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=8f6066f7e4b7517702c86d85f3ad828d"
+        />
+      </Grid.Item>
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Adam"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=5edf032c2d62576d36090cf09b5939e5"
+          githubUsername="adam"
+          githubLink="https://github.com/acid-info"
+          discordUsername="adam#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Ben"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=406fd339da77e69aeef5f357ece3ff3d"
+          githubUsername="ben"
+          githubLink="https://github.com/acid-info"
+          discordUsername="ben#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+      <Grid.Item sm={1}>
+        <ProfileCard
+          name="Leo"
+          imgSrc="https://statusim.bamboohr.com/employees/photos/?h=4d6fcc7c245ca327414ab4d282b509f2"
+          githubUsername="leo"
+          githubLink="https://github.com/acid-info"
+          discordUsername="leo#0001"
+          discordLink="https://discord.gg/2NXGrsqmDq"
+        />
+      </Grid.Item>
+    </Grid>
+  </Box>
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
