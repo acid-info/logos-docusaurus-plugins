@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.103](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.102...v1.0.0-alpha.103) (2023-10-10)
+
+### Features
+
+- implement universal grid refs [#116](https://github.com/acid-info/logos-docusaurus-plugins/issues/116) ([cdbe636](https://github.com/acid-info/logos-docusaurus-plugins/commit/cdbe63620c59b27f0446778a82ef54460a7ea19c))
+
 # [1.0.0-alpha.102](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.101...v1.0.0-alpha.102) (2023-10-05)
 
 ### Features
