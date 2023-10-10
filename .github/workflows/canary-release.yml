@@ -1,6 +1,7 @@
 name: Canary Release
 on:
   pull_request:
+
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false

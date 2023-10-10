@@ -122,8 +122,8 @@ jobs:
 
       - uses: actions/github-script@v6
         id: pr
-        env: 
-            CHANGES: ${{ steps.bump.outputs.changes }}
+        env:
+          CHANGES: ${{ steps.bump.outputs.changes }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

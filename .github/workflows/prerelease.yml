@@ -3,18 +3,29 @@ on:
   push:
     branches:
       - 'main'
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
 
 jobs:
   prerelease:
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: true
+
+    if: github.actor_id != vars.CI_BOT_ID && !contains(github.event.head_commit.message, format('chore{0} release', ':'))
     runs-on: ubuntu-latest
     steps:
+      - id: create_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.CI_APP_ID }}
+          private_key: ${{ secrets.CI_APP_PRIVATE_KEY }}
+          permissions: >-
+            { "contents": "write", "statuses": "write" }
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           fetch-tags: 1
+          token: ${{ steps.create_token.outputs.token }}
 
       - name: Extract version from lerna.json
         run: echo "value=$(jq .version lerna.json -r)" >> $GITHUB_OUTPUT
@@ -50,27 +61,26 @@ jobs:
         id: publish
         if: ${{ steps.changes.outputs.changed == 'true' }}
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@users.noreply.github.com'
+          git config --global user.name '${{ vars.CI_APP_NAME }}[bot]'
+          git config --global user.email '${{ vars.CI_BOT_ID }}+${{ vars.CI_APP_NAME }}[bot]@users.noreply.github.com'
           echo ".npmrc" >> .git/info/exclude
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
           yarn lerna version prerelease --no-private --conventional-commits --conventional-prerelease --preid=${{ steps.preid.outputs.value }} --yes
           yarn lerna publish from-git --summary-file=${{ runner.temp }} --yes
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
 
-      - name: Run release-pr.yaml workflow
-        if: ${{ steps.changes.outputs.changed == 'true' }}
-        run: |
-          tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-          echo "${{ runner.temp }}/lerna-publish-summary.json";
-          if [[ -f "${{ runner.temp }}/lerna-publish-summary.json" ]]; then
-            gh workflow run release-pr.yml --ref $tag;
-          fi;
-
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Run release-pr.yaml workflow
+      #   if: ${{ steps.changes.outputs.changed == 'true' }}
+      #   run: |
+      #     tag=$(git describe --tags $(git rev-list --tags --max-count=1))
+      #     echo "${{ runner.temp }}/lerna-publish-summary.json";
+      #     if [[ -f "${{ runner.temp }}/lerna-publish-summary.json" ]]; then
+      #       gh workflow run release-pr.yml --ref $tag;
+      #     fi;
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get release commit
         if: ${{ steps.changes.outputs.changed == 'true' }}
