@@ -12,9 +12,12 @@ import React, { useRef } from 'react'
 import { lsdUtils } from '../../../lib/lsd.utils'
 import { GridItem } from './GridItem'
 
-export type GridProps = React.ComponentProps<typeof GridRoot> & {}
+export type GridProps = React.ComponentProps<typeof GridRoot> & {
+  actions?: React.ReactNode
+}
 
 export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
+  actions,
   children,
   ...props
 }) => {
@@ -35,15 +38,18 @@ export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
 
   return (
     <GridRoot {...props} className={clsx(props.className, 'mdx-grid')}>
-      <div className="mdx-grid__scroll">
-        <IconButtonGroup size="small" color="primary">
-          <IconButton size="small" onClick={scroll.bind(null, -1)}>
-            <NavigateBeforeIcon />
-          </IconButton>
-          <IconButton size="small" onClick={scroll.bind(null, 1)}>
-            <NavigateNextIcon />
-          </IconButton>
-        </IconButtonGroup>
+      <div className="mdx-grid__actions">
+        {actions}
+        <div className="mdx-grid__scroll">
+          <IconButtonGroup size="small" color="primary">
+            <IconButton size="small" onClick={scroll.bind(null, -1)}>
+              <NavigateBeforeIcon />
+            </IconButton>
+            <IconButton size="small" onClick={scroll.bind(null, 1)}>
+              <NavigateNextIcon />
+            </IconButton>
+          </IconButtonGroup>
+        </div>
       </div>
       <div ref={ref} className={clsx('mdx-grid__content', 'hidden-scrollbar')}>
         {children}
@@ -70,7 +76,6 @@ const GridRoot = styled.div<{
   width: 100%;
 
   .mdx-grid__scroll {
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     gap: 0 1rem;
@@ -81,6 +86,14 @@ const GridRoot = styled.div<{
     gap: var(--grid-gap);
     grid-template-columns: repeat(var(--grid-cols), minmax(0, 1fr));
     overflow: hidden;
+  }
+
+  .mdx-grid__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   ${(props) =>

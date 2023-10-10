@@ -181,7 +181,19 @@ import {
     description="Codex is currently in its first proof-of-concept iteration and aims to release its beta version, Katana, before the end of Q4 2023."
     bottom={{ xs: '4rem', lg: '7.25rem' }}
   />
-  <Grid xs={{ cols: 6, wrap: false, gap: '0 1rem' }}>
+  <Grid
+    xs={{ cols: 6, wrap: false, gap: '0 1rem' }}
+    actions={
+      <CallToActionButton
+        style={{ marginTop: 0 }}
+        size="small"
+        variant="outlined"
+        href="/about"
+      >
+        Read more
+      </CallToActionButton>
+    }
+  >
     <Grid.Item>
       <TimelineItem
         period="2021"
