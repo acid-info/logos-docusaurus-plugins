@@ -9,6 +9,7 @@ export default function logosTheme(
   context: LoadContext,
   options: PluginOptions,
 ): Plugin<any> {
+  console.log('canary release test')
   return {
     name: 'docusaurus-og',
 
