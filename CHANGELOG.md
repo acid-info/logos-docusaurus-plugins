@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.107](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.106...v1.0.0-alpha.107) (2023-10-16)
+
+### Features
+
+- implement PageCard component; closes [#117](https://github.com/acid-info/logos-docusaurus-plugins/issues/117) ([5a00ebc](https://github.com/acid-info/logos-docusaurus-plugins/commit/5a00ebca5d79d14927829c79dff79776129ef0cf))
+
 # [1.0.0-alpha.106](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.105...v1.0.0-alpha.106) (2023-10-10)
 
 ### Bug Fixes
