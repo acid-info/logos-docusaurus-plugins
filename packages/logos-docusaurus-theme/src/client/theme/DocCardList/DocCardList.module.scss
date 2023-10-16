@@ -1,0 +1,19 @@
+@use '../../css/utils';
+
+.root {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 50%);
+
+  > * {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    max-width: unset;
+    width: 100% !important;
+  }
+
+  @include utils.responsive('lg', 'down') {
+    grid-template-columns: 100%;
+  }
+}
