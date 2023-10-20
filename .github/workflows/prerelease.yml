@@ -59,6 +59,9 @@ jobs:
 
           echo "changes: $changes - changed: $changed"
 
+      - name: Build packages
+        run: yarn build
+
       - name: Publish
         id: publish
         if: ${{ steps.changes.outputs.changed == 'true' }}
