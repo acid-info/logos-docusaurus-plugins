@@ -47,6 +47,29 @@ export default function logosTheme(
     async contentLoaded(args) {
       await createAuthorRoutes(context, args)
     },
+
+    injectHtmlTags: ({}) => {
+      return {
+        headTags: [
+          {
+            tagName: 'link',
+            attributes: {
+              rel: 'alternate icon',
+              type: 'image/png',
+              href: '/theme/image/favicon.png',
+            },
+          },
+          {
+            tagName: 'link',
+            attributes: {
+              rel: 'icon',
+              type: 'image/svg+xml',
+              href: '/theme/image/favicon.svg',
+            },
+          },
+        ],
+      }
+    },
   }
 }
 
