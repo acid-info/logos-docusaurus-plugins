@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.108](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.107...v1.0.0-alpha.108) (2023-10-20)
+
+### Features
+
+- downloadable asset card ([c101af3](https://github.com/acid-info/logos-docusaurus-plugins/commit/c101af327f87cde154dab77b320b33bf77b31c9c)), closes [acid-info/logos-brand-guidelines#15](https://github.com/acid-info/logos-brand-guidelines/issues/15)
+- external resource card ([d4e49e2](https://github.com/acid-info/logos-docusaurus-plugins/commit/d4e49e2395ffe6a9c72da2633d8543a367c222e5)), closes [acid-info/logos-brand-guidelines#13](https://github.com/acid-info/logos-brand-guidelines/issues/13) [acid-info/logos-brand-guidelines#14](https://github.com/acid-info/logos-brand-guidelines/issues/14)
+
 # [1.0.0-alpha.107](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.106...v1.0.0-alpha.107) (2023-10-16)
 
 ### Features
