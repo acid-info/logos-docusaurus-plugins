@@ -1,0 +1,38 @@
+.root {
+  position: relative;
+  display: inline-block;
+  font-size: 0 !important;
+
+  &.fullWidth {
+    width: 100%;
+    height: auto;
+  }
+
+  &.fullHeight {
+    width: auto;
+    height: 100%;
+  }
+
+  .content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &:not(.keep) {
+    .root {
+      height: auto;
+      width: auto;
+    }
+
+    .content {
+      position: relative;
+      top: unset;
+      left: unset;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
