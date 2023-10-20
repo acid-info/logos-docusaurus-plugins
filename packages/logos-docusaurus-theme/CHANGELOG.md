@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.109](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.108...v1.0.0-alpha.109) (2023-10-20)
+
+### Bug Fixes
+
+- update favicon images ([655cd48](https://github.com/acid-info/logos-docusaurus-plugins/commit/655cd48d482df006c61b442b7eb32d6e52aae552)), closes [acid-info/logos-brand-guidelines#16](https://github.com/acid-info/logos-brand-guidelines/issues/16)
+
 # [1.0.0-alpha.108](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.107...v1.0.0-alpha.108) (2023-10-20)
 
 ### Features
