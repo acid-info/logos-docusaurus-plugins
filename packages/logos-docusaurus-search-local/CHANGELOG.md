@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.108](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.107...v1.0.0-alpha.108) (2023-10-20)
+
+### Bug Fixes
+
+- package dependencies ([f462e36](https://github.com/acid-info/logos-docusaurus-plugins/commit/f462e367bb5811bb21a2cecba358942a85dd9b3b))
+
 # [1.0.0-alpha.47](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.46...v1.0.0-alpha.47) (2023-06-19)
 
 ### Features
