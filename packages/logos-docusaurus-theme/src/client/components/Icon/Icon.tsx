@@ -31,6 +31,7 @@ import DiscordWhiteSvg from '../../static/icons/discord-white.svg'
 import TelegramWhiteSvg from '../../static/icons/telegram-white.svg'
 import XSvg from '../../static/icons/x.svg'
 import Avatar from '../../static/icons/avatar.svg'
+import DownloadSvg from '../../static/icons/download.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -225,5 +226,11 @@ export const IconX = (props: TIconProps): JSX.Element => (
 export const IconAvatar = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <Avatar />
+  </Icon>
+)
+
+export const IconDownload = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <DownloadSvg />
   </Icon>
 )
