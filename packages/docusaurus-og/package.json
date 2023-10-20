@@ -1,12 +1,12 @@
 {
   "name": "@acid-info/docusaurus-og",
   "version": "1.0.0-alpha.76",
-  "description": "Docusaurus local search plugin",
+  "description": "Docusaurus OpenGraph image plugin",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
-    "directory": "packages/docusaurus-search-local"
+    "directory": "packages/docusaurus-og"
   },
   "license": "MIT",
   "scripts": {
@@ -21,8 +21,11 @@
     "@docusaurus/utils": "^2.4.1",
     "@docusaurus/utils-common": "^2.4.1",
     "@docusaurus/utils-validation": "^2.4.1",
-    "@easyops-cn/docusaurus-search-local": "^0.33.6",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "node-html-parser": "^6.1.5",
+    "object-hash": "^3.0.0",
+    "satori": "^0.10.1",
+    "sharp": "^0.32.1"
   },
   "engines": {
     "node": ">=16.14"
