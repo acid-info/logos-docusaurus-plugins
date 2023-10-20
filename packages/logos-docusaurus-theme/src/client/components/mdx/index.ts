@@ -1,4 +1,5 @@
 export * from './AppCard'
+export * from './AssetCard'
 export * from './Box'
 export * from './CallToActionButton'
 export * from './CallToActionSection'

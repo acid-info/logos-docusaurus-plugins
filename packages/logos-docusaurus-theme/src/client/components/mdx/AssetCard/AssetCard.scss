@@ -1,0 +1,70 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-asset-card {
+  width: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgb(var(--lsd-border-primary));
+  border-bottom: none;
+  text-decoration: none !important;
+  min-height: 144px;
+}
+
+.mdx-asset-card__inner {
+  width: 100%;
+  padding: 16px 16px 32px 16px;
+}
+
+.mdx-asset-card__title {
+  margin-bottom: 16px;
+}
+
+.mdx-asset-card__image {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+}
+
+.mdx-asset-card__downloadables {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: stretch;
+
+  & > * {
+    flex-grow: 1;
+    font-size: 12px;
+    text-decoration: none !important;
+    text-underline-offset: unset !important;
+
+    button {
+      width: 100%;
+      justify-content: space-between;
+      text-decoration: none;
+    }
+
+    &:first-child button {
+      border-left: none;
+    }
+
+    &:last-child button {
+      border-right: none;
+    }
+
+    &:not(:last-child) button {
+      border-right: none;
+    }
+  }
+}
+
+.mdx-asset-card:not(.mdx-asset-card--downloadable) {
+  .mdx-asset-card__inner {
+    border-bottom: 1px solid rgb(var(--lsd-border-primary));
+  }
+}
