@@ -1,8 +1,9 @@
 import { Typography } from '@acid-info/lsd-react'
-import { Job, JobDepartmentData } from './useFetchJobs'
+import { JobDepartmentData } from './useFetchJobs'
 import React from 'react'
 import { IconExternalLink } from '@logos-theme/components/Icon'
 import './JobsPerDepartment.scss'
+import Link from '@docusaurus/Link'
 
 type SingleDepartmentJobsProps = {
   department: JobDepartmentData
@@ -23,7 +24,7 @@ export const SingleDepartmentJobs: React.FC<SingleDepartmentJobsProps> = ({
       <ul className="mdx-jpd__job-list">
         {department.jobs.map((job, index) => (
           <li key={index} className="mdx-jpd__job-list-item">
-            <a
+            <Link
               href={job.absolute_url}
               target="_blank"
               className="mdx-jpd__job-link"
@@ -40,7 +41,7 @@ export const SingleDepartmentJobs: React.FC<SingleDepartmentJobsProps> = ({
                   {job.location.name}
                 </Typography>
               )}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
