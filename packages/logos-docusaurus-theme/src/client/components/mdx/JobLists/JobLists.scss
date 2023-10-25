@@ -1,0 +1,52 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-jl__header {
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
+.mdx-jl__single-job-board-container {
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+  padding-top: 8px;
+}
+
+.mdx-jl__board-title {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.mdx-jl__job-title-container {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 8px;
+}
+
+.mdx-jl__external-link-icon {
+  margin-left: 8px;
+}
+
+.mdx-jl__job-list {
+  list-style-type: none;
+  padding: 8px 0 24px 0;
+  margin: 0;
+}
+
+.mdx-jl__job-list-item {
+  padding: 14px 0;
+}
+
+.mdx-jl__job-link {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+
+    .mdx-jl__job-title {
+      text-decoration: underline;
+    }
+  }
+}
