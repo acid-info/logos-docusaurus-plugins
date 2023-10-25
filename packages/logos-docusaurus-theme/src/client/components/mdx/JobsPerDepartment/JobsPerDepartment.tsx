@@ -54,7 +54,8 @@ export const JobsPerDepartment: React.FC<JobsPerDepartmentProps> = ({
   )
 
   if (isLoading) {
-    return <JobsPerDepartmentHeader message="Fetching jobs..." />
+    // Skipping loading state for now, as per the designer's request.
+    return null
   }
 
   if (error) {
