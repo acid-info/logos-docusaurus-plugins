@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 /*
-// Array of possible job boards:
+// Here's an array with some possible job boards:
 const allJobBoards = [
   'testacidinfo', // Acid Test job board
   'logos',
@@ -107,7 +107,6 @@ export const useFetchJobs = (
   }> => {
     try {
       if (dummyResponse) {
-        console.log('dummy data bruh:', dummyResponse)
         return { jobsPerDepartment: dummyResponse, errorData: null }
       }
 

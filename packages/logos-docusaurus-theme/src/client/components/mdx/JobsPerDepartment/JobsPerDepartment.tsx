@@ -4,6 +4,24 @@ import useFetchJobs, { JobDepartmentArray } from './useFetchJobs'
 import React from 'react'
 import { jobsPerDepartmentDummyData } from './jobsPerDepartmentDummyData'
 
+type JobsPerDepartmentHeaderProps = {
+  message?: string
+}
+
+const JobsPerDepartmentHeader: React.FC<JobsPerDepartmentHeaderProps> = ({
+  message,
+}) => {
+  return (
+    <>
+      <Typography variant="h1" className="mdx-jpd__header">
+        Current job openings
+      </Typography>
+
+      {!!message && <Typography variant="body1">{message}</Typography>}
+    </>
+  )
+}
+
 const hasJobs = (jobsPerDepartment: JobDepartmentArray): boolean => {
   if (!jobsPerDepartment) return false
 
@@ -35,27 +53,21 @@ export const JobsPerDepartment: React.FC<JobsPerDepartmentProps> = ({
     useDummyData ? jobsPerDepartmentDummyData : null,
   )
 
-  console.log('data', data)
-  console.log('error', error)
-  console.log('isLoading', isLoading)
-
   if (isLoading) {
-    return <div>Loading...</div>
+    return <JobsPerDepartmentHeader message="Fetching jobs..." />
   }
 
   if (error) {
-    return <div>Error fetching data</div>
+    return <JobsPerDepartmentHeader message="Error fetching data" />
   }
 
   if (!data || !hasJobs(data)) {
-    return <div>No job openings to show</div>
+    return <JobsPerDepartmentHeader message="No job openings to show" />
   }
 
   return (
     <div {...props}>
-      <Typography variant="h1" className="mdx-jpd__header">
-        Current job openings
-      </Typography>
+      <JobsPerDepartmentHeader />
       {data.map((department) => {
         return (
           <SingleDepartmentJobs key={department.name} department={department} />
