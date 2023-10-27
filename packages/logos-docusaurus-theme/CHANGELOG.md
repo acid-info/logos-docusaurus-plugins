@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.109...v1.0.0-beta.0) (2023-10-27)
+
+### Bug Fixes
+
+- final cleanup ([bb9bccf](https://github.com/acid-info/logos-docusaurus-plugins/commit/bb9bccfd0792d4cf30f92afb636b1d3bdfaee9e9))
+- just show the header when loading ([a2a6569](https://github.com/acid-info/logos-docusaurus-plugins/commit/a2a6569efe8f061b99ae52176147b3ed2f1b8def))
+- replace anchor element with link element and remove unused import ([81f385d](https://github.com/acid-info/logos-docusaurus-plugins/commit/81f385d12183ef96428b4cf43db0ddc92d632f9d))
+- skip loading state for now ([e14a158](https://github.com/acid-info/logos-docusaurus-plugins/commit/e14a158ab90ad8a875017b5aacf9c2ac31c4c750))
+- use the department API endpoint instead - working version ([ebeb007](https://github.com/acid-info/logos-docusaurus-plugins/commit/ebeb0079318cfb3753929d2fe2670f3ce32d481c))
+
+### Features
+
+- fetches jobs per board ([330abd4](https://github.com/acid-info/logos-docusaurus-plugins/commit/330abd47adc3e9ae72cd6adcbfd1d196f9c119c0))
+- implement job list ([3da1fae](https://github.com/acid-info/logos-docusaurus-plugins/commit/3da1faef69f74314d92288047796f74930871686))
+
 # [1.0.0-alpha.109](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.108...v1.0.0-alpha.109) (2023-10-20)
 
 ### Bug Fixes
