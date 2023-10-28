@@ -1,0 +1,89 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-ghc__container {
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+  padding-top: 24px;
+}
+
+.mdx-ghc__issue-title {
+  margin-bottom: 16px;
+}
+
+.mdx-ghc__issue-title-link {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mdx-ghc__header {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.mdx-ghc__challenge-labels {
+  margin-bottom: 16px;
+}
+
+.mdx-ghc__challenge-label {
+  border: 1px solid rgb(var(--lsd-border-primary));
+  padding: 4px 8px;
+  border-radius: 20px;
+  margin-right: 8px;
+}
+
+.mdx-ghc-subheader-text {
+  margin-bottom: 40px;
+}
+
+.mdx-ghc__view-on-github-link {
+  display: block;
+  width: fit-content;
+
+  margin-top: 40px;
+  margin-bottom: 56px;
+
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mdx-ghc__participant-photo {
+  border-radius: 100%;
+  margin-left: -4px;
+  border: 1px solid rgb(var(--lsd-border-secondary));
+}
+
+.mdx-ghc__participant-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  direction: rtl;
+
+  padding-left: 4px;
+}
+
+.mdx-ghc__comment-count {
+  margin-left: 4px;
+}
+
+.mdx-ghc__issue-content-grid {
+  display: grid;
+  /* Fixed widths for the 1st, 2nd and 3rd columns, while the 4th column takes up the remaining space */
+  grid-template-columns: 82px 135px 82px 1fr;
+  row-gap: 12px;
+  margin-top: 24px;
+
+  align-items: center;
+}
+
+.mdx-ghc__achievement {
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+}
