@@ -10,6 +10,20 @@ export type PageCardProps = Omit<LinkProps, 'title'> & {
   icon?: React.ReactNode
 }
 
+/**
+ * A card component used in Docusaurus auto-generated category index pages to display page links.
+ *
+ * @example
+ * ```tsx
+ * import { PageCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';
+ *
+ * <PageCard
+ *   title="Sample Page"
+ *   description="This is a sample page description."
+ *   href="/sample-page"
+ * />
+ * ```
+ */
 export const PageCard: React.FC<PageCardProps> = ({
   title,
   description,

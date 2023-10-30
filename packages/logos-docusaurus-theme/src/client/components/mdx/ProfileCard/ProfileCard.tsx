@@ -14,6 +14,45 @@ export type ProfileCardProps = React.HTMLProps<HTMLDivElement> & {
   discordLink?: string
 }
 
+/**
+ * A component used to display team members' profiles, including their name, avatar, and social links.
+ *
+ * @example
+ * ```tsx
+ * import { ProfileCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';
+ *
+ * <ProfileCard
+ *   imgSrc="/path/to/profile-image.jpg"
+ *   name="John Doe"
+ *   githubUsername="johndoe"
+ *   githubLink="https://github.com/johndoe"
+ *   discordUsername="johndoe#1234"
+ *   discordLink="https://discordapp.com/users/johndoe"
+ * />
+ * ```
+ *
+ * Example usage of ProfileCard within a grid:
+ *
+ * ```tsx
+ * import { Grid, ProfileCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';
+ *
+ * <Grid
+ *   xs={{ cols: 3, gap: '1rem', wrap: false }}
+ *   md={{ cols: 4, gap: '1rem', wrap: true }}
+ * >
+ *   <Grid.Item>
+ *     <ProfileCard
+ *       name="Name"
+ *       githubUsername="Github"
+ *       githubLink="https://github.com/"
+ *       discordUsername="Discord"
+ *       discordLink="https://discord.gg/"
+ *     />
+ *   </Grid.Item>
+ *   Add more ProfileCard items within the grid
+ * </Grid>
+ * ```
+ */
 export const ProfileCard: React.FC<ProfileCardProps> = ({
   imgSrc,
   name,

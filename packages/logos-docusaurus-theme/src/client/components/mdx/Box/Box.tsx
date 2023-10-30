@@ -42,6 +42,16 @@ export type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
   bottom?: BreakpointsStyle<number> | number
 }
 
+/**
+ * A box component that can be used to add top and bottom margins with breakpoints.
+ * @example
+ * ```tsx
+ * import { Box } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+ * <Box top={{ xs: 10, md: 20 }} bottom={30}>
+ *   <p>This is some content inside the box.</p>
+ * </Box>
+ * ```
+ */
 export const Box: React.FC<BoxProps> = ({
   top = 0,
   bottom = 0,

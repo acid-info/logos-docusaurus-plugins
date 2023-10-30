@@ -1,0 +1,1558 @@
+{
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/AppCard/AppCard.tsx": [
+    {
+      "description": "A card component for displaying information about an app.\n\n@example\n**Example usage:**\n```jsx\nimport { AppCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'\n\n<AppCard\n  name=\"Status\"\n  link=\"https://status.im\"\n  linkLabel=\"Visit Status\"\n  logoSrc=\"/img/status-mark-white.svg\"\n  description=\"Waku powers many of the Status super app's features, including its private messaging.\"\n/>\n```\n\n**Grid example:** \n```jsx\nimport { Grid, AppCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'\n\n<Grid xs={{ cols: 1, wrap: true, gap: \"0 1rem\" }} lg={{ cols: 2 }}>\n  <Grid.Item xs={1}>\n    <AppCard\n      name=\"Status\"\n      description=\"Waku powers many of the Status super app's features, including its private messaging.\"\n      logoSrc=\"/img/status-mark-black.svg\"\n      logoSrcDark=\"/img/status-mark-white.svg\"\n      link=\"https://status.im\"\n    />\n  </Grid.Item>\n  <Grid.Item xs={1}>\n    <AppCard\n      name=\"Status\"\n      description=\"Waku powers many of the Status super app's features, including its private messaging.\"\n      logoSrc=\"/img/status-mark-black.svg\"\n      logoSrcDark=\"/img/status-mark-white.svg\"\n      link=\"https://status.im\"\n    />\n  </Grid.Item>\n</Grid>\n```",
+      "methods": [],
+      "displayName": "AppCard",
+      "props": {
+        "logoSrc": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The source URL for the light logo image"
+        },
+        "logoSrcDark": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The source URL for the dark logo image"
+        },
+        "name": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The name of the app"
+        },
+        "description": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The description of the app"
+        },
+        "link": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The URL to link to when the card is clicked"
+        },
+        "linkLabel": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The label for the link to the app"
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/Box/Box.tsx": [
+    {
+      "description": "A box component that can be used to add top and bottom margins with breakpoints.\n@example\n```tsx\nimport { Box } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'\n<Box top={{ xs: 10, md: 20 }} bottom={30}>\n  <p>This is some content inside the box.</p>\n</Box>\n```",
+      "methods": [],
+      "displayName": "Box",
+      "props": {
+        "top": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "BreakpointsStyle<number> | number",
+            "elements": [
+              {
+                "name": "signature",
+                "type": "object",
+                "raw": "{\n  xs?: T\n  sm?: T\n  md?: T\n  lg?: T\n  xl?: T\n}",
+                "signature": {
+                  "properties": [
+                    {
+                      "key": "xs",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "sm",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "md",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "lg",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "xl",
+                      "value": { "name": "number", "required": false }
+                    }
+                  ]
+                }
+              },
+              { "name": "number" }
+            ]
+          },
+          "description": "",
+          "defaultValue": { "value": "0", "computed": false }
+        },
+        "bottom": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "BreakpointsStyle<number> | number",
+            "elements": [
+              {
+                "name": "signature",
+                "type": "object",
+                "raw": "{\n  xs?: T\n  sm?: T\n  md?: T\n  lg?: T\n  xl?: T\n}",
+                "signature": {
+                  "properties": [
+                    {
+                      "key": "xs",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "sm",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "md",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "lg",
+                      "value": { "name": "number", "required": false }
+                    },
+                    {
+                      "key": "xl",
+                      "value": { "name": "number", "required": false }
+                    }
+                  ]
+                }
+              },
+              { "name": "number" }
+            ]
+          },
+          "description": "",
+          "defaultValue": { "value": "0", "computed": false }
+        },
+        "style": {
+          "defaultValue": { "value": "{}", "computed": false },
+          "required": false
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/CallToActionButton/CallToActionButton.tsx": [
+    {
+      "description": "A call-to-action button that can be used in MDX pages.\n\n@example\n```jsx\nimport { CallToActionButton } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<CallToActionButton href=\"https://discord.gg/server\" size=\"large\" variant=\"filled\">\n Join our community\n</CallToActionButton>\n```",
+      "methods": [],
+      "displayName": "CallToActionButton",
+      "props": {
+        "href": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The URL to link to when the button is clicked"
+        },
+        "size": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'small' | 'medium' | 'large'",
+            "elements": [
+              { "name": "literal", "value": "'small'" },
+              { "name": "literal", "value": "'medium'" },
+              { "name": "literal", "value": "'large'" }
+            ]
+          },
+          "description": "The size of the button\n@type {'small' | 'medium' | 'large'}",
+          "defaultValue": { "value": "'large'", "computed": false }
+        },
+        "variant": {
+          "required": false,
+          "tsType": {
+            "name": "ButtonProps['variant']",
+            "raw": "ButtonProps['variant']"
+          },
+          "description": "The variant of the button",
+          "defaultValue": { "value": "'filled'", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/Grid/Grid.tsx": [
+    {
+      "description": "",
+      "methods": [
+        {
+          "name": "Item",
+          "docblock": null,
+          "modifiers": ["static"],
+          "params": [
+            {
+              "name": "{ children, ...props }",
+              "optional": false,
+              "type": null
+            }
+          ],
+          "returns": null
+        }
+      ],
+      "displayName": "Grid"
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/CallToActionSection/CallToActionSection.tsx": [
+    {
+      "description": "A call-to-action section component that can be used in MDX pages.\n\n@example\n```tsx\nimport { CallToActionSection } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<CallToActionSection\n  title=\"Logos Network State\"\n  columns={1}\n  description=\"Waku is powering the communication layer of the Logos Network State. Logos is a grassroots movement to provide trust-minimised, corruption-resistant governing services and social institutions to peaceful people worldwide. Learn more about our ambitious vision.\"\n  label=\"Explore Logos\"\n  href=\"https://logos.co/\"\n  target=\"_blank\"\n/>\n```\n\nWith a list:\n```tsx\nimport { CallToActionSection } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<CallToActionSection\n  title=\"Run Nimbus in one of three setups\"\n  description={\n    <>\n      Follow the detailed<br/>step-by-step guide here\n    </>\n  }\n  list={[\n    {\n      title: \"Simple setup\",\n      description: \"Run integrated Nimbus Beacon Node and Validator Client together.\"\n    },\n    {\n      title: \"Use Nimbus Beacon node\",\n      description: \"Run Nimbus Beacon Node with an alternative validator client.\"\n    },\n    {\n      title: \"Use Nimbus Validator client\",\n      description: \"Run Nimbus Validator Client with an alternative Beacon Node\"\n    }\n  ]}\n  label=\"Get Nimbus\"\n  target=\"_blank\"\n  href=\"https://nimbus.guide/quick-start.html\"\n/>\n```",
+      "methods": [],
+      "displayName": "CallToActionSection",
+      "props": {
+        "title": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The title of the section"
+        },
+        "description": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The description of the section"
+        },
+        "columns": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "1 | 2",
+            "elements": [
+              { "name": "literal", "value": "1" },
+              { "name": "literal", "value": "2" }
+            ]
+          },
+          "description": "The number of columns to display the content in",
+          "defaultValue": { "value": "1", "computed": false }
+        },
+        "href": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The URL to link to when the button is clicked"
+        },
+        "label": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The label to display on the button"
+        },
+        "target": {
+          "required": false,
+          "tsType": {
+            "name": "ReactAnchorHTMLAttributes['target']",
+            "raw": "React.AnchorHTMLAttributes<HTMLAnchorElement>['target']"
+          },
+          "description": "The target attribute for the link e.g., `_self`, `_blank`"
+        },
+        "variant": {
+          "required": false,
+          "tsType": {
+            "name": "ButtonProps['variant']",
+            "raw": "ButtonProps['variant']"
+          },
+          "description": "The variant of the button",
+          "defaultValue": { "value": "'outlined'", "computed": false }
+        },
+        "list": {
+          "required": false,
+          "tsType": {
+            "name": "Array",
+            "elements": [
+              {
+                "name": "signature",
+                "type": "object",
+                "raw": "{\n  /**\n   * The title of the list item\n   */\n  title: React.ReactNode\n  /**\n   * The description of the list item\n   */\n  description: React.ReactNode\n}",
+                "signature": {
+                  "properties": [
+                    {
+                      "key": "title",
+                      "value": {
+                        "name": "ReactReactNode",
+                        "raw": "React.ReactNode",
+                        "required": true
+                      },
+                      "description": "The title of the list item"
+                    },
+                    {
+                      "key": "description",
+                      "value": {
+                        "name": "ReactReactNode",
+                        "raw": "React.ReactNode",
+                        "required": true
+                      },
+                      "description": "The description of the list item"
+                    }
+                  ]
+                }
+              }
+            ],
+            "raw": "{\n  /**\n   * The title of the list item\n   */\n  title: React.ReactNode\n  /**\n   * The description of the list item\n   */\n  description: React.ReactNode\n}[]"
+          },
+          "description": "A list of items to display in the section",
+          "defaultValue": { "value": "[]", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/Grid/GridItem.tsx": [
+    { "description": "", "methods": [], "displayName": "GridItem" }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroActions/HeroActions.tsx": [
+    { "description": "", "methods": [], "displayName": "HeroActions" }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/FeatureList/FeatureList.tsx": [
+    {
+      "description": "A component that displays a list of features with titles and descriptions.\n\n@example\n```tsx\nimport { FeatureList } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'\n\n<FeatureList\n  title=\"Features\"\n  alignment=\"top\"\n  features={[\n    { title: 'Feature 1', description: 'Description of feature 1' },\n    { title: 'Feature 2', description: 'Description of feature 2' },\n    { title: 'Feature 3', description: 'Description of feature 3' },\n  ]}\n>\n <CallToActionButton variant=\"outlined\" href=\"/about/\" target=\"_self\">\n    Read More\n </CallToActionButton>\n</FeatureList>\n```",
+      "methods": [],
+      "displayName": "FeatureList",
+      "props": {
+        "title": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The title of the feature list.",
+          "defaultValue": { "value": "'Features'", "computed": false }
+        },
+        "features": {
+          "required": false,
+          "tsType": {
+            "name": "Array",
+            "elements": [
+              {
+                "name": "signature",
+                "type": "object",
+                "raw": "{\n  title: React.ReactNode\n  description: React.ReactNode\n}",
+                "signature": {
+                  "properties": [
+                    {
+                      "key": "title",
+                      "value": {
+                        "name": "ReactReactNode",
+                        "raw": "React.ReactNode",
+                        "required": true
+                      }
+                    },
+                    {
+                      "key": "description",
+                      "value": {
+                        "name": "ReactReactNode",
+                        "raw": "React.ReactNode",
+                        "required": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "raw": "Feature[]"
+          },
+          "description": "An array of features to be displayed in the list.",
+          "defaultValue": { "value": "[]", "computed": false }
+        },
+        "alignment": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'bottom' | 'top'",
+            "elements": [
+              { "name": "literal", "value": "'bottom'" },
+              { "name": "literal", "value": "'top'" }
+            ]
+          },
+          "description": "The vertical alignment of feature description.",
+          "defaultValue": { "value": "'bottom'", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroDescription/HeroDescription.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "HeroDescription",
+      "props": {
+        "size": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'small' | 'medium' | 'large'",
+            "elements": [
+              { "name": "literal", "value": "'small'" },
+              { "name": "literal", "value": "'medium'" },
+              { "name": "literal", "value": "'large'" }
+            ]
+          },
+          "description": ""
+        },
+        "uppercase": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": "",
+          "defaultValue": { "value": "false", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroInfo/HeroInfo.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "HeroInfo",
+      "props": {
+        "size": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'medium' | 'large' | 'small'",
+            "elements": [
+              { "name": "literal", "value": "'medium'" },
+              { "name": "literal", "value": "'large'" },
+              { "name": "literal", "value": "'small'" }
+            ]
+          },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroModel/Ascii.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "AsciiRenderer",
+      "props": {
+        "characters": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "invert": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        },
+        "color": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        },
+        "bgColor": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "fgColor": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "resolution": {
+          "required": false,
+          "tsType": { "name": "number" },
+          "description": ""
+        },
+        "renderIndex": {
+          "required": false,
+          "tsType": { "name": "number" },
+          "description": ""
+        },
+        "textShadowSize": {
+          "required": false,
+          "tsType": { "name": "number" },
+          "description": ""
+        },
+        "withTextShadow": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroAction/HeroAction.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "HeroAction",
+      "props": {
+        "variant": {
+          "required": false,
+          "tsType": {
+            "name": "ButtonProps['variant']",
+            "raw": "ButtonProps['variant']"
+          },
+          "description": "",
+          "defaultValue": { "value": "'outlined'", "computed": false }
+        },
+        "size": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'medium' | 'large'",
+            "elements": [
+              { "name": "literal", "value": "'medium'" },
+              { "name": "literal", "value": "'large'" }
+            ]
+          },
+          "description": "",
+          "defaultValue": { "value": "'large'", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/Hero/Hero.tsx": [
+    {
+      "description": "A hero component that displays a large banner at the top of a page.\n\n@example\n```tsx\nimport {\n  Hero,\n  HeroTitle,\n  HeroDescription,\n  HeroVideo,\n  HeroActions,\n  HeroAction,\n} from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'\n\n <Hero size=\"large\">\n  <HeroInfo>\n    <HeroTitle>\n      {'Light and Performant Clients, for All Ethereum Validators'}\n    </HeroTitle>\n    <HeroDescription>\n      {'Ethereum validators of all sizes trust Nimbus to run their nodes. From large node operators, to solo stakers on a Raspberry Pi.'}\n    </HeroDescription>\n    <HeroActions>\n      <HeroAction variant=\"outlined\" href=\"https://nimbus.guide/quick-start.html\" target=\"_blank\">\n        Get Nimbus\n      </HeroAction>\n    </HeroActions>\n  </HeroInfo>\n\n  <HeroVideo\n    placeholderSrc=\"/hero/halo01-1080x1080-placeholder.png\"\n    desktop={{ scale: \"1.514792899\" }}\n    mobile={{ scale: \"1.514792899\"  }}\n  >\n    <source src=\"/hero/halo01-2048x2048-24fps-1M.mov\" type='video/mp4; codecs=\"hvc1\"' />\n    <source src=\"/hero/halo01-2048x2048-24fps-1M.webm\" type=\"video/webm\" />\n  </HeroVideo>\n</Hero>\n```",
+      "methods": [],
+      "displayName": "Hero",
+      "props": {
+        "size": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'large' | 'medium' | 'small'",
+            "elements": [
+              { "name": "literal", "value": "'large'" },
+              { "name": "literal", "value": "'medium'" },
+              { "name": "literal", "value": "'small'" }
+            ]
+          },
+          "description": "",
+          "defaultValue": { "value": "'medium'", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroModel/index.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "HeroModel",
+      "props": {
+        "modelId": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "preset": {
+          "required": false,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  cameraPos: [number, number, number]\n  cameraRot: [number, number, number]\n  controlsTarget: [number, number, number]\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "cameraPos",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "cameraRot",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "controlsTarget",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                }
+              ]
+            }
+          },
+          "description": ""
+        },
+        "mode": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'simple' | 'abstract'",
+            "elements": [
+              { "name": "literal", "value": "'simple'" },
+              { "name": "literal", "value": "'abstract'" }
+            ]
+          },
+          "description": ""
+        },
+        "asciiConfig": {
+          "required": false,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  characters?: string\n  invert?: boolean\n  color?: boolean\n  bgColor?: string\n  fgColor?: string\n  resolution?: number\n  renderIndex?: number\n  textShadowSize?: number\n  withTextShadow?: boolean\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "characters",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "invert",
+                  "value": { "name": "boolean", "required": false }
+                },
+                {
+                  "key": "color",
+                  "value": { "name": "boolean", "required": false }
+                },
+                {
+                  "key": "bgColor",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "fgColor",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "resolution",
+                  "value": { "name": "number", "required": false }
+                },
+                {
+                  "key": "renderIndex",
+                  "value": { "name": "number", "required": false }
+                },
+                {
+                  "key": "textShadowSize",
+                  "value": { "name": "number", "required": false }
+                },
+                {
+                  "key": "withTextShadow",
+                  "value": { "name": "boolean", "required": false }
+                }
+              ]
+            }
+          },
+          "description": ""
+        },
+        "rotateSpeed": {
+          "required": false,
+          "tsType": { "name": "number" },
+          "description": ""
+        },
+        "startY": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'top' | 'bottom'",
+            "elements": [
+              { "name": "literal", "value": "'top'" },
+              { "name": "literal", "value": "'bottom'" }
+            ]
+          },
+          "description": ""
+        },
+        "enableZoom": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        },
+        "enableRotateOnScroll": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        },
+        "withParallelEffect": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroTitle/HeroTitle.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "HeroTitle",
+      "props": {
+        "size": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'medium' | 'large'",
+            "elements": [
+              { "name": "literal", "value": "'medium'" },
+              { "name": "literal", "value": "'large'" }
+            ]
+          },
+          "description": ""
+        },
+        "uppercase": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroVideo/HeroVideo.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "HeroVideo",
+      "props": {
+        "placeholderSrc": {
+          "required": true,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "desktop": {
+          "required": false,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  scale?: string\n  height?: string\n  minHeight?: string\n  offsetY?: string\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "scale",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "height",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "minHeight",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "offsetY",
+                  "value": { "name": "string", "required": false }
+                }
+              ]
+            }
+          },
+          "description": ""
+        },
+        "mobile": {
+          "required": false,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  scale?: string\n  height?: string\n  minHeight?: string\n  offsetY?: string\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "scale",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "height",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "minHeight",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "offsetY",
+                  "value": { "name": "string", "required": false }
+                }
+              ]
+            }
+          },
+          "description": ""
+        },
+        "style": {
+          "defaultValue": { "value": "{}", "computed": false },
+          "required": false
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/PageCard/PageCard.tsx": [
+    {
+      "description": "A card component used in Docusaurus auto-generated category index pages to display page links.\n\n@example\n```tsx\nimport { PageCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<PageCard\n  title=\"Sample Page\"\n  description=\"This is a sample page description.\"\n  href=\"/sample-page\"\n/>\n```",
+      "methods": [],
+      "displayName": "PageCard",
+      "props": {
+        "title": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "description": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "icon": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "",
+          "defaultValue": {
+            "value": "<FolderIcon color=\"primary\" />",
+            "computed": false
+          }
+        },
+        "target": {
+          "defaultValue": { "value": "'_self'", "computed": false },
+          "required": false
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/PoweredBy/PoweredBy.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "PoweredBy",
+      "props": {
+        "actions": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "items": {
+          "required": false,
+          "tsType": {
+            "name": "Array",
+            "elements": [
+              {
+                "name": "intersection",
+                "raw": "React.HTMLProps<HTMLDivElement> & {\n  /**\n   * The source URL for the light logo image\n   */\n  logoSrc?: string\n  /**\n   * The source URL for the dark logo image\n   */\n  logoSrcDark?: string\n  /**\n   * The name of the app\n   */\n  name?: React.ReactNode\n  /**\n   * The description of the app\n   */\n  description?: React.ReactNode\n  /**\n   * The URL to link to when the card is clicked\n   */\n  link?: string\n  /**\n   * The label for the link to the app\n   */\n  linkLabel?: string\n}",
+                "elements": [
+                  {
+                    "name": "ReactHTMLProps",
+                    "raw": "React.HTMLProps<HTMLDivElement>",
+                    "elements": [{ "name": "HTMLDivElement" }]
+                  },
+                  {
+                    "name": "signature",
+                    "type": "object",
+                    "raw": "{\n  /**\n   * The source URL for the light logo image\n   */\n  logoSrc?: string\n  /**\n   * The source URL for the dark logo image\n   */\n  logoSrcDark?: string\n  /**\n   * The name of the app\n   */\n  name?: React.ReactNode\n  /**\n   * The description of the app\n   */\n  description?: React.ReactNode\n  /**\n   * The URL to link to when the card is clicked\n   */\n  link?: string\n  /**\n   * The label for the link to the app\n   */\n  linkLabel?: string\n}",
+                    "signature": {
+                      "properties": [
+                        {
+                          "key": "logoSrc",
+                          "value": { "name": "string", "required": false },
+                          "description": "The source URL for the light logo image"
+                        },
+                        {
+                          "key": "logoSrcDark",
+                          "value": { "name": "string", "required": false },
+                          "description": "The source URL for the dark logo image"
+                        },
+                        {
+                          "key": "name",
+                          "value": {
+                            "name": "ReactReactNode",
+                            "raw": "React.ReactNode",
+                            "required": false
+                          },
+                          "description": "The name of the app"
+                        },
+                        {
+                          "key": "description",
+                          "value": {
+                            "name": "ReactReactNode",
+                            "raw": "React.ReactNode",
+                            "required": false
+                          },
+                          "description": "The description of the app"
+                        },
+                        {
+                          "key": "link",
+                          "value": { "name": "string", "required": false },
+                          "description": "The URL to link to when the card is clicked"
+                        },
+                        {
+                          "key": "linkLabel",
+                          "value": { "name": "string", "required": false },
+                          "description": "The label for the link to the app"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "raw": "AppCardProps[]"
+          },
+          "description": "",
+          "defaultValue": { "value": "[]", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/ProfileCard/ProfileCard.tsx": [
+    {
+      "description": "A component used to display team members' profiles, including their name, avatar, and social links.\n\n@example\n```tsx \nimport { ProfileCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<ProfileCard\n  imgSrc=\"/path/to/profile-image.jpg\"\n  name=\"John Doe\"\n  githubUsername=\"johndoe\"\n  githubLink=\"https://github.com/johndoe\"\n  discordUsername=\"johndoe#1234\"\n  discordLink=\"https://discordapp.com/users/johndoe\"\n/>\n```\n\nExample usage of ProfileCard within a grid:\n\n```tsx\nimport { Grid, ProfileCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<Grid\n  xs={{ cols: 3, gap: '1rem', wrap: false }}\n  md={{ cols: 4, gap: '1rem', wrap: true }}\n>\n  <Grid.Item>\n    <ProfileCard\n      name=\"Name\"\n      githubUsername=\"Github\"\n      githubLink=\"https://github.com/\"\n      discordUsername=\"Discord\"\n      discordLink=\"https://discord.gg/\"\n    />\n  </Grid.Item>\n  Add more ProfileCard items within the grid \n</Grid>\n```",
+      "methods": [],
+      "displayName": "ProfileCard",
+      "props": {
+        "imgSrc": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "name": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "githubUsername": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "githubLink": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "discordUsername": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "discordLink": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/ScrollToBottom/ScrollToBottom.tsx": [
+    { "description": "", "methods": [], "displayName": "ScrollToBottom" }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/Roadmap/Roadmap.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "Roadmap",
+      "props": {
+        "title": {
+          "required": true,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "description": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "alignment": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'top' | 'bottom'",
+            "elements": [
+              { "name": "literal", "value": "'top'" },
+              { "name": "literal", "value": "'bottom'" }
+            ]
+          },
+          "description": "",
+          "defaultValue": { "value": "'bottom'", "computed": false }
+        },
+        "timeline": {
+          "required": false,
+          "tsType": {
+            "name": "Array",
+            "elements": [
+              {
+                "name": "Partial",
+                "elements": [
+                  {
+                    "name": "intersection",
+                    "raw": "Omit<\n  React.HTMLAttributes<HTMLDivElement>,\n  'title'\n> & {\n  /** The index or label of the timeline item. */\n  index: React.ReactNode\n  /** The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top') */\n  alignment?: 'top' | 'bottom'\n  /** The period or time frame associated with the timeline item. e.g., `2023 Q3` */\n  period: React.ReactNode\n  /** The description or content of the timeline item. */\n  description: React.ReactNode\n  /** The border style for the timeline item */\n  borderStyle?: 'solid' | 'dashed' | 'none'\n}",
+                    "elements": [
+                      {
+                        "name": "Omit",
+                        "elements": [
+                          {
+                            "name": "ReactHTMLAttributes",
+                            "raw": "React.HTMLAttributes<HTMLDivElement>",
+                            "elements": [{ "name": "HTMLDivElement" }]
+                          },
+                          { "name": "literal", "value": "'title'" }
+                        ],
+                        "raw": "Omit<\n  React.HTMLAttributes<HTMLDivElement>,\n  'title'\n>"
+                      },
+                      {
+                        "name": "signature",
+                        "type": "object",
+                        "raw": "{\n  /** The index or label of the timeline item. */\n  index: React.ReactNode\n  /** The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top') */\n  alignment?: 'top' | 'bottom'\n  /** The period or time frame associated with the timeline item. e.g., `2023 Q3` */\n  period: React.ReactNode\n  /** The description or content of the timeline item. */\n  description: React.ReactNode\n  /** The border style for the timeline item */\n  borderStyle?: 'solid' | 'dashed' | 'none'\n}",
+                        "signature": {
+                          "properties": [
+                            {
+                              "key": "index",
+                              "value": {
+                                "name": "ReactReactNode",
+                                "raw": "React.ReactNode",
+                                "required": true
+                              },
+                              "description": "The index or label of the timeline item."
+                            },
+                            {
+                              "key": "alignment",
+                              "value": {
+                                "name": "union",
+                                "raw": "'top' | 'bottom'",
+                                "elements": [
+                                  { "name": "literal", "value": "'top'" },
+                                  { "name": "literal", "value": "'bottom'" }
+                                ],
+                                "required": false
+                              },
+                              "description": "The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top')"
+                            },
+                            {
+                              "key": "period",
+                              "value": {
+                                "name": "ReactReactNode",
+                                "raw": "React.ReactNode",
+                                "required": true
+                              },
+                              "description": "The period or time frame associated with the timeline item. e.g., `2023 Q3`"
+                            },
+                            {
+                              "key": "description",
+                              "value": {
+                                "name": "ReactReactNode",
+                                "raw": "React.ReactNode",
+                                "required": true
+                              },
+                              "description": "The description or content of the timeline item."
+                            },
+                            {
+                              "key": "borderStyle",
+                              "value": {
+                                "name": "union",
+                                "raw": "'solid' | 'dashed' | 'none'",
+                                "elements": [
+                                  { "name": "literal", "value": "'solid'" },
+                                  { "name": "literal", "value": "'dashed'" },
+                                  { "name": "literal", "value": "'none'" }
+                                ],
+                                "required": false
+                              },
+                              "description": "The border style for the timeline item"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "raw": "Partial<TimelineItemProps>"
+              }
+            ],
+            "raw": "Partial<TimelineItemProps>[]"
+          },
+          "description": "",
+          "defaultValue": { "value": "[]", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/SectionHeader/SectionHeader.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "SectionHeader",
+      "props": {
+        "title": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "description": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/DocMetadata/DocMetadata.tsx": [
+    { "description": "", "methods": [], "displayName": "DocMetadata" }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/ShowcaseCard/ShowcaseCard.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "ShowcaseCard",
+      "props": {
+        "logoSrc": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "logoSrcDark": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "name": {
+          "required": true,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "description": {
+          "required": true,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/Showcase/Showcase.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "Showcase",
+      "props": {
+        "actions": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": ""
+        },
+        "items": {
+          "required": false,
+          "tsType": {
+            "name": "Array",
+            "elements": [
+              {
+                "name": "intersection",
+                "raw": "Omit<\n  React.HTMLAttributes<HTMLDivElement>,\n  'title'\n> & {\n  logoSrc?: string\n  logoSrcDark?: string\n  name: React.ReactNode\n  description: React.ReactNode\n}",
+                "elements": [
+                  {
+                    "name": "Omit",
+                    "elements": [
+                      {
+                        "name": "ReactHTMLAttributes",
+                        "raw": "React.HTMLAttributes<HTMLDivElement>",
+                        "elements": [{ "name": "HTMLDivElement" }]
+                      },
+                      { "name": "literal", "value": "'title'" }
+                    ],
+                    "raw": "Omit<\n  React.HTMLAttributes<HTMLDivElement>,\n  'title'\n>"
+                  },
+                  {
+                    "name": "signature",
+                    "type": "object",
+                    "raw": "{\n  logoSrc?: string\n  logoSrcDark?: string\n  name: React.ReactNode\n  description: React.ReactNode\n}",
+                    "signature": {
+                      "properties": [
+                        {
+                          "key": "logoSrc",
+                          "value": { "name": "string", "required": false }
+                        },
+                        {
+                          "key": "logoSrcDark",
+                          "value": { "name": "string", "required": false }
+                        },
+                        {
+                          "key": "name",
+                          "value": {
+                            "name": "ReactReactNode",
+                            "raw": "React.ReactNode",
+                            "required": true
+                          }
+                        },
+                        {
+                          "key": "description",
+                          "value": {
+                            "name": "ReactReactNode",
+                            "raw": "React.ReactNode",
+                            "required": true
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "raw": "ShowcaseCardProps[]"
+          },
+          "description": "",
+          "defaultValue": { "value": "[]", "computed": false }
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/SocialCard/SocialCard.tsx": [
+    {
+      "description": "A component used for displaying social media or community platform cards with a logo and description.\n\n@example\n```tsx\nimport { SocialCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<SocialCard\n  title=\"Telegram Community\"\n  logoSrc=\"/path/to/telegram-logo.png\"\n  description=\"Join our Telegram community to stay updated and chat with fellow members.\"\n  href=\"https://t.me/your-telegram-community\"\n/>\n```\n\nGrid example:\n```tsx\nimport { Box, Grid, SocialCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';\n\n<Box top={56} bottom={56}>\n <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>\n   <Grid.Item xs={1}>\n     <SocialCard\n       href='https://twitter.com/twitter-handle'\n       logoSrcDark=\"/icons/x.svg\"\n       description='Follow us on X'\n     />\n   </Grid.Item>\n   <Grid.Item xs={1}>\n     <SocialCard\n       href='https://discord.gg/discord-server'\n       logoSrcDark=\"/icons/discord-white.svg\"\n       description='Join the community on Discord'\n     />\n   </Grid.Item>\n </Grid>\n</Box>\n```",
+      "methods": [],
+      "displayName": "SocialCard",
+      "props": {
+        "logoSrc": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The URL of the logo image for the social media or community platform (light theme)."
+        },
+        "logoSrcDark": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": "The URL of the logo image for the social media or community platform (dark theme)."
+        },
+        "description": {
+          "required": false,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The description or content associated with the social media or community platform."
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/TimelineItem/TimelineItem.tsx": [
+    {
+      "description": "A component for displaying roadmap items, such as events or milestones, in a timeline layout.\n\n@example\nRoadmap example:\n```tsx\nimport {\n Box,\n Grid,\n TimelineItem,\n SectionHeader,\n CallToActionButton\n} from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'\n\n<Box top={{ xs: 144, lg: 216 }}>\n  <SectionHeader\n    title=\"Roadmap\"\n    description=\"Roadmap description\"\n    bottom={{ xs: \"4rem\", lg: \"7.25rem\" }}\n  />\n  <Grid xs={{ cols: 6, wrap: false, gap: \"0 1rem\" }} actions={\n    <CallToActionButton style={{ marginTop: 0 }} size=\"small\" variant=\"outlined\" href=\"/about\">\n        Read more\n    </CallToActionButton>\n  }>\n    <Grid.Item>\n      <TimelineItem\n        index={0}\n        period=\"2013\"\n        borderStyle=\"solid\"\n        description=\"First item\"\n      />\n    </Grid.Item>\n    Add more items here\n    <Grid.Item>\n      <TimelineItem\n        index={10}\n        period=\"2024+\"\n        borderStyle=\"none\"\n        description=\"Last item\"\n      />\n    </Grid.Item>\n  </Grid>\n</Box>\n```",
+      "methods": [],
+      "displayName": "TimelineItem",
+      "props": {
+        "index": {
+          "required": true,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The index or label of the timeline item."
+        },
+        "alignment": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'top' | 'bottom'",
+            "elements": [
+              { "name": "literal", "value": "'top'" },
+              { "name": "literal", "value": "'bottom'" }
+            ]
+          },
+          "description": "The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top')",
+          "defaultValue": { "value": "'top'", "computed": false }
+        },
+        "period": {
+          "required": true,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The period or time frame associated with the timeline item. e.g., `2023 Q3`"
+        },
+        "description": {
+          "required": true,
+          "tsType": { "name": "ReactReactNode", "raw": "React.ReactNode" },
+          "description": "The description or content of the timeline item."
+        },
+        "borderStyle": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'solid' | 'dashed' | 'none'",
+            "elements": [
+              { "name": "literal", "value": "'solid'" },
+              { "name": "literal", "value": "'dashed'" },
+              { "name": "literal", "value": "'none'" }
+            ]
+          },
+          "description": "The border style for the timeline item"
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroModel/Controls.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "Controls",
+      "props": {
+        "rotateSpeed": {
+          "required": false,
+          "tsType": { "name": "number" },
+          "description": "",
+          "defaultValue": { "value": "0.1", "computed": false }
+        },
+        "enableZoom": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": "",
+          "defaultValue": { "value": "true", "computed": false }
+        },
+        "enableRotateOnScroll": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": "",
+          "defaultValue": { "value": "true", "computed": false }
+        },
+        "preset": {
+          "required": true,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  cameraPos: [number, number, number]\n  cameraRot: [number, number, number]\n  controlsTarget: [number, number, number]\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "cameraPos",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "cameraRot",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "controlsTarget",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                }
+              ]
+            }
+          },
+          "description": ""
+        },
+        "targetPreset": {
+          "required": false,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  cameraPos: [number, number, number]\n  cameraRot: [number, number, number]\n  controlsTarget: [number, number, number]\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "cameraPos",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "cameraRot",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "controlsTarget",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                }
+              ]
+            }
+          },
+          "description": ""
+        }
+      }
+    }
+  ],
+  "./packages/logos-docusaurus-theme/src/client/components/mdx/HeroModel/HeroModel.tsx": [
+    {
+      "description": "",
+      "methods": [],
+      "displayName": "HeroModel",
+      "props": {
+        "modelId": {
+          "required": false,
+          "tsType": { "name": "string" },
+          "description": ""
+        },
+        "preset": {
+          "required": false,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  cameraPos: [number, number, number]\n  cameraRot: [number, number, number]\n  controlsTarget: [number, number, number]\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "cameraPos",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "cameraRot",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                },
+                {
+                  "key": "controlsTarget",
+                  "value": {
+                    "name": "tuple",
+                    "raw": "[number, number, number]",
+                    "elements": [
+                      { "name": "number" },
+                      { "name": "number" },
+                      { "name": "number" }
+                    ],
+                    "required": true
+                  }
+                }
+              ]
+            }
+          },
+          "description": ""
+        },
+        "mode": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'simple' | 'abstract'",
+            "elements": [
+              { "name": "literal", "value": "'simple'" },
+              { "name": "literal", "value": "'abstract'" }
+            ]
+          },
+          "description": ""
+        },
+        "asciiConfig": {
+          "required": false,
+          "tsType": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\n  characters?: string\n  invert?: boolean\n  color?: boolean\n  bgColor?: string\n  fgColor?: string\n  resolution?: number\n  renderIndex?: number\n  textShadowSize?: number\n  withTextShadow?: boolean\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "characters",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "invert",
+                  "value": { "name": "boolean", "required": false }
+                },
+                {
+                  "key": "color",
+                  "value": { "name": "boolean", "required": false }
+                },
+                {
+                  "key": "bgColor",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "fgColor",
+                  "value": { "name": "string", "required": false }
+                },
+                {
+                  "key": "resolution",
+                  "value": { "name": "number", "required": false }
+                },
+                {
+                  "key": "renderIndex",
+                  "value": { "name": "number", "required": false }
+                },
+                {
+                  "key": "textShadowSize",
+                  "value": { "name": "number", "required": false }
+                },
+                {
+                  "key": "withTextShadow",
+                  "value": { "name": "boolean", "required": false }
+                }
+              ]
+            }
+          },
+          "description": ""
+        },
+        "rotateSpeed": {
+          "required": false,
+          "tsType": { "name": "number" },
+          "description": ""
+        },
+        "startY": {
+          "required": false,
+          "tsType": {
+            "name": "union",
+            "raw": "'top' | 'bottom'",
+            "elements": [
+              { "name": "literal", "value": "'top'" },
+              { "name": "literal", "value": "'bottom'" }
+            ]
+          },
+          "description": ""
+        },
+        "enableZoom": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        },
+        "enableRotateOnScroll": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        },
+        "withParallelEffect": {
+          "required": false,
+          "tsType": { "name": "boolean" },
+          "description": ""
+        }
+      }
+    }
+  ]
+}

@@ -5,11 +5,32 @@ import React from 'react'
 import './CallToActionButton.scss'
 
 export type CallToActionButtonProps = Props & {
+  /**
+   * The URL to link to when the button is clicked
+   */
   href?: string
-  size?: ButtonProps['size']
+  /**
+   * The size of the button
+   */
+  size?: 'small' | 'medium' | 'large'
+  /**
+   * The variant of the button
+   */
   variant?: ButtonProps['variant']
 }
 
+/**
+ * A call-to-action button that can be used in MDX pages.
+ *
+ * @example
+ * ```jsx
+ * import { CallToActionButton } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx';
+ *
+ * <CallToActionButton href="https://discord.gg/server" size="large" variant="filled">
+ *  Join our community
+ * </CallToActionButton>
+ * ```
+ */
 export const CallToActionButton: React.FC<CallToActionButtonProps> = ({
   className,
   variant = 'filled',

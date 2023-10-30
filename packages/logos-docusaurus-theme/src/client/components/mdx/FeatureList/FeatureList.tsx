@@ -12,11 +12,42 @@ export type FeatureListProps = Omit<
   React.HTMLAttributes<HTMLDivElement>,
   'title'
 > & {
+  /**
+   * The title of the feature list.
+   */
   title?: React.ReactNode
+  /**
+   * An array of features to be displayed in the list.
+   */
   features?: Feature[]
+  /**
+   * The vertical alignment of feature description.
+   */
   alignment?: 'bottom' | 'top'
 }
 
+/**
+ * A component that displays a list of features with titles and descriptions.
+ *
+ * @example
+ * ```tsx
+ * import { FeatureList } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+ *
+ * <FeatureList
+ *   title="Features"
+ *   alignment="top"
+ *   features={[
+ *     { title: 'Feature 1', description: 'Description of feature 1' },
+ *     { title: 'Feature 2', description: 'Description of feature 2' },
+ *     { title: 'Feature 3', description: 'Description of feature 3' },
+ *   ]}
+ * >
+ *  <CallToActionButton variant="outlined" href="/about/" target="_self">
+ *     Read More
+ *  </CallToActionButton>
+ * </FeatureList>
+ * ```
+ */
 export const FeatureList: React.FC<FeatureListProps> = ({
   title = 'Features',
   alignment = 'bottom',
