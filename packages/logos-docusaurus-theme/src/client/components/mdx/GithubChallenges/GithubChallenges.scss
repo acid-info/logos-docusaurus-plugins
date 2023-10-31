@@ -80,6 +80,10 @@
   margin-top: 24px;
 
   align-items: center;
+
+  @include utils.responsive('xs', 'down') {
+    grid-template-columns: 82px 1fr;
+  }
 }
 
 .mdx-ghc__achievement {
