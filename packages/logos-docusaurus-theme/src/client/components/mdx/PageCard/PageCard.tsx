@@ -46,13 +46,16 @@ export const PageCard: React.FC<PageCardProps> = ({
         >
           {title}
         </Typography>
-        <Typography
-          className="mdx-page-card__description"
-          component="span"
-          variant="body2"
-        >
-          {description}
-        </Typography>
+
+        {!!description && (
+          <Typography
+            className="mdx-page-card__description"
+            component="span"
+            variant="body2"
+          >
+            {description}
+          </Typography>
+        )}
       </div>
     </Link>
   )
