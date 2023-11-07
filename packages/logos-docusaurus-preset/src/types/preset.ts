@@ -2,6 +2,7 @@ import { PluginOptions as OpenGraphPluginOptions } from '@acid-info/docusaurus-o
 import { PluginOptions as BlogPluginOptions } from '@docusaurus/plugin-content-blog'
 import { PluginOptions as DocPluginOptions } from '@docusaurus/plugin-content-docs'
 import { PluginOptions as PagesPluginOptions } from '@docusaurus/plugin-content-pages'
+import { GeneratedDataPluginConfig } from '../plugins/generatedData.plugin'
 import { DefaultThemeOptions } from './themes'
 
 export enum ThemeNames {
@@ -55,4 +56,5 @@ export type PresetConfig = {
   pages?: Partial<PagesPluginOptions> | false
   localSearch?: LocalSearchConfig
   og?: Partial<Omit<OpenGraphPluginOptions, 'imageRenderers'>> | false
+  generated?: GeneratedDataPluginConfig
 }

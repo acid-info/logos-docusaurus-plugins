@@ -42,33 +42,14 @@ const config = {
           },
         },
         docs: {
-          routeBasePath: '/about',
-          versions: {
-            current: {
-              label: 'current',
-            },
-          },
-          lastVersion: 'current',
+          routeBasePath: '/',
+          path: 'docs',
         },
       }),
     ],
   ],
 
   plugins: [
-    [
-      '@docusaurus/plugin-content-blog',
-      /** @type {import('@docusaurus/plugin-content-blog').PluginOptions} */
-      ({
-        id: 'blog',
-        routeBasePath: '/rlog',
-        path: 'rlog',
-        blogTitle: 'Rlog - Vac Research Log',
-        blogDescription:
-          'Vac builds public good protocols for the decentralized web.',
-        blogSidebarCount: 0,
-        authorsMapPath: 'authors.yml',
-      }),
-    ],
     [
       '@acid-info/docusaurus-fathom',
       {

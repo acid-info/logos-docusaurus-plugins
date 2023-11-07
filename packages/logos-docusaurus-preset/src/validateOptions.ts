@@ -1,4 +1,5 @@
 import { Joi } from '@docusaurus/utils-validation'
+import { GeneratedDataPluginConfig } from './plugins/generatedData.plugin'
 import { BusinessUnits, PluginOptions, ThemeNames } from './types'
 
 const schema = Joi.object<PluginOptions>({
@@ -17,6 +18,16 @@ const schema = Joi.object<PluginOptions>({
     .default({}),
   customSiteConfig: Joi.boolean().optional().default(false),
   og: Joi.object<PluginOptions['og']>().optional().default(false),
+  generated: Joi.object<GeneratedDataPluginConfig>({
+    challenges: Joi.object<GeneratedDataPluginConfig['challenges']>({
+      githubAccessToken: Joi.string().required(),
+      owner: Joi.string().required(),
+      repo: Joi.string().required(),
+    }).optional(),
+    jobList: Joi.object<GeneratedDataPluginConfig['jobList']>({
+      url: Joi.string().uri().required(),
+    }).optional(),
+  }).optional(),
 })
 
 export const validateOptions = ({
