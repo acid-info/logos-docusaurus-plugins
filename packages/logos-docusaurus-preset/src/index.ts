@@ -2,10 +2,10 @@ import { PluginOptions as SearchPluginOptions } from '@acid-info/logos-docusauru
 import classicPreset from '@docusaurus/preset-classic'
 import type { LoadContext, PluginConfig, Preset } from '@docusaurus/types'
 import * as path from 'path'
+import { generatedDataPlugin } from './plugins/generatedData.plugin'
 import { siteConfigs } from './site-config/index'
 import { themeConfigs } from './theme-config/index'
 import { PluginOptions, ThemeNames } from './types'
-import { createCommonDataDir, createTeamFile } from './utils/data.utils'
 import { findDocInstances, validateDocPluginOptions } from './utils/docs.utils'
 import { defaultsDeep } from './utils/object.utils'
 
@@ -68,9 +68,6 @@ export default function logosPreset(
     ([key, value]) => (context.siteConfig[key] = value),
   )
 
-  createCommonDataDir()
-  createTeamFile(context, options)
-
   const { plugins = [], themes = [] } = classicPreset(context, {
     docs: docsEnabled
       ? {
@@ -123,6 +120,8 @@ export default function logosPreset(
       ]
     }
   }
+
+  if (options.generated) plugins.push([generatedDataPlugin, {}])
 
   return {
     plugins,
