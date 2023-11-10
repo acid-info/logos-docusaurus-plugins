@@ -38,6 +38,7 @@ const createQueryPart = (owner, repo) => {
               id
               author {
                 login
+                avatarUrl
               }
               body
               createdAt
@@ -112,7 +113,10 @@ export const fetchGithubIssues = async (
             commentCount: issue.commentCount.totalCount,
             comments: issue.commentsDetailed.nodes.map((comment) => ({
               id: comment.id,
-              author: comment.author.login,
+              author: {
+                login: comment.author.login,
+                avatarUrl: comment.author.avatarUrl,
+              },
               body: comment.body,
               createdAt: comment.createdAt,
             })),
