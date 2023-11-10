@@ -7,3 +7,4 @@ export type SiteConfig = Partial<Config>
 export * from './preset'
 export * from './status'
 export * from './themes'
+export * from './github'

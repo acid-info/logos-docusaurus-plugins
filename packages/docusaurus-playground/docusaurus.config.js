@@ -45,6 +45,9 @@ const config = {
           routeBasePath: '/',
           path: 'docs',
         },
+
+        // Uncomment to fetch new generated data.
+        /*
         generated: {
           challenges: {
             repoArray: [
@@ -57,6 +60,7 @@ const config = {
             jobBoard: 'waku',
           },
         },
+        */
       }),
     ],
   ],
