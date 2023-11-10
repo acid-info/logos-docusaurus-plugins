@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.113](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.112...v1.0.0-alpha.113) (2023-11-10)
+
+### Features
+
+- init jobs & challenges plugin ([8f8c43a](https://github.com/acid-info/logos-docusaurus-plugins/commit/8f8c43af08561234d8f7a100b2306547d88330c1))
+
 # [1.0.0-alpha.112](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.111...v1.0.0-alpha.112) (2023-11-09)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset
