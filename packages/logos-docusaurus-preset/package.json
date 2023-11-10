@@ -29,7 +29,8 @@
     "@docusaurus/utils-validation": "^2.4.1",
     "docusaurus-plugin-sass": "^0.2.3",
     "fs-extra": "^10.1.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "node-fetch": "2"
   },
   "engines": {
     "node": ">=16.14"

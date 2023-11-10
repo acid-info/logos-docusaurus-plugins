@@ -45,6 +45,18 @@ const config = {
           routeBasePath: '/',
           path: 'docs',
         },
+        generated: {
+          challenges: {
+            repoArray: [
+              { owner: 'logos-co', repo: 'nomos-node' },
+              { owner: 'logos-co', repo: 'nomos-specs' },
+            ],
+            githubAccessToken: process.env.GITHUB_ACCESS_TOKEN,
+          },
+          jobList: {
+            jobBoard: 'waku',
+          },
+        },
       }),
     ],
   ],

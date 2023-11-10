@@ -1,4 +1,4 @@
-import { JobDepartmentArray } from './useFetchJobs'
+import { JobDepartmentArray } from '.'
 
 // Only for dev purposes - prevents making multiple requests to the API while developing.
 export const jobsPerDepartmentDummyData: JobDepartmentArray = [

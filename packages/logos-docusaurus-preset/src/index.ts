@@ -121,7 +121,7 @@ export default function logosPreset(
     }
   }
 
-  if (options.generated) plugins.push([generatedDataPlugin, {}])
+  if (options.generated) plugins.push([generatedDataPlugin, options.generated])
 
   return {
     plugins,
