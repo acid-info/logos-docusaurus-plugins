@@ -37,17 +37,13 @@ const extractUniqueParticipants = (issue: GithubIssue): Participant[] => {
     })
   })
 
-  // Skipping comment authors for now, because they don't have avatarUrl.
-  /*
   // Add all comment authors
   issue.comments.forEach((comment) => {
-    // Assuming comment.author is the login name of the commenter
-    participants.set(comment.author, {
-      name: comment.author,
-      avatarUrl: '', // Placeholder, as avatarUrl is not available directly in GithubComment type
+    participants.set(comment.author.login, {
+      name: comment.author.login,
+      avatarUrl: comment.author.avatarUrl,
     })
   })
-  */
 
   return Array.from(participants.values())
 }

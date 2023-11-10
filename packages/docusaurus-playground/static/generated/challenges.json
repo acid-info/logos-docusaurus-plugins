@@ -58,7 +58,10 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5Qv7jr",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "Mock network implementation (service based version): https://github.com/logos-co/nomos-research/issues/31",
             "createdAt": "2022-12-16T13:08:52Z"
           }
@@ -165,13 +168,19 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5XAq_2",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "This is the initial list of things to do. @al8n @bacv, please edit the list as completed or add new items as needed.\r\nThe relate the PRs, or create tasks in the board for each item you take. 🚀 ",
             "createdAt": "2023-03-08T09:02:44Z"
           },
           {
             "id": "IC_kwDOITdFfs5YY5BM",
-            "author": "bacv",
+            "author": {
+              "login": "bacv",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/2364987?v=4"
+            },
             "body": "Notes regarding next tasks:\r\n- [x] Warding - Analyze simulation state and implement the stopping of simulation.\r\n     - [x] The difference minimum view and and maximum view in the individual nodes need to be tracked. #108\r\n     - [x] Track stalled nodes (e.g incoming queue is empty, the node doesn't write to other queues). #109 \r\n- [x] Output processor - Gather states from every node during each step. Data needs to be per view. #111 \r\n- [x] Runners\r\n     - [x] Synchronous runner - track the state and decide when to dump the data #111 \r\n     - [x] Asynchronous runner - track the state and decide when to dump the data #111 \r\n     - [x] A cache that stores the view number and the vector of nodeids and state. #119\r\n          - [x] `Update` method - updates node state for that view #119\r\n          - [x] Integrate cache withing the runners #119\r\n- [x] Mock Carnot node - every step will increment the view count. #114 \r\n- [x] Carnot node settings:\r\n     - [x] Configurable network behavior. #110 \r\n     - [x] Layout per view, accessible withing the node. #114 \r\n- [ ] Overlay trait needs to accept `seed` parameter when the layout is generated. https://github.com/logos-co/nomos-node/pull/122#discussion_r1187134287\r\n- [ ] Investigate if ViewId + ViewOverlay pairs need to be shared state. Nodes should recreate an overlay from seed. (Mentioned in https://github.com/logos-co/nomos-research/pull/114#discussion_r1159808313)",
             "createdAt": "2023-03-24T14:43:51Z"
           }
@@ -195,19 +204,28 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5Xg4Ay",
-            "author": "zeegomo",
+            "author": {
+              "login": "zeegomo",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/21265557?u=ea50ee0cd3b6ef42d1d3adb59688134155639045&v=4"
+            },
             "body": "If we decide that blocks only contain transactions hashes, then we need a way to retrieve transactions. \r\nIt's not too different from how a node that joins the network later has to download blocks actually.\r\n\r\nI think it could be valuable to have committed transactions in a coldish storage and conflate storage of pending transactions and transactions in blocks not yet committed, as we might have to access both",
             "createdAt": "2023-03-14T14:45:05Z"
           },
           {
             "id": "IC_kwDOITdFfs5XhAe1",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "> If we decide that blocks only contain transactions hashes, then we need a way to retrieve transactions. It's not too different from how a node that joins the network later has to download blocks actually.\r\n> \r\n> I think it could be valuable to have committed transactions in a coldish storage and conflate storage of pending transactions and transactions in blocks not yet committed, as we might have to access both\r\n\r\nThat way we make the mempool work only over the transactions ids right? So if retrieving a transaction it should be from this storage?",
             "createdAt": "2023-03-14T15:01:35Z"
           },
           {
             "id": "IC_kwDOITdFfs5Xm0oT",
-            "author": "alvatar",
+            "author": {
+              "login": "alvatar",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/191694?u=4555197dea5ea4db76f8649f7b189db96301d887&v=4"
+            },
             "body": "The mempool is subject to further research at this point. We cannot make an informed decision yet.\r\nFor now, the simplest mempool will do, and then we will work on this from a research perspective.\r\nTo clarify a few points:\r\n- Codex cannot be used for the mempool. It can be used for archival nodes, but that's a different use case.\r\n- The mempool will have a focus on privacy, likely being threshold-encrypted. \r\n- Ideally, the mempool guarantees data availability (ie like Narwhal), and the consensus will operate on the hashes of the mempool.\r\n",
             "createdAt": "2023-03-15T11:00:57Z"
           }
@@ -231,7 +249,10 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5Xkr9G",
-            "author": "al8n",
+            "author": {
+              "login": "al8n",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/42351146?u=f9252ee6a123643f6b4ddbc54852581fc8b99ecd&v=4"
+            },
             "body": "Reopen this issue, because I think it auto-closed by the merge but we do not actually fix this issue.",
             "createdAt": "2023-03-15T02:58:05Z"
           }
@@ -323,7 +344,10 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5gBmbZ",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "@AlbertoSoutullo This is the issue for tracking the long running tests with kurtosis",
             "createdAt": "2023-06-28T08:59:45Z"
           }
@@ -369,19 +393,28 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5fiGUy",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "\"No parent\" means that the parent is not present, not that the block comes without the parent field right?",
             "createdAt": "2023-06-22T14:48:11Z"
           },
           {
             "id": "IC_kwDOITdFfs5fk5oa",
-            "author": "youngjoon-lee",
+            "author": {
+              "login": "youngjoon-lee",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/5462944?u=fbb2556cd66f7852f2bc526ce4e39369f834f3b6&v=4"
+            },
             "body": "> \"No parent\" means that the parent is not present\r\n\r\nIf so, I have a feeling that some other `assert!()`  in consensus-engine may be also potential attack points. What do you think about changing assertions to Err?",
             "createdAt": "2023-06-23T01:29:28Z"
           },
           {
             "id": "IC_kwDOITdFfs5fyK40",
-            "author": "zeegomo",
+            "author": {
+              "login": "zeegomo",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/21265557?u=ea50ee0cd3b6ef42d1d3adb59688134155639045&v=4"
+            },
             "body": "> \"No parent\" means that the parent is not present, not that the block comes without the parent field right?\r\n\r\nExactly\r\n\r\n\r\n> If so, I have a feeling that some other assert!() in consensus-engine may be also potential attack points. What do you think about changing assertions to Err?\r\n\r\nThe asserts are there to verify the public API contract is respected (i.e. some functions have preconditions that allow you to call them only when certain statements are true). We could also make them errors instead, the important thing is that we filter those cases at some point (either before feeding them to the engine or at the engine by returning errors instead). ",
             "createdAt": "2023-06-26T08:42:42Z"
           }
@@ -405,19 +438,28 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5gCIpO",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "They should be assigned based in some specific distribution. I think everything is calculated here: https://github.com/logos-co/nomos-node/blob/224a3a53f5c164cd5dec147f49177bc8f65a634a/simulations/src/network/regions.rs#L123",
             "createdAt": "2023-06-28T10:40:24Z"
           },
           {
             "id": "IC_kwDOITdFfs5gCK3p",
-            "author": "al8n",
+            "author": {
+              "login": "al8n",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/42351146?u=f9252ee6a123643f6b4ddbc54852581fc8b99ecd&v=4"
+            },
             "body": "> They should be assigned based in some specific distribution. I think everything is calculated here: https://github.com/logos-co/nomos-node/blob/224a3a53f5c164cd5dec147f49177bc8f65a634a/simulations/src/network/regions.rs#L123\n\nYeah, but in the logs we cannot know such node belongs to which region. Then, I think we can assign the region information to the node, and then we can easily see a node belongs to which region from logs and analyze.",
             "createdAt": "2023-06-28T10:47:46Z"
           },
           {
             "id": "IC_kwDOITdFfs5gCLqr",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "> > They should be assigned based in some specific distribution. I think everything is calculated here: https://github.com/logos-co/nomos-node/blob/224a3a53f5c164cd5dec147f49177bc8f65a634a/simulations/src/network/regions.rs#L123\r\n> \r\n> Yeah, but in the logs we cannot know such node belongs to which region. Then, I think we can assign the region information to the node, and then we can easily see a node belongs to which region from logs and analyze.\r\n\r\nYeah. The way to go here IMO would be to log or dump the final distribution (regions map). No need to go too fancy here. ",
             "createdAt": "2023-06-28T10:50:35Z"
           }
@@ -446,7 +488,10 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5lEXUN",
-            "author": "youngjoon-lee",
+            "author": {
+              "login": "youngjoon-lee",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/5462944?u=fbb2556cd66f7852f2bc526ce4e39369f834f3b6&v=4"
+            },
             "body": "The first iteration is done. The folowing bullet points need to be done in the future.\r\n\r\n> - libp2p transports (TCP, QUIC, or both)\r\n> - libp2p transport authentication (Noise)\r\n> - libp2p gossipsub message signing",
             "createdAt": "2023-08-28T12:49:40Z"
           }
@@ -470,25 +515,37 @@
         "comments": [
           {
             "id": "IC_kwDOITdFfs5gfgb5",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "@Zeegomo didn't we had this issue with the end-to-end tests?\r\n",
             "createdAt": "2023-07-03T16:44:39Z"
           },
           {
             "id": "IC_kwDOITdFfs5ggNUI",
-            "author": "zeegomo",
+            "author": {
+              "login": "zeegomo",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/21265557?u=ea50ee0cd3b6ef42d1d3adb59688134155639045&v=4"
+            },
             "body": "> Unless I am doing something wrong, it looks like the consensus starts with no valid peers, and it gets \"stuck\" even tho I succesfully add new peers afterwards, here is a screenshot of the log\r\n\r\nThis is likely because the node doesn't wait for the network to be ready before sending the first message, and if enough of those messages get lost the round cannot advance.\r\nThis occurrence was very rare in testing and those rare occasions should have been fixed by https://github.com/logos-co/nomos-node/commit/b884e1ceca1a1148f23babb6e062c5487b70548b.\r\n\r\nFor reference, we always start the leader for view 1 first (should be the first node in the config list) and put it in the `initial_peers` section of other nodes. \r\n\r\n>  and it gets \"stuck\" even tho I succesfully add new peers afterwards,\r\n\r\nthis is kind of expected as the node does not attempt to resend messages. It should actually trigger the unhappy path procedure to restore the network but as that has not been tested (working on it atm) it's possible it's not working",
             "createdAt": "2023-07-03T19:39:45Z"
           },
           {
             "id": "IC_kwDOITdFfs5gmLWv",
-            "author": "AlbertoSoutullo",
+            "author": {
+              "login": "AlbertoSoutullo",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/23367096?u=908f327cf3085a462d5e5a013446e465e1d54f73&v=4"
+            },
             "body": "> > Unless I am doing something wrong, it looks like the consensus starts with no valid peers, and it gets \"stuck\" even tho I succesfully add new peers afterwards, here is a screenshot of the log\r\n> \r\n> This is likely because the node doesn't wait for the network to be ready before sending the first message, and if enough of those messages get lost the round cannot advance. This occurrence was very rare in testing and those rare occasions should have been fixed by [b884e1c](https://github.com/logos-co/nomos-node/commit/b884e1ceca1a1148f23babb6e062c5487b70548b).\r\n> \r\n> For reference, we always start the leader for view 1 first (should be the first node in the config list) and put it in the `initial_peers` section of other nodes.\r\n> \r\n> > and it gets \"stuck\" even tho I succesfully add new peers afterwards,\r\n> \r\n> this is kind of expected as the node does not attempt to resend messages. It should actually trigger the unhappy path procedure to restore the network but as that has not been tested (working on it atm) it's possible it's not working\r\n\r\nThanks for answering! Do I wait then until new instructions?",
             "createdAt": "2023-07-04T18:50:01Z"
           },
           {
             "id": "IC_kwDOITdFfs5gqgmQ",
-            "author": "AlbertoSoutullo",
+            "author": {
+              "login": "AlbertoSoutullo",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/23367096?u=908f327cf3085a462d5e5a013446e465e1d54f73&v=4"
+            },
             "body": "Looks like it's working with PR #245 \r\n\r\nFeel free to close this issue if you want!",
             "createdAt": "2023-07-05T13:25:30Z"
           }
@@ -746,6 +803,23 @@
         "created_at": "2023-11-10T10:50:11Z",
         "updated_at": "2023-11-10T10:50:11Z",
         "projects": []
+      },
+      {
+        "id": "I_kwDOITdFfs52gnOo",
+        "title": "Mixnode HOL blocking",
+        "url": "https://github.com/logos-co/nomos-node/issues/526",
+        "user": {
+          "login": "zeegomo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/21265557?u=ea50ee0cd3b6ef42d1d3adb59688134155639045&v=4"
+        },
+        "labels": ["bug", "mixnet", "testnet"],
+        "commentCount": 0,
+        "comments": [],
+        "assignees": [],
+        "milestone": "Nomos testnet (playground)",
+        "created_at": "2023-11-10T19:31:50Z",
+        "updated_at": "2023-11-10T19:32:54Z",
+        "projects": []
       }
     ]
   },
@@ -764,7 +838,10 @@
         "comments": [
           {
             "id": "IC_kwDOJL6gRs5b8bKe",
-            "author": "MForensic",
+            "author": {
+              "login": "MForensic",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/33738574?v=4"
+            },
             "body": "Couldn't link the pull request, but mentioning it here. https://github.com/logos-co/nomos-specs/pull/24/files",
             "createdAt": "2023-05-10T17:30:21Z"
           }
@@ -793,7 +870,10 @@
         "comments": [
           {
             "id": "IC_kwDOJL6gRs5dAkUI",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "Related comment on bumping view when adding genesis: https://github.com/logos-co/nomos-specs/pull/24#discussion_r1200718234",
             "createdAt": "2023-05-24T04:05:58Z"
           }
@@ -822,7 +902,10 @@
         "comments": [
           {
             "id": "IC_kwDOJL6gRs5dAlLw",
-            "author": "danielSanchezQ",
+            "author": {
+              "login": "danielSanchezQ",
+              "avatarUrl": "https://avatars.githubusercontent.com/u/1133113?v=4"
+            },
             "body": "Coming from here: https://github.com/logos-co/nomos-specs/pull/24#discussion_r1200702385",
             "createdAt": "2023-05-24T04:12:07Z"
           }

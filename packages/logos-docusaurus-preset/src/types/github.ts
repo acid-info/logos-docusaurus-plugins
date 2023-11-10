@@ -9,7 +9,7 @@ type GithubUser = {
 
 type GithubComment = {
   id: string
-  author: string
+  author: GithubUser
   body: string
   createdAt: string
 }

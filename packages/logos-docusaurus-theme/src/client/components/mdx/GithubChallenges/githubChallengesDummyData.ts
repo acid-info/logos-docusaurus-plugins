@@ -15,19 +15,28 @@ export const dummyGithubIssue: GithubIssue = {
   comments: [
     {
       id: 'c1',
-      author: 'alice123',
+      author: {
+        login: 'alice123',
+        avatarUrl: 'https://avatars.githubusercontent.com/u/8811422?v=4',
+      },
       body: 'I have also noticed this issue. Working on a fix now.',
       createdAt: '2021-01-01T12:00:00Z',
     },
     {
       id: 'c2',
-      author: 'bob456',
+      author: {
+        login: 'bob456',
+        avatarUrl: 'https://avatars.githubusercontent.com/u/8811422?v=4',
+      },
       body: 'Any updates on this?',
       createdAt: '2021-01-02T15:30:00Z',
     },
     {
       id: 'c3',
-      author: 'jaquim',
+      author: {
+        login: 'jaquim',
+        avatarUrl: 'https://avatars.githubusercontent.com/u/8811422?v=4',
+      },
       body: 'I like turtles.',
       createdAt: '2021-01-03T09:45:00Z',
     },
