@@ -23,3 +23,5 @@ packages/docusaurus-*/lib/*
 packages/logos-docusaurus-preset/static/common/data/team.json
 
 lerna-debug.log
+
+packages/docusaurus-playground/static/generated/*
