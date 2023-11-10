@@ -21,11 +21,17 @@ const schema = Joi.object<PluginOptions>({
   generated: Joi.object<GeneratedDataPluginConfig>({
     challenges: Joi.object<GeneratedDataPluginConfig['challenges']>({
       githubAccessToken: Joi.string().required(),
-      owner: Joi.string().required(),
-      repo: Joi.string().required(),
+      repoArray: Joi.array()
+        .items(
+          Joi.object({
+            repo: Joi.string().required(),
+            owner: Joi.string().required(),
+          }),
+        )
+        .required(),
     }).optional(),
     jobList: Joi.object<GeneratedDataPluginConfig['jobList']>({
-      url: Joi.string().uri().required(),
+      jobBoard: Joi.string().uri().required(),
     }).optional(),
   }).optional(),
 })

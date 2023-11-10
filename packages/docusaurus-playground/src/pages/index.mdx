@@ -20,6 +20,7 @@ import {
   ShowcaseCard,
   JobsPerDepartment,
 } from '../components/mdx'
+import * as jobData from '/generated/jobs.json'
 
 <Hero size="large">
   <HeroInfo>
@@ -353,4 +354,4 @@ import {
     Build on Waku
   </CallToActionButton>
 </Box>
-<JobsPerDepartment jobBoard="codex" useDummyData />
+<JobsPerDepartment jobData={jobData} />

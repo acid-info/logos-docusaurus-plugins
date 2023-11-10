@@ -1,9 +1,9 @@
 import { Typography } from '@acid-info/lsd-react'
-import { JobDepartmentData } from './useFetchJobs'
 import React from 'react'
 import { IconExternalLink } from '@logos-theme/components/Icon'
 import './JobsPerDepartment.scss'
 import Link from '@docusaurus/Link'
+import { JobDepartmentData } from '.'
 
 type SingleDepartmentJobsProps = {
   department: JobDepartmentData

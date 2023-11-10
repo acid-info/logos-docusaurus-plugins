@@ -1,8 +1,37 @@
 import { Typography } from '@acid-info/lsd-react'
 import { SingleDepartmentJobs } from './SingleDepartmentJobs'
-import useFetchJobs, { JobDepartmentArray } from './useFetchJobs'
 import React from 'react'
 import { jobsPerDepartmentDummyData } from './jobsPerDepartmentDummyData'
+
+export type JobDepartmentData = {
+  id: number
+  name: string
+  parent_id: number | null
+  child_ids: number[]
+  jobs: Job[]
+}
+
+type Job = {
+  absolute_url: string
+  data_compliance?: {
+    type: string
+    requires_consent: boolean
+    requires_processing_consent: boolean
+    requires_retention_consent: boolean
+    retention_period: null | string
+  }[]
+  internal_job_id: number
+  location: {
+    name: string
+  }
+  metadata?: any
+  id: number
+  updated_at: string
+  requisition_id: string
+  title: string
+}
+
+export type JobDepartmentArray = JobDepartmentData[] | null
 
 type JobsPerDepartmentHeaderProps = {
   message?: string
@@ -34,42 +63,39 @@ const hasJobs = (jobsPerDepartment: JobDepartmentArray): boolean => {
 }
 
 type JobsPerDepartmentProps = React.HTMLAttributes<HTMLDivElement> & {
-  jobBoard: string
+  jobData: { departments?: JobDepartmentArray }
   titleFilter?: string
   fetchAll?: boolean
   useDummyData?: boolean
 }
 
 export const JobsPerDepartment: React.FC<JobsPerDepartmentProps> = ({
-  jobBoard,
+  jobData,
   titleFilter = '',
   fetchAll = false,
   useDummyData = false,
   ...props
 }) => {
-  const { data, error, isLoading } = useFetchJobs(
-    jobBoard,
-    titleFilter,
-    useDummyData ? jobsPerDepartmentDummyData : null,
-  )
+  let jobArray: JobDepartmentData[] | undefined | null = useDummyData
+    ? jobsPerDepartmentDummyData
+    : jobData?.departments
 
-  if (isLoading) {
-    // Skipping loading state for now, as per the designer's request.
-    return <JobsPerDepartmentHeader />
-  }
-
-  if (error) {
-    return <JobsPerDepartmentHeader message="Error fetching data" />
-  }
-
-  if (!data || !hasJobs(data)) {
+  if (!jobArray || !hasJobs(jobArray)) {
     return <JobsPerDepartmentHeader message="No job openings to show" />
+  }
+
+  // Filter jobs in each department based on titleFilter
+  if (jobArray && titleFilter) {
+    jobArray = jobArray.map((department) => ({
+      ...department,
+      jobs: department.jobs.filter((job) => job.title.includes(titleFilter)),
+    }))
   }
 
   return (
     <div {...props}>
       <JobsPerDepartmentHeader />
-      {data.map((department) => {
+      {jobArray.map((department) => {
         return (
           <SingleDepartmentJobs key={department.name} department={department} />
         )
