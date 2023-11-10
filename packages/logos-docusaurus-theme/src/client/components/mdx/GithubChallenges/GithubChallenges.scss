@@ -53,6 +53,7 @@
 }
 
 .mdx-ghc__participant-photo {
+  width: 24px;
   border-radius: 100%;
   margin-left: -4px;
   border: 1px solid rgb(var(--lsd-border-secondary));
@@ -84,10 +85,4 @@
   @include utils.responsive('xs', 'down') {
     grid-template-columns: 82px 1fr;
   }
-}
-
-.mdx-ghc__achievement {
-  display: flex;
-  align-items: center;
-  padding-left: 4px;
 }

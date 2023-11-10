@@ -3,7 +3,54 @@ import React from 'react'
 import { IconExternalLink } from '@logos-theme/components/Icon'
 import './GithubChallenges.scss'
 import Link from '@docusaurus/Link'
-import { GithubIssue } from './useFetchGithubIssues'
+import { GithubIssue } from '@acid-info/logos-docusaurus-preset/src/types/github'
+
+const getProjectNames = (issue: GithubIssue): string => {
+  const projectNames = issue.projects.map((project) => project.name)
+
+  if (projectNames.length === 0) {
+    return ''
+  }
+
+  return Array.from(new Set(projectNames)).join(', ')
+}
+
+type Participant = {
+  name: string
+  avatarUrl: string
+}
+
+const extractUniqueParticipants = (issue: GithubIssue): Participant[] => {
+  const participants = new Map<string, Participant>()
+
+  // Add the user who created the issue
+  participants.set(issue.user.login, {
+    name: issue.user.login,
+    avatarUrl: issue.user.avatarUrl,
+  })
+
+  // Add all assignees
+  issue.assignees.forEach((assignee) => {
+    participants.set(assignee.login, {
+      name: assignee.login,
+      avatarUrl: assignee.avatarUrl,
+    })
+  })
+
+  // Skipping comment authors for now, because they don't have avatarUrl.
+  /*
+  // Add all comment authors
+  issue.comments.forEach((comment) => {
+    // Assuming comment.author is the login name of the commenter
+    participants.set(comment.author, {
+      name: comment.author,
+      avatarUrl: '', // Placeholder, as avatarUrl is not available directly in GithubComment type
+    })
+  })
+  */
+
+  return Array.from(participants.values())
+}
 
 function addSizeToAvatarUrl(avatarUrl: string, size: number = 24): string {
   const url = new URL(avatarUrl)
@@ -25,6 +72,39 @@ type SingleGithubChallengeProps = {
 export const SingleGithubChallenge: React.FC<SingleGithubChallengeProps> = ({
   issue,
 }) => {
+  const participants = extractUniqueParticipants(issue)
+  const projectsConst = getProjectNames(issue)
+  const hasProjects = projectsConst !== ''
+  const hasMilestone = !!issue.milestone
+
+  const elementsToRender: React.ReactNode[] = []
+
+  if (hasProjects) {
+    elementsToRender.push(
+      <>
+        <Typography variant="body3" className="mdx-ghc__label">
+          {projectsConst.includes(', ') ? 'Projects' : 'Project'}
+        </Typography>
+        <Typography variant="body3" className="mdx-ghc__project-name">
+          {projectsConst}
+        </Typography>
+      </>,
+    )
+  }
+
+  if (hasMilestone) {
+    elementsToRender.push(
+      <>
+        <Typography variant="body3" className="mdx-ghc__label">
+          Milestone
+        </Typography>
+        <Typography variant="body3" className="mdx-ghc__milestone-text">
+          {issue.milestone}
+        </Typography>
+      </>,
+    )
+  }
+
   return (
     <div className="mdx-ghc__container">
       <Link href={issue.url} className="mdx-ghc__issue-title-link">
@@ -40,7 +120,7 @@ export const SingleGithubChallenge: React.FC<SingleGithubChallengeProps> = ({
             key={index}
             className="mdx-ghc__challenge-label"
           >
-            {label.name}
+            {label}
           </Typography>
         ))}
       </div>
@@ -60,50 +140,20 @@ export const SingleGithubChallenge: React.FC<SingleGithubChallengeProps> = ({
           >
             {issue.comments.length}
           </Typography>
-          {issue.participants.map((participant, index) => (
+          {participants.map((participant, index) => (
             <img
               key={index}
               className="mdx-ghc__participant-photo"
               src={addSizeToAvatarUrl(participant.avatarUrl)}
-              alt={participant.login}
+              alt={participant.name}
             />
           ))}
         </div>
 
-        {/* 1st row 3rd item */}
-        <Typography variant="body3" className="mdx-ghc__label">
-          Project
-        </Typography>
-
-        {/* 1st row 4th item */}
-        <Typography variant="body3" className="mdx-ghc__project-name">
-          {issue.project ? issue.project.name : ''}
-        </Typography>
-
-        {/* 2nd row 1st item */}
-        <Typography variant="body3" className="mdx-ghc__label">
-          Achievement
-        </Typography>
-
-        {/* 2nd row 2nd item */}
-        <div className="mdx-ghc__achievement">
-          <img
-            className="mdx-ghc__participant-photo"
-            src={addSizeToAvatarUrl(
-              'https://avatars.githubusercontent.com/u/8811422?u=b4aec0f11a78abe3b71c42e4adfba3ebd61f34aa&v=4',
-            )}
-          />
-        </div>
-
-        {/* 2nd row 3rd item */}
-        <Typography variant="body3" className="mdx-ghc__label">
-          Milestone
-        </Typography>
-
-        {/* 2nd row 4th item */}
-        <Typography variant="body3" className="mdx-ghc__milestone-text">
-          {issue.milestone || ''}
-        </Typography>
+        {/* Render Projects and/or Milestone */}
+        {elementsToRender.map((element, index) => (
+          <React.Fragment key={index}>{element}</React.Fragment>
+        ))}
       </div>
 
       <Link href={issue.url} className="mdx-ghc__view-on-github-link">

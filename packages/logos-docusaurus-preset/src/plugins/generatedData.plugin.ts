@@ -48,6 +48,14 @@ const fetchChallenges = async ({
 }: {
   out: string
 } & ChallengeConfig) => {
+  if (!githubAccessToken) {
+    console.log(
+      'No github access token provided, creating empty challenges file',
+    )
+    await fsp.writeFile(out, '{}')
+    return
+  }
+
   const issues = await fetchGithubIssues(repoArray, githubAccessToken)
 
   await fsp.writeFile(out, JSON.stringify(issues))
