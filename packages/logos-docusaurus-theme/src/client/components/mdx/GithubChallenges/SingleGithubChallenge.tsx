@@ -134,7 +134,7 @@ export const SingleGithubChallenge: React.FC<SingleGithubChallengeProps> = ({
             className="mdx-ghc__comment-count"
             component="div"
           >
-            {issue.comments.length}
+            {participants.length}
           </Typography>
           {participants.map((participant, index) => (
             <img
