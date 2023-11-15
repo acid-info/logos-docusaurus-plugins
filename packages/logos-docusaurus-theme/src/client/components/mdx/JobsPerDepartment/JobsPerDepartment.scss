@@ -40,13 +40,13 @@
 .mdx-jpd__job-link {
   display: block;
   width: fit-content;
-  text-decoration: none;
+  text-decoration: none !important;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 
     .mdx-jpd__job-title {
-      text-decoration: underline;
+      text-decoration: underline !important;
     }
   }
 }
