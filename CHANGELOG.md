@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.114](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.113...v1.0.0-alpha.114) (2023-11-15)
+
+### Features
+
+- add GithubChallenges component UI - using mock data for now ([67ad0da](https://github.com/acid-info/logos-docusaurus-plugins/commit/67ad0da430fd102ba44d9cca8a74e315391e4d4f))
+
 # [1.0.0-alpha.113](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.112...v1.0.0-alpha.113) (2023-11-10)
 
 ### Features
