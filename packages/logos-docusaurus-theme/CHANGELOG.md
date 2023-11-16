@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.116](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.115...v1.0.0-alpha.116) (2023-11-16)
+
+### Features
+
+- newsletter subscription page & components ([dada34a](https://github.com/acid-info/logos-docusaurus-plugins/commit/dada34a5373d0c6ce98b6fca1299095f2fa7df05))
+
 # [1.0.0-alpha.115](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.114...v1.0.0-alpha.115) (2023-11-15)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
