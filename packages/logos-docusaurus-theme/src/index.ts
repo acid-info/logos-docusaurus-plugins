@@ -49,10 +49,7 @@ export default function logosTheme(
       if (options.newsletterSubscription)
         args.actions.addRoute({
           path: options.newsletterSubscription.pagePath || '/subscribe',
-          component: path.resolve(
-            __dirname,
-            '../src/client/theme/SubscriptionPage',
-          ),
+          component: path.resolve(__dirname, './client/theme/SubscriptionPage'),
           exact: true,
         })
     },
