@@ -1,4 +1,4 @@
-import { ArrowDownIcon, Dropdown, Typography } from '@acid-info/lsd-react'
+import { ChevronDownIcon, Typography } from '@acid-info/lsd-react'
 import {
   Collapsible,
   isRegexpStringMatch,
@@ -86,7 +86,7 @@ function DropdownNavbarItemDesktop({
       >
         {props.children ?? props.label}
       </NavbarNavLink>
-      <ArrowDownIcon className={clsx('margin-left-8', 'cursor-pointer')} />
+      <ChevronDownIcon className={clsx('margin-left-8', 'cursor-pointer')} />
       <ul className="dropdown__menu">
         {items.map((childItemProps, i) => (
           <NavbarItem

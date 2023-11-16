@@ -29,6 +29,7 @@ export const useTheme = () => {
       typographyGlobal: {
         genericFontFamily,
       },
+      spacing: [],
     }
 
     return {

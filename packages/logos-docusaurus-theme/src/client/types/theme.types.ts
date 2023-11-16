@@ -30,4 +30,8 @@ export type DocConfig = {
 export type ThemeOptions = DefaultPluginOptions & {
   docs?: Record<string, DocConfig>
   typography?: GlobalTypographyStyles
+  newsletterSubscription?: {
+    pagePath?: string
+    mailingListId: number
+  }
 }

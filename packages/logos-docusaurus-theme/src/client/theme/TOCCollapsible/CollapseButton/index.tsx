@@ -1,8 +1,12 @@
-import React from 'react'
-import clsx from 'clsx'
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
+  Typography,
+} from '@acid-info/lsd-react'
 import Translate from '@docusaurus/Translate'
+import clsx from 'clsx'
+import React from 'react'
 import styles from './styles.module.css'
-import { ArrowDownIcon, ArrowUpIcon, Typography } from '@acid-info/lsd-react'
 export default function TOCCollapsibleCollapseButton({ collapsed, ...props }) {
   return (
     <button
@@ -24,7 +28,7 @@ export default function TOCCollapsibleCollapseButton({ collapsed, ...props }) {
           On this page
         </Translate>
       </Typography>
-      {!collapsed ? <ArrowUpIcon /> : <ArrowDownIcon />}
+      {!collapsed ? <ChevronUpIcon /> : <ChevronDownIcon />}
     </button>
   )
 }

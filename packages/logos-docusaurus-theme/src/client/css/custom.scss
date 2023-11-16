@@ -1279,4 +1279,9 @@ code {
   --lsd-subtitle1-fontWeight: 300;
 }
 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
 @import './blog.scss';

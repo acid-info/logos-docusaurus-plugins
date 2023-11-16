@@ -1,12 +1,8 @@
-import React from 'react'
-import clsx from 'clsx'
+import { Typography } from '@acid-info/lsd-react'
 import Link from '@docusaurus/Link'
-import {
-  NavigateBeforeIcon,
-  NavigateNextIcon,
-  Typography,
-} from '@acid-info/lsd-react'
 import { IconArrowLeft, IconArrowRight } from '@logos-theme/components/Icon'
+import clsx from 'clsx'
+import React from 'react'
 
 export default function PaginatorNavLink(props) {
   const { permalink, title, subLabel, isNext } = props

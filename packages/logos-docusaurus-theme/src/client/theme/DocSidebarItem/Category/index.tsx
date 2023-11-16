@@ -1,23 +1,23 @@
-import React, { useEffect, useMemo } from 'react'
-import clsx from 'clsx'
-import {
-  ThemeClassNames,
-  useThemeConfig,
-  usePrevious,
-  Collapsible,
-  useCollapsible,
-} from '@docusaurus/theme-common'
-import {
-  isActiveSidebarItem,
-  findFirstCategoryLink,
-  useDocSidebarItemsExpandedState,
-  isSamePath,
-} from '@docusaurus/theme-common/internal'
+import { ChevronUpIcon, Typography } from '@acid-info/lsd-react'
 import Link from '@docusaurus/Link'
 import { translate } from '@docusaurus/Translate'
+import {
+  Collapsible,
+  ThemeClassNames,
+  useCollapsible,
+  usePrevious,
+  useThemeConfig,
+} from '@docusaurus/theme-common'
+import {
+  findFirstCategoryLink,
+  isActiveSidebarItem,
+  isSamePath,
+  useDocSidebarItemsExpandedState,
+} from '@docusaurus/theme-common/internal'
 import useIsBrowser from '@docusaurus/useIsBrowser'
 import DocSidebarItems from '@theme/DocSidebarItems'
-import { ArrowDownIcon, ArrowUpIcon, Typography } from '@acid-info/lsd-react'
+import clsx from 'clsx'
+import React, { useEffect, useMemo } from 'react'
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -168,7 +168,7 @@ export default function DocSidebarItemCategory({
           <Typography variant="body2" color="primary">
             {label}
           </Typography>
-          {collapsible && <ArrowUpIcon />}
+          {collapsible && <ChevronUpIcon />}
         </Link>
         {href && collapsible && (
           <CollapseButton

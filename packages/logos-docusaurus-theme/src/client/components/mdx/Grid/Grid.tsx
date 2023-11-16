@@ -1,8 +1,8 @@
 import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
   IconButton,
   IconButtonGroup,
-  NavigateBeforeIcon,
-  NavigateNextIcon,
   THEME_BREAKPOINTS,
 } from '@acid-info/lsd-react'
 import { css } from '@emotion/react'
@@ -43,10 +43,10 @@ export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
         <div className="mdx-grid__scroll">
           <IconButtonGroup size="small" color="primary">
             <IconButton size="small" onClick={scroll.bind(null, -1)}>
-              <NavigateBeforeIcon />
+              <ChevronLeftIcon />
             </IconButton>
             <IconButton size="small" onClick={scroll.bind(null, 1)}>
-              <NavigateNextIcon />
+              <ChevronRightIcon />
             </IconButton>
           </IconButtonGroup>
         </div>

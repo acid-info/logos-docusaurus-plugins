@@ -1,4 +1,4 @@
-import { ArrowDownIcon, IconButton } from '@acid-info/lsd-react'
+import { ChevronDownIcon, IconButton } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React, { HTMLProps, useMemo } from 'react'
 import { useWindowSize } from 'react-use'
@@ -56,7 +56,7 @@ export const ScrollToBottom = (
       )}
       {...(rest as any)}
     >
-      <ArrowDownIcon color="primary" />
+      <ChevronDownIcon color="primary" />
     </IconButton>
   )
 }
