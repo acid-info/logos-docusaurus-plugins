@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.117](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.116...v1.0.0-alpha.117) (2023-11-16)
+
+### Bug Fixes
+
+- fix subscription page component path ([cbbea31](https://github.com/acid-info/logos-docusaurus-plugins/commit/cbbea31207a5913038ea6772c312bb8899f71654))
+
 # [1.0.0-alpha.116](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.115...v1.0.0-alpha.116) (2023-11-16)
 
 ### Features
