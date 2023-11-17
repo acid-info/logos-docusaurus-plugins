@@ -33,7 +33,7 @@ const createQueryPart = (owner, repo) => {
           commentCount: comments {
             totalCount
           }
-          commentsDetailed: comments(first: 10) {
+          commentsDetailed: comments(first: 99) {
             nodes {
               id
               author {
