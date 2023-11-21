@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.119](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.118...v1.0.0-alpha.119) (2023-11-21)
+
+### Bug Fixes
+
+- use 'label2' typography variant for ExternalResourceCard description ([4906a2f](https://github.com/acid-info/logos-docusaurus-plugins/commit/4906a2fc97ef29680d583efe522ddc93cefad0b3))
+
 # [1.0.0-alpha.118](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.117...v1.0.0-alpha.118) (2023-11-17)
 
 **Note:** Version bump only for package root
