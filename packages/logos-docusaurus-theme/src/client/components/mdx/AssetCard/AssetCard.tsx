@@ -1,26 +1,62 @@
 import { Button, Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
+import { IconDownload } from '../../Icon'
 import { KeepRatio } from '../../KeepRatio'
 import './AssetCard.scss'
-import { IconDownload } from '../../Icon'
+
+export type DownloadableAsset = {
+  src: string
+  filename?: string
+  title: React.ReactNode
+}
 
 export type AssetCardProps = Omit<React.HTMLProps<HTMLDivElement>, 'title'> & {
   title?: React.ReactNode
   previewSrc: string
-  downloadable?: {
-    src: string
-    title: React.ReactNode
-  }[]
+  forceDownload?: boolean
+  downloadable?: DownloadableAsset[]
 }
 
 export const AssetCard: React.FC<AssetCardProps> = ({
   title,
   previewSrc,
   downloadable,
+  forceDownload = false,
   ...props
 }) => {
   const isDownloadable = downloadable && downloadable.length > 0
+
+  const onDownload = (
+    event: React.MouseEvent,
+    downloadable: DownloadableAsset,
+  ) => {
+    if (!forceDownload) return
+
+    event.preventDefault()
+
+    const { src, filename } = downloadable
+    const link = document.createElement('a')
+    link.download = filename || (typeof title === 'string' && title) || ''
+
+    fetch(src)
+      .then((res) => res.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob)
+        link.href = url
+        window.document.body.appendChild(link)
+        link.click()
+        window.document.body.removeChild(link)
+      })
+      .catch((err) => {
+        console.error('failed to download asset:' + err)
+        link.href = src
+        link.target = '_blank'
+        window.document.body.appendChild(link)
+        link.click()
+        window.document.body.removeChild(link)
+      })
+  }
 
   return (
     <div
@@ -59,7 +95,12 @@ export const AssetCard: React.FC<AssetCardProps> = ({
       {isDownloadable && (
         <div className="mdx-asset-card__downloadables">
           {downloadable.map((downloadable, index) => (
-            <a href={downloadable.src} target="_blank" download>
+            <a
+              href={downloadable.src}
+              target="_blank"
+              download
+              onClick={(event) => onDownload(event, downloadable)}
+            >
               <Button
                 key={index}
                 variant="outlined"
