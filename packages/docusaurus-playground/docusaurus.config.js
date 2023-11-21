@@ -42,7 +42,7 @@ const config = {
           },
         },
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/about',
           path: 'docs',
         },
 
