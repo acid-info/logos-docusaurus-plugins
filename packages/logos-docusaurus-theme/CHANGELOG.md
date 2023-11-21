@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.121](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.120...v1.0.0-alpha.121) (2023-11-21)
+
+### Features
+
+- **logos-docusaurus-theme:** add `forceDownload` option to the AssetCard component ([96c192d](https://github.com/acid-info/logos-docusaurus-plugins/commit/96c192dc303f27cef25c55c79195fd9ebff929c7))
+
 # [1.0.0-alpha.120](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.119...v1.0.0-alpha.120) (2023-11-21)
 
 ### Bug Fixes
