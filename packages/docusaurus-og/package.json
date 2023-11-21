@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/docusaurus-og",
-  "version": "1.0.0-alpha.111",
+  "version": "1.0.0-beta.0",
   "description": "Docusaurus OpenGraph image plugin",
   "main": "lib/index.js",
   "repository": {
