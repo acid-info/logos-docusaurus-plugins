@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.120](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.119...v1.0.0-alpha.120) (2023-11-21)
+
+### Bug Fixes
+
+- **logos-docusaurus-theme:** center the Lightbox fullscreen button icon ([187afd2](https://github.com/acid-info/logos-docusaurus-plugins/commit/187afd2320c539ccf9cfa1a8259b8a776be6b78e))
+
 # [1.0.0-alpha.119](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.118...v1.0.0-alpha.119) (2023-11-21)
 
 ### Bug Fixes
