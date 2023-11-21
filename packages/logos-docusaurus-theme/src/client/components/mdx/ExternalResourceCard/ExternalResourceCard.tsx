@@ -67,7 +67,7 @@ export const ExternalResourceCard: React.FC<ExternalResourceCardProps> = ({
         </Typography>
         {description && (
           <Typography
-            variant="body1"
+            variant="label2"
             component="div"
             className="mdx-erc__description"
           >

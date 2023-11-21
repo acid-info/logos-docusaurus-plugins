@@ -59,7 +59,7 @@ export const AssetCard: React.FC<AssetCardProps> = ({
       {isDownloadable && (
         <div className="mdx-asset-card__downloadables">
           {downloadable.map((downloadable, index) => (
-            <a href={downloadable.src} download>
+            <a href={downloadable.src} target="_blank" download>
               <Button
                 key={index}
                 variant="outlined"
