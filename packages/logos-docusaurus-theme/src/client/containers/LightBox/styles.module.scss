@@ -57,7 +57,6 @@
 
   &:not(.active) {
     .fullscreenButton {
-      display: block;
       transition: 0.3s;
       position: absolute;
       bottom: 8px;
@@ -67,7 +66,7 @@
 
     @include utils.responsive('lg', 'up') {
       .fullscreenButton {
-        display: block;
+        display: flex;
         opacity: 0;
         visibility: hidden;
         transition: 0.3s;
