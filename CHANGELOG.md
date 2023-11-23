@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.122](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.121...v1.0.0-alpha.122) (2023-11-23)
+
+### Bug Fixes
+
+- fix newsletter subscription copy ([047e22b](https://github.com/acid-info/logos-docusaurus-plugins/commit/047e22bc631c4728d39ed4a55b344d93380df09b))
+
 # [1.0.0-alpha.121](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.120...v1.0.0-alpha.121) (2023-11-21)
 
 ### Features
