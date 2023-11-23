@@ -42,7 +42,7 @@ export const SubscriptionPage: React.FC<SubscriptionPageProps> = ({}) => {
               }}
               height={88}
             />
-            <Typography component="p">Subscribe for updates</Typography>
+            <Typography component="p">Subscribe to our newsletter</Typography>
           </div>
           {api.message && (
             <Toast
@@ -64,7 +64,7 @@ export const SubscriptionPage: React.FC<SubscriptionPageProps> = ({}) => {
                   }}
                   size="medium"
                   variant="underlined"
-                  placeholder="First Name or Pseudonym"
+                  placeholder="First name or pseudonym"
                 />
                 <TextField
                   inputProps={{

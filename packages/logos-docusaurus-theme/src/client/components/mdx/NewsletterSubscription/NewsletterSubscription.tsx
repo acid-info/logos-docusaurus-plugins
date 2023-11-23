@@ -70,7 +70,7 @@ export const NewsletterSubscription: React.FC<NewsletterSubscriptionProps> = ({
               <TextField
                 inputProps={{ type: 'text', name: 'name' }}
                 variant="underlined"
-                placeholder="First Name or Pseudonym"
+                placeholder="First name or pseudonym"
               />
               <TextField
                 inputProps={{
