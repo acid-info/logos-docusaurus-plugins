@@ -81,16 +81,16 @@ type PluginOptions = {
   }
 
   // The directory in the remote repository containing the content to be copied
-  contentDir: string
+  sourceDir: string
 
   // The directory in the local site to copy the content to
   outDir: string
 
   // Exclude files matching these glob patterns
-  exclude?: string[]
+  excludeRemote?: string[]
 
   // Keep local files matching these glob patterns
-  keep?: string[]
+  keepLocal?: string[]
 
   // Keep local static files matching these glob patterns
   keepStatic?: string[]
@@ -105,7 +105,7 @@ export default async function remoteContentPlugin(
   const zipDir = path.join(tempDir.name, 'zip')
 
   const downloadRemoteContent = async () => {
-    const { remote, contentDir, outDir, exclude = [], keep = [] } = options
+    const { remote, sourceDir, outDir } = options
 
     if (remote.type === 'zip') {
       const zip = await axios
@@ -127,14 +127,20 @@ export default async function remoteContentPlugin(
   }
 
   const copyRemoteContent = async () => {
-    const { remote, contentDir, outDir, exclude = [], keep = [] } = options
+    const {
+      remote,
+      sourceDir,
+      outDir,
+      excludeRemote = [],
+      keepLocal = [],
+    } = options
 
     await copyContent(
-      path.join(repoDir, contentDir),
+      path.join(repoDir, sourceDir),
       path.join(context.siteDir, outDir),
       {
-        exclude,
-        keep,
+        exclude: excludeRemote,
+        keep: keepLocal,
       },
     )
 
