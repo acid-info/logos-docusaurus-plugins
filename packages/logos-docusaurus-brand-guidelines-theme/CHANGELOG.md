@@ -8,5 +8,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 - implement brand-guidelines theme and remote-content plugin ([de2704f](https://github.com/acid-info/logos-docusaurus-plugins/commit/de2704f7e52918648eb542156c5a8d6acb48cc07))
-
-# Change Log

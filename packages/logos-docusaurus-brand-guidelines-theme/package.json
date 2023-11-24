@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-brand-guidelines-theme",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.123",
   "description": "",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",
@@ -19,7 +19,6 @@
     "build:server": "yarn gulp build-server",
     "prepublishOnly": "yarn clean && yarn build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.121",
     "@types/lodash": "^4.14.186",
@@ -33,9 +32,9 @@
     "tsc-watch": "^5.0.3"
   },
   "peerDependencies": {
+    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.121",
     "react": "^16.8.4 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.4 || ^17.0.0 || ^18.0.0",
-    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.121"
+    "react-dom": "^16.8.4 || ^17.0.0 || ^18.0.0"
   },
   "engines": {
     "node": ">=16.14"
