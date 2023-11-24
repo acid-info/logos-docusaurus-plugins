@@ -1,0 +1,61 @@
+@use '@acid-info/logos-docusaurus-theme/lib/client/css/utils';
+
+.thumbnailImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.masonry .thumbnailImageContainer {
+  flex-direction: column;
+  margin-bottom: 16px;
+  height: auto; // overrides the height: 100% from the default thumbnailImageContainer
+}
+
+.squareThumbnails .thumbnailImageContainer {
+  aspect-ratio: 1 / 1;
+}
+
+// Overlay and expanded image styles.
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(var(--lsd-theme-secondary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.closeButton {
+  position: fixed;
+  top: 18px;
+  right: 16px;
+
+  background-color: rgb(var(--lsd-theme-secondary)) !important;
+
+  cursor: pointer;
+
+  z-index: 1001;
+}
+
+// Single column image galleries on mobile don't have spacing between them.
+// The following padding bottom fixes that.
+@include utils.responsive('md', 'down') {
+  .thumbnailImageContainer {
+    padding-bottom: 16px;
+  }
+}

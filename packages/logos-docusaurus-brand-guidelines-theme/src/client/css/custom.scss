@@ -1,0 +1,26 @@
+.hidden {
+  display: none;
+}
+
+.sidebar-menu-divider {
+  margin-bottom: 24px;
+}
+
+.DocCardList--no-overview {
+  article:first-child {
+    display: none;
+  }
+
+  article a {
+    text-decoration: none;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+}
+
+pre {
+  background-color: rgb(var(--lsd-theme-secondary)) !important;
+  border: 1px solid rgb(var(--lsd-border-primary)) !important;
+}

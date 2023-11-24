@@ -1,0 +1,24 @@
+@use '@acid-info/logos-docusaurus-theme/lib/client/css/utils';
+
+.root {
+}
+
+@include utils.responsive('md', 'up') {
+  .root .item {
+    &:nth-child(even) > a {
+      border-left: none;
+    }
+
+    &:not(.lastRow) > a {
+      border-bottom: none;
+    }
+  }
+}
+
+@include utils.responsive('md', 'down') {
+  .root .item {
+    &:not(:last-child) > a {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [{ "path": "./tsconfig.client.json" }],
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": true,
+    "tsBuildInfoFile": "./lib/.tsbuildinfo",
+    "rootDir": "src",
+    "outDir": "lib",
+    "jsx": "react",
+    "target": "es5"
+  },
+  "include": [
+    "src",
+    "src/client/theme/NavbarItem",
+    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx",
+    "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx"
+  ],
+  "exclude": ["src/client", "**/__tests__/**"]
+}

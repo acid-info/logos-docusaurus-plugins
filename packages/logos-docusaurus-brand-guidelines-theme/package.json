@@ -1,0 +1,43 @@
+{
+  "name": "@acid-info/logos-docusaurus-brand-guidelines-theme",
+  "version": "1.0.0-alpha.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "src/theme.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
+    "directory": "packages/logos-docusaurus-brand-guidelines-theme"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "yarn gulp clean",
+    "prebuild": "yarn clean",
+    "build": "yarn gulp build",
+    "watch": "yarn gulp watch",
+    "build:client": "yarn gulp build-client",
+    "build:server": "yarn gulp build-server",
+    "prepublishOnly": "yarn clean && yarn build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.121",
+    "@types/lodash": "^4.14.186",
+    "@types/mdx-js__react": "^1.5.5",
+    "@types/three": "^0.152.1",
+    "glob": "^10.3.10",
+    "react-docgen": "^7.0.0",
+    "react-docgen-markdown-renderer": "^2.1.3",
+    "sass": "^1.55.0",
+    "tsc-alias": "^1.7.0",
+    "tsc-watch": "^5.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.4 || ^17.0.0 || ^18.0.0",
+    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.121"
+  },
+  "engines": {
+    "node": ">=16.14"
+  }
+}

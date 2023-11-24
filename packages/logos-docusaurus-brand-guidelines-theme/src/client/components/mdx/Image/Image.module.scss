@@ -1,0 +1,46 @@
+@use '@acid-info/logos-docusaurus-theme/lib/client/css/utils';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(var(--lsd-theme-secondary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.thumbnail {
+  cursor: pointer;
+}
+
+.enlarged {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-height: 90vh;
+  max-width: 90vw;
+
+  display: block;
+  object-fit: contain;
+}
+
+.closeButton {
+  position: fixed;
+  top: 18px;
+  right: 16px;
+
+  background-color: rgb(var(--lsd-theme-secondary)) !important;
+
+  cursor: pointer;
+
+  z-index: 1001;
+}

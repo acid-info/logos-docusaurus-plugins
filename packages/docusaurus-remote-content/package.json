@@ -1,0 +1,39 @@
+{
+  "name": "@acid-info/docusaurus-remote-content",
+  "version": "1.0.0-alpha.0",
+  "description": "Docusaurus remote content",
+  "main": "lib/index.js",
+  "types": "src/plugin.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
+    "directory": "packages/docusaurus-remote-content"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --build --watch",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "fast-glob": "^3.3.2",
+    "lodash": "^4.17.21",
+    "tmp": "^0.2.1",
+    "unzipper": "^0.10.14"
+  },
+  "engines": {
+    "node": ">=16.14"
+  },
+  "devDependencies": {
+    "@docusaurus/core": "2.4.1",
+    "@docusaurus/module-type-aliases": "2.4.1",
+    "@docusaurus/types": "2.4.1",
+    "@docusaurus/utils": "2.4.1",
+    "@docusaurus/utils-common": "2.4.1",
+    "@docusaurus/utils-validation": "2.4.1",
+    "@types/lodash": "^4.14.186",
+    "@types/tmp": "^0.2.6",
+    "@types/unzipper": "^0.10.9"
+  }
+}
