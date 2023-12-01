@@ -352,13 +352,15 @@ import {
     <Grid.Item xs={1}>
       <SocialCard
         href="https://twitter.com/twitter-handle"
-        logoSrcDark="/icons/x.svg"
+        logoSrc="/icons/x-black.svg"
+        logoSrcDark="/icons/x-white.svg"
         description="Follow us on X"
       />
     </Grid.Item>
     <Grid.Item xs={1}>
       <SocialCard
         href="https://discord.gg/discord-server"
+        logoSrc="/icons/discord-black.svg"
         logoSrcDark="/icons/discord-white.svg"
         description="Join the community on Discord"
       />
