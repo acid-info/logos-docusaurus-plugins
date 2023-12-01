@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.125](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.124...v1.0.0-alpha.125) (2023-12-01)
+
+### Features
+
+- **logos-docusaurus-preset:** update BU theme assets ([9d3f31c](https://github.com/acid-info/logos-docusaurus-plugins/commit/9d3f31c3b68b8d5326c6c17e271b4e9bc2f52c44))
+
 # [1.0.0-alpha.124](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.123...v1.0.0-alpha.124) (2023-11-24)
 
 ### Bug Fixes
