@@ -19,7 +19,7 @@ import ExternalLinkSvg from '../../static/icons/external-link.svg'
 import FolderSvg from '../../static/icons/folder.svg'
 import FullscreenExitSvg from '../../static/icons/fullscreen-exit.svg'
 import FullscreenSvg from '../../static/icons/fullscreen.svg'
-import GithubSvg from '../../static/icons/github.svg'
+import GithubWhiteSvg from '../../static/icons/github-white.svg'
 import GScholarSvg from '../../static/icons/gscholar.svg'
 import HistorySvg from '../../static/icons/history.svg'
 import LinkedinSvg from '../../static/icons/linkedin.svg'
@@ -29,7 +29,7 @@ import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
 import DiscordWhiteSvg from '../../static/icons/discord-white.svg'
 import TelegramWhiteSvg from '../../static/icons/telegram-white.svg'
-import XSvg from '../../static/icons/x.svg'
+import XWhiteSvg from '../../static/icons/x-white.svg'
 import Avatar from '../../static/icons/avatar.svg'
 import DownloadSvg from '../../static/icons/download.svg'
 
@@ -93,7 +93,7 @@ export const IconFolder = (props: TIconProps): JSX.Element => (
 
 export const IconGithub = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
-    <GithubSvg />
+    <GithubWhiteSvg />
   </Icon>
 )
 
@@ -219,7 +219,7 @@ export const IconTelegramWhite = (props: TIconProps): JSX.Element => (
 
 export const IconX = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
-    <XSvg />
+    <XWhiteSvg />
   </Icon>
 )
 

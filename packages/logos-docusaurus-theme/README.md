@@ -555,7 +555,8 @@ import {
     <Grid.Item xs={1}>
       <SocialCard
         href="https://twitter.com/twitter-handle"
-        logoSrcDark="/icons/x.svg"
+        logoSrc="/icons/x-black.svg"
+        logoSrcDark="/icons/x-white.svg"
         description="Follow us on X"
       />
     </Grid.Item>
