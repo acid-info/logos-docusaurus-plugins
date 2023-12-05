@@ -3,7 +3,6 @@
 
 .mdx-timeline-item {
   width: 236px;
-  height: 100%;
   gap: 1rem;
   flex: 0 0 auto;
   display: flex;
@@ -45,8 +44,18 @@
   padding: 3px 12px;
   display: inline-block;
   border-radius: 10rem;
+}
+
+.mdx-timeline-item__period--filled {
   color: rgb(var(--lsd-text-secondary)) !important;
   background-color: rgb(var(--lsd-surface-secondary));
+  border: 1px solid rgb(var(--lsd-border-secondary));
+}
+
+.mdx-timeline-item__period--transparent {
+  color: rgb(var(--lsd-text-primary)) !important;
+  background-color: rgb(var(--lsd-surface-primary));
+  border: 1px solid rgb(var(--lsd-border-primary));
 }
 
 .mdx-timeline-item__item:last-child {
@@ -61,6 +70,10 @@
 .mdx-timeline-item--bottom-aligned {
   min-height: 308px;
   justify-content: space-between;
+}
+
+.mdx-timeline-item__description {
+  margin-top: auto;
 }
 
 @include utils.responsive('lg', 'down') {
