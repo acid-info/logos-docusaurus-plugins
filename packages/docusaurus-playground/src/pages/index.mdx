@@ -180,102 +180,64 @@ import * as challengesData from '/generated/challenges.json'
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
-  <SectionHeader
-    title="Development Roadmap"
-    description="Codex is currently in its first proof-of-concept iteration and aims to release its beta version, Katana, before the end of Q4 2023."
+  <Roadmap
+    title="Roadmap"
+    description="Nomos is currently in its first proof-of-concept iteration and aims to release its beta version, Katana, before the end of Q4 2023."
     bottom={{ xs: '4rem', lg: '7.25rem' }}
+    timeline={[
+      {
+        period: [2013],
+        description: "Ethereum's Whisper unveiled as web3 messaging protocol",
+      },
+      {
+        period: [2018],
+        description: 'Status establishes Vac to R&D Whisper improvements',
+      },
+      {
+        period: [2020],
+        description: 'Waku v1 replaces Whisper in Status app',
+      },
+      {
+        period: [2021, 'Q1'],
+        description: 'Waku v2 specs and PoC released with RLN Relay',
+      },
+      {
+        period: [2021, 'Q2'],
+        description: 'JS-Waku (for browsers) and Go-Waku released',
+      },
+      {
+        period: [2022, 'Q3'],
+        description: 'DNS Discovery added, plus availability in more languages',
+      },
+      {
+        period: [2022, 'Q4'],
+        description:
+          'SQLite for Waku Store, RLN Relay testnet debuts at DevCon',
+      },
+      {
+        period: [2023, 'Q2'],
+        description: 'Relay sharding, opt-in spam-protected topic',
+      },
+      {
+        period: [2023, 'Q4'],
+        description: 'Auto-sharding, DoS protection, bandwidth capping',
+      },
+      {
+        period: [2024, 'Q1'],
+        description: 'Auto-sharding, DoS protection, bandwidth capping',
+      },
+      {
+        period: [2025, '+'],
+        description: 'Operator Incentivization, use-case specific SDKs',
+      },
+    ]}
   />
-  <Grid
-    xs={{ cols: 6, wrap: false, gap: '0 1rem' }}
-    actions={
-      <CallToActionButton
-        style={{ marginTop: 0 }}
-        size="small"
-        variant="outlined"
-        href="/about"
-      >
-        Read more
-      </CallToActionButton>
-    }
-  >
-    <Grid.Item>
-      <TimelineItem
-        period="2021"
-        borderStyle="dashed"
-        description="Codex project begins"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2022"
-        borderStyle="solid"
-        description=" PoC-1 “Dagger” demos"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2022"
-        borderStyle="dashed"
-        description="Marketplace redesign, zk-proofs research"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2023"
-        borderStyle="solid"
-        description="PoC-2 “Scimitar” demos"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2023 Q3"
-        borderStyle="solid"
-        description="PoC-3 demo scheduled"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2023 Q4"
-        borderStyle="dashed"
-        description="V1 “Katana” release scheduled"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2024"
-        borderStyle="solid"
-        description="L2 aggregator node development"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2024"
-        borderStyle="dashed"
-        description="Payment channels/bandwidth incentives"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2025"
-        borderStyle="solid"
-        description="V2 with improved incentives and repair"
-      />
-    </Grid.Item>
-    <Grid.Item>
-      <TimelineItem
-        period="2025"
-        description="Public mainnet release"
-        borderStyle="none"
-      />
-    </Grid.Item>
-  </Grid>
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
-  <CallToActionSection
-    title="User Endorsements"
-  />
+  <CallToActionSection title="User Endorsements" />
 </Box>
+
 <Box top={{ xs: 64, lg: 100 }}>
   <Showcase
     id="showcase"

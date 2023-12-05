@@ -14,10 +14,16 @@ import { GridItem } from './GridItem'
 
 export type GridProps = React.ComponentProps<typeof GridRoot> & {
   actions?: React.ReactNode
+  leftLabel?: string
+  rightLabel?: string
+  spacingButtons?: boolean
 }
 
 export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
   actions,
+  leftLabel,
+  rightLabel,
+  spacingButtons = false,
   children,
   ...props
 }) => {
@@ -40,12 +46,27 @@ export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
     <GridRoot {...props} className={clsx(props.className, 'mdx-grid')}>
       <div className="mdx-grid__actions">
         {actions}
-        <div className="mdx-grid__scroll">
+        <div
+          className={clsx(
+            'mdx-grid__scroll',
+            spacingButtons && 'mdx-grid__scroll--spacing-buttons',
+          )}
+        >
           <IconButtonGroup size="small" color="primary">
-            <IconButton size="small" onClick={scroll.bind(null, -1)}>
+            <IconButton
+              className={clsx('mdx-grid__scroll-button')}
+              size="small"
+              onClick={scroll.bind(null, -1)}
+            >
               <ChevronLeftIcon />
+              {leftLabel?.length && leftLabel}
             </IconButton>
-            <IconButton size="small" onClick={scroll.bind(null, 1)}>
+            <IconButton
+              className={clsx('mdx-grid__scroll-button')}
+              size="small"
+              onClick={scroll.bind(null, 1)}
+            >
+              {rightLabel?.length && rightLabel}
               <ChevronRightIcon />
             </IconButton>
           </IconButtonGroup>
@@ -64,6 +85,7 @@ type GridBreakpointProps = {
   cols?: number
   wrap?: boolean
   gap?: string | number
+  scrollButtons?: boolean
 }
 
 const GridRoot = styled.div<{
@@ -79,6 +101,33 @@ const GridRoot = styled.div<{
     display: flex;
     flex-direction: row;
     gap: 0 1rem;
+
+    button:first-of-type {
+      justify-content: flex-start;
+    }
+
+    button:last-of-type {
+      justify-content: flex-end;
+    }
+  }
+
+  .mdx-grid__scroll--spacing-buttons {
+    width: 100%;
+
+    > div {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .mdx-grid__scroll-button {
+    width: 83px;
+    gap: 0.75rem;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid rgb(var(--lsd-border-primary)) !important;
+    padding: 6px 10px;
   }
 
   .mdx-grid__content {
@@ -95,7 +144,7 @@ const GridRoot = styled.div<{
     gap: 1rem;
 
     & > * {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -158,7 +207,27 @@ const GridRoot = styled.div<{
       'down',
     )(css`
       .mdx-grid__scroll {
-        display: none !important;
+        display: ${props.xs?.scrollButtons ? 'flex' : 'none'};
+
+        & > div {
+          justify-content: flex-end;
+
+          > button:not(:last-child) {
+            border-right: none !important;
+          }
+        }
+      }
+
+      .mdx-grid__scroll-button {
+        width: 28px;
+      }
+
+      .mdx-grid__scroll-button--left {
+        display: none;
+      }
+
+      .mdx-grid__scroll-button--right {
+        display: none;
       }
     `)}
 `

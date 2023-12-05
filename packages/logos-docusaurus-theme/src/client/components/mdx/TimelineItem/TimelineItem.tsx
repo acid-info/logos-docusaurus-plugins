@@ -12,11 +12,31 @@ export type TimelineItemProps = Omit<
   /** The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top') */
   alignment?: 'top' | 'bottom'
   /** The period or time frame associated with the timeline item. e.g., `2023 Q3` */
-  period: React.ReactNode
+  period: [number, 'Q1' | 'Q2' | 'Q3' | 'Q4' | '+'] | number
   /** The description or content of the timeline item. */
   description: React.ReactNode
   /** The border style for the timeline item */
   borderStyle?: 'solid' | 'dashed' | 'none'
+  /** The period style for the timeline item */
+  periodStyle?: 'transparent' | 'filled'
+}
+
+const formatPeriod = (input: TimelineItemProps['period']) => {
+  if (Array.isArray(input) && input.length > 0) {
+    let result = input[0].toString()
+
+    if (input.length > 1) {
+      if (input[1] === '+') {
+        result += '+'
+      } else {
+        result += ' ' + input[1]
+      }
+    }
+
+    return result
+  } else {
+    return ''
+  }
 }
 
 /**
@@ -65,12 +85,14 @@ export type TimelineItemProps = Omit<
  * </Box>
  * ```
  */
+
 export const TimelineItem: React.FC<TimelineItemProps> = ({
   index,
   period,
   description,
   alignment = 'top',
   borderStyle,
+  periodStyle,
   className,
   children,
   ...props
@@ -93,9 +115,12 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
           <Typography
             variant="subtitle1"
             component="span"
-            className="mdx-timeline-item__period"
+            className={clsx(
+              'mdx-timeline-item__period',
+              `mdx-timeline-item__period--${periodStyle}`,
+            )}
           >
-            {period}
+            {formatPeriod(period)}
           </Typography>
         </div>
         <Typography
