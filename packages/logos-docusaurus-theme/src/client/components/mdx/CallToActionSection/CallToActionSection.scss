@@ -41,7 +41,7 @@
   }
 
   .mdx-cta-section__title {
-    @include lsd.typography('h6', false);
+    @include lsd.typography('h5', false);
   }
 
   .mdx-cta-section__description {
@@ -65,7 +65,7 @@
 
 .mdx-cta-section--simple {
   .mdx-cta-section__title {
-    @include lsd.typography('h6', false);
+    @include lsd.typography('h5', false);
   }
 
   .mdx-cta-section__description {
@@ -91,7 +91,7 @@
   }
 
   .mdx-cta-section__title {
-    @include lsd.typography('h6', false);
+    @include lsd.typography('h5', false);
   }
 
   .mdx-cta-section__description {

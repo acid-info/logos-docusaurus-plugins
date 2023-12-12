@@ -62,7 +62,7 @@
 }
 
 .blog-wrapper--index h2[itemprop='headline'] {
-  @include lsd.typography('h6');
+  @include lsd.typography('h5');
 
   > a {
     text-decoration: none;
@@ -210,7 +210,7 @@
           margin: 0 !important;
 
           h3 {
-            @include lsd.typography('h6');
+            @include lsd.typography('h5');
           }
 
           a {

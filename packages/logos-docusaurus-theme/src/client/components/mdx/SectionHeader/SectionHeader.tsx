@@ -21,7 +21,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       <Typography
         className="mdx-section-header__title"
         component="h2"
-        variant="h6"
+        variant="h5"
       >
         {title}
       </Typography>

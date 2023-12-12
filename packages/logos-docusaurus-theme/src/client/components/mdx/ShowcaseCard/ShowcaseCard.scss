@@ -29,7 +29,7 @@
   }
 
   .mdx-showcase-card__name {
-    @include lsd.typography('h6');
+    @include lsd.typography('h5');
   }
 
   .mdx-showcase-card__description {

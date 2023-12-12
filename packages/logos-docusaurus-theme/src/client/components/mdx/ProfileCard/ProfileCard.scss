@@ -103,6 +103,6 @@
   }
 
   .mdx-profile-card__name {
-    @include lsd.typography('h6');
+    @include lsd.typography('h5');
   }
 }

@@ -66,7 +66,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
       {...props}
     >
       <Typography
-        variant="h6"
+        variant="h5"
         component="h1"
         className="mdx-feature-list__title"
       >
@@ -91,7 +91,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
                 {feature.title}
               </Typography>
               <Typography
-                variant="h6"
+                variant="h5"
                 component="h3"
                 className="mdx-feature-list__feature-description"
               >

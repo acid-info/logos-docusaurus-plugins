@@ -30,7 +30,7 @@ export const SingleDepartmentJobs: React.FC<SingleDepartmentJobsProps> = ({
               className="mdx-jpd__job-link"
             >
               <div className="mdx-jpd__job-title-container">
-                <Typography variant="h6" className="mdx-jpd__job-title">
+                <Typography variant="h5" className="mdx-jpd__job-title">
                   {job.title}
                 </Typography>
                 <IconExternalLink className="mdx-jpd__external-link-icon" />

@@ -130,7 +130,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
         </Typography>
       </div>
       <Typography
-        variant="h6"
+        variant="h5"
         component="p"
         className="mdx-timeline-item__description"
       >

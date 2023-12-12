@@ -9,7 +9,7 @@ type SubtitleProps = {
 
 export const Subtitle = ({ content }: SubtitleProps): JSX.Element => {
   return (
-    <Typography variant="h6" className={clsx(styles.blogPostSubtitle)}>
+    <Typography variant="h5" className={clsx(styles.blogPostSubtitle)}>
       {content}
     </Typography>
   )
