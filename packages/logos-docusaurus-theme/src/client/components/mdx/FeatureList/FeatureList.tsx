@@ -84,7 +84,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
                 {index + 1}
               </Typography>
               <Typography
-                variant="h3"
+                variant="h2"
                 component="h2"
                 className="mdx-feature-list__feature-title"
               >

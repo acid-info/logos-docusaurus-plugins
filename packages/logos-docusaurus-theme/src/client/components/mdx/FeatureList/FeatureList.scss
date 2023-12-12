@@ -110,7 +110,7 @@
 @include utils.responsive('lg', 'down') {
   .mdx-feature-list {
     .mdx-feature-list__title {
-      @include lsd.typography('subtitle1', false);
+      @include lsd.typography('subtitle2', false);
       padding: 1rem 0;
     }
   }
@@ -136,12 +136,12 @@
     }
 
     .mdx-feature-list__feature-title {
-      @include lsd.typography('h5', false);
+      @include lsd.typography('h4', false);
       margin-top: 1rem;
     }
 
     .mdx-feature-list__feature-description {
-      @include lsd.typography('subtitle1');
+      @include lsd.typography('body1', false);
       margin-top: 3rem;
     }
 

@@ -37,14 +37,14 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
           />
         )}
         <Typography
-          variant="h3"
+          variant="h2"
           component="h2"
           className="mdx-showcase-card__name"
         >
           {name}
         </Typography>
         <Typography
-          variant="subtitle1"
+          variant="body1"
           component="p"
           className="mdx-showcase-card__description"
         >

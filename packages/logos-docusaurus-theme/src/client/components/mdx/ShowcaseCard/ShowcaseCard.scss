@@ -29,7 +29,8 @@
   }
 
   .mdx-showcase-card__name {
-    @include lsd.typography('h5');
+    font-size: 1.375rem !important;
+    line-height: 1.75rem !important;
   }
 
   .mdx-showcase-card__description {

@@ -37,14 +37,12 @@
 }
 
 .mdx-ns__description {
-  font-size: 32px !important;
-  line-height: 40px !important;
+  @include lsd.typography('h3', false);
 }
 
 @include utils.responsive('md', 'down') {
   .mdx-ns__description {
-    font-size: 24px !important;
-    line-height: 32px !important;
+    @include lsd.typography('h4', false);
   }
 
   .mdx-ns__inner {

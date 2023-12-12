@@ -117,10 +117,13 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
 }) => {
   const withDescription = !!description
   const withList = list.length > 0
+  const withButton = !!href
 
   const display =
-    title && !withDescription && !withList
+    title && !withDescription && !withButton && !withList
       ? 'title-only'
+      : title && !description && !withList && withButton
+      ? 'title-button'
       : title && description && columns === 2
       ? `full-width`
       : title && description && list.length > 0
@@ -158,10 +161,10 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
         <div className="mdx-cta-section__list">
           {list.map((option, index) => (
             <div key={index}>
-              <Typography variant="subtitle1" component="div">
+              <Typography variant="subtitle2" component="div">
                 {option.title}
               </Typography>
-              <Typography variant="h3" component="p">
+              <Typography variant="h2" component="p">
                 {option.description}
               </Typography>
             </div>
