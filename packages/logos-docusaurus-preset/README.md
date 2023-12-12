@@ -6,6 +6,8 @@
   - [Supported Themes](#supported-themes)
   - [OpenGraph Image Generator](#opengraph-image-generator)
   - [Local Search](#local-search)
+  - [Generated Files](#generated-files)
+    - [Job Openings](#job-openings)
   - [Docs Plugin](#docs-plugin)
   - [Pages Plugin](#pages-plugin)
   - [Blog Plugin](#blog-plugin)
@@ -190,6 +192,31 @@ presets: [
 ```
 
 To learn more on how the plugin works, please visit the [plugin documentation](../docusaurus-search-local/README.md).
+
+### Generated Files
+
+#### Job Openings
+
+Use the `generated.jobList` option to fetch job openings from the Greenhouse API for a specific job board. Each time you run `yarn start` or `yarn build`, the plugin will fetch the latest job openings from the Greenhouse API and generate a JSON file containing the job openings for the specified job board. The generated file will be located at `static/generated/jobs.json`.
+
+```js
+presets: [
+  [
+    '@acid-info/logos-docusaurus-preset',
+    /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
+    ({
+      businessUnit: 'Logos',
+      generated: {
+        jobList: {
+          jobBoard: 'your-job-board-id',
+        },
+      },
+    }),
+  ],
+],
+```
+
+You can import the generated file in your website's code and use it to display the job openings. For example, you can use the `JobsPerDepartment` component from the [Logos theme](../logos-docusaurus-theme/README.md#jobsperdepartment) to display the job openings per department.
 
 ### Docs Plugin
 

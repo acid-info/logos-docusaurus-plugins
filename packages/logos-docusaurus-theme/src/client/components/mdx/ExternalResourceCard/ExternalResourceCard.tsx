@@ -10,14 +10,51 @@ export type ExternalResourceCardProps = Omit<
   React.HTMLProps<HTMLAnchorElement>,
   'title'
 > & {
+  /**
+   * The source URL for logo image in light mode
+   */
   logoSrc?: string
+  /**
+   * The source URL for logo image in dark mode
+   */
   logoSrcDark?: string
+  /**
+   * The title of the external resource
+   */
   title?: React.ReactNode
+  /**
+   * The description of the external resource
+   */
   description?: React.ReactNode
+  /**
+   * The source URL for the preview image in light mode
+   * */
   previewSrc?: string
+  /**
+   * The source URL for the preview image in dark mode
+   */
   previewSrcDark?: string
 }
 
+/**
+ * A card component with an optional image preview for displaying information about an external resource.
+ *
+ * @example
+ * **Example usage:**
+ * ```jsx
+ * import { ExternalResourceCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+ *
+ * <ExternalResourceCard
+ *   title="Figma"
+ *   href="https://www.figma.com/
+ *   description="Design and prototype in one place with Figma."
+ *   logoSrc="/img/figma-logo.svg"
+ *   logoSrcDark="/img/figma-logo-dark.svg"
+ *   previewSrc="/img/figma-preview.png"
+ *   previewSrcDark="/img/figma-preview-dark.png"
+ * />
+ * ```
+ */
 export const ExternalResourceCard: React.FC<ExternalResourceCardProps> = ({
   title,
   logoSrc,

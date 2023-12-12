@@ -11,11 +11,14 @@
     - [How to Disable the Image Generator for a Specific Page:](#how-to-disable-the-image-generator-for-a-specific-page)
   - [MDX Components](#mdx-components)
     - [AppCard](#appcard)
+    - [AssetCard](#assetcard)
     - [Box](#box)
     - [CallToActionButton](#calltoactionbutton)
     - [CallToActionSection](#calltoactionsection)
+    - [ExternalResourceCard](#externalresourcecard)
     - [FeatureList](#featurelist)
     - [Hero](#hero)
+    - [JobsPerDepartment](#jobsperdepartment)
     - [PageCard](#pagecard)
     - [ProfileCard](#profilecard)
     - [SocialCard](#socialcard)
@@ -219,6 +222,7 @@ A card component for displaying information about an app.
 
 ```jsx
 import { AppCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<AppCard
   name="Status"
   link="https://status.im"
@@ -235,6 +239,7 @@ import {
   Grid,
   AppCard,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<Grid xs={{ cols: 1, wrap: true, gap: '0 1rem' }} lg={{ cols: 2 }}>
   <Grid.Item xs={1}>
     <AppCard
@@ -257,16 +262,44 @@ import {
 </Grid>
 ```
 
+### AssetCard
+
+A card component with an image preview and download buttons.
+
+**Props**
+
+| Prop Name     | Type           | Required | Default | Description                                                                                                                          |
+| ------------- | -------------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| title         | ReactReactNode | false    |         | The title of the asset                                                                                                               |
+| previewSrc    | string         | true     |         | The source URL for the preview image                                                                                                 |
+| forceDownload | boolean        | false    | false   | Whether to force download the asset when clicking on the preview image (default: false); if false, the asset might open in a new tab |
+| downloadable  | Array          | false    |         | The list of downloadable assets                                                                                                      |
+
+**Example usage:**
+
+```jsx
+import { AssetCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
+;<AssetCard
+  title="Logo"
+  previewSrc="/img/logo.svg"
+  downloadable={[
+    { src: '/img/logo.svg', title: 'SVG' },
+    { src: '/img/logo.png', title: 'PNG' },
+  ]}
+/>
+```
+
 ### Box
 
 A box component that can be used to add top and bottom margins with breakpoints.
 **Props**
 
-| Prop Name | Type                     | Required | Default | Description |
-| --------- | ------------------------ | -------- | ------- | ----------- | --- |
-| top       | BreakpointsStyle<number> | number   | false   | 0           |     |
-| bottom    | BreakpointsStyle<number> | number   | false   | 0           |     |
-| style     | undefined                | false    | {}      | undefined   |
+| Prop Name | Type                               | Required | Default | Description |
+| --------- | ---------------------------------- | -------- | ------- | ----------- |
+| top       | BreakpointsStyle<number> \| number | false    | 0       |             |
+| bottom    | BreakpointsStyle<number> \| number | false    | 0       |             |
+| style     | undefined                          | false    | {}      | undefined   |
 
 ```tsx
 import { Box } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
@@ -281,15 +314,15 @@ A call-to-action button that can be used in MDX pages.
 
 **Props**
 
-| Prop Name      | Type                   | Required | Default  | Description                                   |
-| -------------- | ---------------------- | -------- | -------- | --------------------------------------------- | ------- | ---------------------- |
-| href           | string                 | false    |          | The URL to link to when the button is clicked |
-| size           | 'small'                | 'medium' | 'large'  | false                                         | 'large' | The size of the button |
-| @type {'small' | 'medium'               | 'large'} |
-| variant        | ButtonProps['variant'] | false    | 'filled' | The variant of the button                     |
+| Prop Name | Type                   | Required | Default  | Description                                   |
+| --------- | ---------------------- | -------- | -------- | --------------------------------------------- | ---------------------- |
+| href      | string                 | false    |          | The URL to link to when the button is clicked |
+| size      | 'small' \| 'medium'    | 'large'  | false    | 'large'                                       | The size of the button |
+| variant   | ButtonProps['variant'] | false    | 'filled' | The variant of the button                     |
 
 ```jsx
 import { CallToActionButton } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<CallToActionButton
   href="https://discord.gg/server"
   size="large"
@@ -306,10 +339,10 @@ A call-to-action section component that can be used in MDX pages.
 **Props**
 
 | Prop Name   | Type                                | Required | Default    | Description                                               |
-| ----------- | ----------------------------------- | -------- | ---------- | --------------------------------------------------------- | ----------------------------------------------- |
+| ----------- | ----------------------------------- | -------- | ---------- | --------------------------------------------------------- |
 | title       | ReactReactNode                      | false    |            | The title of the section                                  |
 | description | ReactReactNode                      | false    |            | The description of the section                            |
-| columns     | 1                                   | 2        | false      | 1                                                         | The number of columns to display the content in |
+| columns     | 1 \| 2                              | false    | 1          | The number of columns to display the content in           |
 | href        | string                              | false    |            | The URL to link to when the button is clicked             |
 | label       | string                              | false    |            | The label to display on the button                        |
 | target      | ReactAnchorHTMLAttributes['target'] | false    |            | The target attribute for the link e.g., `_self`, `_blank` |
@@ -318,6 +351,7 @@ A call-to-action section component that can be used in MDX pages.
 
 ```tsx
 import { CallToActionSection } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<CallToActionSection
   title="Logos Network State"
   columns={1}
@@ -332,6 +366,7 @@ With a list:
 
 ```tsx
 import { CallToActionSection } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<CallToActionSection
   title="Run Nimbus in one of three setups"
   description={
@@ -364,20 +399,52 @@ import { CallToActionSection } from '@acid-info/logos-docusaurus-theme/lib/clien
 />
 ```
 
+### ExternalResourceCard
+
+A card component with an optional image preview for displaying information about an external resource.
+
+**Props**
+
+| Prop Name      | Type           | Required | Default | Description                                        |
+| -------------- | -------------- | -------- | ------- | -------------------------------------------------- |
+| logoSrc        | string         | false    |         | The source URL for logo image in light mode        |
+| logoSrcDark    | string         | false    |         | The source URL for logo image in dark mode         |
+| title          | ReactReactNode | false    |         | The title of the external resource                 |
+| description    | ReactReactNode | false    |         | The description of the external resource           |
+| previewSrc     | string         | false    |         | The source URL for the preview image in light mode |
+| previewSrcDark | string         | false    |         | The source URL for the preview image in dark mode  |
+
+**Example usage:**
+
+```jsx
+import { ExternalResourceCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
+<ExternalResourceCard
+  title="Figma"
+  href="https://www.figma.com/
+  description="Design and prototype in one place with Figma."
+  logoSrc="/img/figma-logo.svg"
+  logoSrcDark="/img/figma-logo-dark.svg"
+  previewSrc="/img/figma-preview.png"
+  previewSrcDark="/img/figma-preview-dark.png"
+/>
+```
+
 ### FeatureList
 
 A component that displays a list of features with titles and descriptions.
 
 **Props**
 
-| Prop Name | Type           | Required | Default    | Description                                       |
-| --------- | -------------- | -------- | ---------- | ------------------------------------------------- | ---------------------------------------------- |
-| title     | ReactReactNode | false    | 'Features' | The title of the feature list.                    |
-| features  | Array          | false    | []         | An array of features to be displayed in the list. |
-| alignment | 'bottom'       | 'top'    | false      | 'bottom'                                          | The vertical alignment of feature description. |
+| Prop Name | Type              | Required | Default    | Description                                       |
+| --------- | ----------------- | -------- | ---------- | ------------------------------------------------- |
+| title     | ReactReactNode    | false    | 'Features' | The title of the feature list.                    |
+| features  | Array             | false    | []         | An array of features to be displayed in the list. |
+| alignment | 'bottom' \| 'top' | false    | 'bottom'   | The vertical alignment of feature description.    |
 
 ```tsx
 import { FeatureList } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<FeatureList
   title="Features"
   alignment="top"
@@ -399,9 +466,9 @@ A hero component that displays a large banner at the top of a page.
 
 **Props**
 
-| Prop Name | Type    | Required | Default | Description |
-| --------- | ------- | -------- | ------- | ----------- | -------- | --- |
-| size      | 'large' | 'medium' | 'small' | false       | 'medium' |     |
+| Prop Name | Type                | Required | Default | Description |
+| --------- | ------------------- | -------- | ------- | ----------- | --- |
+| size      | 'large' \| 'medium' | 'small'  | false   | 'medium'    |     |
 
 ```tsx
 import {
@@ -412,6 +479,7 @@ import {
   HeroActions,
   HeroAction,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<Hero size="large">
   <HeroInfo>
     <HeroTitle>
@@ -447,6 +515,27 @@ import {
 </Hero>
 ```
 
+### JobsPerDepartment
+
+A component for displaying job openings organized by department. The component requires a `jobData` prop that contains an array of departments, each with an array of jobs openings. If you're using our preset, this data is automatically fetched from Greenhouse API. To enable this, please refer to the [preset documentation](../logos-docusaurus-preset#xyz).
+
+**Props**
+
+| Prop Name    | Type      | Required | Default | Description                                                  |
+| ------------ | --------- | -------- | ------- | ------------------------------------------------------------ |
+| jobData      | signature | true     |         | An array of departments, each with an array of job openings. |
+| titleFilter  | string    | false    | ''      | A string to filter jobs by title.                            |
+| useDummyData | boolean   | false    | false   | Use dummy data instead of real data.                         |
+
+**Example usage:**
+
+```jsx
+import * as jobData from '/static/generated/jobs.json'
+import { JobsPerDepartment } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
+;<JobsPerDepartment jobData={jobData} />
+```
+
 ### PageCard
 
 A card component used in Docusaurus auto-generated category index pages to display page links.
@@ -462,6 +551,7 @@ A card component used in Docusaurus auto-generated category index pages to displ
 
 ```tsx
 import { PageCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<PageCard
   title="Sample Page"
   description="This is a sample page description."
@@ -486,6 +576,7 @@ A component used to display team members' profiles, including their name, avatar
 
 ```tsx
 import { ProfileCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<ProfileCard
   imgSrc="/path/to/profile-image.jpg"
   name="John Doe"
@@ -503,6 +594,7 @@ import {
   Grid,
   ProfileCard,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<Grid
   xs={{ cols: 3, gap: '1rem', wrap: false }}
   md={{ cols: 4, gap: '1rem', wrap: true }}
@@ -534,6 +626,7 @@ A component used for displaying social media or community platform cards with a 
 
 ```tsx
 import { SocialCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<SocialCard
   title="Telegram Community"
   logoSrc="/path/to/telegram-logo.png"
@@ -550,13 +643,13 @@ import {
   Grid,
   SocialCard,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<Box top={56} bottom={56}>
   <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
     <Grid.Item xs={1}>
       <SocialCard
         href="https://twitter.com/twitter-handle"
-        logoSrc="/icons/x-black.svg"
-        logoSrcDark="/icons/x-white.svg"
+        logoSrcDark="/icons/x.svg"
         description="Follow us on X"
       />
     </Grid.Item>
@@ -577,13 +670,13 @@ A component for displaying roadmap items, such as events or milestones, in a tim
 
 **Props**
 
-| Prop Name   | Type           | Required | Default | Description                                                                 |
-| ----------- | -------------- | -------- | ------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------- |
-| index       | ReactReactNode | true     |         | The index or label of the timeline item.                                    |
-| alignment   | 'top'          | 'bottom' | false   | 'top'                                                                       | The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top') |
-| period      | ReactReactNode | true     |         | The period or time frame associated with the timeline item. e.g., `2023 Q3` |
-| description | ReactReactNode | true     |         | The description or content of the timeline item.                            |
-| borderStyle | 'solid'        | 'dashed' | 'none'  | false                                                                       |                                                                                          | The border style for the timeline item |
+| Prop Name   | Type                | Required | Default | Description                                                                              |
+| ----------- | ------------------- | -------- | ------- | ---------------------------------------------------------------------------------------- | -------------------------------------- |
+| index       | ReactReactNode      | true     |         | The index or label of the timeline item.                                                 |
+| alignment   | 'top' \| 'bottom'   | false    | 'top'   | The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top') |
+| period      | ReactReactNode      | true     |         | The period or time frame associated with the timeline item. e.g., `2023 Q3`              |
+| description | ReactReactNode      | true     |         | The description or content of the timeline item.                                         |
+| borderStyle | 'solid' \| 'dashed' | 'none'   | false   |                                                                                          | The border style for the timeline item |
 
 Roadmap example:
 
@@ -595,6 +688,7 @@ import {
   SectionHeader,
   CallToActionButton,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+
 ;<Box top={{ xs: 144, lg: 216 }}>
   <SectionHeader
     title="Roadmap"

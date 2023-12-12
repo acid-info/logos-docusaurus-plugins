@@ -12,12 +12,42 @@ export type DownloadableAsset = {
 }
 
 export type AssetCardProps = Omit<React.HTMLProps<HTMLDivElement>, 'title'> & {
+  /**
+   * The title of the asset
+   */
   title?: React.ReactNode
+  /**
+   * The source URL for the preview image
+   */
   previewSrc: string
+  /**
+   * Whether to force download the asset when clicking on the preview image (default: false); if false, the asset might open in a new tab
+   */
   forceDownload?: boolean
+  /**
+   * The list of downloadable assets
+   */
   downloadable?: DownloadableAsset[]
 }
 
+/**
+ * A card component with an image preview and download buttons.
+ *
+ * @example
+ * **Example usage:**
+ * ```jsx
+ * import { AssetCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+ *
+ * <AssetCard
+ *  title="Logo"
+ *  previewSrc="/img/logo.svg"
+ *  downloadable={[
+ *   { src: "/img/logo.svg", title: "SVG" },
+ *   { src: "/img/logo.png", title: "PNG" },
+ *  ]}
+ * />
+ * ```
+ */
 export const AssetCard: React.FC<AssetCardProps> = ({
   title,
   previewSrc,

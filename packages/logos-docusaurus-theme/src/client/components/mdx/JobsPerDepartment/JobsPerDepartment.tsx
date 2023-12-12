@@ -63,16 +63,35 @@ const hasJobs = (jobsPerDepartment: JobDepartmentArray): boolean => {
 }
 
 type JobsPerDepartmentProps = React.HTMLAttributes<HTMLDivElement> & {
+  /**
+   * An array of departments, each with an array of job openings.
+   */
   jobData: { departments?: JobDepartmentArray }
+  /**
+   * A string to filter jobs by title.
+   */
   titleFilter?: string
-  fetchAll?: boolean
+  /**
+   * Use dummy data instead of real data.
+   */
   useDummyData?: boolean
 }
 
+/**
+ * A component for displaying job openings organized by department. The component requires a `jobData` prop that contains an array of departments, each with an array of jobs openings. If you're using our preset, this data is automatically fetched from Greenhouse API. To enable this, please refer to the [preset documentation](../logos-docusaurus-preset#job-openings).
+ *
+ * @example
+ * **Example usage:**
+ * ```jsx
+ * import * as jobData from '/static/generated/jobs.json'
+ * import { JobsPerDepartment } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
+ *
+ * <JobsPerDepartment jobData={jobData} />
+ * ```
+ */
 export const JobsPerDepartment: React.FC<JobsPerDepartmentProps> = ({
   jobData,
   titleFilter = '',
-  fetchAll = false,
   useDummyData = false,
   ...props
 }) => {
