@@ -32,6 +32,9 @@ jobs:
           yarn install --frozen-lockfile
           yarn lerna link
 
+      - name: Build packages
+        run: yarn build
+
       - name: Publish
         id: publish
         run: |
