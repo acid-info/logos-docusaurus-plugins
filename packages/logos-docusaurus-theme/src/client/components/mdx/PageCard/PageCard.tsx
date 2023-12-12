@@ -51,7 +51,7 @@ export const PageCard: React.FC<PageCardProps> = ({
           <Typography
             className="mdx-page-card__description"
             component="span"
-            variant="body2"
+            variant="body3"
           >
             {description}
           </Typography>

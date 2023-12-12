@@ -36,7 +36,7 @@ export const ColorCard: React.FC<ColorCardProps> = ({
       <div className={styles.info}>
         <Typography
           className={styles.title}
-          variant="subtitle1"
+          variant="subtitle2"
           component="div"
         >
           {title}

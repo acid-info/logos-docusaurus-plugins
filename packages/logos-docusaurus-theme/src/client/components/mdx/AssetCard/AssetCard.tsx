@@ -101,7 +101,7 @@ export const AssetCard: React.FC<AssetCardProps> = ({
         {title && (
           <Typography
             component="div"
-            variant="subtitle1"
+            variant="subtitle2"
             className="mdx-asset-card__title"
           >
             {title}
