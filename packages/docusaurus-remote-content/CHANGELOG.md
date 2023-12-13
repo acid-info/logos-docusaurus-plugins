@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.128](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.127...v1.0.0-alpha.128) (2023-12-13)
+
+### Features
+
+- **docusaurus-remote-content:** extend cli and add a command for downloading remote content ([5bc2ad4](https://github.com/acid-info/logos-docusaurus-plugins/commit/5bc2ad4c8354bddf48f17851982e14b8c9c22bd5))
+
 # [1.0.0-alpha.124](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.123...v1.0.0-alpha.124) (2023-11-24)
 
 ### Bug Fixes
