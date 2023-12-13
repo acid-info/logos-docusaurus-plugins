@@ -21,8 +21,8 @@ export type GridProps = React.ComponentProps<typeof GridRoot> & {
 
 export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
   actions,
-  leftLabel,
-  rightLabel,
+  leftLabel = '',
+  rightLabel = '',
   spacingButtons = false,
   children,
   ...props
@@ -54,19 +54,33 @@ export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
         >
           <IconButtonGroup size="small" color="primary">
             <IconButton
-              className={clsx('mdx-grid__scroll-button')}
+              className={clsx(
+                'mdx-grid__scroll-button',
+                leftLabel?.length && 'mdx-grid__scroll-button--with-label',
+              )}
               size="small"
               onClick={scroll.bind(null, -1)}
             >
               <ChevronLeftIcon />
-              {leftLabel?.length && leftLabel}
+              {leftLabel.length ? (
+                <span className="mdx-grid__scroll-button-label">
+                  {leftLabel}
+                </span>
+              ) : null}
             </IconButton>
             <IconButton
-              className={clsx('mdx-grid__scroll-button')}
+              className={clsx(
+                'mdx-grid__scroll-button',
+                rightLabel?.length && 'mdx-grid__scroll-button--with-label',
+              )}
               size="small"
-              onClick={scroll.bind(null, 1)}
+              onClick={scroll.bind(null, +1)}
             >
-              {rightLabel?.length && rightLabel}
+              {rightLabel.length ? (
+                <span className="mdx-grid__scroll-button-label">
+                  {rightLabel}
+                </span>
+              ) : null}
               <ChevronRightIcon />
             </IconButton>
           </IconButtonGroup>
@@ -101,14 +115,7 @@ const GridRoot = styled.div<{
     display: flex;
     flex-direction: row;
     gap: 0 1rem;
-
-    button:first-of-type {
-      justify-content: flex-start;
-    }
-
-    button:last-of-type {
-      justify-content: flex-end;
-    }
+    margin-left: auto;
   }
 
   .mdx-grid__scroll--spacing-buttons {
@@ -118,16 +125,14 @@ const GridRoot = styled.div<{
       justify-content: space-between;
       width: 100%;
     }
+
+    > div > button:not(:last-child) {
+      border-right: 1px solid rgb(var(--lsd-border-primary)) !important;
+    }
   }
 
   .mdx-grid__scroll-button {
-    width: 83px;
-    gap: 0.75rem;
     display: flex;
-    align-items: center;
-    align-self: stretch;
-    border: 1px solid rgb(var(--lsd-border-primary)) !important;
-    padding: 6px 10px;
   }
 
   .mdx-grid__content {
@@ -197,8 +202,37 @@ const GridRoot = styled.div<{
             scroll-snap-type: x mandatory;
           }
         `}
+
+        ${bp.scrollButtons === false &&
+        css`
+          .mdx-grid__scroll {
+            display: none;
+          }
+        `}
       `)
     })}
+
+  ${(props) =>
+    lsdUtils.responsive(
+      props.theme as any,
+      'md',
+      'up',
+    )(css`
+      .mdx-grid__scroll-button--with-label {
+        width: auto;
+        min-width: 83px;
+        padding: 5px 11px 5px 9px;
+        gap: 12px;
+
+        &:first-of-type {
+          justify-content: flex-start;
+        }
+
+        &:last-of-type {
+          justify-content: flex-start;
+        }
+      }
+    `)}
 
   ${(props) =>
     lsdUtils.responsive(
@@ -207,8 +241,6 @@ const GridRoot = styled.div<{
       'down',
     )(css`
       .mdx-grid__scroll {
-        display: ${props.xs?.scrollButtons ? 'flex' : 'none'};
-
         & > div {
           justify-content: flex-end;
 
@@ -218,15 +250,7 @@ const GridRoot = styled.div<{
         }
       }
 
-      .mdx-grid__scroll-button {
-        width: 28px;
-      }
-
-      .mdx-grid__scroll-button--left {
-        display: none;
-      }
-
-      .mdx-grid__scroll-button--right {
+      .mdx-grid__scroll-button-label {
         display: none;
       }
     `)}

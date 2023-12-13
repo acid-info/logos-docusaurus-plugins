@@ -9,8 +9,6 @@ export type TimelineItemProps = Omit<
 > & {
   /** The index or label of the timeline item. */
   index: React.ReactNode
-  /** The alignment of the timeline item, either 'top' or 'bottom'. (Optional, default: 'top') */
-  alignment?: 'top' | 'bottom'
   /** The period or time frame associated with the timeline item. e.g., `2023 Q3` */
   period: [number, 'Q1' | 'Q2' | 'Q3' | 'Q4' | '+'] | number
   /** The description or content of the timeline item. */
@@ -90,7 +88,6 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
   index,
   period,
   description,
-  alignment = 'top',
   borderStyle,
   periodStyle,
   className,
@@ -102,7 +99,6 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
       className={clsx(
         className,
         'mdx-timeline-item',
-        `mdx-timeline-item--${alignment}-aligned`,
         borderStyle === 'dashed' && 'mdx-timeline-item--border-dashed',
       )}
       {...props}
