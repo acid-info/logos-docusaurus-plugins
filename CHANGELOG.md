@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.129](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.128...v1.0.0-alpha.129) (2023-12-13)
+
+### Bug Fixes
+
+- fix bugs with roadmap and grid ([22f9187](https://github.com/acid-info/logos-docusaurus-plugins/commit/22f9187be858017604412abbb4398a271a3b714c))
+
+### Features
+
+- update components related to roadmap ([4d02df2](https://github.com/acid-info/logos-docusaurus-plugins/commit/4d02df2d938ba865bd1280fa0b7578499b8a8615))
+
 # [1.0.0-alpha.128](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.127...v1.0.0-alpha.128) (2023-12-13)
 
 ### Features
