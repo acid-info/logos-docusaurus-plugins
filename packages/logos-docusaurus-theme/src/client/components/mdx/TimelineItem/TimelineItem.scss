@@ -3,6 +3,8 @@
 
 .mdx-timeline-item {
   width: 236px;
+  min-height: 306px;
+  justify-content: space-between;
   gap: 1rem;
   flex: 0 0 auto;
   display: flex;
@@ -62,14 +64,6 @@
   .mdx-timeline-item__border {
     display: none;
   }
-}
-
-.mdx-timeline-item--top-aligned {
-}
-
-.mdx-timeline-item--bottom-aligned {
-  min-height: 308px;
-  justify-content: space-between;
 }
 
 .mdx-timeline-item__description {
