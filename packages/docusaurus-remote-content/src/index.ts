@@ -73,38 +73,15 @@ const copyContent = async (
   tmpDir.removeCallback()
 }
 
-type PluginOptions = {
-  remote: {
-    type: 'zip'
-    url: string
-    dir?: string
-  }
-
-  // The directory in the remote repository containing the content to be copied
-  sourceDir: string
-
-  // The directory in the local site to copy the content to
-  outDir: string
-
-  // Exclude files matching these glob patterns
-  excludeRemote?: string[]
-
-  // Keep local files matching these glob patterns
-  keepLocal?: string[]
-
-  // Keep local static files matching these glob patterns
-  keepStatic?: string[]
-}
-
-export default async function remoteContentPlugin(
+const downloadRemoteContent = async (
   context: LoadContext,
   options: PluginOptions,
-): Promise<Plugin<undefined>> {
+) => {
   const tempDir = tmp.dirSync({ unsafeCleanup: true })
   const repoDir = path.join(tempDir.name, 'repo')
   const zipDir = path.join(tempDir.name, 'zip')
 
-  const downloadRemoteContent = async () => {
+  const downloadContent = async () => {
     const { remote, sourceDir, outDir } = options
 
     if (remote.type === 'zip') {
@@ -135,6 +112,7 @@ export default async function remoteContentPlugin(
       keepLocal = [],
     } = options
 
+    logger.info("Copying remote content to local site's content directory")
     await copyContent(
       path.join(repoDir, sourceDir),
       path.join(context.siteDir, outDir),
@@ -144,6 +122,7 @@ export default async function remoteContentPlugin(
       },
     )
 
+    logger.info("Copying remote static files to local site's static directory")
     await copyContent(
       path.join(repoDir, 'static'),
       path.join(context.siteDir, 'static'),
@@ -156,7 +135,7 @@ export default async function remoteContentPlugin(
 
   try {
     logger.info`Downloading remote content from ${options.remote.url}`
-    await downloadRemoteContent()
+    await downloadContent()
     await copyRemoteContent()
     tempDir.removeCallback()
   } catch (error) {
@@ -166,9 +145,47 @@ export default async function remoteContentPlugin(
 
     process.exit(1)
   }
+}
 
+type PluginOptions = {
+  remote: {
+    type: 'zip'
+    url: string
+    dir?: string
+  }
+
+  // The directory in the remote repository containing the content to be copied
+  sourceDir: string
+
+  // The directory in the local site to copy the content to
+  outDir: string
+
+  // Exclude files matching these glob patterns
+  excludeRemote?: string[]
+
+  // Keep local files matching these glob patterns
+  keepLocal?: string[]
+
+  // Keep local static files matching these glob patterns
+  keepStatic?: string[]
+}
+
+export default async function remoteContentPlugin(
+  context: LoadContext,
+  options: PluginOptions,
+): Promise<Plugin<undefined>> {
   return {
     name: 'docusaurus-remote-content',
+    extendCli(cli) {
+      cli
+        .command('remote-content')
+        .description('Download remote content')
+        .action(() => {})
+        .command('download')
+        .action(async (...args) => {
+          await downloadRemoteContent(context, options)
+        })
+    },
   }
 }
 
