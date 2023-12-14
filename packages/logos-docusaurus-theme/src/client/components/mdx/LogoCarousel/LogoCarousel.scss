@@ -1,0 +1,33 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-logo-carousel {
+  .mdx-section-header__title {
+    flex-basis: 100%;
+  }
+
+  .mdx-section-header__extra {
+    margin-left: auto;
+  }
+
+  .mdx-logo-carousel__inner {
+    margin-top: 100px;
+  }
+
+  .mdx-logo-carousel__item {
+    flex-shrink: 0;
+  }
+
+  .mdx-logo-carousel__logo {
+    height: 86px;
+    width: auto;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-logo-carousel {
+    .mdx-logo-carousel__inner {
+      margin-top: 64px;
+    }
+  }
+}
