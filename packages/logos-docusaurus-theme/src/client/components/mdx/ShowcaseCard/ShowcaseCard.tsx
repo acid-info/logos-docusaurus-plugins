@@ -8,24 +8,47 @@ export type ShowcaseCardProps = Omit<
   React.HTMLAttributes<HTMLDivElement>,
   'title'
 > & {
+  index?: React.ReactNode
   logoSrc?: string
   logoSrcDark?: string
   name: React.ReactNode
   description: React.ReactNode
+  size?: 'small' | 'large'
+  borderStyle?: 'none' | 'solid'
 }
 
 export const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
+  index,
   name,
   logoSrc,
   logoSrcDark,
   description,
   className,
+  size = 'large',
+  borderStyle = 'solid',
   children,
   ...props
 }) => {
   return (
-    <div className={clsx(className, 'mdx-showcase-card')} {...props}>
+    <div
+      className={clsx(
+        className,
+        'mdx-showcase-card',
+        `mdx-showcase-card--${size}`,
+        `mdx-showcase-card--border-${borderStyle}`,
+      )}
+      {...props}
+    >
       <div className="mdx-showcase-card__inner">
+        {index && (
+          <Typography
+            className="mdx-showcase-card__index"
+            variant="subtitle2"
+            component="div"
+          >
+            {index}
+          </Typography>
+        )}
         {(logoSrc || logoSrcDark) && (
           <ThemedImage
             sources={{
@@ -36,20 +59,24 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
             className="mdx-showcase-card__logo"
           />
         )}
-        <Typography
-          variant="h2"
-          component="h2"
-          className="mdx-showcase-card__name"
-        >
-          {name}
-        </Typography>
-        <Typography
-          variant="body1"
-          component="p"
-          className="mdx-showcase-card__description"
-        >
-          {description}
-        </Typography>
+        {name && (
+          <Typography
+            variant="h2"
+            component="h2"
+            className="mdx-showcase-card__name"
+          >
+            {name}
+          </Typography>
+        )}
+        {description && (
+          <Typography
+            variant="body1"
+            component="p"
+            className="mdx-showcase-card__description"
+          >
+            {description}
+          </Typography>
+        )}
       </div>
     </div>
   )
