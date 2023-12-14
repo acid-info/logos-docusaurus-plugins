@@ -27,9 +27,9 @@ export const SectionHeader: React.FC<
 
       {description && (
         <Typography
-          className="mdx-section-header_description"
+          className="mdx-section-header__description"
           component="p"
-          variant="h4"
+          variant="h3"
         >
           {description}
         </Typography>

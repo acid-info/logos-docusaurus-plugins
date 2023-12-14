@@ -27,7 +27,11 @@
     flex-direction: column;
 
     &__title {
-      @include lsd.typography('body1');
+      @include lsd.typography('subtitle2');
+    }
+
+    &__description {
+      @include lsd.typography('h4');
     }
   }
 }

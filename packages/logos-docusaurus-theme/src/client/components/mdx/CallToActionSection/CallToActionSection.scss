@@ -60,7 +60,7 @@
   }
 
   .mdx-cta-section__description {
-    @include lsd.typography('h4', false);
+    @include lsd.typography('h3', false);
   }
 
   .mdx-cta-section__link {
