@@ -69,9 +69,21 @@
 .mdx-feature-list__feature-description {
 }
 
-.mdx-feature-list__extra {
-  margin-top: 3.5rem;
-  padding: 0 1rem;
+.mdx-feature-list__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mdx-feature-list--cta-top {
+}
+
+.mdx-feature-list--cta-bottom {
+  .mdx-feature-list__extra {
+    margin-top: 3.5rem;
+    padding: 0 1rem;
+  }
 }
 
 @include utils.responsive('lg', 'up') {
@@ -115,9 +127,11 @@
     }
   }
 
-  .mdx-feature-list__extra {
-    margin-top: 2rem;
-    padding: 0;
+  .mdx-feature-list--cta-bottom {
+    .mdx-feature-list__extra {
+      margin-top: 2rem;
+      padding: 0;
+    }
   }
 
   .mdx-feature-list__list {

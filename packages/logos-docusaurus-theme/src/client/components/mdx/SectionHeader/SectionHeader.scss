@@ -15,6 +15,13 @@
   }
 }
 
+.mdx-section-header__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
 @include utils.responsive('lg', 'down') {
   .mdx-section-header {
     flex-direction: column;
