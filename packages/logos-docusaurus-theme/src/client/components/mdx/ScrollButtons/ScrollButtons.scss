@@ -1,0 +1,57 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-scroll-buttons {
+  width: 100%;
+
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@include utils.responsive('md', 'up') {
+  .mdx-scroll-buttons__button--with-label {
+    width: auto !important;
+    min-width: 83px;
+    padding: 5px 11px 5px 9px !important;
+    gap: 12px;
+
+    &:first-of-type {
+      justify-content: flex-start;
+    }
+
+    &:last-of-type {
+      justify-content: flex-start;
+    }
+  }
+
+  .mdx-scroll-buttons--spaced {
+    & > div {
+      gap: 0 1rem;
+      justify-content: space-between;
+
+      & > button:not(:last-child) {
+        border-right: 1px solid rgb(var(--lsd-border-primary)) !important;
+      }
+    }
+  }
+}
+
+@include utils.responsive('md', 'down') {
+  .mdx-scroll-buttons {
+    & > div {
+      justify-content: flex-end;
+
+      > button:not(:last-child) {
+        border-right: none !important;
+      }
+    }
+
+    .mdx-scroll-buttons__label {
+      display: none;
+    }
+  }
+}
