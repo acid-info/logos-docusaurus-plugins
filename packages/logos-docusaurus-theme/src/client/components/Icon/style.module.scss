@@ -17,13 +17,31 @@
   }
 
   &.dark {
-    .fill {
-      fill: var(--ifm-color-black);
+    &.fill {
+      &,
+      * {
+        fill: var(--ifm-color-white);
+      }
     }
-    .stroke {
-      stroke: var(--ifm-color-white);
+    &.stroke {
+      svg,
+      svg * {
+        stroke: var(--ifm-color-white);
+      }
     }
   }
   &.light {
+    &.fill {
+      &,
+      * {
+        fill: var(--ifm-color-black);
+      }
+    }
+    &.stroke {
+      svg,
+      svg * {
+        stroke: var(--ifm-color-black);
+      }
+    }
   }
 }

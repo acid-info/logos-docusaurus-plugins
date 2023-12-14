@@ -1,3 +1,4 @@
+export * from './AccordionItem'
 export * from './AppCard'
 export * from './AssetCard'
 export * from './Box'

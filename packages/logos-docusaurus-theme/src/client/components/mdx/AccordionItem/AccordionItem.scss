@@ -1,0 +1,45 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-accordion-item {
+  border-bottom: 1px solid rgb(var(--lsd-border-primary));
+
+  > input {
+    display: none;
+  }
+}
+
+.mdx-accordion-item__header {
+  min-height: 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 0 16px;
+
+  &,
+  * {
+    cursor: pointer;
+  }
+}
+
+.mdx-accordion-item__content-wrapper {
+  overflow: hidden;
+  height: auto;
+}
+
+.mdx-accordion-item__content {
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.mdx-accordion-item--open {
+  .mdx-accordion-item__content {
+    height: auto;
+    padding-bottom: 1.875rem;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+}
