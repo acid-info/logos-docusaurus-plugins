@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.130](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.129...v1.0.0-alpha.130) (2023-12-15)
+
+### Bug Fixes
+
+- adjust LogoCarousel image height ([6ed7d65](https://github.com/acid-info/logos-docusaurus-plugins/commit/6ed7d65aa3ff5e704320855d92cb9c3b9f2bff3f))
+- adjust typography styles ([28c7a24](https://github.com/acid-info/logos-docusaurus-plugins/commit/28c7a24605108b94a92568f039a9815d0318e56c))
+- adjust typography styles in blog pages ([7ebeeac](https://github.com/acid-info/logos-docusaurus-plugins/commit/7ebeeac715d29d8ab11a067d06b93cb60087cb04))
+- ensure icons adapt to theme changes with CSS ([e9dc989](https://github.com/acid-info/logos-docusaurus-plugins/commit/e9dc989506909bcd5cba5803d463674bb9a6cb7d))
+- fix CallToActionSection typography styles ([d417e8c](https://github.com/acid-info/logos-docusaurus-plugins/commit/d417e8ca1ccfb2fe49941940bbb268eae201ed83))
+- fix spacing in the AccordionItem ([ba4ddc3](https://github.com/acid-info/logos-docusaurus-plugins/commit/ba4ddc30b990f659dcdff702eff2e8b287ecccfa))
+- fix spacing in the Roadmap component ([75804c0](https://github.com/acid-info/logos-docusaurus-plugins/commit/75804c0ee8c128cbeb700d411d1021dbcbbf4025))
+- fix TimelineItem typography style ([7d60515](https://github.com/acid-info/logos-docusaurus-plugins/commit/7d60515eafef33c3151b145c877cb4ddb1fcc43d))
+- **logos-docusaurus-theme:** update typography styles ([09a4388](https://github.com/acid-info/logos-docusaurus-plugins/commit/09a438829fbecb4fbee46c3c3e790925e653b1a1))
+- outline the avatar in the ProfileCard ([a68d2af](https://github.com/acid-info/logos-docusaurus-plugins/commit/a68d2af4cf80c6f7a752a224d0cd516cee50c80c))
+- remove AccordionItem's transition effect ([fbaadc2](https://github.com/acid-info/logos-docusaurus-plugins/commit/fbaadc2b1ce73a19ae04394ca7c570f1b682792c))
+- ShowcaseCard design adjustments ([c5a3c13](https://github.com/acid-info/logos-docusaurus-plugins/commit/c5a3c1323a689352f3df5fa710ebd85250d4a033))
+- typography styles ([36a085b](https://github.com/acid-info/logos-docusaurus-plugins/commit/36a085b3231743d3cfb563d34080a15837e6c612))
+
+### Features
+
+- add support for rendering cta buttons next to the section titles ([fa83076](https://github.com/acid-info/logos-docusaurus-plugins/commit/fa830767b9615bc1578ec0a5c3d7d475a0e9c81d))
+- implement LogoCarousel component ([c667313](https://github.com/acid-info/logos-docusaurus-plugins/commit/c667313338663efd21496de2fc48c398ae3abba3))
+- implement the AccordionItem component ([ab6a5a8](https://github.com/acid-info/logos-docusaurus-plugins/commit/ab6a5a804817c860d516376f84fb24f36a328724))
+
 # [1.0.0-alpha.129](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.128...v1.0.0-alpha.129) (2023-12-13)
 
 ### Bug Fixes
