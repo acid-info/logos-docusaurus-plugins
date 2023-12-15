@@ -48,13 +48,11 @@ type TProps = {
 
 export const Icon = (props: TProps): JSX.Element => {
   const { children, size = 'm' } = props
-  const { colorMode, setColorMode } = useColorMode()
 
   return (
     <div
       className={clsx(
         styles.icon,
-        colorMode === 'dark' ? styles.dark : styles.light,
         styles[size],
         props.stroke && styles.stroke,
         props.fill && styles.fill,

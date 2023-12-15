@@ -15,8 +15,10 @@
       width: 40px;
     }
   }
+}
 
-  &.dark {
+[data-theme='dark'] {
+  .icon {
     &.fill {
       &,
       * {
@@ -30,7 +32,10 @@
       }
     }
   }
-  &.light {
+}
+
+[data-theme='light'] {
+  .icon {
     &.fill {
       &,
       * {
