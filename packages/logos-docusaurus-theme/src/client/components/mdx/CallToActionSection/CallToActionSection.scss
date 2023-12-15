@@ -24,13 +24,6 @@
 
     max-width: 886px;
   }
-
-  @include utils.responsive('lg', 'down') {
-    .mdx-cta-section__title {
-      font-size: 1.5rem !important;
-      line-height: 2rem !important;
-    }
-  }
 }
 
 .mdx-cta-section--title-button {
@@ -110,7 +103,7 @@
   }
 
   .mdx-cta-section__description {
-    @include lsd.typography('h2', false);
+    @include lsd.typography('h1', false);
 
     margin-top: 2rem;
   }
