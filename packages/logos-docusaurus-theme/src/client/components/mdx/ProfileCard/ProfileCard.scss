@@ -27,6 +27,7 @@
   width: 40px !important;
   height: 40px !important;
   border-radius: 50%;
+  border: 1px solid rgb(var(--lsd-border-primary));
 
   svg {
     width: 40px !important;
@@ -39,7 +40,6 @@
 }
 
 .mdx-profile-card__name {
-  @include lsd.typography('h4');
 }
 
 .mdx-profile-card__buttons {
@@ -103,6 +103,6 @@
   }
 
   .mdx-profile-card__name {
-    @include lsd.typography('h6');
+    @include lsd.typography('h5');
   }
 }

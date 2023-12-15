@@ -76,7 +76,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
         )}
         <Typography
           className="mdx-profile-card__name"
-          variant="h4"
+          variant="h3"
           component="h4"
         >
           {name}

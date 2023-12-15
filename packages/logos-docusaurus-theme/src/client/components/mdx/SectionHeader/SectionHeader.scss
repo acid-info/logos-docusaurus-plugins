@@ -15,12 +15,23 @@
   }
 }
 
+.mdx-section-header__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
 @include utils.responsive('lg', 'down') {
   .mdx-section-header {
     flex-direction: column;
 
     &__title {
-      @include lsd.typography('body1');
+      @include lsd.typography('subtitle2');
+    }
+
+    &__description {
+      @include lsd.typography('h4');
     }
   }
 }

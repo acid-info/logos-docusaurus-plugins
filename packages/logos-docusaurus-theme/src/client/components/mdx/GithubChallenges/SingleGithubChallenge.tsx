@@ -104,7 +104,7 @@ export const SingleGithubChallenge: React.FC<SingleGithubChallengeProps> = ({
   return (
     <div className="mdx-ghc__container">
       <Link href={issue.url} className="mdx-ghc__issue-title-link">
-        <Typography variant="h6" className="mdx-ghc__issue-title">
+        <Typography variant="h5" className="mdx-ghc__issue-title">
           {issue.title}
         </Typography>
       </Link>

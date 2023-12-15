@@ -109,7 +109,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
             <div className={clsx('mdx-timeline-item__border')} />
           )}
           <Typography
-            variant="subtitle1"
+            variant="subtitle2"
             component="span"
             className={clsx(
               'mdx-timeline-item__period',
@@ -120,7 +120,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
           </Typography>
         </div>
         <Typography
-          variant="h3"
+          variant="h2"
           component="span"
           className="mdx-timeline-item__index"
         >
@@ -130,7 +130,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
         </Typography>
       </div>
       <Typography
-        variant="h6"
+        variant="h5"
         component="p"
         className="mdx-timeline-item__description"
       >

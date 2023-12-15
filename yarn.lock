@@ -62,6 +62,19 @@
     react-hot-toast "^2.4.1"
     react-use "^17.4.0"
 
+"@acid-info/lsd-react@^0.1.0-beta.1":
+  version "0.1.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@acid-info/lsd-react/-/lsd-react-0.1.0-beta.1.tgz#a6d8dc04a3422a1a840d032fc1d1730f4cc34e29"
+  integrity sha512-YletiehVgoXmMhIH03u67Dxg8ZiFNrGhEsvN9/+jCTnOaBQxf0/JgS7kqBeZUlqK88prU6P/QzZruiWsxVFKgA==
+  dependencies:
+    "@datepicker-react/hooks" "^2.8.4"
+    "@emotion/react" "^11.10.5"
+    "@emotion/styled" "^11.10.5"
+    clsx "^1.2.1"
+    lodash "^4.17.21"
+    react-hot-toast "^2.4.1"
+    react-use "^17.4.0"
+
 "@algolia/autocomplete-core@1.8.2":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.8.2.tgz#8d758c8652742e2761450d2b615a841fca24e10e"

@@ -8,6 +8,6 @@
 @include utils.responsive('lg', 'down') {
   .blogPostSubtitle {
     margin-top: 4px;
-    @include lsd.typography('body1');
+    @include lsd.typography('subtitle2');
   }
 }

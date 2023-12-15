@@ -15,15 +15,38 @@
       width: 40px;
     }
   }
+}
 
-  &.dark {
-    .fill {
-      fill: var(--ifm-color-black);
+[data-theme='dark'] {
+  .icon {
+    &.fill {
+      &,
+      * {
+        fill: var(--ifm-color-white);
+      }
     }
-    .stroke {
-      stroke: var(--ifm-color-white);
+    &.stroke {
+      svg,
+      svg * {
+        stroke: var(--ifm-color-white);
+      }
     }
   }
-  &.light {
+}
+
+[data-theme='light'] {
+  .icon {
+    &.fill {
+      &,
+      * {
+        fill: var(--ifm-color-black);
+      }
+    }
+    &.stroke {
+      svg,
+      svg * {
+        stroke: var(--ifm-color-black);
+      }
+    }
   }
 }

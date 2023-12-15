@@ -1,15 +1,10 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  IconButton,
-  IconButtonGroup,
-  THEME_BREAKPOINTS,
-} from '@acid-info/lsd-react'
+import { THEME_BREAKPOINTS } from '@acid-info/lsd-react'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import clsx from 'clsx'
 import React, { useRef } from 'react'
 import { lsdUtils } from '../../../lib/lsd.utils'
+import { ScrollButtons } from '../ScrollButtons'
 import { GridItem } from './GridItem'
 
 export type GridProps = React.ComponentProps<typeof GridRoot> & {
@@ -29,62 +24,17 @@ export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null)
 
-  const scroll = (direction: -1 | 1) => {
-    const el = ref.current
-    if (!el) return
-
-    const itemWidth = el.children[0]?.getBoundingClientRect?.()?.width ?? 236
-    el.scrollTo({
-      behavior: 'smooth',
-      left:
-        el.scrollLeft +
-        (el.getBoundingClientRect()?.width - itemWidth) * direction,
-    })
-  }
-
   return (
     <GridRoot {...props} className={clsx(props.className, 'mdx-grid')}>
       <div className="mdx-grid__actions">
         {actions}
-        <div
-          className={clsx(
-            'mdx-grid__scroll',
-            spacingButtons && 'mdx-grid__scroll--spacing-buttons',
-          )}
-        >
-          <IconButtonGroup size="small" color="primary">
-            <IconButton
-              className={clsx(
-                'mdx-grid__scroll-button',
-                leftLabel?.length && 'mdx-grid__scroll-button--with-label',
-              )}
-              size="small"
-              onClick={scroll.bind(null, -1)}
-            >
-              <ChevronLeftIcon />
-              {leftLabel.length ? (
-                <span className="mdx-grid__scroll-button-label">
-                  {leftLabel}
-                </span>
-              ) : null}
-            </IconButton>
-            <IconButton
-              className={clsx(
-                'mdx-grid__scroll-button',
-                rightLabel?.length && 'mdx-grid__scroll-button--with-label',
-              )}
-              size="small"
-              onClick={scroll.bind(null, +1)}
-            >
-              {rightLabel.length ? (
-                <span className="mdx-grid__scroll-button-label">
-                  {rightLabel}
-                </span>
-              ) : null}
-              <ChevronRightIcon />
-            </IconButton>
-          </IconButtonGroup>
-        </div>
+        <ScrollButtons
+          containerRef={ref}
+          className="mdx-grid__scroll"
+          leftLabel={leftLabel}
+          rightLabel={rightLabel}
+          spacing={spacingButtons ? 'spaced' : 'grouped'}
+        />
       </div>
       <div ref={ref} className={clsx('mdx-grid__content', 'hidden-scrollbar')}>
         {children}
@@ -112,26 +62,6 @@ const GridRoot = styled.div<{
   width: 100%;
 
   .mdx-grid__scroll {
-    display: flex;
-    flex-direction: row;
-    gap: 0 1rem;
-    margin-left: auto;
-  }
-
-  .mdx-grid__scroll--spacing-buttons {
-    width: 100%;
-
-    > div {
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    > div > button:not(:last-child) {
-      border-right: 1px solid rgb(var(--lsd-border-primary)) !important;
-    }
-  }
-
-  .mdx-grid__scroll-button {
     display: flex;
   }
 
@@ -211,47 +141,4 @@ const GridRoot = styled.div<{
         `}
       `)
     })}
-
-  ${(props) =>
-    lsdUtils.responsive(
-      props.theme as any,
-      'md',
-      'up',
-    )(css`
-      .mdx-grid__scroll-button--with-label {
-        width: auto;
-        min-width: 83px;
-        padding: 5px 11px 5px 9px;
-        gap: 12px;
-
-        &:first-of-type {
-          justify-content: flex-start;
-        }
-
-        &:last-of-type {
-          justify-content: flex-start;
-        }
-      }
-    `)}
-
-  ${(props) =>
-    lsdUtils.responsive(
-      props.theme as any,
-      'sm',
-      'down',
-    )(css`
-      .mdx-grid__scroll {
-        & > div {
-          justify-content: flex-end;
-
-          > button:not(:last-child) {
-            border-right: none !important;
-          }
-        }
-      }
-
-      .mdx-grid__scroll-button-label {
-        display: none;
-      }
-    `)}
 `

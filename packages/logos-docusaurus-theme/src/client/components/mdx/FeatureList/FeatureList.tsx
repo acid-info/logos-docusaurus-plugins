@@ -24,6 +24,11 @@ export type FeatureListProps = Omit<
    * The vertical alignment of feature description.
    */
   alignment?: 'bottom' | 'top'
+
+  /**
+   * The position of the call to action buttons.
+   */
+  ctaPosition?: 'top' | 'bottom'
 }
 
 /**
@@ -53,6 +58,7 @@ export const FeatureList: React.FC<FeatureListProps> = ({
   alignment = 'bottom',
   features = [],
   className,
+  ctaPosition = 'bottom',
   children,
   ...props
 }) => {
@@ -62,16 +68,22 @@ export const FeatureList: React.FC<FeatureListProps> = ({
         className,
         'mdx-feature-list',
         `mdx-feature-list--${alignment}-aligned`,
+        `mdx-feature-list--cta-${ctaPosition}`,
       )}
       {...props}
     >
-      <Typography
-        variant="h6"
-        component="h1"
-        className="mdx-feature-list__title"
-      >
-        {title}
-      </Typography>
+      <div className="mdx-feature-list__header">
+        <Typography
+          variant="h5"
+          component="h1"
+          className="mdx-feature-list__title"
+        >
+          {title}
+        </Typography>
+        {children && ctaPosition === 'top' && (
+          <div className="mdx-feature-list__extra">{children}</div>
+        )}
+      </div>
       <div className="mdx-feature-list__list">
         {features.map((feature, index) => (
           <div key={index} className={clsx('mdx-feature-list__feature')}>
@@ -84,14 +96,14 @@ export const FeatureList: React.FC<FeatureListProps> = ({
                 {index + 1}
               </Typography>
               <Typography
-                variant="h3"
+                variant="h2"
                 component="h2"
                 className="mdx-feature-list__feature-title"
               >
                 {feature.title}
               </Typography>
               <Typography
-                variant="h6"
+                variant="h5"
                 component="h3"
                 className="mdx-feature-list__feature-description"
               >
@@ -102,7 +114,9 @@ export const FeatureList: React.FC<FeatureListProps> = ({
           </div>
         ))}
       </div>
-      {children && <div className="mdx-feature-list__extra">{children}</div>}
+      {children && ctaPosition === 'bottom' && (
+        <div className="mdx-feature-list__extra">{children}</div>
+      )}
     </div>
   )
 }

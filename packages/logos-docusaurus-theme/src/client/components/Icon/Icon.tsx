@@ -1,18 +1,22 @@
 import { useColorMode } from '@docusaurus/theme-common'
 import { clsx } from 'clsx'
-import React, { CSSProperties } from 'react'
+import React from 'react'
 
 import styles from './style.module.scss'
 
+import AddSvg from '../../static/icons/add.svg'
 import ArrowLCircleSvg from '../../static/icons/arrow-left-circle.svg'
 import ArrowL from '../../static/icons/arrow-left.svg'
 import ArrowRCircleSvg from '../../static/icons/arrow-right-circle.svg'
 import ArrowR from '../../static/icons/arrow-right.svg'
+import Avatar from '../../static/icons/avatar.svg'
 import CloseSvg from '../../static/icons/close.svg'
 import CopySvg from '../../static/icons/copy.svg'
+import DiscordWhiteSvg from '../../static/icons/discord-white.svg'
 import DiscordSvg from '../../static/icons/discord.svg'
 import DiscourseSvg from '../../static/icons/discourse.svg'
 import DotSvg from '../../static/icons/dot.svg'
+import DownloadSvg from '../../static/icons/download.svg'
 import DropdownSvg from '../../static/icons/dropdown.svg'
 import EditSvg from '../../static/icons/edit.svg'
 import ExternalLinkSvg from '../../static/icons/external-link.svg'
@@ -23,15 +27,13 @@ import GithubWhiteSvg from '../../static/icons/github-white.svg'
 import GScholarSvg from '../../static/icons/gscholar.svg'
 import HistorySvg from '../../static/icons/history.svg'
 import LinkedinSvg from '../../static/icons/linkedin.svg'
+import RemoveSvg from '../../static/icons/remove.svg'
 import SearchSvg from '../../static/icons/search.svg'
 import StatusSvg from '../../static/icons/status.svg'
+import TelegramWhiteSvg from '../../static/icons/telegram-white.svg'
 import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
-import DiscordWhiteSvg from '../../static/icons/discord-white.svg'
-import TelegramWhiteSvg from '../../static/icons/telegram-white.svg'
 import XWhiteSvg from '../../static/icons/x-white.svg'
-import Avatar from '../../static/icons/avatar.svg'
-import DownloadSvg from '../../static/icons/download.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -40,19 +42,20 @@ type TIconProps = {
 
 type TProps = {
   children?: JSX.Element
-  fill?: string
+  fill?: boolean
+  stroke?: boolean
 } & TIconProps
 
 export const Icon = (props: TProps): JSX.Element => {
   const { children, size = 'm' } = props
-  const { colorMode, setColorMode } = useColorMode()
 
   return (
     <div
       className={clsx(
         styles.icon,
-        colorMode === 'dark' ? styles.dark : styles.light,
         styles[size],
+        props.stroke && styles.stroke,
+        props.fill && styles.fill,
         props.className && props.className,
       )}
     >
@@ -232,5 +235,17 @@ export const IconAvatar = (props: TIconProps): JSX.Element => (
 export const IconDownload = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <DownloadSvg />
+  </Icon>
+)
+
+export const IconAdd = (props: TIconProps): JSX.Element => (
+  <Icon {...props} stroke>
+    <AddSvg />
+  </Icon>
+)
+
+export const IconRemove = (props: TIconProps): JSX.Element => (
+  <Icon {...props} stroke>
+    <RemoveSvg />
   </Icon>
 )
