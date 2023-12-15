@@ -4,6 +4,10 @@
 .blog-wrapper {
 }
 
+.blog-wrapper h1[itemprop='headline'] {
+  @include lsd.typography('h1');
+}
+
 .blog-wrapper > .container {
   display: flex;
   width: 100%;
@@ -62,10 +66,16 @@
 }
 
 .blog-wrapper--index h2[itemprop='headline'] {
-  @include lsd.typography('h5');
+  @include lsd.typography('h4');
 
   > a {
     text-decoration: none;
+  }
+}
+
+.blog-wrapper--index [itemprop='blogPost'] {
+  .markdown {
+    @include lsd.typography('body2');
   }
 }
 
@@ -164,7 +174,7 @@
   }
 
   .blog-wrapper h1[itemprop='headline'] {
-    @include lsd.typography('h3');
+    @include lsd.typography('h2');
   }
 }
 
