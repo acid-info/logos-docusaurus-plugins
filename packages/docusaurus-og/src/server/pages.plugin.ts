@@ -13,7 +13,7 @@ import { PluginOptions } from './types/plugin.types'
 export class PagesPlugin {
   static plugin = 'docusaurus-plugin-content-pages'
 
-  pages: PageData[] = []
+  pages: Omit<PageData, 'document'>[] = []
 
   constructor(
     private context: Props,
@@ -68,21 +68,25 @@ export class PagesPlugin {
 
   generate = async () => {
     for (const page of this.pages) {
+      const document = new Document(this.getHtmlPath(page.metadata.permalink))
+      await document.load()
+      if (!document.loaded) continue
+
       const image = await this.imageRenderer(
         {
           ...page,
+          document,
           websiteOutDir: this.context.outDir,
         },
         this.context,
       )
 
-      if (!image) continue
+      if (!image) {
+        await document.write()
+        continue
+      }
 
       const generated = await this.imageGenerator.generate(...image)
-      const document = new Document(this.getHtmlPath(page.metadata.permalink))
-
-      await document.load()
-      if (!document.loaded) continue
 
       await document.setImage(generated.url)
 
