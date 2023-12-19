@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.131](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.130...v1.0.0-alpha.131) (2023-12-19)
+
+### Features
+
+- **docusaurus-og:** pass parsed HTML of all pages as a property to the image renderer for enhanced customizability ([00b860e](https://github.com/acid-info/logos-docusaurus-plugins/commit/00b860e866a9d86673f96b5bb60905a4e8b1c21c))
+
 # [1.0.0-alpha.111](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.110...v1.0.0-alpha.111) (2023-10-30)
 
 **Note:** Version bump only for package @acid-info/docusaurus-og

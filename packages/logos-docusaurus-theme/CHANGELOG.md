@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.131](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.130...v1.0.0-alpha.131) (2023-12-19)
+
+### Bug Fixes
+
+- remove automatic injection of the subscription page ([d7e8b64](https://github.com/acid-info/logos-docusaurus-plugins/commit/d7e8b64d20ec9f5239bca3d27378dcf968c70e91))
+
+### Features
+
+- allow using custom title on og images ([b213075](https://github.com/acid-info/logos-docusaurus-plugins/commit/b2130753c63c02e83511787d76c202af20cc3f7a))
+
 # [1.0.0-alpha.130](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.129...v1.0.0-alpha.130) (2023-12-15)
 
 ### Bug Fixes
