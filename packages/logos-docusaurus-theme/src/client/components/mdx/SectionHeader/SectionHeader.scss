@@ -15,10 +15,15 @@
   }
 }
 
+.mdx-section-header--with-description {
+  .mdx-section-header__extra {
+    margin-top: 2rem;
+  }
+}
+
 .mdx-section-header__title {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 2rem;
 }
 
