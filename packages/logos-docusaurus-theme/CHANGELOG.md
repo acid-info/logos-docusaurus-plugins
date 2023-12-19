@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.132](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.131...v1.0.0-alpha.132) (2023-12-19)
+
+### Bug Fixes
+
+- Roadmap and SectionHeader design adjustments ([e11cbba](https://github.com/acid-info/logos-docusaurus-plugins/commit/e11cbbaaddae95892b13d1b919360c66fae2e782))
+
 # [1.0.0-alpha.131](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.130...v1.0.0-alpha.131) (2023-12-19)
 
 ### Bug Fixes
