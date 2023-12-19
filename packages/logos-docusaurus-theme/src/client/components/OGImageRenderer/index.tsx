@@ -19,17 +19,59 @@ import path from 'path'
 import React from 'react'
 import sharp, { ResizeOptions } from 'sharp'
 
-const shouldSkip = (
-  frontMatter:
+type RendererOptions = {
+  generateImage?: boolean
+  imageTitle?: string
+}
+
+function parseRendererOptions(type: 'docs', doc: DocsPageData): RendererOptions
+function parseRendererOptions(type: 'blog', doc: BlogPageData): RendererOptions
+function parseRendererOptions(type: 'page', doc: PageData): RendererOptions
+function parseRendererOptions(
+  type: 'docs' | 'blog' | 'page',
+  doc: DocsPageData | BlogPageData | PageData,
+): RendererOptions {
+  const frontMatter:
     | DocFrontMatter
     | BlogPostFrontMatter
     | MDXPageMetadata['frontMatter']
-    | undefined
-    | null,
-) =>
-  frontMatter &&
-  typeof frontMatter['og:generate_image'] !== 'undefined' &&
-  !boolean(frontMatter['og:generate_image'])
+    | null
+    | undefined =
+    type === 'docs'
+      ? (doc as DocsPageData).metadata.frontMatter
+      : type === 'blog'
+      ? _.get(doc, 'data.metadata.frontMatter')
+      : _.get(doc, 'metadata.frontMatter')
+
+  const optNames = ['generateImage', 'imageTitle']
+  const optKeys = ['og:generate_image', 'og:image_title']
+  const options: Record<string, string | undefined> = {}
+  const parsed: RendererOptions = {}
+
+  if (frontMatter) {
+    optKeys.forEach((key, index) => {
+      const value = frontMatter[key]
+      if (typeof value !== 'undefined')
+        options[optNames[index] as string] = value
+    })
+  } else {
+    optKeys.forEach((key, index) => {
+      const el = doc.document.head.querySelector(`meta[name="${key}"]`)
+      const value = el?.getAttribute?.('content') ?? undefined
+
+      if (el) el.parentNode.removeChild(el)
+
+      if (typeof value !== 'undefined')
+        options[optNames[index] as string] = value
+    })
+  }
+
+  if (options.generateImage)
+    parsed.generateImage = boolean(options.generateImage)
+  if (options.imageTitle) parsed.imageTitle = options.imageTitle
+
+  return parsed
+}
 
 const options: ImageGeneratorOptions = {
   width: 1200,
@@ -186,14 +228,15 @@ const Layout: React.FC<{
 const docsImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-docs',
   async (doc, { outDir, siteConfig }) => {
-    if (shouldSkip(doc.metadata.frontMatter)) return
+    const { generateImage, imageTitle } = parseRendererOptions('docs', doc)
+    if (generateImage === false) return
 
     const logo = await getLogo(siteConfig, outDir)
     const image = await getPageImage('docs', outDir, doc)
 
     return [
       <Layout
-        title={doc.metadata.title || siteConfig.title}
+        title={imageTitle ?? (doc.metadata.title || siteConfig.title)}
         footer={[
           <span style={{ textTransform: 'capitalize' }}>
             {doc.plugin.id === 'default' ? 'Docs' : doc.plugin.id}
@@ -224,8 +267,8 @@ const blogImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-blog',
   async (page, { outDir, siteConfig }) => {
     const { pageType, data } = page
-    if (pageType === 'post' && shouldSkip(page.data.metadata.frontMatter))
-      return
+    const { generateImage, imageTitle } = parseRendererOptions('blog', page)
+    if (generateImage === false) return
 
     const logo = await getLogo(siteConfig, outDir)
     const image = await getPageImage('blog', outDir, page)
@@ -233,7 +276,8 @@ const blogImageRenderer = imageRendererFactory(
     return [
       <Layout
         title={
-          pageType === 'archive'
+          imageTitle ??
+          (pageType === 'archive'
             ? 'Archive'
             : pageType === 'tags'
             ? 'Tags'
@@ -243,7 +287,7 @@ const blogImageRenderer = imageRendererFactory(
             ? page.data.metadata.title
             : pageType === 'tag'
             ? page.data.label
-            : ''
+            : '')
         }
         footer={[
           page.plugin.blogTitle,
@@ -274,7 +318,8 @@ const pagesImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-pages',
   async (page, { outDir, siteConfig }) => {
     const { metadata, plugin } = page
-    if (shouldSkip(_.get(metadata, 'frontMatter'))) return
+    const { generateImage, imageTitle } = parseRendererOptions('page', page)
+    if (generateImage === false) return
 
     const url = new URL(siteConfig.url)
 
@@ -284,7 +329,8 @@ const pagesImageRenderer = imageRendererFactory(
     return [
       <Layout
         title={
-          (metadata as MDXPageMetadata).frontMatter?.title || metadata.title
+          imageTitle ??
+          ((metadata as MDXPageMetadata).frontMatter?.title || metadata.title)
         }
         footer={url.host}
         logo={
