@@ -14,7 +14,7 @@ import { PluginOptions } from './types/plugin.types'
 export class BlogPlugin {
   static plugin = 'docusaurus-plugin-content-blog'
 
-  pages: BlogPageData[] = []
+  pages: Omit<BlogPageData, 'document'>[] = []
 
   constructor(
     private context: Props,
@@ -106,21 +106,26 @@ export class BlogPlugin {
 
   generate = async () => {
     for (const page of this.pages) {
+      const document = new Document(this.getHtmlPath(page.permalink))
+
+      await document.load()
+      if (!document.loaded) continue
+
       const image = await this.imageRenderer(
         {
           ...page,
+          document,
           websiteOutDir: this.context.outDir,
         },
         this.context,
       )
 
-      if (!image) continue
+      if (!image) {
+        await document.write()
+        continue
+      }
 
       const generated = await this.imageGenerator.generate(...image)
-      const document = new Document(this.getHtmlPath(page.permalink))
-
-      await document.load()
-      if (!document.loaded) continue
 
       await document.setImage(generated.url)
 

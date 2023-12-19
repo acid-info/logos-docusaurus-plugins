@@ -1,7 +1,7 @@
 import {
+  PluginOptions as DocsPluginOptions,
   LoadedContent,
   LoadedVersion,
-  PluginOptions as DocsPluginOptions,
 } from '@docusaurus/plugin-content-docs'
 import { LoadedPlugin, Props } from '@docusaurus/types'
 import * as path from 'path'
@@ -14,7 +14,7 @@ import { PluginOptions } from './types/plugin.types'
 export class DocsPlugin {
   static plugin = 'docusaurus-plugin-content-docs'
 
-  docs: DocsPageData[] = []
+  docs: Omit<DocsPageData, 'document'>[] = []
 
   constructor(
     private context: Props,
@@ -63,25 +63,31 @@ export class DocsPlugin {
 
   generate = async () => {
     for (const doc of this.docs) {
+      const document = new Document(this.getHtmlPath(doc)!)
+      await document.load()
+
       const image = await this.imageRenderer(
         {
           ...doc,
+          document,
           websiteOutDir: this.context.outDir,
         },
         this.context,
       )
 
-      if (!image) continue
+      if (!image) {
+        await document.write()
+        continue
+      }
 
       const generated = await this.imageGenerator.generate(...image)
-      const document = new Document(this.getHtmlPath(doc))
-      await document.load()
       await document.setImage(generated.url)
 
       await document.write()
     }
   }
 
-  getHtmlPath = (doc: DocsPageData) =>
+  getHtmlPath = (doc: Partial<DocsPageData>) =>
+    doc.metadata?.permalink &&
     path.join(this.context.outDir, doc.metadata.permalink, 'index.html')
 }

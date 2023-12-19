@@ -4,6 +4,7 @@ import {
   BlogTag,
   PluginOptions,
 } from '@docusaurus/plugin-content-blog'
+import { Document } from '../document'
 
 export type BlogPageType =
   | 'post'
@@ -16,6 +17,7 @@ export type BlogPageType =
 export type BlogPageData = {
   plugin: PluginOptions
   permalink: string
+  document: Document
 } & (
   | {
       pageType: Extract<BlogPageType, 'post'>
