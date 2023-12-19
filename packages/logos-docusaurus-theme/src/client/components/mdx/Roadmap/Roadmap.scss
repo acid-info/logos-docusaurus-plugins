@@ -3,19 +3,6 @@
 
 .mdx-roadmap {
   width: 100%;
-  border-top: 1px solid rgb(var(--lsd-border-primary));
-  padding-top: 24px;
-}
-
-.mdx-roadmap__header {
-  display: flex;
-  flex-direction: row;
-
-  gap: 1rem;
-
-  > * {
-    flex-basis: 50%;
-  }
 }
 
 .mdx-roadmap__timeline {
@@ -33,14 +20,6 @@
 }
 
 @include utils.responsive('lg', 'down') {
-  .mdx-roadmap__header {
-    flex-direction: column;
-
-    h2 {
-      @include lsd.typography('body1');
-    }
-  }
-
   .mdx-roadmap__timeline {
     margin-top: 4rem;
   }

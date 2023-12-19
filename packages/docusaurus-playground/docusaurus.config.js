@@ -45,6 +45,7 @@ const config = {
           routeBasePath: '/about',
           path: 'docs',
         },
+        og: {},
 
         // Uncomment to fetch new generated data.
         /*

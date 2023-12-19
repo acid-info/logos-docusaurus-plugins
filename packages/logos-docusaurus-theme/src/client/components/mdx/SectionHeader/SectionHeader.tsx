@@ -12,15 +12,24 @@ export type SectionHeaderProps = Omit<BoxProps, 'title'> & {
 export const SectionHeader: React.FC<
   React.PropsWithChildren<SectionHeaderProps>
 > = ({ title, description, className, children, ...props }) => {
+  const withDescription = !!description
+
   return (
-    <Box className={clsx(className, 'mdx-section-header')} {...props}>
+    <Box
+      className={clsx(
+        className,
+        'mdx-section-header',
+        withDescription && 'mdx-section-header--with-description',
+      )}
+      {...props}
+    >
       <Typography
         className="mdx-section-header__title"
         component="h2"
         variant="h5"
       >
         {title}
-        {children && (
+        {!withDescription && children && (
           <div className="mdx-section-header__extra">{children}</div>
         )}
       </Typography>
@@ -32,6 +41,7 @@ export const SectionHeader: React.FC<
           variant="h3"
         >
           {description}
+          {<div className="mdx-section-header__extra">{children}</div>}
         </Typography>
       )}
     </Box>

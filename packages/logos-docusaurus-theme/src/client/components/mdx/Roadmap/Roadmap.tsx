@@ -1,7 +1,6 @@
-import { Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
-import { Grid } from '..'
+import { Grid, SectionHeader } from '..'
 import { TimelineItem, TimelineItemProps } from '../TimelineItem'
 import './Roadmap.scss'
 
@@ -72,17 +71,13 @@ export const Roadmap: React.FC<RoadmapProps> = ({
 
   return (
     <div className={clsx(className, 'mdx-roadmap')} {...props}>
-      <div className="mdx-roadmap__header">
-        <Typography component="h2" variant="h5">
-          {title}
-        </Typography>
-
-        {description && (
-          <Typography component="p" variant="h4">
-            {description}
-          </Typography>
-        )}
-      </div>
+      <SectionHeader
+        className="mdx-roadmap__header"
+        title={title}
+        description={description}
+      >
+        {children}
+      </SectionHeader>
       {timeline.length > 0 && (
         <Grid
           className="mdx-roadmap__timeline"
