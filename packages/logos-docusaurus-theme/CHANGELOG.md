@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.133](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.132...v1.0.0-alpha.133) (2023-12-19)
+
+### Bug Fixes
+
+- use icon instead of button for ProfileCard links ([6646c4e](https://github.com/acid-info/logos-docusaurus-plugins/commit/6646c4ebac3ead1d74430b7c68510578fbebb4d8))
+
 # [1.0.0-alpha.132](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.131...v1.0.0-alpha.132) (2023-12-19)
 
 ### Bug Fixes
