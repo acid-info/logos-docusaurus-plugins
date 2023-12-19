@@ -90,19 +90,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
             target="_blank"
             className={'mdx-profile-card__link'}
           >
-            <Button
-              size={'small'}
-              variant={'outlined'}
-              className={'mdx-profile-card__button'}
-            >
-              <IconGithub />
-              <Typography
-                variant="body2"
-                className="mdx-profile-card__link__label"
-              >
-                {githubUsername}
-              </Typography>
-            </Button>
+            <IconGithub />
           </Link>
         )}
 
@@ -112,19 +100,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
             target="_blank"
             className={'mdx-profile-card__link'}
           >
-            <Button
-              size={'small'}
-              variant={'outlined'}
-              className={'mdx-profile-card__button'}
-            >
-              <IconDiscordWhite />
-              <Typography
-                variant="body2"
-                className="mdx-profile-card__link__label"
-              >
-                {discordUsername}
-              </Typography>
-            </Button>
+            <IconDiscordWhite />
           </Link>
         )}
       </div>

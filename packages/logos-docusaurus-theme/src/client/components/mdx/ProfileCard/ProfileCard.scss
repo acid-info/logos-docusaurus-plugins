@@ -56,34 +56,6 @@
   max-width: calc(50% - 4px);
 }
 
-.mdx-profile-card__button {
-  padding: 4px 12px 4px 10px !important;
-  height: 28px !important;
-  max-width: 100% !important;
-
-  > span {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-
-  svg {
-    width: 14px;
-    height: 14px;
-  }
-}
-
-.mdx-profile-card__link__label {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.mdx-profile-card__label {
-  text-align: center;
-}
-
 @include utils.responsive('lg', 'down') {
   .mdx-profile-card {
     grid-template-columns: 1fr;
