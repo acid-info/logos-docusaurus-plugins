@@ -6,13 +6,12 @@ import {
   Toast,
   Typography,
 } from '@acid-info/lsd-react'
-import Layout from '@theme/Layout'
+import Link from '@docusaurus/Link'
 import ThemedImage from '@theme/ThemedImage'
 import React from 'react'
 import { useNewsletterApi } from '../../lib/useNewsletterApi'
 import { useThemeOptions } from '../../lib/useThemeOptions'
 import styles from './SubscriptionPage.module.scss'
-import Link from '@docusaurus/Link'
 
 export type SubscriptionPageProps = {}
 
@@ -31,69 +30,67 @@ export const SubscriptionPage: React.FC<SubscriptionPageProps> = ({}) => {
   }
 
   return (
-    <Layout>
-      <div className={styles.container}>
-        <div className={styles.root}>
-          <div className={styles.header}>
-            <ThemedImage
-              sources={{
-                dark: '/theme/image/horizontal_lockup_small_white.svg',
-                light: '/theme/image/horizontal_lockup_small_black.svg',
-              }}
-              height={88}
-            />
-            <Typography component="p">Subscribe to our newsletter</Typography>
-          </div>
-          {api.message && (
-            <Toast
-              size="medium"
-              title={api.message}
-              icon={api.error ? ErrorIcon : CheckIcon}
-              className={styles.toast}
-            />
-          )}
-          {api.error && api.message && <div></div>}
-          {displayForm && (
-            <form className={styles.form} onSubmit={onSubmit}>
-              <div className={styles.inputs}>
-                <TextField
-                  inputProps={{
-                    name: 'name',
-                    type: 'text',
-                    required: false,
-                  }}
-                  size="medium"
-                  variant="underlined"
-                  placeholder="First name or pseudonym"
-                />
-                <TextField
-                  inputProps={{
-                    name: 'email',
-                    type: 'email',
-                    required: true,
-                  }}
-                  size="medium"
-                  variant="underlined"
-                  placeholder="Email address (required)"
-                />
-              </div>
-              <div className={styles.submit}>
-                <Button variant="filled" disabled={api.busy}>
-                  Subscribe
-                </Button>
-              </div>
-            </form>
-          )}
-          {!displayForm && (
-            <div className={styles.toHome}>
-              <Link href="/">
-                <Button variant="filled">To home page</Button>
-              </Link>
-            </div>
-          )}
+    <div className={styles.container}>
+      <div className={styles.root}>
+        <div className={styles.header}>
+          <ThemedImage
+            sources={{
+              dark: '/theme/image/horizontal_lockup_small_white.svg',
+              light: '/theme/image/horizontal_lockup_small_black.svg',
+            }}
+            height={88}
+          />
+          <Typography component="p">Subscribe to our newsletter</Typography>
         </div>
+        {api.message && (
+          <Toast
+            size="medium"
+            title={api.message}
+            icon={api.error ? ErrorIcon : CheckIcon}
+            className={styles.toast}
+          />
+        )}
+        {api.error && api.message && <div></div>}
+        {displayForm && (
+          <form className={styles.form} onSubmit={onSubmit}>
+            <div className={styles.inputs}>
+              <TextField
+                inputProps={{
+                  name: 'name',
+                  type: 'text',
+                  required: false,
+                }}
+                size="medium"
+                variant="underlined"
+                placeholder="First name or pseudonym"
+              />
+              <TextField
+                inputProps={{
+                  name: 'email',
+                  type: 'email',
+                  required: true,
+                }}
+                size="medium"
+                variant="underlined"
+                placeholder="Email address (required)"
+              />
+            </div>
+            <div className={styles.submit}>
+              <Button variant="filled" disabled={api.busy}>
+                Subscribe
+              </Button>
+            </div>
+          </form>
+        )}
+        {!displayForm && (
+          <div className={styles.toHome}>
+            <Link href="/">
+              <Button variant="filled">To home page</Button>
+            </Link>
+          </div>
+        )}
       </div>
-    </Layout>
+    </div>
   )
 }
 

@@ -46,12 +46,6 @@ export default function logosTheme(
 
     async contentLoaded(args) {
       await createAuthorRoutes(context, args)
-      if (options.newsletterSubscription)
-        args.actions.addRoute({
-          path: options.newsletterSubscription.pagePath || '/subscribe',
-          component: path.resolve(__dirname, './client/theme/SubscriptionPage'),
-          exact: true,
-        })
     },
 
     injectHtmlTags: ({}) => {
