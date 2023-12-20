@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.134](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.133...v1.0.0-alpha.134) (2023-12-20)
+
+### Features
+
+- make CTA section list items clickable ([fc7d4fc](https://github.com/acid-info/logos-docusaurus-plugins/commit/fc7d4fc357d11615ce551edc2ccc7f2fe48a1068))
+
 # [1.0.0-alpha.133](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.132...v1.0.0-alpha.133) (2023-12-19)
 
 ### Bug Fixes
