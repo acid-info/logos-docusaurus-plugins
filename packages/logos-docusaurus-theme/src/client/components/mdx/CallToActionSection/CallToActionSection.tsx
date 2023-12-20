@@ -51,6 +51,10 @@ export type CallToActionSectionProps = Omit<
      * The description of the list item
      */
     description: React.ReactNode
+    /**
+     * The URL to link to when the button is clicked
+     */
+    href?: string
   }[]
 }
 
@@ -159,16 +163,34 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
       </div>
       {list.length > 0 && (
         <div className="mdx-cta-section__list">
-          {list.map((option, index) => (
-            <div key={index}>
-              <Typography variant="subtitle2" component="div">
-                {option.title}
-              </Typography>
-              <Typography variant="h2" component="p">
-                {option.description}
-              </Typography>
-            </div>
-          ))}
+          {list.map((option, index) => {
+            const content = (
+              <div className="mdx-cta-section__list-item" key={index}>
+                <Typography
+                  component="div"
+                  variant="subtitle2"
+                  className="mdx-cta-section__item-title"
+                >
+                  {option.title}
+                </Typography>
+                <Typography
+                  variant="h2"
+                  component="p"
+                  className="mdx-cta-section__item-description"
+                >
+                  {option.description}
+                </Typography>
+              </div>
+            )
+
+            return option.href ? (
+              <a href={option.href} target="_blank">
+                {content}
+              </a>
+            ) : (
+              content
+            )
+          })}
         </div>
       )}
     </div>
