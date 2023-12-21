@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./lib/.tsbuildinfo-client",
+    "rootDir": "src",
+    "outDir": "lib",
+    "module": "CommonJS",
+    "target": "esnext",
+    "jsx": "react",
+    "lib": ["DOM"]
+  },
+  "include": ["src/client", "src/*.d.ts"],
+  "exclude": ["**/__tests__/**"]
+}
