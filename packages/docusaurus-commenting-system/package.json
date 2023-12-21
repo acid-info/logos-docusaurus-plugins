@@ -1,0 +1,22 @@
+{
+  "name": "@acid-info/docusaurus-commenting-system",
+  "version": "1.0.0-alpha",
+  "description": "Docusaurus docs commenting system plugin",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
+    "directory": "packages/docusaurus-commenting-system"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --build --watch",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@acid-info/lsd-react": "^0.1.0-beta.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "license": "MIT"
+}
