@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.136](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.135...v1.0.0-alpha.136) (2023-12-22)
+
+### Bug Fixes
+
+- fix navbar layout ([1b846b0](https://github.com/acid-info/logos-docusaurus-plugins/commit/1b846b0cf89c4aa02077a9426288ad1f63937d93))
+
 # [1.0.0-alpha.134](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.133...v1.0.0-alpha.134) (2023-12-20)
 
 ### Features
