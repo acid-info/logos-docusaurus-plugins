@@ -6,8 +6,8 @@ export const nimbusThemeConfig: typeof baseThemeConfig = {
     ...baseThemeConfig.navbar,
     logo: {
       alt: 'Nimbus',
-      src: 'theme/image/logo-black.svg',
-      srcDark: 'theme/image/logo.svg',
+      src: 'theme/image/logo-black-1.svg',
+      srcDark: 'theme/image/logo-1.svg',
       height: 26,
     },
     items: [],
