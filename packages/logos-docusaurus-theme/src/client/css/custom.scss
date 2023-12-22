@@ -856,8 +856,8 @@ main[itemtype*='Blog'] {
   }
 
   .navbar__left {
-    flex-grow: 0;
     flex-basis: calc(1 / 12 * 100%);
+    flex: 0 1 auto;
   }
 
   .navbar__left-items {
