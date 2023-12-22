@@ -9,7 +9,7 @@
     "directory": "packages/docusaurus-commenting-system"
   },
   "scripts": {
-    "build": "tsc --build",
+    "build": "tsc --build && node scripts/copy-scss.js",
     "watch": "tsc --build --watch",
     "prepublishOnly": "yarn build"
   },
@@ -17,6 +17,13 @@
     "@acid-info/lsd-react": "^0.1.0-beta.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "css-loader": "^6.8.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3"
   },
   "license": "MIT"
 }
