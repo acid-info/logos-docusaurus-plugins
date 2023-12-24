@@ -29,7 +29,7 @@ export const WriteComment: React.FC<WriteCommentProps> = ({
         className={styles.textarea}
         placeholder={isSignedIn ? 'Write a comment...' : 'Sign in to comment'}
         disabled={!isSignedIn}
-        rows={3}
+        rows={4}
         value={comment}
         onChange={(e) => setComment(e.target.value)}
       />
@@ -39,7 +39,9 @@ export const WriteComment: React.FC<WriteCommentProps> = ({
           onClick={isSignedIn ? onSendClick : handleSignIn}
           disabled={isSignedIn && comment.length === 0}
         >
-          {isSignedIn ? 'Send' : 'Sign In'}
+          <span className={!isSignedIn && styles.githubBtnLabel}>
+            {isSignedIn ? 'Send' : 'Sign In with GitHub'}
+          </span>
         </Button>
       </div>
     </CardBody>
