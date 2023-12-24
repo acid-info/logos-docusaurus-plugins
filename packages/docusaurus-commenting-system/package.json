@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@acid-info/lsd-react": "^0.1.0-beta.1",
+    "@supabase/supabase-js": "^2.39.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
