@@ -12,6 +12,6 @@
     "jsx": "react",
     "lib": ["DOM"]
   },
-  "include": ["src/client", "src/server", "src/*.d.ts"],
+  "include": ["src/**/*", "src/client", "src/server", "src/*.d.ts"],
   "exclude": ["**/__tests__/**"]
 }

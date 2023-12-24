@@ -1,2 +1,2 @@
-import { CommentingSection } from './containers/CommentingSection'
-export { CommentingSection }
+import { CommentingSystem } from './containers/CommentingSystem'
+export { CommentingSystem }
