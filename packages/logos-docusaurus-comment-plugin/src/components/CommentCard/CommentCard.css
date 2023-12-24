@@ -1,0 +1,25 @@
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%
+}
+
+.text-xs {
+  font-size: 0.75rem/* 12px */;
+  line-height: 1rem/* 16px */;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+

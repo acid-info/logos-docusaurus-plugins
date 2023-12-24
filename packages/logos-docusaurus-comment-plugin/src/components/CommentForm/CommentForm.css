@@ -1,0 +1,33 @@
+textarea {
+  border: 1px solid rgb(var(--lsd-border-primary));
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  font-size: inherit;
+  line-height: inherit;
+  color: rgb(var(--lsd-text-primary));
+  background: none;
+  width: 100%;
+  padding: 6px 10px 6px 12px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.w-full {
+  width: 100%
+}
+
+
+.mb-4 {
+  margin-bottom: 1rem/* 16px */;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+
