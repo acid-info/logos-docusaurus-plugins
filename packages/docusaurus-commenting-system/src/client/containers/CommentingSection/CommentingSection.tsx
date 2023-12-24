@@ -24,6 +24,13 @@ export const CommentingSection: React.FC = () => {
   const [isSignedIn, setIsSignedIn] = useState<boolean>(false)
   const [commentsList, setCommentsList] = useState<CommentData[]>([])
 
+  const getFormattedPath = (): string => {
+    const path = location.pathname
+    // Remove trailing slash if it exists
+    const formattedPagePath = path.endsWith('/') ? path.slice(0, -1) : path
+    return formattedPagePath
+  }
+
   const checkUserSignedIn = async () => {
     const data = await getUserData()
     if (data) {
@@ -34,7 +41,7 @@ export const CommentingSection: React.FC = () => {
   }
 
   const fetchCommentsList = async () => {
-    const data = await fetchComments(location.pathname)
+    const data = await fetchComments(getFormattedPath())
     setCommentsList(
       data.map((commentFromDB: CommentWithProfile) => ({
         id: commentFromDB.id,
@@ -62,7 +69,7 @@ export const CommentingSection: React.FC = () => {
         },
         ...prev,
       ])
-    })
+    }, getFormattedPath())
 
     return unsubscibe
   }

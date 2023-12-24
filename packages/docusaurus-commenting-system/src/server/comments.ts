@@ -18,9 +18,13 @@ export const postOneComment = async (
   text: string,
   pagePath: string,
 ): Promise<Comment[] | null> => {
+  // Remove trailing slash if it exists
+  const formattedPagePath = pagePath.endsWith('/')
+    ? pagePath.slice(0, -1)
+    : pagePath
   const { data, error } = await supabase
     .from('comments')
-    .insert([{ text: text, page_path: pagePath }])
+    .insert([{ text: text, page_path: formattedPagePath }])
     .select()
 
   if (error) {
@@ -80,6 +84,7 @@ export const fetchOneComment = async (
 
 export const subscribeToCommentsInsert = (
   callback: (payload: any) => void,
+  path: string,
 ): (() => void) => {
   const channel = supabase
     .channel('custom-all-channel')
@@ -89,7 +94,7 @@ export const subscribeToCommentsInsert = (
         event: 'INSERT',
         schema: 'public',
         table: 'comments',
-        filter: `page_path=eq.${location.pathname}`,
+        filter: `page_path=eq.${path}`,
       },
       async (payload) => callback(payload),
     )
