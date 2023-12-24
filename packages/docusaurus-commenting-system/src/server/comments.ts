@@ -77,3 +77,25 @@ export const fetchOneComment = async (
   }
   return newComment
 }
+
+export const subscribeToCommentsInsert = (
+  callback: (payload: any) => void,
+): (() => void) => {
+  const channel = supabase
+    .channel('custom-all-channel')
+    .on(
+      'postgres_changes',
+      {
+        event: 'INSERT',
+        schema: 'public',
+        table: 'comments',
+        filter: `page_path=eq.${location.pathname}`,
+      },
+      async (payload) => callback(payload),
+    )
+    .subscribe()
+
+  return () => {
+    supabase.removeChannel(channel)
+  }
+}
