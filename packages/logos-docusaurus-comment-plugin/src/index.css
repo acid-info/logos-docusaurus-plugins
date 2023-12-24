@@ -1,0 +1,54 @@
+a {
+  color: rgb(var(--lsd-text-primary));
+}
+
+textarea {
+  border: 1px solid rgb(var(--lsd-border-primary));
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  font-size: inherit;
+  line-height: inherit;
+  color: rgb(var(--lsd-text-primary));
+  background: none;
+  width: 100%;
+  padding: 6px 10px 6px 12px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%
+}
+
+.text-xs {
+  font-size: 0.75rem/* 12px */;
+  line-height: 1rem/* 16px */;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.mb-4 {
+  margin-bottom: 1rem/* 16px */;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem/* 12px */ * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem/* 12px */ * var(--tw-space-y-reverse));
+}
+
+
