@@ -76,7 +76,13 @@ const config = {
         hostnames: ['localhost', 'waku.org'],
       },
     ],
-    ['@acid-info/docusaurus-commenting-system', {}],
+    [
+      '@acid-info/docusaurus-commenting-system',
+      {
+        supabaseUrl: process.env.SUPABASE_URL,
+        supabaseAnonKey: process.env.SUPABASE_ANON_KEY,
+      },
+    ],
   ],
 
   themeConfig:
