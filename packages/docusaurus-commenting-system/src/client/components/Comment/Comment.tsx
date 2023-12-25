@@ -5,12 +5,20 @@ import styles from './Comment.module.scss'
 export type CommentProps = {
   username: string
   comment: string
+  date: string
 }
 
-export const Comment: React.FC<CommentProps> = ({ username, comment }) => {
+export const Comment: React.FC<CommentProps> = ({
+  username,
+  comment,
+  date,
+}) => {
   return (
     <CardBody>
-      <div className={styles.username}>{username}</div>
+      <div className={styles.commentHeader}>
+        <span className={styles.username}>{username}</span>
+        <span className={styles.date}>{date}</span>
+      </div>
       <div>{comment}</div>
     </CardBody>
   )

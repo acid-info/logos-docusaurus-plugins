@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import { parseISO, format } from 'date-fns'
 import { Comment } from '../../components/Comment'
 import { WriteComment } from '../../components/WriteComment'
 import { signInWithGitHub, getUserData } from '../../../server/auth'
@@ -24,6 +25,11 @@ export const CommentingSection: React.FC = () => {
   const [isSignedIn, setIsSignedIn] = useState<boolean>(false)
   const [commentsList, setCommentsList] = useState<CommentData[]>([])
 
+  const convertDateFormat = (inputDate: string): string => {
+    const date = parseISO(inputDate)
+    return format(date, 'MMM d, yyyy')
+  }
+
   const getFormattedPath = (): string => {
     const path = location.pathname
     // Remove trailing slash if it exists
@@ -47,7 +53,7 @@ export const CommentingSection: React.FC = () => {
         id: commentFromDB.id,
         username: commentFromDB.profiles.user_name,
         comment: commentFromDB.text,
-        date: commentFromDB.created_at,
+        date: convertDateFormat(commentFromDB.created_at),
       })),
     )
   }
@@ -65,7 +71,7 @@ export const CommentingSection: React.FC = () => {
           id: newComment.id,
           username: newComment.profiles.user_name,
           comment: newComment.text,
-          date: newComment.created_at,
+          date: convertDateFormat(newComment.created_at),
         },
         ...prev,
       ])
@@ -112,6 +118,7 @@ export const CommentingSection: React.FC = () => {
                 key={comment.id}
                 username={comment.username}
                 comment={comment.comment}
+                date={comment.date}
               />
             ))}
           </div>
