@@ -105,7 +105,7 @@ export const CommentingSection: React.FC = () => {
         <>
           <div className={styles.commentsContainer}>
             <span>{`${commentsList.length} comment${
-              commentsList.length !== 1 && 's'
+              commentsList.length > 1 ? 's' : ''
             }`}</span>
             {commentsList.map((comment) => (
               <Comment
