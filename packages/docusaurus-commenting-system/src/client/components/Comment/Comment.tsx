@@ -19,7 +19,7 @@ export const Comment: React.FC<CommentProps> = ({
         <span className={styles.username}>{username}</span>
         <span className={styles.date}>{date}</span>
       </div>
-      <div>{comment}</div>
+      <div className={styles.commentText}>{comment}</div>
     </CardBody>
   )
 }

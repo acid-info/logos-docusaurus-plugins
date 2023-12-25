@@ -23,12 +23,6 @@ export const WriteComment: React.FC<WriteCommentProps> = ({
     }
   }
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault()
-    }
-  }
-
   return (
     <CardBody>
       <textarea
@@ -38,7 +32,6 @@ export const WriteComment: React.FC<WriteCommentProps> = ({
         rows={4}
         value={comment}
         onChange={(e) => setComment(e.target.value)}
-        onKeyDown={handleKeyDown}
       />
       <div className={styles.actionContainer}>
         <Button
