@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [
+    {
+      "path": "./tsconfig.client.json"
+    }
+  ],
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": true,
+    "tsBuildInfoFile": "./lib/.tsbuildinfo",
+    "rootDir": "src",
+    "outDir": "lib",
+    "jsx": "react",
+    "lib": ["DOM"]
+  },
+  "include": ["src"],
+  "exclude": ["**/__tests__/**"]
+}
