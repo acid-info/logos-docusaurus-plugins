@@ -10,8 +10,7 @@ export const ThemeProvider: React.FC<React.PropsWithChildren<{}>> = ({
 
   return (
     <LSDThemeProvider theme={theme.current} injectCssVars={false}>
-      <Global styles={theme.darkCssVars} />
-      <Global styles={theme.lightCssVars} />
+      <Global styles={theme.cssVars} />
       {children}
     </LSDThemeProvider>
   )
