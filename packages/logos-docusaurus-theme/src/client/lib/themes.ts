@@ -4,14 +4,22 @@ import { css } from '@emotion/react'
 import { useMemo } from 'react'
 import { useThemeOptions } from './useThemeOptions'
 
-const useThemeCssVars = (theme: Theme, colorMode: string) =>
+const useThemeCssVars = (light: Theme, dark: Theme, fallback: Theme) =>
   useMemo(
     () => css`
-      [data-theme=${colorMode}] {
-        ${theme.cssVars}
+      html:not([data-theme]) {
+        ${fallback.cssVars}
+      }
+
+      html[data-theme='light'] {
+        ${light.cssVars}
+      }
+
+      html[data-theme='dark'] {
+        ${dark.cssVars}
       }
     `,
-    [theme],
+    [dark, light],
   )
 
 export const useTheme = () => {
@@ -43,7 +51,6 @@ export const useTheme = () => {
     light: themes.light,
     current: themes[colorMode.colorMode],
     colorMode: colorMode.colorMode,
-    lightCssVars: useThemeCssVars(themes.light, 'light'),
-    darkCssVars: useThemeCssVars(themes.dark, 'dark'),
+    cssVars: useThemeCssVars(themes.light, themes.dark, themes.light),
   }
 }
