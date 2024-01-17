@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.138](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.137...v1.0.0-alpha.138) (2024-01-17)
+
+### Bug Fixes
+
+- use light theme when js is disabled ([bfa6888](https://github.com/acid-info/logos-docusaurus-plugins/commit/bfa6888eb31243159867f0012af50eb742937fb6))
+
 # [1.0.0-alpha.137](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.136...v1.0.0-alpha.137) (2023-12-22)
 
 **Note:** Version bump only for package root
