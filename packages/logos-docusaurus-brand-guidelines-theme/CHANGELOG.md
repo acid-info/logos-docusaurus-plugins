@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.139](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.138...v1.0.0-alpha.139) (2024-01-18)
+
+### Bug Fixes
+
+- fix broken ImageGrid square mode layout ([f243086](https://github.com/acid-info/logos-docusaurus-plugins/commit/f243086542c3caa16db56489a19bcd786064ef6e))
+
 # [1.0.0-alpha.130](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.129...v1.0.0-alpha.130) (2023-12-15)
 
 ### Bug Fixes
