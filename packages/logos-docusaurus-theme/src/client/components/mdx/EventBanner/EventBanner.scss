@@ -1,0 +1,8 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-event-banner__thumbnail {
+  aspect-ratio: 5 / 1;
+  border: 1px solid rgba(var(--lsd-border-primary), 0.2);
+  margin-bottom: 32px;
+}

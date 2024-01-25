@@ -1,0 +1,17 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-event-info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  box-sizing: border-box;
+  height: 100%;
+
+  border-top: 1px solid rgba(var(--lsd-border-primary));
+  background: rgba(var(--lsd-theme-primary), 0.05);
+}

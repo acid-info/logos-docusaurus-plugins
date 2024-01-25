@@ -1,0 +1,37 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-event-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  text-decoration: none !important;
+}
+
+.mdx-event-card__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.mdx-event-card__thumbnail {
+  aspect-ratio: 5 / 1;
+  border: 1px solid rgba(var(--lsd-border-primary), 0.2);
+}
+
+.mdx-event-card__title {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.mdx-event-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid rgba(var(--lsd-border-primary), 0.2);
+  padding: 16px 16px 16px 0;
+  width: 100%;
+}

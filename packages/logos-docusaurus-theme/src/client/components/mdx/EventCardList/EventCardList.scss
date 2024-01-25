@@ -1,0 +1,13 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-event-card-list__button {
+  display: block;
+  margin: 0 auto;
+}
+
+@include utils.responsive('sm', 'down') {
+  .mdx-event-card-list__container {
+    margin-bottom: 48px;
+  }
+}
