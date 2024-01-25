@@ -1,0 +1,40 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-event-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  text-decoration: none !important;
+}
+
+.mdx-event-profile__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.mdx-event-profile__image {
+  aspect-ratio: 1 / 1;
+}
+
+.mdx-event-profile__title {
+  margin-bottom: 8px;
+}
+
+.mdx-event-profile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.mdx-event-profile__role {
+  margin-bottom: 16px;
+}
+
+.mdx-event-profile__social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

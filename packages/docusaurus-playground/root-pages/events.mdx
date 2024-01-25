@@ -1,0 +1,120 @@
+---
+title: Events
+description: List of all Waku events
+hide_table_of_contents: true
+hude_title: true
+---
+
+import {
+  EventCardList,
+  EventCTASection,
+  Grid,
+  Box,
+} from '@site/src/components/mdx'
+
+# Events
+
+List of all Waku events
+
+<head>
+  <body className="events" />
+</head>
+
+<EventCardList
+  data={[
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+    {
+      thumbnail: '/img/event-banner.png',
+      title: 'Meet Waku: Uncompromising Web3 Communication at Scale',
+      date: 'Monday 15-19 January 2024 / 6 PM PST',
+      location: '508 University Avenue Palo Alto, CA 94301 United States',
+      href: '/events/test',
+    },
+  ]}
+/>
+
+<Box top={{ xs: 152 }}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+      <EventCTASection
+        title="Logos Network State"
+        description={
+          'Want to get involved with Waku?\nJoin the Discord community.'
+        }
+        link="https://logos.co"
+        label="Get Involved"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <EventCTASection
+        title="Newsletter"
+        description={'Subscribe\nto our newsletter'}
+        label="Subscribe"
+        formInput={[
+          {
+            label: 'Name',
+            placeholder: 'Name',
+            type: 'text',
+            name: 'name',
+            required: true,
+          },
+          {
+            label: 'Email',
+            placeholder: 'Enter your email',
+            type: 'email',
+            name: 'email',
+            required: true,
+          },
+        ]}
+      />
+    </Grid.Item>
+  </Grid>
+</Box>

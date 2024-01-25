@@ -1,0 +1,25 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-event-about__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+
+  h2 {
+    margin-top: 0 !important;
+    grid-column: 1 / 2;
+  }
+
+  span {
+    grid-column: 5 / 13;
+  }
+}
+
+@include utils.responsive('sm', 'down') {
+  .mdx-event-about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
