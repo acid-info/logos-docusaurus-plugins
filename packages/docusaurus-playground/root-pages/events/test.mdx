@@ -1,0 +1,147 @@
+---
+title: Meet Waku
+description: Uncompromising Web3 Communication at Scale
+hide_table_of_contents: true
+hide_title: true
+---
+
+import {
+  Box,
+  EventBanner,
+  EventInfo,
+  EventAbout,
+  EventProfileList,
+  EventCTA,
+  EventCTASection,
+  Grid,
+} from '@site/src/components/mdx'
+
+<head>
+  <body className="events" />
+</head>
+
+<Box top={{ xs: 8 }}>
+  <EventBanner src="/img/event-banner.png" />
+
+# Meet Waku: Uncompromising Web3 Communication at Scale
+
+We are a family of robust, censorship-resistant communication protocols designed to enable privacy-focused messaging for web3 apps.
+
+<Box top={{ xs: 32 }}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+      <EventInfo 
+        label="Date"
+        content="Monday 15-19 January 2024 / 6 PM PST"
+      /> 
+      </Grid.Item>
+      <Grid.Item xs={1}>
+        <EventInfo 
+          label="Location"
+          content="508 University Avenue Palo Alto, CA 94301 United States"
+        /> 
+      </Grid.Item>
+    </Grid>
+  </Box>
+</Box>
+
+<Box top={{ xs: 120 }}>
+  <EventAbout>
+Waku is a suite of generalised messaging protocols aiming to be the communication standard for the decentralised web. It enables private and secure human-to-human, machine-to-machine, and human-to-machine communication without reliance on centralised intermediaries. Messaging through Waku is possible from one-to-one to many-to-many.
+
+<br />
+
+Waku serves as the communications layer of the Logos tech stack. Alongside the trustless agreement layer, Nomos, and the storage layer, Codex, it is one of the Logos Collective's foundational projects.
+
+<br />
+
+Motive:
+Today's internet is increasingly controlled by a small number of tech giants. Google, Amazon, Meta, and a few others dictate what we see and with whom we can communicate. Their influence is almost limitless, and their actions shape global public opinion and even geopolitics.
+
+<br />
+
+To anyone that understands the internet's present architecture, this outcome should be expected. The centralised entities through which we communicate have privileged access to reams of data that we, as internet users, produce daily, presenting an opportunity for the kind of surveillance that was once confined to the pages of science-fiction literature. Thinking that the most powerful commercial and political institutions would not leverage this would be naive.
+
+<br />
+
+Yet, it doesn't have to be this way. Advances in cryptography, peer-to-peer networking, and decentralised technologies provide an alternate path forward.
+
+  </EventAbout>
+</Box>
+
+<Box top={{ xs: 120 }}>
+  <EventProfileList
+    title="Our delegation"
+    description="Reach out for the appointment."
+    data={[
+      {
+        image: '/img/profile-image.png',
+        name: 'Kumaraguru T',
+        role: 'Developer relations engineer',
+        email: 'a@acid.info',
+        linkedin: 'https://www.linkedin.com/',
+      },
+      {
+        image: '/img/profile-image.png',
+        name: 'Aaron Bendersky',
+        role: 'Program Manager',
+        email: 'b@acid.info',
+        linkedin: 'https://www.linkedin.com/',
+      },
+      {
+        image: '/img/profile-image.png',
+        name: 'Pedro Lains',
+        role: 'Business Development Lead',
+        email: 'c@acid.info',
+        linkedin: 'https://www.linkedin.com/',
+      },
+    ]}
+  />
+</Box>
+
+<Box top={{ xs: 120 }}>
+  <EventCTA
+    title="Interested? Join the event"
+    label="CTA"
+    link="https://logos.co"
+    linkProps={{ target: '_self' }}
+  />
+</Box>
+
+<Box top={{ xs: 120 }}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+      <EventCTASection
+        title="Logos Network State"
+        description={
+          'Want to get involved with Waku?\nJoin the Discord community.'
+        }
+        link="https://logos.co"
+        label="Get Involved"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <EventCTASection
+        title="Newsletter"
+        description={'Subscribe\nto our newsletter'}
+        label="Subscribe"
+        formInput={[
+          {
+            label: 'Name',
+            placeholder: 'Name',
+            type: 'text',
+            name: 'name',
+            required: true,
+          },
+          {
+            label: 'Email',
+            placeholder: 'Enter your email',
+            type: 'email',
+            name: 'email',
+            required: true,
+          },
+        ]}
+      />
+    </Grid.Item>
+  </Grid>
+</Box>

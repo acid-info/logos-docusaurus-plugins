@@ -79,6 +79,8 @@ export const BreadcrumbsBase: React.FC<BreadcrumbsBaseProps> = ({
     return null
   }
 
+  const categoryToLink = ['events']
+
   return (
     <nav
       className={clsx(
@@ -105,6 +107,7 @@ export const BreadcrumbsBase: React.FC<BreadcrumbsBaseProps> = ({
         )}
         {breadcrumbs.map((item, idx) => {
           const isLast = idx === breadcrumbs.length - 1
+          const convertCategoryToLink = categoryToLink.includes(item.label)
           return (
             <BreadcrumbsItem
               key={idx}
@@ -112,9 +115,17 @@ export const BreadcrumbsBase: React.FC<BreadcrumbsBaseProps> = ({
               index={idx}
               addMicrodata={!!item.href}
             >
-              <BreadcrumbsItemLink href={item.href} isLast={isLast}>
-                {item.label}
-              </BreadcrumbsItemLink>
+              {convertCategoryToLink ? (
+                <Link to={`/${item.label}`}>
+                  <BreadcrumbsItemLink href={item.href} isLast={isLast}>
+                    {item.label}
+                  </BreadcrumbsItemLink>
+                </Link>
+              ) : (
+                <BreadcrumbsItemLink href={item.href} isLast={isLast}>
+                  {item.label}
+                </BreadcrumbsItemLink>
+              )}
             </BreadcrumbsItem>
           )
         })}

@@ -42,8 +42,9 @@ const config = {
           },
         },
         docs: {
-          routeBasePath: '/about',
-          path: 'docs',
+          id: 'root-pages',
+          routeBasePath: '/',
+          path: 'root-pages',
         },
         og: {},
 
@@ -74,6 +75,14 @@ const config = {
         scriptUrl: 'https://fathom.status.im/tracker.js',
         disabled: true,
         hostnames: ['localhost', 'waku.org'],
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs',
+        routeBasePath: '/about',
+        path: 'docs',
       },
     ],
   ],
