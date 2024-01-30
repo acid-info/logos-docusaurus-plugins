@@ -783,6 +783,11 @@ main[itemtype*='Blog'] {
     display: none;
   }
 
+  .breadcrumbs__link,
+  .breadcrumbs__item {
+    text-decoration: none;
+  }
+
   .pagination-nav {
     display: none;
   }
@@ -796,11 +801,6 @@ main[itemtype*='Blog'] {
 
     .breadcrumbs__item--active {
       box-sizing: border-box;
-      border: 1px solid rgb(var(--lsd-border-primary));
-
-      & > span {
-        padding: 4px 8px;
-      }
     }
   }
 }
