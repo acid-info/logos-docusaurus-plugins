@@ -6,3 +6,11 @@
     margin-bottom: 16px;
   }
 }
+
+@include utils.responsive('sm', 'down') {
+  .mdx-event-profile-list__container {
+    .mdx-grid > .mdx-grid__content {
+      gap: 24px !important;
+    }
+  }
+}

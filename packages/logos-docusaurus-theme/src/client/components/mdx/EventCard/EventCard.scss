@@ -21,6 +21,10 @@
   border: 1px solid rgba(var(--lsd-border-primary), 0.2);
 }
 
+.mdx-event-card__label {
+  opacity: 0.6;
+}
+
 .mdx-event-card__title {
   &:hover {
     text-decoration: underline !important;
@@ -34,4 +38,8 @@
   border-top: 1px solid rgba(var(--lsd-border-primary), 0.2);
   padding: 16px 16px 16px 0;
   width: 100%;
+
+  * {
+    white-space: pre-wrap;
+  }
 }

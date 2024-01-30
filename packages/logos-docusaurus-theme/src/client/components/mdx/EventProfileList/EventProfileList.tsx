@@ -29,7 +29,7 @@ export const EventProfileList: React.FC<EventProfileListProps> = ({
         <Typography variant="subtitle1">{description}</Typography>
       )}
       <Box top={40}>
-        <Grid xs={{ cols: 1, gap: '80px 16px' }} md={{ cols: 3 }}>
+        <Grid xs={{ cols: 1, gap: '16px' }} md={{ cols: 3 }}>
           {data.map((event, index) => (
             <Grid.Item xs={1} key={index}>
               <EventProfile {...event} />
