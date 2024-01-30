@@ -10,6 +10,7 @@ export type EventCTASectionProps = {
   link?: string
   linkProps: Props
   formInput?: any[]
+  formListId?: number
 }
 
 export const EventCTASection: React.FC<EventCTASectionProps & Props> = ({
@@ -19,6 +20,7 @@ export const EventCTASection: React.FC<EventCTASectionProps & Props> = ({
   link,
   linkProps,
   formInput,
+  formListId,
 }) => {
   const [formState, setFormState] = React.useState({ email: '', name: '' })
   const [message, setMessage] = React.useState('')
@@ -43,7 +45,7 @@ export const EventCTASection: React.FC<EventCTASectionProps & Props> = ({
             params: {
               value: formState?.email,
               name: formState?.name || '',
-              list_id: 2,
+              list_id: formListId,
               subscription_type: 'email',
             },
           }),
