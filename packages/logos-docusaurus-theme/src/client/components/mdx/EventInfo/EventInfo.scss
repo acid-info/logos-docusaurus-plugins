@@ -4,7 +4,6 @@
 .mdx-event-info__container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   padding: 16px;
   gap: 16px;
   flex: 1 0 0;
@@ -14,4 +13,8 @@
 
   border-top: 1px solid rgba(var(--lsd-border-primary));
   background: rgba(var(--lsd-theme-primary), 0.05);
+}
+
+.mdx-event-info__label {
+  opacity: 0.6;
 }

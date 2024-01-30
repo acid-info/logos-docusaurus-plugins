@@ -37,11 +37,15 @@ export const EventCard: React.FC<EventCardProps> = ({
       </Typography>
       <div className="mdx-event-card__row">
         <div className="mdx-event-card__info">
-          <Typography variant="body2">Date</Typography>
+          <Typography className="mdx-event-card__label" variant="body2">
+            Date
+          </Typography>
           <Typography variant="body2">{date}</Typography>
         </div>
         <div className="mdx-event-card__info">
-          <Typography variant="body2">Location</Typography>
+          <Typography className="mdx-event-card__label" variant="body2">
+            Location
+          </Typography>
           <Typography variant="body2">{location}</Typography>
         </div>
       </div>

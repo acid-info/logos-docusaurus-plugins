@@ -1,0 +1,26 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-event-header__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  h1 {
+    margin-bottom: 0 !important;
+  }
+}
+
+@include utils.responsive('sm', 'down') {
+  .mdx-event-header__container {
+    h1 {
+      font-size: 24px !important;
+      line-height: 32px !important;
+    }
+
+    p {
+      font-size: 14px !important;
+      line-height: 20px !important;
+    }
+  }
+}
