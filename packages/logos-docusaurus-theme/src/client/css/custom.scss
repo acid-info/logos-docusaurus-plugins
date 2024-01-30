@@ -851,6 +851,12 @@ main[itemtype*='Blog'] {
   .navbar__left {
     display: flex;
   }
+
+  .events-cta-sections {
+    .mdx-grid__content {
+      gap: 64px !important;
+    }
+  }
 }
 
 @include utils.responsive('lg', 'up') {

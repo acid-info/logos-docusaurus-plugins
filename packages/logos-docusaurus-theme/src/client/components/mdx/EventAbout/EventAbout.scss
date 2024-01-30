@@ -21,5 +21,10 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    span {
+      font-size: 14px !important;
+      line-height: 20px !important;
+    }
   }
 }

@@ -13,6 +13,7 @@ import {
   EventProfileList,
   EventCTA,
   EventCTASection,
+  EventHeader,
   Grid,
 } from '@site/src/components/mdx'
 
@@ -22,13 +23,13 @@ import {
 
 <Box top={{ xs: 8 }}>
   <EventBanner src="/img/event-banner.png" />
+  <EventHeader 
+    title="Meet Waku: Uncompromising Web3 Communication at Scale"
+    description="We are a family of robust, censorship-resistant communication protocols designed to enable privacy-focused messaging for web3 apps."
+  />
 
-# Meet Waku: Uncompromising Web3 Communication at Scale
-
-We are a family of robust, censorship-resistant communication protocols designed to enable privacy-focused messaging for web3 apps.
-
-<Box top={{ xs: 32 }}>
-  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+  <Box top={{ xs: 32 }}>
+  <Grid xs={{ cols: 2, gap: '1rem' }} md={{ cols: 2 }}>
     <Grid.Item xs={1}>
       <EventInfo 
         label="Date"
@@ -109,7 +110,11 @@ Yet, it doesn't have to be this way. Advances in cryptography, peer-to-peer netw
 </Box>
 
 <Box top={{ xs: 120 }}>
-  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+  <Grid
+    xs={{ cols: 1, gap: '1rem' }}
+    md={{ cols: 2 }}
+    className="events-cta-sections"
+  >
     <Grid.Item xs={1}>
       <EventCTASection
         title="Logos Network State"

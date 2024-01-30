@@ -49,19 +49,17 @@
 }
 
 @include utils.responsive('sm', 'down') {
-  .mdx-event-cta-section__input-fields {
-    margin-bottom: 16px;
-  }
+  .mdx-event-cta-section__container {
+    .mdx-event-cta-section__input-fields {
+      margin-bottom: 16px;
+    }
 
-  .mdx-event-cta-section__cta {
-    margin-top: 8px;
-  }
+    .mdx-event-cta-section__cta {
+      margin-top: 8px;
+    }
 
-  .mdx-grid__content {
-    gap: 64px !important;
-  }
-
-  .mdx-event-cta-section__form {
-    margin-bottom: -24px;
+    .mdx-event-cta-section__form {
+      margin-bottom: -24px;
+    }
   }
 }
