@@ -22,6 +22,7 @@ import sharp, { ResizeOptions } from 'sharp'
 type RendererOptions = {
   generateImage?: boolean
   imageTitle?: string
+  imageSubtitle?: string
 }
 
 function parseRendererOptions(type: 'docs', doc: DocsPageData): RendererOptions
@@ -43,8 +44,8 @@ function parseRendererOptions(
       ? _.get(doc, 'data.metadata.frontMatter')
       : _.get(doc, 'metadata.frontMatter')
 
-  const optNames = ['generateImage', 'imageTitle']
-  const optKeys = ['og:generate_image', 'og:image_title']
+  const optNames = ['generateImage', 'imageTitle', 'imageSubtitle']
+  const optKeys = ['og:generate_image', 'og:image_title', 'og:image_subtitle']
   const options: Record<string, string | undefined> = {}
   const parsed: RendererOptions = {}
 
@@ -69,6 +70,7 @@ function parseRendererOptions(
   if (options.generateImage)
     parsed.generateImage = boolean(options.generateImage)
   if (options.imageTitle) parsed.imageTitle = options.imageTitle
+  if (options.imageSubtitle) parsed.imageSubtitle = options.imageSubtitle
 
   return parsed
 }
@@ -228,7 +230,10 @@ const Layout: React.FC<{
 const docsImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-docs',
   async (doc, { outDir, siteConfig }) => {
-    const { generateImage, imageTitle } = parseRendererOptions('docs', doc)
+    const { generateImage, imageTitle, imageSubtitle } = parseRendererOptions(
+      'docs',
+      doc,
+    )
     if (generateImage === false) return
 
     const logo = await getLogo(siteConfig, outDir)
@@ -237,14 +242,18 @@ const docsImageRenderer = imageRendererFactory(
     return [
       <Layout
         title={imageTitle ?? (doc.metadata.title || siteConfig.title)}
-        footer={[
-          <span style={{ textTransform: 'capitalize' }}>
-            {doc.plugin.id === 'default' ? 'Docs' : doc.plugin.id}
-          </span>,
-          doc.version.badge && doc.version.label && (
-            <span>{doc.version.label}</span>
-          ),
-        ]}
+        footer={
+          imageSubtitle
+            ? [<span>{imageSubtitle}</span>]
+            : [
+                <span style={{ textTransform: 'capitalize' }}>
+                  {doc.plugin.id === 'default' ? 'Docs' : doc.plugin.id}
+                </span>,
+                doc.version.badge && doc.version.label && (
+                  <span>{doc.version.label}</span>
+                ),
+              ]
+        }
         logo={
           logo && <img src={logo.src as any} style={{ height: logo.height }} />
         }
@@ -267,7 +276,10 @@ const blogImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-blog',
   async (page, { outDir, siteConfig }) => {
     const { pageType, data } = page
-    const { generateImage, imageTitle } = parseRendererOptions('blog', page)
+    const { generateImage, imageTitle, imageSubtitle } = parseRendererOptions(
+      'blog',
+      page,
+    )
     if (generateImage === false) return
 
     const logo = await getLogo(siteConfig, outDir)
@@ -289,13 +301,17 @@ const blogImageRenderer = imageRendererFactory(
             ? page.data.label
             : '')
         }
-        footer={[
-          page.plugin.blogTitle,
-          pageType === 'post' &&
-            `by ${page.data.metadata.authors
-              .map((author) => author.name)
-              .join(', ')}`,
-        ]}
+        footer={
+          imageSubtitle
+            ? [<span>{imageSubtitle}</span>]
+            : [
+                page.plugin.blogTitle,
+                pageType === 'post' &&
+                  `by ${page.data.metadata.authors
+                    .map((author) => author.name)
+                    .join(', ')}`,
+              ]
+        }
         logo={
           logo && <img src={logo.src as any} style={{ height: logo.height }} />
         }
@@ -318,7 +334,10 @@ const pagesImageRenderer = imageRendererFactory(
   'docusaurus-plugin-content-pages',
   async (page, { outDir, siteConfig }) => {
     const { metadata, plugin } = page
-    const { generateImage, imageTitle } = parseRendererOptions('page', page)
+    const { generateImage, imageTitle, imageSubtitle } = parseRendererOptions(
+      'page',
+      page,
+    )
     if (generateImage === false) return
 
     const url = new URL(siteConfig.url)
@@ -332,7 +351,7 @@ const pagesImageRenderer = imageRendererFactory(
           imageTitle ??
           ((metadata as MDXPageMetadata).frontMatter?.title || metadata.title)
         }
-        footer={url.host}
+        footer={imageSubtitle ?? url.host}
         logo={
           logo && <img src={logo.src as any} style={{ height: logo.height }} />
         }
