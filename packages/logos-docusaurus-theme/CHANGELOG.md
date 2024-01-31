@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.140](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.139...v1.0.0-alpha.140) (2024-01-31)
+
+### Features
+
+- add support for custom subtitle on og images ([14a8046](https://github.com/acid-info/logos-docusaurus-plugins/commit/14a8046d5a5106c9c2beb803c5e8598a760d949f))
+
 # [1.0.0-alpha.138](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.137...v1.0.0-alpha.138) (2024-01-17)
 
 ### Bug Fixes
