@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.141](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.140...v1.0.0-alpha.141) (2024-02-05)
+
+### Features
+
+- events and event template page ([39c86a0](https://github.com/acid-info/logos-docusaurus-plugins/commit/39c86a093db205685aa0a2c67988cc1948c7b7df))
+
 # [1.0.0-alpha.140](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.139...v1.0.0-alpha.140) (2024-01-31)
 
 ### Features
