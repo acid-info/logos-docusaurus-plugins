@@ -50,8 +50,17 @@ export default function FooterLayout({ style, links, logo, copyright }) {
         )}
         {React.cloneElement(links, { links: firstRow })}
       </div>
-      <div className={styles.secondRow}>
-        <div className="footer__bottom text--center">Logos Collective</div>
+      <div className={clsx(styles.secondRow)}>
+        <span className={clsx('footer__bottom text--center')}>
+          Built by{' '}
+          <a
+            href="https://free.technology/"
+            target="_blank"
+            className={clsx(styles.footerLink)}
+          >
+            IFT
+          </a>
+        </span>
         {React.cloneElement(links, { links: secondRow })}
       </div>
       <Button
