@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.142](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.141...v1.0.0-alpha.142) (2024-02-05)
+
+### Features
+
+- update the footer org info ([9d3f3cf](https://github.com/acid-info/logos-docusaurus-plugins/commit/9d3f3cf88af40fd20fed7e44467e43073d7aca5c))
+
 # [1.0.0-alpha.141](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.140...v1.0.0-alpha.141) (2024-02-05)
 
 ### Features
