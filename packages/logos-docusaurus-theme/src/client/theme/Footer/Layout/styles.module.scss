@@ -20,6 +20,12 @@
   left: 16px;
 }
 
+.footerLink {
+  text-decoration: underline;
+  width: fit-content;
+  height: fit-content;
+}
+
 @include utils.responsive('lg', 'down') {
   :global {
     .footer {
