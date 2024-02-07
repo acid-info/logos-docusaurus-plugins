@@ -36,6 +36,14 @@ export type CallToActionSectionProps = Omit<
    */
   target?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target']
   /**
+   * Whether to display a border-top in the section
+   */
+  border?: boolean
+  /**
+   * The text alignment of the section
+   */
+  align?: 'unset' | 'left' | 'right' | 'center'
+  /**
    * The variant of the button
    */
   variant?: ButtonProps['variant']
@@ -114,6 +122,8 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
   description,
   list = [],
   target,
+  border = true,
+  align = 'unset',
   className,
   children,
   variant = 'outlined',
@@ -140,10 +150,16 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
         className,
         'mdx-cta-section',
         `mdx-cta-section--${display}`,
+        !border && 'mdx-cta-section--no-border',
       )}
       {...(props as any)}
     >
-      <div className="mdx-cta-section__container">
+      <div
+        className={clsx(
+          'mdx-cta-section__container',
+          align !== 'unset' && `mdx-cta-section--align-${align}`,
+        )}
+      >
         <Typography component="h2" className="mdx-cta-section__title">
           {title}
         </Typography>

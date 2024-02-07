@@ -15,6 +15,36 @@
     display: block;
     width: fit-content;
   }
+
+  .mdx-cta-section--align-center {
+    * {
+      text-align: center;
+    }
+
+    .mdx-cta-button {
+      margin-inline: auto;
+    }
+  }
+
+  .mdx-cta-section--align-left {
+    * {
+      text-align: left;
+    }
+  }
+
+  .mdx-cta-section--align-right {
+    * {
+      text-align: right;
+    }
+
+    .mdx-cta-button {
+      margin-left: auto;
+    }
+  }
+}
+
+.mdx-cta-section--no-border {
+  border-top: none !important;
 }
 
 .mdx-cta-section--title-only {
