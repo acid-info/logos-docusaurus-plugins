@@ -43,6 +43,18 @@
   }
 }
 
+.mdx-cta-section__header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  button {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+}
+
 .mdx-cta-section--no-border {
   border: none !important;
 
