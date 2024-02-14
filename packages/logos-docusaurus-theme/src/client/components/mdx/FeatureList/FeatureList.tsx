@@ -29,6 +29,20 @@ export type FeatureListProps = Omit<
    * The position of the call to action buttons.
    */
   ctaPosition?: 'top' | 'bottom'
+  /**
+   * The style of the index of the feature list.
+   */
+  indexStyle?: 'circle' | 'number'
+  /**
+   * The border style of the feature list.
+   */
+  borderStyle?: 'none' | 'solid'
+}
+
+function pad(num, size) {
+  num = num.toString()
+  while (num.length < size) num = '0' + num
+  return num
 }
 
 /**
@@ -59,6 +73,8 @@ export const FeatureList: React.FC<FeatureListProps> = ({
   features = [],
   className,
   ctaPosition = 'bottom',
+  indexStyle = 'circle',
+  borderStyle = 'solid',
   children,
   ...props
 }) => {
@@ -69,13 +85,14 @@ export const FeatureList: React.FC<FeatureListProps> = ({
         'mdx-feature-list',
         `mdx-feature-list--${alignment}-aligned`,
         `mdx-feature-list--cta-${ctaPosition}`,
+        borderStyle === 'none' && 'mdx-feature-list--border-none',
       )}
       {...props}
     >
       <div className="mdx-feature-list__header">
         <Typography
-          variant="h5"
-          component="h1"
+          variant="h2"
+          component="h2"
           className="mdx-feature-list__title"
         >
           {title}
@@ -86,15 +103,32 @@ export const FeatureList: React.FC<FeatureListProps> = ({
       </div>
       <div className="mdx-feature-list__list">
         {features.map((feature, index) => (
-          <div key={index} className={clsx('mdx-feature-list__feature')}>
+          <div
+            key={index}
+            className={clsx(
+              'mdx-feature-list__feature',
+              borderStyle === 'none' && 'mdx-feature-list--border-none',
+            )}
+          >
             <div className="mdx-feature-list__feature-inner">
-              <Typography
-                variant="subtitle1"
-                component="div"
-                className="mdx-feature-list__feature-index"
-              >
-                {index + 1}
-              </Typography>
+              {indexStyle === 'circle' ? (
+                <Typography
+                  variant="subtitle1"
+                  component="div"
+                  className={clsx('mdx-feature-list__feature-index--circle')}
+                >
+                  {index + 1}
+                </Typography>
+              ) : (
+                <Typography
+                  variant="subtitle1"
+                  component="div"
+                  className={clsx('mdx-feature-list__feature-index--number')}
+                >
+                  [{pad(index + 1, 2)}]
+                </Typography>
+              )}
+
               <Typography
                 variant="h2"
                 component="h2"
@@ -110,7 +144,13 @@ export const FeatureList: React.FC<FeatureListProps> = ({
                 <span>{feature.description}</span>
               </Typography>
             </div>
-            <div className="mdx-feature-list__feature-border"></div>
+            <div
+              className={clsx(
+                'mdx-feature-list__feature-border',
+                borderStyle === 'none' &&
+                  'mdx-feature-list__feature-border--none',
+              )}
+            ></div>
           </div>
         ))}
       </div>

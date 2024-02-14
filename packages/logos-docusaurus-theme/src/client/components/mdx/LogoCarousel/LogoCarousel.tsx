@@ -33,15 +33,14 @@ export const LogoCarousel: React.FC<LogoCarouselProps> = ({
   if (typeof window !== 'undefined' && hydrated && !containerRef.current) {
     containerRef.current =
       ref.current?.querySelector('.mdx-grid__content') ?? null
-
-    console.log(containerRef.current, ref.current)
   }
 
   return (
     <div ref={ref} className={clsx(className, 'mdx-logo-carousel')} {...props}>
-      <SectionHeader title={title}>
-        <ScrollButtons containerRef={containerRef} />
-      </SectionHeader>
+      <SectionHeader title={title} noBorder />
+      <div className="mdx-logo-carousel-buttons">
+        <ScrollButtons containerRef={containerRef} spacing="spaced" />
+      </div>
       <Grid
         className="mdx-logo-carousel__inner"
         xs={{ wrap: false, gap: '96px', scrollButtons: false }}

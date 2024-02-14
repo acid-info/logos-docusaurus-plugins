@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import React from 'react'
 import { CallToActionButton } from '../index'
 import './CallToActionSection.scss'
+import { IconExternalLink } from '@logos-theme/components/Icon'
 
 /**
  * Props for the CallToActionSection component
@@ -178,19 +179,25 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
         )}
       </div>
       {list.length > 0 && (
-        <div className="mdx-cta-section__list">
+        <div
+          className={clsx(
+            'mdx-cta-section__list',
+            !border && 'mdx-cta-section--no-border',
+          )}
+        >
           {list.map((option, index) => {
             const content = (
               <div className="mdx-cta-section__list-item" key={index}>
                 <Typography
                   component="div"
-                  variant="subtitle2"
+                  variant="body2"
                   className="mdx-cta-section__item-title"
                 >
                   {option.title}
+                  <IconExternalLink size="m" />
                 </Typography>
                 <Typography
-                  variant="h2"
+                  variant="h4"
                   component="p"
                   className="mdx-cta-section__item-description"
                 >

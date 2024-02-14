@@ -9,7 +9,7 @@
   padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .mdx-showcase-card__logo {
@@ -33,7 +33,7 @@
 }
 
 .mdx-showcase-card__description {
-  margin-top: -0.125rem;
+  margin-top: 1.5rem;
   padding-top: 0.5rem;
 }
 
@@ -53,6 +53,18 @@
   .mdx-showcase-card__description {
     border-top: 1px solid rgb(var(--lsd-border-primary));
     padding-top: 1rem;
+  }
+}
+
+.mdx-showcase-card__cta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 20px;
+
+  svg {
+    transform: rotate(-90deg);
   }
 }
 

@@ -5,6 +5,7 @@ import './Hero.scss'
 
 export type HeroProps = Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> & {
   size?: 'large' | 'medium' | 'small'
+  verticalAlign?: 'top' | 'center' | 'bottom'
 }
 
 /**
@@ -51,12 +52,18 @@ export const Hero: React.FC<HeroProps> = ({
   size = 'medium',
   className,
   children,
+  verticalAlign = 'top',
   ...props
 }) => {
   return (
     <HeroContext.Provider value={{ size }}>
       <div
-        className={clsx(className, 'mdx-hero', `mdx-hero--${size}`)}
+        className={clsx(
+          className,
+          'mdx-hero',
+          `mdx-hero--${size}`,
+          `mdx-hero--${verticalAlign}`,
+        )}
         {...props}
       >
         {children}
