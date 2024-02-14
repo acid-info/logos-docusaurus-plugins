@@ -67,8 +67,8 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
         )}
         {name && (
           <Typography
-            variant="h2"
-            component="h2"
+            variant="h4"
+            component="h4"
             className="mdx-showcase-card__name"
           >
             {name}
