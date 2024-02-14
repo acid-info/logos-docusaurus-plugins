@@ -49,6 +49,10 @@ export type CallToActionSectionProps = Omit<
    */
   variant?: ButtonProps['variant']
   /**
+   * The position of the call-to-action button
+   */
+  ctaPosition?: 'top' | 'bottom'
+  /**
    * A list of items to display in the section
    */
   list?: {
@@ -132,6 +136,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
   className,
   children,
   variant = 'outlined',
+  ctaPosition = 'bottom',
   ...props
 }) => {
   const withDescription = !!description
@@ -165,13 +170,25 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
           align !== 'unset' && `mdx-cta-section--align-${align}`,
         )}
       >
-        <Typography component="h2" className="mdx-cta-section__title">
-          {title}
-        </Typography>
+        <div className="mdx-cta-section__header">
+          <Typography component="h2" className="mdx-cta-section__title">
+            {title}
+          </Typography>
+          {href && ctaPosition === 'top' && (
+            <CallToActionButton
+              target={target}
+              href={href}
+              className="mdx-cta-section__link"
+              variant={variant}
+            >
+              {label}
+            </CallToActionButton>
+          )}
+        </div>
         <Typography component="h3" className="mdx-cta-section__description">
           {description}
         </Typography>
-        {href && (
+        {href && ctaPosition === 'bottom' && (
           <CallToActionButton
             target={target}
             href={href}
