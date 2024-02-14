@@ -127,6 +127,10 @@
   }
 }
 
+.mdx-cta-section__list-item-link {
+  cursor: pointer;
+}
+
 .mdx-cta-section--list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -165,7 +169,7 @@
     }
 
     .mdx-cta-section__list-item {
-      > .mdx-cta-section__item-title {
+      > a > .mdx-cta-section__item-title {
         margin-top: 1.5rem;
         padding: 3px 11px;
         display: flex;
@@ -175,6 +179,10 @@
         border-radius: 1rem;
         color: rgb(var(--lsd-text-primary));
         border: 1px solid rgb(var(--lsd-border-primary));
+      }
+
+      & > a {
+        text-decoration: none;
       }
 
       & > .mdx-cta-section__item-description {
