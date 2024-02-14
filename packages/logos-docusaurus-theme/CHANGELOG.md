@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.143](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.142...v1.0.0-alpha.143) (2024-02-14)
+
+### Features
+
+- add border and align prop to CallToActionSection ([a5736a2](https://github.com/acid-info/logos-docusaurus-plugins/commit/a5736a2a33990545a31af17adc1855852c9c520e))
+
 # [1.0.0-alpha.142](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.141...v1.0.0-alpha.142) (2024-02-05)
 
 ### Features
