@@ -171,7 +171,7 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
         )}
       >
         <div className="mdx-cta-section__header">
-          <Typography component="h2" className="mdx-cta-section__title">
+          <Typography component="h2" className={clsx('mdx-cta-section__title')}>
             {title}
           </Typography>
           {href && ctaPosition === 'top' && (
