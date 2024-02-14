@@ -24,6 +24,10 @@
   }
 }
 
+.mdx-logo-carousel-buttons {
+  margin-top: 64px;
+}
+
 @include utils.responsive('lg', 'down') {
   .mdx-logo-carousel {
     .mdx-logo-carousel__inner {

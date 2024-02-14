@@ -9,11 +9,13 @@ export type HeroInfoProps = PropsWithChildren<
   React.HTMLAttributes<HTMLDivElement>
 > & {
   size?: 'medium' | 'large' | 'small'
+  hideScrollToBottom?: boolean
 }
 
 export const HeroInfo: React.FC<HeroInfoProps> = ({
   size: sizeProp,
   className,
+  hideScrollToBottom = false,
   children,
   ...props
 }) => {
@@ -29,7 +31,7 @@ export const HeroInfo: React.FC<HeroInfoProps> = ({
       >
         {children}
       </div>
-      {hydrated && <ScrollToBottom />}
+      {hydrated && !hideScrollToBottom && <ScrollToBottom />}
     </>
   )
 }

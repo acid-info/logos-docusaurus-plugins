@@ -13,3 +13,15 @@
   //padding-bottom: 2rem;
   //border-top: none;
 }
+
+.mdx-hero--top {
+  justify-content: flex-start;
+}
+
+.mdx-hero--center {
+  justify-content: center;
+}
+
+.mdx-hero--bottom {
+  justify-content: flex-end;
+}

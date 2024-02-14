@@ -74,35 +74,36 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
             src={imgSrc}
           />
         )}
-        <Typography
-          className="mdx-profile-card__name"
-          variant="h3"
-          component="h4"
-        >
-          {name}
-        </Typography>
-      </div>
-
-      <div className="mdx-profile-card__buttons">
-        {githubUsername && githubLink && (
-          <Link
-            href={githubLink}
-            target="_blank"
-            className={'mdx-profile-card__link'}
+        <div>
+          <Typography
+            className="mdx-profile-card__name"
+            variant="h4"
+            component="h4"
           >
-            <IconGithub />
-          </Link>
-        )}
+            {name}
+          </Typography>
+          <div className="mdx-profile-card__buttons">
+            {githubUsername && githubLink && (
+              <Link
+                href={githubLink}
+                target="_blank"
+                className={'mdx-profile-card__link'}
+              >
+                <IconGithub />
+              </Link>
+            )}
 
-        {discordUsername && discordLink && (
-          <Link
-            href={discordLink}
-            target="_blank"
-            className={'mdx-profile-card__link'}
-          >
-            <IconDiscordWhite />
-          </Link>
-        )}
+            {discordUsername && discordLink && (
+              <Link
+                href={discordLink}
+                target="_blank"
+                className={'mdx-profile-card__link'}
+              >
+                <IconDiscordWhite />
+              </Link>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )
