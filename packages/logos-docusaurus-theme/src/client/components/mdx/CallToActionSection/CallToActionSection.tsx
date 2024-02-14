@@ -64,6 +64,10 @@ export type CallToActionSectionProps = Omit<
      * The URL to link to when the button is clicked
      */
     href?: string
+    /**
+     * The target attribute for the link e.g., `_self`, `_blank`
+     */
+    target?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target']
   }[]
 }
 
@@ -188,14 +192,20 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
           {list.map((option, index) => {
             const content = (
               <div className="mdx-cta-section__list-item" key={index}>
-                <Typography
-                  component="div"
-                  variant="body2"
-                  className="mdx-cta-section__item-title"
+                <a
+                  className="mdx-cta-section__list-item-link"
+                  href={option?.href}
+                  target={option.target}
                 >
-                  {option.title}
-                  <IconExternalLink size="m" />
-                </Typography>
+                  <Typography
+                    component="div"
+                    variant="body2"
+                    className="mdx-cta-section__item-title"
+                  >
+                    {option.title}
+                    <IconExternalLink size="m" />
+                  </Typography>
+                </a>
                 <Typography
                   variant="h4"
                   component="p"
