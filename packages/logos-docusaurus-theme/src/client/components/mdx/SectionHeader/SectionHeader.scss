@@ -27,6 +27,10 @@
   gap: 2rem;
 }
 
+.mdx-section-header--no-border {
+  border-top: none;
+}
+
 @include utils.responsive('lg', 'down') {
   .mdx-section-header {
     flex-direction: column;

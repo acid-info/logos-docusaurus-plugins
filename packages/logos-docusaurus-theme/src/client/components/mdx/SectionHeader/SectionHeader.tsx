@@ -7,11 +7,12 @@ import './SectionHeader.scss'
 export type SectionHeaderProps = Omit<BoxProps, 'title'> & {
   title?: React.ReactNode
   description?: React.ReactNode
+  noBorder?: boolean
 }
 
 export const SectionHeader: React.FC<
   React.PropsWithChildren<SectionHeaderProps>
-> = ({ title, description, className, children, ...props }) => {
+> = ({ title, description, className, noBorder, children, ...props }) => {
   const withDescription = !!description
 
   return (
@@ -20,13 +21,14 @@ export const SectionHeader: React.FC<
         className,
         'mdx-section-header',
         withDescription && 'mdx-section-header--with-description',
+        noBorder && 'mdx-section-header--no-border',
       )}
       {...props}
     >
       <Typography
         className="mdx-section-header__title"
         component="h2"
-        variant="h5"
+        variant="h2"
       >
         {title}
         {!withDescription && children && (
