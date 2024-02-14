@@ -1,19 +1,19 @@
 import React from 'react'
-import './EventCTASection.scss'
+import './InputCTASection.scss'
 import { Button, TextField, Typography } from '@acid-info/lsd-react'
 import Link, { Props } from '@docusaurus/Link'
 
-export type EventCTASectionProps = {
+export type InputCTASectionProps = {
   title: string
   description: string
   label: string
   link?: string
-  linkProps: Props
+  linkProps?: Props
   formInput?: any[]
   formListId?: number
 }
 
-export const EventCTASection: React.FC<EventCTASectionProps & Props> = ({
+export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   title,
   description,
   label,
@@ -66,13 +66,15 @@ export const EventCTASection: React.FC<EventCTASectionProps & Props> = ({
 
   return (
     <div className="mdx-event-cta-section__container">
-      <Typography
-        variant="subtitle1"
-        component="p"
-        className="mdx-event-cta-section__title"
-      >
-        {title}
-      </Typography>
+      {title && (
+        <Typography
+          variant="subtitle1"
+          component="p"
+          className="mdx-event-cta-section__title"
+        >
+          {title}
+        </Typography>
+      )}
 
       <Typography
         component="h3"

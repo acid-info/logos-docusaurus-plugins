@@ -11,12 +11,14 @@ export type RoadmapProps = Omit<
   title: React.ReactNode
   description?: React.ReactNode
   timeline?: Partial<TimelineItemProps>[]
+  noBorder?: boolean
 }
 
 export const Roadmap: React.FC<RoadmapProps> = ({
   title,
   description,
   timeline = [],
+  noBorder = false,
   className,
   children,
   ...props
@@ -75,6 +77,7 @@ export const Roadmap: React.FC<RoadmapProps> = ({
         className="mdx-roadmap__header"
         title={title}
         description={description}
+        noBorder={noBorder}
       >
         {children}
       </SectionHeader>

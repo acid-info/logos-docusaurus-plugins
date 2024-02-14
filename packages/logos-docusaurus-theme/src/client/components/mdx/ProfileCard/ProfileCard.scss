@@ -2,7 +2,6 @@
 @use '../../../css/lsd';
 
 :root {
-  --card-height: 188px;
   --mobile-width: 253px;
   --mobile-height: 176px;
 }
@@ -12,20 +11,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1rem;
-  border: 1px solid rgb(var(--lsd-border-primary));
-  height: var(--card-height);
+  padding: 1.5rem 1rem 0 1rem;
+  border-top: 1px solid rgb(var(--lsd-border-primary));
 }
 
 .mdx-profile-card__profile {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .mdx-profile-card__avatar {
-  width: 40px !important;
-  height: 40px !important;
+  width: 52px !important;
+  height: 52px !important;
   border-radius: 50%;
   border: 1px solid rgb(var(--lsd-border-primary));
 
