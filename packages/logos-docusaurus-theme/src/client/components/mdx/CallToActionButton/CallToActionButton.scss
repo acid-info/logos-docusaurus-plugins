@@ -4,13 +4,6 @@
 .mdx-cta-button {
   margin-top: 2rem;
 
-  &:hover {
-    &,
-    * {
-      text-decoration: none !important;
-    }
-  }
-
   button,
   button span {
     font-size: inherit;
