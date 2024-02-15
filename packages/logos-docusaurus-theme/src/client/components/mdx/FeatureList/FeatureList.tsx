@@ -130,15 +130,15 @@ export const FeatureList: React.FC<FeatureListProps> = ({
               )}
 
               <Typography
-                variant="h2"
-                component="h2"
+                variant="h3"
+                component="h3"
                 className="mdx-feature-list__feature-title"
               >
                 {feature.title}
               </Typography>
               <Typography
-                variant="h5"
-                component="h3"
+                variant="body1"
+                component="p"
                 className="mdx-feature-list__feature-description"
               >
                 <span>{feature.description}</span>
