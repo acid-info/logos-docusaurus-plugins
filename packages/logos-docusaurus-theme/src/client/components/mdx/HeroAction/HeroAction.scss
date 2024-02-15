@@ -1,13 +1,6 @@
 @use '../../../css/utils';
 
 .mdx-hero-action {
-  &:hover,
-  button:hover {
-    &,
-    * {
-      text-decoration: none !important;
-    }
-  }
 }
 
 .mdx-hero-action--large {
@@ -18,8 +11,6 @@
 
 @include utils.responsive('lg', 'down') {
   .mdx-hero-action {
-    text-decoration: none !important;
-
     button {
       padding: 6px 12px !important;
     }
