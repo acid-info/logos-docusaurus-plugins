@@ -98,7 +98,11 @@ export const Roadmap: React.FC<RoadmapProps> = ({
                 description={item.description}
                 borderStyle={handleBorderStyle(item, index, timeline)}
                 periodStyle={handlePeriodStyle(item?.period ?? currentYear)}
-                className={clsx('mdx-roadmap__timeline-item', item.className)}
+                className={clsx(
+                  'mdx-roadmap__timeline-item',
+                  noBorder && 'mdx-roadmap__timeline-item--no-border',
+                  item.className,
+                )}
               />
             </Grid.Item>
           ))}

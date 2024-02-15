@@ -65,12 +65,14 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
   return (
     <div {...props} className={clsx('mdx-profile-card', props.className)}>
       <div className="mdx-profile-card__profile">
-        {typeof imgSrc === 'undefined' ? (
-          <IconAvatar className="mdx-profile-card__avatar" />
+        {typeof imgSrc === 'undefined' && name ? (
+          <span className="mdx-profile-card__profile-placeholder">
+            {name[0]?.toUpperCase()}
+          </span>
         ) : (
           <img
             alt={typeof name === 'string' ? name : ''}
-            className="mdx-profile-card__avatar"
+            className="mdx-profile-card__profile-image"
             src={imgSrc}
           />
         )}

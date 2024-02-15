@@ -12,6 +12,7 @@ export type LogoCarouselProps = Omit<
   'title'
 > & {
   title?: React.ReactNode
+  gridGap?: string | number
   items?: {
     title?: string
     logoSrc?: string
@@ -21,6 +22,7 @@ export type LogoCarouselProps = Omit<
 
 export const LogoCarousel: React.FC<LogoCarouselProps> = ({
   title,
+  gridGap = '80px',
   className,
   items = [],
   children,
@@ -43,7 +45,7 @@ export const LogoCarousel: React.FC<LogoCarouselProps> = ({
       </div>
       <Grid
         className="mdx-logo-carousel__inner"
-        xs={{ wrap: false, gap: '96px', scrollButtons: false }}
+        xs={{ wrap: false, gap: gridGap, scrollButtons: false }}
       >
         {items.map((item) => (
           <Grid.Item className="mdx-logo-carousel__item">
