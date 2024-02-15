@@ -37,8 +37,9 @@ export const Roadmap: React.FC<RoadmapProps> = ({
       return 'solid'
     }
 
-    return 'dashed'
+    return 'solid'
   }
+
   const getCurrentQuarter = () => {
     const month = new Date().getMonth()
     return 'Q' + Math.ceil((month + 1) / 3)
