@@ -204,6 +204,10 @@
         text-decoration: none;
       }
 
+      & > a:hover {
+        text-decoration: underline;
+      }
+
       & > .mdx-cta-section__item-description {
         margin-top: 1rem;
       }
