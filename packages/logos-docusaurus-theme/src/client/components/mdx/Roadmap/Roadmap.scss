@@ -3,6 +3,10 @@
 
 .mdx-roadmap {
   width: 100%;
+
+  .mdx-grid__scroll {
+    margin-bottom: 32px !important;
+  }
 }
 
 .mdx-roadmap__timeline {
