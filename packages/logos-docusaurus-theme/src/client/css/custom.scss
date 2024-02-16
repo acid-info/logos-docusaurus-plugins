@@ -16,7 +16,7 @@
 
   --ifm-menu-color-background-active: transparent;
   --content-padding: 16px;
-  --container-max-width: 1440px;
+  --container-max-width: 1072px;
   --pagination-nav-margin-top: 96px;
   --ifm-navbar-link-color: rgb(var(--lsd-text-primary));
   --ifm-navbar-background-color: rgb(var(--lsd-surface-primary));
@@ -856,6 +856,15 @@ main[itemtype*='Blog'] {
     .mdx-grid__content {
       gap: 64px !important;
     }
+  }
+}
+
+@include utils.responsive('xl', 'up') {
+  .navbar {
+    padding-inline: 0 !important;
+  }
+  .main-wrapper > main > .row > .col {
+    padding-inline: 0 !important;
   }
 }
 
