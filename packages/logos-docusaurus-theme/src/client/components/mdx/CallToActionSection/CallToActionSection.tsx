@@ -185,9 +185,11 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
             </CallToActionButton>
           )}
         </div>
-        <Typography component="h3" className="mdx-cta-section__description">
-          {description}
-        </Typography>
+        {description && (
+          <Typography component="h3" className="mdx-cta-section__description">
+            {description}
+          </Typography>
+        )}
         {href && ctaPosition === 'bottom' && (
           <CallToActionButton
             target={target}
