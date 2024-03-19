@@ -154,6 +154,12 @@
     }
   }
 
+  .mdx-feature-list__header {
+    h2 {
+      @include lsd.typography('h3');
+    }
+  }
+
   .mdx-feature-list__list {
     grid-template-columns: 1fr;
   }

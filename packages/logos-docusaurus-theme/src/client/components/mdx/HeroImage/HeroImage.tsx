@@ -17,11 +17,9 @@ export const HeroImage: React.FC<HeroImageProps> = ({
   ...props
 }) => {
   return (
-    <>
-      <div className={clsx(className, 'mdx-hero-image')} {...(props as any)}>
-        <img src={src} alt={alt} className="mdx-hero-image__img" />
-        {children}
-      </div>
-    </>
+    <div className={clsx(className, 'mdx-hero-image')} {...(props as any)}>
+      <img src={src} alt={alt} className="mdx-hero-image__img" />
+      {children}
+    </div>
   )
 }
