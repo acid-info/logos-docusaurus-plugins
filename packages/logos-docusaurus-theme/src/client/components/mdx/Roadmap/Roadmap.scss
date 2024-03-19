@@ -7,6 +7,21 @@
   .mdx-grid__scroll {
     margin-bottom: 32px !important;
   }
+
+  .mdx-cta-section__title {
+    @include lsd.typography('h3');
+  }
+
+  .mdx-cta-section__description {
+    margin-top: 24px;
+    @include lsd.typography('h5');
+    max-width: 528px;
+  }
+}
+
+.roadmap__header {
+  display: flex;
+  flex-direction: column;
 }
 
 .mdx-roadmap__timeline {
@@ -30,5 +45,12 @@
 @include utils.responsive('lg', 'down') {
   .mdx-roadmap__timeline {
     margin-top: 4rem;
+  }
+
+  .mdx-roadmap {
+    .mdx-cta-section__description {
+      margin-top: 16px;
+      @include lsd.typography('body1');
+    }
   }
 }
