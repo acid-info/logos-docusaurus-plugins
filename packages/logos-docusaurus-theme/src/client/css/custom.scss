@@ -239,9 +239,9 @@
 
   --ifm-code-font-size: 100% !important;
 
-  @include utils.responsive('xl', 'down') {
-    --container-max-width: 912px;
-  }
+  // @include utils.responsive('xl', 'down') {
+  //   --container-max-width: 912px;
+  // }
 }
 
 [data-theme='dark'] {
