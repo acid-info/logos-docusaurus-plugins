@@ -345,8 +345,16 @@ a code {
     overflow-x: hidden !important;
   }
 
+  #__docusaurus {
+    overflow-x: hidden !important;
+  }
+
   .navbar {
     background-color: transparent;
+  }
+
+  h2 {
+    margin-top: unset !important;
   }
 }
 
