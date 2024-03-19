@@ -42,5 +42,9 @@
     &__description {
       @include lsd.typography('h4');
     }
+
+    h2 {
+      @include lsd.typography('h3');
+    }
   }
 }
