@@ -1,4 +1,8 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
 .mdx-hero {
+  --default-z-index: 1;
   --hero-max-height: 1080px;
 
   position: relative;
@@ -6,6 +10,11 @@
   flex-direction: column;
   height: calc(100vh - var(--ifm-navbar-height) - 8px);
   max-height: var(--hero-max-height);
+  z-index: var(--default-z-index);
+
+  h1 {
+    @include lsd.typography('display4');
+  }
 }
 
 .mdx-hero--large {
@@ -24,4 +33,12 @@
 
 .mdx-hero--bottom {
   justify-content: flex-end;
+}
+
+@include utils.responsive('md', 'down') {
+  .mdx-hero {
+    h1 {
+      @include lsd.typography('h2');
+    }
+  }
 }
