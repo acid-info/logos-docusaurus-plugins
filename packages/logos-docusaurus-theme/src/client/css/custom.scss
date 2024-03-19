@@ -340,6 +340,16 @@ a code {
   --ifm-navbar-item-padding-horizontal: 12px;
 }
 
+.mdx-page {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .navbar {
+    background-color: transparent;
+  }
+}
+
 .card,
 .alert,
 .theme-code-block {
@@ -456,6 +466,10 @@ small {
 
 .navbar__logo {
   height: 40px;
+}
+
+a[class^='sidebarLogo_'] {
+  margin-left: -16px !important;
 }
 
 .header-github-link:hover {
