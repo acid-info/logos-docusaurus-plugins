@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import React from 'react'
-import { Grid, SectionHeader } from '..'
+import { CallToActionSection, Grid, SectionHeader } from '..'
 import { TimelineItem, TimelineItemProps } from '../TimelineItem'
 import './Roadmap.scss'
 
@@ -74,14 +74,17 @@ export const Roadmap: React.FC<RoadmapProps> = ({
 
   return (
     <div className={clsx(className, 'mdx-roadmap')} {...props}>
-      <SectionHeader
+      <CallToActionSection
         className="mdx-roadmap__header"
         title={title}
         description={description}
-        noBorder={noBorder}
+        columns={1}
+        ctaPosition="top"
+        border={false}
+        align="left"
       >
         {children}
-      </SectionHeader>
+      </CallToActionSection>
       {timeline.length > 0 && (
         <Grid
           className="mdx-roadmap__timeline"
