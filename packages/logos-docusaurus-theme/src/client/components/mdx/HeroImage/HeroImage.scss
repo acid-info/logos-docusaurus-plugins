@@ -3,6 +3,7 @@
 .mdx-hero-image {
   --default-z-index: -1;
   z-index: var(--default-z-index);
+  position: relative;
 
   button {
     display: none !important;
