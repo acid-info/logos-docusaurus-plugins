@@ -889,9 +889,7 @@ main[itemtype*='Blog'] {
 @include utils.responsive('lg', 'up') {
   .main-wrapper {
     .container {
-      padding-bottom: calc(
-        var(--desktop-footer-gap) - var(--ifm-footer-padding-vertical)
-      ) !important;
+      padding-bottom: 96px;
     }
 
     & > div {
@@ -998,7 +996,7 @@ main[itemtype*='Blog'] {
   // website pages
   > .container {
     margin-top: 0 !important;
-    margin-bottom: 80px !important;
+    margin-bottom: 0 !important;
   }
   & > main {
     padding: 0;
