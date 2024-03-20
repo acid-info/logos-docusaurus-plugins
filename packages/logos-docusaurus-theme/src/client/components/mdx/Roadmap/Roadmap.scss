@@ -23,6 +23,10 @@
       @include lsd.typography('subtitle1');
     }
   }
+
+  .mdx-cta-button {
+    margin-top: 0;
+  }
 }
 
 .roadmap__header {
