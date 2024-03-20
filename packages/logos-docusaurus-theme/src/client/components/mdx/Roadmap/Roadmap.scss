@@ -17,6 +17,12 @@
     @include lsd.typography('h5');
     max-width: 528px;
   }
+
+  .mdx-cta-section__container {
+    h3 {
+      @include lsd.typography('subtitle1');
+    }
+  }
 }
 
 .roadmap__header {

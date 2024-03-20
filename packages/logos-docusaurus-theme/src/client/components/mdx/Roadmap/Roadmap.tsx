@@ -12,6 +12,8 @@ export type RoadmapProps = Omit<
   description?: React.ReactNode
   timeline?: Partial<TimelineItemProps>[]
   noBorder?: boolean
+  href?: string
+  linkLabel?: string
 }
 
 export const Roadmap: React.FC<RoadmapProps> = ({
@@ -19,6 +21,8 @@ export const Roadmap: React.FC<RoadmapProps> = ({
   description,
   timeline = [],
   noBorder = false,
+  href,
+  linkLabel,
   className,
   children,
   ...props
@@ -82,6 +86,8 @@ export const Roadmap: React.FC<RoadmapProps> = ({
         ctaPosition="top"
         border={false}
         align="left"
+        href={href}
+        label={linkLabel}
       >
         {children}
       </CallToActionSection>
