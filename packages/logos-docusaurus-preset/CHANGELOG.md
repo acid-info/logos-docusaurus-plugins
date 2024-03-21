@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.144](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.143...v1.0.0-alpha.144) (2024-03-21)
+
+### Features
+
+- update Nimbus marks and relevant CSS ([7798fc1](https://github.com/acid-info/logos-docusaurus-plugins/commit/7798fc152d685b76454ae01800c0bf381d890506))
+
 # [1.0.0-alpha.143](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.142...v1.0.0-alpha.143) (2024-02-14)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-preset

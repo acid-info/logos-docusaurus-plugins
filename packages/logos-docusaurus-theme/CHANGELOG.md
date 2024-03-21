@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.144](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.143...v1.0.0-alpha.144) (2024-03-21)
+
+### Bug Fixes
+
+- fix bug with HeroImage ([f67474a](https://github.com/acid-info/logos-docusaurus-plugins/commit/f67474ac580166231b620f7362cbd093edb4b10d))
+- fix bug with HeroImage ([dccb00a](https://github.com/acid-info/logos-docusaurus-plugins/commit/dccb00a4d5ec5fee590dfd786b966440a6b1ba5e))
+- fix bug with navbar ([49a0f64](https://github.com/acid-info/logos-docusaurus-plugins/commit/49a0f641fe8c697b9b0525a37b041774c31375ce))
+- fix misc. style bugs ([97e8b42](https://github.com/acid-info/logos-docusaurus-plugins/commit/97e8b425a668f08c5a19099e22c67d9b8cd4f9e3))
+- fix roadmap styling ([06e3b96](https://github.com/acid-info/logos-docusaurus-plugins/commit/06e3b96264bb1919472b5c5dd08c11574a5d71c1))
+- fix roadmap title font-size ([fb959ca](https://github.com/acid-info/logos-docusaurus-plugins/commit/fb959ca75a62f1d33a1ff106f98f869427f405f3))
+
+### Features
+
+- add ctaPosition to CallToActionSection ([9156dd5](https://github.com/acid-info/logos-docusaurus-plugins/commit/9156dd56674be44cdb20771674fdabded42e2f7a))
+- implement design update requests ([5ccea9e](https://github.com/acid-info/logos-docusaurus-plugins/commit/5ccea9eed3161413d514f52a899a10e92444087a))
+- implement HeroImage ([24461d0](https://github.com/acid-info/logos-docusaurus-plugins/commit/24461d0cce52b90531a4b35dea1adf8fec41977d))
+- refactoring components for new design ([420ca4e](https://github.com/acid-info/logos-docusaurus-plugins/commit/420ca4ea4f0844f7b57a4572cecdae08776cb90c))
+- update Nimbus marks and relevant CSS ([7798fc1](https://github.com/acid-info/logos-docusaurus-plugins/commit/7798fc152d685b76454ae01800c0bf381d890506))
+
 # [1.0.0-alpha.143](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.142...v1.0.0-alpha.143) (2024-02-14)
 
 ### Features
