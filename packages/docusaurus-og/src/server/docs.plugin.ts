@@ -88,6 +88,6 @@ export class DocsPlugin {
   }
 
   getHtmlPath = (doc: Partial<DocsPageData>) =>
-    doc.metadata?.permalink &&
-    path.join(this.context.outDir, doc.metadata.permalink, 'index.html')
+    doc.metadata?.slug &&
+    path.join(this.context.outDir, doc.metadata.slug, 'index.html')
 }
