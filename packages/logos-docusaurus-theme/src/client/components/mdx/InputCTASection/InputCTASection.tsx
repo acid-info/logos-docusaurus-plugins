@@ -65,7 +65,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   }
 
   return (
-    <div className="mdx-event-cta-section__container">
+    <div className="mdx-input-cta-section__container">
       {title && (
         <Typography
           variant="subtitle1"

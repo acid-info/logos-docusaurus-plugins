@@ -589,3 +589,44 @@ import * as challengesData from '/generated/challenges.json'
         urna fames mattis tincidunt nibh mi ornare. Sed amet morbi mauris
         pellentesque fusce ut. Bibendum vestibulum"
 />
+
+<Box top={{ xs: 152, lg: 300 }}>
+  <Grid
+    xs={{ cols: 1, gap: '1rem' }}
+    md={{ cols: 2 }}
+    className="bottom-cta-sections"
+  >
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={
+          'Want to get involved with Codex?\nJoin the Discord community.'
+        }
+        link="https://discord.gg/codex-storage"
+        label="Get Involved"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={'Subscribe\nto our newsletter'}
+        label="Subscribe"
+        formInput={[
+          {
+            label: 'Name',
+            placeholder: 'Name',
+            type: 'text',
+            name: 'name',
+            required: true,
+          },
+          {
+            label: 'Email',
+            placeholder: 'Enter your email',
+            type: 'email',
+            name: 'email',
+            required: true,
+          },
+        ]}
+        formListId={3}
+      />
+    </Grid.Item>
+  </Grid>
+</Box>

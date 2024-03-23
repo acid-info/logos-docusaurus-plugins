@@ -870,6 +870,12 @@ main[itemtype*='Blog'] {
     .mdx-grid__content {
       gap: 98px !important;
     }
+
+    .mdx-grid__content:last-of-type
+      > div:last-of-type
+      > .mdx-input-cta-section__container {
+      margin-bottom: 120px;
+    }
   }
 }
 

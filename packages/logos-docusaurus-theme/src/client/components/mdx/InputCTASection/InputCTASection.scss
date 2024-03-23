@@ -1,7 +1,7 @@
 @use '../../../css/utils';
 @use '../../../css/lsd';
 
-.mdx-event-cta-section__container {
+.mdx-input-cta-section__container {
   border-top: 1px solid rgb(var(--lsd-border-primary));
   padding-top: 24px;
 
@@ -49,7 +49,7 @@
 }
 
 @include utils.responsive('sm', 'down') {
-  .mdx-event-cta-section__container {
+  .mdx-input-cta-section__container {
     .mdx-event-cta-section__input-fields {
       margin-bottom: 16px;
     }
