@@ -16,6 +16,12 @@
     width: fit-content;
   }
 
+  .mdx-cta-section__header__desktop-button {
+    .mdx-cta-button {
+      margin-top: unset;
+    }
+  }
+
   .mdx-cta-section--align-center {
     display: flex;
     flex-direction: column;
@@ -247,7 +253,21 @@
   }
 }
 
+@include utils.responsive('lg', 'up') {
+  .mdx-cta-section__header__mobile-button {
+    display: none;
+  }
+}
+
 @include utils.responsive('lg', 'down') {
+  .mdx-cta-section__header__desktop-button {
+    display: none;
+  }
+
+  .mdx-cta-section__header__mobile-button {
+    margin-top: 24px;
+  }
+
   .mdx-cta-section__title {
     @include lsd.typography('h3', true);
   }

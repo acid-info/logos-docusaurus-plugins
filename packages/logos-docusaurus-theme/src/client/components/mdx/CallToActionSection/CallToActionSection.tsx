@@ -154,6 +154,17 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
       ? 'list'
       : 'simple'
 
+  const button = href && ctaPosition === 'top' && (
+    <CallToActionButton
+      target={target}
+      href={href}
+      className="mdx-cta-section__link"
+      variant={variant}
+    >
+      {label}
+    </CallToActionButton>
+  )
+
   return (
     <div
       className={clsx(
@@ -174,22 +185,17 @@ export const CallToActionSection: React.FC<CallToActionSectionProps> = ({
           <Typography component="h2" className={clsx('mdx-cta-section__title')}>
             {title}
           </Typography>
-          {href && ctaPosition === 'top' && (
-            <CallToActionButton
-              target={target}
-              href={href}
-              className="mdx-cta-section__link"
-              variant={variant}
-            >
-              {label}
-            </CallToActionButton>
-          )}
+          <div className="mdx-cta-section__header__desktop-button">
+            {button}
+          </div>
         </div>
         {description && (
           <Typography component="h3" className="mdx-cta-section__description">
             {description}
           </Typography>
         )}
+        <div className="mdx-cta-section__header__mobile-button">{button}</div>
+
         {href && ctaPosition === 'bottom' && (
           <CallToActionButton
             target={target}
