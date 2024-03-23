@@ -24,9 +24,9 @@
 
 @include utils.responsive('lg', 'down') {
   .mdx-hero-description {
-    @include lsd.typography('subtitle1');
+    @include lsd.typography('body2');
 
-    margin-top: 12px;
+    margin-top: 16px;
   }
 
   .mdx-hero-description--large {

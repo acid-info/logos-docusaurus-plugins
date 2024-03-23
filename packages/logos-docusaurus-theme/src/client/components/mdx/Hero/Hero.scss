@@ -37,6 +37,7 @@
 
 @include utils.responsive('md', 'down') {
   .mdx-hero {
+    justify-content: unset;
     h1 {
       @include lsd.typography('h2');
     }

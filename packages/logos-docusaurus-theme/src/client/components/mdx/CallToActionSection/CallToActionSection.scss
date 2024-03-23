@@ -249,7 +249,7 @@
 
 @include utils.responsive('lg', 'down') {
   .mdx-cta-section__title {
-    @include lsd.typography('h4', true);
+    @include lsd.typography('h3', true);
   }
 
   .mdx-cta-section__description {
