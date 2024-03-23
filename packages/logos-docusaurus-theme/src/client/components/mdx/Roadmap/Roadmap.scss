@@ -58,6 +58,10 @@
   }
 
   .mdx-roadmap {
+    .mdx-roadmap .mdx-cta-section__title {
+      @include lsd.typography('h3');
+    }
+
     .mdx-cta-section__description {
       margin-top: 16px;
       @include lsd.typography('body1');
