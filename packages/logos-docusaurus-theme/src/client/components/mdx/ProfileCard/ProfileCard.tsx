@@ -1,7 +1,7 @@
-import { Button, Typography } from '@acid-info/lsd-react'
+import { Typography } from '@acid-info/lsd-react'
 import Link from '@docusaurus/Link'
 import React from 'react'
-import { IconAvatar, IconDiscordWhite, IconGithub } from '../../Icon'
+import { IconDiscord, IconGithub } from '../../Icon'
 import './ProfileCard.scss'
 import clsx from 'clsx'
 
@@ -101,7 +101,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
                   target="_blank"
                   className={'mdx-profile-card__link'}
                 >
-                  <IconDiscordWhite />
+                  <IconDiscord size="m" />
                 </Link>
               )}
             </div>

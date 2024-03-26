@@ -49,32 +49,32 @@ export const Roadmap: React.FC<RoadmapProps> = ({
     return 'Q' + Math.ceil((month + 1) / 3)
   }
 
-  const handlePeriodStyle = (period: TimelineItemProps['period']) => {
-    const currentYear = new Date().getFullYear()
-    const currentQuarter = getCurrentQuarter()
+  // const handlePeriodStyle = (period: TimelineItemProps['period']) => {
+  //   const currentYear = new Date().getFullYear()
+  //   const currentQuarter = getCurrentQuarter()
 
-    let year, additional
+  //   let year, additional
 
-    if (Array.isArray(period)) {
-      ;[year, additional] = period
-    } else {
-      year = period
-    }
+  //   if (Array.isArray(period)) {
+  //     ;[year, additional] = period
+  //   } else {
+  //     year = period
+  //   }
 
-    if (year < currentYear) {
-      return 'filled'
-    } else if (year > currentYear) {
-      return 'transparent'
-    } else {
-      if (!additional || additional === '+') {
-        return 'filled'
-      }
-      if (additional <= currentQuarter) {
-        return 'filled'
-      }
-      return 'transparent'
-    }
-  }
+  //   if (year < currentYear) {
+  //     return 'filled'
+  //   } else if (year > currentYear) {
+  //     return 'transparent'
+  //   } else {
+  //     if (!additional || additional === '+') {
+  //       return 'filled'
+  //     }
+  //     if (additional <= currentQuarter) {
+  //       return 'filled'
+  //     }
+  //     return 'transparent'
+  //   }
+  // }
 
   return (
     <div className={clsx(className, 'mdx-roadmap')} {...props}>
@@ -107,7 +107,7 @@ export const Roadmap: React.FC<RoadmapProps> = ({
                 period={item.period ?? currentYear}
                 description={item.description}
                 borderStyle={handleBorderStyle(item, index, timeline)}
-                periodStyle={handlePeriodStyle(item?.period ?? currentYear)}
+                periodStyle={'filled'}
                 className={clsx(
                   'mdx-roadmap__timeline-item',
                   noBorder && 'mdx-roadmap__timeline-item--no-border',
