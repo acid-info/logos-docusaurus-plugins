@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.150...v1.0.0-beta.0) (2024-03-26)
+
+**Note:** Version bump only for package @acid-info/logos-docusaurus-theme
+
 # [1.0.0-alpha.150](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.149...v1.0.0-alpha.150) (2024-03-26)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
