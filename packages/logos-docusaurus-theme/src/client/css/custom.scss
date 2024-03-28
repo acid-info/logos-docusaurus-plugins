@@ -917,6 +917,14 @@ main[itemtype*='Blog'] {
     }
   }
 
+  .plugin-id-default main {
+    grid-column: 4 / 16 !important;
+  }
+
+  .plugin-id-root-pages main {
+    grid-column: 4 / 16 !important;
+  }
+
   .events {
     @include utils.responsive('xl', 'down') {
       .main-wrapper {
