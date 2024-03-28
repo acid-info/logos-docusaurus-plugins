@@ -17,6 +17,8 @@
 
 .toc {
   grid-column: span 4;
+  position: absolute;
+  right: -140px;
 }
 
 .tocMobile {
@@ -62,12 +64,12 @@
 @include utils.responsive('xl', 'up') {
   .docItemGrid {
     display: grid;
-    grid-template-columns: repeat(19, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: var(--doc-grid-gap);
   }
 
   .docItemCol {
-    grid-column: span 14;
+    grid-column: span 10;
   }
 }
 

@@ -896,8 +896,11 @@ main[itemtype*='Blog'] {
 
     & > div {
       display: grid;
-      grid-template-columns: repeat(16, 42px);
+      grid-template-columns: repeat(16, 45px);
       gap: 1rem;
+
+      width: fit-content;
+      margin: auto;
 
       aside {
         width: auto;
@@ -907,8 +910,9 @@ main[itemtype*='Blog'] {
       }
 
       main {
-        grid-column: 6 / 17;
+        grid-column: 6 / 16;
         max-width: none;
+        margin-top: 48px;
       }
     }
   }
@@ -929,10 +933,43 @@ main[itemtype*='Blog'] {
     }
   }
 
-  .navbar__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  @include utils.responsive('xl', 'down') {
+    .main-wrapper {
+      .container {
+        padding-bottom: 96px;
+
+        & > div > div {
+          padding-inline: 0 !important;
+        }
+      }
+
+      & > div {
+        width: 960px;
+      }
+    }
+
+    .navbar {
+      display: grid;
+      grid-template-columns: repeat(16, 45px);
+      gap: 1rem;
+      margin: auto;
+      width: 960px !important;
+      padding-inline: 0 !important;
+    }
+
+    .navbar__inner {
+      grid-column: 1 / 17;
+    }
+
+    .navbar__left-items {
+      display: flex;
+      justify-content: center;
+    }
+
+    .main-wrapper {
+      width: 960px !important;
+      margin: 0 auto !important;
+    }
   }
 
   .navbar__left {
@@ -946,7 +983,12 @@ main[itemtype*='Blog'] {
   }
 
   nav.menu {
+    margin-top: 48px;
     padding-top: 16px;
+  }
+
+  .container {
+    padding-inline: 0 !important;
   }
 }
 
@@ -954,18 +996,24 @@ main[itemtype*='Blog'] {
   .main-wrapper {
     & > div {
       display: grid;
-      grid-template-columns: repeat(24, 1fr);
+      grid-template-columns: repeat(16, 1fr);
       gap: 1rem;
+      width: unset;
+      margin-inline: unset;
 
       aside {
         width: auto;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         border: none;
       }
 
       main {
-        grid-column: 6 / 25;
+        grid-column: 5 / 17;
         max-width: none;
+
+        & > .container {
+          padding-inline: 0 !important;
+        }
       }
     }
   }
@@ -1163,11 +1211,6 @@ main[itemtype*='Blog'] {
 
   .footer-grid {
     grid-template-columns: 1fr;
-  }
-
-  .navbar {
-    display: flex;
-    height: 56px;
   }
 
   .navbar__toggle {
