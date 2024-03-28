@@ -886,6 +886,14 @@ main[itemtype*='Blog'] {
   .main-wrapper > main > .row > .col {
     padding-inline: 0 !important;
   }
+
+  .plugin-id-default main {
+    grid-column: 4 / 16 !important;
+  }
+
+  .plugin-id-root-pages main {
+    grid-column: 4 / 16 !important;
+  }
 }
 
 @include utils.responsive('lg', 'up') {
@@ -917,14 +925,6 @@ main[itemtype*='Blog'] {
     }
   }
 
-  .plugin-id-default main {
-    grid-column: 4 / 16 !important;
-  }
-
-  .plugin-id-root-pages main {
-    grid-column: 4 / 16 !important;
-  }
-
   .events {
     @include utils.responsive('xl', 'down') {
       .main-wrapper {
@@ -942,6 +942,14 @@ main[itemtype*='Blog'] {
   }
 
   @include utils.responsive('xl', 'down') {
+    .plugin-id-default main {
+      grid-column: 4 / 14 !important;
+    }
+
+    .plugin-id-root-pages main {
+      grid-column: 4 / 14 !important;
+    }
+
     .main-wrapper {
       .container {
         padding-bottom: 96px;
