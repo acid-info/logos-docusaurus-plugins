@@ -16,9 +16,8 @@
 }
 
 .toc {
-  grid-column: span 4;
-  position: absolute;
-  right: -140px;
+  // toc is not used as per request
+  display: none;
 }
 
 .tocMobile {
