@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.152](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.151...v1.0.0-alpha.152) (2024-03-28)
+
+### Features
+
+- disable toc ([06d8dcf](https://github.com/acid-info/logos-docusaurus-plugins/commit/06d8dcf64cacc8f1a501a6831556ab23e5ee39a9))
+
 # [1.0.0-alpha.151](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.150...v1.0.0-alpha.151) (2024-03-28)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
