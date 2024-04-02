@@ -618,6 +618,20 @@ html[data-theme='dark'] .header-github-link:before {
 
 .pagination-nav {
   margin-top: var(--pagination-nav-margin-top) !important;
+
+  a {
+    overflow: hidden;
+  }
+
+  span {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    overflow: hidden;
+    width: 70%;
+  }
 }
 
 .pagination-nav__link {
@@ -846,9 +860,18 @@ main[itemtype*='Blog'] {
 
   .footer {
     > div {
+      margin-inline: 16px;
+      padding-inline: 0 !important;
       display: flex !important;
       flex-direction: column;
       gap: 72px !important;
+      width: initial;
+    }
+
+    & > div:first-of-type {
+      .footer__links {
+        gap: 0.3rem !important;
+      }
     }
   }
 
