@@ -894,11 +894,11 @@ main[itemtype*='Blog'] {
       gap: 98px !important;
     }
 
-    .mdx-grid__content:last-of-type
-      > div:last-of-type
-      > .mdx-input-cta-section__container {
-      margin-bottom: 120px;
-    }
+    // .mdx-grid__content:last-of-type
+    //   > div:last-of-type
+    //   > .mdx-input-cta-section__container {
+    //   margin-bottom: 120px;
+    // }
   }
 }
 
@@ -946,6 +946,10 @@ main[itemtype*='Blog'] {
         margin-top: 48px;
       }
     }
+  }
+
+  .container {
+    padding-bottom: 176px !important;
   }
 
   .events {

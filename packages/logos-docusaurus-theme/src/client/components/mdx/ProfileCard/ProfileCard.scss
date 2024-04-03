@@ -2,7 +2,7 @@
 @use '../../../css/lsd';
 
 :root {
-  --mobile-width: 253px;
+  --mobile-width: 100%;
   --mobile-height: 176px;
 }
 
@@ -78,13 +78,14 @@
 
 @include utils.responsive('md', 'down') {
   .mdx-profile-card {
-    flex: 0 0 var(--mobile-width);
+    display: flex;
     width: var(--mobile-width);
-    height: var(--mobile-height);
     scroll-snap-align: start !important;
   }
 
   .mdx-profile-card__profile {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
   }
 

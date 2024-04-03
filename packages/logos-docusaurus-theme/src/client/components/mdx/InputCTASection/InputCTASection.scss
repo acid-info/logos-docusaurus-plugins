@@ -11,33 +11,33 @@
   }
 }
 
-.mdx-event-cta-section__title {
+.mdx-input-cta-section__title {
   margin-bottom: 24px !important;
 }
 
-.mdx-event-cta-section__cta {
+.mdx-input-cta-section__cta {
   width: 160px !important;
   height: 40px !important;
 }
 
-.mdx-event-cta-section__description {
+.input-cta-section__description {
   white-space: pre-wrap;
   margin-bottom: 32px !important;
 }
 
-.mdx-event-cta-section__form {
+.mdx-input-cta-section__form {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.mdx-event-cta-section__input-fields {
+.mdx-input-cta-section__input-fields {
   display: flex;
   gap: 16px;
 }
 
 @include utils.responsive('sm', 'down') {
-  .mdx-event-cta-section__input-fields {
+  .mdx-input-cta-section__input-fields {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -50,16 +50,16 @@
 
 @include utils.responsive('sm', 'down') {
   .mdx-input-cta-section__container {
-    .mdx-event-cta-section__input-fields {
-      margin-bottom: 16px;
-    }
-
-    .mdx-event-cta-section__cta {
-      margin-top: 8px;
-    }
-
-    .mdx-event-cta-section__form {
+    .mdx-input-cta-section__form {
       margin-bottom: -24px;
     }
+
+    .input-cta-section__description--no-form {
+      margin-bottom: 32px !important;
+    }
+  }
+
+  .input-cta-section__description {
+    margin-bottom: 24px !important;
   }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import './InputCTASection.scss'
 import { Button, TextField, Typography } from '@acid-info/lsd-react'
 import Link, { Props } from '@docusaurus/Link'
+import clsx from 'clsx'
 
 export type InputCTASectionProps = {
   title: string
@@ -70,7 +71,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
         <Typography
           variant="subtitle1"
           component="p"
-          className="mdx-event-cta-section__title"
+          className="mdx-input-cta-section__title"
         >
           {title}
         </Typography>
@@ -79,18 +80,21 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
       <Typography
         component="h3"
         variant="h3"
-        className="mdx-event-cta-section__description"
+        className={clsx(
+          'input-cta-section__description',
+          !formInput && 'input-cta-section__description--no-form',
+        )}
       >
         {description}
       </Typography>
 
       {formInput?.length ? (
-        <form className="mdx-event-cta-section__form" onSubmit={handleSubmit}>
-          <div className="mdx-event-cta-section__input-fields">
+        <form className="mdx-input-cta-section__form" onSubmit={handleSubmit}>
+          <div className="mdx-input-cta-section__input-fields">
             {formInput.map((input, index) => (
               <TextField
                 key={index}
-                className="mdx-event-cta-section__input"
+                className="mdx-input-cta-section__input"
                 onChange={handleChange}
                 value={formState[input.name]}
                 inputProps={{ ...input }}
@@ -98,7 +102,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
             ))}
           </div>
           <div>
-            <Button type="submit" className="mdx-event-cta-section__cta">
+            <Button type="submit" className="mdx-input-cta-section__cta">
               <Typography variant="body1">{label}</Typography>
             </Button>
             <Typography variant="body2">{message}</Typography>
@@ -106,7 +110,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
         </form>
       ) : (
         <Link to={link} {...linkProps}>
-          <Button className="mdx-event-cta-section__cta">
+          <Button className="mdx-input-cta-section__cta">
             <Typography variant="body1">{label}</Typography>
           </Button>
         </Link>
