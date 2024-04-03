@@ -894,11 +894,23 @@ main[itemtype*='Blog'] {
       gap: 98px !important;
     }
 
-    // .mdx-grid__content:last-of-type
-    //   > div:last-of-type
-    //   > .mdx-input-cta-section__container {
-    //   margin-bottom: 120px;
-    // }
+    .mdx-grid__content:last-of-type
+      > div:last-of-type
+      > .mdx-input-cta-section__container {
+      margin-bottom: 120px;
+    }
+  }
+
+  .events {
+    .main-wrapper main > .container {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .events {
+    .main-wrapper main > .container {
+      padding-bottom: 0 !important;
+    }
   }
 }
 
