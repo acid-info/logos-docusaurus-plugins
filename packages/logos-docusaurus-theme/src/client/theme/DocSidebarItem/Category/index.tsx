@@ -18,6 +18,7 @@ import useIsBrowser from '@docusaurus/useIsBrowser'
 import DocSidebarItems from '@theme/DocSidebarItems'
 import clsx from 'clsx'
 import React, { useEffect, useMemo } from 'react'
+import styles from './style.module.scss'
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -165,10 +166,10 @@ export default function DocSidebarItemCategory({
           href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
           {...props}
         >
+          {collapsible && <ChevronUpIcon className={styles.chevron} />}
           <Typography variant="body2" color="primary">
             {label}
           </Typography>
-          {collapsible && <ChevronUpIcon />}
         </Link>
         {href && collapsible && (
           <CollapseButton
