@@ -13,6 +13,7 @@ export const EventAbout: React.FC<EventAboutProps> = ({ children }) => {
         variant="h2"
         component="h2"
         className="mdx-event-about__title"
+        style={{ marginTop: '0 !important' }}
       >
         About
       </Typography>

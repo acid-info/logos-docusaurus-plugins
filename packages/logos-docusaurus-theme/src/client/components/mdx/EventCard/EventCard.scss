@@ -26,6 +26,14 @@
 }
 
 .mdx-event-card__title {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  overflow: hidden;
+  height: 48px;
+
   &:hover {
     text-decoration: underline !important;
   }
