@@ -963,10 +963,6 @@ main[itemtype*='Blog'] {
     }
   }
 
-  .container {
-    padding-bottom: 176px !important;
-  }
-
   .events {
     @include utils.responsive('xl', 'down') {
       .main-wrapper {
