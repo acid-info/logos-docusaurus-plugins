@@ -5,8 +5,10 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
 
-  h1 {
+.event-details {
+  .mdx-event-header__container h1 {
     margin-bottom: 0 !important;
   }
 }
