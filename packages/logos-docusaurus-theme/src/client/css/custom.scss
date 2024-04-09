@@ -828,6 +828,18 @@ main[itemtype*='Blog'] {
   }
 }
 
+.event-details {
+  @include utils.responsive('lg', 'up') {
+    & > div .main-wrapper main > div > div {
+      grid-template-columns: unset !important;
+    }
+  }
+
+  & > div .main-wrapper main {
+    grid-column: 1 / 17 !important;
+  }
+}
+
 @include utils.responsive('sm', 'down') {
   :root {
     --ifm-spacing-vertical: var(--ifm-global-spacing);
