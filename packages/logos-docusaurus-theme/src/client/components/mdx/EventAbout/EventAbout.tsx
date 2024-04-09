@@ -9,12 +9,7 @@ export type EventAboutProps = React.HTMLProps<HTMLAnchorElement> & {
 export const EventAbout: React.FC<EventAboutProps> = ({ children }) => {
   return (
     <div className="mdx-event-about__container">
-      <Typography
-        variant="h2"
-        component="h2"
-        className="mdx-event-about__title"
-        style={{ marginTop: '0 !important' }}
-      >
+      <Typography variant="h2" component="p" className="mdx-event-about__title">
         About
       </Typography>
       <Typography variant="body1">{children}</Typography>
