@@ -32,21 +32,25 @@ export const EventCard: React.FC<EventCardProps> = ({
         alt={title ?? 'event thumbnail'}
         className="mdx-event-card__thumbnail"
       />
-      <Typography component="h5" variant="h5" className="mdx-event-card__title">
+      <Typography
+        component="h5"
+        variant="subtitle1"
+        className="mdx-event-card__title"
+      >
         {title}
       </Typography>
       <div className="mdx-event-card__row">
         <div className="mdx-event-card__info">
-          <Typography className="mdx-event-card__label" variant="body2">
+          <Typography className="mdx-event-card__label" variant="body3">
             Date
           </Typography>
-          <Typography variant="body2">{date}</Typography>
+          <Typography variant="body3">{date}</Typography>
         </div>
         <div className="mdx-event-card__info">
-          <Typography className="mdx-event-card__label" variant="body2">
+          <Typography className="mdx-event-card__label" variant="body3">
             Location
           </Typography>
-          <Typography variant="body2">{location}</Typography>
+          <Typography variant="body3">{location}</Typography>
         </div>
       </div>
     </a>
