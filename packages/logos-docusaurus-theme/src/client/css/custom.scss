@@ -929,10 +929,6 @@ main[itemtype*='Blog'] {
     padding-inline: 0 !important;
   }
 
-  .plugin-id-default main {
-    grid-column: 4 / 16 !important;
-  }
-
   .plugin-id-root-pages main {
     grid-column: 4 / 16 !important;
   }
@@ -988,10 +984,6 @@ main[itemtype*='Blog'] {
   }
 
   @include utils.responsive('xl', 'down') {
-    .plugin-id-default main {
-      grid-column: 4 / 14 !important;
-    }
-
     .plugin-id-root-pages main {
       grid-column: 4 / 14 !important;
     }
