@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.161](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.160...v1.0.0-alpha.161) (2024-04-09)
+
+### Bug Fixes
+
+- remove unnecessary CSS ([a9904ee](https://github.com/acid-info/logos-docusaurus-plugins/commit/a9904ee4e2f55aa3ab1de7f9afbc45bcdbb9c1b9))
+
 # [1.0.0-alpha.160](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.159...v1.0.0-alpha.160) (2024-04-09)
 
 ### Features
