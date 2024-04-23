@@ -828,6 +828,12 @@ main[itemtype*='Blog'] {
   }
 }
 
+.no-breadcrumbs {
+  .theme-doc-breadcrumbs {
+    display: none !important;
+  }
+}
+
 .event-details {
   @include utils.responsive('lg', 'up') {
     & > div .main-wrapper main > div > div {
