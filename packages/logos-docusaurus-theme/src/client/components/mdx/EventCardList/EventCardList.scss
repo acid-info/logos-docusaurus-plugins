@@ -1,6 +1,10 @@
 @use '../../../css/utils';
 @use '../../../css/lsd';
 
+.mdx-event-card-list__container {
+  margin-top: 40px;
+}
+
 .mdx-event-card-list__button {
   display: block;
   margin: 0 auto;
@@ -8,6 +12,13 @@
 
 @include utils.responsive('sm', 'down') {
   .mdx-event-card-list__container {
+    margin-top: 32px;
     margin-bottom: 48px;
+  }
+
+  .mdx-event-card-list__tabs {
+    .lsd-tab-item {
+      padding: 6px 14px !important;
+    }
   }
 }
