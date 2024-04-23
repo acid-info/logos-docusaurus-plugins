@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.163](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.162...v1.0.0-alpha.163) (2024-04-23)
+
+### Features
+
+- support current/past status for events ([11d8059](https://github.com/acid-info/logos-docusaurus-plugins/commit/11d8059821a0715ddb1c53f0bc32f05065b21749))
+
 # [1.0.0-alpha.162](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.161...v1.0.0-alpha.162) (2024-04-09)
 
 **Note:** Version bump only for package root
