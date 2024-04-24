@@ -1,0 +1,22 @@
+@use '../../../css/utils';
+
+.mdx-hero-asset {
+  --default-z-index: -1;
+  z-index: var(--default-z-index);
+  position: relative;
+
+  button {
+    display: none !important;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-hero-asset {
+  }
+}
