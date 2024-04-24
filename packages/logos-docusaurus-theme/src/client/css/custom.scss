@@ -859,6 +859,7 @@ main[itemtype*='Blog'] {
     @include lsd.typography('h1', false);
     display: flex;
     gap: 16px;
+    margin-bottom: 0 !important;
 
     span {
       opacity: 0.4;
