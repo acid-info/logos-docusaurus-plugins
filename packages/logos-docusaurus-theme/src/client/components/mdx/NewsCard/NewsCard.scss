@@ -7,8 +7,10 @@
   gap: 16px;
 
   text-decoration: none !important;
+}
 
-  h3 {
+.mdx-grid > .mdx-grid__content .mdx-news-card {
+  .mdx-news-card__title {
     margin-top: 0 !important;
   }
 }
