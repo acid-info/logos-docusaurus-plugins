@@ -1,0 +1,155 @@
+---
+title: News
+hide_table_of_contents: true
+sidebar_class_name: hidden
+pagination_prev: null
+pagination_next: null
+---
+
+import { NewsCardList, Grid, Box } from '@site/src/components/mdx'
+
+<head>
+  <body className="news full-width" />
+</head>
+
+<h1 className="news-title">
+  News<span>/</span>
+  <span>Blog</span>
+</h1>
+
+<NewsCardList
+  data={[
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        "Decentralized Uber: Here's How I Built It With Status.im, Waku, and Vue.js",
+      date: 'Apr 24 2023',
+      author: 'Laszlo Fazekas',
+      href: 'https://hackernoon.com/decentralized-uber-heres-how-i-built-it-with-statusim-waku-and-vuejs',
+      description:
+        'Arcu ac viverra fringilla nibh. Tincidunt sit netus malesuada mattis aliquet amet. Aliquam montes odio mattis at aenean eget non ultrices dolor. Est nulla duis eget in amet pellentesque. Et eu eros consequat.',
+      tags: ['Tutorial'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title: 'Build a dApp Using Waku (Decentralized Communication) and Vue.js',
+      date: 'Apr 24 2023',
+      author: 'Joel Adewole',
+      href: 'https://blog.wolzcodelife.com/build-a-dapp-using-waku-decentralized-communication-and-vuejs',
+      description:
+        'Arcu ac viverra fringilla nibh. Tincidunt sit netus malesuada mattis aliquet amet. Aliquam montes odio mattis at aenean eget non ultrices dolor. Est nulla duis eget in amet pellentesque. Et eu eros consequat.',
+      tags: ['Tutorial'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Waku launches first decentralised, privacy-preserving DoS protections for P2P Messaging',
+      date: 'Apr 24 2023',
+      author: 'Waku',
+      href: 'https://cointelegraph.com/press-releases/waku-launches-first-decentralised-privacy-preserving-dos-protections-for-p2p-messaging',
+      description: 'description',
+      tags: ['Press Release'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Waku Launches First Decentralised, Privacy-Preserving DoS Protections For Peer-to-Peer Messaging',
+      date: 'Apr 24 2023',
+      author: 'Chainwire',
+      href: 'https://thedefiant.io/waku-launches-first-decentralised-privacy-preserving-dos-protections-for-peer-to-peer-messaging',
+      description:
+        'Arcu ac viverra fringilla nibh. Tincidunt sit netus malesuada mattis aliquet amet. Aliquam montes odio mattis at aenean eget non ultrices dolor. Est nulla duis eget in amet pellentesque. Et eu eros consequat.',
+      tags: ['Press Release'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Waku launches first decentralised, privacy-preserving DoS protections for peer-to-peer messaging',
+      date: 'Apr 24 2023',
+      author: 'AMBCrypto',
+      href: 'https://ambcrypto.com/waku-launches-first-decentralised-privacy-preserving-dos-protections-for-peer-to-peer-messaging/',
+      description:
+        'Arcu ac viverra fringilla nibh. Tincidunt sit netus malesuada mattis aliquet amet. Aliquam montes odio mattis at aenean eget non ultrices dolor. Est nulla duis eget in amet pellentesque. Et eu eros consequat.',
+      tags: ['Press Release'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Waku Launches First Decentralized, Privacy-Preserving DoS Protections for Peer-to-Peer Messaging',
+      date: 'Apr 24 2023',
+      author: 'Advertorial',
+      href: 'https://beincrypto.com/waku-launches-first-decentralized-privacy-preserving-dos-protections/',
+      description: 'description',
+      tags: ['Press Release'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Waku Launches First Decentralised, Privacy-Preserving DoS Protections For Peer-To-Peer Messaging',
+      date: 'Apr 24 2023',
+      author: 'Crypto Daily',
+      href: 'https://cryptodaily.co.uk/2023/12/waku-launches-first-decentralised-privacy-preserving-dos-protections-for-peer-to-peer-messaging',
+      description: 'description',
+      tags: ['Press Release'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Una empresa recompensa a los hackers de ETHLatam con 2.500 dólares',
+      date: 'Apr 24 2023',
+      author: 'Anunciante',
+      href: 'https://www.criptonoticias.com/comunidad/empresa-recompensa-hackers-ethlatam-2-500-dolares/',
+      description: 'description',
+      tags: ['Press Release', 'Spanish'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Waku avanza en la protección de la privacidad de las comunicaciones en América Latina en ETHLatam',
+      date: 'Apr 24 2023',
+      author: 'Cointelegraph',
+      href: 'https://es.cointelegraph.com/press-releases/waku-advances-in-the-protection-of-communications-privacy-in-latin-america-at-ethlatam',
+      description: 'description',
+      tags: ['Press Release', 'Spanish'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title: 'The Waku Network: Scaling P2P, Privacy-Focused Communications',
+      date: 'Apr 24 2023',
+      author: 'Logos',
+      href: 'https://hackernoon.com/the-waku-network-scaling-p2p-privacy-focused-communications',
+      description: 'description',
+      tags: ['Technical Deep Dive'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        "Vitalik Buterin recognises Waku as the peer-to-peer communications layer of Gavin Wood's web3 vision",
+      date: 'Apr 24 2023',
+      author: 'Cointelegraph',
+      href: 'https://cointelegraph.com/press-releases/vitalik-buterin-recognises-waku-as-the-peer-to-peer-communications-layer-of-gavin-woods-web3-vision',
+      description: 'description',
+      tags: ['Press Release'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Meet Waku, The Peer-To-Peer Communications Protocol Recognized By Vitalik Buterin',
+      date: 'Apr 24 2023',
+      author: 'Crypto Daily',
+      href: 'https://cryptodaily.co.uk/2024/01/meet-waku-the-peer-to-peer-communications-protocol-recognized-by-vitalik-buterin',
+      description: 'description',
+      tags: ['Article'],
+    },
+    {
+      thumbnail: '/img/news-thumbnail.png',
+      title:
+        'Waku — the P2P Communication Protocol for Web3 Recognized by Vitalik Buterin',
+      date: 'Apr 24 2023',
+      author: 'The Defiant',
+      href: 'https://thedefiant.io/waku-the-p2p-communication-protocol-for-web3-recognized-by-vitalik-buterin',
+      description: 'description',
+      tags: ['Article'],
+    },
+  ]}
+/>

@@ -153,12 +153,16 @@ const config = {
                 label: 'Work with us',
               },
               {
-                href: '/',
+                href: '/privacy-policy',
                 label: 'Privacy policy',
               },
               {
-                href: '/',
-                label: 'Terms & conditions',
+                href: '/events',
+                label: 'Events',
+              },
+              {
+                href: '/news',
+                label: 'News',
               },
             ],
           },

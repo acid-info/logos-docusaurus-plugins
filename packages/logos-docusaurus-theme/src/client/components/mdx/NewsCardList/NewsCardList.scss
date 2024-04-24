@@ -1,0 +1,24 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-news-card-list__container {
+  margin-top: 40px;
+}
+
+.mdx-news-card-list__button {
+  display: block;
+  margin: 0 auto;
+}
+
+@include utils.responsive('sm', 'down') {
+  .mdx-news-card-list__container {
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  .mdx-news-card-list__tabs {
+    .lsd-tab-item {
+      padding: 6px 14px !important;
+    }
+  }
+}
