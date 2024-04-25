@@ -5,24 +5,24 @@ import { Box, EventCard, EventCardProps, Grid } from '..'
 import { TabItem, Tabs } from '@acid-info/lsd-react'
 
 export type EventCardListProps = {
-  current: EventCardProps[]
+  upcoming: EventCardProps[]
   past: EventCardProps[]
 }
 
 export enum EventStatus {
-  CURRENT = 'Current',
+  UPCOMING = 'Upcoming',
   PAST = 'Past',
 }
 
 const LIMIT = 8
 
 export const EventCardList: React.FC<EventCardListProps> = ({
-  current,
+  upcoming,
   past,
   ...props
 }) => {
-  const [activeTab, setActiveTab] = useState<EventStatus>(EventStatus.CURRENT)
-  const data = activeTab === EventStatus.CURRENT ? current : past
+  const [activeTab, setActiveTab] = useState<EventStatus>(EventStatus.UPCOMING)
+  const data = activeTab === EventStatus.UPCOMING ? upcoming : past
 
   const [showMore, setShowMore] = useState<boolean>(data?.length > LIMIT)
   const [count, setCount] = useState<number>(LIMIT)
@@ -48,8 +48,8 @@ export const EventCardList: React.FC<EventCardListProps> = ({
         onChange={handleTabChange}
         className="mdx-event-card-list__tabs"
       >
-        <TabItem key={'current'} name={`Current`}>
-          {`Current`}
+        <TabItem key={'upcoming'} name={`Upcoming`}>
+          {`Upcoming`}
         </TabItem>
         <TabItem key={'past'} name={`Past`}>
           {`Past`}

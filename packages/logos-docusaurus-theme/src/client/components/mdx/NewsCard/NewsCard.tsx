@@ -41,8 +41,12 @@ export const NewsCard: React.FC<NewsCardProps> = ({
       </Typography>
       <div className="mdx-news-card__row">
         <div className="mdx-news-card__info">
-          <Typography variant="body2">{date}</Typography>
-          <Typography variant="body2">·</Typography>
+          {date && (
+            <>
+              <Typography variant="body2">{date}</Typography>
+              <Typography variant="body2">·</Typography>
+            </>
+          )}
           <Typography variant="body2">by {author}</Typography>
         </div>
       </div>
