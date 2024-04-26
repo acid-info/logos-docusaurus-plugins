@@ -4,6 +4,7 @@ import React from 'react'
 import { CallToActionButton } from '../index'
 import './VideoSection.scss'
 import { IconPlay } from '@logos-theme/components/Icon'
+import Link from '@docusaurus/Link'
 
 export type VideoSectionProps = Omit<
   React.HTMLAttributes<HTMLDivElement>,
@@ -129,14 +130,17 @@ export const VideoSection: React.FC<VideoSectionProps> = ({
         <div className="mdx-video-section__header__mobile-button">{button}</div>
 
         {src && ctaPosition === 'bottom' && (
-          <CallToActionButton
-            target={target}
-            href={href}
-            className="mdx-video-section__link"
-            variant={variant}
-          >
-            {label}
-          </CallToActionButton>
+          <Link href={src} target="_blank">
+            <CallToActionButton
+              target={target}
+              href={href}
+              className="mdx-video-section__link"
+              variant={variant}
+              size="small"
+            >
+              {label}
+            </CallToActionButton>
+          </Link>
         )}
       </div>
 
