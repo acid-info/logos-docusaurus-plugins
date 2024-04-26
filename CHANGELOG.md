@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.167](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.166...v1.0.0-alpha.167) (2024-04-26)
+
+### Bug Fixes
+
+- fix VideoSection link and style ([b8246eb](https://github.com/acid-info/logos-docusaurus-plugins/commit/b8246ebb19cfecc13154e7a677c4d1d4e57aaabc))
+
 # [1.0.0-alpha.166](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.165...v1.0.0-alpha.166) (2024-04-26)
 
 ### Features
