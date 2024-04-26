@@ -5,6 +5,7 @@ import {
   HeroActions,
   HeroImage,
   HeroAction,
+  HeroAsset,
   CallToActionSection,
   CallToActionButton,
   FeatureList,
@@ -27,19 +28,27 @@ import * as challengesData from '/generated/challenges.json'
 <Hero size="large" verticalAlign="center">
   <HeroInfo hideScrollToBottom>
     <HeroTitle uppercase={false}>
-      Light and High Performing Ethereum Clients
+      Waku is Uncompromising Web3 Communication at Scale
     </HeroTitle>
     <HeroDescription>
-      Run Nimbus on lightweight devices or enterprise-grade servers with equal
-      ease and peace of mind. Trusted by solo stakers and node operators alike.
+      A family of robust, censorship-resistant communication protocols designed
+      to enable privacy-focused messaging for web3 apps.
     </HeroDescription>
     <HeroActions>
-      <HeroAction variant="outlined" href="/about">
-        Get Involved
+      <HeroAction href="https://docs.waku.org/" target="_blank">
+        Learn more
       </HeroAction>
     </HeroActions>
   </HeroInfo>
-  {/* <HeroImage src="/hero/hero-image.png" alt="alt" /> */}
+  {/* <HeroAsset>
+    <img src="/hero/hero-image.webp" alt="hero-image" />
+  </HeroAsset> */}
+  <HeroAsset>
+    <video autoPlay loop muted autoPlay playsInline>
+      <source src="/hero/hero-video.mov" type='video/mp4; codecs="hvc1"' />
+      <source src="/hero/hero-video.webm" type="video/webm" />
+    </video>
+  </HeroAsset>
 </Hero>
 
 <Box>

@@ -6,11 +6,15 @@ html {
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .theme-doc-breadcrumbs {
   display: none;
 }
 
-.mdx-hero > .mdx-hero-image > img {
+.mdx-hero > .mdx-hero-asset video {
   position: absolute;
   right: 0;
   top: 0;
@@ -18,13 +22,85 @@ html {
 }
 
 @media screen and (min-width: 996px) {
-  .mdx-hero > .mdx-hero-image > img {
+  .mdx-hero > .mdx-hero-asset video {
     position: absolute;
     right: 0;
     top: 0;
-    transform: rotate(170deg);
     margin-right: -300px;
     margin-top: -78%;
+    scale: 0.95;
+  }
+}
+
+// Hero Image Test
+@media screen and (min-width: 996px) {
+  .mdx-hero > .mdx-hero-asset img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -500px;
+    margin-top: -55%;
+  }
+}
+
+// Hero Video Test
+.mdx-hero > .mdx-hero-asset video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -40%;
+}
+
+@media screen and (min-width: 996px) {
+  .mdx-hero > .mdx-hero-asset video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -250px;
+    margin-top: -55%;
+    scale: 0.95;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .mdx-hero > .mdx-hero-asset video {
+    margin-right: -200px;
+    margin-left: 0;
+    scale: 0.9;
+    margin-top: -36%;
+  }
+
+  .mdx-hero {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .mdx-hero {
+    margin-bottom: 280px;
+  }
+
+  .mdx-hero > .mdx-hero-asset video {
+    margin-right: 0;
+    scale: 0.9;
+    margin-top: -15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mdx-hero {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mdx-hero {
+    margin-bottom: -20px;
+  }
+
+  .mdx-hero > .mdx-hero-asset video {
+    margin-top: -5%;
+    margin-right: -20px;
     scale: 0.95;
   }
 }

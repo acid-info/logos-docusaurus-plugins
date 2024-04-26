@@ -834,7 +834,7 @@ main[itemtype*='Blog'] {
   }
 }
 
-.event-details {
+.full-width {
   @include utils.responsive('lg', 'up') {
     & > div .main-wrapper main > div > div {
       grid-template-columns: unset !important;
@@ -843,6 +843,27 @@ main[itemtype*='Blog'] {
 
   & > div .main-wrapper main {
     grid-column: 1 / 17 !important;
+  }
+}
+
+.news {
+  .theme-doc-sidebar-container {
+    display: none;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  .news-title {
+    @include lsd.typography('h1', false);
+    display: flex;
+    gap: 16px;
+    margin-bottom: 0 !important;
+
+    span {
+      opacity: 0.4;
+    }
   }
 }
 
