@@ -21,6 +21,7 @@ import {
   JobsPerDepartment,
   GithubChallenges,
   LogoCarousel,
+  VideoSection,
 } from '../components/mdx'
 import * as jobData from '/generated/jobs.json'
 import * as challengesData from '/generated/challenges.json'
@@ -40,15 +41,15 @@ import * as challengesData from '/generated/challenges.json'
       </HeroAction>
     </HeroActions>
   </HeroInfo>
-  {/* <HeroAsset>
-    <img src="/hero/hero-image.webp" alt="hero-image" />
-  </HeroAsset> */}
   <HeroAsset>
+    <img src="/hero/hero-image.webp" alt="hero-image" />
+  </HeroAsset>
+  {/* <HeroAsset>
     <video autoPlay loop muted autoPlay playsInline>
       <source src="/hero/hero-video.mov" type='video/mp4; codecs="hvc1"' />
       <source src="/hero/hero-video.webm" type="video/webm" />
     </video>
-  </HeroAsset>
+  </HeroAsset> */}
 </Hero>
 
 <Box>
@@ -112,6 +113,22 @@ import * as challengesData from '/generated/challenges.json'
       </Grid.Item>
     </Grid>
   </Box>
+</Box>
+
+<Box top={{ xs: 214 }}>
+  <VideoSection
+    title={<>What is Waku?</>}
+    description={
+      <>
+        Watch this introductory video to understand Waku's technology and
+        purpose.
+      </>
+    }
+    border={false}
+    label="Watch now"
+    target="_blank"
+    src="https://www.youtube.com/embed/SK5TF3l3XM4"
+  />
 </Box>
 
 <Box top={{ xs: 214 }}>

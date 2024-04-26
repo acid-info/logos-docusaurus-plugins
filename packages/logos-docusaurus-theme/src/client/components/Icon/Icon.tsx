@@ -35,6 +35,7 @@ import TelegramSvg from '../../static/icons/telegram.svg'
 import TwitterSvg from '../../static/icons/twitter.svg'
 import XWhiteSvg from '../../static/icons/x-white.svg'
 import EmailSvg from '../../static/icons/email.svg'
+import PlaySvg from '../../static/icons/play.svg'
 
 type TIconProps = {
   size?: 's' | 'm' | 'l'
@@ -170,6 +171,12 @@ export const IconGScholar = (props: TIconProps): JSX.Element => (
 export const IconCopy = (props: TIconProps): JSX.Element => (
   <Icon {...props}>
     <CopySvg />
+  </Icon>
+)
+
+export const IconPlay = (props: TIconProps): JSX.Element => (
+  <Icon {...props}>
+    <PlaySvg />
   </Icon>
 )
 
