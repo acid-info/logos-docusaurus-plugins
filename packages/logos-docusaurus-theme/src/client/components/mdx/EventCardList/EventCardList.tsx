@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './EventCardList.scss'
-import { Button } from '@acid-info/lsd-react'
+import { Button, Typography } from '@acid-info/lsd-react'
 import { Box, EventCard, EventCardProps, Grid } from '..'
 import { TabItem, Tabs } from '@acid-info/lsd-react'
 
@@ -63,6 +63,9 @@ export const EventCardList: React.FC<EventCardListProps> = ({
                 <EventCard {...event} />
               </Grid.Item>
             ))}
+            {data.length === 0 ? (
+              <Typography>No events found.</Typography>
+            ) : null}
           </Grid>
         </Box>
         {showMore && (
