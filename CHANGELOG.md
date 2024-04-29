@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.168](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.167...v1.0.0-alpha.168) (2024-04-29)
+
+### Features
+
+- add empty state to EventCardList ([d7e0cf7](https://github.com/acid-info/logos-docusaurus-plugins/commit/d7e0cf70c6810b3504a19c50be9f6e334438f01e))
+
 # [1.0.0-alpha.167](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.166...v1.0.0-alpha.167) (2024-04-26)
 
 ### Bug Fixes
