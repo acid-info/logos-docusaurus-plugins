@@ -133,14 +133,6 @@ const config = {
                 label: 'Discord',
               },
               {
-                href: 'https://docs.waku.org',
-                label: 'Docs',
-              },
-              {
-                href: 'https://github.com/waku-org',
-                label: 'GitHub',
-              },
-              {
                 href: 'https://www.youtube.com/@waku-org',
                 label: 'YouTube',
               },
@@ -161,24 +153,40 @@ const config = {
           {
             items: [
               {
-                href: '/',
-                label: 'Contact us',
+                href: 'https://docs.waku.org',
+                label: 'Docs',
               },
               {
-                href: 'https://jobs.status.im/',
-                label: 'Work with us',
+                href: 'https://github.com/waku-org',
+                label: 'GitHub',
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                to: '/join-us',
+                label: 'Work with Us',
+              },
+              {
+                href: 'https://guide.waku.org/',
+                label: 'Brand Guidelines',
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                href: '/terms',
+                label: 'Terms of Use',
               },
               {
                 href: '/privacy-policy',
-                label: 'Privacy policy',
+                label: 'Privacy Policy',
               },
               {
-                href: '/events',
-                label: 'Events',
-              },
-              {
-                href: '/news',
-                label: 'News',
+                href: '/rules-of-engagement',
+                label: 'Rules of Engagement',
               },
             ],
           },

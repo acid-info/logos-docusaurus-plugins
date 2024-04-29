@@ -867,6 +867,20 @@ main[itemtype*='Blog'] {
   }
 }
 
+.footer__links {
+  & > div:first-of-type {
+    margin-bottom: 8px;
+  }
+
+  & > div:nth-of-type(2) {
+    margin-bottom: 34px;
+  }
+
+  & > div:nth-of-type(3) {
+    margin-bottom: 8px;
+  }
+}
+
 @include utils.responsive('sm', 'down') {
   :root {
     --ifm-spacing-vertical: var(--ifm-global-spacing);
@@ -898,21 +912,26 @@ main[itemtype*='Blog'] {
       padding-inline: 0 !important;
       display: flex !important;
       flex-direction: column;
-      gap: 72px !important;
+      gap: 40px !important;
       width: initial;
-    }
-
-    & > div:first-of-type {
-      .footer__links {
-        gap: 0.3rem !important;
-      }
     }
   }
 
   .footer__links {
     display: flex !important;
     flex-direction: column !important;
-    gap: 24px !important;
+
+    & > div:first-of-type {
+      margin-bottom: 4px !important;
+    }
+
+    & > div:nth-of-type(2) {
+      margin-bottom: 34px !important;
+    }
+
+    & > div:nth-of-type(3) {
+      margin-bottom: 4px !important;
+    }
   }
 
   .col.footer__col {
@@ -1153,7 +1172,7 @@ main[itemtype*='Blog'] {
   > div {
     max-width: unset;
     padding: unset;
-    padding: 16px 0;
+    padding: 24px 0 0 0;
 
     display: grid;
     grid-template-columns: repeat(24, 1fr);
@@ -1183,7 +1202,6 @@ main[itemtype*='Blog'] {
   margin-bottom: 0;
   grid-column: 13 / 25;
   grid-row: 1 / 1;
-  gap: 12px;
 }
 
 .footer > div:nth-child(2) > .footer__links {
