@@ -120,25 +120,41 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Nimbus @2023<br/>All Rights Reserved.',
+        copyright: 'Waku',
         links: [
           {
             items: [
               {
-                href: 'https://twitter.com/ethnimbus',
+                href: 'https://twitter.com/waku_org',
                 label: 'Twitter',
               },
               {
-                href: 'https://discord.gg/EP8DZnXu9y',
+                href: 'https://discord.waku.org/',
                 label: 'Discord',
               },
               {
-                href: '/',
+                href: 'https://docs.waku.org',
                 label: 'Docs',
               },
               {
-                href: '/',
-                label: 'Github',
+                href: 'https://github.com/waku-org',
+                label: 'GitHub',
+              },
+              {
+                href: 'https://www.youtube.com/@waku-org',
+                label: 'YouTube',
+              },
+              {
+                href: 'https://www.linkedin.com/company/waku-org',
+                label: 'LinkedIn',
+              },
+              {
+                href: 'https://warpcast.com/waku',
+                label: 'Farcaster',
+              },
+              {
+                href: 'https://t.me/waku_org',
+                label: 'Telegram',
               },
             ],
           },

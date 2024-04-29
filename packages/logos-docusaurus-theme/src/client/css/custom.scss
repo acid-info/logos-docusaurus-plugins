@@ -959,6 +959,10 @@ main[itemtype*='Blog'] {
   .plugin-id-root-pages main {
     grid-column: 4 / 16 !important;
   }
+
+  .footer {
+    padding: 0 !important;
+  }
 }
 
 @include utils.responsive('lg', 'up') {
