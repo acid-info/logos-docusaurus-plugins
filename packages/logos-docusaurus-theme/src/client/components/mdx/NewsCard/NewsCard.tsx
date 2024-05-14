@@ -3,9 +3,10 @@ import ThemedImage from '@theme/ThemedImage'
 import clsx from 'clsx'
 import React from 'react'
 import './NewsCard.scss'
+import { IconExternalLink } from '@logos-theme/components/Icon/Icon'
 
 export type NewsCardProps = React.HTMLProps<HTMLAnchorElement> & {
-  thumbnail: string
+  thumbnail?: string
   title: string
   date: React.ReactNode
   author: string
@@ -28,14 +29,22 @@ export const NewsCard: React.FC<NewsCardProps> = ({
       {...props}
       className={clsx(props.className, 'mdx-news-card')}
     >
-      <ThemedImage
-        sources={{
-          dark: thumbnail,
-          light: thumbnail,
-        }}
-        alt={title ?? 'news thumbnail'}
-        className="mdx-news-card__thumbnail"
-      />
+      {thumbnail && (
+        <div className="mdx-news-card-thumbnail__container">
+          <ThemedImage
+            sources={{
+              dark: thumbnail,
+              light: thumbnail,
+            }}
+            alt={title ?? 'news thumbnail'}
+            className="mdx-news-card__thumbnail"
+          />
+          <div className="mdx-news-card__external-link-icon">
+            <IconExternalLink className="mdx-jpd__external-link-icon" />
+          </div>
+        </div>
+      )}
+
       <Typography component="h3" variant="h4" className="mdx-news-card__title">
         {title}
       </Typography>
