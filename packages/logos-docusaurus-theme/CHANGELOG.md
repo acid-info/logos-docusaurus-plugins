@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.172](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.171...v1.0.0-alpha.172) (2024-05-14)
+
+### Features
+
+- implement hover state for NewsCard ([0d0adcb](https://github.com/acid-info/logos-docusaurus-plugins/commit/0d0adcbab97f66c0b4e2698f25108ccb66746aee))
+
 # [1.0.0-alpha.171](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.170...v1.0.0-alpha.171) (2024-04-29)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
