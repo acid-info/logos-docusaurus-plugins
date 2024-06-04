@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.175](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.174...v1.0.0-alpha.175) (2024-06-04)
+
+### Features
+
+- support a tag target for EventCard ([4470fdf](https://github.com/acid-info/logos-docusaurus-plugins/commit/4470fdf7840bb4a140dfaa28d73b8aefb7c3a08a))
+
 # [1.0.0-alpha.174](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.173...v1.0.0-alpha.174) (2024-05-16)
 
 **Note:** Version bump only for package root
