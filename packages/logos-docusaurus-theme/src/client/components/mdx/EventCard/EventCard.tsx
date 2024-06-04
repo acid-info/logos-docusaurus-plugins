@@ -9,6 +9,7 @@ export type EventCardProps = React.HTMLProps<HTMLAnchorElement> & {
   title: string
   date: React.ReactNode
   location: string
+  target?: string
 }
 
 export const EventCard: React.FC<EventCardProps> = ({
@@ -16,11 +17,12 @@ export const EventCard: React.FC<EventCardProps> = ({
   title,
   date,
   location,
+  target = '_self',
   ...props
 }) => {
   return (
     <a
-      target="_self"
+      target={target}
       {...props}
       className={clsx(props.className, 'mdx-event-card')}
     >
