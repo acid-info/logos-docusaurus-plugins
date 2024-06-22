@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.176](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.175...v1.0.0-alpha.176) (2024-06-22)
+
+### Bug Fixes
+
+- fix bug with og image renderer ([e55ded0](https://github.com/acid-info/logos-docusaurus-plugins/commit/e55ded0e57b89f8a55b1ac873a3e887752551557))
+
 # [1.0.0-alpha.175](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.174...v1.0.0-alpha.175) (2024-06-04)
 
 ### Features
