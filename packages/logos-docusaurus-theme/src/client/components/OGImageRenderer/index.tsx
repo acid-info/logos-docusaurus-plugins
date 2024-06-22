@@ -239,6 +239,8 @@ const docsImageRenderer = imageRendererFactory(
     const logo = await getLogo(siteConfig, outDir)
     const image = await getPageImage('docs', outDir, doc)
 
+    const url = new URL(siteConfig.url)
+
     return [
       <Layout
         title={imageTitle ?? (doc.metadata.title || siteConfig.title)}
@@ -246,9 +248,7 @@ const docsImageRenderer = imageRendererFactory(
           imageSubtitle
             ? [<span>{imageSubtitle}</span>]
             : [
-                <span style={{ textTransform: 'capitalize' }}>
-                  {doc.plugin.id === 'default' ? 'Docs' : doc.plugin.id}
-                </span>,
+                <span>{url.host.toLowerCase()}</span>,
                 doc.version.badge && doc.version.label && (
                   <span>{doc.version.label}</span>
                 ),
