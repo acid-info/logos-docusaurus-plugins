@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.177](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.176...v1.0.0-alpha.177) (2024-08-07)
+
+### Features
+
+- add TableView component ([aaf3863](https://github.com/acid-info/logos-docusaurus-plugins/commit/aaf3863f84b73cfbbc913f1cb1d579d72c88d204))
+
 # [1.0.0-alpha.176](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.175...v1.0.0-alpha.176) (2024-06-22)
 
 ### Bug Fixes
