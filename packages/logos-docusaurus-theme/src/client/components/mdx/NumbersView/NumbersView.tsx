@@ -35,7 +35,7 @@ export const NumbersView: React.FC<TableViewProps> = ({
         </Typography>
         {buttonLink && (
           <Link href={buttonLink} target={buttonTarget}>
-            <Button>{buttonText || 'Learn More'}</Button>
+            <Button size="large">{buttonText || 'Learn More'}</Button>
           </Link>
         )}
       </div>
