@@ -22,6 +22,7 @@ import {
   GithubChallenges,
   LogoCarousel,
   VideoSection,
+  TableView,
 } from '../components/mdx'
 import * as jobData from '/generated/jobs.json'
 import * as challengesData from '/generated/challenges.json'
@@ -113,6 +114,24 @@ import * as challengesData from '/generated/challenges.json'
       </Grid.Item>
     </Grid>
   </Box>
+</Box>
+
+<Box top={{ xs: 214 }}>
+  <TableView
+    tableTitle="Overview"
+    data={[
+      {
+        title: 'The Challenge',
+        description:
+          "The introduction of data sampling ('data blob') with the implementation of EIP-4844 is a step towards solving the scalability of the Ethereum Network, but dependence on external data availability introduces security risks for rollups and their dapp ecosystem.",
+      },
+      {
+        title: 'Our Solution',
+        description:
+          'Codex offers secure data storage and persistence for Ethereum, ensuring your data remains accessible and durable.',
+      },
+    ]}
+  />
 </Box>
 
 <Box top={{ xs: 214 }}>
