@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.178](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.177...v1.0.0-alpha.178) (2024-08-07)
+
+### Features
+
+- implement NumbersView ([ee1ca96](https://github.com/acid-info/logos-docusaurus-plugins/commit/ee1ca962c715ec3942a6c63e19e4721017df69a6))
+
 # [1.0.0-alpha.177](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.176...v1.0.0-alpha.177) (2024-08-07)
 
 ### Features
