@@ -1,0 +1,70 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-numbers-view {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.mdx-numbers-view-header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.mdx-numbers-view-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.mdx-numbers-view-row {
+  display: flex;
+  gap: 32px;
+}
+
+.mdx-numbers-view-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  font-size: 14px;
+  border: 1px solid rgb(var(--lsd-border-primary));
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 4px 12px;
+}
+
+.mdx-numbers-view-title {
+  width: 100%;
+}
+
+.mdx-numbers-view-description {
+  width: 100%;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-numbers-view {
+    gap: 32px;
+  }
+
+  .mdx-numbers-view-header {
+    gap: 16px;
+  }
+
+  .mdx-numbers-view-section-title {
+    font-size: 28px !important;
+  }
+
+  .mdx-numbers-view {
+    flex-direction: column;
+  }
+  .mdx-numbers-view-title {
+    font-size: 20px !important;
+  }
+}

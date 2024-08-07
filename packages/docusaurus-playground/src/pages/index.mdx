@@ -23,6 +23,7 @@ import {
   LogoCarousel,
   VideoSection,
   TableView,
+  NumbersView,
 } from '../components/mdx'
 import * as jobData from '/generated/jobs.json'
 import * as challengesData from '/generated/challenges.json'
@@ -129,6 +130,25 @@ import * as challengesData from '/generated/challenges.json'
         title: 'Our Solution',
         description:
           'Codex offers secure data storage and persistence for Ethereum, ensuring your data remains accessible and durable.',
+      },
+    ]}
+  />
+</Box>
+
+<Box top={{ xs: 214 }}>
+  <NumbersView
+    sectionTitle="Why Choose Codex"
+    buttonText="Learn More"
+    buttonLink="/about"
+    data={[
+      {
+        title: 'Secure data availability',
+      },
+      {
+        title: 'Improved scalability',
+      },
+      {
+        title: 'Reduced security risks for rollups',
       },
     ]}
   />
