@@ -53,8 +53,31 @@
     gap: 32px;
   }
 
-  .mdx-numbers-view-header {
+  .mdx-numbers-view-row {
     gap: 16px;
+  }
+
+  .mdx-numbers-view-number {
+    width: 32px;
+    height: 32px;
+    padding: 4px 12px;
+  }
+
+  .mdx-numbers-view-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .lsd-button {
+    padding: 6px 12px !important;
+
+    span {
+      font-size: var(--lsd-body3-fontSize) !important;
+      line-height: var(--lsd-body2-lineHeight) !important;
+    }
   }
 
   .mdx-numbers-view-section-title {

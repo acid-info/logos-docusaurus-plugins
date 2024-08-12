@@ -28,10 +28,11 @@
 @include utils.responsive('lg', 'down') {
   .mdx-table-view-table-title {
     font-size: 28px !important;
+    margin-bottom: 24px;
   }
 
   .mdx-table-view-row {
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
   }
 }
