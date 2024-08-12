@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.179](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.178...v1.0.0-alpha.179) (2024-08-12)
+
+### Features
+
+- implement responsive design for NumbersView and TableView ([13cd171](https://github.com/acid-info/logos-docusaurus-plugins/commit/13cd171e0c73e2dc4bea73ff50d74a41fed728ac))
+
 # [1.0.0-alpha.178](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.177...v1.0.0-alpha.178) (2024-08-07)
 
 ### Features
