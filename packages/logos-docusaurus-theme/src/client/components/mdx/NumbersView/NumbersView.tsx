@@ -9,6 +9,7 @@ interface TableItem {
 
 interface TableViewProps {
   sectionTitle: string
+  description?: string
   buttonText?: string
   buttonLink?: string
   buttonTarget?: string
@@ -17,6 +18,7 @@ interface TableViewProps {
 
 export const NumbersView: React.FC<TableViewProps> = ({
   sectionTitle,
+  description = '',
   buttonText = '',
   buttonLink = '',
   buttonTarget = '_self',
@@ -26,13 +28,23 @@ export const NumbersView: React.FC<TableViewProps> = ({
   return (
     <div className="mdx-numbers-view" {...props}>
       <div className="mdx-numbers-view-header">
-        <Typography
-          className="mdx-numbers-view-section-title"
-          component="h2"
-          variant="h2"
-        >
-          {sectionTitle}
-        </Typography>
+        <div className="mdx-numbers-view-header-title">
+          <Typography
+            className="mdx-numbers-view-section-title"
+            component="h2"
+            variant="h2"
+          >
+            {sectionTitle}
+          </Typography>
+          {description && (
+            <Typography
+              className="mdx-numbers-view-description"
+              variant="body1"
+            >
+              {description}
+            </Typography>
+          )}
+        </div>
         {buttonLink && (
           <Link href={buttonLink} target={buttonTarget}>
             <Button size="large">{buttonText || 'Learn More'}</Button>

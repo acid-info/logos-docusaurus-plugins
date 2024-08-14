@@ -44,8 +44,14 @@
   width: 100%;
 }
 
+.mdx-numbers-view-header-title {
+  display: flex;
+  flex-direction: column;
+}
+
 .mdx-numbers-view-description {
   width: 100%;
+  margin-top: 16px;
 }
 
 @include utils.responsive('lg', 'down') {
