@@ -36,6 +36,10 @@
   gap: 16px;
 }
 
+.mdx-input-cta-section__message {
+  margin-left: 12px;
+}
+
 @include utils.responsive('sm', 'down') {
   .mdx-input-cta-section__input-fields {
     display: flex;
