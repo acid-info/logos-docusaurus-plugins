@@ -6,7 +6,7 @@ import {
   ScrollControllerProvider,
   NavbarProvider,
   PluginHtmlClassNameProvider,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import type { Props } from '@theme/Layout/Provider'
 
 const Provider = composeProviders([

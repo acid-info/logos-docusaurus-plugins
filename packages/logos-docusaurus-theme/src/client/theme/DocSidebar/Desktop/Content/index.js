@@ -4,7 +4,7 @@ import { ThemeClassNames } from '@docusaurus/theme-common'
 import {
   useAnnouncementBar,
   useScrollPosition,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import { translate } from '@docusaurus/Translate'
 import DocSidebarItems from '@theme/DocSidebarItems'
 import styles from './styles.module.css'

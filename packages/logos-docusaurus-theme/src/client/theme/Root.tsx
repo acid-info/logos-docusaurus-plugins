@@ -1,4 +1,4 @@
-import { ColorModeProvider } from '@docusaurus/theme-common/internal'
+import { ColorModeProvider } from '@docusaurus/plugin-content-blog/client'
 import React from 'react'
 import { LightBoxProvider } from '../containers/LightBox/LightBox'
 import { ThemeProvider } from '../containers/ThemeProvider'

@@ -13,7 +13,7 @@ import {
   isActiveSidebarItem,
   isSamePath,
   useDocSidebarItemsExpandedState,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import useIsBrowser from '@docusaurus/useIsBrowser'
 import DocSidebarItems from '@theme/DocSidebarItems'
 import clsx from 'clsx'

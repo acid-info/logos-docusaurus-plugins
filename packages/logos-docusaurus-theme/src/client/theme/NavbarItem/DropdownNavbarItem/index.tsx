@@ -4,7 +4,10 @@ import {
   isRegexpStringMatch,
   useCollapsible,
 } from '@docusaurus/theme-common'
-import { isSamePath, useLocalPathname } from '@docusaurus/theme-common/internal'
+import {
+  isSamePath,
+  useLocalPathname,
+} from '@docusaurus/plugin-content-blog/client'
 import NavbarItem from '@theme/NavbarItem'
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink'
 import clsx from 'clsx'

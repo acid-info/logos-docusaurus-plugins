@@ -4,7 +4,7 @@ import { useThemeConfig } from '@docusaurus/theme-common'
 import {
   useHideableNavbar,
   useNavbarMobileSidebar,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import { translate } from '@docusaurus/Translate'
 import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar'
 import styles from './styles.module.css'

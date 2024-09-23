@@ -16,7 +16,7 @@ import {
 } from './HeroModel.configs'
 
 import { calcScrollThreshold, mapFloat } from '../../../lib/ui.utils'
-import { AsciiRenderer } from './Ascii'
+// import { AsciiRenderer } from './Ascii'
 import { Controls } from './Controls'
 import './HeroModel.scss'
 import { useScrollY } from '../../../lib/useScrollY'
@@ -122,7 +122,7 @@ export const HeroModel = (props: HeroModelProps) => {
                 fallback={<Model url={`/hero/${preset.modelId}/lo.glb`} />}
               >
                 <Model url={`/hero/${preset.modelId}/hi.glb`} />
-                <AsciiRenderer {...asciiConfig} />
+                {/* <AsciiRenderer {...asciiConfig} /> */}
               </Suspense>
             </Controls>
           </Canvas>

@@ -1,6 +1,6 @@
 import React from 'react'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import { useAlternatePageUtils } from '@docusaurus/theme-common/internal'
+import { useAlternatePageUtils } from '@docusaurus/plugin-content-blog/client'
 import { translate } from '@docusaurus/Translate'
 import { useLocation } from '@docusaurus/router'
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem'

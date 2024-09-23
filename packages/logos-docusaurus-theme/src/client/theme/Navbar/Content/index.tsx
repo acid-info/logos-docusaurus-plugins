@@ -3,7 +3,7 @@ import { ErrorCauseBoundary, useThemeConfig } from '@docusaurus/theme-common'
 import {
   splitNavbarItems,
   useNavbarMobileSidebar,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle'
 import NavbarLogo from '@theme/Navbar/Logo'
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle'

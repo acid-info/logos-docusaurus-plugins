@@ -1,5 +1,6 @@
 import { PrismTheme } from 'prism-react-renderer'
-import dracula from 'prism-react-renderer/themes/dracula'
+const { themes } = require('prism-react-renderer')
+const dracula = themes.dracula
 
 const theme: PrismTheme = {
   ...dracula,

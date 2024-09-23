@@ -1,10 +1,10 @@
 import React from 'react'
 import clsx from 'clsx'
-import { useBlogPost } from '@docusaurus/theme-common/internal'
-import BlogPostItemHeaderAuthor from '@theme/BlogPostItem/Header/Author'
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client'
 import type { Props } from '@theme/BlogPostItem/Header/Authors'
 import styles from './styles.module.css'
 import { Typography } from '@acid-info/lsd-react'
+import BlogPostItemHeaderAuthor from '../Author'
 
 // Component responsible for the authors layout
 export default function BlogPostItemHeaderAuthors({

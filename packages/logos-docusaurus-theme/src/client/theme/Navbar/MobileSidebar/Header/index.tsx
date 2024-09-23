@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal'
+import { useNavbarMobileSidebar } from '@docusaurus/plugin-content-blog/client'
 import { translate } from '@docusaurus/Translate'
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle'
 import NavbarLogo from '@theme/Navbar/Logo'

@@ -45,7 +45,7 @@ export default function logosTheme(
     getClientModules: () => clientModules,
 
     async contentLoaded(args) {
-      await createAuthorRoutes(context, args)
+      await createAuthorRoutes(context, args as any)
     },
 
     injectHtmlTags: ({}) => {

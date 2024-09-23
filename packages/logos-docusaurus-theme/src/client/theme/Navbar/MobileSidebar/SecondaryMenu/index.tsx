@@ -1,6 +1,6 @@
 import { Typography } from '@acid-info/lsd-react'
 import { useThemeConfig } from '@docusaurus/theme-common'
-import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal'
+import { useNavbarSecondaryMenu } from '@docusaurus/plugin-content-blog/client'
 import Translate from '@docusaurus/Translate'
 import { IconArrowLeft } from '@logos-theme/components/Icon'
 import React from 'react'

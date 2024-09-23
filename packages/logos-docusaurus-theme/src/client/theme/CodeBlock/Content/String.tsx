@@ -7,7 +7,7 @@ import {
   parseLines,
   containsLineNumbers,
   useCodeWordWrap,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import Highlight, { defaultProps, type Language } from 'prism-react-renderer'
 import Line from '@theme/CodeBlock/Line'
 import CopyButton from '@theme/CodeBlock/CopyButton'

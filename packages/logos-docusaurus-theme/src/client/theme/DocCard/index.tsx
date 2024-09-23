@@ -7,7 +7,7 @@ import type {
 import {
   findFirstCategoryLink,
   useDocById,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import type { Props } from '@theme/DocCard'
 import React from 'react'
 import { PageCard } from '../../components/mdx/PageCard'

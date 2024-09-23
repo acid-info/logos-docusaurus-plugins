@@ -6,7 +6,7 @@ import { ThemeClassNames } from '@docusaurus/theme-common'
 import {
   useHomePageRoute,
   useSidebarBreadcrumbs,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-blog/client'
 import { translate } from '@docusaurus/Translate'
 import clsx from 'clsx'
 import React from 'react'
