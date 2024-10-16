@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.182](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.181...v1.0.0-alpha.182) (2024-10-16)
+
+### Features
+
+- support x link for ProfileCard ([96da823](https://github.com/acid-info/logos-docusaurus-plugins/commit/96da82357b6d0a16bb0c5c047c9e6eecfc9fa29b))
+
 # [1.0.0-alpha.181](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.180...v1.0.0-alpha.181) (2024-08-30)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
