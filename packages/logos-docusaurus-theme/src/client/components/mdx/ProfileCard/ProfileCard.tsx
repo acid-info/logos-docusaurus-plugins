@@ -1,7 +1,7 @@
 import { Typography } from '@acid-info/lsd-react'
 import Link from '@docusaurus/Link'
 import React from 'react'
-import { IconDiscord, IconGithub } from '../../Icon'
+import { IconDiscord, IconGithub, IconX } from '../../Icon'
 import './ProfileCard.scss'
 import clsx from 'clsx'
 
@@ -12,6 +12,8 @@ export type ProfileCardProps = React.HTMLProps<HTMLDivElement> & {
   githubLink?: string
   discordUsername?: string
   discordLink?: string
+  xUsername?: string
+  xLink?: string
 }
 
 /**
@@ -60,6 +62,8 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
   githubLink,
   discordUsername,
   discordLink,
+  xUsername,
+  xLink,
   ...props
 }) => {
   return (
@@ -84,9 +88,9 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
           >
             {name}
           </Typography>
-          {githubUsername || discordUsername ? (
+          {githubLink || discordLink || xLink ? (
             <div className="mdx-profile-card__buttons">
-              {githubUsername && githubLink && (
+              {githubLink && (
                 <Link
                   href={githubLink}
                   target="_blank"
@@ -95,13 +99,22 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
                   <IconGithub />
                 </Link>
               )}
-              {discordUsername && discordLink && (
+              {discordLink && (
                 <Link
                   href={discordLink}
                   target="_blank"
                   className={'mdx-profile-card__link'}
                 >
                   <IconDiscord size="m" />
+                </Link>
+              )}
+              {xLink && (
+                <Link
+                  href={xLink}
+                  target="_blank"
+                  className={'mdx-profile-card__link'}
+                >
+                  <IconX size="m" />
                 </Link>
               )}
             </div>
