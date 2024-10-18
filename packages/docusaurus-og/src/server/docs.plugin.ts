@@ -88,6 +88,7 @@ export class DocsPlugin {
   }
 
   getHtmlPath = (doc: Partial<DocsPageData>) =>
-    doc.metadata?.permalink &&
-    path.join(this.context.outDir, doc.metadata.permalink, 'index.html')
+    // slug is used here instead of permalink because permalink already contains version and locale paths of websiteOutDir
+    doc.metadata?.slug &&
+    path.join(this.context.outDir, doc.metadata.slug, 'index.html')
 }
