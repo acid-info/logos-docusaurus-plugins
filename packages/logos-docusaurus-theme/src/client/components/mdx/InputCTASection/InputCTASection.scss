@@ -27,17 +27,27 @@
 
 .mdx-input-cta-section__form {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+
+  gap: 16px;
 }
 
 .mdx-input-cta-section__input-fields {
   display: flex;
   gap: 16px;
+  width: 100%;
+
+  & > div {
+    width: 100%;
+  }
 }
 
 .mdx-input-cta-section__message {
-  margin-left: 12px;
+  display: block;
+  margin-top: 12px;
+}
+
+form .mdx-input-cta-section__cta {
+  width: 146px !important;
 }
 
 @include utils.responsive('sm', 'down') {
@@ -56,6 +66,8 @@
   .mdx-input-cta-section__container {
     .mdx-input-cta-section__form {
       margin-bottom: -24px;
+      flex-direction: column;
+      gap: 40px;
     }
 
     .input-cta-section__description--no-form {

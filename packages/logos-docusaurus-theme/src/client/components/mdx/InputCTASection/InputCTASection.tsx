@@ -105,12 +105,6 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
             <Button type="submit" className="mdx-input-cta-section__cta">
               <Typography variant="body1">{label}</Typography>
             </Button>
-            <Typography
-              className="mdx-input-cta-section__message"
-              variant="body2"
-            >
-              {message}
-            </Typography>
           </div>
         </form>
       ) : (
@@ -119,6 +113,11 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
             <Typography variant="body1">{label}</Typography>
           </Button>
         </Link>
+      )}
+      {message && (
+        <Typography className="mdx-input-cta-section__message" variant="body2">
+          {message}
+        </Typography>
       )}
     </div>
   )
