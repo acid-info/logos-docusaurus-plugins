@@ -784,6 +784,11 @@ table {
   box-shadow: none;
 }
 
+// remove caret icon from collapsible menu items
+.menu__list-item-collapsible > a > svg {
+  display: none;
+}
+
 main[itemtype*='Blog'] {
   margin-left: 0;
 
@@ -1290,6 +1295,20 @@ main[itemtype*='Blog'] {
     flex-direction: row;
     justify-content: flex-end;
     gap: 16px;
+  }
+}
+
+@include utils.responsive('lg', 'up') {
+  .navbar__brand {
+    margin-left: 14px;
+  }
+
+  aside a[tabindex='-1'] img {
+    margin-left: 14px;
+  }
+
+  .theme-doc-sidebar-menu .menu__link {
+    padding-left: 8px;
   }
 }
 
