@@ -11,7 +11,7 @@ export const useNewsletterApi = () => {
     setBusy(true)
     try {
       const res = await fetch(
-        'https://odoo.logos.co/website_mass_mailing/subscribe2',
+        'https://odoo.logos.co/website_mass_mailing/subscribe_ghost',
         {
           method: 'POST',
           headers: {
