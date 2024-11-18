@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.184](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.183...v1.0.0-alpha.184) (2024-11-18)
+
+### Features
+
+- replace odoo with ghost ([66810b5](https://github.com/acid-info/logos-docusaurus-plugins/commit/66810b56e2be0e354ae488675d6345762e58fcda))
+
 # [1.0.0-alpha.183](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.182...v1.0.0-alpha.183) (2024-11-12)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
