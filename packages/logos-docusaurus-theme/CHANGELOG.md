@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.185](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.184...v1.0.0-alpha.185) (2024-11-21)
+
+### Features
+
+- refactor InputCTASection for ghost subscription ([5f66b97](https://github.com/acid-info/logos-docusaurus-plugins/commit/5f66b9701e9f59fc29629adcc6789f4c940fb5b5))
+
 # [1.0.0-alpha.184](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.183...v1.0.0-alpha.184) (2024-11-18)
 
 ### Features
