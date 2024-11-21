@@ -11,8 +11,10 @@ export type InputCTASectionProps = {
   link?: string
   linkProps?: Props
   formInput?: any[]
-  formListId?: number
+  buType?: buType
 }
+
+type buType = 'codex' | 'waku' | 'nomos'
 
 export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   title,
@@ -21,7 +23,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   link,
   linkProps,
   formInput,
-  formListId,
+  buType,
 }) => {
   const [formState, setFormState] = React.useState({ email: '', name: '' })
   const [message, setMessage] = React.useState('')
@@ -44,9 +46,8 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
             jsonrpc: '2.0',
             method: 'call',
             params: {
-              value: formState?.email,
-              name: formState?.name || '',
-              list_id: formListId,
+              email: formState?.email,
+              type: buType,
               subscription_type: 'email',
             },
           }),
