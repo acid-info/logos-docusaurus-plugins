@@ -2,6 +2,7 @@
 @use '../../../css/lsd';
 
 .mdx-input-cta-section__container {
+  position: relative;
   border-top: 1px solid rgb(var(--lsd-border-primary));
   padding-top: 24px;
 
