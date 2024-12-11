@@ -28,11 +28,15 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   const [formState, setFormState] = React.useState({ email: '', name: '' })
   const [message, setMessage] = React.useState('')
 
-  const errorMessage =
-    'There was an error submitting the form. Please try again.'
+  const errorMessage = 'There was an error submitting the form.'
 
   const handleSubmit = async (e: any) => {
     e.preventDefault()
+
+    if (!formState?.email) {
+      setMessage('Please enter an email address')
+      return
+    }
 
     try {
       const res = await fetch(

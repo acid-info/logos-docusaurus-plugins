@@ -43,7 +43,8 @@
 
 .mdx-input-cta-section__message {
   display: block;
-  margin-top: 12px;
+  position: absolute;
+  bottom: -32px;
 }
 
 form .mdx-input-cta-section__cta {
@@ -64,6 +65,8 @@ form .mdx-input-cta-section__cta {
 
 @include utils.responsive('sm', 'down') {
   .mdx-input-cta-section__container {
+    position: relative;
+
     .mdx-input-cta-section__form {
       margin-bottom: -24px;
       flex-direction: column;
