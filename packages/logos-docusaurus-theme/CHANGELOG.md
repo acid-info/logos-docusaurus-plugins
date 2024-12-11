@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.187](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.186...v1.0.0-alpha.187) (2024-12-11)
+
+### Bug Fixes
+
+- fix bug with InputSection mobile UI ([20bea9e](https://github.com/acid-info/logos-docusaurus-plugins/commit/20bea9ef3679707954991bada09d45135311178d))
+
 # [1.0.0-alpha.186](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.185...v1.0.0-alpha.186) (2024-12-11)
 
 ### Features
