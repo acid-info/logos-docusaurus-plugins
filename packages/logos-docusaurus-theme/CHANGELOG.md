@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.191](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.190...v1.0.0-alpha.191) (2025-01-31)
+
+### Bug Fixes
+
+- fix bug with newsletter field name ([c427050](https://github.com/acid-info/logos-docusaurus-plugins/commit/c42705073ac85ed8255790f045dd4fcde83d6a40))
+
 # [1.0.0-alpha.190](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.189...v1.0.0-alpha.190) (2025-01-31)
 
 ### Bug Fixes
