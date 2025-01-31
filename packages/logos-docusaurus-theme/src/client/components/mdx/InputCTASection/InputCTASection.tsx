@@ -12,6 +12,7 @@ export type InputCTASectionProps = {
   linkProps?: Props
   formInput?: any[]
   buType?: buType
+  newsletterId?: number
 }
 
 type buType = 'codex' | 'waku' | 'nomos'
@@ -24,6 +25,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   linkProps,
   formInput,
   buType,
+  newsletterId = null,
 }) => {
   const [formState, setFormState] = React.useState({ email: '', name: '' })
   const [message, setMessage] = React.useState('')
@@ -49,11 +51,19 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
           body: JSON.stringify({
             jsonrpc: '2.0',
             method: 'call',
-            params: {
-              email: formState?.email,
-              type: buType,
-              subscription_type: 'email',
-            },
+            params:
+              newsletterId == null
+                ? {
+                    email: formState?.email,
+                    type: buType,
+                    subscription_type: 'email',
+                  }
+                : {
+                    email: formState?.email,
+                    type: buType,
+                    subscription_type: 'email',
+                    newsletterId: newsletterId,
+                  },
           }),
         },
       )
