@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.190](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.189...v1.0.0-alpha.190) (2025-01-31)
+
+### Bug Fixes
+
+- fix bug with InputCTASection error message ([f68771b](https://github.com/acid-info/logos-docusaurus-plugins/commit/f68771b13c5ec44c703df8f1497d6d0ed73f81dc))
+- fix bug with InputCTASection error message ([8a52a40](https://github.com/acid-info/logos-docusaurus-plugins/commit/8a52a407d3a7f6af8a6c039965af8d0829ca6f8d))
+
+### Features
+
+- support newsletterId for InputCTASection ([afbfdc1](https://github.com/acid-info/logos-docusaurus-plugins/commit/afbfdc11069c1e5ec630f670b9856774a424124b))
+
 # [1.0.0-alpha.189](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.188...v1.0.0-alpha.189) (2025-01-31)
 
 ### Features
