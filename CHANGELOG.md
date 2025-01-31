@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.189](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.188...v1.0.0-alpha.189) (2025-01-31)
+
+### Features
+
+- debug InputCTASection error message ([13626bc](https://github.com/acid-info/logos-docusaurus-plugins/commit/13626bcb5202abaa0757f46ce316b0947215c774))
+
 # [1.0.0-alpha.188](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.187...v1.0.0-alpha.188) (2024-12-11)
 
 ### Bug Fixes
