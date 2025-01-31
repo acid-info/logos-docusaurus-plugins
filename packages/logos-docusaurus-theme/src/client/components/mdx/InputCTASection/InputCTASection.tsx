@@ -71,7 +71,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
       const data = await res.json()
 
       if (data?.result?.errors && data?.result?.errors[0]?.context?.length) {
-        setMessage(data?.result?.errors[0].context.message)
+        setMessage(data?.result?.errors[0].context)
         return
       }
 
