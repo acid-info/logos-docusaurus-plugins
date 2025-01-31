@@ -62,7 +62,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
                     email: formState?.email,
                     type: buType,
                     subscription_type: 'email',
-                    newsletterId: newsletterId,
+                    newsletter: newsletterId,
                   },
           }),
         },
