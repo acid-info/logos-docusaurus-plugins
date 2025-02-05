@@ -88,12 +88,16 @@ git clone https://github.com/acid-info/logos-docusaurus-plugins.git
 
 ```bash
 yarn install && yarn link
+
+yarn build
 ```
 
 3. Run the playground:
 
 ```bash
 yarn start
+yarn watch
+yarn workspace @acid-info/logos-docusaurus-theme watch
 ```
 
 ## Next steps
