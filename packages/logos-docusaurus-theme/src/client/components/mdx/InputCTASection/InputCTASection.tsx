@@ -73,6 +73,9 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
       if (data?.result?.errors && data?.result?.errors[0]?.context?.length) {
         setMessage(data?.result?.errors[0].context)
         return
+      } else if (data?.result?.message?.length) {
+        setMessage(data.result.message)
+        return
       }
 
       setMessage('Thank you for subscribing!')
