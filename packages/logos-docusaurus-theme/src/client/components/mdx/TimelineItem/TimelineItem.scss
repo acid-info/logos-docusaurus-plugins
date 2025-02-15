@@ -68,6 +68,7 @@
 .mdx-timeline-item__description {
   margin-top: 24px;
   margin-bottom: auto;
+  white-space: pre-wrap;
 }
 
 @include utils.responsive('lg', 'down') {
