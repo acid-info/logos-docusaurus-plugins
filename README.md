@@ -1,3 +1,5 @@
+# Logos Docusaurus Plugins
+
 - [Overview](#overview)
 - [Quick start](#quick-start)
   - [Use a template](#use-a-template)
