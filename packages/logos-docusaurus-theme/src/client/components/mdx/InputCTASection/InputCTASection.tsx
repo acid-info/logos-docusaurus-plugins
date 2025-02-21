@@ -13,6 +13,7 @@ export type InputCTASectionProps = {
   formInput?: any[]
   buType?: buType
   newsletterId?: string
+  successMessage?: string
 }
 
 type buType = 'codex' | 'waku' | 'nomos' | 'logos' | 'nimbus' | 'operators'
@@ -26,6 +27,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   formInput,
   buType,
   newsletterId = null,
+  successMessage = 'Thank you for subscribing!',
 }) => {
   const [formState, setFormState] = React.useState({ email: '', name: '' })
   const [message, setMessage] = React.useState('')
@@ -78,7 +80,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
         return
       }
 
-      setMessage('Thank you for subscribing!')
+      setMessage(successMessage)
     } catch (error) {
       console.log(error)
       setMessage(errorMessage)
