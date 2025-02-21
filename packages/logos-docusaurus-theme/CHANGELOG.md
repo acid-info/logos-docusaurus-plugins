@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.196](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.195...v1.0.0-alpha.196) (2025-02-21)
+
+### Features
+
+- add successMessage to InputCTASectionProps ([40858b2](https://github.com/acid-info/logos-docusaurus-plugins/commit/40858b2475f846a4ae4aa4e86eea0404bcca6670))
+
 # [1.0.0-alpha.195](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.194...v1.0.0-alpha.195) (2025-02-21)
 
 ### Bug Fixes
