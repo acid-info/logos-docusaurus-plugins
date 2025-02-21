@@ -15,7 +15,7 @@ export type InputCTASectionProps = {
   newsletterId?: number
 }
 
-type buType = 'codex' | 'waku' | 'nomos'
+type buType = 'codex' | 'waku' | 'nomos' | 'logos' | 'nimbus' | 'operators'
 
 export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   title,
