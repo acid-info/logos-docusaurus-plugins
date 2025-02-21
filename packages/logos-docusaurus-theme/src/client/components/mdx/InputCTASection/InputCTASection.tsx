@@ -12,7 +12,7 @@ export type InputCTASectionProps = {
   linkProps?: Props
   formInput?: any[]
   buType?: buType
-  newsletterId?: number
+  newsletterId?: string
 }
 
 type buType = 'codex' | 'waku' | 'nomos' | 'logos' | 'nimbus' | 'operators'
