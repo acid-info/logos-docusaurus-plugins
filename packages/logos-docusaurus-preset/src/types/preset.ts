@@ -36,6 +36,8 @@ export type ContactInfo = Contact[]
 
 export type LocalSearchConfig = {
   singleIndex?: boolean
+  blogDir?: string | string[]
+  blogRouteBasePath?: string | string[]
 }
 
 export type PresetConfig = {

@@ -14,6 +14,8 @@ const makeSearchPluginConfig = (
   options: PluginOptions,
 ): PluginConfig[] => {
   const singleIndex = options.localSearch?.singleIndex ?? true
+  const blogDir = options.localSearch?.blogDir ?? ['blog']
+  const blogRouteBasePath = options.localSearch?.blogRouteBasePath ?? ['/blog']
 
   const docs = findDocInstances(plugins).map((plugin) =>
     validateDocPluginOptions(plugin![1]),
@@ -26,6 +28,8 @@ const makeSearchPluginConfig = (
     indexPages: true,
     docsDir: docs.map((doc) => doc.path),
     docsRouteBasePath: docs.map((doc) => doc.routeBasePath),
+    blogDir: blogDir,
+    blogRouteBasePath: blogRouteBasePath,
   } as Partial<SearchPluginOptions>
 
   if (!singleIndex) {
