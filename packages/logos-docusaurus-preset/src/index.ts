@@ -22,7 +22,7 @@ const makeSearchPluginConfig = (
   const config = {
     hashed: true,
     indexDocs: true,
-    indexBlog: false,
+    indexBlog: true,
     indexPages: true,
     docsDir: docs.map((doc) => doc.path),
     docsRouteBasePath: docs.map((doc) => doc.routeBasePath),
