@@ -78,6 +78,17 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-blog',
+      /** @type {import('@docusaurus/plugin-content-blog').PluginOptions} */
+      ({
+        id: 'blog',
+        routeBasePath: '/rlog',
+        path: 'rlog',
+        blogTitle: 'Research Blog',
+        blogSidebarCount: 0,
+      }),
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'docs',
@@ -102,6 +113,10 @@ const config = {
           {
             label: 'About',
             to: '/about',
+          },
+          {
+            label: 'Blog',
+            to: '/rlog',
           },
           {
             label: 'Features',
