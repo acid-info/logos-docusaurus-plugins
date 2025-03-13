@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.197](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.196...v1.0.0-alpha.197) (2025-03-13)
+
+### Features
+
+- enable blog indexing for search ([6b595fa](https://github.com/acid-info/logos-docusaurus-plugins/commit/6b595fad90ffebd5394f3ddee0d4cf54a768b7ff))
+
 # [1.0.0-alpha.196](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.195...v1.0.0-alpha.196) (2025-02-21)
 
 ### Features
