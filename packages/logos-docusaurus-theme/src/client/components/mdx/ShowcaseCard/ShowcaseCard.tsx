@@ -1,4 +1,4 @@
-import { ChevronDownIcon, Typography } from '@acid-info/lsd-react'
+import { Badge, ChevronDownIcon, Typography } from '@acid-info/lsd-react'
 import ThemedImage from '@theme/ThemedImage'
 import clsx from 'clsx'
 import React from 'react'
@@ -15,6 +15,7 @@ export type ShowcaseCardProps = Omit<
   description: React.ReactNode
   size?: 'small' | 'large'
   borderStyle?: 'none' | 'solid'
+  label?: string
   cta?: {
     label: string
     href: string
@@ -31,6 +32,7 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
   className,
   size = 'large',
   borderStyle = 'solid',
+  label,
   cta,
   children,
   ...props
@@ -65,15 +67,18 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
             className="mdx-showcase-card__logo"
           />
         )}
-        {name && (
-          <Typography
-            variant="h4"
-            component="h4"
-            className="mdx-showcase-card__name"
-          >
-            {name}
-          </Typography>
-        )}
+        <div className="mdx-showcase-card__title">
+          {name && (
+            <Typography
+              variant="h4"
+              component="h4"
+              className="mdx-showcase-card__name"
+            >
+              {name}
+            </Typography>
+          )}
+          {label && <Badge size="small">{label}</Badge>}
+        </div>
         {description && (
           <Typography
             variant="body1"
