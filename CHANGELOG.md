@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.200](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.199...v1.0.0-alpha.200) (2025-03-31)
+
+### Features
+
+- update ShowcaseCard component ([c5b6338](https://github.com/acid-info/logos-docusaurus-plugins/commit/c5b63386ca1a3bdb84e0bff8fad4d5427cb7414c))
+
 # [1.0.0-alpha.199](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.198...v1.0.0-alpha.199) (2025-03-13)
 
 ### Features
