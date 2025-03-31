@@ -992,7 +992,7 @@ main[itemtype*='Blog'] {
 @include utils.responsive('lg', 'up') {
   .main-wrapper {
     .container {
-      padding-bottom: 96px;
+      padding-bottom: 124px !important;
     }
 
     & > div {
