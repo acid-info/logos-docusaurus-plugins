@@ -1,0 +1,28 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-spec-card {
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+  padding-block: 16px;
+
+  .mdx-spec-card__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mdx-spec-card__link {
+    text-decoration: none;
+  }
+
+  .mdx-spec-card__button {
+    margin: 0;
+    width: fit-content;
+    padding-left: 12px;
+    height: 28px;
+  }
+
+  .mdx-spec-card__button-icon {
+    padding: 7px 10px;
+  }
+}
