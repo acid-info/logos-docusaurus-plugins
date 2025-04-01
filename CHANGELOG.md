@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.202](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.201...v1.0.0-alpha.202) (2025-04-01)
+
+### Features
+
+- implement SpecCard ([2e84cb3](https://github.com/acid-info/logos-docusaurus-plugins/commit/2e84cb333d2c8c764d3d35c62c9043fe133c1e67))
+
 # [1.0.0-alpha.201](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.200...v1.0.0-alpha.201) (2025-03-31)
 
 ### Features
