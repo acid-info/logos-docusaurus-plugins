@@ -1,8 +1,10 @@
-import Link from '@docusaurus/Link'
+import LinkBase from '@docusaurus/Link'
 import React, { HTMLProps } from 'react'
 import { Button } from './Button'
-import { ButtonWithIcon } from './ButtonWithIcon'
-import styles from './style.module.scss'
+
+const Link = LinkBase as unknown as React.FC<
+  React.AnchorHTMLAttributes<HTMLAnchorElement>
+>
 
 type TProps = {
   children: React.ReactNode

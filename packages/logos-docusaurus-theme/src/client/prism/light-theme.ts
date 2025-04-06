@@ -1,5 +1,6 @@
 import { PrismTheme } from 'prism-react-renderer'
-import vsLight from 'prism-react-renderer/themes/vsLight'
+import { themes } from 'prism-react-renderer'
+const vsLight = themes.vsLight
 
 const theme: PrismTheme = {
   ...vsLight,

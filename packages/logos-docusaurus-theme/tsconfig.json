@@ -7,8 +7,8 @@
     "tsBuildInfoFile": "./lib/.tsbuildinfo",
     "rootDir": "src",
     "outDir": "lib",
-    "jsx": "react",
-    "target": "es5"
+    "jsx": "react-jsx",
+    "target": "es2020"
   },
   "include": [
     "src",

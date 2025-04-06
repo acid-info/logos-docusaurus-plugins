@@ -7,9 +7,10 @@
     "tsBuildInfoFile": "./lib/.tsbuildinfo-client",
     "rootDir": "src",
     "outDir": "lib",
-    "module": "CommonJS",
-    "target": "esnext",
-    "jsx": "react",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
     "types": [
       "node",
       "@docusaurus/module-type-aliases",

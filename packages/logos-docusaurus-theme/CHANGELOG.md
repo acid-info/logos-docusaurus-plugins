@@ -421,13 +421,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 - add icons for light mode ([b99d0ac](https://github.com/acid-info/logos-docusaurus-plugins/commit/b99d0acbe752f01c90c7a66532564ac9c2c195de))
 
-# [1.0.0-alpha.122](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.121...v1.0.0-alpha.122) (2023-11-23)
+# [1.0.0-alpha.122](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.202...v1.0.0-alpha.122) (2023-11-23)
 
 ### Bug Fixes
 
 - fix newsletter subscription copy ([047e22b](https://github.com/acid-info/logos-docusaurus-plugins/commit/047e22bc631c4728d39ed4a55b344d93380df09b))
 
-# [1.0.0-alpha.121](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.120...v1.0.0-alpha.121) (2023-11-21)
+# [1.0.0-alpha.202](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.120...v1.0.0-alpha.202) (2023-11-21)
 
 ### Features
 
