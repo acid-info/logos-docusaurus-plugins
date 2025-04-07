@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import clsx from 'clsx'
 import { useThemeConfig, usePrismTheme } from '@docusaurus/theme-common'
 import {
@@ -8,7 +8,7 @@ import {
   containsLineNumbers,
   useCodeWordWrap,
 } from '@docusaurus/theme-common/internal'
-import Highlight, { defaultProps, type Language } from 'prism-react-renderer'
+import { Highlight } from 'prism-react-renderer'
 import Line from '@theme/CodeBlock/Line'
 import CopyButton from '@theme/CodeBlock/CopyButton'
 import WordWrapButton from '@theme/CodeBlock/WordWrapButton'
@@ -25,7 +25,7 @@ export default function CodeBlockString({
   title: titleProp,
   showLineNumbers: showLineNumbersProp,
   language: languageProp,
-}: Props): JSX.Element {
+}: Props): ReactElement {
   const {
     prism: { defaultLanguage, magicComments },
   } = useThemeConfig()
@@ -62,12 +62,7 @@ export default function CodeBlockString({
         </div>
       )}
       <div className={styles.codeBlockContent}>
-        <Highlight
-          {...defaultProps}
-          theme={prismTheme}
-          code={code}
-          language={(language ?? 'text') as Language}
-        >
+        <Highlight theme={prismTheme} code={code} language={language ?? 'text'}>
           {({ className, tokens, getLineProps, getTokenProps }) => (
             <pre
               /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */

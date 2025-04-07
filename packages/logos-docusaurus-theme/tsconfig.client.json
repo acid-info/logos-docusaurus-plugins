@@ -12,6 +12,7 @@
     "jsx": "react-jsx",
     "types": [
       "node",
+      "react",
       "@docusaurus/module-type-aliases",
       "@docusaurus/theme-classic"
     ],

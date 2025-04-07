@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import clsx from 'clsx'
 import Link, { type Props as LinkProps } from '@docusaurus/Link'
 
-import type { Props } from '@theme/BlogPostItem/Header/Author'
 import { Typography } from '@acid-info/lsd-react'
 
-function MaybeLink(props: LinkProps): JSX.Element {
+function MaybeLink(props: LinkProps): ReactElement {
   if (props.href) {
     return <Link {...props} />
   }
@@ -15,7 +14,7 @@ function MaybeLink(props: LinkProps): JSX.Element {
 export default function BlogPostItemHeaderAuthor({
   author,
   className,
-}: Props): JSX.Element {
+}): ReactElement {
   const { name, title, url, imageURL, email } = author
   const link = url || (email && `mailto:${email}`) || undefined
   return (

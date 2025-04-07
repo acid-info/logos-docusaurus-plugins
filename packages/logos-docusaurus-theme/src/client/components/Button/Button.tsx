@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import React, { HTMLProps } from 'react'
+import React, { HTMLProps, ReactElement } from 'react'
 import styles from './style.module.scss'
 
 type TProps = {
@@ -8,7 +8,7 @@ type TProps = {
 
 export const Button = (
   props: TProps & HTMLProps<HTMLButtonElement>,
-): JSX.Element => {
+): ReactElement => {
   const { children, className, ...rest } = props
 
   return (

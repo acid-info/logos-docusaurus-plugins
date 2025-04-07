@@ -1,6 +1,6 @@
 import { ChevronDownIcon, IconButton } from '@acid-info/lsd-react'
 import clsx from 'clsx'
-import React, { HTMLProps, useMemo } from 'react'
+import React, { HTMLProps, ReactElement, useMemo } from 'react'
 import { useWindowSize } from 'react-use'
 import { makeStyle } from '../../../lib/makeStyle'
 import { useIsMobile } from '../../../lib/useIsMobile'
@@ -11,7 +11,7 @@ type TProps = {}
 
 export const ScrollToBottom = (
   props: TProps & HTMLProps<HTMLButtonElement>,
-): JSX.Element => {
+): ReactElement => {
   const { children, className, style, ...rest } = props
   const scrollY = useScrollY()
   const isMobile = useIsMobile()

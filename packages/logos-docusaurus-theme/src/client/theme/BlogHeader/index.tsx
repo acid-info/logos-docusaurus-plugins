@@ -1,6 +1,6 @@
 import { Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import styles from './styles.module.scss'
 
 type BlogHeaderProps = {
@@ -11,7 +11,7 @@ type BlogHeaderProps = {
 export const BlogHeader = ({
   title,
   description,
-}: BlogHeaderProps): JSX.Element => {
+}: BlogHeaderProps): ReactElement => {
   return (
     <div className={clsx(styles.blogHeader)}>
       {title && (

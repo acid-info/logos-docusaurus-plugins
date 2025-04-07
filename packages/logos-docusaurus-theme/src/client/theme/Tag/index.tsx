@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import clsx from 'clsx'
 import Link from '@docusaurus/Link'
 import type { Props } from '@theme/Tag'
@@ -6,7 +6,7 @@ import type { Props } from '@theme/Tag'
 import styles from './styles.module.css'
 import { Tag as LsdTag } from '@acid-info/lsd-react'
 
-export default function Tag({ permalink, label, count }: Props): JSX.Element {
+export default function Tag({ permalink, label, count }: Props): ReactElement {
   return (
     <Link
       href={permalink}

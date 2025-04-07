@@ -8,17 +8,17 @@ import {
   usePrevious,
   useThemeConfig,
 } from '@docusaurus/theme-common'
-import {
-  findFirstCategoryLink,
-  isActiveSidebarItem,
-  isSamePath,
-  useDocSidebarItemsExpandedState,
-} from '@docusaurus/theme-common/internal'
+import { isSamePath } from '@docusaurus/theme-common/internal'
 import useIsBrowser from '@docusaurus/useIsBrowser'
 import DocSidebarItems from '@theme/DocSidebarItems'
 import clsx from 'clsx'
 import React, { useEffect, useMemo } from 'react'
 import styles from './style.module.scss'
+import {
+  findFirstSidebarItemLink,
+  isActiveSidebarItem,
+} from '@docusaurus/plugin-content-docs/lib/client/docsUtils.js'
+import { useDocSidebarItemsExpandedState } from '@docusaurus/plugin-content-docs/lib/client/docSidebarItemsExpandedState.js'
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -51,7 +51,7 @@ function useCategoryHrefWithSSRFallback(item) {
     if (isBrowser || !item.collapsible) {
       return undefined
     }
-    return findFirstCategoryLink(item)
+    return findFirstSidebarItemLink(item)
   }, [item, isBrowser])
 }
 

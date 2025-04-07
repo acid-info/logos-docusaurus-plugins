@@ -1,9 +1,9 @@
 import { usePluralForm } from '@docusaurus/theme-common'
-import { useBlogPost } from '@docusaurus/theme-common/internal'
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client'
 import { translate } from '@docusaurus/Translate'
 import type { Props } from '@theme/BlogPostItem/Header/Info'
 import clsx from 'clsx'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import BlogPostItemHeaderAuthors from '@theme/BlogPostItem/Header/Authors'
 
 import styles from './styles.module.scss'
@@ -49,9 +49,9 @@ function Date({
 
 export default function BlogPostItemHeaderInfo({
   className,
-}: Props): JSX.Element {
+}: Props): ReactElement {
   const { metadata, isBlogPostPage } = useBlogPost()
-  const { date, formattedDate, readingTime } = metadata
+  const { date, readingTime } = metadata
 
   return (
     <div
@@ -62,7 +62,7 @@ export default function BlogPostItemHeaderInfo({
         className,
       )}
     >
-      <Date date={date} formattedDate={formattedDate} />
+      <Date date={date} formattedDate={date} />
       <BlogPostItemHeaderAuthors className={styles.authors} />
       {typeof readingTime !== 'undefined' && (
         <>

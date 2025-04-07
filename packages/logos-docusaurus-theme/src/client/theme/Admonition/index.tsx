@@ -179,7 +179,7 @@ function extractMDXAdmonitionTitle(children) {
   const mdxAdmonitionTitle = items.find(
     (item) =>
       React.isValidElement(item) &&
-      item.props?.mdxType === 'mdxAdmonitionTitle',
+      (item.props as any)?.mdxType === 'mdxAdmonitionTitle',
   )
   const rest = <>{items.filter((item) => item !== mdxAdmonitionTitle)}</>
   return {

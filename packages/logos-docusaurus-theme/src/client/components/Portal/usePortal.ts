@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const usePortal = ({ parentId }: Props) => {
-  const elementRef = useRef<HTMLElement>()
+  const elementRef = useRef<HTMLElement>(null)
 
   if (!elementRef.current) {
     elementRef.current = document.createElement('div')

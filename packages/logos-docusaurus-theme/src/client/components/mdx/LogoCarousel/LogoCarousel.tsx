@@ -41,7 +41,10 @@ export const LogoCarousel: React.FC<LogoCarouselProps> = ({
     <div ref={ref} className={clsx(className, 'mdx-logo-carousel')} {...props}>
       <SectionHeader title={title} noBorder />
       <div className="mdx-logo-carousel-buttons">
-        <ScrollButtons containerRef={containerRef} spacing="spaced" />
+        <ScrollButtons
+          containerRef={containerRef as React.RefObject<HTMLDivElement>}
+          spacing="spaced"
+        />
       </div>
       <Grid
         className="mdx-logo-carousel__inner"

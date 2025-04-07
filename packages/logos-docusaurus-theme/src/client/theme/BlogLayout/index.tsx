@@ -1,12 +1,12 @@
 import clsx from 'clsx'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { Props } from '@theme/BlogLayout'
 import Layout from '@theme/Layout'
 import BlogSidebar from '@theme/BlogSidebar'
 import { useBlogPageData } from './BlogPage.context'
 import { BlogHeader } from '../BlogHeader'
 
-export default function BlogLayout(props: Props): JSX.Element {
+export default function BlogLayout(props: Props): ReactElement {
   const { sidebar, toc, children, ...layoutProps } = props
   const { type, props: blogPageProps } = useBlogPageData()
   const isIndexPage = type === 'list'
