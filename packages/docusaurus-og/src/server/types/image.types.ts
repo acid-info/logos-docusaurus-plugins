@@ -1,6 +1,5 @@
 import { Props } from '@docusaurus/types'
 
-// @ts-expect-error
 import type { SatoriOptions } from 'satori'
 
 export type ImageGeneratorOptions = SatoriOptions

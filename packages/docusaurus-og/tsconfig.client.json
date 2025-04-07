@@ -6,7 +6,7 @@
     "tsBuildInfoFile": "./lib/.tsbuildinfo-client",
     "rootDir": "src",
     "outDir": "lib",
-    "module": "esnext",
+    "module": "NodeNext",
     "target": "esnext",
     "lib": ["DOM"]
   },

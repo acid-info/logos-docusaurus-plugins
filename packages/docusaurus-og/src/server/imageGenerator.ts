@@ -4,9 +4,7 @@ import hashObj from 'object-hash'
 import path from 'path'
 import React from 'react'
 
-// @ts-expect-error
 import type Satori from 'satori'
-// @ts-expect-error
 import { type SatoriOptions } from 'satori'
 import type Sharp from 'sharp'
 
