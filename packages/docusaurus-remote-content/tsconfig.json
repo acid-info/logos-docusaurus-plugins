@@ -6,6 +6,7 @@
     "tsBuildInfoFile": "./lib/.tsbuildinfo",
     "rootDir": "src",
     "outDir": "lib",
+    "baseUrl": "src",
     "lib": ["DOM"]
   },
   "include": ["src"],

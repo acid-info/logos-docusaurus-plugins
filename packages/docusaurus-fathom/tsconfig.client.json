@@ -9,6 +9,7 @@
     "outDir": "lib",
     "module": "NodeNext",
     "target": "esnext",
+    "baseUrl": "src",
     "lib": ["DOM"]
   },
   "include": ["src/client", "src/*.d.ts"],

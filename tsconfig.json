@@ -49,7 +49,10 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "allowJs": true,
-    "skipLibCheck": true // @types/webpack and webpack/types.d.ts are not the same thing
+    "skipLibCheck": true, // @types/webpack and webpack/types.d.ts are not the same thing
+    "paths": {
+      "react": ["node_modules/@types/react"]
+    }
   },
   "include": ["./**/*"],
   "exclude": [
