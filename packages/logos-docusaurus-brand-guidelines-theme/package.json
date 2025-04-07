@@ -20,7 +20,7 @@
     "prepublishOnly": "yarn clean && yarn build"
   },
   "devDependencies": {
-    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.121",
+    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.202",
     "@types/lodash": "^4.14.186",
     "@types/mdx-js__react": "^1.5.5",
     "@types/three": "^0.152.1",
@@ -32,9 +32,9 @@
     "tsc-watch": "^5.0.3"
   },
   "peerDependencies": {
-    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.121",
-    "react": "^16.8.4 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.4 || ^17.0.0 || ^18.0.0"
+    "@acid-info/logos-docusaurus-theme": "1.0.0-alpha.202",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "engines": {
     "node": ">=18.0"
