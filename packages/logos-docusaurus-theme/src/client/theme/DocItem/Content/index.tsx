@@ -1,10 +1,10 @@
 import React from 'react'
 import clsx from 'clsx'
 import { ThemeClassNames } from '@docusaurus/theme-common'
-import { useDoc } from '@docusaurus/theme-common/internal'
 import Heading from '@theme/Heading'
 import MDXContent from '@theme/MDXContent'
 import MDXHeading from '@theme/MDXComponents/Heading'
+import { useDoc } from '@docusaurus/plugin-content-docs/lib/client/doc.js'
 /**
  Title can be declared inside md content or declared through
  front matter and added manually. To make both cases consistent,

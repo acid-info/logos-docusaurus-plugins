@@ -1,5 +1,4 @@
 import { useWindowSize } from '@docusaurus/theme-common'
-import { useDoc } from '@docusaurus/theme-common/internal'
 import DocBreadcrumbs from '@theme/DocBreadcrumbs'
 import DocItemContent from '@theme/DocItem/Content'
 import DocItemFooter from '@theme/DocItem/Footer'
@@ -14,6 +13,7 @@ import React from 'react'
 import { useMedia } from 'react-use'
 import { MDXEnhancementContext } from '../../../containers/MDXEnhacement/MDXEnhancement.context'
 import styles from './styles.module.scss'
+import { useDoc } from '@docusaurus/plugin-content-docs/lib/client/doc.js'
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports

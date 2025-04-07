@@ -8,10 +8,15 @@
     "rootDir": "src",
     "outDir": "lib",
     "jsx": "react-jsx",
+    "types": ["react"],
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "allowSyntheticDefaultImports": true,
     "target": "es2020"
   },
   "include": [
     "src",
+    "src/types",
     "src/client/theme/NavbarItem",
     "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx",
     "../docusaurus-playground/src/theme/DocPage/Layout/index.tsx"

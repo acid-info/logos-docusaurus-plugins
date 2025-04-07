@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { composeProviders } from '@docusaurus/theme-common'
 import {
   AnnouncementBarProvider,
-  DocsPreferredVersionContextProvider,
   ScrollControllerProvider,
   NavbarProvider,
   PluginHtmlClassNameProvider,
@@ -12,11 +11,10 @@ import type { Props } from '@theme/Layout/Provider'
 const Provider = composeProviders([
   AnnouncementBarProvider,
   ScrollControllerProvider,
-  DocsPreferredVersionContextProvider,
   PluginHtmlClassNameProvider,
   NavbarProvider,
 ])
 
-export default function LayoutProvider({ children }: Props): JSX.Element {
+export default function LayoutProvider({ children }: Props): ReactElement {
   return <Provider>{children}</Provider>
 }

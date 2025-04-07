@@ -44,8 +44,31 @@ export default function logosTheme(
 
     getClientModules: () => clientModules,
 
+    configureWebpack() {
+      return {
+        module: {
+          rules: [
+            {
+              test: /\.svg$/,
+              use: [
+                {
+                  loader: '@svgr/webpack',
+                  options: {
+                    icon: true,
+                    typescript: true,
+                    ref: true,
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      }
+    },
+
     async contentLoaded(args) {
-      await createAuthorRoutes(context, args)
+      const allContent = {} // Replace with actual logic to populate allContent if needed
+      await createAuthorRoutes(context, { ...args, allContent })
     },
 
     injectHtmlTags: ({}) => {

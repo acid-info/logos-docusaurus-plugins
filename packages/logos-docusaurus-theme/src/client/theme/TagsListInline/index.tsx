@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import clsx from 'clsx'
 import Translate from '@docusaurus/Translate'
 import Tag from '@theme/Tag'
@@ -7,7 +7,7 @@ import type { Props } from '@theme/TagsListInline'
 import styles from './styles.module.css'
 import { Typography } from '@acid-info/lsd-react'
 
-export default function TagsListInline({ tags }: Props): JSX.Element {
+export default function TagsListInline({ tags }: Props): ReactElement {
   return (
     <div className={styles.root}>
       <Typography variant="body2" component="div">
@@ -19,9 +19,13 @@ export default function TagsListInline({ tags }: Props): JSX.Element {
         </Translate>
       </Typography>
       <ul className={clsx(styles.tags, 'padding--none', 'margin-left--sm')}>
-        {tags.map(({ label, permalink: tagPermalink }) => (
+        {tags.map(({ label, permalink: tagPermalink, description }) => (
           <li key={tagPermalink} className={styles.tag}>
-            <Tag label={label} permalink={tagPermalink} />
+            <Tag
+              label={label}
+              permalink={tagPermalink}
+              description={description}
+            />
           </li>
         ))}
       </ul>

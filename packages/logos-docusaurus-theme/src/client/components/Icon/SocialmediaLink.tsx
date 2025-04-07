@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import {
   IconDiscord,
   IconDiscourse,
@@ -15,7 +15,7 @@ type TProps = {
   provider: ECommunityProviders
 }
 
-export const SocialMediaItem = (props: TProps): JSX.Element => {
+export const SocialMediaItem = (props: TProps): ReactElement => {
   switch (props.provider) {
     case 'twitter':
       return (

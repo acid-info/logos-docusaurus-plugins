@@ -1,12 +1,12 @@
 import { Typography } from '@acid-info/lsd-react'
 import Link from '@docusaurus/Link'
 import { PropSidebarBreadcrumbsItem } from '@docusaurus/plugin-content-docs'
-import { useActivePlugin } from '@docusaurus/plugin-content-docs/lib/client/index.js'
-import { ThemeClassNames } from '@docusaurus/theme-common'
 import {
-  useHomePageRoute,
+  useActivePlugin,
   useSidebarBreadcrumbs,
-} from '@docusaurus/theme-common/internal'
+} from '@docusaurus/plugin-content-docs/lib/client/index.js'
+import { ThemeClassNames } from '@docusaurus/theme-common'
+import { useHomePageRoute } from '@docusaurus/theme-common/internal'
 import { translate } from '@docusaurus/Translate'
 import clsx from 'clsx'
 import React from 'react'

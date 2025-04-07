@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import Translate, { translate } from '@docusaurus/Translate'
 import { PageMetadata } from '@docusaurus/theme-common'
 import Layout from '@theme/Layout'
@@ -7,7 +7,7 @@ import clsx from 'clsx'
 import { Button, Typography } from '@acid-info/lsd-react'
 import Link from '@docusaurus/Link'
 
-export default function NotFound(): JSX.Element {
+export default function NotFound(): ReactElement {
   return (
     <>
       <PageMetadata

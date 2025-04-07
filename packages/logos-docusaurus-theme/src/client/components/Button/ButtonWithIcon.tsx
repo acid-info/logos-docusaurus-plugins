@@ -1,17 +1,17 @@
-import React, { HTMLProps } from 'react'
+import React, { HTMLProps, ReactElement } from 'react'
 import { Button } from './Button'
 import styles from './style.module.scss'
 
 type TProps = {
   children: React.ReactNode
-  icon: JSX.Element
+  icon: ReactElement
 }
 
 export const ButtonWithIcon = ({
   children,
   icon,
   ...rest
-}: TProps & HTMLProps<HTMLButtonElement>): JSX.Element => {
+}: TProps & HTMLProps<HTMLButtonElement>): ReactElement => {
   return (
     <Button {...rest}>
       <div className={styles.buttonWithIconContainer}>

@@ -4,20 +4,21 @@ import type {
   PropSidebarItemCategory,
   PropSidebarItemLink,
 } from '@docusaurus/plugin-content-docs'
-import {
-  findFirstCategoryLink,
-  useDocById,
-} from '@docusaurus/theme-common/internal'
+
 import type { Props } from '@theme/DocCard'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { PageCard } from '../../components/mdx/PageCard'
+import {
+  findFirstSidebarItemLink,
+  useDocById,
+} from '@docusaurus/plugin-content-docs/lib/client/docsUtils.js'
 
 function CardCategory({
   item,
 }: {
   item: PropSidebarItemCategory
-}): JSX.Element | null {
-  const href = findFirstCategoryLink(item)
+}): ReactElement | null {
+  const href = findFirstSidebarItemLink(item)
 
   // Unexpected: categories that don't have a link have been filtered upfront
   if (!href) {
@@ -45,7 +46,7 @@ function CardCategory({
   )
 }
 
-function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
+function CardLink({ item }: { item: PropSidebarItemLink }): ReactElement {
   const icon = isInternalUrl(item.href) ? '📄️' : '🔗'
   const doc = useDocById(item.docId ?? undefined)
   return (
@@ -58,7 +59,7 @@ function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
   )
 }
 
-export default function DocCard({ item }: Props): JSX.Element {
+export default function DocCard({ item }: Props): ReactElement {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />

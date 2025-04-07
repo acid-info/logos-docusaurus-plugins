@@ -1,4 +1,4 @@
-import { useDoc } from '@docusaurus/theme-common/internal'
+import { useDoc } from '@docusaurus/plugin-content-docs/lib/client/doc.js'
 import { useDocThemeOptions } from '../../../lib/useThemeOptions'
 import format from 'date-fns/format'
 

@@ -2,9 +2,9 @@ import React from 'react'
 import clsx from 'clsx'
 import Translate from '@docusaurus/Translate'
 import { ThemeClassNames } from '@docusaurus/theme-common'
-import { useDocsVersion } from '@docusaurus/theme-common/internal'
 import styles from './style.module.scss'
 import { Typography } from '@acid-info/lsd-react'
+import { useDocsVersion } from '@docusaurus/plugin-content-docs/lib/client/docsVersion.js'
 
 export default function DocVersionBadge({ className }) {
   const versionMetadata = useDocsVersion()

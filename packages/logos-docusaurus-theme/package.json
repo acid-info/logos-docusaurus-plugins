@@ -55,16 +55,16 @@
     "lodash": "^4.17.21",
     "object-hash": "^3.0.0",
     "prism-react-renderer": "^2.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-quick-pinch-zoom": "^4.9.0",
     "react-use": "^17.4.0",
     "sharp": "^0.32.1",
     "three": "^0.152.2",
-    "three-stdlib": "^2.23.4",
     "utility-types": "^3.10.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/lodash": "^4.14.186",
     "@types/mdx-js__react": "^1.5.5",
     "@types/three": "^0.152.1",
@@ -76,8 +76,8 @@
     "tsc-watch": "^5.0.3"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "engines": {
     "node": ">=18.0"

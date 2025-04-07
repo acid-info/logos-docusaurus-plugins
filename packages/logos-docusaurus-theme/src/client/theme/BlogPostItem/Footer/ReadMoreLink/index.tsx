@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import Translate, { translate } from '@docusaurus/Translate'
 import Link from '@docusaurus/Link'
 import type { Props } from '@theme/BlogPostItem/Footer/ReadMoreLink'
@@ -17,7 +17,7 @@ function ReadMoreLabel() {
 
 export default function BlogPostItemFooterReadMoreLink(
   props: Props,
-): JSX.Element {
+): ReactElement {
   const { blogPostTitle, ...linkProps } = props
   return (
     <Link

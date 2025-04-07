@@ -1,10 +1,10 @@
 import DocCardList from '@docusaurus/theme-classic/lib/theme/DocCardList'
 import type { Props } from '@theme/DocCardList'
 import clsx from 'clsx'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import styles from './DocCardList.module.scss'
 
-export default function DocCardListWrapper(props: Props): JSX.Element {
+export default function DocCardListWrapper(props: Props): ReactElement {
   console.log(props)
   return (
     <DocCardList

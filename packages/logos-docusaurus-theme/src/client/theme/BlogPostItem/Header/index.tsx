@@ -1,8 +1,8 @@
-import { useBlogPost } from '@docusaurus/theme-common/internal'
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client'
 import { translate } from '@docusaurus/Translate'
 import BlogPostItemHeaderInfo from '@theme/BlogPostItem/Header/Info'
 import BlogPostItemHeaderTitle from '@theme/BlogPostItem/Header/Title'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { useBlogPluginData } from '../../../lib/useBlogPluginData'
 import { BreadcrumbsBase } from '../../DocBreadcrumbs/index'
 import { Typography } from '@acid-info/lsd-react'
@@ -10,7 +10,7 @@ import styles from './Title/styles.module.scss'
 import clsx from 'clsx'
 import { Subtitle } from './Subtitle'
 
-export default function BlogPostItemHeader(): JSX.Element {
+export default function BlogPostItemHeader(): ReactElement {
   const {
     metadata: { title, permalink, frontMatter },
     isBlogPostPage,

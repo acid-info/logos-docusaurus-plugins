@@ -9,7 +9,8 @@ export default function MDXDetails(props) {
   // Details theme component
 
   const summary = items.find(
-    (item) => React.isValidElement(item) && item.props?.mdxType === 'summary',
+    (item) =>
+      React.isValidElement(item) && (item.props as any)?.mdxType === 'summary',
   )
 
   const children = <>{items.filter((item) => item !== summary)}</>

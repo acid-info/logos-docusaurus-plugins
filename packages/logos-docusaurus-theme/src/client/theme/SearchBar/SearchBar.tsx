@@ -92,7 +92,7 @@ export const SearchBar: React.FC<{}> = ({}) => {
       >
         <div className={styles.header}>
           <SearchInput
-            containerRef={ref}
+            containerRef={ref as React.RefObject<HTMLDivElement>}
             onClear={onClear}
             value={input}
             onChange={onInputChange}

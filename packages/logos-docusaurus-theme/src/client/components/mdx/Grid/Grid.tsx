@@ -29,7 +29,7 @@ export const Grid: { Item: typeof GridItem } & React.FC<GridProps> = ({
       <div className="mdx-grid__actions">
         {actions}
         <ScrollButtons
-          containerRef={ref}
+          containerRef={ref as React.RefObject<HTMLDivElement>}
           className="mdx-grid__scroll"
           leftLabel={leftLabel}
           rightLabel={rightLabel}
