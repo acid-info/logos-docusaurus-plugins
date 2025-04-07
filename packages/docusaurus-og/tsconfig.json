@@ -6,7 +6,7 @@
     "tsBuildInfoFile": "./lib/.tsbuildinfo",
     "rootDir": "src",
     "outDir": "lib",
-    "target": "ES3",
+    "target": "esnext",
     "lib": ["DOM"]
   },
   "include": ["src"],

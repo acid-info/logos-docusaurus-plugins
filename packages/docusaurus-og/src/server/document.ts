@@ -41,7 +41,7 @@ export class Document {
     let meta = head.querySelector(`meta[${attr}=${value}]`)
 
     if (!meta) {
-      meta = new HTMLElement('meta', {}, '', null, [0, 0])
+      meta = new HTMLElement('meta', {}, '', undefined, [0, 0])
       meta.setAttribute(attr, value)
       head.appendChild(meta)
     }

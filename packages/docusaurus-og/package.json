@@ -15,12 +15,12 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.1",
-    "@docusaurus/module-type-aliases": "^2.4.1",
-    "@docusaurus/types": "^2.4.1",
-    "@docusaurus/utils": "^2.4.1",
-    "@docusaurus/utils-common": "^2.4.1",
-    "@docusaurus/utils-validation": "^2.4.1",
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/types": "^3.7.0",
+    "@docusaurus/utils": "^3.7.0",
+    "@docusaurus/utils-common": "^3.7.0",
+    "@docusaurus/utils-validation": "^3.7.0",
     "lodash": "^4.17.21",
     "node-html-parser": "^6.1.5",
     "object-hash": "^3.0.0",
@@ -28,7 +28,7 @@
     "sharp": "^0.32.1"
   },
   "engines": {
-    "node": ">=16.14"
+    "node": ">=18.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.186"
