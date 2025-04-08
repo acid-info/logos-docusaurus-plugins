@@ -1,8 +1,8 @@
-import type { LoadContext, Plugin } from '@docusaurus/types'
 import _ from 'lodash'
 import path from 'path'
 import type { ThemeOptions } from './client/types/theme.types'
 import { createAuthorRoutes } from './server/utils/author.utils'
+import { LoadContext, Plugin } from '@docusaurus/types'
 
 export default function logosTheme(
   context: LoadContext,
@@ -44,27 +44,27 @@ export default function logosTheme(
 
     getClientModules: () => clientModules,
 
-    configureWebpack() {
-      return {
-        module: {
-          rules: [
-            {
-              test: /\.svg$/,
-              use: [
-                {
-                  loader: '@svgr/webpack',
-                  options: {
-                    icon: true,
-                    typescript: true,
-                    ref: true,
-                  },
-                },
-              ],
-            },
-          ],
-        },
-      }
-    },
+    // configureWebpack() {
+    //   return {
+    //     module: {
+    //       rules: [
+    //         {
+    //           test: /\.svg$/,
+    //           use: [
+    //             {
+    //               loader: '@svgr/webpack',
+    //               options: {
+    //                 icon: true,
+    //                 typescript: true,
+    //                 ref: true,
+    //               },
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //     },
+    //   }
+    // },
 
     async contentLoaded(args) {
       const allContent = {} // Replace with actual logic to populate allContent if needed
