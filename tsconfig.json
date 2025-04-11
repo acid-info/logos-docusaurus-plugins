@@ -9,8 +9,8 @@
     "declarationMap": false,
     "sourceMap": false,
     "jsx": "react-native",
-    "importHelpers": true,
-    "noEmitHelpers": true,
+    "importHelpers": false,
+    "noEmitHelpers": false,
     // Will be overridden in client projects
     "module": "NodeNext",
     // Avoid accidentally using this config to build
