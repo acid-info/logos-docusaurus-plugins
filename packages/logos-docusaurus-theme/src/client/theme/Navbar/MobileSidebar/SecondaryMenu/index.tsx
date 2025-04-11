@@ -2,8 +2,7 @@ import { Typography } from '@acid-info/lsd-react'
 import { useThemeConfig } from '@docusaurus/theme-common'
 import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal'
 import Translate from '@docusaurus/Translate'
-import { IconArrowLeft } from '@logos-theme/components/Icon'
-import React from 'react'
+import { IconArrowLeft } from '../../../../components/Icon'
 
 function SecondaryMenuBackButton(props) {
   return (

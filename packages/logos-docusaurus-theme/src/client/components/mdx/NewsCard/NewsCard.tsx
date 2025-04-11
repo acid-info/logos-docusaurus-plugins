@@ -3,7 +3,7 @@ import ThemedImage from '@theme/ThemedImage'
 import clsx from 'clsx'
 import React from 'react'
 import './NewsCard.scss'
-import { IconExternalLink } from '@logos-theme/components/Icon/Icon'
+import { IconExternalLink } from '../../../components/Icon/Icon'
 
 export type NewsCardProps = React.HTMLProps<HTMLAnchorElement> & {
   thumbnail?: string

@@ -12,7 +12,7 @@ import { Highlight } from 'prism-react-renderer'
 import Line from '@theme/CodeBlock/Line'
 import CopyButton from '@theme/CodeBlock/CopyButton'
 import WordWrapButton from '@theme/CodeBlock/WordWrapButton'
-import Container from '@logos-theme/theme/CodeBlock/Container'
+import Container from '../Container'
 import type { Props } from '@theme/CodeBlock/Content/String'
 
 import styles from './styles.module.css'

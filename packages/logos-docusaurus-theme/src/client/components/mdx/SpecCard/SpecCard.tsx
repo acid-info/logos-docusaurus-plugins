@@ -2,7 +2,7 @@ import { IconButton, Typography } from '@acid-info/lsd-react'
 import clsx from 'clsx'
 import React from 'react'
 import './SpecCard.scss'
-import { IconExternalLink } from '@logos-theme/components/Icon'
+import { IconExternalLink } from '../../../components/Icon'
 import Link from '@docusaurus/Link'
 
 /**

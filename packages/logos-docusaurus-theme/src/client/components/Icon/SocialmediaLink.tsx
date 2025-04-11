@@ -8,7 +8,7 @@ import {
   IconTelegram,
   IconGScholar,
 } from './Icon'
-import { ECommunityProviders } from '@logos-theme/types/ui.types'
+import { ECommunityProviders } from '../../types/ui.types'
 
 type TProps = {
   handler: string

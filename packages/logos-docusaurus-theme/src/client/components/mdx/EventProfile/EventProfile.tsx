@@ -3,7 +3,7 @@ import ThemedImage from '@theme/ThemedImage'
 import clsx from 'clsx'
 import React from 'react'
 import './EventProfile.scss'
-import { IconEmail, IconLinkedin } from '@logos-theme/components/Icon'
+import { IconEmail, IconLinkedin } from '../../../components/Icon'
 
 export type EventProfileProps = {
   image: string

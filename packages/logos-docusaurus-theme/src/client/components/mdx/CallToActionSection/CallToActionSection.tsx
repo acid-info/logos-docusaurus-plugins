@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import React from 'react'
 import { CallToActionButton } from '../index'
 import './CallToActionSection.scss'
-import { IconExternalLink } from '@logos-theme/components/Icon'
+import { IconExternalLink } from '../../../components/Icon'
 
 /**
  * Props for the CallToActionSection component

@@ -1,6 +1,6 @@
 import { Button, Typography } from '@acid-info/lsd-react'
 import React from 'react'
-import { IconExternalLink } from '@logos-theme/components/Icon'
+import { IconExternalLink } from '../../../components/Icon'
 import './GithubChallenges.scss'
 import Link from '@docusaurus/Link'
 import { GithubIssue } from '@acid-info/logos-docusaurus-preset/src/types/github'

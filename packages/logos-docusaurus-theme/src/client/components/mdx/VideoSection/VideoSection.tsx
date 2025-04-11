@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import React from 'react'
 import { CallToActionButton } from '../index'
 import './VideoSection.scss'
-import { IconPlay } from '@logos-theme/components/Icon'
+import { IconPlay } from '../../../components/Icon'
 import Link from '@docusaurus/Link'
 
 export type VideoSectionProps = Omit<

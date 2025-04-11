@@ -2,7 +2,7 @@ import React from 'react'
 import './EventCTA.scss'
 import { Button, Typography } from '@acid-info/lsd-react'
 import Link, { Props } from '@docusaurus/Link'
-import { IconExternalLink } from '@logos-theme/components/Icon'
+import { IconExternalLink } from '../../../components/Icon'
 
 export type EventCTAProps = {
   title?: string
