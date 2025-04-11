@@ -50,7 +50,7 @@ const Hello = () => {
 
 :::note
 
-The presets: **_ [['classic', {...}]] _** shorthand works as well.
+The presets: **_`[['classic', {...}]]`_** shorthand works as well.
 
 :::
 
@@ -62,7 +62,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 :::info
 
-The presets: **_ [['classic', {...}]] _** shorthand works as well.
+The presets: **_`[['classic', {...}]]`_** shorthand works as well.
 
 :::
 
@@ -74,7 +74,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 :::danger
 
-The presets: **_ [['classic', {...}]] _** shorthand works as well.
+The presets: **_`[['classic', {...}]]`_** shorthand works as well.
 
 :::
 
@@ -93,7 +93,8 @@ The `npm run start` command builds your website locally and serves it through a 
 
 Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
 
-<details><summary>CLICK ME</summary>
+<details>
+<summary>CLICK ME</summary>
 
 #### yes, even hidden code blocks!
 

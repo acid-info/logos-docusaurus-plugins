@@ -1,8 +1,8 @@
 import { Typography } from '@acid-info/lsd-react'
 import React from 'react'
-import { IconExternalLink } from '@logos-theme/components/Icon'
-import './JobsPerDepartment.scss'
 import Link from '@docusaurus/Link'
+import { IconExternalLink } from '../../../components/Icon'
+import './JobsPerDepartment.scss'
 import { JobDepartmentData } from '.'
 
 type SingleDepartmentJobsProps = {

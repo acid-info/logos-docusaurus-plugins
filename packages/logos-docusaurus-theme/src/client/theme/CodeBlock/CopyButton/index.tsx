@@ -5,7 +5,7 @@ import copy from 'copy-text-to-clipboard'
 import { translate } from '@docusaurus/Translate'
 import IconSuccess from '@theme/Icon/Success'
 import styles from './styles.module.css'
-import { IconCopy } from '@logos-theme/components/Icon'
+import { IconCopy } from '../../../components/Icon'
 
 export default function CopyButton({ code, className }) {
   const [isCopied, setIsCopied] = useState(false)

@@ -1,7 +1,6 @@
-import React from 'react'
 import Translate from '@docusaurus/Translate'
 import { ThemeClassNames } from '@docusaurus/theme-common'
-import { IconEdit } from '@logos-theme/components/Icon'
+import { IconEdit } from '../../components/Icon'
 import { Typography } from '@acid-info/lsd-react'
 
 export default function EditThisPage({ editUrl }) {
