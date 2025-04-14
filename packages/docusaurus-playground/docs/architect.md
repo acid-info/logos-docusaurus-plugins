@@ -1,48 +1,37 @@
 ---
-title: Description and architecture
-sidebar_position: 2
+title: About Codex
+sidebar_position: 1
+hide_table_of_contents: true
 ---
 
-Waku is a family of protocols that enable private, censorship-resistant communications; a suite of open-source software; and the name of the public, permissionless and decentralized network facilitating generalized messaging. By communications, we mean the exchange of data or messages between two or more entities, whether they are users, devices or nodes.
-
-Waku was built as open-source public goods infrastructure to serve as the communications layer of the decentralized web. As such, its development focuses on the following:
-
-- Generalized: Waku's focus on generalized and ephemeral messaging facilitates communication between users, subsystems or nodes according to developers' needs.
-
-- Peer-to-peer: Waku is implemented via a decentralized p2p network, yielding the advantages of censorship resistance while remaining adaptive and scalable.
-
-- Runs anywhere: Waku was designed to run in resource-restricted environments—like phones and browsers—enabling users operating lower-spec hardware or with intermittent bandwidth to participate as peers.
-
-- Privacy first: Waku's strong privacy guarantees strengthen its resistance to censorship and external attack. Waku empowers developers to build apps that cannot harvest users' metadata, removing the need for users to trust that their data is not used without their permission.
-
-- Modular: Waku's modularity enables developers to make tradeoffs according to their users' privacy expectations and performance demands by implementing only those protocols that are relevant to their applications. While one app might value privacy above all else, another may be willing to make compromises to deliver a more frictionless UX.
-
-- Platform agnostic: Waku can run on any platform or in any environment making it a suitable messaging solution for decentralized applications regardless of the network on which they're deployed.
+Codex is a decentralised data storage platform that provides exceptionally strong censorship resistance and durability guarantees. It serves as the storage layer of the [Logos](https://logos.co/) tech stack. Alongside the trustless agreement layer, [Nomos](http://nomos.tech), and the communications layer, [Waku](http://waku.org), it is one of the Logos Collective's foundational projects.
 
 <br/>
 
-### Network architecture
+### Motive
 
-The Waku team has developed three clients to run in different environments along with a range of SDKs in Rust, React Native, Kotlin and Swift:
+The remote storage landscape is dominated by an increasingly small number of internet powerhouses—Google, Microsoft, Amazon, etc. While these services score highly in terms of user experience and convenience, centralised cloud data storage suffers from the following drawbacks:
 
-- nwaku: Waku's reference implementation written in Nim.
-- go-waku: An implementation for native integration with Golang applications.
-- js-waku: Waku's JavaScript implementation for browser environments.
+- Censorship
 
-Waku is best thought of as a cohesive whole in terms of its capabilities. However, under the hood are three distinct network interaction domains: gossip, discovery and request/response.
+- Lack of data ownership
 
-Waku compromises multiple protocols, including but not limited to the following:
+- Breaches and outages
 
-**Waku Relay**: The heart of Waku v2, the relay protocol specifies a pub/sub approach to p2p messaging with a focus on privacy, censorship resistance, security and privacy, and is currently implemented as a minor extension of the libp2p GossipSub protocol.
+- High cost
 
-**Waku Filter**: A lighter-weight version of the relay protocol for resource-restricted devices, Waku Filter enables light nodes to only receive the messages they want from full nodes.
+Centralised cloud storage providers have an established history of censoring data and, as de facto owners of said data, have the power to do so according to their own standards. Furthermore, centralised platforms have fallen victim to major data breaches and service outages on numerous occasions.
 
-**Waku Store**: Enables querying of messages stored by other nodes through Waku Relay.
+Such incidents have created a gap in the market for a decentralised, censorship-resistant alternative. Existing peer-to-peer storage and file-sharing networks address some of these issues—such as robustness in the face of network disruptions, and desirable resistance to censorship. Yet without adequate incentives and strong data durability guarantees, they make for unsuitable foundations upon which to build truly unstoppable applications.
 
-**Waku Light Push**: A request/response protocol that enables nodes with short connection windows or limited bandwidth to publish messages to the Waku network
+Existing decentralised storage solutions purport to improve upon early P2P file-sharing platforms like eDonkey and Gnutella. However, the market still lacks a decentralised storage solution that is efficient in terms of storage and bandwidth usage, while offering performance and durability guarantees comparable to incumbents.
 
 <br/>
 
-[Dive into the docs](https://vac.dev/research)
+### Decentralising data storage
 
-[Continue reading](/team)
+Codex began in 2021 to address a need for a durable, decentralised storage layer for the web3 tech stack.
+
+The name "Codex" refers to an ancient form of book—an allusion to the data storage engine's extremely robust—99.99%—durability guarantees.
+
+Codex was announced as a core Logos Collective protocol in June 2023.

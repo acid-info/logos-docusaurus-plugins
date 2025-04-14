@@ -293,6 +293,16 @@
   }
 }
 
+.blog-wrapper main {
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 // tags page
 .blog-wrapper main > section {
   article {
