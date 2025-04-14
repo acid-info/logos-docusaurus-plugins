@@ -119,8 +119,8 @@ const config = {
             to: '/rlog',
           },
           {
-            label: 'Features',
-            href: '/#features',
+            label: 'Community',
+            href: '/community',
           },
           {
             label: 'Usecases',

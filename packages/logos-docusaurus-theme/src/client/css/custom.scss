@@ -995,7 +995,7 @@ main[itemtype*='Blog'] {
       padding-bottom: 124px !important;
     }
 
-    & > div {
+    & > div > div {
       display: grid;
       grid-template-columns: repeat(16, 45px);
       gap: 1rem;
@@ -1099,7 +1099,7 @@ main[itemtype*='Blog'] {
 
 @include utils.responsive('xl', 'up') {
   .main-wrapper {
-    & > div {
+    & > div > div {
       display: grid;
       grid-template-columns: repeat(16, 1fr);
       gap: 1rem;
