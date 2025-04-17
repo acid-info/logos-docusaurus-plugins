@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/docusaurus-remote-content",
-  "version": "1.0.0-alpha.128",
+  "version": "1.0.0-alpha.12+a798e02",
   "description": "Docusaurus remote content",
   "main": "lib/index.js",
   "types": "src/plugin.d.ts",
@@ -35,5 +35,6 @@
     "@types/lodash": "^4.14.186",
     "@types/tmp": "^0.2.6",
     "@types/unzipper": "^0.10.9"
-  }
+  },
+  "gitHead": "a798e02403ae79c901e53e30150377f983ddf2f5"
 }
