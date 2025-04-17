@@ -3,22 +3,23 @@ import {
   SearchDocumentType,
   SearchResult,
 } from '@easyops-cn/docusaurus-search-local/dist/client/shared/interfaces'
-// @ts-ignore
-import { fetchIndexes } from '@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/fetchIndexes'
-// @ts-ignore
+
+import {
+  fetchIndexesByWorker,
+  searchByWorker,
+} from '@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker'
+
 import { getStemmedPositions } from '@easyops-cn/docusaurus-search-local/dist/client/client/utils/getStemmedPositions'
-// @ts-ignore
+
 import { highlightStemmed } from '@easyops-cn/docusaurus-search-local/dist/client/client/utils/highlightStemmed'
-// @ts-ignore
-import { SearchSourceFactory } from '@easyops-cn/docusaurus-search-local/dist/client/client/utils/SearchSourceFactory'
-// @ts-ignore
+
 import * as proxied from '@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGenerated'
 
 const loadIndex = async (params: {
   versionUrl: string
   searchContext: string
 }) => {
-  const { wrappedIndexes, zhDictionary } = await fetchIndexes(
+  const { wrappedIndexes, zhDictionary } = await fetchIndexesByWorker(
     params.versionUrl,
     params.searchContext,
   )
@@ -70,11 +71,17 @@ class Search {
       }),
     })
 
-    this.source = SearchSourceFactory(
-      wrappedIndexes,
-      zhDictionary,
-      this.config.resultsLimit,
-    )
+    this.source = async (
+      input: string,
+      callback: (output: SearchResult[]) => void,
+    ) => {
+      const result = await searchByWorker(
+        this.baseUrl,
+        this.searchContextByPaths,
+        input,
+      )
+      callback(result)
+    }
   }
 
   query = async (input: string) => {
