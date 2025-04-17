@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/docusaurus-fathom",
-  "version": "1.0.0-alpha.12+a798e02",
+  "version": "1.0.0-topic-v3-upgrade.13+5d0828d",
   "description": "Docusaurus fathom plugin",
   "main": "lib/index.js",
   "types": "src/plugin.d.ts",
