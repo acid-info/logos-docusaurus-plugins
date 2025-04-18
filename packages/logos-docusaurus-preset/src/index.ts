@@ -88,7 +88,7 @@ export default function logosPreset(
   themes.push('@docusaurus/theme-mermaid')
 
   if (options.theme?.name !== ThemeNames.DocusaurusDefault)
-    plugins.push(
+    themes.push(
       // changing the order of plugins passed to makeSearchPluginConfig function
       // may cause the search plugin to skip indexing some pages.
       ...makeSearchPluginConfig(

@@ -17,6 +17,7 @@ export const SearchBar: React.FC<{}> = ({}) => {
     maxItems: 10,
   })
   const search = useSearch()
+
   const ref = useRef<HTMLDivElement>(null)
 
   const [input, setInput] = useState('')
