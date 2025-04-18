@@ -25,9 +25,9 @@ const convertSearchResult = (
         hash,
         href,
         score,
-        title: highlighted,
+        title: highlighted ?? '',
         content: '',
-        category: document.breadcrumb!?.[1] ?? document.title ?? '',
+        category: document.breadcrumb!?.[1] ?? document.title,
       }
     }
 
