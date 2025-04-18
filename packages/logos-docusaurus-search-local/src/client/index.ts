@@ -19,12 +19,14 @@ const loadIndex = async (params: {
   versionUrl: string
   searchContext: string
 }) => {
-  const { wrappedIndexes, zhDictionary } = await fetchIndexesByWorker(
+  const result = await fetchIndexesByWorker(
     params.versionUrl,
     params.searchContext,
   )
 
-  return { wrappedIndexes, zhDictionary }
+  console.log('loadIndex', result)
+
+  return result
 }
 
 const findSearchContext = ({
@@ -63,13 +65,15 @@ class Search {
   init = async () => {
     this.loading = true
 
-    const { wrappedIndexes, zhDictionary } = await loadIndex({
+    const result = await loadIndex({
       versionUrl: this.baseUrl,
       searchContext: findSearchContext({
         versionUrl: this.baseUrl,
         searchContextByPaths: this.searchContextByPaths,
       }),
     })
+
+    console.log('init', result)
 
     this.source = async (
       input: string,
@@ -79,6 +83,7 @@ class Search {
         this.baseUrl,
         this.searchContextByPaths,
         input,
+        50,
       )
       callback(result)
     }
