@@ -993,6 +993,7 @@ main[itemtype*='Blog'] {
   .main-wrapper {
     .container {
       padding-bottom: 124px !important;
+      margin-left: var(--content-padding);
     }
 
     & > div > div {
