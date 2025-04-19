@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@acid-info/docusaurus-og@1.0.0-topic-v3-upgrade.16", "@acid-info/docusaurus-og@1.0.0-topic-v3-upgrade.16+c8d0337":
+"@acid-info/docusaurus-og@1.0.0-topic-v3-upgrade.16":
   version "1.0.0-topic-v3-upgrade.16"
   resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-og/-/docusaurus-og-1.0.0-topic-v3-upgrade.16.tgz#e1dca5bd04f8ec14002c6a7c27d54d48085d1709"
   integrity sha512-jmaHAq9IDy2hP/joZFF5IOgkBuPeyuy0V6Tg58g4yd6lTi/SVByKdTnM+7XZews+jZ9xzLR5RSBNp9NQq8Q61w==
@@ -20,13 +20,13 @@
     sharp "^0.32.1"
 
 "@acid-info/logos-docusaurus-preset@^1.0.0-topic-v3-upgrade.21":
-  version "1.0.0-topic-v3-upgrade.21"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-topic-v3-upgrade.21.tgz#7b8f71a3e7214e48d58e883a359c8bb1feb71436"
-  integrity sha512-KqwC2zA22NjWE+MMcaXkQfmX8JAHuKkFDnDEHxIqjRMgKWWmX6tyb2zvfcPdnFZJZF303NBgAS11s4VO3E+q/w==
+  version "1.0.0-topic-v3-upgrade.24"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-topic-v3-upgrade.24.tgz#b124b9aa517084404a04247cadfc98efe26b3575"
+  integrity sha512-wGB2CEWFFhvCQXpCefVWzZLkOYy+ZO6Xf01q0pIgvN1hbj14Uj1l2jGf9L8W97pbskXZBIN8bgpwJhyBfmWYsg==
   dependencies:
     "@acid-info/docusaurus-og" "1.0.0-topic-v3-upgrade.16"
-    "@acid-info/logos-docusaurus-search-local" "1.0.0-topic-v3-upgrade.18"
-    "@acid-info/logos-docusaurus-theme" "1.0.0-topic-v3-upgrade.20"
+    "@acid-info/logos-docusaurus-search-local" "^1.0.0-topic-v3-upgrade.23"
+    "@acid-info/logos-docusaurus-theme" "^1.0.0-topic-v3-upgrade.23"
     "@docusaurus/core" "^3.7.0"
     "@docusaurus/module-type-aliases" "^3.7.0"
     "@docusaurus/preset-classic" "^3.7.0"
@@ -39,20 +39,6 @@
     fs-extra "^10.1.0"
     lodash "^4.17.21"
     node-fetch "2"
-
-"@acid-info/logos-docusaurus-search-local@1.0.0-topic-v3-upgrade.18":
-  version "1.0.0-topic-v3-upgrade.18"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-search-local/-/logos-docusaurus-search-local-1.0.0-topic-v3-upgrade.18.tgz#eab1283e6223e00190c12b25148d8ccd99395c2d"
-  integrity sha512-Eb0ZaKP8WeXGLaQxMgZSPUq6t3gh6OWAsMA72HYjOQrOv8XiV5gLyVuYdzFN66+ntDayaQkpOAa7e/UuLL3JIw==
-  dependencies:
-    "@docusaurus/core" "^3.7.0"
-    "@docusaurus/module-type-aliases" "^3.7.0"
-    "@docusaurus/types" "^3.7.0"
-    "@docusaurus/utils" "^3.7.0"
-    "@docusaurus/utils-common" "^3.7.0"
-    "@docusaurus/utils-validation" "^3.7.0"
-    "@easyops-cn/docusaurus-search-local" "^0.49.2"
-    lodash "^4.17.21"
 
 "@acid-info/logos-docusaurus-search-local@^1.0.0-topic-v3-upgrade.23":
   version "1.0.0-topic-v3-upgrade.23"
@@ -68,106 +54,10 @@
     "@easyops-cn/docusaurus-search-local" "^0.49.2"
     lodash "^4.17.21"
 
-"@acid-info/logos-docusaurus-theme@1.0.0-topic-v3-upgrade.20":
-  version "1.0.0-topic-v3-upgrade.20"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-topic-v3-upgrade.20.tgz#5e952658e01187e145e505b2b62bb7e184074b29"
-  integrity sha512-lhcIc170up/htAc92YStD/ahVD77x/woistfl/k+X/1Mh/vda4/nwOGDbbBLhc3UhDpJGlqZL7u6NKefqh7BoQ==
-  dependencies:
-    "@acid-info/docusaurus-og" "1.0.0-topic-v3-upgrade.13+5d0828d"
-    "@acid-info/lsd-react" "^v0.2.0-beta.2"
-    "@docusaurus/core" "^3.7.0"
-    "@docusaurus/mdx-loader" "^3.7.0"
-    "@docusaurus/module-type-aliases" "^3.7.0"
-    "@docusaurus/plugin-content-blog" "^3.7.0"
-    "@docusaurus/plugin-content-docs" "^3.7.0"
-    "@docusaurus/plugin-content-pages" "^3.7.0"
-    "@docusaurus/theme-classic" "^3.7.0"
-    "@docusaurus/theme-common" "^3.7.0"
-    "@docusaurus/theme-mermaid" "^3.7.0"
-    "@docusaurus/theme-translations" "^3.7.0"
-    "@docusaurus/types" "^3.7.0"
-    "@docusaurus/utils" "^3.7.0"
-    "@docusaurus/utils-common" "^3.7.0"
-    "@docusaurus/utils-validation" "^3.7.0"
-    "@emotion/react" "^11.11.0"
-    "@emotion/styled" "^11.11.0"
-    "@mdx-js/react" "^3.0.0"
-    "@react-three/drei" "8.20.2"
-    "@react-three/fiber" "^8.0.0"
-    "@tryghost/content-api" "^1.11.4"
-    "@types/react" "^19.0.0"
-    "@types/react-dom" "19.0.0"
-    axios "^1.4.0"
-    boolean "^3.2.0"
-    clsx "^1.2.1"
-    copy-text-to-clipboard "^3.0.1"
-    copy-to-clipboard "^3.3.2"
-    date-fns "^2.30.0"
-    docusaurus-plugin-sass "^0.2.3"
-    dotenv "^16.0.3"
-    lodash "^4.17.21"
-    object-hash "^3.0.0"
-    prism-react-renderer "^2.1.0"
-    react "^19.0.0"
-    react-dom "^19.0.0"
-    react-quick-pinch-zoom "^4.9.0"
-    react-use "^17.4.0"
-    sharp "^0.32.1"
-    three "^0.152.2"
-    utility-types "^3.10.0"
-
-"@acid-info/logos-docusaurus-theme@^1.0.0-topic-v3-upgrade.16":
-  version "1.0.0-topic-v3-upgrade.16"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-topic-v3-upgrade.16.tgz#eee63b0f58f901386607c21f5e8e9121a8e39338"
-  integrity sha512-YV/njHkb/+hDey1jgxU8LPRxoUJ9ceT6nIX1OSuSOABiXV4XlvJ0OHgG0TWVd1m27Chfu257ZQyKpwFgiG0sPg==
-  dependencies:
-    "@acid-info/docusaurus-og" "1.0.0-topic-v3-upgrade.16+c8d0337"
-    "@acid-info/lsd-react" "^v0.2.0-beta.2"
-    "@docusaurus/core" "^3.7.0"
-    "@docusaurus/mdx-loader" "^3.7.0"
-    "@docusaurus/module-type-aliases" "^3.7.0"
-    "@docusaurus/plugin-content-blog" "^3.7.0"
-    "@docusaurus/plugin-content-docs" "^3.7.0"
-    "@docusaurus/plugin-content-pages" "^3.7.0"
-    "@docusaurus/theme-classic" "^3.7.0"
-    "@docusaurus/theme-common" "^3.7.0"
-    "@docusaurus/theme-mermaid" "^3.7.0"
-    "@docusaurus/theme-translations" "^3.7.0"
-    "@docusaurus/types" "^3.7.0"
-    "@docusaurus/utils" "^3.7.0"
-    "@docusaurus/utils-common" "^3.7.0"
-    "@docusaurus/utils-validation" "^3.7.0"
-    "@emotion/react" "^11.11.0"
-    "@emotion/styled" "^11.11.0"
-    "@mdx-js/react" "^3.0.0"
-    "@react-three/drei" "8.20.2"
-    "@react-three/fiber" "^8.0.0"
-    "@tryghost/content-api" "^1.11.4"
-    "@types/react" "^19.0.0"
-    "@types/react-dom" "19.0.0"
-    axios "^1.4.0"
-    boolean "^3.2.0"
-    clsx "^1.2.1"
-    copy-text-to-clipboard "^3.0.1"
-    copy-to-clipboard "^3.3.2"
-    date-fns "^2.30.0"
-    docusaurus-plugin-sass "^0.2.3"
-    dotenv "^16.0.3"
-    lodash "^4.17.21"
-    object-hash "^3.0.0"
-    prism-react-renderer "^2.1.0"
-    react "^19.0.0"
-    react-dom "^19.0.0"
-    react-quick-pinch-zoom "^4.9.0"
-    react-use "^17.4.0"
-    sharp "^0.32.1"
-    three "^0.152.2"
-    utility-types "^3.10.0"
-
-"@acid-info/logos-docusaurus-theme@^1.0.0-topic-v3-upgrade.23":
-  version "1.0.0-topic-v3-upgrade.23"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-topic-v3-upgrade.23.tgz#6da0f8e7c7e71a63090041c75a222f609f99abaf"
-  integrity sha512-CKk8+UBQHzmUo4TkNyLuL1F5AB78aHKcGg1OInpP3iUUUJTMsOo5eFNfDrnstwOZ6U9q3C7Veims3B6ODrhn/g==
+"@acid-info/logos-docusaurus-theme@^1.0.0-topic-v3-upgrade.23", "@acid-info/logos-docusaurus-theme@^1.0.0-topic-v3-upgrade.29":
+  version "1.0.0-topic-v3-upgrade.29"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-topic-v3-upgrade.29.tgz#801a6efcc5ec1df94c74d4aafb137937c9f79b86"
+  integrity sha512-dOD5g4FUZ8Q01rGhhGjlqo71WcY++kwDobojV9j+J6Pskt1lC3TNe4OreFLyjpv1rNKmGS1qKGXL0ngMeJhPrw==
   dependencies:
     "@acid-info/docusaurus-og" "1.0.0-topic-v3-upgrade.13+5d0828d"
     "@acid-info/lsd-react" "^v0.2.0-beta.2"
@@ -8312,9 +8202,9 @@ ejs@^3.1.7:
     jake "^10.8.5"
 
 electron-to-chromium@^1.5.73:
-  version "1.5.137"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.137.tgz#53a7fef3ea9f7eb5fcf704454050ff930c43ed92"
-  integrity sha512-/QSJaU2JyIuTbbABAo/crOs+SuAZLS+fVVS10PVrIT9hrRkmZl8Hb0xPSkKRUUWHQtYzXHpQUW3Dy5hwMzGZkA==
+  version "1.5.139"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.139.tgz#56ae7d42439e2967a54badbadaeb12f748987f37"
+  integrity sha512-GGnRYOTdN5LYpwbIr0rwP/ZHOQSvAF6TG0LSzp28uCBb9JiXHJGmaaKw29qjNJc5bGnnp6kXJqRnGMQoELwi5w==
 
 emoji-regex@^10.2.1:
   version "10.4.0"
@@ -9207,9 +9097,9 @@ express@^4.17.3:
     vary "~1.1.2"
 
 exsolve@^1.0.1:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/exsolve/-/exsolve-1.0.4.tgz#7de5c75af82ecd15998328fbf5f2295883be3a39"
-  integrity sha512-xsZH6PXaER4XoV+NiT7JHp1bJodJVT+cxeSH1G0f0tlT0lJqYuHUP3bUx2HtfTDvOagMINYp8rsqusxud3RXhw==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/exsolve/-/exsolve-1.0.5.tgz#1f5b6b4fe82ad6b28a173ccb955a635d77859dcf"
+  integrity sha512-pz5dvkYYKQ1AHVrgOzBKWeP4u4FRb3a6DNK2ucr0OoNwYIU4QWsJ+NM36LLzORT+z845MzKHHhpXiUF5nvQoJg==
 
 ext@^1.7.0:
   version "1.7.0"
@@ -20576,9 +20466,9 @@ webpack-sources@^3.2.3:
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
 webpack@^5.88.1, webpack@^5.95.0:
-  version "5.99.5"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.99.5.tgz#86e3b3a5a03377ea5da271c929934003f5ac5dd8"
-  integrity sha512-q+vHBa6H9qwBLUlHL4Y7L0L1/LlyBKZtS9FHNCQmtayxjI5RKC9yD8gpvLeqGv5lCQp1Re04yi0MF40pf30Pvg==
+  version "5.99.6"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.99.6.tgz#0d6ba7ce1d3609c977f193d2634d54e5cf36379d"
+  integrity sha512-TJOLrJ6oeccsGWPl7ujCYuc0pIq2cNsuD6GZDma8i5o5Npvcco/z+NKvZSFsP0/x6SShVb0+X2JK/JHUjKY9dQ==
   dependencies:
     "@types/eslint-scope" "^3.7.7"
     "@types/estree" "^1.0.6"
