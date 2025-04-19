@@ -11,7 +11,7 @@ import {
 
 const convertSearchResult = (
   item: SearchResult,
-): SearchResultGroupItemWithCategory => {
+): SearchResultGroupItemWithCategory | null => {
   const { type, document, page, highlighted, score } = item
   const { url, hash = '' } = document
   const href = url + hash
@@ -25,7 +25,7 @@ const convertSearchResult = (
         hash,
         href,
         score,
-        title: highlighted ?? '',
+        title: highlighted,
         content: '',
         category: document.breadcrumb!?.[1] ?? document.title,
       }
@@ -57,10 +57,14 @@ const convertSearchResult = (
         hash,
         href,
         score,
-        title: document.sectionTitle || document.title || '',
+        title: document.sectionTitle ?? document.title ?? '',
         content: highlighted,
         category: p?.breadcrumb?.[1] ?? p?.title ?? '',
       }
+    }
+
+    default: {
+      return null
     }
   }
 }
@@ -68,12 +72,11 @@ const convertSearchResult = (
 export const groupSearchResult = (
   results: SearchResult[],
 ): GroupedSearchResult => {
-  const grouped = Object.entries(
-    groupBy(
-      results.map((item) => convertSearchResult(item)),
-      'category',
-    ),
-  )
+  const convertedResults = results
+    .map((item) => convertSearchResult(item))
+    .filter((item): item is SearchResultGroupItemWithCategory => item !== null)
+
+  const grouped = Object.entries(groupBy(convertedResults, 'category'))
     .map(
       ([key, items]) =>
         [

@@ -21,12 +21,12 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
   onNavigate,
   ...props
 }) => {
-  const total = results.length
   const grouped = useMemo(() => groupSearchResult(results), [results])
+  const total = grouped.length
 
   return (
     <div className={clsx(styles.root, total === 0 && styles.noResults)}>
-      {total === 0 && <SearchResultMessage>No result.</SearchResultMessage>}
+      {total === 0 && <SearchResultMessage>No result.557</SearchResultMessage>}
       <div className={clsx(styles.groups)}>
         {grouped.map(([category, items], index) => (
           <React.Fragment key={index}>
