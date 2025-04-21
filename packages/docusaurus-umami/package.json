@@ -1,0 +1,7 @@
+{
+  "name": "docusaurus-umami",
+  "version": "1.0.0",
+  "description": "Docusaurus plugin for Umami Analytics",
+  "main": "src/index.js",
+  "license": "MIT"
+}
