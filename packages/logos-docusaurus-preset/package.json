@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-preset",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.6",
   "description": "Docusaurus preset for Logos documentation websites",
   "main": "lib/index.js",
   "types": "src/preset.d.ts",
@@ -9,6 +9,9 @@
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
     "directory": "packages/logos-docusaurus-preset"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc --build",
@@ -16,9 +19,9 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@acid-info/docusaurus-og": "^1.0.0-beta.1",
-    "@acid-info/logos-docusaurus-search-local": "^1.0.0-beta.1",
-    "@acid-info/logos-docusaurus-theme": "^1.0.0-beta.1",
+    "@acid-info/docusaurus-og": "^1.0.0-beta.6",
+    "@acid-info/logos-docusaurus-search-local": "^1.0.0-beta.6",
+    "@acid-info/logos-docusaurus-theme": "^1.0.0-beta.6",
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/preset-classic": "^3.7.0",
@@ -39,5 +42,5 @@
     "@types/fs-extra": "^9.0.13",
     "@types/lodash": "^4.14.186"
   },
-  "gitHead": "a798e02403ae79c901e53e30150377f983ddf2f5"
+  "gitHead": "63ffc97a959d970acb41a3cbda1df14c65fe40d4"
 }

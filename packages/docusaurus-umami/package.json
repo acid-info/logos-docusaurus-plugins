@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/docusaurus-umami",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.6",
   "description": "Docusaurus plugin for Umami Analytics",
   "main": "src/index.js",
   "repository": {
@@ -8,5 +8,6 @@
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
     "directory": "packages/docusaurus-umami"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "63ffc97a959d970acb41a3cbda1df14c65fe40d4"
 }

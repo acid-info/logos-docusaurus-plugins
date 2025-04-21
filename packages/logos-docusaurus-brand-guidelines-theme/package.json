@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-brand-guidelines-theme",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.6",
   "description": "",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",
@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
     "directory": "packages/logos-docusaurus-brand-guidelines-theme"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "scripts": {
@@ -20,7 +23,7 @@
     "prepublishOnly": "yarn clean && yarn build"
   },
   "devDependencies": {
-    "@acid-info/logos-docusaurus-theme": "^1.0.0-beta.1",
+    "@acid-info/logos-docusaurus-theme": "^1.0.0-beta.6",
     "@types/lodash": "^4.14.186",
     "@types/mdx-js__react": "^1.5.5",
     "@types/three": "^0.152.1",
@@ -38,5 +41,5 @@
   "engines": {
     "node": ">=18.0"
   },
-  "gitHead": "a798e02403ae79c901e53e30150377f983ddf2f5"
+  "gitHead": "63ffc97a959d970acb41a3cbda1df14c65fe40d4"
 }

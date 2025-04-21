@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-playground",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.6",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start -p 3002",
@@ -14,7 +14,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@acid-info/logos-docusaurus-preset": "^1.0.0-beta.1",
+    "@acid-info/logos-docusaurus-preset": "^1.0.0-beta.6",
     "@docusaurus/core": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
     "@docusaurus/theme-mermaid": "^3.7.0",
@@ -46,5 +46,6 @@
   },
   "engines": {
     "node": ">=18.0"
-  }
+  },
+  "gitHead": "63ffc97a959d970acb41a3cbda1df14c65fe40d4"
 }
