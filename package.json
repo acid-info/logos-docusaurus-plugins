@@ -6,6 +6,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "watch": "lerna --ignore docusaurus-playground run watch",
