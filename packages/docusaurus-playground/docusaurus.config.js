@@ -123,8 +123,8 @@ const config = {
             href: '/community',
           },
           {
-            label: 'Usecases',
-            href: '/#usecases',
+            label: 'Specs',
+            href: '/specs',
           },
           {
             href: 'https://github.com/waku-org',

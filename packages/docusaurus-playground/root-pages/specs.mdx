@@ -1,0 +1,106 @@
+---
+title: Specs
+pagination_prev: null
+pagination_next: null
+displayed_sidebar: null
+sidebar_class_name: hidden
+---
+
+import {
+  Grid,
+  Box,
+  CallToActionSection,
+  CallToActionButton,
+  SpecCard,
+} from '/src/components/mdx'
+import Link from '@docusaurus/Link'
+
+# Specs
+
+<div className='specs'>
+
+<p className="subtitle">
+  Technical deep dives into the inner workings of the Waku.
+</p>
+
+<Box top={64}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+     <SpecCard
+        title="Waku Overview"
+        description="Start here for a general introduction to Waku protocols. 10/WAKU2 describes Waku v2, a suite of secure peer-to-peer communication protocols with a focus on resource-restricted devices, privacy preservation and censorship resistance."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/10/waku2"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SpecCard
+        title="The Waku Network"
+        description="Start here if you care most about the application of Waku protocols. 64/WAKU2-NETWORK describes an opinionated deployment of Waku protocols to form a coherent and shared decentralised messaging network that is open-access, useful for generalised messaging, privacy preserving, scalable and accessible even to resource-restricted devices."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/64/network"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SpecCard
+        title="Message Format"
+        description="14/WAKU2-MESSAGE describes how message data is encoded for transmission over a Waku network."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/14/message"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SpecCard
+        title="Message Relay"
+        description="Waku's strategy for p2p message routing is presented in 11/WAKU2-RELAY. It is an extension of the GossipSub publish/subscribe model, with a focus on privacy and security through message unlinkability to publishers or subscribers."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/11/relay"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SpecCard
+        title="Spam protection"
+        description="We extend the Relay protocol with spam protecting measures in 17/WAKU2-RLN-RELAY. This describes a way to achieve DoS protected message routing using Rate Limiting Nullifiers (RLN), while maintaining privacy preservation."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/17/rln-relay"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SpecCard
+        title="Content Filtering"
+        description="12/WAKU2-FILTER is a protocol that allows resource-restricted nodes to receive only selected messages from a Waku network based on content filters."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/12/filter"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SpecCard
+        title="Lightpush Publishing"
+        description="19/WAKU2-LIGHTPUSH is a protocol that allows resource-restricted nodes to publish to a Waku network without participating in message routing."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/19/lightpush"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SpecCard
+        title="Message Caching"
+        description="13/WAKU2-STORE describes how historical messages can be cached and retrieved by nodes on a Waku network."
+        label="Read"
+        href="https://rfc.vac.dev/waku/standards/core/13/store"
+      />
+    </Grid.Item>
+  </Grid>
+
+{' '}
+<CallToActionButton
+  variant="outlined"
+  href="https://github.com/waku-org/specs"
+  target="_blank"
+  className="view-all-button"
+>
+  View all specs
+</CallToActionButton>
+
+</Box>
+
+</div>

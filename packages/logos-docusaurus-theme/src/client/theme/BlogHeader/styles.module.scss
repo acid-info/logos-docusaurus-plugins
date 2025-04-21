@@ -22,8 +22,8 @@
   grid-column: span 24;
 }
 
-@include utils.responsive('lg', 'down') {
+@include utils.responsive('lg', 'up') {
   .blogHeader {
-    padding-inline: var(--content-padding);
+    margin-inline: 0;
   }
 }

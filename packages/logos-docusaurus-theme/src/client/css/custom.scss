@@ -993,7 +993,6 @@ main[itemtype*='Blog'] {
   .main-wrapper {
     .container {
       padding-bottom: 124px !important;
-      margin-left: var(--content-padding);
     }
 
     & > div > div {
@@ -1008,7 +1007,6 @@ main[itemtype*='Blog'] {
         width: auto;
         grid-column: 1 / 5;
         border: none;
-        padding-left: var(--content-padding);
       }
 
       main {
@@ -1300,10 +1298,6 @@ main[itemtype*='Blog'] {
 }
 
 @include utils.responsive('lg', 'up') {
-  .navbar__brand {
-    margin-left: 14px;
-  }
-
   aside a[tabindex='-1'] img {
     margin-left: 14px;
   }

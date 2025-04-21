@@ -2,20 +2,6 @@
 # yarn lockfile v1
 
 
-"@acid-info/logos-docusaurus-search-local@^1.0.0-alpha.203":
-  version "1.0.0-alpha.203"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-search-local/-/logos-docusaurus-search-local-1.0.0-alpha.203.tgz#b03d50cafa04a60385f0a8a166db95e6bfb68591"
-  integrity sha512-IFIPKYwl/BnH6gfdjYlgT3nBPfzjoJliF2kxoa+9NSrKQ0T4h1UxyLOqTeyalf/tsVJeOrc5fzvkcKJEmg4U9g==
-  dependencies:
-    "@docusaurus/core" "^3.7.0"
-    "@docusaurus/module-type-aliases" "^3.7.0"
-    "@docusaurus/types" "^3.7.0"
-    "@docusaurus/utils" "^3.7.0"
-    "@docusaurus/utils-common" "^3.7.0"
-    "@docusaurus/utils-validation" "^3.7.0"
-    "@easyops-cn/docusaurus-search-local" "^0.49.2"
-    lodash "^4.17.21"
-
 "@acid-info/lsd-react@^v0.2.0-beta.2":
   version "0.2.0-beta.2"
   resolved "https://registry.yarnpkg.com/@acid-info/lsd-react/-/lsd-react-0.2.0-beta.2.tgz#d7ae2e091923036f2ddcf9a56f960f65ddba8bb0"

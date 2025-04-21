@@ -104,3 +104,17 @@ html {
     scale: 0.95;
   }
 }
+
+.specs {
+  margin-top: -16px !important;
+
+  h3.lsd-typography {
+    margin-top: 0 !important;
+    font-weight: 400 !important;
+  }
+
+  .view-all-button button {
+    margin-top: 64px;
+    width: 100% !important;
+  }
+}
