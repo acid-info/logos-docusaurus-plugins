@@ -1,0 +1,99 @@
+name: Beta Release
+on:
+  workflow_dispatch:
+    inputs:
+      version_bump:
+        description: 'Version bump type (patch, minor, major)'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  beta-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn lerna link
+
+      - name: Build packages
+        run: yarn build
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@users.noreply.github.com'
+
+      - name: Create beta version
+        id: version
+        run: |
+          # Set up npm authentication
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+          echo ".npmrc" >> .git/info/exclude
+
+          # Create a version update with beta tag
+          output=$(yarn lerna version ${{ github.event.inputs.version_bump }} \
+            --conventional-commits \
+            --conventional-prerelease \
+            --preid beta \
+            --no-private \
+            --yes)
+
+          # Extract the created version number
+          VERSION=$(echo "$output" | grep -o 'v[0-9]\+\.[0-9]\+\.[0-9]\+-beta\.[0-9]\+')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+          # Store changes for PR description
+          CHANGES=$(echo "$output" | sed -n '/Changes:/,$p' | sed -n '/^ - .* => .*$/p')
+          echo "changes<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish packages
+        run: |
+          yarn lerna publish from-git --yes
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create release summary
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const version = "${{ steps.version.outputs.version }}";
+            const changes = `${{ steps.version.outputs.changes }}`;
+
+            await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: version,
+              name: `Beta Release ${version}`,
+              body: `## Beta Release\n\nThis beta release includes the following package updates:\n\`\`\`\n${changes}\n\`\`\``,
+              prerelease: true
+            });
+
+            await github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+              body: `🎉 Beta Release ${version} published successfully!\n\n\`\`\`\n${changes}\n\`\`\``
+            });
