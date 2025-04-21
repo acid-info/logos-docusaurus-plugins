@@ -9,6 +9,9 @@
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
     "directory": "packages/logos-docusaurus-brand-guidelines-theme"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "scripts": {
     "clean": "yarn gulp clean",

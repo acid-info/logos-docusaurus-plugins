@@ -9,6 +9,9 @@
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
     "directory": "packages/logos-docusaurus-preset"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc --build",
