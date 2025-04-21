@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-search-local",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Docusaurus local search plugin",
   "main": "lib/index.js",
   "types": "src/plugin.d.ts",
