@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.203](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.202...v1.0.0-alpha.203) (2025-04-21)
+
+### Bug Fixes
+
+- fix bug with logos-docusaurus-search-local ([b672126](https://github.com/acid-info/logos-docusaurus-plugins/commit/b67212657965c721b8559a2100d459e333b6891a))
+- fix bug with logos-docusaurus-search-local ([0e94560](https://github.com/acid-info/logos-docusaurus-plugins/commit/0e94560a51af297239a35c62962dd0413799200d))
+
+### Features
+
+- update locos-docusaurus-search-local ([34fe5bf](https://github.com/acid-info/logos-docusaurus-plugins/commit/34fe5bf2627727cba68414c9dc8127e2958bfac2))
+- update packages for docusaurus v3 ([2f883ae](https://github.com/acid-info/logos-docusaurus-plugins/commit/2f883aebf449e7e78cd09120d1bd962a6b261e75))
+
 # [1.0.0-alpha.111](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.110...v1.0.0-alpha.111) (2023-10-30)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-search-local

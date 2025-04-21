@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.203](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.202...v1.0.0-alpha.203) (2025-04-21)
+
+### Features
+
+- update packages for docusaurus v3 ([2f883ae](https://github.com/acid-info/logos-docusaurus-plugins/commit/2f883aebf449e7e78cd09120d1bd962a6b261e75))
+
 # [1.0.0-alpha.131](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.130...v1.0.0-alpha.131) (2023-12-19)
 
 ### Features

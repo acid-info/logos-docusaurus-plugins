@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-brand-guidelines-theme",
-  "version": "1.0.0-topic-v3-upgrade.13+5d0828d",
+  "version": "1.0.0-alpha.203",
   "description": "",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",

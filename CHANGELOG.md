@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.203](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.202...v1.0.0-alpha.203) (2025-04-21)
+
+### Bug Fixes
+
+- build errors after React 19 upgrade ([0ff85a6](https://github.com/acid-info/logos-docusaurus-plugins/commit/0ff85a66f4bc8d863c981dc9b231a71dd6fbe081))
+- fix bug with css ([eef5db5](https://github.com/acid-info/logos-docusaurus-plugins/commit/eef5db52c586abeeb49416743e6e2dbb0658ed12))
+- fix bug with logos-docusaurus-search-local ([b672126](https://github.com/acid-info/logos-docusaurus-plugins/commit/b67212657965c721b8559a2100d459e333b6891a))
+- fix bug with logos-docusaurus-search-local ([0e94560](https://github.com/acid-info/logos-docusaurus-plugins/commit/0e94560a51af297239a35c62962dd0413799200d))
+- fix build errors ([6465288](https://github.com/acid-info/logos-docusaurus-plugins/commit/64652882afb4a3e2a5a5dccc9b4d49263319f16a))
+- fix build errors ([fa4a011](https://github.com/acid-info/logos-docusaurus-plugins/commit/fa4a011f1817ab70c21311ff2db195baaa39dc34))
+- import errors after react 19 updates ([d873d9f](https://github.com/acid-info/logos-docusaurus-plugins/commit/d873d9f9936e94adcb12dc1051a9a4ab9d6b6f9e))
+- **SearchResultMessage:** React 19 related type error ([1e60b99](https://github.com/acid-info/logos-docusaurus-plugins/commit/1e60b99409091be3293a840bbd8845cd0f66c879))
+- undefined on search results ([f056999](https://github.com/acid-info/logos-docusaurus-plugins/commit/f056999d4f67540641cd84d40461490900dfdd66))
+
+### Features
+
+- update dependencies ([8f93611](https://github.com/acid-info/logos-docusaurus-plugins/commit/8f93611be9b391f75d3d339ef99dff6de43293ad))
+- update locos-docusaurus-search-local ([34fe5bf](https://github.com/acid-info/logos-docusaurus-plugins/commit/34fe5bf2627727cba68414c9dc8127e2958bfac2))
+- update packages for docusaurus v3 ([2f883ae](https://github.com/acid-info/logos-docusaurus-plugins/commit/2f883aebf449e7e78cd09120d1bd962a6b261e75))
+- upgrade package versions ([a2a618a](https://github.com/acid-info/logos-docusaurus-plugins/commit/a2a618a57fff586b25cc089aef05473ad344c49a))
+
 # [1.0.0-alpha.202](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.0-alpha.201...v1.0.0-alpha.202) (2025-04-01)
 
 ### Features
