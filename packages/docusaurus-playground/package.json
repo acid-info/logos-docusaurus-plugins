@@ -1,7 +1,6 @@
 {
   "name": "docusaurus-playground",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start -p 3002",
