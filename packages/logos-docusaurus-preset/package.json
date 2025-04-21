@@ -16,9 +16,9 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@acid-info/docusaurus-og": "1.0.0-topic-v3-upgrade.16",
-    "@acid-info/logos-docusaurus-search-local": "^1.0.0-topic-v3-upgrade.23",
-    "@acid-info/logos-docusaurus-theme": "^1.0.0-topic-v3-upgrade.29",
+    "@acid-info/docusaurus-og": "^1.0.0-alpha.203",
+    "@acid-info/logos-docusaurus-search-local": "^1.0.0-alpha.203",
+    "@acid-info/logos-docusaurus-theme": "^1.0.0-alpha.203",
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/preset-classic": "^3.7.0",
