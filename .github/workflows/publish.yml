@@ -40,6 +40,9 @@ jobs:
           yarn install --frozen-lockfile
           yarn lerna link
 
+      - name: Build all packages
+        run: yarn build
+
       - name: Bump versions
         id: bump
         run: |
