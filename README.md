@@ -134,6 +134,9 @@ We welcome any kind of contribution, such as reporting issues, suggesting featur
   - [Docusaurus Fathom](./packages/docusaurus-fathom) - Fathom Analytics plugin for Docusaurus.
     [![Npm Version](https://img.shields.io/npm/v/@acid-info/docusaurus-fathom)](https://www.npmjs.com/package/@acid-info/docusaurus-fathom)
 
+  - [Docusaurus Umami](./packages/docusaurus-umami) - Umami Analytics plugin for Docusaurus.
+    [![Npm Version](https://img.shields.io/npm/v/@acid-info/docusaurus-umami)](https://www.npmjs.com/package/@acid-info/docusaurus-umami)
+
 - **Themes**
   - [Logos Theme](./packages/logos-docusaurus-theme) - A customized version of Docusaurus classic theme built with [LSD](https://github.com/acid-info/lsd).
     [![Npm Version](https://img.shields.io/npm/v/@acid-info/logos-docusaurus-theme)](https://www.npmjs.com/package/@acid-info/logos-docusaurus-theme)
