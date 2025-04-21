@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/docusaurus-remote-content",
-  "version": "1.0.0-alpha.206",
+  "version": "1.0.0-beta.0",
   "description": "Docusaurus remote content",
   "main": "lib/index.js",
   "types": "src/plugin.d.ts",
