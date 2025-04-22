@@ -10,6 +10,9 @@
     "directory": "packages/logos-docusaurus-brand-guidelines-theme"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "yarn gulp clean",
     "prebuild": "yarn clean",

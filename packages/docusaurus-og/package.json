@@ -9,6 +9,9 @@
     "directory": "packages/docusaurus-og"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc --build",
     "watch": "tsc --build --watch",

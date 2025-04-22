@@ -8,5 +8,8 @@
     "url": "https://github.com/acid-info/logos-docusaurus-plugins.git",
     "directory": "packages/docusaurus-umami"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
 }

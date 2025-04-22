@@ -10,6 +10,9 @@
     "directory": "packages/docusaurus-search-local"
   },
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "tsc --build",
     "watch": "tsc --build --watch",
