@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-preset",
-  "version": "1.0.1-beta.1",
+  "version": "1.0.1",
   "description": "Docusaurus preset for Logos documentation websites",
   "main": "lib/index.js",
   "types": "src/preset.d.ts",
@@ -19,8 +19,8 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@acid-info/docusaurus-og": "^1.0.1-beta.1",
-    "@acid-info/logos-docusaurus-search-local": "^1.0.1-beta.1",
+    "@acid-info/docusaurus-og": "^1.0.1",
+    "@acid-info/logos-docusaurus-search-local": "^1.0.1",
     "@acid-info/logos-docusaurus-theme": "^1.0.0-alpha.206",
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/module-type-aliases": "^3.7.0",
