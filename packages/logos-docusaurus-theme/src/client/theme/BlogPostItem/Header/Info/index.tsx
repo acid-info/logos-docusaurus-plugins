@@ -33,7 +33,7 @@ function ReadingTime({ readingTime }: { readingTime: number }) {
   return <div>{readingTimePlural(readingTime)}</div>
 }
 
-function Date({
+function DateInfo({
   date,
   formattedDate,
 }: {
@@ -42,7 +42,11 @@ function Date({
 }) {
   return (
     <time dateTime={date} itemProp="datePublished">
-      {formattedDate}
+      {new Date(date).toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })}
     </time>
   )
 }
@@ -62,7 +66,7 @@ export default function BlogPostItemHeaderInfo({
         className,
       )}
     >
-      <Date date={date} formattedDate={date} />
+      <DateInfo date={date} formattedDate={date} />
       <BlogPostItemHeaderAuthors className={styles.authors} />
       {typeof readingTime !== 'undefined' && (
         <>
