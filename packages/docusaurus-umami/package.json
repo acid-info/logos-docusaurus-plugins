@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/docusaurus-umami",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1-beta.0",
   "description": "Docusaurus plugin for Umami Analytics",
   "main": "src/index.js",
   "repository": {
