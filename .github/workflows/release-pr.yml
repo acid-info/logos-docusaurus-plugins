@@ -97,7 +97,7 @@ jobs:
       - name: Commit changes
         run: |
           git add .;
-          git restore --staged .npmrc;
+          git restore --staged .npmrc || true;
           git commit -m "chore: release v${{ steps.next_version.outputs.value }}";
           git push origin $RELEASE_BRANCH --force;
 
