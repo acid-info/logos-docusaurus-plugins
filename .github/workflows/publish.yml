@@ -1,4 +1,5 @@
 name: Publish
+
 on:
   pull_request:
     branches:
@@ -14,8 +15,9 @@ jobs:
   publish:
     if: ${{ (github.head_ref == 'release-stable' || github.head_ref == 'release-beta') && github.event.pull_request.merged == true }}
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           fetch-tags: 1
@@ -33,14 +35,9 @@ jobs:
         with:
           node-version: '20'
           cache: 'yarn'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@acid-info'
-          always-auth: true
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Configure npm auth for private packages
-        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+      - name: Configure npm auth
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > $GITHUB_WORKSPACE/.npmrc
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -52,22 +49,21 @@ jobs:
       - name: Build all packages
         run: yarn build
 
-      - name: Bump versions
+      - name: Bump versions and publish
         id: bump
         run: |
-          git config --global user.name 'github-actions';
-          git config --global user.email 'github-actions@users.noreply.github.com';
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@users.noreply.github.com'
           echo ".npmrc" >> .git/info/exclude
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc;
-          yarn lerna publish from-package --summary-file=${{ runner.temp }}/ --yes
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+          yarn lerna publish from-package --summary-file=${{ runner.temp }}/lerna-publish-summary.json --yes
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Get release commit
         shell: bash
         run: |
-          COMMIT_HASH=$(git rev-parse --verify HEAD);
+          COMMIT_HASH=$(git rev-parse --verify HEAD)
           echo "sha=$COMMIT_HASH" >> $GITHUB_OUTPUT
         id: release_commit
 
@@ -78,15 +74,15 @@ jobs:
             const fs = require('fs');
             const releaseType = "${{ steps.release_type.outputs.value }}";
             const summary = JSON.parse(fs.readFileSync('${{ runner.temp }}/lerna-publish-summary.json', 'utf8'));
-            const packages = summary.map(pkg => `**${pkg.packageName}@${pkg.version}**\n\`\`\`bash\nyarn add ${pkg.packageName}@${{ steps.branch_name.outputs.name }}\n\`\`\``).join('\n');
+            const packages = summary.map(pkg => `**${pkg.packageName}@${pkg.version}**\n\`\`\`bash\nyarn add ${pkg.packageName}@${{ steps.current_version.outputs.value }}\n\`\`\``).join('\n');
 
-            const body = `🎉 ${releaseType === 'stable' ? "Stable" : "Beta"} Release!\n\n${packages}`
+            const body = `🎉 ${releaseType === 'stable' ? "Stable" : "Beta"} Release!\n\n${packages}`;
 
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: body 
+              body: body
             });
 
             github.rest.repos.createCommitComment({
