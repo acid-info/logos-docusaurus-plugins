@@ -36,6 +36,23 @@
     satori "^0.10.1"
     sharp "^0.32.1"
 
+"@acid-info/docusaurus-og@^v1.0.0-alpha.208":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@acid-info/docusaurus-og/-/docusaurus-og-1.0.1.tgz#1532fedf64469398149b3ef6a7bbd022d65eca73"
+  integrity sha512-D02hDruDvJf17hewNdosMg40XYmwvFA/zETqNi2dK697lPHQ261x2iJkqQdO7ufUkpywGuBqmgqonBRXj7fUgQ==
+  dependencies:
+    "@docusaurus/core" "^3.7.0"
+    "@docusaurus/module-type-aliases" "^3.7.0"
+    "@docusaurus/types" "^3.7.0"
+    "@docusaurus/utils" "^3.7.0"
+    "@docusaurus/utils-common" "^3.7.0"
+    "@docusaurus/utils-validation" "^3.7.0"
+    lodash "^4.17.21"
+    node-html-parser "^6.1.5"
+    object-hash "^3.0.0"
+    satori "^0.10.1"
+    sharp "^0.32.1"
+
 "@acid-info/logos-docusaurus-preset@^1.0.0-topic-v3-upgrade.30":
   version "1.0.0-topic-v3-upgrade.30"
   resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-topic-v3-upgrade.30.tgz#6b659c16266803d867c05a040822feaae1a70d1e"

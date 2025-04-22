@@ -11,5 +11,6 @@
   "license": "MIT",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "gitHead": "fafe4a71919475d16aa97932675ddaf93de32d24"
 }

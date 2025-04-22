@@ -23,7 +23,7 @@
     "prepublishOnly": "yarn clean && yarn build"
   },
   "dependencies": {
-    "@acid-info/docusaurus-og": "^1.0.2-alpha.releasetest.0",
+    "@acid-info/docusaurus-og": "^v1.0.0-alpha.208",
     "@acid-info/lsd-react": "^v0.2.0-beta.2",
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/mdx-loader": "^3.7.0",
@@ -85,5 +85,5 @@
   "engines": {
     "node": ">=18.0"
   },
-  "gitHead": "a798e02403ae79c901e53e30150377f983ddf2f5"
+  "gitHead": "fafe4a71919475d16aa97932675ddaf93de32d24"
 }
