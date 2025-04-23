@@ -7,20 +7,26 @@ module.exports = function (context, options) {
     throw new Error('You need to specify a scriptSrc for the Umami plugin')
   }
 
-  const { websiteId, scriptSrc } = options
+  const { websiteId, scriptSrc, dataDomains } = options
 
   return {
     name: 'docusaurus-plugin-umami',
     injectHtmlTags() {
+      const attributes = {
+        defer: true,
+        src: scriptSrc,
+        'data-website-id': websiteId,
+      }
+
+      if (dataDomains) {
+        attributes['data-domains'] = dataDomains
+      }
+
       return {
         headTags: [
           {
             tagName: 'script',
-            attributes: {
-              defer: true,
-              src: scriptSrc,
-              'data-website-id': websiteId,
-            },
+            attributes,
           },
         ],
       }
