@@ -1,13 +1,16 @@
 import type { LoadContext, Plugin } from '@docusaurus/types'
-import { PluginOptions } from '@easyops-cn/docusaurus-search-local'
+
 import * as path from 'path'
-// @ts-ignore
+import {
+  DocusaurusContext,
+  PluginOptions,
+} from '@easyops-cn/docusaurus-search-local/dist/server/shared/interfaces'
 import searchPlugin from '@easyops-cn/docusaurus-search-local/dist/server/server/index'
-// @ts-ignore
+
 import { validateOptions } from '@easyops-cn/docusaurus-search-local/dist/server/server/index'
 
-export default function searchPlugin(
-  context: LoadContext,
+export default function LocalsearchPlugin(
+  context: DocusaurusContext,
   options: PluginOptions,
 ): Plugin<undefined> {
   const plugin = searchPlugin(context, options) as any
