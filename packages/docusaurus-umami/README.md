@@ -22,7 +22,7 @@ module.exports = {
       {
         websiteId: 'YOUR_WEBSITE_ID', // Required
         scriptSrc: 'https://analytics.yourdomain.com/script.js', // Required
-        domains: 'yourdomain.com,anotherdomain.com', // Optional
+        dataDomains: 'yourdomain.com,anotherdomain.com', // Optional
       },
     ],
   ],
