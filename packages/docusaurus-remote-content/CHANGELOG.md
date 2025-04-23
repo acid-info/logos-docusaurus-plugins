@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2-beta.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.2-alpha.3...v1.0.2-beta.0) (2025-04-23)
+
+**Note:** Version bump only for package @acid-info/docusaurus-remote-content
+
 ## [1.0.2-alpha.1](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.2-alpha.0...v1.0.2-alpha.1) (2025-04-22)
 
 **Note:** Version bump only for package @acid-info/docusaurus-remote-content
