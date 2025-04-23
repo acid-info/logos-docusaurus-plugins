@@ -38,6 +38,7 @@ export type LocalSearchConfig = {
   singleIndex?: boolean
   blogDir?: string | string[]
   blogRouteBasePath?: string | string[]
+  indexBlog?: boolean
 }
 
 export type PresetConfig = {

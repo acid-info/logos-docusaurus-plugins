@@ -48,6 +48,11 @@ const config = {
         },
         og: {},
 
+        localSearch: {
+          blogDir: 'rlog',
+          blogRouteBasePath: '/rlog',
+        },
+
         // Uncomment to fetch new generated data.
         /*
         generated: {
