@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2-alpha.3](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.2-alpha.2...v1.0.2-alpha.3) (2025-04-23)
+
+### Bug Fixes
+
+- **umami-readme:** typo ([c86ebe8](https://github.com/acid-info/logos-docusaurus-plugins/commit/c86ebe84900c829766a231be273370f03fb78093))
+
+### Features
+
+- add optional domains support for Umami plugin ([6b2058a](https://github.com/acid-info/logos-docusaurus-plugins/commit/6b2058ae658d41542e51998828a272cf9de7a057))
+
 ## [1.0.2-alpha.1](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.2-alpha.0...v1.0.2-alpha.1) (2025-04-22)
 
 **Note:** Version bump only for package @acid-info/docusaurus-umami
