@@ -27,10 +27,6 @@ export const baseThemeConfig: ThemeConfig = {
             href: 'https://vac.dev',
             label: 'VacP2P',
           },
-          {
-            href: 'https://afaik.institute',
-            label: 'AFAIK',
-          },
         ],
       },
       {
@@ -51,37 +47,6 @@ export const baseThemeConfig: ThemeConfig = {
           {
             href: 'https://nomos.tech',
             label: 'Nomos',
-          },
-        ],
-      },
-      {
-        title: 'shared:Creative Studio',
-        items: [
-          {
-            href: 'https://acid.info',
-            label: 'Acid.info',
-          },
-        ],
-      },
-      {
-        title: 'shared:Movement',
-        items: [
-          {
-            href: 'https://logos.co',
-            label: 'Logos',
-          },
-        ],
-      },
-      {
-        title: 'shared:User-facing products',
-        items: [
-          {
-            href: 'https://status.im',
-            label: 'Status',
-          },
-          {
-            href: 'https://keycard.tech',
-            label: 'Keycard',
           },
         ],
       },

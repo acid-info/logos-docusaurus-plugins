@@ -140,73 +140,41 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Waku',
+        copyright: 'Logos',
         links: [
           {
             items: [
               {
-                href: 'https://twitter.com/waku_org',
-                label: 'Twitter',
+                href: '/events',
+                label: 'Events',
               },
               {
-                href: 'https://discord.waku.org/',
-                label: 'Discord',
-              },
-              {
-                href: 'https://www.youtube.com/@waku-org',
-                label: 'YouTube',
-              },
-              {
-                href: 'https://www.linkedin.com/company/waku-org',
-                label: 'LinkedIn',
-              },
-              {
-                href: 'https://warpcast.com/waku',
-                label: 'Farcaster',
-              },
-              {
-                href: 'https://t.me/waku_org',
-                label: 'Telegram',
+                href: 'https://github.com/logos-co',
+                label: 'Github',
               },
             ],
           },
           {
             items: [
               {
-                href: 'https://docs.waku.org',
-                label: 'Docs',
+                href: 'https://boards.greenhouse.io/logos',
+                label: 'Work with us',
               },
               {
-                href: 'https://github.com/waku-org',
-                label: 'GitHub',
-              },
-            ],
-          },
-          {
-            items: [
-              {
-                to: '/join-us',
-                label: 'Work with Us',
-              },
-              {
-                href: 'https://guide.waku.org/',
+                href: 'https://guide.logos.co/',
                 label: 'Brand Guidelines',
               },
-            ],
-          },
-          {
-            items: [
               {
                 href: '/terms',
-                label: 'Terms of Use',
+                label: 'Terms & conditions',
               },
               {
                 href: '/privacy-policy',
                 label: 'Privacy Policy',
               },
               {
-                href: '/rules-of-engagement',
-                label: 'Rules of Engagement',
+                href: '/security',
+                label: 'Security',
               },
             ],
           },
