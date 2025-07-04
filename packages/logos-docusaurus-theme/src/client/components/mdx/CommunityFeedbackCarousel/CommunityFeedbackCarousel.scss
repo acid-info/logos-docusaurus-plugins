@@ -1,0 +1,122 @@
+@use '../../../css/utils';
+@use '../../../css/lsd';
+
+.mdx-community-feedback {
+  .mdx-section-header__title {
+    flex-basis: 100%;
+  }
+
+  .mdx-community-feedback__description {
+    display: block;
+    max-width: 528px;
+    margin-top: 24px;
+    margin-bottom: 80px;
+  }
+
+  .mdx-community-feedback__items {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .mdx-community-feedback__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+    width: calc((100% - 32px) / 3);
+    min-width: 296px;
+  }
+
+  .mdx-community-feedback__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(var(--lsd-border-primary));
+  }
+
+  .mdx-community-feedback__item-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .mdx-community-feedback__item-header-user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+  }
+
+  .mdx-community-feedback__item-header-user-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .mdx-community-feedback__item-header-user-handle {
+    opacity: 0.5;
+  }
+
+  .mdx-community-feedback__item-header-user-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mdx-community-feedback__item-header-link {
+    margin: 12px;
+  }
+
+  .mdx-community-feedback__item-content-text {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    align-self: stretch;
+  }
+
+  .mdx-community-feedback__item-see-more {
+    margin-top: 6px;
+  }
+
+  .mdx-community-feedback__item-see-more-text {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+.mdx-community-feedback-buttons {
+  margin-bottom: 32px;
+}
+
+@include utils.responsive('lg', 'down') {
+  .mdx-community-feedback {
+    .mdx-community-feedback__inner {
+      margin-top: 64px;
+    }
+
+    .mdx-community-feedback__description {
+      margin-top: 16px;
+    }
+
+    .mdx-community-feedback__items {
+      margin-left: -32px;
+      width: calc(100% + 48px) !important;
+      gap: 0 16px;
+    }
+
+    .mdx-community-feedback__item:first-of-type {
+      margin-left: 16px;
+    }
+
+    .mdx-community-feedback__item:last-of-type {
+      margin-right: 16px;
+    }
+  }
+}

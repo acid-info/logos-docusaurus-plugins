@@ -5,7 +5,7 @@ import {
   IconButtonGroup,
 } from '@acid-info/lsd-react'
 import clsx from 'clsx'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './ScrollButtons.scss'
 
 export type ScrollButtonsProps = React.HTMLProps<HTMLDivElement> & {
@@ -14,6 +14,10 @@ export type ScrollButtonsProps = React.HTMLProps<HTMLDivElement> & {
   leftLabel?: string
   rightLabel?: string
   spacing?: 'spaced' | 'grouped'
+  autoScroll?: boolean
+  autoScrollInterval?: number
+  onMouseEnter?: () => void
+  onMouseLeave?: () => void
 }
 
 export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
@@ -22,22 +26,77 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
   containerRef,
   containerId,
   spacing = 'grouped',
+  autoScroll = false,
+  autoScrollInterval = 5000,
+  onMouseEnter,
+  onMouseLeave,
   ...props
 }) => {
+  const timerRef = useRef<NodeJS.Timeout | null>(null)
+  const isHoveredRef = useRef(false)
+
   const scroll = (direction: -1 | 1) => {
     const el = containerRef
       ? containerRef.current
       : document.querySelector(`#${containerId}`)
     if (!el) return
 
-    const itemWidth = el.children[0]?.getBoundingClientRect?.()?.width ?? 236
+    const firstItem = el.children[0] as HTMLElement
+    if (!firstItem) return
+
+    const computedStyle = window.getComputedStyle(el)
+    const gap = parseInt(computedStyle.gap) || 16
+
+    const itemWidth = firstItem.offsetWidth + gap
+
+    const isMobile = window.innerWidth < 1024
+    const itemsToScroll = isMobile ? 1 : 2
+
     el.scrollTo({
       behavior: 'smooth',
-      left:
-        el.scrollLeft +
-        (el.getBoundingClientRect()?.width - itemWidth) * direction,
+      left: el.scrollLeft + itemWidth * itemsToScroll * direction,
     })
   }
+
+  const startAutoScroll = () => {
+    if (!autoScroll || isHoveredRef.current) return
+
+    timerRef.current = setInterval(() => {
+      scroll(1)
+    }, autoScrollInterval)
+  }
+
+  const stopAutoScroll = () => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current)
+      timerRef.current = null
+    }
+  }
+
+  const resetAutoScroll = () => {
+    stopAutoScroll()
+    startAutoScroll()
+  }
+
+  const handleNextClick = () => {
+    scroll(1)
+    resetAutoScroll()
+  }
+
+  const handlePrevClick = () => {
+    scroll(-1)
+    resetAutoScroll()
+  }
+
+  useEffect(() => {
+    if (autoScroll) {
+      startAutoScroll()
+    }
+
+    return () => {
+      stopAutoScroll()
+    }
+  }, [autoScroll, autoScrollInterval])
 
   return (
     <div
@@ -57,7 +116,7 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
               'mdx-scroll-buttons__button--with-label',
           )}
           size="small"
-          onClick={scroll.bind(null, -1)}
+          onClick={handlePrevClick}
         >
           <ChevronLeftIcon />
           {leftLabel && leftLabel.length > 0 && (
@@ -72,7 +131,7 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
               'mdx-scroll-buttons__button--with-label',
           )}
           size="small"
-          onClick={scroll.bind(null, +1)}
+          onClick={handleNextClick}
         >
           {rightLabel && rightLabel.length > 0 && (
             <span className="mdx-scroll-buttons__label">{rightLabel}</span>

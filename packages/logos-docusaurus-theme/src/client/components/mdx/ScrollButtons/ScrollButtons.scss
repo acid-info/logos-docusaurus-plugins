@@ -31,7 +31,7 @@
   .mdx-scroll-buttons--spaced {
     & > div {
       gap: 0 1rem;
-      justify-content: space-between;
+      justify-content: space-between !important;
 
       & > button:not(:last-child) {
         border-right: 1px solid rgb(var(--lsd-border-primary)) !important;
@@ -52,6 +52,16 @@
 
     .mdx-scroll-buttons__label {
       display: none;
+    }
+  }
+
+  .mdx-scroll-buttons--spaced {
+    & > div {
+      justify-content: space-between !important;
+
+      & > button:not(:last-child) {
+        border-right: 1px solid rgb(var(--lsd-border-primary)) !important;
+      }
     }
   }
 }
