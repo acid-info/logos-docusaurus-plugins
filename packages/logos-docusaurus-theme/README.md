@@ -23,6 +23,7 @@
     - [ProfileCard](#profilecard)
     - [SocialCard](#socialcard)
     - [TimelineItem](#timelineitem)
+    - [CommunityFeedbackCarousel](#community-feedback-carousel)
 
 # Logos Docusaurus Theme
 
@@ -222,7 +223,6 @@ A card component for displaying information about an app.
 
 ```jsx
 import { AppCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<AppCard
   name="Status"
   link="https://status.im"
@@ -239,7 +239,6 @@ import {
   Grid,
   AppCard,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<Grid xs={{ cols: 1, wrap: true, gap: '0 1rem' }} lg={{ cols: 2 }}>
   <Grid.Item xs={1}>
     <AppCard
@@ -279,7 +278,6 @@ A card component with an image preview and download buttons.
 
 ```jsx
 import { AssetCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<AssetCard
   title="Logo"
   previewSrc="/img/logo.svg"
@@ -322,7 +320,6 @@ A call-to-action button that can be used in MDX pages.
 
 ```jsx
 import { CallToActionButton } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<CallToActionButton
   href="https://discord.gg/server"
   size="large"
@@ -351,7 +348,6 @@ A call-to-action section component that can be used in MDX pages.
 
 ```tsx
 import { CallToActionSection } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<CallToActionSection
   title="Logos Network State"
   columns={1}
@@ -366,7 +362,6 @@ With a list:
 
 ```tsx
 import { CallToActionSection } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<CallToActionSection
   title="Run Nimbus in one of three setups"
   description={
@@ -444,7 +439,6 @@ A component that displays a list of features with titles and descriptions.
 
 ```tsx
 import { FeatureList } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<FeatureList
   title="Features"
   alignment="top"
@@ -479,7 +473,6 @@ import {
   HeroActions,
   HeroAction,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<Hero size="large">
   <HeroInfo>
     <HeroTitle>
@@ -532,7 +525,6 @@ A component for displaying job openings organized by department. The component r
 ```jsx
 import * as jobData from '/static/generated/jobs.json'
 import { JobsPerDepartment } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<JobsPerDepartment jobData={jobData} />
 ```
 
@@ -551,7 +543,6 @@ A card component used in Docusaurus auto-generated category index pages to displ
 
 ```tsx
 import { PageCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<PageCard
   title="Sample Page"
   description="This is a sample page description."
@@ -576,7 +567,6 @@ A component used to display team members' profiles, including their name, avatar
 
 ```tsx
 import { ProfileCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<ProfileCard
   imgSrc="/path/to/profile-image.jpg"
   name="John Doe"
@@ -594,7 +584,6 @@ import {
   Grid,
   ProfileCard,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<Grid
   xs={{ cols: 3, gap: '1rem', wrap: false }}
   md={{ cols: 4, gap: '1rem', wrap: true }}
@@ -626,7 +615,6 @@ A component used for displaying social media or community platform cards with a 
 
 ```tsx
 import { SocialCard } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<SocialCard
   title="Telegram Community"
   logoSrc="/path/to/telegram-logo.png"
@@ -643,7 +631,6 @@ import {
   Grid,
   SocialCard,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<Box top={56} bottom={56}>
   <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
     <Grid.Item xs={1}>
@@ -688,7 +675,6 @@ import {
   SectionHeader,
   CallToActionButton,
 } from '@acid-info/logos-docusaurus-theme/lib/client/components/mdx'
-
 ;<Box top={{ xs: 144, lg: 216 }}>
   <SectionHeader
     title="Roadmap"
