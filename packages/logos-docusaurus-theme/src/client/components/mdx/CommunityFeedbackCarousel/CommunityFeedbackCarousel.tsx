@@ -185,14 +185,15 @@ export const CommunityFeedbackCarousel: React.FC<
                 </Typography>
                 {itemIsTruncated && !isExpanded && (
                   <div className="mdx-community-feedback__item-see-more">
-                    <button
+                    <Typography
+                      variant="body2"
                       className="mdx-community-feedback__item-see-more-text"
                       onClick={() =>
                         setExpanded((e) => ({ ...e, [idx]: true }))
                       }
                     >
                       See more..
-                    </button>
+                    </Typography>
                   </div>
                 )}
               </div>
