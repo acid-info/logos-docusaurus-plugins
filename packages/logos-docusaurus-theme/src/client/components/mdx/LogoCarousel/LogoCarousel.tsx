@@ -44,6 +44,7 @@ export const LogoCarousel: React.FC<LogoCarouselProps> = ({
         <ScrollButtons
           containerRef={containerRef as React.RefObject<HTMLDivElement>}
           spacing="spaced"
+          infiniteScroll={true}
         />
       </div>
       <Grid
