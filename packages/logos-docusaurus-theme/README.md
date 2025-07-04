@@ -23,7 +23,6 @@
     - [ProfileCard](#profilecard)
     - [SocialCard](#socialcard)
     - [TimelineItem](#timelineitem)
-    - [CommunityFeedbackCarousel](#community-feedback-carousel)
 
 # Logos Docusaurus Theme
 
