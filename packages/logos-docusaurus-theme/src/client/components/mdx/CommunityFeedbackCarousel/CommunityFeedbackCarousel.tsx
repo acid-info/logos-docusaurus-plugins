@@ -25,6 +25,7 @@ export type CommunityFeedbackCarouselProps = Omit<
   title?: React.ReactNode
   description?: React.ReactNode
   gridGap?: string | number
+  autoScrollInterval?: number
   items?: CommunityFeedbackCarouselItem[]
 }
 
@@ -34,6 +35,7 @@ export const CommunityFeedbackCarousel: React.FC<
   title,
   description = '',
   gridGap = '16px',
+  autoScrollInterval = 5000,
   className,
   items = [],
   ...props
@@ -113,7 +115,7 @@ export const CommunityFeedbackCarousel: React.FC<
           containerRef={containerRef as React.RefObject<HTMLDivElement>}
           spacing="spaced"
           autoScroll={!isHovered}
-          autoScrollInterval={5000}
+          autoScrollInterval={autoScrollInterval}
         />
       </div>
       <Grid
