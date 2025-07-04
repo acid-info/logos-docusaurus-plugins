@@ -12,6 +12,14 @@
   }
 }
 
+.mdx-scroll-buttons-container {
+  scroll-snap-type: x mandatory;
+
+  > * {
+    scroll-snap-align: start;
+  }
+}
+
 @include utils.responsive('md', 'up') {
   .mdx-scroll-buttons__button--with-label {
     width: auto !important;

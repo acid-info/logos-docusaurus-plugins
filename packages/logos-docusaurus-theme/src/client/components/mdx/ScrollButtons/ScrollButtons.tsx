@@ -43,6 +43,8 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
       : document.querySelector(`#${containerId}`)
     if (!el) return
 
+    el.classList.add('mdx-scroll-buttons-container')
+
     const firstItem = el.children[0] as HTMLElement
     if (!firstItem) return
 
