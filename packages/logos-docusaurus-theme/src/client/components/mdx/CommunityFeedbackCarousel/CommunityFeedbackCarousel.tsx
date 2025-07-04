@@ -116,6 +116,7 @@ export const CommunityFeedbackCarousel: React.FC<
           spacing="spaced"
           autoScroll={!isHovered}
           autoScrollInterval={autoScrollInterval}
+          infiniteScroll={true}
         />
       </div>
       <Grid
