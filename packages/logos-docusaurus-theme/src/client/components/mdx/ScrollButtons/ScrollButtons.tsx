@@ -16,6 +16,7 @@ export type ScrollButtonsProps = React.HTMLProps<HTMLDivElement> & {
   spacing?: 'spaced' | 'grouped'
   autoScroll?: boolean
   autoScrollInterval?: number
+  infiniteScroll?: boolean
   onMouseEnter?: () => void
   onMouseLeave?: () => void
 }
@@ -28,6 +29,7 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
   spacing = 'grouped',
   autoScroll = false,
   autoScrollInterval = 5000,
+  infiniteScroll = false,
   onMouseEnter,
   onMouseLeave,
   ...props
@@ -51,6 +53,25 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
 
     const isMobile = window.innerWidth < 1024
     const itemsToScroll = isMobile ? 1 : 2
+
+    if (infiniteScroll) {
+      const isAtStart = el.scrollLeft <= 0
+      const isAtEnd = el.scrollLeft >= el.scrollWidth - el.clientWidth - 1
+
+      if (direction === -1 && isAtStart) {
+        el.scrollTo({
+          behavior: 'smooth',
+          left: el.scrollWidth - el.clientWidth,
+        })
+        return
+      } else if (direction === 1 && isAtEnd) {
+        el.scrollTo({
+          behavior: 'smooth',
+          left: 0,
+        })
+        return
+      }
+    }
 
     el.scrollTo({
       behavior: 'smooth',
