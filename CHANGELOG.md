@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-alpha.4](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-alpha.3...v1.0.3-alpha.4) (2025-07-16)
+
+### Features
+
+- update CommunityFeedbackCarousel and ScrollButtons ([80f6bc5](https://github.com/acid-info/logos-docusaurus-plugins/commit/80f6bc5ab5b9f87188f7fd2b0c19c80be7147778))
+- update ScrollButtons ([ae09b44](https://github.com/acid-info/logos-docusaurus-plugins/commit/ae09b4408b10d4df0b627d26eecb2d9c4f1f5684))
+
 ## [1.0.3-alpha.3](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-alpha.2...v1.0.3-alpha.3) (2025-07-04)
 
 ### Features
