@@ -17,6 +17,7 @@ export type ScrollButtonsProps = React.HTMLProps<HTMLDivElement> & {
   autoScroll?: boolean
   autoScrollInterval?: number
   infiniteScroll?: boolean
+  desktopItemsToScroll?: number
   onMouseEnter?: () => void
   onMouseLeave?: () => void
 }
@@ -30,6 +31,7 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
   autoScroll = false,
   autoScrollInterval = 5000,
   infiniteScroll = false,
+  desktopItemsToScroll = 3,
   onMouseEnter,
   onMouseLeave,
   ...props
@@ -54,7 +56,7 @@ export const ScrollButtons: React.FC<ScrollButtonsProps> = ({
     const itemWidth = firstItem.offsetWidth + gap
 
     const isMobile = window.innerWidth < 1024
-    const itemsToScroll = isMobile ? 1 : 2
+    const itemsToScroll = isMobile ? 1 : desktopItemsToScroll
 
     if (infiniteScroll) {
       const isAtStart = el.scrollLeft <= 0

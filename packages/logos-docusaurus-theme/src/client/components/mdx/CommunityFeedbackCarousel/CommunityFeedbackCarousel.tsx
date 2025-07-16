@@ -8,6 +8,11 @@ import { ScrollButtons } from '../ScrollButtons'
 import Link from '@docusaurus/Link'
 import { IconX } from '../../Icon'
 
+const isMobileDevice = () => {
+  if (typeof window === 'undefined') return false
+  return window.innerWidth <= 768
+}
+
 export type CommunityFeedbackCarouselItem = {
   url: string
   user: {
@@ -26,6 +31,7 @@ export type CommunityFeedbackCarouselProps = Omit<
   description?: React.ReactNode
   gridGap?: string | number
   autoScrollInterval?: number
+  desktopItemsToScroll?: number
   items?: CommunityFeedbackCarouselItem[]
 }
 
@@ -36,6 +42,7 @@ export const CommunityFeedbackCarousel: React.FC<
   description = '',
   gridGap = '16px',
   autoScrollInterval = 5000,
+  desktopItemsToScroll = 1,
   className,
   items = [],
   ...props
@@ -46,6 +53,7 @@ export const CommunityFeedbackCarousel: React.FC<
   const [expanded, setExpanded] = useState<{ [key: number]: boolean }>({})
   const [isHovered, setIsHovered] = useState(false)
   const [isTruncated, setIsTruncated] = useState<{ [key: number]: boolean }>({})
+  const [isMobile, setIsMobile] = useState(false)
 
   if (typeof window !== 'undefined' && hydrated && !containerRef.current) {
     containerRef.current =
@@ -56,6 +64,8 @@ export const CommunityFeedbackCarousel: React.FC<
 
   useEffect(() => {
     if (!hydrated) return
+
+    setIsMobile(isMobileDevice())
 
     const calculateTruncation = () => {
       const textElements = ref.current?.querySelectorAll(
@@ -79,11 +89,16 @@ export const CommunityFeedbackCarousel: React.FC<
       })
     }
 
+    const handleResize = () => {
+      setIsMobile(isMobileDevice())
+      calculateTruncation()
+    }
+
     calculateTruncation()
-    window.addEventListener('resize', calculateTruncation)
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener('resize', calculateTruncation)
+      window.removeEventListener('resize', handleResize)
     }
   }, [hydrated, items])
 
@@ -114,9 +129,10 @@ export const CommunityFeedbackCarousel: React.FC<
         <ScrollButtons
           containerRef={containerRef as React.RefObject<HTMLDivElement>}
           spacing="spaced"
-          autoScroll={!isHovered}
+          autoScroll={!isHovered && !isMobile}
           autoScrollInterval={autoScrollInterval}
           infiniteScroll={true}
+          desktopItemsToScroll={desktopItemsToScroll}
         />
       </div>
       <Grid
