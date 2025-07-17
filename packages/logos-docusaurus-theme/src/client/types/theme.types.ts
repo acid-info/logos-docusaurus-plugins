@@ -34,3 +34,11 @@ export type ThemeOptions = DefaultPluginOptions & {
     mailingListId: number
   }
 }
+
+export type BusinessUnitType =
+  | 'codex'
+  | 'waku'
+  | 'nomos'
+  | 'logos'
+  | 'nimbus'
+  | 'operators'

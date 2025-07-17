@@ -3,7 +3,7 @@ import './InputCTASection.scss'
 import { Button, TextField, Typography } from '@acid-info/lsd-react'
 import Link, { Props } from '@docusaurus/Link'
 import clsx from 'clsx'
-import { BusinessUnitType } from '../../../types/businessUnits'
+import { BusinessUnitType } from '@logos-theme/types/theme.types'
 
 export type InputCTASectionProps = {
   title: string
