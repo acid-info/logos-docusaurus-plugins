@@ -1,4 +1,4 @@
-import { BusinessUnitType } from '../types/businessUnits'
+import { BusinessUnitType } from '@logos-theme/types/theme.types'
 import { useState } from 'react'
 
 export const useNewsletterApi = () => {

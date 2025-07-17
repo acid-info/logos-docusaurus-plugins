@@ -10,7 +10,7 @@ import React from 'react'
 import { CallToActionSection } from '..'
 import { useNewsletterApi } from '../../../lib/useNewsletterApi'
 import './NewsletterSubscription.scss'
-import { BusinessUnitType } from '../../../types/businessUnits'
+import { BusinessUnitType } from '@logos-theme/types/theme.types'
 
 export type NewsletterSubscriptionProps = Omit<
   React.HTMLAttributes<HTMLDivElement>,

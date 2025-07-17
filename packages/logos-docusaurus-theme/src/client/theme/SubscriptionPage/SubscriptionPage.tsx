@@ -12,7 +12,7 @@ import React from 'react'
 import { useNewsletterApi } from '../../lib/useNewsletterApi'
 import { useThemeOptions } from '../../lib/useThemeOptions'
 import styles from './SubscriptionPage.module.scss'
-import { BusinessUnitType } from '../../types/businessUnits'
+import { BusinessUnitType } from '@logos-theme/types/theme.types'
 
 export type SubscriptionPageProps = {
   buType: BusinessUnitType
