@@ -10,13 +10,13 @@ import React from 'react'
 import { CallToActionSection } from '..'
 import { useNewsletterApi } from '../../../lib/useNewsletterApi'
 import './NewsletterSubscription.scss'
-import { buType } from '@logos-theme/types/businessUnits'
+import { BusinessUnitType } from '../../../types/businessUnits'
 
 export type NewsletterSubscriptionProps = Omit<
   React.HTMLAttributes<HTMLDivElement>,
   'title'
 > & {
-  byType: buType
+  byType: BusinessUnitType
   title?: React.ReactNode
   description?: React.ReactNode
   newsletterId: string

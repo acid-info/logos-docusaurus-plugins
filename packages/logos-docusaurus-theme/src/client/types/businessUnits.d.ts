@@ -1,4 +1,4 @@
-export type buType =
+export type BusinessUnitType =
   | 'codex'
   | 'waku'
   | 'nomos'
