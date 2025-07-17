@@ -1,6 +1,6 @@
 {
   "name": "@acid-info/logos-docusaurus-brand-guidelines-theme",
-  "version": "1.0.3-beta.3",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/index.js",
   "types": "src/theme.d.ts",
@@ -23,7 +23,7 @@
     "prepublishOnly": "yarn clean && yarn build"
   },
   "devDependencies": {
-    "@acid-info/logos-docusaurus-theme": "^1.0.3-beta.3",
+    "@acid-info/logos-docusaurus-theme": "^1.0.3",
     "@types/lodash": "^4.14.186",
     "@types/mdx-js__react": "^1.5.5",
     "@types/three": "^0.152.1",
