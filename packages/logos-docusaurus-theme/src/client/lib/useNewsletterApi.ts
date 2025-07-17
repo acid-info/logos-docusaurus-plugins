@@ -1,3 +1,4 @@
+import { buType } from '@logos-theme/types/businessUnits'
 import { useState } from 'react'
 
 export const useNewsletterApi = () => {
@@ -7,11 +8,16 @@ export const useNewsletterApi = () => {
     message: '',
   })
 
-  const subscribe = async (listId: number, email: string, name: string) => {
+  const subscribe = async (
+    buType: buType,
+    email: string,
+    newsletterId: string,
+  ) => {
     setBusy(true)
+
     try {
       const res = await fetch(
-        'https://odoo.logos.co/website_mass_mailing/subscribe_ghost',
+        `https://admin-acid.logos.co/api/admin/newsletters/subscribe`,
         {
           method: 'POST',
           headers: {
@@ -21,15 +27,15 @@ export const useNewsletterApi = () => {
             jsonrpc: '2.0',
             method: 'call',
             params: {
-              name,
-              value: email,
-              list_id: listId,
-              subscription_type: 'email',
+              email: email,
+              type: buType,
+              newsletter: newsletterId,
             },
           }),
         },
       )
       const data = await res.json()
+
       setRes({
         error: false,
         message: data.result.message,
