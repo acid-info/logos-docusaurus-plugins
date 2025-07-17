@@ -55,13 +55,9 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            jsonrpc: '2.0',
-            method: 'call',
-            params: {
-              email: formState?.email,
-              type: buType,
-              newsletter: newsletterId,
-            },
+            email: formState.email,
+            type: 'logos',
+            newsletter: newsletterId,
           }),
         },
       )
