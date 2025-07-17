@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-beta.3](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.2...v1.0.3-beta.3) (2025-07-17)
+
+### Bug Fixes
+
+- fix bug with admin-acid api call ([cc5785c](https://github.com/acid-info/logos-docusaurus-plugins/commit/cc5785cc01aa77282e57f0ea340b6e9277f5e557))
+- fix bug with business unit type ([7875ae8](https://github.com/acid-info/logos-docusaurus-plugins/commit/7875ae8a2aa67d33e5c98fa63f6bebcf19ce0f77))
+- fix bug with theme type ([9369e6e](https://github.com/acid-info/logos-docusaurus-plugins/commit/9369e6ea222572d15eef6b2e7bb030cd3e45c376))
+
+### Features
+
+- replace odoo with admin-acid ([44044db](https://github.com/acid-info/logos-docusaurus-plugins/commit/44044db67df90054f5284025a7efb43710043056))
+
 ## [1.0.3-beta.2](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.1...v1.0.3-beta.2) (2025-07-17)
 
 **Note:** Version bump only for package @acid-info/logos-docusaurus-theme
