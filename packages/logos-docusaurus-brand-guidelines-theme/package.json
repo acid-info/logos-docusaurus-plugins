@@ -39,7 +39,7 @@
     "react-dom": "^19.0.0"
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   },
   "gitHead": "c6268d4263e87a27c84a5afcca8ab2464c83c60a"
 }

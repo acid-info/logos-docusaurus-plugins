@@ -29,7 +29,7 @@
     "unzipper": "^0.10.14"
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   },
   "devDependencies": {
     "@docusaurus/core": "3.8.1",
