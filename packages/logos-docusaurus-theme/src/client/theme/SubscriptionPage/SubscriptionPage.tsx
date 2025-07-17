@@ -12,10 +12,10 @@ import React from 'react'
 import { useNewsletterApi } from '../../lib/useNewsletterApi'
 import { useThemeOptions } from '../../lib/useThemeOptions'
 import styles from './SubscriptionPage.module.scss'
-import { buType } from '@logos-theme/types/businessUnits'
+import { BusinessUnitType } from '../../types/businessUnits'
 
 export type SubscriptionPageProps = {
-  buType: buType
+  buType: BusinessUnitType
   newsletterId: string
 }
 

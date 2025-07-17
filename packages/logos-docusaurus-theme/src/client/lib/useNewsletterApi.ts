@@ -1,4 +1,4 @@
-import { buType } from '@logos-theme/types/businessUnits'
+import { BusinessUnitType } from '../types/businessUnits'
 import { useState } from 'react'
 
 export const useNewsletterApi = () => {
@@ -9,7 +9,7 @@ export const useNewsletterApi = () => {
   })
 
   const subscribe = async (
-    buType: buType,
+    buType: BusinessUnitType,
     email: string,
     newsletterId: string,
   ) => {
