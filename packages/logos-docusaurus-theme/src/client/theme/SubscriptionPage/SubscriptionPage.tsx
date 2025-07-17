@@ -12,10 +12,17 @@ import React from 'react'
 import { useNewsletterApi } from '../../lib/useNewsletterApi'
 import { useThemeOptions } from '../../lib/useThemeOptions'
 import styles from './SubscriptionPage.module.scss'
+import { buType } from '@logos-theme/types/businessUnits'
 
-export type SubscriptionPageProps = {}
+export type SubscriptionPageProps = {
+  buType: buType
+  newsletterId: string
+}
 
-export const SubscriptionPage: React.FC<SubscriptionPageProps> = ({}) => {
+export const SubscriptionPage: React.FC<SubscriptionPageProps> = ({
+  buType,
+  newsletterId,
+}) => {
   const opts = useThemeOptions()
   const api = useNewsletterApi()
   const displayForm = !api.message || api.error
@@ -23,10 +30,9 @@ export const SubscriptionPage: React.FC<SubscriptionPageProps> = ({}) => {
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const form = event.target as HTMLFormElement
-    const name = (form.elements.namedItem('name') as HTMLInputElement).value
     const email = (form.elements.namedItem('email') as HTMLInputElement).value
 
-    api.subscribe(opts.newsletterSubscription!.mailingListId!, email, name)
+    api.subscribe(buType, email, newsletterId)
   }
 
   return (

@@ -9,27 +9,26 @@ import clsx from 'clsx'
 import React from 'react'
 import { CallToActionSection } from '..'
 import { useNewsletterApi } from '../../../lib/useNewsletterApi'
-import { useThemeOptions } from '../../../lib/useThemeOptions'
 import './NewsletterSubscription.scss'
+import { buType } from '@logos-theme/types/businessUnits'
 
 export type NewsletterSubscriptionProps = Omit<
   React.HTMLAttributes<HTMLDivElement>,
   'title'
 > & {
-  mailingListId?: number
+  byType: buType
   title?: React.ReactNode
   description?: React.ReactNode
+  newsletterId: string
 }
 
 export const NewsletterSubscription: React.FC<NewsletterSubscriptionProps> = ({
   title: _title,
   description: _description,
-  mailingListId: _mailingListId,
+  byType,
+  newsletterId,
   ...props
 }) => {
-  const defaultMailingListId =
-    useThemeOptions()?.newsletterSubscription?.mailingListId ?? 0
-  const mailingListId = _mailingListId ?? defaultMailingListId
   const api = useNewsletterApi()
   const displayForm = !api.message || api.error
 
@@ -45,9 +44,8 @@ export const NewsletterSubscription: React.FC<NewsletterSubscriptionProps> = ({
   const onSubmit: React.FormEventHandler = (e) => {
     e.preventDefault()
     const form = e.target as HTMLFormElement
-    const name = (form.elements.namedItem('name') as HTMLInputElement).value
     const email = (form.elements.namedItem('email') as HTMLInputElement).value
-    api.subscribe(mailingListId, email, name)
+    api.subscribe(byType, email, newsletterId)
   }
 
   return (
@@ -99,6 +97,7 @@ export const NewsletterSubscription: React.FC<NewsletterSubscriptionProps> = ({
         </div>
       }
       columns={2}
+      {...props}
     />
   )
 }

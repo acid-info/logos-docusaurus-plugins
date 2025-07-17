@@ -3,6 +3,7 @@ import './InputCTASection.scss'
 import { Button, TextField, Typography } from '@acid-info/lsd-react'
 import Link, { Props } from '@docusaurus/Link'
 import clsx from 'clsx'
+import { buType } from '@logos-theme/types/businessUnits'
 
 export type InputCTASectionProps = {
   title: string
@@ -16,8 +17,6 @@ export type InputCTASectionProps = {
   successMessage?: string
 }
 
-type buType = 'codex' | 'waku' | 'nomos' | 'logos' | 'nimbus' | 'operators'
-
 export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   title,
   description,
@@ -26,7 +25,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
   linkProps,
   formInput,
   buType,
-  newsletterId = null,
+  newsletterId,
   successMessage = 'Thank you for subscribing!',
 }) => {
   const [formState, setFormState] = React.useState({ email: '', name: '' })
@@ -43,8 +42,13 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
     }
 
     try {
+      if (!buType || !newsletterId) {
+        setMessage('Business unit type or newsletter ID is missing.')
+        return
+      }
+
       const res = await fetch(
-        `https://odoo.logos.co/website_mass_mailing/subscribe_ghost`,
+        `https://admin-acid.logos.co/api/admin/newsletters/subscribe`,
         {
           method: 'POST',
           headers: {
@@ -53,19 +57,11 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
           body: JSON.stringify({
             jsonrpc: '2.0',
             method: 'call',
-            params:
-              newsletterId == null
-                ? {
-                    email: formState?.email,
-                    type: buType,
-                    subscription_type: 'email',
-                  }
-                : {
-                    email: formState?.email,
-                    type: buType,
-                    subscription_type: 'email',
-                    newsletter: newsletterId,
-                  },
+            params: {
+              email: formState?.email,
+              type: buType,
+              newsletter: newsletterId,
+            },
           }),
         },
       )
