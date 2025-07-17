@@ -24,13 +24,9 @@ export const useNewsletterApi = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            jsonrpc: '2.0',
-            method: 'call',
-            params: {
-              email: email,
-              type: buType,
-              newsletter: newsletterId,
-            },
+            email: email,
+            type: 'logos',
+            newsletter: newsletterId,
           }),
         },
       )
