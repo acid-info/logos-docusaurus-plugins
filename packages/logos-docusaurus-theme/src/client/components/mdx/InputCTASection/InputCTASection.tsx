@@ -56,7 +56,7 @@ export const InputCTASection: React.FC<InputCTASectionProps & Props> = ({
           },
           body: JSON.stringify({
             email: formState.email,
-            type: 'logos',
+            type: buType,
             newsletter: newsletterId,
           }),
         },
