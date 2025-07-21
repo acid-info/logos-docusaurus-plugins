@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-beta.9](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.8...v1.0.3-beta.9) (2025-07-21)
+
+### Features
+
+- apply global variables to CommunityFeedbackCarousel gradient ([8f2fc39](https://github.com/acid-info/logos-docusaurus-plugins/commit/8f2fc39cf97a84474693294b01eae7389767cce7))
+
 ## [1.0.3-beta.8](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.7...v1.0.3-beta.8) (2025-07-21)
 
 ### Features
