@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-beta.10](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.9...v1.0.3-beta.10) (2025-07-21)
+
+### Features
+
+- enable autoScroll for CommunityFeedbackCarousel ([bce4bb0](https://github.com/acid-info/logos-docusaurus-plugins/commit/bce4bb083faeb00f99465fec844008959c945d8c))
+
 ## [1.0.3-beta.9](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.8...v1.0.3-beta.9) (2025-07-21)
 
 ### Features
