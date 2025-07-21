@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-beta.7](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.6...v1.0.3-beta.7) (2025-07-21)
+
+### Features
+
+- implement see less into CommunityFeedbackCarousel ([2572481](https://github.com/acid-info/logos-docusaurus-plugins/commit/2572481dd7af22d72cc670d37e04917104f6fc97))
+
 ## [1.0.3-beta.6](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.4...v1.0.3-beta.6) (2025-07-21)
 
 ### Bug Fixes
