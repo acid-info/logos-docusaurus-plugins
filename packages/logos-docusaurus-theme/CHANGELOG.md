@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-beta.5](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.4...v1.0.3-beta.5) (2025-07-21)
+
+### Features
+
+- implement postMedia field in CommunityFeedbackCarousel ([c551ab7](https://github.com/acid-info/logos-docusaurus-plugins/commit/c551ab72a15836dbde5110a9831ba3bace87f108))
+
 ## [1.0.3-beta.4](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.3...v1.0.3-beta.4) (2025-07-18)
 
 ### Bug Fixes
