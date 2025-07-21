@@ -16,6 +16,7 @@
   .mdx-community-feedback__items {
     display: flex;
     overflow-x: auto;
+    align-items: flex-start;
   }
 
   .mdx-community-feedback__item {
@@ -25,8 +26,7 @@
     flex-shrink: 0;
     width: calc((100% - 32px) / 3);
     min-width: 296px;
-    min-height: 340px;
-    position: relative;
+    align-self: flex-start;
   }
 
   .mdx-community-feedback__item-header {
@@ -108,6 +108,14 @@
     cursor: pointer;
     position: relative;
     opacity: 0.6;
+  }
+
+  .mdx-community-feedback__item-see-less-text {
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.6;
+    bottom: 12px;
   }
 
   .mdx-community-feedback__item-image {

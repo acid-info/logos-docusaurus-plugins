@@ -131,7 +131,7 @@ export const CommunityFeedbackCarousel: React.FC<
         <ScrollButtons
           containerRef={containerRef as React.RefObject<HTMLDivElement>}
           spacing="spaced"
-          autoScroll={!isHovered && !isMobile}
+          // autoScroll={!isHovered && !isMobile}
           autoScrollInterval={autoScrollInterval}
           infiniteScroll={true}
           desktopItemsToScroll={desktopItemsToScroll}
@@ -267,6 +267,17 @@ export const CommunityFeedbackCarousel: React.FC<
                   </div>
                 )}
               </div>
+              {isExpanded && (
+                <div>
+                  <Typography
+                    className="mdx-community-feedback__item-see-less-text"
+                    variant="body2"
+                    onClick={() => setExpanded((e) => ({ ...e, [idx]: false }))}
+                  >
+                    See less
+                  </Typography>
+                </div>
+              )}
             </Grid.Item>
           )
         })}
