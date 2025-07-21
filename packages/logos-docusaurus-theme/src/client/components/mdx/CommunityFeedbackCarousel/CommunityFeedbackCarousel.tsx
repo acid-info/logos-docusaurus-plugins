@@ -248,7 +248,17 @@ export const CommunityFeedbackCarousel: React.FC<
                 >
                   {item.content}
                 </Typography>
-                {mediaRender}
+                {item.postMedia && (
+                  <div className="mdx-community-feedback__media-wrapper">
+                    {mediaRender}
+                    {!isExpanded && (
+                      <div className="mdx-community-feedback__item-gradient" />
+                    )}
+                  </div>
+                )}
+                {!isExpanded && (
+                  <div className="mdx-community-feedback__item-gradient" />
+                )}
                 {shouldShowSeeMore && !isExpanded && (
                   <div
                     className={`mdx-community-feedback__item-see-more ${

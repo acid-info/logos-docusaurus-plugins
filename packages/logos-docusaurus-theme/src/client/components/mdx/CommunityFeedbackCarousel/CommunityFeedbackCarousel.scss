@@ -46,6 +46,26 @@
     min-height: 180px;
   }
 
+  .mdx-community-feedback__media-wrapper {
+    position: relative;
+    width: 100%;
+    .mdx-community-feedback__item-gradient {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 40px;
+      pointer-events: none;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.97) 80%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      z-index: 2;
+    }
+  }
+
   .mdx-community-feedback__item-header-user {
     display: flex;
     align-items: center;
