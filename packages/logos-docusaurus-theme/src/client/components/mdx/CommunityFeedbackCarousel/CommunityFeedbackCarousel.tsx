@@ -131,7 +131,7 @@ export const CommunityFeedbackCarousel: React.FC<
         <ScrollButtons
           containerRef={containerRef as React.RefObject<HTMLDivElement>}
           spacing="spaced"
-          // autoScroll={!isHovered && !isMobile}
+          autoScroll={!isHovered && !isMobile}
           autoScrollInterval={autoScrollInterval}
           infiniteScroll={true}
           desktopItemsToScroll={desktopItemsToScroll}
