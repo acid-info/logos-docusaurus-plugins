@@ -21,6 +21,7 @@ export type CommunityFeedbackCarouselItem = {
     image?: string
   }
   content: string
+  postMedia?: string
 }
 
 export type CommunityFeedbackCarouselProps = Omit<
@@ -60,7 +61,8 @@ export const CommunityFeedbackCarousel: React.FC<
       ref.current?.querySelector('.mdx-grid__content') ?? null
   }
 
-  const MAX_LINES = 5
+  const MAX_LINES = 3
+  const MAX_CONTENT_HEIGHT = 180
 
   useEffect(() => {
     if (!hydrated) return
@@ -79,7 +81,7 @@ export const CommunityFeedbackCarousel: React.FC<
         const lineHeight =
           parseFloat(computedStyle.lineHeight) ||
           parseFloat(computedStyle.fontSize) * 1.2
-        const maxHeight = lineHeight * MAX_LINES
+        const maxHeight = lineHeight * (MAX_LINES - 1)
         const actualHeight = textElement.scrollHeight
 
         setIsTruncated((prev) => ({
@@ -145,6 +147,41 @@ export const CommunityFeedbackCarousel: React.FC<
           const isExpanded = expanded[idx]
           const itemIsTruncated = isTruncated[idx] || false
 
+          const mediaRender = (() => {
+            if (!item?.postMedia) return null
+            const ext = item.postMedia.split('.').pop()?.toLowerCase()
+            const imageExts = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg']
+            const videoExts = ['mp4', 'webm', 'mov']
+            if (imageExts.includes(ext || '')) {
+              return (
+                <img
+                  src={item.postMedia}
+                  alt={'image-' + idx}
+                  className={`mdx-community-feedback__item-image ${
+                    !isExpanded ? 'collapsed' : 'expanded'
+                  }`}
+                />
+              )
+            }
+            if (videoExts.includes(ext || '')) {
+              return (
+                <video
+                  src={item.postMedia}
+                  className={`mdx-community-feedback__item-image ${
+                    !isExpanded ? 'collapsed' : 'expanded'
+                  }`}
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                />
+              )
+            }
+            return null
+          })()
+
+          const shouldShowSeeMore = itemIsTruncated || item?.postMedia
+
           return (
             <Grid.Item className="mdx-community-feedback__item" key={idx}>
               <div className="mdx-community-feedback__item-header">
@@ -179,7 +216,18 @@ export const CommunityFeedbackCarousel: React.FC<
                   <IconX />
                 </Link>
               </div>
-              <div className="mdx-community-feedback__item-content">
+              <div
+                className="mdx-community-feedback__item-content"
+                style={{
+                  maxHeight:
+                    !isExpanded && item?.postMedia
+                      ? MAX_CONTENT_HEIGHT
+                      : 'none',
+                  overflow:
+                    !isExpanded && item?.postMedia ? 'hidden' : 'visible',
+                  position: item?.postMedia ? 'relative' : 'static',
+                }}
+              >
                 <Typography
                   variant="body1"
                   className="mdx-community-feedback__item-content-text"
@@ -190,6 +238,7 @@ export const CommunityFeedbackCarousel: React.FC<
                           WebkitBoxOrient: 'vertical',
                           WebkitLineClamp: MAX_LINES,
                           overflow: 'hidden',
+                          textOverflow: 'ellipsis',
                         }
                       : {
                           display: 'block',
@@ -199,8 +248,13 @@ export const CommunityFeedbackCarousel: React.FC<
                 >
                   {item.content}
                 </Typography>
-                {itemIsTruncated && !isExpanded && (
-                  <div className="mdx-community-feedback__item-see-more">
+                {mediaRender}
+                {shouldShowSeeMore && !isExpanded && (
+                  <div
+                    className={`mdx-community-feedback__item-see-more ${
+                      item?.postMedia && itemIsTruncated ? '' : 'static'
+                    }`}
+                  >
                     <Typography
                       variant="body2"
                       className="mdx-community-feedback__item-see-more-text"
