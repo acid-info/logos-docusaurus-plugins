@@ -58,9 +58,9 @@
       pointer-events: none;
       background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.97) 80%,
-        rgba(255, 255, 255, 1) 100%
+        rgba(var(--lsd-theme-secondary), 0) 0%,
+        rgba(var(--lsd-theme-secondary), 0.97) 80%,
+        rgba(var(--lsd-theme-secondary), 1) 100%
       );
       z-index: 2;
     }
