@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-beta.11](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.10...v1.0.3-beta.11) (2025-07-27)
+
+### Bug Fixes
+
+- fix lsd version ([0e096b7](https://github.com/acid-info/logos-docusaurus-plugins/commit/0e096b79687de525c60f0cc1b2e7e71f2d42f013))
+
 ## [1.0.3-beta.10](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.9...v1.0.3-beta.10) (2025-07-21)
 
 ### Features
