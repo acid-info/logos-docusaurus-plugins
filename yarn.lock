@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@acid-info/lsd-react@^v0.2.0-beta.2":
+"@acid-info/lsd-react@0.2.0-beta.2":
   version "0.2.0-beta.2"
   resolved "https://registry.yarnpkg.com/@acid-info/lsd-react/-/lsd-react-0.2.0-beta.2.tgz#d7ae2e091923036f2ddcf9a56f960f65ddba8bb0"
   integrity sha512-xDqtZc2FEaSt32kVImGPJotDStRi476kz/68GEltteoZag5zPEMDIJXb72KYi8OfYVWYzRe4at70NKU0f5fLOg==

@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@acid-info/docusaurus-og": "^1.0.3-beta.2",
-    "@acid-info/lsd-react": "^v0.2.0-beta.2",
+    "@acid-info/lsd-react": "0.2.0-beta.2",
     "@docusaurus/core": "3.8.1",
     "@docusaurus/mdx-loader": "3.8.1",
     "@docusaurus/module-type-aliases": "3.8.1",
