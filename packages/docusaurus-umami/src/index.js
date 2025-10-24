@@ -8,28 +8,36 @@ module.exports = function (context, options) {
   }
 
   const { websiteId, scriptSrc, dataDomains } = options
+  if (typeof dataDomains !== 'undefined' && typeof dataDomains !== 'string') {
+    throw new Error(
+      'dataDomains must be a comma-separated string when provided',
+    )
+  }
 
   return {
     name: 'docusaurus-plugin-umami',
     injectHtmlTags() {
-      const attributes = {
-        defer: true,
-        src: scriptSrc,
-        'data-website-id': websiteId,
-      }
-
-      if (dataDomains) {
-        attributes['data-domains'] = dataDomains
-      }
-
-      return {
-        headTags: [
-          {
-            tagName: 'script',
-            attributes,
-          },
-        ],
-      }
+      const loader = `;(function(){
+        function onError(){
+          if(!window.umami){
+            console.warn('[docusaurus-plugin-umami] Failed to load Umami script - using mock tracker instead.');
+            window.umami = {
+              track: function(){},
+              identify: function(){}
+            }
+          }
+        }
+        var s = document.createElement('script');
+        s.defer = true;
+        s.src = ${JSON.stringify(scriptSrc)};
+        s.setAttribute('data-website-id', ${JSON.stringify(websiteId)});
+        if(${JSON.stringify(
+          !!dataDomains,
+        )}) s.setAttribute('data-domains', ${JSON.stringify(dataDomains)});
+        s.onerror = onError;
+        (document.head || document.getElementsByTagName('head')[0]).appendChild(s);
+      })();`
+      return { headTags: [{ tagName: 'script', innerHTML: loader }] }
     },
   }
 }
