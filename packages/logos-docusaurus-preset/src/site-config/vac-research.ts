@@ -4,9 +4,9 @@ import baseSiteConfig from './base'
 
 export const vacResearchSiteConfig: SiteConfig = {
   ...baseSiteConfig,
-  title: 'Vac Research',
-  tagline: 'Vac - Communication, Privacy, Etc.',
-  url: 'https://vac.dev',
+  title: 'Logos Research',
+  tagline: 'Logos Research - Communication, Privacy, Etc.',
+  url: 'https://research.logos.co',
   customFields: {
     businessUnits: BusinessUnits.VacResearch,
   },
