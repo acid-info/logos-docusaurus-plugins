@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3-beta.12](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.11...v1.0.3-beta.12) (2026-05-07)
+
+### Bug Fixes
+
+- **docusaurus-them:** make white X icon actually white & resize ([9e2487a](https://github.com/acid-info/logos-docusaurus-plugins/commit/9e2487aa39bfe5e5a7b09ca8e8130bf7a1f16b83))
+
 ## [1.0.3-beta.11](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.10...v1.0.3-beta.11) (2025-07-27)
 
 ### Bug Fixes
