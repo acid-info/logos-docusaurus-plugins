@@ -5,8 +5,9 @@ export const vacResearchThemeConfig: typeof baseThemeConfig = {
   navbar: {
     ...baseThemeConfig.navbar,
     logo: {
-      alt: 'Vac Research',
-      src: 'theme/image/logo.svg',
+      alt: 'Logos Research',
+      src: 'theme/image/logo-black.svg',
+      srcDark: 'theme/image/logo.svg',
       height: 26,
     },
     items: [],
@@ -14,15 +15,15 @@ export const vacResearchThemeConfig: typeof baseThemeConfig = {
   metadata: [
     {
       name: 'description',
-      content: 'Vac - Communication, Privacy, Etc.',
+      content: 'Logos Research - Communication, Privacy, Etc.',
     },
     { name: 'image', content: 'theme/image/preview-image.png' },
   ],
   footer: {
     ...baseThemeConfig.footer,
-    copyright: `Vac Research © ${new Date().getFullYear()}<br/>All rights reserved.`,
+    copyright: `Logos Research`,
     logo: {
-      alt: 'Vac Research',
+      alt: 'Logos Research',
       src: 'theme/image/logo.svg',
       href: '/',
       width: 22,
