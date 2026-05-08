@@ -24,8 +24,8 @@ export const baseThemeConfig: ThemeConfig = {
         title: 'shared:Research',
         items: [
           {
-            href: 'https://vac.dev',
-            label: 'VacP2P',
+            href: 'https://research.logos.co/',
+            label: 'Logos Research',
           },
         ],
       },
@@ -33,20 +33,12 @@ export const baseThemeConfig: ThemeConfig = {
         title: 'shared:Infrastructure',
         items: [
           {
-            href: 'https://waku.org/',
-            label: 'Waku',
+            href: 'https://logos.co/',
+            label: 'Logos',
           },
           {
             href: 'https://nimbus.team/',
             label: 'Nimbus',
-          },
-          {
-            href: 'https://codex.storage',
-            label: 'Codex',
-          },
-          {
-            href: 'https://nomos.tech',
-            label: 'Nomos',
           },
         ],
       },

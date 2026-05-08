@@ -21,7 +21,7 @@ export const vacResearchThemeConfig: typeof baseThemeConfig = {
   ],
   footer: {
     ...baseThemeConfig.footer,
-    copyright: `Logos Research © ${new Date().getFullYear()}<br/>All rights reserved.`,
+    copyright: `Logos Research`,
     logo: {
       alt: 'Logos Research',
       src: 'theme/image/logo.svg',
