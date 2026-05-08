@@ -7,6 +7,7 @@ export const vacResearchSiteConfig: SiteConfig = {
   title: 'Logos Research',
   tagline: 'Logos Research - Communication, Privacy, Etc.',
   url: 'https://research.logos.co',
+  favicon: 'theme/image/favicon.svg',
   customFields: {
     businessUnits: BusinessUnits.VacResearch,
   },
