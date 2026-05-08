@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4-alpha.0](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.12...v1.0.4-alpha.0) (2026-05-08)
+
+### Features
+
+- add manual publish workflow for npm packages ([5e79f28](https://github.com/acid-info/logos-docusaurus-plugins/commit/5e79f2855c9d939a5e104a0238338f7df0b256b0))
+
 ## [1.0.3](https://github.com/acid-info/logos-docusaurus-plugins/compare/v1.0.3-beta.12...v1.0.3) (2026-05-07)
 
 **Note:** Version bump only for package root
