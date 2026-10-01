@@ -33,12 +33,20 @@ export const baseThemeConfig: ThemeConfig = {
         title: 'shared:Infrastructure',
         items: [
           {
-            href: 'https://logos.co/',
-            label: 'Logos',
+            href: 'https://logos.co/technology-stack/messaging',
+            label: 'Messaging',
           },
           {
             href: 'https://nimbus.team/',
             label: 'Nimbus',
+          },
+          {
+            href: 'https://logos.co/technology-stack/storage',
+            label: 'Storage',
+          },
+          {
+            href: 'https://logos.co/technology-stack/blockchain',
+            label: 'Blockchain',
           },
         ],
       },
